@@ -1,0 +1,12 @@
+{
+  "3377": {
+    "row_sha256": "961b96bbf4eba6a4908ad13ea53225c2c8d44726cf1134f0dcbd9219fa50aa36",
+    "strategy_id": 5290,
+    "status": "failed"
+  },
+  "3516": {
+    "row_sha256": "7d5575738c4cc1b167a50c5d7e9b852031628911cb10d9c57533c76b6defe50b",
+    "strategy_id": 6030,
+    "status": "failed"
+  }
+}

@@ -1,0 +1,722 @@
+{
+  "audit_git_commit": "3c07551e580425c0a64403c37241bf8d73aa6fd1",
+  "bead": "tradingbot-ddw",
+  "candidate": "C14",
+  "capital": {
+    "absolute_slot_strike_bound_before_reserves_usd": "1.40",
+    "affordable_event_count": null,
+    "collateral_budget_before_reserves_usd": "133.00",
+    "eligible_contract_count": null,
+    "illustrative_1_50_strike_fits_before_reserves": false,
+    "illustrative_1_50_strike_obligation_usd": "150",
+    "necessary_condition_only": true,
+    "premium_credit_used_for_collateral": false,
+    "required_reserve_usd": null,
+    "reserves_reduce_bound": true,
+    "strike_upper_bound_before_reserves_usd": "1.33"
+  },
+  "code_sha256": {
+    "src/tradingbot/backtest/holdout.py": "7ec9990e75cd0b88dfdfb81d90f89c6dd25de06ad47b57056eaad6e5ac5e577d",
+    "src/tradingbot/data/alpaca_history.py": "cca690cbf30bd90e8dd66c2aa059b0428848d68fd1d6bff440059c22248c0be5",
+    "src/tradingbot/data/alpaca_options.py": "2dddf6f96d3386214d56252a063404bfe814790bf2aa851dcd2f607d9c82a94f",
+    "src/tradingbot/data/archive.py": "c8d690f2933de81374b08c70d941650d24b1f33060e52757f0be5d2fe731b159",
+    "src/tradingbot/data/bulk_history.py": "9ce99aec867ae07e19d3104b9009f06307ae28c26f645de04415094a3cd7cc39",
+    "src/tradingbot/data/disk_budget.py": "1d075e6e13f81c36cfad782f480c72ce4969a5d449c7da0520fdec2dc0839507",
+    "src/tradingbot/data/free_history.py": "fa941be2606c10e1c9c84ae9c237f20f2fb5455753b41464ad5f9ec594c02cdd",
+    "src/tradingbot/data/transport.py": "fd25cb5d9a6fba763809cee0940c7ee88a6343b9a7b04bbff95062f653c8c2c0",
+    "src/tradingbot/db/models.py": "104e1203730b959b28b53e37ee054da69a02ede8a47654a107473b0487afa445",
+    "src/tradingbot/db/session.py": "cfc9e55018d5ed6cede897d4dddb4e70b4fecae405fa7def29d778f1efcf5df0",
+    "src/tradingbot/forward/c05_readiness.py": "d782db323d9a10dc9113e2da54df112dbf84f4791cf5bf7e2cf0181a285444fd",
+    "src/tradingbot/research/c13_capture.py": "d3a396bb4e98744552a84b4c4297c6f44ff27ce133817fd4df49d38f678d19a5",
+    "src/tradingbot/research/c13_source_audit.py": "12590cf257e80e7e99a69cf7a665e238f50e755085d683d4b66adceaf9b250f2",
+    "src/tradingbot/research/c14_source_audit.py": "53f0a030561eb34b39f03f74d6888463055659cc75c4aabc392246d7f8209da0",
+    "src/tradingbot/risk/limits.py": "876019289d37066e7f8a150527d29feb6277e6b8acb68b909e894d1b7aeff25f"
+  },
+  "data_failure_trial_id": 5325,
+  "dataset_admitted": false,
+  "drawdown": null,
+  "failed_prerequisites": [
+    "The approved bundle has no historical executable BBO, sizes or liquidation marks for F/NOK/OPEN/PLUG/SNDL.",
+    "Current catalogs do not establish complete decision-time historical listings, delisted series, standard deliverables or per-series tick eligibility.",
+    "The required historical early-assignment/notification and resulting stock/cash lifecycle model is not admitted; no-assignment cannot be assumed."
+  ],
+  "fees": null,
+  "final_holdout_attempts": 0,
+  "harness_reaudit": [
+    {
+      "complete": true,
+      "dataset": "bars",
+      "directory": "data/options/raw/alpaca/options_bars/options-probe-20261001/cb0c85fc82f90e3cb80ed6d1",
+      "executable_fill_evidence": false,
+      "file_sha256": {
+        "data/options/raw/alpaca/options_bars/options-probe-20261001/cb0c85fc82f90e3cb80ed6d1/manifest.json": "cb0c85fc82f90e3cb80ed6d16f27786615bafa62ce26d66d74bc7bcf07c425d2",
+        "data/options/raw/alpaca/options_bars/options-probe-20261001/cb0c85fc82f90e3cb80ed6d1/page-00000000.parquet": "32fcd75fefc7a9b3a320098f22b49b84c9ca87f615e7ffbf765abc78f2d2abb3"
+      },
+      "historical_bbo": false,
+      "historical_chain_membership": false,
+      "pages": 1,
+      "records": 22,
+      "request": {
+        "params": {
+          "end": "2024-02-16T23:59:59.999999+00:00",
+          "limit": 10000,
+          "sort": "asc",
+          "start": "2024-02-01T00:00:00+00:00",
+          "symbols": "SPY240216C00490000,SPY240216P00490000",
+          "timeframe": "1Day"
+        },
+        "url": "https://data.alpaca.markets/v1beta1/options/bars"
+      },
+      "response_set_sha256": "2dd2b806f8cbe1bf625eed52cda6d5ac643d41f96d06442dcf0ecc9366669aea",
+      "retrieved_first": "2026-10-01T05:54:32.609484+00:00",
+      "retrieved_last": "2026-10-01T05:54:32.609484+00:00",
+      "semantics": "provider historical options bars; feed unspecified by endpoint; not historical BBO and not eligible for executable-fill proof"
+    },
+    {
+      "complete": true,
+      "dataset": "chain",
+      "directory": "data/options/raw/alpaca/options_chain/options-probe-20261001/5ff91e9fd87dc5f99254fa35",
+      "executable_fill_evidence": false,
+      "file_sha256": {
+        "data/options/raw/alpaca/options_chain/options-probe-20261001/5ff91e9fd87dc5f99254fa35/manifest.json": "5ff91e9fd87dc5f99254fa35138a96897f08e4164344a12e635883724ecd6840",
+        "data/options/raw/alpaca/options_chain/options-probe-20261001/5ff91e9fd87dc5f99254fa35/page-00000000.parquet": "468bfdee51349e233a89b57541f4635095ce6f7850c75beb9b7c55fb73e8ba1a"
+      },
+      "historical_bbo": false,
+      "historical_chain_membership": false,
+      "pages": 1,
+      "records": 206,
+      "request": {
+        "params": {
+          "expiration_date_gte": "2026-10-01",
+          "expiration_date_lte": "2026-10-16",
+          "feed": "indicative",
+          "limit": 1000
+        },
+        "url": "https://data.alpaca.markets/v1beta1/options/snapshots/F"
+      },
+      "response_set_sha256": "0e12aa54efd15e6f33d1fc91ef7f89dd6ae493772961557a2ca78d4379f1ca4a",
+      "retrieved_first": "2026-10-01T05:53:48.819605+00:00",
+      "retrieved_last": "2026-10-01T05:53:48.819605+00:00",
+      "semantics": "current indicative snapshot; modified quotes/delayed derived trades; available no earlier than retrieval; not executable or historical BBO"
+    },
+    {
+      "complete": true,
+      "dataset": "chain",
+      "directory": "data/options/raw/alpaca/options_chain/options-probe-20261001/6c70f3b2f3a9f774bc4ce149",
+      "executable_fill_evidence": false,
+      "file_sha256": {
+        "data/options/raw/alpaca/options_chain/options-probe-20261001/6c70f3b2f3a9f774bc4ce149/manifest.json": "6c70f3b2f3a9f774bc4ce149395b0e1a0f3b038f3c982465549d78960e6a6c6d",
+        "data/options/raw/alpaca/options_chain/options-probe-20261001/6c70f3b2f3a9f774bc4ce149/page-00000000.parquet": "87ca687730064ff23e7d65ad887bd2243944551c48cefa3f03015fb5616b88d6"
+      },
+      "historical_bbo": false,
+      "historical_chain_membership": false,
+      "pages": 1,
+      "records": 458,
+      "request": {
+        "params": {
+          "expiration_date_gte": "2026-10-16",
+          "expiration_date_lte": "2026-10-16",
+          "feed": "indicative",
+          "limit": 1000
+        },
+        "url": "https://data.alpaca.markets/v1beta1/options/snapshots/SPY"
+      },
+      "response_set_sha256": "9375f3aa847e9c9b1bfa8d71237a1dc8b7efd078a3bdbb5c3bb512a50339cc60",
+      "retrieved_first": "2026-10-01T05:54:15.695062+00:00",
+      "retrieved_last": "2026-10-01T05:54:15.695062+00:00",
+      "semantics": "current indicative snapshot; modified quotes/delayed derived trades; available no earlier than retrieval; not executable or historical BBO"
+    },
+    {
+      "complete": true,
+      "dataset": "contracts",
+      "directory": "data/options/raw/alpaca/options_contracts/options-probe-20261001/279aa8f937df951ad3cde130",
+      "executable_fill_evidence": false,
+      "file_sha256": {
+        "data/options/raw/alpaca/options_contracts/options-probe-20261001/279aa8f937df951ad3cde130/manifest.json": "279aa8f937df951ad3cde1300fa3d089f68732738dc17304595839c17d3ebaf3",
+        "data/options/raw/alpaca/options_contracts/options-probe-20261001/279aa8f937df951ad3cde130/page-00000000.parquet": "faea59c099f2174e7010c833a5d3887b3e23718d5e0345b56631d42e4a856d1f"
+      },
+      "historical_bbo": false,
+      "historical_chain_membership": false,
+      "pages": 1,
+      "records": 458,
+      "request": {
+        "params": {
+          "expiration_date_gte": "2026-10-16",
+          "expiration_date_lte": "2026-10-16",
+          "limit": 1000,
+          "show_deliverables": true,
+          "status": "active",
+          "underlying_symbols": "SPY"
+        },
+        "url": "https://paper-api.alpaca.markets/v2/options/contracts"
+      },
+      "response_set_sha256": "aad3f5a68453031c01a389a927b6cb7ce7c8bbd809534623535cbc664d4c1bf9",
+      "retrieved_first": "2026-10-01T05:54:09.638585+00:00",
+      "retrieved_last": "2026-10-01T05:54:09.638585+00:00",
+      "semantics": "current contract metadata snapshot, not historical chain membership"
+    },
+    {
+      "complete": true,
+      "dataset": "contracts",
+      "directory": "data/options/raw/alpaca/options_contracts/options-probe-20261001/aae0b0a8b71906c11edfd0c6",
+      "executable_fill_evidence": false,
+      "file_sha256": {
+        "data/options/raw/alpaca/options_contracts/options-probe-20261001/aae0b0a8b71906c11edfd0c6/manifest.json": "aae0b0a8b71906c11edfd0c6ca831d88deffe4457630b561ec623c0ecc4336ba",
+        "data/options/raw/alpaca/options_contracts/options-probe-20261001/aae0b0a8b71906c11edfd0c6/page-00000000.parquet": "f9d587e54d21d70db4b34f6e78a212d922e9bef560d07a10d2ec8944aaede27f"
+      },
+      "historical_bbo": false,
+      "historical_chain_membership": false,
+      "pages": 1,
+      "records": 362,
+      "request": {
+        "params": {
+          "expiration_date_gte": "2024-02-16",
+          "expiration_date_lte": "2024-02-16",
+          "limit": 1000,
+          "show_deliverables": true,
+          "status": "inactive",
+          "underlying_symbols": "SPY"
+        },
+        "url": "https://paper-api.alpaca.markets/v2/options/contracts"
+      },
+      "response_set_sha256": "02de0678d700f3a91b7aa5edb3671883111aa6f825a22b151da4677e468fae99",
+      "retrieved_first": "2026-10-01T05:54:24.451890+00:00",
+      "retrieved_last": "2026-10-01T05:54:24.451890+00:00",
+      "semantics": "current contract metadata snapshot, not historical chain membership"
+    },
+    {
+      "complete": true,
+      "dataset": "contracts",
+      "directory": "data/options/raw/alpaca/options_contracts/options-probe-20261001/d8ad29a346997ffc81951e06",
+      "executable_fill_evidence": false,
+      "file_sha256": {
+        "data/options/raw/alpaca/options_contracts/options-probe-20261001/d8ad29a346997ffc81951e06/manifest.json": "d8ad29a346997ffc81951e066b76d80b35d74bdbd27f8ed314b856f7804eaeeb",
+        "data/options/raw/alpaca/options_contracts/options-probe-20261001/d8ad29a346997ffc81951e06/page-00000000.parquet": "4f9505cd6a0b3dc4f877c1fdb1266ce692d6ffe78d077732e5720454277de035"
+      },
+      "historical_bbo": false,
+      "historical_chain_membership": false,
+      "pages": 1,
+      "records": 206,
+      "request": {
+        "params": {
+          "expiration_date_gte": "2026-10-01",
+          "expiration_date_lte": "2026-10-16",
+          "limit": 1000,
+          "show_deliverables": true,
+          "status": "active",
+          "underlying_symbols": "F"
+        },
+        "url": "https://paper-api.alpaca.markets/v2/options/contracts"
+      },
+      "response_set_sha256": "cc02e7c0a8137989ed59f2942aceb1b8917c1e798166c919f2f9aa8605a380ab",
+      "retrieved_first": "2026-10-01T05:52:17.092641+00:00",
+      "retrieved_last": "2026-10-01T05:52:17.092641+00:00",
+      "semantics": "current contract metadata snapshot, not historical chain membership"
+    },
+    {
+      "complete": true,
+      "dataset": "quotes",
+      "directory": "data/options/raw/alpaca/options_quotes/options-probe-20261001/e77b58c75cc527f18f518cbb",
+      "executable_fill_evidence": false,
+      "file_sha256": {
+        "data/options/raw/alpaca/options_quotes/options-probe-20261001/e77b58c75cc527f18f518cbb/manifest.json": "e77b58c75cc527f18f518cbb3bcdd8c613f328af6c352b6c44afec5820e05600",
+        "data/options/raw/alpaca/options_quotes/options-probe-20261001/e77b58c75cc527f18f518cbb/page-00000000.parquet": "b64bb45a2d9f26c1413ff452fe46476efd65d10acbbf019470c4957c2bc1ea22"
+      },
+      "historical_bbo": false,
+      "historical_chain_membership": false,
+      "pages": 1,
+      "records": 4,
+      "request": {
+        "params": {
+          "feed": "indicative",
+          "symbols": "F261009C00016000,F261009P00016000,SPY261016C00734000,SPY261016P00734000"
+        },
+        "url": "https://data.alpaca.markets/v1beta1/options/quotes/latest"
+      },
+      "response_set_sha256": "51bf437818b43403ba564c41343b7db64d780b7bbe95d28719efe9d7d10c09d6",
+      "retrieved_first": "2026-10-01T05:57:24.162458+00:00",
+      "retrieved_last": "2026-10-01T05:57:24.162458+00:00",
+      "semantics": "current indicative snapshot; modified quotes/delayed derived trades; available no earlier than retrieval; not executable or historical BBO"
+    },
+    {
+      "complete": true,
+      "dataset": "trades",
+      "directory": "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc",
+      "executable_fill_evidence": false,
+      "file_sha256": {
+        "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc/manifest.json": "3cd3009cef43d55c88e67cbc1422a0ec51104cd721a0575c3063aeaf28bd66b0",
+        "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc/page-00000000.parquet": "707a921fd826c6f16f93c9866e16ffdf2fad8fef275a4ddd157e7d090d10e648",
+        "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc/page-00000001.parquet": "ecf9433719cb6b085983fc77ecdeb19f17f7ee2ab2ab262edbbfe1547dff7c3f",
+        "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc/page-00000002.parquet": "cc5fc963dc3b6a3e8af9973e257f5e8bd43bb45e2fb603e450edcc8107fad300",
+        "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc/page-00000003.parquet": "38319fbf3bf3eadd90787741e78646452876d15c64a519112ac8abd551e03965"
+      },
+      "historical_bbo": false,
+      "historical_chain_membership": false,
+      "pages": 4,
+      "records": 37107,
+      "request": {
+        "params": {
+          "end": "2024-02-16T23:59:59.999999+00:00",
+          "limit": 10000,
+          "sort": "asc",
+          "start": "2024-02-01T00:00:00+00:00",
+          "symbols": "SPY240216C00490000,SPY240216P00490000"
+        },
+        "url": "https://data.alpaca.markets/v1beta1/options/trades"
+      },
+      "response_set_sha256": "2ea27b4db43120d5d01e1c71dc372a85c87955902389cf61e3805f56a86b85c3",
+      "retrieved_first": "2026-10-01T05:54:40.287652+00:00",
+      "retrieved_last": "2026-10-01T05:54:47.924293+00:00",
+      "semantics": "provider historical options trades; feed unspecified by endpoint; not historical BBO and not eligible for executable-fill proof"
+    }
+  ],
+  "identity": {
+    "candidate": {
+      "candidate": "C14",
+      "id": "tradingbot-ddw",
+      "max_final_attempts": 1,
+      "ordered_variants": [
+        {
+          "hold_sessions": 5
+        },
+        {
+          "hold_sessions": 10
+        }
+      ],
+      "real_allocation_usd": "0",
+      "selection_cost_case_index": 1,
+      "split": {
+        "data_end": "2026-10-01T00:00:00+00:00",
+        "data_start": "2024-02-01T00:00:00+00:00",
+        "dataset_key": "batch2-c14-v1",
+        "holdout_start": "2025-12-13T02:24:00+00:00",
+        "split": "70/30 by elapsed UTC time; end exclusive"
+      },
+      "status": "parked_alpha_source_feasibility_only",
+      "title": "Conditional cash-secured cheap-stock put: source and capital feasibility",
+      "training_cost_cases": [
+        {
+          "adverse_per_share_usd": "0.01"
+        },
+        {
+          "adverse_per_share_usd": "0.02"
+        }
+      ],
+      "universe": [
+        "F",
+        "NOK",
+        "OPEN",
+        "PLUG",
+        "SNDL"
+      ],
+      "virtual_cash_usd": "140"
+    },
+    "harness_files_sha256": {
+      "data/options/raw/alpaca/options_bars/options-probe-20261001/cb0c85fc82f90e3cb80ed6d1/manifest.json": "cb0c85fc82f90e3cb80ed6d16f27786615bafa62ce26d66d74bc7bcf07c425d2",
+      "data/options/raw/alpaca/options_bars/options-probe-20261001/cb0c85fc82f90e3cb80ed6d1/page-00000000.parquet": "32fcd75fefc7a9b3a320098f22b49b84c9ca87f615e7ffbf765abc78f2d2abb3",
+      "data/options/raw/alpaca/options_chain/options-probe-20261001/5ff91e9fd87dc5f99254fa35/manifest.json": "5ff91e9fd87dc5f99254fa35138a96897f08e4164344a12e635883724ecd6840",
+      "data/options/raw/alpaca/options_chain/options-probe-20261001/5ff91e9fd87dc5f99254fa35/page-00000000.parquet": "468bfdee51349e233a89b57541f4635095ce6f7850c75beb9b7c55fb73e8ba1a",
+      "data/options/raw/alpaca/options_chain/options-probe-20261001/6c70f3b2f3a9f774bc4ce149/manifest.json": "6c70f3b2f3a9f774bc4ce149395b0e1a0f3b038f3c982465549d78960e6a6c6d",
+      "data/options/raw/alpaca/options_chain/options-probe-20261001/6c70f3b2f3a9f774bc4ce149/page-00000000.parquet": "87ca687730064ff23e7d65ad887bd2243944551c48cefa3f03015fb5616b88d6",
+      "data/options/raw/alpaca/options_contracts/options-probe-20261001/279aa8f937df951ad3cde130/manifest.json": "279aa8f937df951ad3cde1300fa3d089f68732738dc17304595839c17d3ebaf3",
+      "data/options/raw/alpaca/options_contracts/options-probe-20261001/279aa8f937df951ad3cde130/page-00000000.parquet": "faea59c099f2174e7010c833a5d3887b3e23718d5e0345b56631d42e4a856d1f",
+      "data/options/raw/alpaca/options_contracts/options-probe-20261001/aae0b0a8b71906c11edfd0c6/manifest.json": "aae0b0a8b71906c11edfd0c6ca831d88deffe4457630b561ec623c0ecc4336ba",
+      "data/options/raw/alpaca/options_contracts/options-probe-20261001/aae0b0a8b71906c11edfd0c6/page-00000000.parquet": "f9d587e54d21d70db4b34f6e78a212d922e9bef560d07a10d2ec8944aaede27f",
+      "data/options/raw/alpaca/options_contracts/options-probe-20261001/d8ad29a346997ffc81951e06/manifest.json": "d8ad29a346997ffc81951e066b76d80b35d74bdbd27f8ed314b856f7804eaeeb",
+      "data/options/raw/alpaca/options_contracts/options-probe-20261001/d8ad29a346997ffc81951e06/page-00000000.parquet": "4f9505cd6a0b3dc4f877c1fdb1266ce692d6ffe78d077732e5720454277de035",
+      "data/options/raw/alpaca/options_quotes/options-probe-20261001/e77b58c75cc527f18f518cbb/manifest.json": "e77b58c75cc527f18f518cbb3bcdd8c613f328af6c352b6c44afec5820e05600",
+      "data/options/raw/alpaca/options_quotes/options-probe-20261001/e77b58c75cc527f18f518cbb/page-00000000.parquet": "b64bb45a2d9f26c1413ff452fe46476efd65d10acbbf019470c4957c2bc1ea22",
+      "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc/manifest.json": "3cd3009cef43d55c88e67cbc1422a0ec51104cd721a0575c3063aeaf28bd66b0",
+      "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc/page-00000000.parquet": "707a921fd826c6f16f93c9866e16ffdf2fad8fef275a4ddd157e7d090d10e648",
+      "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc/page-00000001.parquet": "ecf9433719cb6b085983fc77ecdeb19f17f7ee2ab2ab262edbbfe1547dff7c3f",
+      "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc/page-00000002.parquet": "cc5fc963dc3b6a3e8af9973e257f5e8bd43bb45e2fb603e450edcc8107fad300",
+      "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc/page-00000003.parquet": "38319fbf3bf3eadd90787741e78646452876d15c64a519112ac8abd551e03965"
+    },
+    "policy": {
+      "actions": "Amendment21 timely underlying/OCC notices and executable pre-action exit of options and assigned shares; no late restart",
+      "adverse_per_share_usd": [
+        "0.01",
+        "0.02"
+      ],
+      "assignment": "Source-supported early assignment/notification model required; debit full strike obligation, book 100 shares, liquidate next eligible open with equity fees/costs and actual cash/entitlement rules",
+      "cash": "No borrowing, premium-funded collateral, fractional contracts, interest, wheel, covered call, roll, overlap or averaging down",
+      "contract": "One standard American USD put on exactly 100 shares",
+      "entry": "Next regular open S; full strike * 100 plus all fee/assignment/stock-exit reserves <=min(.95 * decision equity,140,settled cash) before premium",
+      "execution": "Historical first BBO at/after 09:30 ET by 09:35, <=30s old, adequate size; buy ask plus cost, sell bid less cost floored zero; adverse verified tick rounding",
+      "exit": "Original S+5 or S+10 session open, at least two sessions before expiry; cash/closure delay cannot extend exit",
+      "final": "One eligible positive higher-cost training winner, ordered ties; sole higher-cost final, failed/interrupted consumed",
+      "ordered_variants": [
+        {
+          "hold_sessions": 5
+        },
+        {
+          "hold_sessions": 10
+        }
+      ],
+      "ranking": "Lowest 5-session return then ticker; select once, no fallback",
+      "risk": "Unchanged PRD6 and accepted PRD9; no activation, order, account, capital, permission or key change",
+      "selection": "Expiry first: 21-35 days after S, nearest 28 days, earlier tie; then highest listed strike <=.95 * prior raw close",
+      "signal": "Weekly final regular close: positive 63-session and negative 5-session total return, within partition",
+      "universe": [
+        "F",
+        "NOK",
+        "OPEN",
+        "PLUG",
+        "SNDL"
+      ],
+      "virtual_slot_usd": "140"
+    },
+    "proofs_sha256": {
+      "PRD.md": "f5a7892cce40ce18845ab020fe4282be7e7a9e0166a859f334f90fb94bb883f0",
+      "docs/research/10-options-data-harness-results.json": "1f52195da662ca762a1587eaa413f7986307804da7a5e102e42df50e2ae89473",
+      "docs/research/21-corporate-action-blackout.md": "e1e48e48b9740846418b1b2e1e2369c03c191817c3a197b96dd5e9fca3c20e22",
+      "docs/research/25-candidate-shortlist.md": "02650e13ee01afb2ce487943153c01ec12d3fdac14de2fce8c7c2bb1d87f2aa6",
+      "docs/research/36-c13-source-audit.json": "caf6d5072974a8d6aefd75225b335b36ec9bf95ce348b4a14990e1304412de58",
+      "docs/research/36-c13-source-plan.md": "dd45656e0a0a30e209ca5ac15b2fac37c390177dbb20754293a30dfa1aad9e40",
+      "docs/research/36-c13-source-review.json": "4f9e7e1aafc2a4d04c4b7cdb5198eaa72f6f33c98e0b85954161b595af42b374",
+      "docs/research/37-c14-source-plan.md": "f2da4a42e5be73effd6a03960db27fcf72cabdb76362a3cb835a0ad7cde6d2f6",
+      "docs/research/37-c14-source-review.json": "010c9ec7b4405148e642173d8cca2fd49bd37a4316c5df8a1b523e2a9642e4ca",
+      "docs/research/batch2-sources/2026-10-01-candidate-index.json": "d1265a01f57c801445f5ac074b3fd180c271ef66a81e61315a308a8fe6482193",
+      "docs/research/batch2-sources/2026-10-01-sources.md": "9321900da24624fb517bcd79ff464225b592bbb5f0cedfa3646118b503d3bde2"
+    },
+    "reused_source_identity": {
+      "automatic-exercise": {
+        "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+        "manifest_sha256": "a8406eb1ee5955254965871cac74750f67cb8e632670a6f90105e6e1e1bc9940",
+        "sha256": "c5cc6bff8e9a41b517227a601769697286aee2e6e8f7471b37381898532da27e"
+      },
+      "broker-options": {
+        "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+        "manifest_sha256": "0f6adb69ae11fb1614dc7a4fe2848ee9525a8f7fb986cdba796f936c75277b19",
+        "sha256": "77f438cc9fc8a29b986252c9e1a3e3e506feaf4e00fd2517afbd5d5409fb35f4"
+      },
+      "contracts": {
+        "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+        "manifest_sha256": "74f84a663b9d4c9b7a41bc15f7a16c75143867305823d569414e5d59cac0fe02",
+        "sha256": "c0f96dab512e941e42b77045f60306fc2ba5299016e74c00f1a72b1f2ef829ec"
+      },
+      "dne-support": {
+        "capture_code_sha256": "d3a396bb4e98744552a84b4c4297c6f44ff27ce133817fd4df49d38f678d19a5",
+        "manifest_sha256": "116bea8f23ea5ec0fe2deabac7c45ba8186b0dfc1980982105e631f0190085c8",
+        "sha256": "4bda77ebc5cfef55a0e832054d2708342d360c4f797138c5adf642b1c192c4ac"
+      },
+      "fee-schedule": {
+        "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+        "manifest_sha256": "e7595117e5ba11f3a09e3466eac7e90e882755c1fbc563190b183f1e50a40cd5",
+        "sha256": "7bc75e3cd86f5c1950f8ce1292049965280340a3cebe727ca7aee4a7d2d71b12"
+      },
+      "historical-data": {
+        "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+        "manifest_sha256": "a22faa8b062e329918d9b066cfcd5290506d79fd67925c2ece08d83b67b98e1d",
+        "sha256": "a75f6a614414990eae67ee0a3c6af7d6e2c134c4bb5acf653a396efce414d179"
+      },
+      "latest-quotes": {
+        "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+        "manifest_sha256": "efcb1a418c3daa1a21c80d843a5169f7d9c22135ab704815305462d55435a170",
+        "sha256": "4ca1625b562783a403fcba70248d23ee0a530128ae1de8c5b2d0ee7b8ad46e8e"
+      },
+      "option-fees": {
+        "capture_code_sha256": "d3a396bb4e98744552a84b4c4297c6f44ff27ce133817fd4df49d38f678d19a5",
+        "manifest_sha256": "16b3ae64be981bde7d7c20b0ead6de37d7a59e2b4cd195b448552306b7ba56ed",
+        "sha256": "3d43a922f8efa1602717fa589cddc1324c286f35968dedac58b54d13c6818dd8"
+      },
+      "option-ticks": {
+        "capture_code_sha256": "d3a396bb4e98744552a84b4c4297c6f44ff27ce133817fd4df49d38f678d19a5",
+        "manifest_sha256": "c6ed0fe9b75e55aca8754798d51d9dd429ebe59196f4bbafe5e1ead2d666e477",
+        "sha256": "4e1a5ffcfc8e0e6d7c13b88a0debcc0f556cd130c5f312ff5a5d7593f4a00118"
+      },
+      "paper-capability": {
+        "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+        "manifest_sha256": "49f3d51b311ac8870c11fb23dc21ffa036b722d479ad1bc28813de1cc7ec4985",
+        "sha256": "8764c40fcc8fe0c44c72519f19e0a514052cd2c4c5efdf0318d82c0ee3b46ebe"
+      },
+      "regulatory-fees": {
+        "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+        "manifest_sha256": "ebf33e59c9cc676e3979fdbb98f2153bfef89c57d73c180b0a8ad5be703154c6",
+        "sha256": "f201df68f825ec67150b7a8eeca83a9fcb35d8d5dff507a02ddc7408d751738a"
+      },
+      "trading-options": {
+        "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+        "manifest_sha256": "4d4a2d5f111bf19bb93f979f942f86986a6e1e2e173eed4f5078cbbf3920f136",
+        "sha256": "c9ebf018a55611424ec1ed23b5c0c1eab5d77e30e0927c5dbdddd2a4ea0ccde3"
+      }
+    }
+  },
+  "luck_p_value": null,
+  "not_completed_after_failed_gate": [
+    "Five-name historical underlying raw/adjusted prices and full action/delisting inventory",
+    "Causal OCC deliverable notices and executable Amendment21 exits",
+    "Historical chains, tradability, BBO/size/liquidation marks and ticks",
+    "Exact shared-account option/assignment/stock fees, reserves and completed cash settlement",
+    "Source-supported early assignment/notification model and stock liquidation lifecycle",
+    "Shared strategy reactor, signals, four training cases, winner selection and final"
+  ],
+  "paper_capability": {
+    "cash_adequacy_established": false,
+    "fields": {
+      "account_blocked": false,
+      "currency": "USD",
+      "options_approved_level": 3,
+      "options_trading_level": 3,
+      "status": "ACTIVE",
+      "trade_suspended_by_user": false,
+      "trading_blocked": false
+    },
+    "level1_available_at_capture": true,
+    "live_capability_checked": false,
+    "permission_change": false,
+    "retrieved_at": "2026-10-01T21:55:30.222789+00:00"
+  },
+  "planned_configurations": [
+    {
+      "adverse_per_share_usd": "0.01",
+      "hold_sessions": 5,
+      "state": "unattempted_source_gate_failed"
+    },
+    {
+      "adverse_per_share_usd": "0.02",
+      "hold_sessions": 5,
+      "state": "unattempted_source_gate_failed"
+    },
+    {
+      "adverse_per_share_usd": "0.01",
+      "hold_sessions": 10,
+      "state": "unattempted_source_gate_failed"
+    },
+    {
+      "adverse_per_share_usd": "0.02",
+      "hold_sessions": 10,
+      "state": "unattempted_source_gate_failed"
+    }
+  ],
+  "pnl": null,
+  "promotion": "none",
+  "regimes": null,
+  "source_reuse_review": {
+    "amendment21": "Full-period underlying and OCC deliverable-action inventory with timely notices and executable pre-action exits remains unadmitted; current metadata cannot substitute.",
+    "assignment": {
+      "constraint": "A DNE instruction for a long holder does not prevent assignment of our short put. No assumed no-early-assignment model, invented notification timestamp or guaranteed next-open liquidation.",
+      "missing": "Historical assignment/timing model and observations, full obligation/share booking, notification latency, executable liquidation, actions/entitlements and completed cash release.",
+      "model_admitted": false,
+      "observation": "Trading API documentation requires REST polling for assignment NTAs; paper NTAs become visible the following day even though positions/balances update immediately.",
+      "source_key": "trading-options",
+      "source_sha256": "c9ebf018a55611424ec1ed23b5c0c1eab5d77e30e0927c5dbdddd2a4ea0ccde3"
+    },
+    "candidate": "C14",
+    "capital": "Full strike * 100 plus all reserves must fit min(.95 * equity,140,settled cash) before premium. Necessary pre-reserve bound only; historical affordable/eligible counts remain null.",
+    "dataset_admitted": false,
+    "date": "2026-10-01",
+    "decision": "Hold at idea with real allocation 0; no outcomes, final use, forward activation, order or funding.",
+    "fees": {
+      "missing": "Exact single-short opening/closing, regulatory and assignment/stock-liquidation charges and reserves. Unspecified assignment fee is unknown, not zero.",
+      "model_admitted": false,
+      "revision": "2026-09-17",
+      "scope": "Reuse dated schedule and account/day per-type rounding review as current-fee historical counterfactual evidence only. C13 two-long-contract illustration is not a C14 fee model.",
+      "source_key": "fee-schedule",
+      "source_sha256": "7bc75e3cd86f5c1950f8ce1292049965280340a3cebe727ca7aee4a7d2d71b12"
+    },
+    "historical_execution": "Indicative current quotes and provider-unspecified bars/trades do not establish historical BBO, sizes, liquidation marks or full F/NOK/OPEN/PLUG/SNDL decision-time chains.",
+    "paper_capability": "Archived paper level 3 includes level-1 cash-secured puts; no live access, current cash adequacy, historical entitlement or permission change is established.",
+    "reconsideration": "Only materially new free historical execution/chain evidence permits reopening source admission; then complete all original assignment, fee, action, cash and execution prerequisites.",
+    "reused_audit": "docs/research/36-c13-source-audit.json",
+    "reused_audit_sha256": "caf6d5072974a8d6aefd75225b335b36ec9bf95ce348b4a14990e1304412de58",
+    "reused_source_review": "docs/research/36-c13-source-review.json",
+    "reused_source_review_sha256": "4f9e7e1aafc2a4d04c4b7cdb5198eaa72f6f33c98e0b85954161b595af42b374",
+    "reviewer": "OrangeCove",
+    "source_reuse": "All twelve original C13 captures retain their URL, retrieval time, raw/manifest/capture-code hashes; the eight-query options harness is re-audited locally. No new quote or account request."
+  },
+  "sources": {
+    "automatic-exercise": {
+      "bytes": 317967,
+      "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+      "content_type": "text/html; charset=utf-8",
+      "location": null,
+      "manifest_sha256": "a8406eb1ee5955254965871cac74750f67cb8e632670a6f90105e6e1e1bc9940",
+      "method": "GET",
+      "path": "data/history/c13-source-20261001/automatic-exercise/raw",
+      "response_url": "https://alpaca.markets/support/what-is-automatic-exercise",
+      "retrieved_at": "2026-10-01T21:55:28.411123+00:00",
+      "review": "Long calls may auto exercise into 100 shares and long puts require deliverable shares; discretionary broker liquidation/DNE is not guaranteed modeled execution.",
+      "sha256": "c5cc6bff8e9a41b517227a601769697286aee2e6e8f7471b37381898532da27e",
+      "status": 200,
+      "url": "https://alpaca.markets/support/what-is-automatic-exercise"
+    },
+    "broker-options": {
+      "bytes": 659984,
+      "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+      "content_type": "text/html; charset=utf-8",
+      "location": null,
+      "manifest_sha256": "0f6adb69ae11fb1614dc7a4fe2848ee9525a8f7fb986cdba796f936c75277b19",
+      "method": "GET",
+      "path": "data/history/c13-source-20261001/broker-options/raw",
+      "response_url": "https://docs.alpaca.markets/us/docs/options-trading-overview",
+      "retrieved_at": "2026-10-01T21:55:29.907706+00:00",
+      "review": "Partner Broker API documentation describes DNE endpoint. Its capabilities do not establish access through this individual Trading API account.",
+      "sha256": "77f438cc9fc8a29b986252c9e1a3e3e506feaf4e00fd2517afbd5d5409fb35f4",
+      "status": 200,
+      "url": "https://docs.alpaca.markets/us/docs/options-trading-overview"
+    },
+    "contracts": {
+      "bytes": 1027592,
+      "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+      "content_type": "text/html; charset=utf-8",
+      "location": null,
+      "manifest_sha256": "74f84a663b9d4c9b7a41bc15f7a16c75143867305823d569414e5d59cac0fe02",
+      "method": "GET",
+      "path": "data/history/c13-source-20261001/contracts/raw",
+      "response_url": "https://docs.alpaca.markets/us/reference/get-options-contracts",
+      "retrieved_at": "2026-10-01T21:55:26.210154+00:00",
+      "review": "Current active/inactive catalog with deliverables and ppind field. No decision-time listing or historical penny-program interval supplied.",
+      "sha256": "c0f96dab512e941e42b77045f60306fc2ba5299016e74c00f1a72b1f2ef829ec",
+      "status": 200,
+      "url": "https://docs.alpaca.markets/us/reference/get-options-contracts"
+    },
+    "dne-support": {
+      "bytes": 315842,
+      "capture_code_sha256": "d3a396bb4e98744552a84b4c4297c6f44ff27ce133817fd4df49d38f678d19a5",
+      "content_type": "text/html; charset=utf-8",
+      "location": null,
+      "manifest_sha256": "116bea8f23ea5ec0fe2deabac7c45ba8186b0dfc1980982105e631f0190085c8",
+      "method": "GET",
+      "path": "data/history/c13-source-20261001/dne-support/raw",
+      "response_url": "https://alpaca.markets/support/what-is-a-do-not-exercise-dne-and-how-can-i-place-a-dne-on-my-options-position",
+      "retrieved_at": "2026-10-01T21:56:47.455580+00:00",
+      "review": "September2025 Trading API support guidance requires DNE email before 15:00 ET on expiration day. No email was sent.",
+      "sha256": "4bda77ebc5cfef55a0e832054d2708342d360c4f797138c5adf642b1c192c4ac",
+      "status": 200,
+      "url": "https://alpaca.markets/support/what-is-a-do-not-exercise-dne-and-how-can-i-place-a-dne-on-my-options-position"
+    },
+    "fee-schedule": {
+      "bytes": 147035,
+      "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+      "content_type": "application/pdf",
+      "location": null,
+      "manifest_sha256": "e7595117e5ba11f3a09e3466eac7e90e882755c1fbc563190b183f1e50a40cd5",
+      "method": "GET",
+      "path": "data/history/c13-source-20261001/fee-schedule/raw",
+      "response_url": "https://files.alpaca.markets/disclosures/library/BrokFeeSched.pdf",
+      "retrieved_at": "2026-10-01T21:55:26.650200+00:00",
+      "review": "September17 2026 fee table: option pass-through fees on page3; daily per-account per-type rounding on page4. Pages3/4 rendered and visually reviewed.",
+      "sha256": "7bc75e3cd86f5c1950f8ce1292049965280340a3cebe727ca7aee4a7d2d71b12",
+      "status": 200,
+      "url": "https://files.alpaca.markets/disclosures/library/BrokFeeSched.pdf"
+    },
+    "historical-data": {
+      "bytes": 467446,
+      "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+      "content_type": "text/html; charset=utf-8",
+      "location": null,
+      "manifest_sha256": "a22faa8b062e329918d9b066cfcd5290506d79fd67925c2ece08d83b67b98e1d",
+      "method": "GET",
+      "path": "data/history/c13-source-20261001/historical-data/raw",
+      "response_url": "https://docs.alpaca.markets/us/docs/historical-option-data",
+      "retrieved_at": "2026-10-01T21:55:04.330841+00:00",
+      "review": "Free indicative feed modifies OPRA quotes and delays derived trades. History starts February 2024. Does not establish historical executable BBO.",
+      "sha256": "a75f6a614414990eae67ee0a3c6af7d6e2c134c4bb5acf653a396efce414d179",
+      "status": 200,
+      "url": "https://docs.alpaca.markets/us/docs/historical-option-data"
+    },
+    "latest-quotes": {
+      "bytes": 964754,
+      "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+      "content_type": "text/html; charset=utf-8",
+      "location": null,
+      "manifest_sha256": "efcb1a418c3daa1a21c80d843a5169f7d9c22135ab704815305462d55435a170",
+      "method": "GET",
+      "path": "data/history/c13-source-20261001/latest-quotes/raw",
+      "response_url": "https://docs.alpaca.markets/us/reference/optionlatestquotes",
+      "retrieved_at": "2026-10-01T21:55:26.463102+00:00",
+      "review": "Explicit indicative latest observations are modified quotes. No historical two-leg synchronized BBO sequence.",
+      "sha256": "4ca1625b562783a403fcba70248d23ee0a530128ae1de8c5b2d0ee7b8ad46e8e",
+      "status": 200,
+      "url": "https://docs.alpaca.markets/us/reference/optionlatestquotes"
+    },
+    "option-fees": {
+      "bytes": 315318,
+      "capture_code_sha256": "d3a396bb4e98744552a84b4c4297c6f44ff27ce133817fd4df49d38f678d19a5",
+      "content_type": "text/html; charset=utf-8",
+      "location": null,
+      "manifest_sha256": "16b3ae64be981bde7d7c20b0ead6de37d7a59e2b4cd195b448552306b7ba56ed",
+      "method": "GET",
+      "path": "data/history/c13-source-20261001/option-fees/raw",
+      "response_url": "https://alpaca.markets/support/what-are-the-fees-associated-with-options-trading",
+      "retrieved_at": "2026-10-01T21:56:47.225178+00:00",
+      "review": "Support directs fee questions to brokerage fee schedule. Does not independently specify an exercise/assignment charge.",
+      "sha256": "3d43a922f8efa1602717fa589cddc1324c286f35968dedac58b54d13c6818dd8",
+      "status": 200,
+      "url": "https://alpaca.markets/support/what-are-the-fees-associated-with-options-trading"
+    },
+    "option-ticks": {
+      "bytes": 320815,
+      "capture_code_sha256": "d3a396bb4e98744552a84b4c4297c6f44ff27ce133817fd4df49d38f678d19a5",
+      "content_type": "text/html; charset=utf-8",
+      "location": null,
+      "manifest_sha256": "c6ed0fe9b75e55aca8754798d51d9dd429ebe59196f4bbafe5e1ead2d666e477",
+      "method": "GET",
+      "path": "data/history/c13-source-20261001/option-ticks/raw",
+      "response_url": "https://alpaca.markets/support/options-pricing-increments-and-options-order-handling",
+      "retrieved_at": "2026-10-01T21:56:31.600706+00:00",
+      "review": "Standard and penny-program increments differ; current ppind and special NOM routing cannot establish historical per-series tick eligibility.",
+      "sha256": "4e1a5ffcfc8e0e6d7c13b88a0debcc0f556cd130c5f312ff5a5d7593f4a00118",
+      "status": 200,
+      "url": "https://alpaca.markets/support/options-pricing-increments-and-options-order-handling"
+    },
+    "paper-capability": {
+      "bytes": 182,
+      "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+      "manifest_sha256": "49f3d51b311ac8870c11fb23dc21ffa036b722d479ad1bc28813de1cc7ec4985",
+      "method": "GET",
+      "path": "data/history/c13-source-20261001/paper-capability/raw",
+      "response_url": "https://paper-api.alpaca.markets/v2/account",
+      "retention": "whitelisted projection only; full account body not retained",
+      "retrieved_at": "2026-10-01T21:55:30.222789+00:00",
+      "review": "Whitelisted current-paper capability projection from one existing SDK GET. Full body discarded, original response hash retained; no live entitlement, cash or margin inference.",
+      "sha256": "8764c40fcc8fe0c44c72519f19e0a514052cd2c4c5efdf0318d82c0ee3b46ebe",
+      "source_response_sha256": "80f441d3772088fad682b147e9df0a7383f47b61fd671e435a1a1cae07d3cb35",
+      "status": 200,
+      "url": "https://paper-api.alpaca.markets/v2/account"
+    },
+    "regulatory-fees": {
+      "bytes": 472287,
+      "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+      "content_type": "text/html; charset=utf-8",
+      "location": null,
+      "manifest_sha256": "ebf33e59c9cc676e3979fdbb98f2153bfef89c57d73c180b0a8ad5be703154c6",
+      "method": "GET",
+      "path": "data/history/c13-source-20261001/regulatory-fees/raw",
+      "response_url": "https://docs.alpaca.markets/us/docs/regulatory-fees",
+      "retrieved_at": "2026-10-01T21:55:27.937510+00:00",
+      "review": "Daily fee-account aggregation; refers to current brokerage schedule for rates. Generic list is not an alternative dated fee schedule.",
+      "sha256": "f201df68f825ec67150b7a8eeca83a9fcb35d8d5dff507a02ddc7408d751738a",
+      "status": 200,
+      "url": "https://docs.alpaca.markets/us/docs/regulatory-fees"
+    },
+    "trading-options": {
+      "bytes": 507230,
+      "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+      "content_type": "text/html; charset=utf-8",
+      "location": null,
+      "manifest_sha256": "4d4a2d5f111bf19bb93f979f942f86986a6e1e2e173eed4f5078cbbf3920f136",
+      "method": "GET",
+      "path": "data/history/c13-source-20261001/trading-options/raw",
+      "response_url": "https://docs.alpaca.markets/us/docs/options-trading",
+      "retrieved_at": "2026-10-01T21:55:25.954910+00:00",
+      "review": "Trading API requires whole contracts and level2 for long calls/puts; describes auto exercise and support-mediated DNE. No closing/exercise model is thereby implemented.",
+      "sha256": "c9ebf018a55611424ec1ed23b5c0c1eab5d77e30e0927c5dbdddd2a4ea0ccde3",
+      "status": 200,
+      "url": "https://docs.alpaca.markets/us/docs/options-trading"
+    }
+  },
+  "split": {
+    "data_end": "2026-10-01T00:00:00+00:00",
+    "data_start": "2024-02-01T00:00:00+00:00",
+    "dataset_key": "batch2-c14-v1:ac478626e8190478927612e69511b97fa58e51314d30f5909eb383223173defa",
+    "holdout_start": "2025-12-13T02:24:00+00:00",
+    "split": "70/30 by elapsed UTC time; end exclusive"
+  },
+  "status": "DATA_FAIL",
+  "strategy_id": 10085,
+  "strategy_outcomes_inspected": false,
+  "trade_count": null,
+  "training_cases_attempted": 0
+}

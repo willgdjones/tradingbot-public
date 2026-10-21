@@ -1,0 +1,168 @@
+{
+  "status": "PASS_STORED_LEDGER_AUDIT",
+  "price_replays": 0,
+  "trials": [
+    {
+      "trial_id": 4058,
+      "row_sha256": "6a9d648bdc16e17fb5d6f6bb5cfb41d10dc95f8511c08b1b22d646d5c69f8914",
+      "final_holdout": false,
+      "fills": 152,
+      "net_usd": "157.222723922973717",
+      "checks": [
+        "artifact",
+        "orders",
+        "rounded_limit_cap",
+        "partition",
+        "reference_open_cost",
+        "fee_book",
+        "dividend_prior_ownership",
+        "cash_release",
+        "cash_reconciliation",
+        "terminal_flat",
+        "no_rejects"
+      ],
+      "cash_reconciliation_tolerance_usd": "0.000152"
+    },
+    {
+      "trial_id": 4059,
+      "row_sha256": "aed03835cc840c0382959329fbabe2c2f01c7cc1fc99775f37559698bcbdd67a",
+      "final_holdout": false,
+      "fills": 151,
+      "net_usd": "155.690768826502778",
+      "checks": [
+        "artifact",
+        "orders",
+        "rounded_limit_cap",
+        "partition",
+        "reference_open_cost",
+        "fee_book",
+        "dividend_prior_ownership",
+        "cash_release",
+        "cash_reconciliation",
+        "terminal_flat",
+        "no_rejects"
+      ],
+      "cash_reconciliation_tolerance_usd": "0.000151"
+    },
+    {
+      "trial_id": 4060,
+      "row_sha256": "42971e113101b4d70eff0d5bc959bbf0eb46297d4e0a7b9752e1e3e43baa3456",
+      "final_holdout": false,
+      "fills": 166,
+      "net_usd": "118.705792018565287",
+      "checks": [
+        "artifact",
+        "orders",
+        "rounded_limit_cap",
+        "partition",
+        "reference_open_cost",
+        "fee_book",
+        "dividend_prior_ownership",
+        "cash_release",
+        "cash_reconciliation",
+        "terminal_flat",
+        "no_rejects"
+      ],
+      "cash_reconciliation_tolerance_usd": "0.000166"
+    },
+    {
+      "trial_id": 4061,
+      "row_sha256": "6a441f8c43feec9b51ee5ca0b309e40a51786a71c50db23339c45b02973f02b3",
+      "final_holdout": false,
+      "fills": 166,
+      "net_usd": "115.828820153477119",
+      "checks": [
+        "artifact",
+        "orders",
+        "rounded_limit_cap",
+        "partition",
+        "reference_open_cost",
+        "fee_book",
+        "dividend_prior_ownership",
+        "cash_release",
+        "cash_reconciliation",
+        "terminal_flat",
+        "no_rejects"
+      ],
+      "cash_reconciliation_tolerance_usd": "0.000166"
+    },
+    {
+      "trial_id": 4062,
+      "row_sha256": "c09d48075737b6cf21d0045adff489d2aa0f23a3a9cc7770dd02e78c52ec79a2",
+      "final_holdout": false,
+      "fills": 150,
+      "net_usd": "182.569107738449164",
+      "checks": [
+        "artifact",
+        "orders",
+        "rounded_limit_cap",
+        "partition",
+        "reference_open_cost",
+        "fee_book",
+        "dividend_prior_ownership",
+        "cash_release",
+        "cash_reconciliation",
+        "terminal_flat",
+        "no_rejects"
+      ],
+      "cash_reconciliation_tolerance_usd": "0.000150"
+    },
+    {
+      "trial_id": 4063,
+      "row_sha256": "800666695dc38bd4f4f721ac2c5a3b70f8be0a08af8d48dccff2fcdc03696975",
+      "final_holdout": false,
+      "fills": 148,
+      "net_usd": "181.451415816807435",
+      "checks": [
+        "artifact",
+        "orders",
+        "rounded_limit_cap",
+        "partition",
+        "reference_open_cost",
+        "fee_book",
+        "dividend_prior_ownership",
+        "cash_release",
+        "cash_reconciliation",
+        "terminal_flat",
+        "no_rejects"
+      ],
+      "cash_reconciliation_tolerance_usd": "0.000148"
+    },
+    {
+      "trial_id": 4066,
+      "row_sha256": "4f59ceb3415cfb6596b7b5a0388ad37a30d548080b7423747535b314213d4680",
+      "final_holdout": true,
+      "fills": 67,
+      "net_usd": "121.931558146245902",
+      "checks": [
+        "artifact",
+        "orders",
+        "rounded_limit_cap",
+        "partition",
+        "reference_open_cost",
+        "fee_book",
+        "dividend_prior_ownership",
+        "cash_release",
+        "cash_reconciliation",
+        "terminal_flat",
+        "no_rejects"
+      ],
+      "cash_reconciliation_tolerance_usd": "0.000067"
+    }
+  ],
+  "consumed_family_finals": [
+    4066
+  ],
+  "protected_trial_hashes": {
+    "3377": "961b96bbf4eba6a4908ad13ea53225c2c8d44726cf1134f0dcbd9219fa50aa36",
+    "3516": "7d5575738c4cc1b167a50c5d7e9b852031628911cb10d9c57533c76b6defe50b",
+    "4016": "e2c0aa9c739b26fde209dd35bd16cdc2d3f53021c4235a43d2ec8de2dd921fda",
+    "4017": "dabd7251700e5618aa07ade443ec013e531bd602d1853badc700bbf79474bed2",
+    "4018": "36b7c178ee6a1f588eabc2643b76a9838a8a86756ed0135b174c2ddb111d9040",
+    "4019": "76191f2806354c18b4aa1e252e588032a0b195700a357adf46e17dd60242a671",
+    "4020": "030b2dc8ed1d5cb4f686cabfa1b595402f3632cc0389d908d1ed9e5a349ffd25",
+    "4021": "b4de8e48a40e1dcc5a9806aae65c512f295d226cf8957dc4ec7fd6eb1ef0d7a9"
+  },
+  "selection_sha256": "48dc41d9ec859291a59457b10c47346e4810e863e402312770ba78d8686ca026",
+  "promotion": "none"
+}

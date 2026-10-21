@@ -1,0 +1,1246 @@
+[
+  {
+    "variant": "letf_1pct_2bp",
+    "trial_id": 1546,
+    "strategy_id": 1924,
+    "git_commit": "5eaef1cfd7f6de8ac607bf333c93410cc84a5ded",
+    "params": {
+      "variant": "letf_1pct_2bp",
+      "study_run_id": "letf-20260930-v1",
+      "threshold": ".01",
+      "slippage_bp_per_side": 2,
+      "symbols": [
+        "SPY",
+        "QQQ"
+      ],
+      "side": "long_only_cash_account",
+      "start": "2023-01-01",
+      "through": "2026-09-30",
+      "source_sha256": "ad70b5fb85a03b02010f349c544c95907b198659f233be00fa7668df8a34c58e",
+      "source_pages": 935,
+      "source_records": 62454,
+      "fx_sha256": "684f22325b80a05da42ca1de044e07ca5515c00a35386335f573c7cc08d6ab0f",
+      "virtual_cash_usd": "140",
+      "cash_buckets": 2,
+      "entry_notional_usd": "24.90",
+      "signal": "raw 15:30 minute open / previous daily close - 1",
+      "exit": "final_minute_open_scenario",
+      "fee_policy": "Alpaca retail 2026-09-17 current-cost counterfactual; account/day/type ceil cent",
+      "quality": {
+        "trading_sessions": 939,
+        "full_sessions": 931,
+        "early_closes_skipped": [
+          "2023-07-03",
+          "2023-11-24",
+          "2024-07-03",
+          "2024-11-29",
+          "2024-12-24",
+          "2025-07-03",
+          "2025-11-28",
+          "2025-12-24"
+        ],
+        "first_session_warmup_only": "2023-01-03",
+        "signal_sessions": 930,
+        "required_minute_bars": 55860,
+        "missing_required_bars": 0,
+        "cash_dividend_reference_rows": 30,
+        "corporate_action_reference_coverage": "vendor snapshot; no complete point-in-time coverage claim",
+        "large_adjustment_discontinuities": 0
+      }
+    },
+    "metrics": {
+      "trades": 305,
+      "net_usd": "-11.276810131155596160",
+      "fees_usd": "6.000000",
+      "mean_net_usd": "-0.03697314797100195462295081967",
+      "win_rate": "0.2131147540983606557377049180",
+      "one_sided_t_pvalue": 1.0,
+      "ledger_net_usd": "-11.276807",
+      "fills": 610,
+      "rejected_orders": 0,
+      "max_marked_drawdown_usd": "11.3376814587874191600000000",
+      "net_return_on_virtual_cash": "-0.08054862142857142857142857143",
+      "ending_cash_including_unsettled": "128.723189868844403840",
+      "year_by_exit": {
+        "2023": {
+          "trades": 89,
+          "net_usd": "-3.392187722200476600",
+          "fees_usd": "1.770000",
+          "mean_net_usd": "-0.038114468788769400",
+          "win_rate": "0.1797752808988764044943820225",
+          "one_sided_t_pvalue": 0.9999999997687825
+        },
+        "2024": {
+          "trades": 75,
+          "net_usd": "-3.371431006629532060",
+          "fees_usd": "1.500000",
+          "mean_net_usd": "-0.04495241342172709413333333333",
+          "win_rate": "0.16",
+          "one_sided_t_pvalue": 0.9999999943882868
+        },
+        "2025": {
+          "trades": 79,
+          "net_usd": "-3.043760806326256500",
+          "fees_usd": "1.440000",
+          "mean_net_usd": "-0.03852861780159818354430379747",
+          "win_rate": "0.2911392405063291139240506329",
+          "one_sided_t_pvalue": 0.999958424446141
+        },
+        "2026": {
+          "trades": 62,
+          "net_usd": "-1.469430595999331000",
+          "fees_usd": "1.290000",
+          "mean_net_usd": "-0.02370049348386017741935483871",
+          "win_rate": "0.2258064516129032258064516129",
+          "one_sided_t_pvalue": 0.9999959470292
+        }
+      },
+      "ending_marked_equity_usd": "128.723189868844403840",
+      "unrealized_pnl_usd": "0E-12",
+      "open_positions": {},
+      "halt_events": [],
+      "2016_2022": {
+        "trades": 0,
+        "net_usd": "0",
+        "fees_usd": "0",
+        "mean_net_usd": null,
+        "win_rate": null,
+        "one_sided_t_pvalue": null
+      },
+      "2023_2026": {
+        "trades": 305,
+        "net_usd": "-11.276810131155596160",
+        "fees_usd": "6.000000",
+        "mean_net_usd": "-0.03697314797100195462295081967",
+        "win_rate": "0.2131147540983606557377049180",
+        "one_sided_t_pvalue": 1.0
+      },
+      "2023_2024": {
+        "trades": 164,
+        "net_usd": "-6.763618728830008660",
+        "fees_usd": "3.270000",
+        "mean_net_usd": "-0.04124157761481712597560975610",
+        "win_rate": "0.1707317073170731707317073171",
+        "one_sided_t_pvalue": 1.0
+      },
+      "2025_2026": {
+        "trades": 141,
+        "net_usd": "-4.513191402325587500",
+        "fees_usd": "2.730000",
+        "mean_net_usd": "-0.03200844966188359929078014184",
+        "win_rate": "0.2624113475177304964539007092",
+        "one_sided_t_pvalue": 0.9999999621326384
+      },
+      "position_hours": 147.41666666666666,
+      "cash_reconciliation_tolerance_usd": "0.000305",
+      "per_symbol": {
+        "SPY": {
+          "trades": 108,
+          "net_usd": "-5.097614125370008840",
+          "fees_usd": "3.240000",
+          "mean_net_usd": "-0.04720013079046304481481481481",
+          "win_rate": "0.1481481481481481481481481481",
+          "one_sided_t_pvalue": 0.9999999999999972,
+          "signal_counts": {
+            "none": 736,
+            "short_unavailable": 86,
+            "long": 108
+          }
+        },
+        "QQQ": {
+          "trades": 197,
+          "net_usd": "-6.179196005785587320",
+          "fees_usd": "2.760000",
+          "mean_net_usd": "-0.03136647718672886964467005076",
+          "win_rate": "0.2487309644670050761421319797",
+          "one_sided_t_pvalue": 0.9999999999524786,
+          "signal_counts": {
+            "none": 596,
+            "short_unavailable": 137,
+            "long": 197
+          }
+        }
+      },
+      "day_aggregated_one_sided_t_pvalue": 0.9999999999999959,
+      "active_exit_days": 200,
+      "signal_counts": {
+        "none": 1332,
+        "short_unavailable": 223,
+        "long": 305
+      },
+      "signals_on_reported_ex_dividend_dates": 3,
+      "rejections_by_reason": {},
+      "cash_buckets_last_event": {
+        "0": {
+          "settled": "65.325535205695358580",
+          "unsettled": "0",
+          "available": "65.325535205695358580"
+        },
+        "1": {
+          "settled": "63.397654663149045260",
+          "unsettled": "0",
+          "available": "63.397654663149045260"
+        }
+      },
+      "execution_order": "SPY then QQQ for equal-time observations; fee attribution follows this order",
+      "quality": {
+        "trading_sessions": 939,
+        "full_sessions": 931,
+        "early_closes_skipped": [
+          "2023-07-03",
+          "2023-11-24",
+          "2024-07-03",
+          "2024-11-29",
+          "2024-12-24",
+          "2025-07-03",
+          "2025-11-28",
+          "2025-12-24"
+        ],
+        "first_session_warmup_only": "2023-01-03",
+        "signal_sessions": 930,
+        "required_minute_bars": 55860,
+        "missing_required_bars": 0,
+        "cash_dividend_reference_rows": 30,
+        "corporate_action_reference_coverage": "vendor snapshot; no complete point-in-time coverage claim",
+        "large_adjustment_discontinuities": 0
+      }
+    }
+  },
+  {
+    "variant": "letf_05pct_2bp",
+    "trial_id": 1547,
+    "strategy_id": 1925,
+    "git_commit": "5eaef1cfd7f6de8ac607bf333c93410cc84a5ded",
+    "params": {
+      "variant": "letf_05pct_2bp",
+      "study_run_id": "letf-20260930-v1",
+      "threshold": ".005",
+      "slippage_bp_per_side": 2,
+      "symbols": [
+        "SPY",
+        "QQQ"
+      ],
+      "side": "long_only_cash_account",
+      "start": "2023-01-01",
+      "through": "2026-09-30",
+      "source_sha256": "ad70b5fb85a03b02010f349c544c95907b198659f233be00fa7668df8a34c58e",
+      "source_pages": 935,
+      "source_records": 62454,
+      "fx_sha256": "684f22325b80a05da42ca1de044e07ca5515c00a35386335f573c7cc08d6ab0f",
+      "virtual_cash_usd": "140",
+      "cash_buckets": 2,
+      "entry_notional_usd": "24.90",
+      "signal": "raw 15:30 minute open / previous daily close - 1",
+      "exit": "final_minute_open_scenario",
+      "fee_policy": "Alpaca retail 2026-09-17 current-cost counterfactual; account/day/type ceil cent",
+      "quality": {
+        "trading_sessions": 939,
+        "full_sessions": 931,
+        "early_closes_skipped": [
+          "2023-07-03",
+          "2023-11-24",
+          "2024-07-03",
+          "2024-11-29",
+          "2024-12-24",
+          "2025-07-03",
+          "2025-11-28",
+          "2025-12-24"
+        ],
+        "first_session_warmup_only": "2023-01-03",
+        "signal_sessions": 930,
+        "required_minute_bars": 55860,
+        "missing_required_bars": 0,
+        "cash_dividend_reference_rows": 30,
+        "corporate_action_reference_coverage": "vendor snapshot; no complete point-in-time coverage claim",
+        "large_adjustment_discontinuities": 0
+      }
+    },
+    "metrics": {
+      "trades": 585,
+      "net_usd": "-18.221745313106216620",
+      "fees_usd": "10.050000",
+      "mean_net_usd": "-0.03114828258650635319658119658",
+      "win_rate": "0.2376068376068376068376068376",
+      "one_sided_t_pvalue": 1.0,
+      "ledger_net_usd": "-18.221741",
+      "fills": 1170,
+      "rejected_orders": 2,
+      "max_marked_drawdown_usd": "18.3715225694426098800000000",
+      "net_return_on_virtual_cash": "-0.1301552928571428571428571429",
+      "ending_cash_including_unsettled": "121.778254686893783380",
+      "year_by_exit": {
+        "2023": {
+          "trades": 160,
+          "net_usd": "-4.940192555489661940",
+          "fees_usd": "2.820000",
+          "mean_net_usd": "-0.030876203471810387125",
+          "win_rate": "0.24375",
+          "one_sided_t_pvalue": 0.999999989900486
+        },
+        "2024": {
+          "trades": 144,
+          "net_usd": "-5.024894325175324560",
+          "fees_usd": "2.550000",
+          "mean_net_usd": "-0.03489509948038419833333333333",
+          "win_rate": "0.2222222222222222222222222222",
+          "one_sided_t_pvalue": 0.9999999987261681
+        },
+        "2025": {
+          "trades": 159,
+          "net_usd": "-5.573391445197469900",
+          "fees_usd": "2.670000",
+          "mean_net_usd": "-0.03505277638488974779874213836",
+          "win_rate": "0.2264150943396226415094339623",
+          "one_sided_t_pvalue": 0.9999999986158514
+        },
+        "2026": {
+          "trades": 122,
+          "net_usd": "-2.683266987243760220",
+          "fees_usd": "2.010000",
+          "mean_net_usd": "-0.02199399169871934606557377049",
+          "win_rate": "0.2622950819672131147540983607",
+          "one_sided_t_pvalue": 0.9999999982342552
+        }
+      },
+      "ending_marked_equity_usd": "121.778254686893783380",
+      "unrealized_pnl_usd": "0E-12",
+      "open_positions": {},
+      "halt_events": [],
+      "2016_2022": {
+        "trades": 0,
+        "net_usd": "0",
+        "fees_usd": "0",
+        "mean_net_usd": null,
+        "win_rate": null,
+        "one_sided_t_pvalue": null
+      },
+      "2023_2026": {
+        "trades": 585,
+        "net_usd": "-18.221745313106216620",
+        "fees_usd": "10.050000",
+        "mean_net_usd": "-0.03114828258650635319658119658",
+        "win_rate": "0.2376068376068376068376068376",
+        "one_sided_t_pvalue": 1.0
+      },
+      "2023_2024": {
+        "trades": 304,
+        "net_usd": "-9.965086880664986500",
+        "fees_usd": "5.370000",
+        "mean_net_usd": "-0.03277989105481903453947368421",
+        "win_rate": "0.2335526315789473684210526316",
+        "one_sided_t_pvalue": 0.9999999999999999
+      },
+      "2025_2026": {
+        "trades": 281,
+        "net_usd": "-8.256658432441230120",
+        "fees_usd": "4.680000",
+        "mean_net_usd": "-0.02938312609409690434163701068",
+        "win_rate": "0.2419928825622775800711743772",
+        "one_sided_t_pvalue": 0.9999999999999988
+      },
+      "position_hours": 282.75,
+      "cash_reconciliation_tolerance_usd": "0.000585",
+      "per_symbol": {
+        "SPY": {
+          "trades": 265,
+          "net_usd": "-11.137240952041766160",
+          "fees_usd": "7.950000",
+          "mean_net_usd": "-0.04202732434732741947169811321",
+          "win_rate": "0.1396226415094339622641509434",
+          "one_sided_t_pvalue": 1.0,
+          "signal_counts": {
+            "long": 266,
+            "short_unavailable": 192,
+            "none": 472
+          }
+        },
+        "QQQ": {
+          "trades": 320,
+          "net_usd": "-7.084504361064450460",
+          "fees_usd": "2.100000",
+          "mean_net_usd": "-0.0221390761283264076875",
+          "win_rate": "0.31875",
+          "one_sided_t_pvalue": 0.999999990773972,
+          "signal_counts": {
+            "none": 368,
+            "short_unavailable": 241,
+            "long": 321
+          }
+        }
+      },
+      "day_aggregated_one_sided_t_pvalue": 1.0,
+      "active_exit_days": 335,
+      "signal_counts": {
+        "long": 587,
+        "none": 840,
+        "short_unavailable": 433
+      },
+      "signals_on_reported_ex_dividend_dates": 10,
+      "rejections_by_reason": {
+        "insufficient settled cash in assigned half": 2
+      },
+      "cash_buckets_last_event": {
+        "0": {
+          "settled": "37.626587415602340340",
+          "unsettled": "24.804946286056458000",
+          "available": "37.626587415602340340"
+        },
+        "1": {
+          "settled": "59.346720985234985040",
+          "unsettled": "0",
+          "available": "59.346720985234985040"
+        }
+      },
+      "execution_order": "SPY then QQQ for equal-time observations; fee attribution follows this order",
+      "quality": {
+        "trading_sessions": 939,
+        "full_sessions": 931,
+        "early_closes_skipped": [
+          "2023-07-03",
+          "2023-11-24",
+          "2024-07-03",
+          "2024-11-29",
+          "2024-12-24",
+          "2025-07-03",
+          "2025-11-28",
+          "2025-12-24"
+        ],
+        "first_session_warmup_only": "2023-01-03",
+        "signal_sessions": 930,
+        "required_minute_bars": 55860,
+        "missing_required_bars": 0,
+        "cash_dividend_reference_rows": 30,
+        "corporate_action_reference_coverage": "vendor snapshot; no complete point-in-time coverage claim",
+        "large_adjustment_discontinuities": 0
+      }
+    }
+  },
+  {
+    "variant": "letf_15pct_2bp",
+    "trial_id": 1710,
+    "strategy_id": 2040,
+    "git_commit": "5eaef1cfd7f6de8ac607bf333c93410cc84a5ded",
+    "params": {
+      "variant": "letf_15pct_2bp",
+      "study_run_id": "letf-20260930-v1",
+      "threshold": ".015",
+      "slippage_bp_per_side": 2,
+      "symbols": [
+        "SPY",
+        "QQQ"
+      ],
+      "side": "long_only_cash_account",
+      "start": "2023-01-01",
+      "through": "2026-09-30",
+      "source_sha256": "ad70b5fb85a03b02010f349c544c95907b198659f233be00fa7668df8a34c58e",
+      "source_pages": 935,
+      "source_records": 62454,
+      "fx_sha256": "684f22325b80a05da42ca1de044e07ca5515c00a35386335f573c7cc08d6ab0f",
+      "virtual_cash_usd": "140",
+      "cash_buckets": 2,
+      "entry_notional_usd": "24.90",
+      "signal": "raw 15:30 minute open / previous daily close - 1",
+      "exit": "final_minute_open_scenario",
+      "fee_policy": "Alpaca retail 2026-09-17 current-cost counterfactual; account/day/type ceil cent",
+      "quality": {
+        "trading_sessions": 939,
+        "full_sessions": 931,
+        "early_closes_skipped": [
+          "2023-07-03",
+          "2023-11-24",
+          "2024-07-03",
+          "2024-11-29",
+          "2024-12-24",
+          "2025-07-03",
+          "2025-11-28",
+          "2025-12-24"
+        ],
+        "first_session_warmup_only": "2023-01-03",
+        "signal_sessions": 930,
+        "required_minute_bars": 55860,
+        "missing_required_bars": 0,
+        "cash_dividend_reference_rows": 30,
+        "corporate_action_reference_coverage": "vendor snapshot; no complete point-in-time coverage claim",
+        "large_adjustment_discontinuities": 0
+      }
+    },
+    "metrics": {
+      "trades": 139,
+      "net_usd": "-4.172051522805981120",
+      "fees_usd": "3.060000",
+      "mean_net_usd": "-0.03001475915687756201438848921",
+      "win_rate": "0.2661870503597122302158273381",
+      "one_sided_t_pvalue": 0.999999932273235,
+      "ledger_net_usd": "-4.172050",
+      "fills": 278,
+      "rejected_orders": 0,
+      "max_marked_drawdown_usd": "4.2329228504378041200000000",
+      "net_return_on_virtual_cash": "-0.02980035714285714285714285714",
+      "ending_cash_including_unsettled": "135.827948477194018880",
+      "year_by_exit": {
+        "2023": {
+          "trades": 39,
+          "net_usd": "-1.652112333273894200",
+          "fees_usd": "0.900000",
+          "mean_net_usd": "-0.04236185469933062051282051282",
+          "win_rate": "0.1538461538461538461538461538",
+          "one_sided_t_pvalue": 0.9999990114195009
+        },
+        "2024": {
+          "trades": 29,
+          "net_usd": "-1.476599663574513420",
+          "fees_usd": "0.690000",
+          "mean_net_usd": "-0.05091722977843149724137931034",
+          "win_rate": "0.2068965517241379310344827586",
+          "one_sided_t_pvalue": 0.9997650340857016
+        },
+        "2025": {
+          "trades": 37,
+          "net_usd": "-0.522121473904408500",
+          "fees_usd": "0.750000",
+          "mean_net_usd": "-0.01411139118660563513513513514",
+          "win_rate": "0.4324324324324324324324324324",
+          "one_sided_t_pvalue": 0.8416383233497449
+        },
+        "2026": {
+          "trades": 34,
+          "net_usd": "-0.521218052053165000",
+          "fees_usd": "0.720000",
+          "mean_net_usd": "-0.01532994270744602941176470588",
+          "win_rate": "0.2647058823529411764705882353",
+          "one_sided_t_pvalue": 0.9876481453914767
+        }
+      },
+      "ending_marked_equity_usd": "135.827948477194018880",
+      "unrealized_pnl_usd": "0E-12",
+      "open_positions": {},
+      "halt_events": [],
+      "2016_2022": {
+        "trades": 0,
+        "net_usd": "0",
+        "fees_usd": "0",
+        "mean_net_usd": null,
+        "win_rate": null,
+        "one_sided_t_pvalue": null
+      },
+      "2023_2026": {
+        "trades": 139,
+        "net_usd": "-4.172051522805981120",
+        "fees_usd": "3.060000",
+        "mean_net_usd": "-0.03001475915687756201438848921",
+        "win_rate": "0.2661870503597122302158273381",
+        "one_sided_t_pvalue": 0.999999932273235
+      },
+      "2023_2024": {
+        "trades": 68,
+        "net_usd": "-3.128711996848407620",
+        "fees_usd": "1.590000",
+        "mean_net_usd": "-0.04601047054188834735294117647",
+        "win_rate": "0.1764705882352941176470588235",
+        "one_sided_t_pvalue": 0.9999999963674577
+      },
+      "2025_2026": {
+        "trades": 71,
+        "net_usd": "-1.043339525957573500",
+        "fees_usd": "1.470000",
+        "mean_net_usd": "-0.01469492290081089436619718310",
+        "win_rate": "0.3521126760563380281690140845",
+        "one_sided_t_pvalue": 0.9675929972422694
+      },
+      "position_hours": 67.18333333333334,
+      "cash_reconciliation_tolerance_usd": "0.000139",
+      "per_symbol": {
+        "SPY": {
+          "trades": 37,
+          "net_usd": "-1.318458239528218000",
+          "fees_usd": "1.110000",
+          "mean_net_usd": "-0.03563400647373562162162162162",
+          "win_rate": "0.1891891891891891891891891892",
+          "one_sided_t_pvalue": 0.9996070154642871,
+          "signal_counts": {
+            "none": 855,
+            "long": 37,
+            "short_unavailable": 38
+          }
+        },
+        "QQQ": {
+          "trades": 102,
+          "net_usd": "-2.853593283277763120",
+          "fees_usd": "1.950000",
+          "mean_net_usd": "-0.02797640473801728549019607843",
+          "win_rate": "0.2941176470588235294117647059",
+          "one_sided_t_pvalue": 0.9999817881359846,
+          "signal_counts": {
+            "none": 744,
+            "long": 102,
+            "short_unavailable": 84
+          }
+        }
+      },
+      "day_aggregated_one_sided_t_pvalue": 0.9999949434443112,
+      "active_exit_days": 102,
+      "signal_counts": {
+        "none": 1599,
+        "long": 139,
+        "short_unavailable": 122
+      },
+      "signals_on_reported_ex_dividend_dates": 1,
+      "rejections_by_reason": {},
+      "cash_buckets_last_event": {
+        "0": {
+          "settled": "68.610079019552697480",
+          "unsettled": "0",
+          "available": "68.610079019552697480"
+        },
+        "1": {
+          "settled": "67.217869457641321400",
+          "unsettled": "0",
+          "available": "67.217869457641321400"
+        }
+      },
+      "execution_order": "SPY then QQQ for equal-time observations; fee attribution follows this order",
+      "quality": {
+        "trading_sessions": 939,
+        "full_sessions": 931,
+        "early_closes_skipped": [
+          "2023-07-03",
+          "2023-11-24",
+          "2024-07-03",
+          "2024-11-29",
+          "2024-12-24",
+          "2025-07-03",
+          "2025-11-28",
+          "2025-12-24"
+        ],
+        "first_session_warmup_only": "2023-01-03",
+        "signal_sessions": 930,
+        "required_minute_bars": 55860,
+        "missing_required_bars": 0,
+        "cash_dividend_reference_rows": 30,
+        "corporate_action_reference_coverage": "vendor snapshot; no complete point-in-time coverage claim",
+        "large_adjustment_discontinuities": 0
+      }
+    }
+  },
+  {
+    "variant": "letf_1pct_5bp",
+    "trial_id": 1753,
+    "strategy_id": 2099,
+    "git_commit": "5eaef1cfd7f6de8ac607bf333c93410cc84a5ded",
+    "params": {
+      "variant": "letf_1pct_5bp",
+      "study_run_id": "letf-20260930-v1",
+      "threshold": ".01",
+      "slippage_bp_per_side": 5,
+      "symbols": [
+        "SPY",
+        "QQQ"
+      ],
+      "side": "long_only_cash_account",
+      "start": "2023-01-01",
+      "through": "2026-09-30",
+      "source_sha256": "ad70b5fb85a03b02010f349c544c95907b198659f233be00fa7668df8a34c58e",
+      "source_pages": 935,
+      "source_records": 62454,
+      "fx_sha256": "684f22325b80a05da42ca1de044e07ca5515c00a35386335f573c7cc08d6ab0f",
+      "virtual_cash_usd": "140",
+      "cash_buckets": 2,
+      "entry_notional_usd": "24.90",
+      "signal": "raw 15:30 minute open / previous daily close - 1",
+      "exit": "final_minute_open_scenario",
+      "fee_policy": "Alpaca retail 2026-09-17 current-cost counterfactual; account/day/type ceil cent",
+      "quality": {
+        "trading_sessions": 939,
+        "full_sessions": 931,
+        "early_closes_skipped": [
+          "2023-07-03",
+          "2023-11-24",
+          "2024-07-03",
+          "2024-11-29",
+          "2024-12-24",
+          "2025-07-03",
+          "2025-11-28",
+          "2025-12-24"
+        ],
+        "first_session_warmup_only": "2023-01-03",
+        "signal_sessions": 930,
+        "required_minute_bars": 55860,
+        "missing_required_bars": 0,
+        "cash_dividend_reference_rows": 30,
+        "corporate_action_reference_coverage": "vendor snapshot; no complete point-in-time coverage claim",
+        "large_adjustment_discontinuities": 0
+      }
+    },
+    "metrics": {
+      "trades": 305,
+      "net_usd": "-15.828927003743232700",
+      "fees_usd": "6.000000",
+      "mean_net_usd": "-0.05189812132374830393442622951",
+      "win_rate": "0.1344262295081967213114754098",
+      "one_sided_t_pvalue": 1.0,
+      "ledger_net_usd": "-15.828925",
+      "fills": 610,
+      "rejected_orders": 0,
+      "max_marked_drawdown_usd": "15.8748454276753702000000000",
+      "net_return_on_virtual_cash": "-0.11306375",
+      "ending_cash_including_unsettled": "124.171072996256767300",
+      "year_by_exit": {
+        "2023": {
+          "trades": 89,
+          "net_usd": "-4.720455244553341000",
+          "fees_usd": "1.770000",
+          "mean_net_usd": "-0.05303882297250944943820224719",
+          "win_rate": "0.1235955056179775280898876404",
+          "one_sided_t_pvalue": 0.9999999999999994
+        },
+        "2024": {
+          "trades": 75,
+          "net_usd": "-4.490454438984912950",
+          "fees_usd": "1.500000",
+          "mean_net_usd": "-0.05987272585313217266666666667",
+          "win_rate": "0.1066666666666666666666666667",
+          "one_sided_t_pvalue": 0.9999999999994513
+        },
+        "2025": {
+          "trades": 79,
+          "net_usd": "-4.222698383729921250",
+          "fees_usd": "1.440000",
+          "mean_net_usd": "-0.05345187827506229430379746835",
+          "win_rate": "0.1772151898734177215189873418",
+          "one_sided_t_pvalue": 0.9999999220414625
+        },
+        "2026": {
+          "trades": 62,
+          "net_usd": "-2.395318936475057500",
+          "fees_usd": "1.290000",
+          "mean_net_usd": "-0.03863417639475899193548387097",
+          "win_rate": "0.1290322580645161290322580645",
+          "one_sided_t_pvalue": 0.9999999999733254
+        }
+      },
+      "ending_marked_equity_usd": "124.171072996256767300",
+      "unrealized_pnl_usd": "0E-12",
+      "open_positions": {},
+      "halt_events": [],
+      "2016_2022": {
+        "trades": 0,
+        "net_usd": "0",
+        "fees_usd": "0",
+        "mean_net_usd": null,
+        "win_rate": null,
+        "one_sided_t_pvalue": null
+      },
+      "2023_2026": {
+        "trades": 305,
+        "net_usd": "-15.828927003743232700",
+        "fees_usd": "6.000000",
+        "mean_net_usd": "-0.05189812132374830393442622951",
+        "win_rate": "0.1344262295081967213114754098",
+        "one_sided_t_pvalue": 1.0
+      },
+      "2023_2024": {
+        "trades": 164,
+        "net_usd": "-9.210909683538253950",
+        "fees_usd": "3.270000",
+        "mean_net_usd": "-0.05616408343620886554878048780",
+        "win_rate": "0.1158536585365853658536585366",
+        "one_sided_t_pvalue": 1.0
+      },
+      "2025_2026": {
+        "trades": 141,
+        "net_usd": "-6.618017320204978750",
+        "fees_usd": "2.730000",
+        "mean_net_usd": "-0.04693629305109914007092198582",
+        "win_rate": "0.1560283687943262411347517730",
+        "one_sided_t_pvalue": 0.9999999999999668
+      },
+      "position_hours": 147.41666666666666,
+      "cash_reconciliation_tolerance_usd": "0.000305",
+      "per_symbol": {
+        "SPY": {
+          "trades": 108,
+          "net_usd": "-6.709522004812140200",
+          "fees_usd": "3.240000",
+          "mean_net_usd": "-0.06212520374826055740740740741",
+          "win_rate": "0.07407407407407407407407407407",
+          "one_sided_t_pvalue": 1.0,
+          "signal_counts": {
+            "none": 736,
+            "short_unavailable": 86,
+            "long": 108
+          }
+        },
+        "QQQ": {
+          "trades": 197,
+          "net_usd": "-9.119404998931092500",
+          "fees_usd": "2.760000",
+          "mean_net_usd": "-0.04629139593366036802030456853",
+          "win_rate": "0.1675126903553299492385786802",
+          "one_sided_t_pvalue": 1.0,
+          "signal_counts": {
+            "none": 596,
+            "short_unavailable": 137,
+            "long": 197
+          }
+        }
+      },
+      "day_aggregated_one_sided_t_pvalue": 1.0,
+      "active_exit_days": 200,
+      "signal_counts": {
+        "none": 1332,
+        "short_unavailable": 223,
+        "long": 305
+      },
+      "signals_on_reported_ex_dividend_dates": 3,
+      "rejections_by_reason": {},
+      "cash_buckets_last_event": {
+        "0": {
+          "settled": "63.056376308115775000",
+          "unsettled": "0",
+          "available": "63.056376308115775000"
+        },
+        "1": {
+          "settled": "61.114696688140992300",
+          "unsettled": "0",
+          "available": "61.114696688140992300"
+        }
+      },
+      "execution_order": "SPY then QQQ for equal-time observations; fee attribution follows this order",
+      "quality": {
+        "trading_sessions": 939,
+        "full_sessions": 931,
+        "early_closes_skipped": [
+          "2023-07-03",
+          "2023-11-24",
+          "2024-07-03",
+          "2024-11-29",
+          "2024-12-24",
+          "2025-07-03",
+          "2025-11-28",
+          "2025-12-24"
+        ],
+        "first_session_warmup_only": "2023-01-03",
+        "signal_sessions": 930,
+        "required_minute_bars": 55860,
+        "missing_required_bars": 0,
+        "cash_dividend_reference_rows": 30,
+        "corporate_action_reference_coverage": "vendor snapshot; no complete point-in-time coverage claim",
+        "large_adjustment_discontinuities": 0
+      }
+    }
+  },
+  {
+    "variant": "letf_1pct_10bp",
+    "trial_id": 1754,
+    "strategy_id": 2114,
+    "git_commit": "5eaef1cfd7f6de8ac607bf333c93410cc84a5ded",
+    "params": {
+      "variant": "letf_1pct_10bp",
+      "study_run_id": "letf-20260930-v1",
+      "threshold": ".01",
+      "slippage_bp_per_side": 10,
+      "symbols": [
+        "SPY",
+        "QQQ"
+      ],
+      "side": "long_only_cash_account",
+      "start": "2023-01-01",
+      "through": "2026-09-30",
+      "source_sha256": "ad70b5fb85a03b02010f349c544c95907b198659f233be00fa7668df8a34c58e",
+      "source_pages": 935,
+      "source_records": 62454,
+      "fx_sha256": "684f22325b80a05da42ca1de044e07ca5515c00a35386335f573c7cc08d6ab0f",
+      "virtual_cash_usd": "140",
+      "cash_buckets": 2,
+      "entry_notional_usd": "24.90",
+      "signal": "raw 15:30 minute open / previous daily close - 1",
+      "exit": "final_minute_open_scenario",
+      "fee_policy": "Alpaca retail 2026-09-17 current-cost counterfactual; account/day/type ceil cent",
+      "quality": {
+        "trading_sessions": 939,
+        "full_sessions": 931,
+        "early_closes_skipped": [
+          "2023-07-03",
+          "2023-11-24",
+          "2024-07-03",
+          "2024-11-29",
+          "2024-12-24",
+          "2025-07-03",
+          "2025-11-28",
+          "2025-12-24"
+        ],
+        "first_session_warmup_only": "2023-01-03",
+        "signal_sessions": 930,
+        "required_minute_bars": 55860,
+        "missing_required_bars": 0,
+        "cash_dividend_reference_rows": 30,
+        "corporate_action_reference_coverage": "vendor snapshot; no complete point-in-time coverage claim",
+        "large_adjustment_discontinuities": 0
+      }
+    },
+    "metrics": {
+      "trades": 305,
+      "net_usd": "-23.409734191486772100",
+      "fees_usd": "6.000000",
+      "mean_net_usd": "-0.07675322685733367901639344262",
+      "win_rate": "0.07540983606557377049180327869",
+      "one_sided_t_pvalue": 1.0,
+      "ledger_net_usd": "-23.409736",
+      "fills": 610,
+      "rejected_orders": 0,
+      "max_marked_drawdown_usd": "23.4307498175299971000000000",
+      "net_return_on_virtual_cash": "-0.1672124",
+      "ending_cash_including_unsettled": "116.590265808513227900",
+      "year_by_exit": {
+        "2023": {
+          "trades": 89,
+          "net_usd": "-6.932475434075629000",
+          "fees_usd": "1.770000",
+          "mean_net_usd": "-0.07789298240534414606741573034",
+          "win_rate": "0.04494382022471910112359550562",
+          "one_sided_t_pvalue": 1.0
+        },
+        "2024": {
+          "trades": 75,
+          "net_usd": "-6.354013844199763100",
+          "fees_usd": "1.500000",
+          "mean_net_usd": "-0.08472018458933017466666666667",
+          "win_rate": "0.06666666666666666666666666667",
+          "one_sided_t_pvalue": 1.0
+        },
+        "2025": {
+          "trades": 79,
+          "net_usd": "-6.186013636459165000",
+          "fees_usd": "1.440000",
+          "mean_net_usd": "-0.07830397008176158227848101266",
+          "win_rate": "0.1392405063291139240506329114",
+          "one_sided_t_pvalue": 0.9999999999993795
+        },
+        "2026": {
+          "trades": 62,
+          "net_usd": "-3.937231276752215000",
+          "fees_usd": "1.290000",
+          "mean_net_usd": "-0.06350373027019701612903225806",
+          "win_rate": "0.04838709677419354838709677419",
+          "one_sided_t_pvalue": 1.0
+        }
+      },
+      "ending_marked_equity_usd": "116.590265808513227900",
+      "unrealized_pnl_usd": "0E-12",
+      "open_positions": {},
+      "halt_events": [],
+      "2016_2022": {
+        "trades": 0,
+        "net_usd": "0",
+        "fees_usd": "0",
+        "mean_net_usd": null,
+        "win_rate": null,
+        "one_sided_t_pvalue": null
+      },
+      "2023_2026": {
+        "trades": 305,
+        "net_usd": "-23.409734191486772100",
+        "fees_usd": "6.000000",
+        "mean_net_usd": "-0.07675322685733367901639344262",
+        "win_rate": "0.07540983606557377049180327869",
+        "one_sided_t_pvalue": 1.0
+      },
+      "2023_2024": {
+        "trades": 164,
+        "net_usd": "-13.286489278275392100",
+        "fees_usd": "3.270000",
+        "mean_net_usd": "-0.08101517852606946402439024390",
+        "win_rate": "0.05487804878048780487804878049",
+        "one_sided_t_pvalue": 1.0
+      },
+      "2025_2026": {
+        "trades": 141,
+        "net_usd": "-10.123244913211380000",
+        "fees_usd": "2.730000",
+        "mean_net_usd": "-0.07179606321426510638297872340",
+        "win_rate": "0.09929078014184397163120567376",
+        "one_sided_t_pvalue": 1.0
+      },
+      "position_hours": 147.41666666666666,
+      "cash_reconciliation_tolerance_usd": "0.000305",
+      "per_symbol": {
+        "SPY": {
+          "trades": 108,
+          "net_usd": "-9.393886733505729800",
+          "fees_usd": "3.240000",
+          "mean_net_usd": "-0.08698043271764564629629629630",
+          "win_rate": "0.04629629629629629629629629630",
+          "one_sided_t_pvalue": 1.0,
+          "signal_counts": {
+            "none": 736,
+            "short_unavailable": 86,
+            "long": 108
+          }
+        },
+        "QQQ": {
+          "trades": 197,
+          "net_usd": "-14.015847457981042300",
+          "fees_usd": "2.760000",
+          "mean_net_usd": "-0.07114643379685808274111675127",
+          "win_rate": "0.09137055837563451776649746193",
+          "one_sided_t_pvalue": 1.0,
+          "signal_counts": {
+            "none": 596,
+            "short_unavailable": 137,
+            "long": 197
+          }
+        }
+      },
+      "day_aggregated_one_sided_t_pvalue": 1.0,
+      "active_exit_days": 200,
+      "signal_counts": {
+        "none": 1332,
+        "short_unavailable": 223,
+        "long": 305
+      },
+      "signals_on_reported_ex_dividend_dates": 3,
+      "rejections_by_reason": {},
+      "cash_buckets_last_event": {
+        "0": {
+          "settled": "59.277477991042524700",
+          "unsettled": "0",
+          "available": "59.277477991042524700"
+        },
+        "1": {
+          "settled": "57.312787817470703200",
+          "unsettled": "0",
+          "available": "57.312787817470703200"
+        }
+      },
+      "execution_order": "SPY then QQQ for equal-time observations; fee attribution follows this order",
+      "quality": {
+        "trading_sessions": 939,
+        "full_sessions": 931,
+        "early_closes_skipped": [
+          "2023-07-03",
+          "2023-11-24",
+          "2024-07-03",
+          "2024-11-29",
+          "2024-12-24",
+          "2025-07-03",
+          "2025-11-28",
+          "2025-12-24"
+        ],
+        "first_session_warmup_only": "2023-01-03",
+        "signal_sessions": 930,
+        "required_minute_bars": 55860,
+        "missing_required_bars": 0,
+        "cash_dividend_reference_rows": 30,
+        "corporate_action_reference_coverage": "vendor snapshot; no complete point-in-time coverage claim",
+        "large_adjustment_discontinuities": 0
+      }
+    }
+  },
+  {
+    "variant": "letf_1pct_close_2bp",
+    "trial_id": 1760,
+    "strategy_id": 2115,
+    "git_commit": "5eaef1cfd7f6de8ac607bf333c93410cc84a5ded",
+    "params": {
+      "variant": "letf_1pct_close_2bp",
+      "study_run_id": "letf-20260930-v1",
+      "threshold": ".01",
+      "slippage_bp_per_side": 2,
+      "symbols": [
+        "SPY",
+        "QQQ"
+      ],
+      "side": "long_only_cash_account",
+      "start": "2023-01-01",
+      "through": "2026-09-30",
+      "source_sha256": "ad70b5fb85a03b02010f349c544c95907b198659f233be00fa7668df8a34c58e",
+      "source_pages": 935,
+      "source_records": 62454,
+      "fx_sha256": "684f22325b80a05da42ca1de044e07ca5515c00a35386335f573c7cc08d6ab0f",
+      "virtual_cash_usd": "140",
+      "cash_buckets": 2,
+      "entry_notional_usd": "24.90",
+      "signal": "raw 15:30 minute open / previous daily close - 1",
+      "exit": "daily_close_nonexecutable_benchmark",
+      "fee_policy": "Alpaca retail 2026-09-17 current-cost counterfactual; account/day/type ceil cent",
+      "quality": {
+        "trading_sessions": 939,
+        "full_sessions": 931,
+        "early_closes_skipped": [
+          "2023-07-03",
+          "2023-11-24",
+          "2024-07-03",
+          "2024-11-29",
+          "2024-12-24",
+          "2025-07-03",
+          "2025-11-28",
+          "2025-12-24"
+        ],
+        "first_session_warmup_only": "2023-01-03",
+        "signal_sessions": 930,
+        "required_minute_bars": 55860,
+        "missing_required_bars": 0,
+        "cash_dividend_reference_rows": 30,
+        "corporate_action_reference_coverage": "vendor snapshot; no complete point-in-time coverage claim",
+        "large_adjustment_discontinuities": 0
+      }
+    },
+    "metrics": {
+      "trades": 305,
+      "net_usd": "-10.681928066778514160",
+      "fees_usd": "6.000000",
+      "mean_net_usd": "-0.03502271497304430872131147541",
+      "win_rate": "0.2065573770491803278688524590",
+      "one_sided_t_pvalue": 1.0,
+      "ledger_net_usd": "-10.681932",
+      "fills": 610,
+      "rejected_orders": 0,
+      "max_marked_drawdown_usd": "10.8214518512017040600000000",
+      "net_return_on_virtual_cash": "-0.07629951428571428571428571429",
+      "ending_cash_including_unsettled": "129.318071933221485840",
+      "year_by_exit": {
+        "2023": {
+          "trades": 89,
+          "net_usd": "-3.184795542676228100",
+          "fees_usd": "1.770000",
+          "mean_net_usd": "-0.03578421958063177640449438202",
+          "win_rate": "0.1910112359550561797752808989",
+          "one_sided_t_pvalue": 0.9999999951403274
+        },
+        "2024": {
+          "trades": 75,
+          "net_usd": "-3.132054261030637060",
+          "fees_usd": "1.500000",
+          "mean_net_usd": "-0.04176072348040849413333333333",
+          "win_rate": "0.1866666666666666666666666667",
+          "one_sided_t_pvalue": 0.9999999814531755
+        },
+        "2025": {
+          "trades": 79,
+          "net_usd": "-2.888137917237735000",
+          "fees_usd": "1.440000",
+          "mean_net_usd": "-0.03655870781313588607594936709",
+          "win_rate": "0.2151898734177215189873417722",
+          "one_sided_t_pvalue": 0.9997667544789756
+        },
+        "2026": {
+          "trades": 62,
+          "net_usd": "-1.476940345833914000",
+          "fees_usd": "1.290000",
+          "mean_net_usd": "-0.02382161848119216129032258065",
+          "win_rate": "0.2419354838709677419354838710",
+          "one_sided_t_pvalue": 0.9999857866889661
+        }
+      },
+      "ending_marked_equity_usd": "129.318071933221485840",
+      "unrealized_pnl_usd": "0E-12",
+      "open_positions": {},
+      "halt_events": [],
+      "2016_2022": {
+        "trades": 0,
+        "net_usd": "0",
+        "fees_usd": "0",
+        "mean_net_usd": null,
+        "win_rate": null,
+        "one_sided_t_pvalue": null
+      },
+      "2023_2026": {
+        "trades": 305,
+        "net_usd": "-10.681928066778514160",
+        "fees_usd": "6.000000",
+        "mean_net_usd": "-0.03502271497304430872131147541",
+        "win_rate": "0.2065573770491803278688524590",
+        "one_sided_t_pvalue": 1.0
+      },
+      "2023_2024": {
+        "trades": 164,
+        "net_usd": "-6.316849803706865160",
+        "fees_usd": "3.270000",
+        "mean_net_usd": "-0.03851737685187112902439024390",
+        "win_rate": "0.1890243902439024390243902439",
+        "one_sided_t_pvalue": 0.9999999999999992
+      },
+      "2025_2026": {
+        "trades": 141,
+        "net_usd": "-4.365078263071649000",
+        "fees_usd": "2.730000",
+        "mean_net_usd": "-0.03095800186575637588652482270",
+        "win_rate": "0.2269503546099290780141843972",
+        "one_sided_t_pvalue": 0.999999458189658
+      },
+      "position_hours": 152.5,
+      "cash_reconciliation_tolerance_usd": "0.000305",
+      "per_symbol": {
+        "SPY": {
+          "trades": 108,
+          "net_usd": "-4.515701599608818340",
+          "fees_usd": "3.240000",
+          "mean_net_usd": "-0.04181205184822979944444444444",
+          "win_rate": "0.1481481481481481481481481481",
+          "one_sided_t_pvalue": 0.9999999998341662,
+          "signal_counts": {
+            "none": 736,
+            "short_unavailable": 86,
+            "long": 108
+          }
+        },
+        "QQQ": {
+          "trades": 197,
+          "net_usd": "-6.166226467169695820",
+          "fees_usd": "2.760000",
+          "mean_net_usd": "-0.03130064196532840517766497462",
+          "win_rate": "0.2385786802030456852791878173",
+          "one_sided_t_pvalue": 0.999999999948033,
+          "signal_counts": {
+            "none": 596,
+            "short_unavailable": 137,
+            "long": 197
+          }
+        }
+      },
+      "day_aggregated_one_sided_t_pvalue": 0.9999999999995016,
+      "active_exit_days": 200,
+      "signal_counts": {
+        "none": 1332,
+        "short_unavailable": 223,
+        "long": 305
+      },
+      "signals_on_reported_ex_dividend_dates": 3,
+      "rejections_by_reason": {},
+      "cash_buckets_last_event": {
+        "0": {
+          "settled": "65.896032886077310080",
+          "unsettled": "0",
+          "available": "65.896032886077310080"
+        },
+        "1": {
+          "settled": "63.422039047144175760",
+          "unsettled": "0",
+          "available": "63.422039047144175760"
+        }
+      },
+      "execution_order": "SPY then QQQ for equal-time observations; fee attribution follows this order",
+      "quality": {
+        "trading_sessions": 939,
+        "full_sessions": 931,
+        "early_closes_skipped": [
+          "2023-07-03",
+          "2023-11-24",
+          "2024-07-03",
+          "2024-11-29",
+          "2024-12-24",
+          "2025-07-03",
+          "2025-11-28",
+          "2025-12-24"
+        ],
+        "first_session_warmup_only": "2023-01-03",
+        "signal_sessions": 930,
+        "required_minute_bars": 55860,
+        "missing_required_bars": 0,
+        "cash_dividend_reference_rows": 30,
+        "corporate_action_reference_coverage": "vendor snapshot; no complete point-in-time coverage claim",
+        "large_adjustment_discontinuities": 0
+      }
+    }
+  }
+]

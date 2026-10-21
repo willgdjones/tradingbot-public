@@ -1,0 +1,16 @@
+{
+  "url": "https://github.com/je-suis-tm/quant-trading",
+  "commit": "611b73f2c3f577ac5b28aaa19ac8c43d3236c7a5",
+  "license": "Apache-2.0",
+  "author": "je-suis-tm",
+  "files": {
+    "Bollinger Bands Pattern Recognition backtest.py": "fc054f7456a41ccf3fb34046aa2d49179af37b4c46f882d3432f0c2dd7a16027",
+    "MACD Oscillator backtest.py": "f99d3ea86d53590c13932bbb82a5dd6bf9897f6d915c7119b3062f2f18e7bcaa",
+    "RSI Pattern Recognition backtest.py": "862376c2dfd9598b0d351c265ff566d68f29e2f61d8ae25ffb04293dbcc40dac",
+    "Parabolic SAR backtest.py": "e088853dfcc3b5181aaf44a6fd33f42b06f4e5cd44e81573fae454ca8f466e47",
+    "Heikin-Ashi backtest.py": "bb50360b83a8c1c3256e2d1a162b1b375af4882d1d32934db32d8e64fcf76f66",
+    "Awesome Oscillator backtest.py": "20c20276d0c2f3bc35fd287f8d1e32ee3ab54c3c4639e82a8adc949c267b3587",
+    "Shooting Star backtest.py": "11c362fa0ee0913ed9131d02d8a808b18c2e527352f36fb574edf1ef47df3c3e",
+    "Dual Thrust backtest.py": "58971b1adc9416803338f973a9064b8cfc813f7b8929c2eb9a27a927c2657555"
+  }
+}

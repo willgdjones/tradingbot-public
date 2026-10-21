@@ -1,0 +1,3000 @@
+{
+  "status": "SCHEDULE_RECONCILED_NOT_STRATEGY_ADMISSION",
+  "coverage_start": "2006-01-01",
+  "coverage_end_inclusive": "2026-12-31",
+  "research_start": "2006-01-01T00:00:00+00:00",
+  "research_end_exclusive": "2026-10-01T00:00:00+00:00",
+  "holdout_start": "2020-07-10T14:24:00+00:00",
+  "rule": "Ordinary Monday-Friday settlement schedule minus the explicitly sourced annual holiday exclusions below. Do not substitute NYSE sessions or a federal-office calendar. Exception notices override annual tables; scheduled settlement is distinct from completion and broker credit.",
+  "years": [
+    {
+      "year": 2006,
+      "sources": [
+        {
+          "name": "finra-calendar-2006",
+          "path": "data/equities/source-repair/finra-calendar-2006/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/NoticeDocument/p015761.pdf",
+          "sha256": "80bc00e6c6b42d3d850b8aa188f098c820f5c7d61fa33dfdb363e989fae9be23"
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "sources": [
+        {
+          "name": "finra-calendar-2007",
+          "path": "data/equities/source-repair/finra-calendar-2007/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/NoticeDocument/p018163.pdf",
+          "sha256": "9019f35a1fe432a246a75d09f04c26b667696cbb06841a35f1c215e23d8a4f31"
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "sources": [
+        {
+          "name": "finra-calendar-2008",
+          "path": "data/equities/source-repair/finra-calendar-2008/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/NoticeDocument/p037658.pdf",
+          "sha256": "b2e5291350d86625a8bfd00f283dd8ef2f1508806d6d3e2750746ba9a913b5dd"
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "sources": [
+        {
+          "name": "finra-calendar-2009",
+          "path": "data/equities/source-repair/finra-calendar-2009/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/NoticeDocument/p117623.pdf",
+          "sha256": "29a7d42a4d4d17a11dd89bb12eb62643499e4a6a0a792ae63a87eecec27153cc"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "sources": [
+        {
+          "name": "finra-calendar-2010",
+          "path": "data/equities/source-repair/finra-calendar-2010/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/NoticeDocument/p120549.pdf",
+          "sha256": "957a6bcda8cc203cbb833e21c81bb9291aa481e92c6f9d8f038a1425b2848f7c"
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "sources": [
+        {
+          "name": "finra-calendar-2011",
+          "path": "data/equities/source-repair/finra-calendar-2011/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/NoticeDocument/p122519.pdf",
+          "sha256": "ab3d323809581fce007d8c1ea96cc8b2ea44ba90c1a7085df23254e46fca693a"
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "sources": [
+        {
+          "name": "finra-calendar-2012",
+          "path": "data/equities/source-repair/finra-calendar-2012/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/NoticeDocument/p125272.pdf",
+          "sha256": "05c8345cac1c879b40107e37d9dd88a79bb5e695c72cda4b52d5b90c05382601"
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "sources": [
+        {
+          "name": "finra-calendar-2013",
+          "path": "data/equities/source-repair/finra-calendar-2013/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/NoticeDocument/p197438.pdf",
+          "sha256": "2491a7ea12354e85d4e74634a2212c2904cf6108f26e41e4d7d4720aef7d1cc2"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "sources": [
+        {
+          "name": "finra-calendar-2014",
+          "path": "data/equities/source-repair/finra-calendar-2014/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/NoticeDocument/p413654.pdf",
+          "sha256": "231b15b5d42962b4d17815a56456251b839ecdf1bb276ef92a86471ed09e1d65"
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "sources": [
+        {
+          "name": "finra-calendar-2015",
+          "path": "data/equities/source-repair/finra-calendar-2015/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/notice_other_file_ref/Notice_Information_122314-Holidays%202014.pdf",
+          "sha256": "837ce80480061d734883255466b0f10fa39f4cd22c4dc835db103d24595c0671"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "sources": [
+        {
+          "name": "finra-calendar-2016",
+          "path": "data/equities/source-repair/finra-calendar-2016/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/notice_doc_file_ref/Information-Notice_122215.pdf",
+          "sha256": "a5df095c05cc3557b2735db4bbecce26158813a1c2087cc16ac9a356f701f69f"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "sources": [
+        {
+          "name": "finra-calendar-2017",
+          "path": "data/equities/source-repair/finra-calendar-2017/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/notice_doc_file_ref/Information-Notice-121416.pdf",
+          "sha256": "9cea38b735baf56e4d67d787d09f97eee869d62ce258fd2b359ddb2c1a81647e"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "sources": [
+        {
+          "name": "finra-calendar-2018",
+          "path": "data/equities/source-repair/finra-calendar-2018/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/notice_doc_file_ref/Information-Notice-122117.pdf",
+          "sha256": "ebdda7b236cce50f2794d9810d8a3b534d6aaf8481b09fd4bace52ad50a877a5"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "sources": [
+        {
+          "name": "finra-calendar-2019",
+          "path": "data/equities/source-repair/finra-calendar-2019/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/notice_doc_file_ref/Information-Notice-122118.pdf",
+          "sha256": "bd8359c5215e9b4819b60f550119f51399cc0f51cbe825ce76284dc0e88af1e3"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "sources": [
+        {
+          "name": "finra-calendar-2020",
+          "path": "data/equities/source-repair/finra-calendar-2020/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/2019-12/Information-Notice-120919.pdf",
+          "sha256": "15979e65e0d94292872658d3c01362b15cac17f1509ef3e5e27a205440487ec1"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "sources": [
+        {
+          "name": "finra-calendar-2021",
+          "path": "data/equities/source-repair/finra-calendar-2021/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/2020-12/Information-Notice-120120.pdf",
+          "sha256": "59879ff8940301431a0ed5fcaacb74d0456bd5de5e7dd9eb8d743a7a6ebff8d5"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "sources": [
+        {
+          "name": "finra-calendar-2022",
+          "path": "data/equities/source-repair/finra-calendar-2022/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/2021-10/information-notice-101521.pdf",
+          "sha256": "595cd5817c845ff40370438bdbc018f8d6f9273092b1eda6964995b89562fa66"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "sources": [
+        {
+          "name": "finra-calendar-2023",
+          "path": "data/equities/source-repair/finra-calendar-2023/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/2022-11/Information-Notice-111822.pdf",
+          "sha256": "7cb1d915244c39fc5fb29af5c948140f05ffebdcf7af8303eec4f961749d64d3"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "sources": [
+        {
+          "name": "dtcc-annual-19404-23",
+          "path": "data/equities/source-repair/dtcc-annual-19404-23/raw.pdf",
+          "url": "https://files.dtcc.com/download/assets/19404-23/b9eb0056369011f08aca526112f6cc5f",
+          "sha256": "51d2a6b14d8a3333fc2ef11eaf3dd9aaafbc25ba79bf4406b4fec7b962494f0e"
+        },
+        {
+          "name": "finra-settlement-holiday-rules",
+          "path": "data/equities/source-repair/finra-settlement-holiday-rules/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/RCA/p002410.pdf",
+          "sha256": "f8c5c2ee913ce29c5f1697a0b11b28d645746923390d9fd11f3a2615f89de5e3"
+        },
+        {
+          "name": "dtcc-good-friday-2024",
+          "path": "data/equities/source-repair/dtcc-good-friday-2024/raw.pdf",
+          "url": "https://files.dtcc.com/download/assets/a9411/aeb55c4e369111f0b606526112f6cc5f",
+          "sha256": "d0cc27fc0b27deafe8d89192bfb0fd0021a892db475b1a56392ee11d49b17f5f"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "sources": [
+        {
+          "name": "dtcc-annual-a9512",
+          "path": "data/equities/source-repair/dtcc-annual-a9512/raw.pdf",
+          "url": "https://files.dtcc.com/download/assets/a9512/f62c60a6369911f09a845e09fb65ecc7",
+          "sha256": "fb744d560d92a217c20c9311c80000a2bf8b45acb20edd5a40a2ac67916be106"
+        },
+        {
+          "name": "finra-settlement-holiday-rules",
+          "path": "data/equities/source-repair/finra-settlement-holiday-rules/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/RCA/p002410.pdf",
+          "sha256": "f8c5c2ee913ce29c5f1697a0b11b28d645746923390d9fd11f3a2615f89de5e3"
+        },
+        {
+          "name": "dtcc-annual-20972-24",
+          "path": "data/equities/source-repair/dtcc-annual-20972-24/raw.pdf",
+          "url": "https://files.dtcc.com/download/assets/20972-24/9a732316369511f0ad831282bb7fa251",
+          "sha256": "f2e3ad8e5cbd78119ff11e3d88d1a7a5c78dbda6d87484d0bb240ce4c4af10e3"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "sources": [
+        {
+          "name": "dtcc-annual-a9660",
+          "path": "data/equities/source-repair/dtcc-annual-a9660/raw.pdf",
+          "url": "https://files.dtcc.com/download/assets/a9660/6dd2cd72ceb411f092a80aec4933d5f6",
+          "sha256": "8082a8b5f71a691bb9daddc92f1604f4e46cbf6b2a74464813b60003493ebaf2"
+        },
+        {
+          "name": "finra-settlement-holiday-rules",
+          "path": "data/equities/source-repair/finra-settlement-holiday-rules/raw.pdf",
+          "url": "https://www.finra.org/sites/default/files/RCA/p002410.pdf",
+          "sha256": "f8c5c2ee913ce29c5f1697a0b11b28d645746923390d9fd11f3a2615f89de5e3"
+        },
+        {
+          "name": "dtcc-good-friday-2026-migrated",
+          "path": "data/equities/source-repair/dtcc-good-friday-2026-migrated/raw.pdf",
+          "url": "https://files.dtcc.com/download/assets/a9732/84f27534957911f1b6bb4ec37e043074",
+          "sha256": "713a118c08332d026b70f094a0511104c7589686aaaa30f11248feb24458b64a"
+        },
+        {
+          "name": "finra-full-filing-workbook",
+          "path": "data/equities/source-repair/finra-full-filing-workbook/raw.html",
+          "url": "https://www.finra.org/sites/default/files/2025-10/ExtensionFilingSchedule.xlsx",
+          "sha256": "70d5318ef85b58ec3831da142874d6a0f84fde2db22fd6c4f767f10ce17e7a8e"
+        },
+        {
+          "name": "dtcc-annual-23036-25",
+          "path": "data/equities/source-repair/dtcc-annual-23036-25/raw.pdf",
+          "url": "https://files.dtcc.com/download/assets/23036-25/9fd437c6cea411f0b57c0aec4933d5f6",
+          "sha256": "943e9bbb70de5ea0e074fa9942a6f08a5661a8a3f105c46326a5e8a29c39cddf"
+        }
+      ]
+    }
+  ],
+  "auxiliary_sources": [
+    {
+      "name": "nasdaq-newyear-2006",
+      "path": "data/equities/source-repair/nasdaq-newyear-2006/raw.pdf",
+      "url": "https://www.nasdaqtrader.com/content/newsalerts/2005/upcnotices/092-05.pdf",
+      "sha256": "c97ee3e800966ae32bd0516cdec55796e7db017e709013449444eeabef21d997"
+    },
+    {
+      "name": "fed-holiday-rules",
+      "path": "data/equities/source-repair/fed-holiday-rules/raw.html",
+      "url": "https://www.federalreserve.gov/aboutthefed/k8.htm",
+      "sha256": "99f1f450a73f28348de96663dfbb85f06029949bbd909b8a8fd42699f7f6c60c"
+    }
+  ],
+  "closed_weekdays": [
+    {
+      "date": "2006-01-02",
+      "sources": [
+        "nasdaq-newyear-2006"
+      ]
+    },
+    {
+      "date": "2006-01-16",
+      "sources": [
+        "finra-calendar-2006"
+      ]
+    },
+    {
+      "date": "2006-02-20",
+      "sources": [
+        "finra-calendar-2006"
+      ]
+    },
+    {
+      "date": "2006-04-14",
+      "sources": [
+        "finra-calendar-2006"
+      ]
+    },
+    {
+      "date": "2006-05-29",
+      "sources": [
+        "finra-calendar-2006"
+      ]
+    },
+    {
+      "date": "2006-07-04",
+      "sources": [
+        "finra-calendar-2006"
+      ]
+    },
+    {
+      "date": "2006-09-04",
+      "sources": [
+        "finra-calendar-2006"
+      ]
+    },
+    {
+      "date": "2006-10-09",
+      "sources": [
+        "finra-calendar-2006"
+      ]
+    },
+    {
+      "date": "2006-11-23",
+      "sources": [
+        "finra-calendar-2006"
+      ]
+    },
+    {
+      "date": "2006-12-25",
+      "sources": [
+        "finra-calendar-2006"
+      ]
+    },
+    {
+      "date": "2007-01-01",
+      "sources": [
+        "finra-calendar-2006"
+      ]
+    },
+    {
+      "date": "2007-01-15",
+      "sources": [
+        "finra-calendar-2007"
+      ]
+    },
+    {
+      "date": "2007-02-19",
+      "sources": [
+        "finra-calendar-2007"
+      ]
+    },
+    {
+      "date": "2007-04-06",
+      "sources": [
+        "finra-calendar-2007"
+      ]
+    },
+    {
+      "date": "2007-05-28",
+      "sources": [
+        "finra-calendar-2007"
+      ]
+    },
+    {
+      "date": "2007-07-04",
+      "sources": [
+        "finra-calendar-2007"
+      ]
+    },
+    {
+      "date": "2007-09-03",
+      "sources": [
+        "finra-calendar-2007"
+      ]
+    },
+    {
+      "date": "2007-10-08",
+      "sources": [
+        "finra-calendar-2007"
+      ]
+    },
+    {
+      "date": "2007-11-12",
+      "sources": [
+        "finra-calendar-2007"
+      ]
+    },
+    {
+      "date": "2007-11-22",
+      "sources": [
+        "finra-calendar-2007"
+      ]
+    },
+    {
+      "date": "2007-12-25",
+      "sources": [
+        "finra-calendar-2007"
+      ]
+    },
+    {
+      "date": "2008-01-01",
+      "sources": [
+        "finra-calendar-2008"
+      ]
+    },
+    {
+      "date": "2008-01-21",
+      "sources": [
+        "finra-calendar-2008"
+      ]
+    },
+    {
+      "date": "2008-02-18",
+      "sources": [
+        "finra-calendar-2008"
+      ]
+    },
+    {
+      "date": "2008-03-21",
+      "sources": [
+        "finra-calendar-2008"
+      ]
+    },
+    {
+      "date": "2008-05-26",
+      "sources": [
+        "finra-calendar-2008"
+      ]
+    },
+    {
+      "date": "2008-07-04",
+      "sources": [
+        "finra-calendar-2008"
+      ]
+    },
+    {
+      "date": "2008-09-01",
+      "sources": [
+        "finra-calendar-2008"
+      ]
+    },
+    {
+      "date": "2008-10-13",
+      "sources": [
+        "finra-calendar-2008"
+      ]
+    },
+    {
+      "date": "2008-11-11",
+      "sources": [
+        "finra-calendar-2008"
+      ]
+    },
+    {
+      "date": "2008-11-27",
+      "sources": [
+        "finra-calendar-2008"
+      ]
+    },
+    {
+      "date": "2008-12-25",
+      "sources": [
+        "finra-calendar-2008"
+      ]
+    },
+    {
+      "date": "2009-01-01",
+      "sources": [
+        "finra-calendar-2009"
+      ]
+    },
+    {
+      "date": "2009-01-19",
+      "sources": [
+        "finra-calendar-2009"
+      ]
+    },
+    {
+      "date": "2009-02-16",
+      "sources": [
+        "finra-calendar-2009"
+      ]
+    },
+    {
+      "date": "2009-04-10",
+      "sources": [
+        "finra-calendar-2009"
+      ]
+    },
+    {
+      "date": "2009-05-25",
+      "sources": [
+        "finra-calendar-2009"
+      ]
+    },
+    {
+      "date": "2009-07-03",
+      "sources": [
+        "finra-calendar-2009"
+      ]
+    },
+    {
+      "date": "2009-09-07",
+      "sources": [
+        "finra-calendar-2009"
+      ]
+    },
+    {
+      "date": "2009-10-12",
+      "sources": [
+        "finra-calendar-2009"
+      ]
+    },
+    {
+      "date": "2009-11-11",
+      "sources": [
+        "finra-calendar-2009"
+      ]
+    },
+    {
+      "date": "2009-11-26",
+      "sources": [
+        "finra-calendar-2009"
+      ]
+    },
+    {
+      "date": "2009-12-25",
+      "sources": [
+        "finra-calendar-2009"
+      ]
+    },
+    {
+      "date": "2010-01-01",
+      "sources": [
+        "finra-calendar-2010"
+      ]
+    },
+    {
+      "date": "2010-01-18",
+      "sources": [
+        "finra-calendar-2010"
+      ]
+    },
+    {
+      "date": "2010-02-15",
+      "sources": [
+        "finra-calendar-2010"
+      ]
+    },
+    {
+      "date": "2010-04-02",
+      "sources": [
+        "finra-calendar-2010"
+      ]
+    },
+    {
+      "date": "2010-05-31",
+      "sources": [
+        "finra-calendar-2010"
+      ]
+    },
+    {
+      "date": "2010-07-05",
+      "sources": [
+        "finra-calendar-2010"
+      ]
+    },
+    {
+      "date": "2010-09-06",
+      "sources": [
+        "finra-calendar-2010"
+      ]
+    },
+    {
+      "date": "2010-10-11",
+      "sources": [
+        "finra-calendar-2010"
+      ]
+    },
+    {
+      "date": "2010-11-11",
+      "sources": [
+        "finra-calendar-2010"
+      ]
+    },
+    {
+      "date": "2010-11-25",
+      "sources": [
+        "finra-calendar-2010"
+      ]
+    },
+    {
+      "date": "2010-12-24",
+      "sources": [
+        "finra-calendar-2010"
+      ]
+    },
+    {
+      "date": "2011-01-17",
+      "sources": [
+        "finra-calendar-2011"
+      ]
+    },
+    {
+      "date": "2011-02-21",
+      "sources": [
+        "finra-calendar-2011"
+      ]
+    },
+    {
+      "date": "2011-04-22",
+      "sources": [
+        "finra-calendar-2011"
+      ]
+    },
+    {
+      "date": "2011-05-30",
+      "sources": [
+        "finra-calendar-2011"
+      ]
+    },
+    {
+      "date": "2011-07-04",
+      "sources": [
+        "finra-calendar-2011"
+      ]
+    },
+    {
+      "date": "2011-09-05",
+      "sources": [
+        "finra-calendar-2011"
+      ]
+    },
+    {
+      "date": "2011-10-10",
+      "sources": [
+        "finra-calendar-2011"
+      ]
+    },
+    {
+      "date": "2011-11-11",
+      "sources": [
+        "finra-calendar-2011"
+      ]
+    },
+    {
+      "date": "2011-11-24",
+      "sources": [
+        "finra-calendar-2011"
+      ]
+    },
+    {
+      "date": "2011-12-26",
+      "sources": [
+        "finra-calendar-2011"
+      ]
+    },
+    {
+      "date": "2012-01-02",
+      "sources": [
+        "finra-calendar-2012"
+      ]
+    },
+    {
+      "date": "2012-01-16",
+      "sources": [
+        "finra-calendar-2012"
+      ]
+    },
+    {
+      "date": "2012-02-20",
+      "sources": [
+        "finra-calendar-2012"
+      ]
+    },
+    {
+      "date": "2012-04-06",
+      "sources": [
+        "finra-calendar-2012"
+      ]
+    },
+    {
+      "date": "2012-05-28",
+      "sources": [
+        "finra-calendar-2012"
+      ]
+    },
+    {
+      "date": "2012-07-04",
+      "sources": [
+        "finra-calendar-2012"
+      ]
+    },
+    {
+      "date": "2012-09-03",
+      "sources": [
+        "finra-calendar-2012"
+      ]
+    },
+    {
+      "date": "2012-10-08",
+      "sources": [
+        "finra-calendar-2012"
+      ]
+    },
+    {
+      "date": "2012-11-12",
+      "sources": [
+        "finra-calendar-2012"
+      ]
+    },
+    {
+      "date": "2012-11-22",
+      "sources": [
+        "finra-calendar-2012"
+      ]
+    },
+    {
+      "date": "2012-12-25",
+      "sources": [
+        "finra-calendar-2012"
+      ]
+    },
+    {
+      "date": "2013-01-01",
+      "sources": [
+        "finra-calendar-2013"
+      ]
+    },
+    {
+      "date": "2013-01-21",
+      "sources": [
+        "finra-calendar-2013"
+      ]
+    },
+    {
+      "date": "2013-02-18",
+      "sources": [
+        "finra-calendar-2013"
+      ]
+    },
+    {
+      "date": "2013-03-29",
+      "sources": [
+        "finra-calendar-2013"
+      ]
+    },
+    {
+      "date": "2013-05-27",
+      "sources": [
+        "finra-calendar-2013"
+      ]
+    },
+    {
+      "date": "2013-07-04",
+      "sources": [
+        "finra-calendar-2013"
+      ]
+    },
+    {
+      "date": "2013-09-02",
+      "sources": [
+        "finra-calendar-2013"
+      ]
+    },
+    {
+      "date": "2013-10-14",
+      "sources": [
+        "finra-calendar-2013"
+      ]
+    },
+    {
+      "date": "2013-11-11",
+      "sources": [
+        "finra-calendar-2013"
+      ]
+    },
+    {
+      "date": "2013-11-28",
+      "sources": [
+        "finra-calendar-2013"
+      ]
+    },
+    {
+      "date": "2013-12-25",
+      "sources": [
+        "finra-calendar-2013"
+      ]
+    },
+    {
+      "date": "2014-01-01",
+      "sources": [
+        "finra-calendar-2014"
+      ]
+    },
+    {
+      "date": "2014-01-20",
+      "sources": [
+        "finra-calendar-2014"
+      ]
+    },
+    {
+      "date": "2014-02-17",
+      "sources": [
+        "finra-calendar-2014"
+      ]
+    },
+    {
+      "date": "2014-04-18",
+      "sources": [
+        "finra-calendar-2014"
+      ]
+    },
+    {
+      "date": "2014-05-26",
+      "sources": [
+        "finra-calendar-2014"
+      ]
+    },
+    {
+      "date": "2014-07-04",
+      "sources": [
+        "finra-calendar-2014"
+      ]
+    },
+    {
+      "date": "2014-09-01",
+      "sources": [
+        "finra-calendar-2014"
+      ]
+    },
+    {
+      "date": "2014-10-13",
+      "sources": [
+        "finra-calendar-2014"
+      ]
+    },
+    {
+      "date": "2014-11-11",
+      "sources": [
+        "finra-calendar-2014"
+      ]
+    },
+    {
+      "date": "2014-11-27",
+      "sources": [
+        "finra-calendar-2014"
+      ]
+    },
+    {
+      "date": "2014-12-25",
+      "sources": [
+        "finra-calendar-2014"
+      ]
+    },
+    {
+      "date": "2015-01-01",
+      "sources": [
+        "finra-calendar-2015"
+      ]
+    },
+    {
+      "date": "2015-01-19",
+      "sources": [
+        "finra-calendar-2015"
+      ]
+    },
+    {
+      "date": "2015-02-16",
+      "sources": [
+        "finra-calendar-2015"
+      ]
+    },
+    {
+      "date": "2015-04-03",
+      "sources": [
+        "finra-calendar-2015"
+      ]
+    },
+    {
+      "date": "2015-05-25",
+      "sources": [
+        "finra-calendar-2015"
+      ]
+    },
+    {
+      "date": "2015-07-03",
+      "sources": [
+        "finra-calendar-2015"
+      ]
+    },
+    {
+      "date": "2015-09-07",
+      "sources": [
+        "finra-calendar-2015"
+      ]
+    },
+    {
+      "date": "2015-10-12",
+      "sources": [
+        "finra-calendar-2015"
+      ]
+    },
+    {
+      "date": "2015-11-11",
+      "sources": [
+        "finra-calendar-2015"
+      ]
+    },
+    {
+      "date": "2015-11-26",
+      "sources": [
+        "finra-calendar-2015"
+      ]
+    },
+    {
+      "date": "2015-12-25",
+      "sources": [
+        "finra-calendar-2015"
+      ]
+    },
+    {
+      "date": "2016-01-01",
+      "sources": [
+        "finra-calendar-2016"
+      ]
+    },
+    {
+      "date": "2016-01-18",
+      "sources": [
+        "finra-calendar-2016"
+      ]
+    },
+    {
+      "date": "2016-02-15",
+      "sources": [
+        "finra-calendar-2016"
+      ]
+    },
+    {
+      "date": "2016-03-25",
+      "sources": [
+        "finra-calendar-2016"
+      ]
+    },
+    {
+      "date": "2016-05-30",
+      "sources": [
+        "finra-calendar-2016"
+      ]
+    },
+    {
+      "date": "2016-07-04",
+      "sources": [
+        "finra-calendar-2016"
+      ]
+    },
+    {
+      "date": "2016-09-05",
+      "sources": [
+        "finra-calendar-2016"
+      ]
+    },
+    {
+      "date": "2016-10-10",
+      "sources": [
+        "finra-calendar-2016"
+      ]
+    },
+    {
+      "date": "2016-11-11",
+      "sources": [
+        "finra-calendar-2016"
+      ]
+    },
+    {
+      "date": "2016-11-24",
+      "sources": [
+        "finra-calendar-2016"
+      ]
+    },
+    {
+      "date": "2016-12-26",
+      "sources": [
+        "finra-calendar-2016"
+      ]
+    },
+    {
+      "date": "2017-01-02",
+      "sources": [
+        "finra-calendar-2017"
+      ]
+    },
+    {
+      "date": "2017-01-16",
+      "sources": [
+        "finra-calendar-2017"
+      ]
+    },
+    {
+      "date": "2017-02-20",
+      "sources": [
+        "finra-calendar-2017"
+      ]
+    },
+    {
+      "date": "2017-04-14",
+      "sources": [
+        "finra-calendar-2017"
+      ]
+    },
+    {
+      "date": "2017-05-29",
+      "sources": [
+        "finra-calendar-2017"
+      ]
+    },
+    {
+      "date": "2017-07-04",
+      "sources": [
+        "finra-calendar-2017"
+      ]
+    },
+    {
+      "date": "2017-09-04",
+      "sources": [
+        "finra-calendar-2017"
+      ]
+    },
+    {
+      "date": "2017-10-09",
+      "sources": [
+        "finra-calendar-2017"
+      ]
+    },
+    {
+      "date": "2017-11-23",
+      "sources": [
+        "finra-calendar-2017"
+      ]
+    },
+    {
+      "date": "2017-12-25",
+      "sources": [
+        "finra-calendar-2017"
+      ]
+    },
+    {
+      "date": "2018-01-01",
+      "sources": [
+        "finra-calendar-2018"
+      ]
+    },
+    {
+      "date": "2018-01-15",
+      "sources": [
+        "finra-calendar-2018"
+      ]
+    },
+    {
+      "date": "2018-02-19",
+      "sources": [
+        "finra-calendar-2018"
+      ]
+    },
+    {
+      "date": "2018-03-30",
+      "sources": [
+        "finra-calendar-2018"
+      ]
+    },
+    {
+      "date": "2018-05-28",
+      "sources": [
+        "finra-calendar-2018"
+      ]
+    },
+    {
+      "date": "2018-07-04",
+      "sources": [
+        "finra-calendar-2018"
+      ]
+    },
+    {
+      "date": "2018-09-03",
+      "sources": [
+        "finra-calendar-2018"
+      ]
+    },
+    {
+      "date": "2018-10-08",
+      "sources": [
+        "finra-calendar-2018"
+      ]
+    },
+    {
+      "date": "2018-11-12",
+      "sources": [
+        "finra-calendar-2018"
+      ]
+    },
+    {
+      "date": "2018-11-22",
+      "sources": [
+        "finra-calendar-2018"
+      ]
+    },
+    {
+      "date": "2018-12-25",
+      "sources": [
+        "finra-calendar-2018"
+      ]
+    },
+    {
+      "date": "2019-01-01",
+      "sources": [
+        "finra-calendar-2019"
+      ]
+    },
+    {
+      "date": "2019-01-21",
+      "sources": [
+        "finra-calendar-2019"
+      ]
+    },
+    {
+      "date": "2019-02-18",
+      "sources": [
+        "finra-calendar-2019"
+      ]
+    },
+    {
+      "date": "2019-04-19",
+      "sources": [
+        "finra-calendar-2019"
+      ]
+    },
+    {
+      "date": "2019-05-27",
+      "sources": [
+        "finra-calendar-2019"
+      ]
+    },
+    {
+      "date": "2019-07-04",
+      "sources": [
+        "finra-calendar-2019"
+      ]
+    },
+    {
+      "date": "2019-09-02",
+      "sources": [
+        "finra-calendar-2019"
+      ]
+    },
+    {
+      "date": "2019-10-14",
+      "sources": [
+        "finra-calendar-2019"
+      ]
+    },
+    {
+      "date": "2019-11-11",
+      "sources": [
+        "finra-calendar-2019"
+      ]
+    },
+    {
+      "date": "2019-11-28",
+      "sources": [
+        "finra-calendar-2019"
+      ]
+    },
+    {
+      "date": "2019-12-25",
+      "sources": [
+        "finra-calendar-2019"
+      ]
+    },
+    {
+      "date": "2020-01-01",
+      "sources": [
+        "finra-calendar-2020"
+      ]
+    },
+    {
+      "date": "2020-01-20",
+      "sources": [
+        "finra-calendar-2020"
+      ]
+    },
+    {
+      "date": "2020-02-17",
+      "sources": [
+        "finra-calendar-2020"
+      ]
+    },
+    {
+      "date": "2020-04-10",
+      "sources": [
+        "finra-calendar-2020"
+      ]
+    },
+    {
+      "date": "2020-05-25",
+      "sources": [
+        "finra-calendar-2020"
+      ]
+    },
+    {
+      "date": "2020-07-03",
+      "sources": [
+        "finra-calendar-2020"
+      ]
+    },
+    {
+      "date": "2020-09-07",
+      "sources": [
+        "finra-calendar-2020"
+      ]
+    },
+    {
+      "date": "2020-10-12",
+      "sources": [
+        "finra-calendar-2020"
+      ]
+    },
+    {
+      "date": "2020-11-11",
+      "sources": [
+        "finra-calendar-2020"
+      ]
+    },
+    {
+      "date": "2020-11-26",
+      "sources": [
+        "finra-calendar-2020"
+      ]
+    },
+    {
+      "date": "2020-12-25",
+      "sources": [
+        "finra-calendar-2020"
+      ]
+    },
+    {
+      "date": "2021-01-01",
+      "sources": [
+        "finra-calendar-2021"
+      ]
+    },
+    {
+      "date": "2021-01-18",
+      "sources": [
+        "finra-calendar-2021"
+      ]
+    },
+    {
+      "date": "2021-02-15",
+      "sources": [
+        "finra-calendar-2021"
+      ]
+    },
+    {
+      "date": "2021-04-02",
+      "sources": [
+        "finra-calendar-2021"
+      ]
+    },
+    {
+      "date": "2021-05-31",
+      "sources": [
+        "finra-calendar-2021"
+      ]
+    },
+    {
+      "date": "2021-07-05",
+      "sources": [
+        "finra-calendar-2021"
+      ]
+    },
+    {
+      "date": "2021-09-06",
+      "sources": [
+        "finra-calendar-2021"
+      ]
+    },
+    {
+      "date": "2021-10-11",
+      "sources": [
+        "finra-calendar-2021"
+      ]
+    },
+    {
+      "date": "2021-11-11",
+      "sources": [
+        "finra-calendar-2021"
+      ]
+    },
+    {
+      "date": "2021-11-25",
+      "sources": [
+        "finra-calendar-2021"
+      ]
+    },
+    {
+      "date": "2021-12-24",
+      "sources": [
+        "finra-calendar-2021"
+      ]
+    },
+    {
+      "date": "2022-01-17",
+      "sources": [
+        "finra-calendar-2022"
+      ]
+    },
+    {
+      "date": "2022-02-21",
+      "sources": [
+        "finra-calendar-2022"
+      ]
+    },
+    {
+      "date": "2022-04-15",
+      "sources": [
+        "finra-calendar-2022"
+      ]
+    },
+    {
+      "date": "2022-05-30",
+      "sources": [
+        "finra-calendar-2022"
+      ]
+    },
+    {
+      "date": "2022-06-20",
+      "sources": [
+        "finra-calendar-2022"
+      ]
+    },
+    {
+      "date": "2022-07-04",
+      "sources": [
+        "finra-calendar-2022"
+      ]
+    },
+    {
+      "date": "2022-09-05",
+      "sources": [
+        "finra-calendar-2022"
+      ]
+    },
+    {
+      "date": "2022-10-10",
+      "sources": [
+        "finra-calendar-2022"
+      ]
+    },
+    {
+      "date": "2022-11-11",
+      "sources": [
+        "finra-calendar-2022"
+      ]
+    },
+    {
+      "date": "2022-11-24",
+      "sources": [
+        "finra-calendar-2022"
+      ]
+    },
+    {
+      "date": "2022-12-26",
+      "sources": [
+        "finra-calendar-2022"
+      ]
+    },
+    {
+      "date": "2023-01-02",
+      "sources": [
+        "finra-calendar-2023"
+      ]
+    },
+    {
+      "date": "2023-01-16",
+      "sources": [
+        "finra-calendar-2023"
+      ]
+    },
+    {
+      "date": "2023-02-20",
+      "sources": [
+        "finra-calendar-2023"
+      ]
+    },
+    {
+      "date": "2023-04-07",
+      "sources": [
+        "finra-calendar-2023"
+      ]
+    },
+    {
+      "date": "2023-05-29",
+      "sources": [
+        "finra-calendar-2023"
+      ]
+    },
+    {
+      "date": "2023-06-19",
+      "sources": [
+        "finra-calendar-2023"
+      ]
+    },
+    {
+      "date": "2023-07-04",
+      "sources": [
+        "finra-calendar-2023"
+      ]
+    },
+    {
+      "date": "2023-09-04",
+      "sources": [
+        "finra-calendar-2023"
+      ]
+    },
+    {
+      "date": "2023-10-09",
+      "sources": [
+        "finra-calendar-2023"
+      ]
+    },
+    {
+      "date": "2023-11-23",
+      "sources": [
+        "finra-calendar-2023"
+      ]
+    },
+    {
+      "date": "2023-12-25",
+      "sources": [
+        "finra-calendar-2023"
+      ]
+    },
+    {
+      "date": "2024-01-01",
+      "sources": [
+        "dtcc-annual-19404-23"
+      ]
+    },
+    {
+      "date": "2024-01-15",
+      "sources": [
+        "dtcc-annual-19404-23"
+      ]
+    },
+    {
+      "date": "2024-02-19",
+      "sources": [
+        "dtcc-annual-19404-23"
+      ]
+    },
+    {
+      "date": "2024-03-29",
+      "sources": [
+        "dtcc-annual-19404-23"
+      ]
+    },
+    {
+      "date": "2024-05-27",
+      "sources": [
+        "dtcc-annual-19404-23"
+      ]
+    },
+    {
+      "date": "2024-06-19",
+      "sources": [
+        "dtcc-annual-19404-23"
+      ]
+    },
+    {
+      "date": "2024-07-04",
+      "sources": [
+        "dtcc-annual-19404-23"
+      ]
+    },
+    {
+      "date": "2024-09-02",
+      "sources": [
+        "dtcc-annual-19404-23"
+      ]
+    },
+    {
+      "date": "2024-10-14",
+      "sources": [
+        "dtcc-annual-19404-23"
+      ]
+    },
+    {
+      "date": "2024-11-11",
+      "sources": [
+        "dtcc-annual-19404-23"
+      ]
+    },
+    {
+      "date": "2024-11-28",
+      "sources": [
+        "dtcc-annual-19404-23"
+      ]
+    },
+    {
+      "date": "2024-12-25",
+      "sources": [
+        "dtcc-annual-19404-23"
+      ]
+    },
+    {
+      "date": "2025-01-01",
+      "sources": [
+        "dtcc-annual-a9512"
+      ]
+    },
+    {
+      "date": "2025-01-20",
+      "sources": [
+        "dtcc-annual-a9512"
+      ]
+    },
+    {
+      "date": "2025-02-17",
+      "sources": [
+        "dtcc-annual-a9512"
+      ]
+    },
+    {
+      "date": "2025-04-18",
+      "sources": [
+        "dtcc-annual-a9512"
+      ]
+    },
+    {
+      "date": "2025-05-26",
+      "sources": [
+        "dtcc-annual-a9512"
+      ]
+    },
+    {
+      "date": "2025-06-19",
+      "sources": [
+        "dtcc-annual-a9512"
+      ]
+    },
+    {
+      "date": "2025-07-04",
+      "sources": [
+        "dtcc-annual-a9512"
+      ]
+    },
+    {
+      "date": "2025-09-01",
+      "sources": [
+        "dtcc-annual-a9512"
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "sources": [
+        "dtcc-annual-a9512"
+      ]
+    },
+    {
+      "date": "2025-11-11",
+      "sources": [
+        "dtcc-annual-a9512"
+      ]
+    },
+    {
+      "date": "2025-11-27",
+      "sources": [
+        "dtcc-annual-a9512"
+      ]
+    },
+    {
+      "date": "2025-12-25",
+      "sources": [
+        "dtcc-annual-a9512"
+      ]
+    },
+    {
+      "date": "2026-01-01",
+      "sources": [
+        "dtcc-annual-a9660"
+      ]
+    },
+    {
+      "date": "2026-01-19",
+      "sources": [
+        "dtcc-annual-a9660"
+      ]
+    },
+    {
+      "date": "2026-02-16",
+      "sources": [
+        "dtcc-annual-a9660"
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "sources": [
+        "dtcc-annual-a9660"
+      ]
+    },
+    {
+      "date": "2026-05-25",
+      "sources": [
+        "dtcc-annual-a9660"
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "sources": [
+        "dtcc-annual-a9660"
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "sources": [
+        "dtcc-annual-a9660"
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "sources": [
+        "dtcc-annual-a9660"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "sources": [
+        "dtcc-annual-a9660"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "sources": [
+        "dtcc-annual-a9660"
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "sources": [
+        "dtcc-annual-a9660"
+      ]
+    },
+    {
+      "date": "2026-12-25",
+      "sources": [
+        "dtcc-annual-a9660"
+      ]
+    }
+  ],
+  "corrections": [
+    {
+      "date": "2023-11-10",
+      "rejected_source": "finra-calendar-2023",
+      "scheduled_settlement_open": true,
+      "source": {
+        "name": "dtcc-veterans-2023",
+        "path": "data/equities/source-repair/dtcc-veterans-2023/raw.pdf",
+        "url": "https://files.dtcc.com/download/assets/19155-23/a4c71ae8369511f09a845e09fb65ecc7",
+        "sha256": "6fa82e798cce79fab1f8866ac261352c18ad35ae0ec8dd14f2dcbf22db66f623"
+      }
+    }
+  ],
+  "exceptional_open_days": [
+    {
+      "date": "2007-01-02",
+      "source": {
+        "name": "nasdaq-ford-settlement",
+        "path": "data/equities/source-repair/nasdaq-ford-settlement/raw.pdf",
+        "url": "https://www.nasdaqtrader.com/content/newsalerts/2006/upcnotices/068-06.pdf",
+        "sha256": "439a693b75a3ef0f787f53e93235b671308b5e5c0bdc231c34984d3ed0a7cbc8"
+      }
+    },
+    {
+      "date": "2012-10-29",
+      "source": {
+        "name": "sec-sandy-settlement",
+        "path": "data/equities/source-repair/sec-sandy-settlement/raw.html",
+        "url": "https://www.sec.gov/files/divisions/marketreg/regulation-sho-faq-regarding-hurricane-sandy.htm",
+        "sha256": "6498c453eb9289e907f3b449ddda845313d74622571a2964613872c37647c9a6"
+      }
+    },
+    {
+      "date": "2012-10-30",
+      "source": {
+        "name": "sec-sandy-settlement",
+        "path": "data/equities/source-repair/sec-sandy-settlement/raw.html",
+        "url": "https://www.sec.gov/files/divisions/marketreg/regulation-sho-faq-regarding-hurricane-sandy.htm",
+        "sha256": "6498c453eb9289e907f3b449ddda845313d74622571a2964613872c37647c9a6"
+      }
+    },
+    {
+      "date": "2018-12-05",
+      "source": {
+        "name": "nasdaq-bush-settlement",
+        "path": "data/equities/source-repair/nasdaq-bush-settlement/raw.html",
+        "url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ETA2018-99",
+        "sha256": "d9f5dd2c8bc2cf40d7a01aed28e0f8de2872f69d00e6e116d28950704226810d"
+      }
+    },
+    {
+      "date": "2025-01-09",
+      "source": {
+        "name": "nasdaq-carter-settlement",
+        "path": "data/equities/source-repair/nasdaq-carter-settlement/raw.html",
+        "url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ETA2025-1",
+        "sha256": "1375a32b230a1e52ff04dc268d4d32fc221b261bdac89ba5ba2f4f1041b47411"
+      }
+    }
+  ],
+  "juneteenth_2021_open": {
+    "dates": [
+      "2021-06-18",
+      "2021-06-21"
+    ],
+    "source": {
+      "name": "dtcc-juneteenth-2021-migrated",
+      "path": "data/equities/source-repair/dtcc-juneteenth-2021-migrated/raw.pdf",
+      "url": "https://files.dtcc.com/download/assets/15471-21/421e95dc369611f09a6b820bd5ac0897",
+      "sha256": "d74b96a8dbf3d6c49aff39b8815a47d2b2c47bd01b439ea40ea9d8ba5aa4cb2d"
+    }
+  },
+  "operational_rollovers": [
+    {
+      "scheduled_date": "2026-06-29",
+      "completion_date": "2026-06-30",
+      "source": {
+        "name": "dtcc-june30-2026",
+        "path": "data/equities/source-repair/dtcc-june30-2026/raw.pdf",
+        "url": "https://files.dtcc.com/download/assets/24518-26/2cfb5f4e957911f19784c258faf12821",
+        "sha256": "be3b39600b54fc756d418db00f7671832559dd8ad55ac9350abe67cd48356998"
+      },
+      "broker_credit_timestamp": null
+    }
+  ],
+  "eligibility_sha256": "0c98c42afd496a18c96a42148297a2a9f7caa7504b9059ba91ddd4c7421d9c27",
+  "scheduled_eligible_day_count": 5248,
+  "checks": {
+    "finra_workbook_pairs": 291,
+    "finra_workbook_source": {
+      "name": "finra-full-filing-workbook",
+      "path": "data/equities/source-repair/finra-full-filing-workbook/raw.html",
+      "url": "https://www.finra.org/sites/default/files/2025-10/ExtensionFilingSchedule.xlsx",
+      "sha256": "70d5318ef85b58ec3831da142874d6a0f84fde2db22fd6c4f767f10ce17e7a8e"
+    },
+    "finra_pairs": [
+      {
+        "trade": "2025-11-03",
+        "scheduled_settlement": "2025-11-04"
+      },
+      {
+        "trade": "2025-11-04",
+        "scheduled_settlement": "2025-11-05"
+      },
+      {
+        "trade": "2025-11-05",
+        "scheduled_settlement": "2025-11-06"
+      },
+      {
+        "trade": "2025-11-06",
+        "scheduled_settlement": "2025-11-07"
+      },
+      {
+        "trade": "2025-11-07",
+        "scheduled_settlement": "2025-11-10"
+      },
+      {
+        "trade": "2025-11-10",
+        "scheduled_settlement": "2025-11-12"
+      },
+      {
+        "trade": "2025-11-11",
+        "scheduled_settlement": "2025-11-12"
+      },
+      {
+        "trade": "2025-11-12",
+        "scheduled_settlement": "2025-11-13"
+      },
+      {
+        "trade": "2025-11-13",
+        "scheduled_settlement": "2025-11-14"
+      },
+      {
+        "trade": "2025-11-14",
+        "scheduled_settlement": "2025-11-17"
+      },
+      {
+        "trade": "2025-11-17",
+        "scheduled_settlement": "2025-11-18"
+      },
+      {
+        "trade": "2025-11-18",
+        "scheduled_settlement": "2025-11-19"
+      },
+      {
+        "trade": "2025-11-19",
+        "scheduled_settlement": "2025-11-20"
+      },
+      {
+        "trade": "2025-11-20",
+        "scheduled_settlement": "2025-11-21"
+      },
+      {
+        "trade": "2025-11-21",
+        "scheduled_settlement": "2025-11-24"
+      },
+      {
+        "trade": "2025-11-24",
+        "scheduled_settlement": "2025-11-25"
+      },
+      {
+        "trade": "2025-11-25",
+        "scheduled_settlement": "2025-11-26"
+      },
+      {
+        "trade": "2025-11-26",
+        "scheduled_settlement": "2025-11-28"
+      },
+      {
+        "trade": "2025-11-28",
+        "scheduled_settlement": "2025-12-01"
+      },
+      {
+        "trade": "2025-12-01",
+        "scheduled_settlement": "2025-12-02"
+      },
+      {
+        "trade": "2025-12-02",
+        "scheduled_settlement": "2025-12-03"
+      },
+      {
+        "trade": "2025-12-03",
+        "scheduled_settlement": "2025-12-04"
+      },
+      {
+        "trade": "2025-12-04",
+        "scheduled_settlement": "2025-12-05"
+      },
+      {
+        "trade": "2025-12-05",
+        "scheduled_settlement": "2025-12-08"
+      },
+      {
+        "trade": "2025-12-08",
+        "scheduled_settlement": "2025-12-09"
+      },
+      {
+        "trade": "2025-12-09",
+        "scheduled_settlement": "2025-12-10"
+      },
+      {
+        "trade": "2025-12-10",
+        "scheduled_settlement": "2025-12-11"
+      },
+      {
+        "trade": "2025-12-11",
+        "scheduled_settlement": "2025-12-12"
+      },
+      {
+        "trade": "2025-12-12",
+        "scheduled_settlement": "2025-12-15"
+      },
+      {
+        "trade": "2025-12-15",
+        "scheduled_settlement": "2025-12-16"
+      },
+      {
+        "trade": "2025-12-16",
+        "scheduled_settlement": "2025-12-17"
+      },
+      {
+        "trade": "2025-12-17",
+        "scheduled_settlement": "2025-12-18"
+      },
+      {
+        "trade": "2025-12-18",
+        "scheduled_settlement": "2025-12-19"
+      },
+      {
+        "trade": "2025-12-19",
+        "scheduled_settlement": "2025-12-22"
+      },
+      {
+        "trade": "2025-12-22",
+        "scheduled_settlement": "2025-12-23"
+      },
+      {
+        "trade": "2025-12-23",
+        "scheduled_settlement": "2025-12-24"
+      },
+      {
+        "trade": "2025-12-24",
+        "scheduled_settlement": "2025-12-26"
+      },
+      {
+        "trade": "2025-12-26",
+        "scheduled_settlement": "2025-12-29"
+      },
+      {
+        "trade": "2025-12-29",
+        "scheduled_settlement": "2025-12-30"
+      },
+      {
+        "trade": "2025-12-30",
+        "scheduled_settlement": "2025-12-31"
+      },
+      {
+        "trade": "2025-12-31",
+        "scheduled_settlement": "2026-01-02"
+      },
+      {
+        "trade": "2026-01-02",
+        "scheduled_settlement": "2026-01-05"
+      },
+      {
+        "trade": "2026-01-05",
+        "scheduled_settlement": "2026-01-06"
+      },
+      {
+        "trade": "2026-01-06",
+        "scheduled_settlement": "2026-01-07"
+      },
+      {
+        "trade": "2026-01-07",
+        "scheduled_settlement": "2026-01-08"
+      },
+      {
+        "trade": "2026-01-08",
+        "scheduled_settlement": "2026-01-09"
+      },
+      {
+        "trade": "2026-01-09",
+        "scheduled_settlement": "2026-01-12"
+      },
+      {
+        "trade": "2026-01-12",
+        "scheduled_settlement": "2026-01-13"
+      },
+      {
+        "trade": "2026-01-13",
+        "scheduled_settlement": "2026-01-14"
+      },
+      {
+        "trade": "2026-01-14",
+        "scheduled_settlement": "2026-01-15"
+      },
+      {
+        "trade": "2026-01-15",
+        "scheduled_settlement": "2026-01-16"
+      },
+      {
+        "trade": "2026-01-16",
+        "scheduled_settlement": "2026-01-20"
+      },
+      {
+        "trade": "2026-01-20",
+        "scheduled_settlement": "2026-01-21"
+      },
+      {
+        "trade": "2026-01-21",
+        "scheduled_settlement": "2026-01-22"
+      },
+      {
+        "trade": "2026-01-22",
+        "scheduled_settlement": "2026-01-23"
+      },
+      {
+        "trade": "2026-01-23",
+        "scheduled_settlement": "2026-01-26"
+      },
+      {
+        "trade": "2026-01-26",
+        "scheduled_settlement": "2026-01-27"
+      },
+      {
+        "trade": "2026-01-27",
+        "scheduled_settlement": "2026-01-28"
+      },
+      {
+        "trade": "2026-01-28",
+        "scheduled_settlement": "2026-01-29"
+      },
+      {
+        "trade": "2026-01-29",
+        "scheduled_settlement": "2026-01-30"
+      },
+      {
+        "trade": "2026-01-30",
+        "scheduled_settlement": "2026-02-02"
+      },
+      {
+        "trade": "2026-02-02",
+        "scheduled_settlement": "2026-02-03"
+      },
+      {
+        "trade": "2026-02-03",
+        "scheduled_settlement": "2026-02-04"
+      },
+      {
+        "trade": "2026-02-04",
+        "scheduled_settlement": "2026-02-05"
+      },
+      {
+        "trade": "2026-02-05",
+        "scheduled_settlement": "2026-02-06"
+      },
+      {
+        "trade": "2026-02-06",
+        "scheduled_settlement": "2026-02-09"
+      },
+      {
+        "trade": "2026-02-09",
+        "scheduled_settlement": "2026-02-10"
+      },
+      {
+        "trade": "2026-02-10",
+        "scheduled_settlement": "2026-02-11"
+      },
+      {
+        "trade": "2026-02-11",
+        "scheduled_settlement": "2026-02-12"
+      },
+      {
+        "trade": "2026-02-12",
+        "scheduled_settlement": "2026-02-13"
+      },
+      {
+        "trade": "2026-02-13",
+        "scheduled_settlement": "2026-02-17"
+      },
+      {
+        "trade": "2026-02-17",
+        "scheduled_settlement": "2026-02-18"
+      },
+      {
+        "trade": "2026-02-18",
+        "scheduled_settlement": "2026-02-19"
+      },
+      {
+        "trade": "2026-02-19",
+        "scheduled_settlement": "2026-02-20"
+      },
+      {
+        "trade": "2026-02-20",
+        "scheduled_settlement": "2026-02-23"
+      },
+      {
+        "trade": "2026-02-23",
+        "scheduled_settlement": "2026-02-24"
+      },
+      {
+        "trade": "2026-02-24",
+        "scheduled_settlement": "2026-02-25"
+      },
+      {
+        "trade": "2026-02-25",
+        "scheduled_settlement": "2026-02-26"
+      },
+      {
+        "trade": "2026-02-26",
+        "scheduled_settlement": "2026-02-27"
+      },
+      {
+        "trade": "2026-02-27",
+        "scheduled_settlement": "2026-03-02"
+      },
+      {
+        "trade": "2026-03-02",
+        "scheduled_settlement": "2026-03-03"
+      },
+      {
+        "trade": "2026-03-03",
+        "scheduled_settlement": "2026-03-04"
+      },
+      {
+        "trade": "2026-03-04",
+        "scheduled_settlement": "2026-03-05"
+      },
+      {
+        "trade": "2026-03-05",
+        "scheduled_settlement": "2026-03-06"
+      },
+      {
+        "trade": "2026-03-06",
+        "scheduled_settlement": "2026-03-09"
+      },
+      {
+        "trade": "2026-03-09",
+        "scheduled_settlement": "2026-03-10"
+      },
+      {
+        "trade": "2026-03-10",
+        "scheduled_settlement": "2026-03-11"
+      },
+      {
+        "trade": "2026-03-11",
+        "scheduled_settlement": "2026-03-12"
+      },
+      {
+        "trade": "2026-03-12",
+        "scheduled_settlement": "2026-03-13"
+      },
+      {
+        "trade": "2026-03-13",
+        "scheduled_settlement": "2026-03-16"
+      },
+      {
+        "trade": "2026-03-16",
+        "scheduled_settlement": "2026-03-17"
+      },
+      {
+        "trade": "2026-03-17",
+        "scheduled_settlement": "2026-03-18"
+      },
+      {
+        "trade": "2026-03-18",
+        "scheduled_settlement": "2026-03-19"
+      },
+      {
+        "trade": "2026-03-19",
+        "scheduled_settlement": "2026-03-20"
+      },
+      {
+        "trade": "2026-03-20",
+        "scheduled_settlement": "2026-03-23"
+      },
+      {
+        "trade": "2026-03-23",
+        "scheduled_settlement": "2026-03-24"
+      },
+      {
+        "trade": "2026-03-24",
+        "scheduled_settlement": "2026-03-25"
+      },
+      {
+        "trade": "2026-03-25",
+        "scheduled_settlement": "2026-03-26"
+      },
+      {
+        "trade": "2026-03-26",
+        "scheduled_settlement": "2026-03-27"
+      },
+      {
+        "trade": "2026-03-27",
+        "scheduled_settlement": "2026-03-30"
+      },
+      {
+        "trade": "2026-03-30",
+        "scheduled_settlement": "2026-03-31"
+      },
+      {
+        "trade": "2026-03-31",
+        "scheduled_settlement": "2026-04-01"
+      },
+      {
+        "trade": "2026-04-01",
+        "scheduled_settlement": "2026-04-02"
+      },
+      {
+        "trade": "2026-04-02",
+        "scheduled_settlement": "2026-04-06"
+      },
+      {
+        "trade": "2026-04-06",
+        "scheduled_settlement": "2026-04-07"
+      },
+      {
+        "trade": "2026-04-07",
+        "scheduled_settlement": "2026-04-08"
+      },
+      {
+        "trade": "2026-04-08",
+        "scheduled_settlement": "2026-04-09"
+      },
+      {
+        "trade": "2026-04-09",
+        "scheduled_settlement": "2026-04-10"
+      },
+      {
+        "trade": "2026-04-10",
+        "scheduled_settlement": "2026-04-13"
+      },
+      {
+        "trade": "2026-04-13",
+        "scheduled_settlement": "2026-04-14"
+      },
+      {
+        "trade": "2026-04-14",
+        "scheduled_settlement": "2026-04-15"
+      },
+      {
+        "trade": "2026-04-15",
+        "scheduled_settlement": "2026-04-16"
+      },
+      {
+        "trade": "2026-04-16",
+        "scheduled_settlement": "2026-04-17"
+      },
+      {
+        "trade": "2026-04-17",
+        "scheduled_settlement": "2026-04-20"
+      },
+      {
+        "trade": "2026-04-20",
+        "scheduled_settlement": "2026-04-21"
+      },
+      {
+        "trade": "2026-04-21",
+        "scheduled_settlement": "2026-04-22"
+      },
+      {
+        "trade": "2026-04-22",
+        "scheduled_settlement": "2026-04-23"
+      },
+      {
+        "trade": "2026-04-23",
+        "scheduled_settlement": "2026-04-24"
+      },
+      {
+        "trade": "2026-04-24",
+        "scheduled_settlement": "2026-04-27"
+      },
+      {
+        "trade": "2026-04-27",
+        "scheduled_settlement": "2026-04-28"
+      },
+      {
+        "trade": "2026-04-28",
+        "scheduled_settlement": "2026-04-29"
+      },
+      {
+        "trade": "2026-04-29",
+        "scheduled_settlement": "2026-04-30"
+      },
+      {
+        "trade": "2026-04-30",
+        "scheduled_settlement": "2026-05-01"
+      },
+      {
+        "trade": "2026-05-01",
+        "scheduled_settlement": "2026-05-04"
+      },
+      {
+        "trade": "2026-05-04",
+        "scheduled_settlement": "2026-05-05"
+      },
+      {
+        "trade": "2026-05-05",
+        "scheduled_settlement": "2026-05-06"
+      },
+      {
+        "trade": "2026-05-06",
+        "scheduled_settlement": "2026-05-07"
+      },
+      {
+        "trade": "2026-05-07",
+        "scheduled_settlement": "2026-05-08"
+      },
+      {
+        "trade": "2026-05-08",
+        "scheduled_settlement": "2026-05-11"
+      },
+      {
+        "trade": "2026-05-11",
+        "scheduled_settlement": "2026-05-12"
+      },
+      {
+        "trade": "2026-05-12",
+        "scheduled_settlement": "2026-05-13"
+      },
+      {
+        "trade": "2026-05-13",
+        "scheduled_settlement": "2026-05-14"
+      },
+      {
+        "trade": "2026-05-14",
+        "scheduled_settlement": "2026-05-15"
+      },
+      {
+        "trade": "2026-05-15",
+        "scheduled_settlement": "2026-05-18"
+      },
+      {
+        "trade": "2026-05-18",
+        "scheduled_settlement": "2026-05-19"
+      },
+      {
+        "trade": "2026-05-19",
+        "scheduled_settlement": "2026-05-20"
+      },
+      {
+        "trade": "2026-05-20",
+        "scheduled_settlement": "2026-05-21"
+      },
+      {
+        "trade": "2026-05-21",
+        "scheduled_settlement": "2026-05-22"
+      },
+      {
+        "trade": "2026-05-22",
+        "scheduled_settlement": "2026-05-26"
+      },
+      {
+        "trade": "2026-05-26",
+        "scheduled_settlement": "2026-05-27"
+      },
+      {
+        "trade": "2026-05-27",
+        "scheduled_settlement": "2026-05-28"
+      },
+      {
+        "trade": "2026-05-28",
+        "scheduled_settlement": "2026-05-29"
+      },
+      {
+        "trade": "2026-05-29",
+        "scheduled_settlement": "2026-06-01"
+      },
+      {
+        "trade": "2026-06-01",
+        "scheduled_settlement": "2026-06-02"
+      },
+      {
+        "trade": "2026-06-02",
+        "scheduled_settlement": "2026-06-03"
+      },
+      {
+        "trade": "2026-06-03",
+        "scheduled_settlement": "2026-06-04"
+      },
+      {
+        "trade": "2026-06-04",
+        "scheduled_settlement": "2026-06-05"
+      },
+      {
+        "trade": "2026-06-05",
+        "scheduled_settlement": "2026-06-08"
+      },
+      {
+        "trade": "2026-06-08",
+        "scheduled_settlement": "2026-06-09"
+      },
+      {
+        "trade": "2026-06-09",
+        "scheduled_settlement": "2026-06-10"
+      },
+      {
+        "trade": "2026-06-10",
+        "scheduled_settlement": "2026-06-11"
+      },
+      {
+        "trade": "2026-06-11",
+        "scheduled_settlement": "2026-06-12"
+      },
+      {
+        "trade": "2026-06-12",
+        "scheduled_settlement": "2026-06-15"
+      },
+      {
+        "trade": "2026-06-15",
+        "scheduled_settlement": "2026-06-16"
+      },
+      {
+        "trade": "2026-06-16",
+        "scheduled_settlement": "2026-06-17"
+      },
+      {
+        "trade": "2026-06-17",
+        "scheduled_settlement": "2026-06-18"
+      },
+      {
+        "trade": "2026-06-18",
+        "scheduled_settlement": "2026-06-22"
+      },
+      {
+        "trade": "2026-06-22",
+        "scheduled_settlement": "2026-06-23"
+      },
+      {
+        "trade": "2026-06-23",
+        "scheduled_settlement": "2026-06-24"
+      },
+      {
+        "trade": "2026-06-24",
+        "scheduled_settlement": "2026-06-25"
+      },
+      {
+        "trade": "2026-06-25",
+        "scheduled_settlement": "2026-06-26"
+      },
+      {
+        "trade": "2026-06-26",
+        "scheduled_settlement": "2026-06-29"
+      },
+      {
+        "trade": "2026-06-29",
+        "scheduled_settlement": "2026-06-30"
+      },
+      {
+        "trade": "2026-06-30",
+        "scheduled_settlement": "2026-07-01"
+      },
+      {
+        "trade": "2026-07-01",
+        "scheduled_settlement": "2026-07-02"
+      },
+      {
+        "trade": "2026-07-02",
+        "scheduled_settlement": "2026-07-06"
+      },
+      {
+        "trade": "2026-07-06",
+        "scheduled_settlement": "2026-07-07"
+      },
+      {
+        "trade": "2026-07-07",
+        "scheduled_settlement": "2026-07-08"
+      },
+      {
+        "trade": "2026-07-08",
+        "scheduled_settlement": "2026-07-09"
+      },
+      {
+        "trade": "2026-07-09",
+        "scheduled_settlement": "2026-07-10"
+      },
+      {
+        "trade": "2026-07-10",
+        "scheduled_settlement": "2026-07-13"
+      },
+      {
+        "trade": "2026-07-13",
+        "scheduled_settlement": "2026-07-14"
+      },
+      {
+        "trade": "2026-07-14",
+        "scheduled_settlement": "2026-07-15"
+      },
+      {
+        "trade": "2026-07-15",
+        "scheduled_settlement": "2026-07-16"
+      },
+      {
+        "trade": "2026-07-16",
+        "scheduled_settlement": "2026-07-17"
+      },
+      {
+        "trade": "2026-07-17",
+        "scheduled_settlement": "2026-07-20"
+      },
+      {
+        "trade": "2026-07-20",
+        "scheduled_settlement": "2026-07-21"
+      },
+      {
+        "trade": "2026-07-21",
+        "scheduled_settlement": "2026-07-22"
+      },
+      {
+        "trade": "2026-07-22",
+        "scheduled_settlement": "2026-07-23"
+      },
+      {
+        "trade": "2026-07-23",
+        "scheduled_settlement": "2026-07-24"
+      },
+      {
+        "trade": "2026-07-24",
+        "scheduled_settlement": "2026-07-27"
+      },
+      {
+        "trade": "2026-07-27",
+        "scheduled_settlement": "2026-07-28"
+      },
+      {
+        "trade": "2026-07-28",
+        "scheduled_settlement": "2026-07-29"
+      },
+      {
+        "trade": "2026-07-29",
+        "scheduled_settlement": "2026-07-30"
+      },
+      {
+        "trade": "2026-07-30",
+        "scheduled_settlement": "2026-07-31"
+      },
+      {
+        "trade": "2026-07-31",
+        "scheduled_settlement": "2026-08-03"
+      },
+      {
+        "trade": "2026-08-03",
+        "scheduled_settlement": "2026-08-04"
+      },
+      {
+        "trade": "2026-08-04",
+        "scheduled_settlement": "2026-08-05"
+      },
+      {
+        "trade": "2026-08-05",
+        "scheduled_settlement": "2026-08-06"
+      },
+      {
+        "trade": "2026-08-06",
+        "scheduled_settlement": "2026-08-07"
+      },
+      {
+        "trade": "2026-08-07",
+        "scheduled_settlement": "2026-08-10"
+      },
+      {
+        "trade": "2026-08-10",
+        "scheduled_settlement": "2026-08-11"
+      },
+      {
+        "trade": "2026-08-11",
+        "scheduled_settlement": "2026-08-12"
+      },
+      {
+        "trade": "2026-08-12",
+        "scheduled_settlement": "2026-08-13"
+      },
+      {
+        "trade": "2026-08-13",
+        "scheduled_settlement": "2026-08-14"
+      },
+      {
+        "trade": "2026-08-14",
+        "scheduled_settlement": "2026-08-17"
+      },
+      {
+        "trade": "2026-08-17",
+        "scheduled_settlement": "2026-08-18"
+      },
+      {
+        "trade": "2026-08-18",
+        "scheduled_settlement": "2026-08-19"
+      },
+      {
+        "trade": "2026-08-19",
+        "scheduled_settlement": "2026-08-20"
+      },
+      {
+        "trade": "2026-08-20",
+        "scheduled_settlement": "2026-08-21"
+      },
+      {
+        "trade": "2026-08-21",
+        "scheduled_settlement": "2026-08-24"
+      },
+      {
+        "trade": "2026-08-24",
+        "scheduled_settlement": "2026-08-25"
+      },
+      {
+        "trade": "2026-08-25",
+        "scheduled_settlement": "2026-08-26"
+      },
+      {
+        "trade": "2026-08-26",
+        "scheduled_settlement": "2026-08-27"
+      },
+      {
+        "trade": "2026-08-27",
+        "scheduled_settlement": "2026-08-28"
+      },
+      {
+        "trade": "2026-08-28",
+        "scheduled_settlement": "2026-08-31"
+      },
+      {
+        "trade": "2026-08-31",
+        "scheduled_settlement": "2026-09-01"
+      },
+      {
+        "trade": "2026-09-01",
+        "scheduled_settlement": "2026-09-02"
+      },
+      {
+        "trade": "2026-09-02",
+        "scheduled_settlement": "2026-09-03"
+      },
+      {
+        "trade": "2026-09-03",
+        "scheduled_settlement": "2026-09-04"
+      },
+      {
+        "trade": "2026-09-04",
+        "scheduled_settlement": "2026-09-08"
+      },
+      {
+        "trade": "2026-09-08",
+        "scheduled_settlement": "2026-09-09"
+      },
+      {
+        "trade": "2026-09-09",
+        "scheduled_settlement": "2026-09-10"
+      },
+      {
+        "trade": "2026-09-10",
+        "scheduled_settlement": "2026-09-11"
+      },
+      {
+        "trade": "2026-09-11",
+        "scheduled_settlement": "2026-09-14"
+      },
+      {
+        "trade": "2026-09-14",
+        "scheduled_settlement": "2026-09-15"
+      },
+      {
+        "trade": "2026-09-15",
+        "scheduled_settlement": "2026-09-16"
+      },
+      {
+        "trade": "2026-09-16",
+        "scheduled_settlement": "2026-09-17"
+      },
+      {
+        "trade": "2026-09-17",
+        "scheduled_settlement": "2026-09-18"
+      },
+      {
+        "trade": "2026-09-18",
+        "scheduled_settlement": "2026-09-21"
+      },
+      {
+        "trade": "2026-09-21",
+        "scheduled_settlement": "2026-09-22"
+      },
+      {
+        "trade": "2026-09-22",
+        "scheduled_settlement": "2026-09-23"
+      },
+      {
+        "trade": "2026-09-23",
+        "scheduled_settlement": "2026-09-24"
+      },
+      {
+        "trade": "2026-09-24",
+        "scheduled_settlement": "2026-09-25"
+      },
+      {
+        "trade": "2026-09-25",
+        "scheduled_settlement": "2026-09-28"
+      },
+      {
+        "trade": "2026-09-28",
+        "scheduled_settlement": "2026-09-29"
+      },
+      {
+        "trade": "2026-09-29",
+        "scheduled_settlement": "2026-09-30"
+      },
+      {
+        "trade": "2026-09-30",
+        "scheduled_settlement": "2026-10-01"
+      },
+      {
+        "trade": "2026-10-01",
+        "scheduled_settlement": "2026-10-02"
+      },
+      {
+        "trade": "2026-10-02",
+        "scheduled_settlement": "2026-10-05"
+      },
+      {
+        "trade": "2026-10-05",
+        "scheduled_settlement": "2026-10-06"
+      },
+      {
+        "trade": "2026-10-06",
+        "scheduled_settlement": "2026-10-07"
+      },
+      {
+        "trade": "2026-10-07",
+        "scheduled_settlement": "2026-10-08"
+      },
+      {
+        "trade": "2026-10-08",
+        "scheduled_settlement": "2026-10-09"
+      },
+      {
+        "trade": "2026-10-09",
+        "scheduled_settlement": "2026-10-13"
+      },
+      {
+        "trade": "2026-10-12",
+        "scheduled_settlement": "2026-10-13"
+      },
+      {
+        "trade": "2026-10-13",
+        "scheduled_settlement": "2026-10-14"
+      },
+      {
+        "trade": "2026-10-14",
+        "scheduled_settlement": "2026-10-15"
+      },
+      {
+        "trade": "2026-10-15",
+        "scheduled_settlement": "2026-10-16"
+      },
+      {
+        "trade": "2026-10-16",
+        "scheduled_settlement": "2026-10-19"
+      },
+      {
+        "trade": "2026-10-19",
+        "scheduled_settlement": "2026-10-20"
+      },
+      {
+        "trade": "2026-10-20",
+        "scheduled_settlement": "2026-10-21"
+      },
+      {
+        "trade": "2026-10-21",
+        "scheduled_settlement": "2026-10-22"
+      },
+      {
+        "trade": "2026-10-22",
+        "scheduled_settlement": "2026-10-23"
+      },
+      {
+        "trade": "2026-10-23",
+        "scheduled_settlement": "2026-10-26"
+      },
+      {
+        "trade": "2026-10-26",
+        "scheduled_settlement": "2026-10-27"
+      },
+      {
+        "trade": "2026-10-27",
+        "scheduled_settlement": "2026-10-28"
+      },
+      {
+        "trade": "2026-10-28",
+        "scheduled_settlement": "2026-10-29"
+      },
+      {
+        "trade": "2026-10-29",
+        "scheduled_settlement": "2026-10-30"
+      },
+      {
+        "trade": "2026-10-30",
+        "scheduled_settlement": "2026-11-02"
+      },
+      {
+        "trade": "2026-11-02",
+        "scheduled_settlement": "2026-11-03"
+      },
+      {
+        "trade": "2026-11-03",
+        "scheduled_settlement": "2026-11-04"
+      },
+      {
+        "trade": "2026-11-04",
+        "scheduled_settlement": "2026-11-05"
+      },
+      {
+        "trade": "2026-11-05",
+        "scheduled_settlement": "2026-11-06"
+      },
+      {
+        "trade": "2026-11-06",
+        "scheduled_settlement": "2026-11-09"
+      },
+      {
+        "trade": "2026-11-09",
+        "scheduled_settlement": "2026-11-10"
+      },
+      {
+        "trade": "2026-11-10",
+        "scheduled_settlement": "2026-11-12"
+      },
+      {
+        "trade": "2026-11-11",
+        "scheduled_settlement": "2026-11-12"
+      },
+      {
+        "trade": "2026-11-12",
+        "scheduled_settlement": "2026-11-13"
+      },
+      {
+        "trade": "2026-11-13",
+        "scheduled_settlement": "2026-11-16"
+      },
+      {
+        "trade": "2026-11-16",
+        "scheduled_settlement": "2026-11-17"
+      },
+      {
+        "trade": "2026-11-17",
+        "scheduled_settlement": "2026-11-18"
+      },
+      {
+        "trade": "2026-11-18",
+        "scheduled_settlement": "2026-11-19"
+      },
+      {
+        "trade": "2026-11-19",
+        "scheduled_settlement": "2026-11-20"
+      },
+      {
+        "trade": "2026-11-20",
+        "scheduled_settlement": "2026-11-23"
+      },
+      {
+        "trade": "2026-11-23",
+        "scheduled_settlement": "2026-11-24"
+      },
+      {
+        "trade": "2026-11-24",
+        "scheduled_settlement": "2026-11-25"
+      },
+      {
+        "trade": "2026-11-25",
+        "scheduled_settlement": "2026-11-27"
+      },
+      {
+        "trade": "2026-11-27",
+        "scheduled_settlement": "2026-11-30"
+      },
+      {
+        "trade": "2026-11-30",
+        "scheduled_settlement": "2026-12-01"
+      },
+      {
+        "trade": "2026-12-01",
+        "scheduled_settlement": "2026-12-02"
+      },
+      {
+        "trade": "2026-12-02",
+        "scheduled_settlement": "2026-12-03"
+      },
+      {
+        "trade": "2026-12-03",
+        "scheduled_settlement": "2026-12-04"
+      },
+      {
+        "trade": "2026-12-04",
+        "scheduled_settlement": "2026-12-07"
+      },
+      {
+        "trade": "2026-12-07",
+        "scheduled_settlement": "2026-12-08"
+      },
+      {
+        "trade": "2026-12-08",
+        "scheduled_settlement": "2026-12-09"
+      },
+      {
+        "trade": "2026-12-09",
+        "scheduled_settlement": "2026-12-10"
+      },
+      {
+        "trade": "2026-12-10",
+        "scheduled_settlement": "2026-12-11"
+      },
+      {
+        "trade": "2026-12-11",
+        "scheduled_settlement": "2026-12-14"
+      },
+      {
+        "trade": "2026-12-14",
+        "scheduled_settlement": "2026-12-15"
+      },
+      {
+        "trade": "2026-12-15",
+        "scheduled_settlement": "2026-12-16"
+      },
+      {
+        "trade": "2026-12-16",
+        "scheduled_settlement": "2026-12-17"
+      },
+      {
+        "trade": "2026-12-17",
+        "scheduled_settlement": "2026-12-18"
+      },
+      {
+        "trade": "2026-12-18",
+        "scheduled_settlement": "2026-12-21"
+      },
+      {
+        "trade": "2026-12-21",
+        "scheduled_settlement": "2026-12-22"
+      },
+      {
+        "trade": "2026-12-22",
+        "scheduled_settlement": "2026-12-23"
+      },
+      {
+        "trade": "2026-12-23",
+        "scheduled_settlement": "2026-12-24"
+      },
+      {
+        "trade": "2026-12-24",
+        "scheduled_settlement": "2026-12-28"
+      },
+      {
+        "trade": "2026-12-28",
+        "scheduled_settlement": "2026-12-29"
+      },
+      {
+        "trade": "2026-12-29",
+        "scheduled_settlement": "2026-12-30"
+      },
+      {
+        "trade": "2026-12-30",
+        "scheduled_settlement": "2026-12-31"
+      }
+    ],
+    "session_count_in_fixed_sample": 5218,
+    "official_session_response_sha256": "c1e9be1689a3ecdc76b4c1cb882ef63dbf8c653aed1a49482391968bec5961d2",
+    "settlement_open_exchange_closed_count": 5,
+    "exchange_open_settlement_closed_dates": [
+      "2006-10-09",
+      "2007-10-08",
+      "2007-11-12",
+      "2008-10-13",
+      "2008-11-11",
+      "2009-10-12",
+      "2009-11-11",
+      "2010-10-11",
+      "2010-11-11",
+      "2011-10-10",
+      "2011-11-11",
+      "2012-10-08",
+      "2012-11-12",
+      "2013-10-14",
+      "2013-11-11",
+      "2014-10-13",
+      "2014-11-11",
+      "2015-10-12",
+      "2015-11-11",
+      "2016-10-10",
+      "2016-11-11",
+      "2017-10-09",
+      "2018-10-08",
+      "2018-11-12",
+      "2019-10-14",
+      "2019-11-11",
+      "2020-10-12",
+      "2020-11-11",
+      "2021-10-11",
+      "2021-11-11",
+      "2022-10-10",
+      "2022-11-11",
+      "2023-10-09",
+      "2024-10-14",
+      "2024-11-11",
+      "2025-10-13",
+      "2025-11-11"
+    ]
+  },
+  "cash_policy_proposal": "Treat proceeds as unavailable throughout scheduled settlement and any documented rollover; a future replay may release only at the next regular-session open after settlement completion. This conservative convention is not evidence of actual Alpaca account credit and must be frozen with the dataset before outcomes.",
+  "source_amendment_applied_to_replay": false,
+  "strategy_outcomes_inspected": false,
+  "sha256": "b7d934c0dc7740a39e7689819505482625c98c3bfd7ee84f2bbe627ef499dac4"
+}

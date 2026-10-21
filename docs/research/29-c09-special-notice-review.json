@@ -1,0 +1,186 @@
+{
+  "2008/BPD_SPL_20080730_1.pdf": {
+    "date": "2008-07-30",
+    "disposition": "Supplemental maturing coupon/SOMA amounts; no auction-date change.",
+    "kind": "maturing_amount_information",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "587fa707646f5e1f60be4c380972f73b1558b4d87cecb339b0de396b3571966a"
+  },
+  "2008/BPD_SPL_20081008_1.pdf": {
+    "date": "2008-10-08",
+    "disposition": "Tax clarification for emergency reopenings; no auction-date change.",
+    "kind": "original_issue_discount_tax",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "4601eadd86c82ba7ac7dde338e2f3160ccbd807f69430eccfa90f7a8d5a82aca"
+  },
+  "2012/BPD_SPL_20121206_1.pdf": {
+    "date": "2012-12-06",
+    "disposition": "Reviewed bid closing times; auction date matches offering and remains before the regular ETF close.",
+    "kind": "intraday_closing_times",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "15702a3b337241ade67d70b1b8ab36cab4129e748525819096c78ea7434b69da"
+  },
+  "2016/BPD_SPL_20161208_1.pdf": {
+    "date": "2016-12-08",
+    "disposition": "Reviewed bid closing times; auction date matches offering and remains before the regular ETF close.",
+    "kind": "intraday_closing_times",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "22c875799896523e390e5c04af0837b9b8423c415360d7ec656956368078efba"
+  },
+  "2017/BPD_SPL_20170608_1.pdf": {
+    "date": "2017-06-08",
+    "disposition": "Reviewed bid closing times; auction date matches offering and remains before the regular ETF close.",
+    "kind": "intraday_closing_times",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "4f61b306791bb33f6f7d99b961f6ba16917539e5f7771c80d5923e0cd32064a4"
+  },
+  "2017/BPD_SPL_20171005_1.pdf": {
+    "date": "2017-10-05",
+    "disposition": "Reviewed bid closing times; auction date matches offering and remains before the regular ETF close.",
+    "kind": "intraday_closing_times",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "eac79d11c873024b33422e5e9e4b2084d154f5b11633cdbcad234ebce4b4e193"
+  },
+  "2017/BPD_SPL_20171207_2.pdf": {
+    "date": "2017-12-07",
+    "disposition": "Reviewed bid closing times; auction date matches offering and remains before the regular ETF close.",
+    "kind": "intraday_closing_times",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "9b0a93c6bd4f84f1e5329aee92030d9e9fba916a6b72da7b7d6e9086712cc6b9"
+  },
+  "2018/BPD_SPL_20180607_1.pdf": {
+    "date": "2018-06-07",
+    "disposition": "Reviewed bid closing times; auction date matches offering and remains before the regular ETF close.",
+    "kind": "intraday_closing_times",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "d7f82107882609bcde87e9107840d4556524aaac2431267d4c4926a30cd2cdb8"
+  },
+  "2018/BPD_SPL_20181004_2.pdf": {
+    "date": "2018-10-04",
+    "disposition": "Reviewed bid closing times; auction date matches offering and remains before the regular ETF close.",
+    "kind": "intraday_closing_times",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "88656edbce6f4c539fca61d80096ea1fff09eb00e62e635c1285b95c3dd8b913"
+  },
+  "2018/BPD_SPL_20181105_1.pdf": {
+    "date": "2018-11-05",
+    "disposition": "Reviewed bid closing times; auction date matches offering and remains before the regular ETF close.",
+    "kind": "intraday_closing_times",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "2b6736f0cae3384a0d5a8009321a0ba734bfd164b37cbcd2e8fdf249a7f55a8c"
+  },
+  "2019/BPD_SPL_20190620_4.pdf": {
+    "date": "2019-06-20",
+    "disposition": "Live small-value original-10-year reopening on June 21 retained; no size filter.",
+    "kind": "contingency_auction",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "f55544bfc9f0e03b59f8108de0b139614476afa2d8c383bc0e3d186fd4e12630"
+  },
+  "2020/SPL_20201105_1.pdf": {
+    "date": "2020-11-05",
+    "disposition": "Veterans Day schedule confirms November 10 ten-year auction.",
+    "kind": "holiday_schedule",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "d57c1d77be2d771420ad3b16ef0a7021b465c36fe3091a1e98b934b3e7da89a3"
+  },
+  "2021/SPL_20210408_1.pdf": {
+    "date": "2021-04-08",
+    "disposition": "Reviewed bid closing times; auction date matches offering and remains before the regular ETF close.",
+    "kind": "intraday_closing_times",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "a11efa0cd4c08bd542c2d9297ce828a5014f67c4cfe0ccd351c0a53b6b94e7ad"
+  },
+  "2021/SPL_20210708_1.pdf": {
+    "date": "2021-07-08",
+    "disposition": "Reviewed bid closing times; auction date matches offering and remains before the regular ETF close.",
+    "kind": "intraday_closing_times",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "680e3a14954f834437465ddab1ead2c27b76ec757c1a3b7e2f391c4d4aa66c28"
+  },
+  "2021/SPL_20211007_1.pdf": {
+    "date": "2021-10-07",
+    "disposition": "Reviewed bid closing times; auction date matches offering and remains before the regular ETF close.",
+    "kind": "intraday_closing_times",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "5940e6dd345f0b9f2e28a270623b6bb8b5a9f09ffd67e9b085667024a69c06ef"
+  },
+  "2022/SPL_20220329_1.pdf": {
+    "date": "2022-03-29",
+    "disposition": "Treasury coupon settlement moves to April 18; does not change ETF settlement or auction date.",
+    "kind": "treasury_settlement",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "213ef549179f2d71337e9defff9a97a2fa0f64266ef8fdb3c7ee660737095266"
+  },
+  "2022/SPL_20220908_1.pdf": {
+    "date": "2022-09-08",
+    "disposition": "Reviewed bid closing times; auction date matches offering and remains before the regular ETF close.",
+    "kind": "intraday_closing_times",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "85121669d7ecc7df6624892754c7f61fc0725e8d81f0a31f42b031964ce2b11e"
+  },
+  "2022/SPL_20221208_1.pdf": {
+    "date": "2022-12-08",
+    "disposition": "Reviewed bid closing times; auction date matches offering and remains before the regular ETF close.",
+    "kind": "intraday_closing_times",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "3cccded2b28ba134542fd208279eec9efd210771d945406467cc0f20752a0668"
+  },
+  "2023/SPL_20230608_1.pdf": {
+    "date": "2023-06-08",
+    "disposition": "Reviewed bid closing times; auction date matches offering and remains before the regular ETF close.",
+    "kind": "intraday_closing_times",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "9e9bd62e455a9850155456e406727ac7e469e73b1a2fb5827fa353e6c4e5531f"
+  },
+  "2023/SPL_20231207_1.pdf": {
+    "date": "2023-12-07",
+    "disposition": "Reviewed bid closing times; auction date matches offering and remains before the regular ETF close.",
+    "kind": "intraday_closing_times",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "3d28b209313059dd2d97117b79f3d6b530c0b829e5590f929176c24a622857cf"
+  },
+  "2025/SPL_20250102_1.pdf": {
+    "date": "2025-01-02",
+    "disposition": "Carter mourning shifts ten-year reopening to January 7; offering and occurrence agree.",
+    "kind": "auction_date_change",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "9a4568e10d061b80e60d5f8b13e002fe30c2c8c346fa8328aa411d70956ecb75"
+  },
+  "2026/SPL_20260108_1.pdf": {
+    "date": "2026-01-08",
+    "disposition": "Reviewed bid closing times; auction date matches offering and remains before the regular ETF close.",
+    "kind": "intraday_closing_times",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "e3c04670d763efe6189260d75fdd267c2afaca18bac0dfba33a5942c01308228"
+  },
+  "2026/SPL_20260204_1.pdf": {
+    "date": "2026-02-04",
+    "disposition": "Possible original-30-year conversion requires identity verification. Dated results retain new 91282CPZ8, same as offering; no yield is used.",
+    "kind": "conditional_original_thirty_year",
+    "reviewed_on": "2026-10-01",
+    "reviewer": "OrangeCove",
+    "sha256": "673e339fd553bcf88097cc3ef8de0f00d0614531c8e4e13a49456061241abd62"
+  }
+}

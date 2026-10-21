@@ -1,0 +1,9 @@
+{
+  "name": "tradingbot-weekly-report",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "staticrypt": "3.5.4",
+    "wrangler": "4.145.0"
+  }
+}

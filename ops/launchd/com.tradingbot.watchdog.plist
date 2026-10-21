@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.tradingbot.watchdog</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>/Users/USER/Documents/tradingbot/ops/watchdog.sh</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/Users/USER/Documents/tradingbot/logs/com.tradingbot.watchdog.err.log</string>
+	<key>StandardOutPath</key>
+	<string>/Users/USER/Documents/tradingbot/logs/com.tradingbot.watchdog.out.log</string>
+	<key>StartInterval</key>
+	<integer>60</integer>
+	<key>WorkingDirectory</key>
+	<string>/Users/USER/Documents/tradingbot</string>
+</dict>
+</plist>

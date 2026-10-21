@@ -1,0 +1,1368 @@
+{
+  "capture": {
+    "captured_jobs_complete": true,
+    "catalog_schedule": [
+      {
+        "basis": "catalog scheduled close UTC date; not an observation-day or trade-coverage claim",
+        "category": "KXBTC",
+        "dates_with_multiple_events": [],
+        "dates_without_selected_close": [
+          "2025-12-26",
+          "2025-12-31"
+        ],
+        "distinct_scheduled_close_dates": 393,
+        "expected_calendar_dates": 395,
+        "venue": "kalshi"
+      },
+      {
+        "basis": "catalog scheduled close UTC date; not an observation-day or trade-coverage claim",
+        "category": "KXHIGHNY",
+        "dates_with_multiple_events": [],
+        "dates_without_selected_close": [],
+        "distinct_scheduled_close_dates": 395,
+        "expected_calendar_dates": 395,
+        "venue": "kalshi"
+      },
+      {
+        "basis": "catalog scheduled close UTC date; not an observation-day or trade-coverage claim",
+        "category": "KXINX",
+        "dates_with_multiple_events": [],
+        "dates_without_selected_close": null,
+        "distinct_scheduled_close_dates": 273,
+        "expected_calendar_dates": null,
+        "venue": "kalshi"
+      },
+      {
+        "basis": "catalog scheduled close UTC date; not an observation-day or trade-coverage claim",
+        "category": "pm-series:btc-up-or-down-daily",
+        "dates_with_multiple_events": [],
+        "dates_without_selected_close": [
+          "2026-05-24"
+        ],
+        "distinct_scheduled_close_dates": 394,
+        "expected_calendar_dates": 395,
+        "venue": "polymarket_intl"
+      },
+      {
+        "basis": "catalog scheduled close UTC date; not an observation-day or trade-coverage claim",
+        "category": "pm-series:nyc-daily-weather",
+        "dates_with_multiple_events": [
+          {
+            "date": "2026-05-19",
+            "event_ids": [
+              "493658",
+              "503590"
+            ]
+          }
+        ],
+        "dates_without_selected_close": [
+          "2026-06-18",
+          "2026-09-30"
+        ],
+        "distinct_scheduled_close_dates": 393,
+        "expected_calendar_dates": 395,
+        "venue": "polymarket_intl"
+      }
+    ],
+    "cohort_sha256": "35c64518ea06b437e6c4a614d43f1650333ac5e9c66da7800825e7b7700be0d9",
+    "data_bytes": 1022913632,
+    "finished_at": "2026-10-01T12:52:07.028495+00:00",
+    "free_bytes": 106372415488,
+    "missing_jobs": [],
+    "recorded_at": "2026-10-01T12:52:11.054972+00:00",
+    "request_groups": [
+      {
+        "complete_jobs": 397,
+        "compressed_page_bytes": 4059001,
+        "dataset": "markets_historical",
+        "empty_complete_jobs": 63,
+        "expected_jobs": 397,
+        "kind": "catalog",
+        "pages": 427,
+        "source_records": 48804,
+        "venue": "kalshi"
+      },
+      {
+        "complete_jobs": 397,
+        "compressed_page_bytes": 1968014,
+        "dataset": "markets_recent",
+        "empty_complete_jobs": 327,
+        "expected_jobs": 397,
+        "kind": "catalog",
+        "pages": 398,
+        "source_records": 7090,
+        "venue": "kalshi"
+      },
+      {
+        "complete_jobs": 2,
+        "compressed_page_bytes": 1245258,
+        "dataset": "events",
+        "empty_complete_jobs": 0,
+        "expected_jobs": 2,
+        "kind": "catalog",
+        "pages": 8,
+        "source_records": 788,
+        "venue": "polymarket_intl"
+      },
+      {
+        "complete_jobs": 201,
+        "compressed_page_bytes": 2472910,
+        "dataset": "resolutions",
+        "empty_complete_jobs": 0,
+        "expected_jobs": 201,
+        "kind": "resolutions",
+        "pages": 201,
+        "source_records": 4004,
+        "venue": "polymarket_intl"
+      },
+      {
+        "complete_jobs": 17282,
+        "compressed_page_bytes": 221768953,
+        "dataset": "trades_historical",
+        "empty_complete_jobs": 2399,
+        "expected_jobs": 17282,
+        "kind": "trades",
+        "pages": 18897,
+        "source_records": 3120875,
+        "venue": "kalshi"
+      },
+      {
+        "complete_jobs": 17282,
+        "compressed_page_bytes": 103730822,
+        "dataset": "trades_recent",
+        "empty_complete_jobs": 14529,
+        "expected_jobs": 17282,
+        "kind": "trades",
+        "pages": 17668,
+        "source_records": 712744,
+        "venue": "kalshi"
+      },
+      {
+        "complete_jobs": 201,
+        "compressed_page_bytes": 240293576,
+        "dataset": "trades_taker_history",
+        "empty_complete_jobs": 0,
+        "expected_jobs": 201,
+        "kind": "trades",
+        "pages": 2754,
+        "source_records": 2657334,
+        "venue": "polymarket_intl"
+      }
+    ],
+    "selected": [
+      {
+        "category": "KXBTC",
+        "contracts": 22820,
+        "events": 393,
+        "venue": "kalshi",
+        "zero_volume_contracts_not_queried": 11621
+      },
+      {
+        "category": "KXHIGHNY",
+        "contracts": 2370,
+        "events": 395,
+        "venue": "kalshi",
+        "zero_volume_contracts_not_queried": 3
+      },
+      {
+        "category": "KXINX",
+        "contracts": 8190,
+        "events": 273,
+        "venue": "kalshi",
+        "zero_volume_contracts_not_queried": 4474
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "contracts": 394,
+        "events": 394,
+        "venue": "polymarket_intl",
+        "zero_volume_contracts_not_queried": 0
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "contracts": 3610,
+        "events": 394,
+        "venue": "polymarket_intl",
+        "zero_volume_contracts_not_queried": 0
+      }
+    ]
+  },
+  "cohort_sha256": "35c64518ea06b437e6c4a614d43f1650333ac5e9c66da7800825e7b7700be0d9",
+  "compression": {
+    "chunks_compressed": 0,
+    "cohort_sha256": "35c64518ea06b437e6c4a614d43f1650333ac5e9c66da7800825e7b7700be0d9",
+    "data_bytes": 1022909504,
+    "eligible_chunks_processed": 100,
+    "free_bytes": 101234622464,
+    "previously_compressed_chunks_rechecked": 100,
+    "recorded_at": "2026-10-01T11:36:37.333289+00:00"
+  },
+  "database": {
+    "by_month": [
+      {
+        "category": "KXBTC",
+        "events": 31,
+        "month": "2025-09",
+        "trade_rows": 19572,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXBTC",
+        "events": 31,
+        "month": "2025-10",
+        "trade_rows": 21794,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXBTC",
+        "events": 31,
+        "month": "2025-11",
+        "trade_rows": 23354,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXBTC",
+        "events": 31,
+        "month": "2025-12",
+        "trade_rows": 37204,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXBTC",
+        "events": 33,
+        "month": "2026-01",
+        "trade_rows": 75284,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXBTC",
+        "events": 30,
+        "month": "2026-02",
+        "trade_rows": 185708,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXBTC",
+        "events": 33,
+        "month": "2026-03",
+        "trade_rows": 175098,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXBTC",
+        "events": 31,
+        "month": "2026-04",
+        "trade_rows": 129796,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXBTC",
+        "events": 33,
+        "month": "2026-05",
+        "trade_rows": 109950,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXBTC",
+        "events": 32,
+        "month": "2026-06",
+        "trade_rows": 117382,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXBTC",
+        "events": 33,
+        "month": "2026-07",
+        "trade_rows": 181654,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXBTC",
+        "events": 33,
+        "month": "2026-08",
+        "trade_rows": 151950,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXBTC",
+        "events": 30,
+        "month": "2026-09",
+        "trade_rows": 141916,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "events": 2,
+        "month": "2025-08",
+        "trade_rows": 2444,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "events": 32,
+        "month": "2025-09",
+        "trade_rows": 108116,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "events": 33,
+        "month": "2025-10",
+        "trade_rows": 213380,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "events": 32,
+        "month": "2025-11",
+        "trade_rows": 209136,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "events": 33,
+        "month": "2025-12",
+        "trade_rows": 366076,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "events": 33,
+        "month": "2026-01",
+        "trade_rows": 523184,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "events": 30,
+        "month": "2026-02",
+        "trade_rows": 552222,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "events": 33,
+        "month": "2026-03",
+        "trade_rows": 489106,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "events": 32,
+        "month": "2026-04",
+        "trade_rows": 504006,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "events": 33,
+        "month": "2026-05",
+        "trade_rows": 526666,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "events": 32,
+        "month": "2026-06",
+        "trade_rows": 586930,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "events": 33,
+        "month": "2026-07",
+        "trade_rows": 689834,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "events": 33,
+        "month": "2026-08",
+        "trade_rows": 464192,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "events": 30,
+        "month": "2026-09",
+        "trade_rows": 464204,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "events": 1,
+        "month": "2025-08",
+        "trade_rows": 6,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "events": 22,
+        "month": "2025-09",
+        "trade_rows": 3330,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "events": 23,
+        "month": "2025-10",
+        "trade_rows": 6882,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "events": 20,
+        "month": "2025-11",
+        "trade_rows": 6920,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "events": 23,
+        "month": "2025-12",
+        "trade_rows": 11654,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "events": 23,
+        "month": "2026-01",
+        "trade_rows": 25652,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "events": 21,
+        "month": "2026-02",
+        "trade_rows": 39632,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "events": 22,
+        "month": "2026-03",
+        "trade_rows": 66322,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "events": 22,
+        "month": "2026-04",
+        "trade_rows": 70286,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "events": 22,
+        "month": "2026-05",
+        "trade_rows": 50616,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "events": 21,
+        "month": "2026-06",
+        "trade_rows": 47044,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "events": 22,
+        "month": "2026-07",
+        "trade_rows": 44750,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "events": 22,
+        "month": "2026-08",
+        "trade_rows": 33334,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "events": 21,
+        "month": "2026-09",
+        "trade_rows": 15780,
+        "venue": "kalshi"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "events": 2,
+        "month": "2025-08",
+        "trade_rows": 403,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "events": 32,
+        "month": "2025-09",
+        "trade_rows": 37069,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "events": 33,
+        "month": "2025-10",
+        "trade_rows": 85097,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "events": 32,
+        "month": "2025-11",
+        "trade_rows": 102870,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "events": 33,
+        "month": "2025-12",
+        "trade_rows": 95549,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "events": 33,
+        "month": "2026-01",
+        "trade_rows": 166710,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "events": 30,
+        "month": "2026-02",
+        "trade_rows": 201916,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "events": 33,
+        "month": "2026-03",
+        "trade_rows": 131047,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "events": 32,
+        "month": "2026-04",
+        "trade_rows": 77417,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "events": 31,
+        "month": "2026-05",
+        "trade_rows": 73393,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "events": 33,
+        "month": "2026-06",
+        "trade_rows": 69923,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "events": 32,
+        "month": "2026-07",
+        "trade_rows": 52739,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "events": 33,
+        "month": "2026-08",
+        "trade_rows": 51243,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "events": 30,
+        "month": "2026-09",
+        "trade_rows": 40408,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "events": 2,
+        "month": "2025-08",
+        "trade_rows": 90,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "events": 32,
+        "month": "2025-09",
+        "trade_rows": 13406,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "events": 35,
+        "month": "2025-10",
+        "trade_rows": 22487,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "events": 33,
+        "month": "2025-11",
+        "trade_rows": 62414,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "events": 34,
+        "month": "2025-12",
+        "trade_rows": 38949,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "events": 35,
+        "month": "2026-01",
+        "trade_rows": 66524,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "events": 31,
+        "month": "2026-02",
+        "trade_rows": 142603,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "events": 35,
+        "month": "2026-03",
+        "trade_rows": 269799,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "events": 32,
+        "month": "2026-04",
+        "trade_rows": 259559,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "events": 35,
+        "month": "2026-05",
+        "trade_rows": 164693,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "events": 31,
+        "month": "2026-06",
+        "trade_rows": 115272,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "events": 33,
+        "month": "2026-07",
+        "trade_rows": 150038,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "events": 34,
+        "month": "2026-08",
+        "trade_rows": 92785,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "events": 30,
+        "month": "2026-09",
+        "trade_rows": 72931,
+        "venue": "polymarket_intl"
+      }
+    ],
+    "categories": [
+      {
+        "category": "KXBTC",
+        "duplicate_identities": 0,
+        "first_trade": "2025-08-31T21:01:03.182274-07:00",
+        "last_trade": "2026-09-30T13:59:37.139228-07:00",
+        "observed_utc_days": 395,
+        "trade_bearing_contracts": 11194,
+        "trade_bearing_events": 393,
+        "trade_rows": 1370662,
+        "unique_execution_identities": 685331,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "duplicate_identities": 0,
+        "first_trade": "2025-08-30T07:09:07.441204-07:00",
+        "last_trade": "2026-09-29T21:54:50.480300-07:00",
+        "observed_utc_days": 397,
+        "trade_bearing_contracts": 2367,
+        "trade_bearing_events": 395,
+        "trade_rows": 5699496,
+        "unique_execution_identities": 2849748,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "duplicate_identities": 0,
+        "first_trade": "2025-08-30T16:13:10.279077-07:00",
+        "last_trade": "2026-09-30T12:59:34.055158-07:00",
+        "observed_utc_days": 373,
+        "trade_bearing_contracts": 3716,
+        "trade_bearing_events": 273,
+        "trade_rows": 422208,
+        "unique_execution_identities": 211104,
+        "venue": "kalshi"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "duplicate_identities": 0,
+        "first_trade": "2025-08-29T08:15:47-07:00",
+        "last_trade": "2026-09-30T09:19:30-07:00",
+        "observed_utc_days": 397,
+        "trade_bearing_contracts": 394,
+        "trade_bearing_events": 394,
+        "trade_rows": 1185784,
+        "unique_execution_identities": 1185784,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "duplicate_identities": 0,
+        "first_trade": "2025-08-29T15:43:27-07:00",
+        "last_trade": "2026-09-29T22:32:32-07:00",
+        "observed_utc_days": 398,
+        "trade_bearing_contracts": 3610,
+        "trade_bearing_events": 394,
+        "trade_rows": 1471550,
+        "unique_execution_identities": 1471550,
+        "venue": "polymarket_intl"
+      }
+    ],
+    "cohort_sha256": "35c64518ea06b437e6c4a614d43f1650333ac5e9c66da7800825e7b7700be0d9",
+    "compressed_chunks": 100,
+    "contracts_without_both_outcomes": [],
+    "database_bytes": 3627497151,
+    "expected_contracts": 37384,
+    "instrument_count": 74768,
+    "instruments_missing_payout": 2,
+    "instruments_missing_resolution_time": 0,
+    "polymarket_catalog_window_anomalies": [
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "close_ts": "2026-05-19T05:00:00-07:00",
+        "contract": "0x0edbc4a321c2c090c757f818f4fb42bb24d8f6634631507410d4e4d9ddb0e58c",
+        "event_id": "503590",
+        "open_ts": "2026-05-19T15:08:42.179709-07:00",
+        "resolve_ts": "2026-05-20T00:03:00-07:00"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "close_ts": "2026-05-19T05:00:00-07:00",
+        "contract": "0x10272d3b2ebb53cb6937d7e1ed585066eda8251c4794c841cfbd2a52f4e95d3a",
+        "event_id": "503590",
+        "open_ts": "2026-05-19T15:08:25.286426-07:00",
+        "resolve_ts": "2026-05-20T00:02:55-07:00"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "close_ts": "2026-05-19T05:00:00-07:00",
+        "contract": "0x18dffde10c6496789ba0b3d486e854ab23c7d78ec8d76de7eb6bb57e5031d1f9",
+        "event_id": "503590",
+        "open_ts": "2026-05-19T15:09:00.588757-07:00",
+        "resolve_ts": "2026-05-20T00:03:00-07:00"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "close_ts": "2026-05-19T05:00:00-07:00",
+        "contract": "0x24c708d5f1f5475507b2f3c463712540d5ba81755598b3b60b84c71a81aeb6be",
+        "event_id": "503590",
+        "open_ts": "2026-05-19T15:08:12.081673-07:00",
+        "resolve_ts": "2026-05-20T00:03:11-07:00"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "close_ts": "2026-05-19T05:00:00-07:00",
+        "contract": "0x2621e12bfdbe96fa3278bf273878706e8e17f3a5514052f3df52347cb9def97e",
+        "event_id": "503590",
+        "open_ts": "2026-05-19T15:08:47.335379-07:00",
+        "resolve_ts": "2026-05-20T00:01:57-07:00"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "close_ts": "2026-05-19T05:00:00-07:00",
+        "contract": "0x2c0a5ea9423649e842e015aacecb3557c77315125dfca3e2d276de66724ed55f",
+        "event_id": "503590",
+        "open_ts": "2026-05-19T15:08:26.273674-07:00",
+        "resolve_ts": "2026-05-20T00:02:52-07:00"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "close_ts": "2026-05-19T05:00:00-07:00",
+        "contract": "0x67e20c3831a808f61a08c873b3288c5da78c28defe068651cd9e1de74522088b",
+        "event_id": "503590",
+        "open_ts": "2026-05-19T15:08:37.443418-07:00",
+        "resolve_ts": "2026-05-20T00:02:59-07:00"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "close_ts": "2026-05-19T05:00:00-07:00",
+        "contract": "0xa268eb01f5ef6987f7aef678efc9a1518f73216a40332e0c8333f73a22235211",
+        "event_id": "503590",
+        "open_ts": "2026-05-19T15:08:23.258734-07:00",
+        "resolve_ts": "2026-05-20T00:03:02-07:00"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "close_ts": "2026-05-19T05:00:00-07:00",
+        "contract": "0xaf6f80c7f80dadadfe519ece43a16b48bcf9aa8af34a4578c95c4ca4f3cef748",
+        "event_id": "503590",
+        "open_ts": "2026-05-19T15:09:01.598770-07:00",
+        "resolve_ts": "2026-05-20T00:03:00-07:00"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "close_ts": "2026-05-19T05:00:00-07:00",
+        "contract": "0xb30a6799eb44672a4f9455270d2af3368b9f150c106c19d5952bc85fc56fef4f",
+        "event_id": "503590",
+        "open_ts": "2026-05-19T15:08:21.286163-07:00",
+        "resolve_ts": "2026-05-20T00:02:55-07:00"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "close_ts": "2026-05-19T05:00:00-07:00",
+        "contract": "0xbb472ad187518e923abcd6b71a63da2a92cb77d6106e00a7a79ee6495004e8ac",
+        "event_id": "503590",
+        "open_ts": "2026-05-19T15:08:39.181270-07:00",
+        "resolve_ts": "2026-05-20T00:03:07-07:00"
+      }
+    ],
+    "recorded_at": "2026-10-01T13:08:39.990834+00:00",
+    "rowstore_chunks": 2
+  },
+  "final_budget_snapshot": {
+    "data_bytes": 1022950624,
+    "free_bytes": 106059444224
+  },
+  "final_verification_code_revision": "32728b1771f558b72cd7b4c4fc2764adfefa77c3",
+  "policies": {
+    "cohort_sha256": "35c64518ea06b437e6c4a614d43f1650333ac5e9c66da7800825e7b7700be0d9",
+    "data_bytes": 1022930048,
+    "eligible_chunk_state": [
+      {
+        "chunks": 44,
+        "hypertable_name": "quotes",
+        "is_compressed": true,
+        "status": 1
+      },
+      {
+        "chunks": 56,
+        "hypertable_name": "trades",
+        "is_compressed": true,
+        "status": 1
+      }
+    ],
+    "free_bytes": 108708552704,
+    "policies": [
+      {
+        "config": {
+          "compress_after": "7 days",
+          "hypertable_id": 9
+        },
+        "hypertable_name": "quotes",
+        "hypertable_schema": "public",
+        "job_id": 1000,
+        "last_run_started_at": "-infinity",
+        "next_start": "2026-10-01 20:33:56.30795-07",
+        "scheduled": true,
+        "total_failures": 0,
+        "total_runs": 0
+      },
+      {
+        "config": {
+          "compress_after": "7 days",
+          "hypertable_id": 10
+        },
+        "hypertable_name": "trades",
+        "hypertable_schema": "public",
+        "job_id": 1001,
+        "last_run_started_at": "-infinity",
+        "next_start": "2026-10-01 20:33:56.30795-07",
+        "scheduled": true,
+        "total_failures": 0,
+        "total_runs": 0
+      }
+    ],
+    "recorded_at": "2026-10-01T13:08:48.639833+00:00"
+  },
+  "queried_positive_volume_contracts_with_empty_tapes": {
+    "basis": "queried Kalshi contracts with zero source records from both endpoints; verified exhausted archives, not progress-cache row counts",
+    "cohort_sha256": "35c64518ea06b437e6c4a614d43f1650333ac5e9c66da7800825e7b7700be0d9",
+    "contracts": [
+      {
+        "catalog_page": "data/raw/kalshi/markets_historical/longshot-daily-20260930/88dd519b835ce37e7e7a7af1/page-00000000.parquet",
+        "category": "KXBTC",
+        "close": "2026-07-24T21:00:00+00:00",
+        "contract": "KXBTC-26JUL2417-B72750",
+        "event_id": "KXBTC-26JUL2417",
+        "source_pages": [
+          {
+            "path": "data/raw/kalshi/trades_historical/longshot-tape-20260930/69c66a59ee7e5aabe355f631/page-00000000.parquet",
+            "record_count": 0,
+            "response_sha256": "ce91679332b1b83d2574366e4cc72f6d41bf656ccc2fa9cf574ee4f9ac6809e7"
+          },
+          {
+            "path": "data/raw/kalshi/trades_recent/longshot-tape-20260930/d9808ab14cd4feef4f698fde/page-00000000.parquet",
+            "record_count": 0,
+            "response_sha256": "ce91679332b1b83d2574366e4cc72f6d41bf656ccc2fa9cf574ee4f9ac6809e7"
+          }
+        ],
+        "status": "finalized",
+        "venue": "kalshi",
+        "volume": "1.00"
+      },
+      {
+        "catalog_page": "data/raw/kalshi/markets_historical/longshot-daily-20260930/88dd519b835ce37e7e7a7af1/page-00000000.parquet",
+        "category": "KXBTC",
+        "close": "2026-07-24T21:00:00+00:00",
+        "contract": "KXBTC-26JUL2417-B73250",
+        "event_id": "KXBTC-26JUL2417",
+        "source_pages": [
+          {
+            "path": "data/raw/kalshi/trades_recent/longshot-tape-20260930/01dad31be72d21b667d64d65/page-00000000.parquet",
+            "record_count": 0,
+            "response_sha256": "ce91679332b1b83d2574366e4cc72f6d41bf656ccc2fa9cf574ee4f9ac6809e7"
+          },
+          {
+            "path": "data/raw/kalshi/trades_historical/longshot-tape-20260930/371ea54a48db40371012896d/page-00000000.parquet",
+            "record_count": 0,
+            "response_sha256": "ce91679332b1b83d2574366e4cc72f6d41bf656ccc2fa9cf574ee4f9ac6809e7"
+          }
+        ],
+        "status": "finalized",
+        "venue": "kalshi",
+        "volume": "1.00"
+      },
+      {
+        "catalog_page": "data/raw/kalshi/markets_historical/longshot-daily-20260930/88dd519b835ce37e7e7a7af1/page-00000000.parquet",
+        "category": "KXBTC",
+        "close": "2026-07-24T21:00:00+00:00",
+        "contract": "KXBTC-26JUL2417-B73750",
+        "event_id": "KXBTC-26JUL2417",
+        "source_pages": [
+          {
+            "path": "data/raw/kalshi/trades_historical/longshot-tape-20260930/e6afeb17443852bbf22714ff/page-00000000.parquet",
+            "record_count": 0,
+            "response_sha256": "ce91679332b1b83d2574366e4cc72f6d41bf656ccc2fa9cf574ee4f9ac6809e7"
+          },
+          {
+            "path": "data/raw/kalshi/trades_recent/longshot-tape-20260930/83471a4ecad2218d6f8ea0df/page-00000000.parquet",
+            "record_count": 0,
+            "response_sha256": "ce91679332b1b83d2574366e4cc72f6d41bf656ccc2fa9cf574ee4f9ac6809e7"
+          }
+        ],
+        "status": "finalized",
+        "venue": "kalshi",
+        "volume": "1.00"
+      },
+      {
+        "catalog_page": "data/raw/kalshi/markets_historical/longshot-daily-20260930/88dd519b835ce37e7e7a7af1/page-00000000.parquet",
+        "category": "KXBTC",
+        "close": "2026-07-24T21:00:00+00:00",
+        "contract": "KXBTC-26JUL2417-B74250",
+        "event_id": "KXBTC-26JUL2417",
+        "source_pages": [
+          {
+            "path": "data/raw/kalshi/trades_historical/longshot-tape-20260930/c63d92d6426d3f94cf6d15e0/page-00000000.parquet",
+            "record_count": 0,
+            "response_sha256": "ce91679332b1b83d2574366e4cc72f6d41bf656ccc2fa9cf574ee4f9ac6809e7"
+          },
+          {
+            "path": "data/raw/kalshi/trades_recent/longshot-tape-20260930/e81ab1380a4d4335f55ced96/page-00000000.parquet",
+            "record_count": 0,
+            "response_sha256": "ce91679332b1b83d2574366e4cc72f6d41bf656ccc2fa9cf574ee4f9ac6809e7"
+          }
+        ],
+        "status": "finalized",
+        "venue": "kalshi",
+        "volume": "1.00"
+      },
+      {
+        "catalog_page": "data/raw/kalshi/markets_recent/longshot-daily-20260930/11d738290d68387d3339f182/page-00000000.parquet",
+        "category": "KXBTC",
+        "close": "2026-07-31T21:00:00+00:00",
+        "contract": "KXBTC-26JUL3117-B75250",
+        "event_id": "KXBTC-26JUL3117",
+        "source_pages": [
+          {
+            "path": "data/raw/kalshi/trades_historical/longshot-tape-20260930/b70c671dd167bc04167be61c/page-00000000.parquet",
+            "record_count": 0,
+            "response_sha256": "ce91679332b1b83d2574366e4cc72f6d41bf656ccc2fa9cf574ee4f9ac6809e7"
+          },
+          {
+            "path": "data/raw/kalshi/trades_recent/longshot-tape-20260930/99e6cbafbe8625c9204bcd9e/page-00000000.parquet",
+            "record_count": 0,
+            "response_sha256": "ce91679332b1b83d2574366e4cc72f6d41bf656ccc2fa9cf574ee4f9ac6809e7"
+          }
+        ],
+        "status": "finalized",
+        "venue": "kalshi",
+        "volume": "120.00"
+      }
+    ],
+    "recorded_at": "2026-10-01T13:15:07.443775+00:00"
+  },
+  "receipt_hashes": [
+    {
+      "bytes": 5202,
+      "path": "data/history/longshot-20260930/capture-report-result.json",
+      "sha256": "67f46d08a01b7b5957d2fc6fe38e051c5ae1b77670b002245d817849d1a8dda7"
+    },
+    {
+      "bytes": 16493,
+      "path": "data/history/longshot-20260930/report-result.json",
+      "sha256": "51a103ed860e03b17c44e00a26194bb94fec8fb58cd8493c909daa04fd3ffcaa"
+    },
+    {
+      "bytes": 7514,
+      "path": "data/history/longshot-20260930/row-eligibility-audit.json",
+      "sha256": "f5a04f1aab5c0cbf1387aaeafc2eef3d9da1a5560a8c074679007ecb3aa09a7a"
+    },
+    {
+      "bytes": 688,
+      "path": "data/history/longshot-20260930/kalshi-idempotence-result.json",
+      "sha256": "7c976c2905a3a32203ade783f72e262a6d92dbb9b6dd9a1e4b168dbaffb9c5b6"
+    },
+    {
+      "bytes": 637,
+      "path": "data/history/longshot-20260930/polymarket-idempotence-result.json",
+      "sha256": "0d73e71a868a10267d8f81bbefb6c378e50349f7fb12a6a611b40734fd252027"
+    },
+    {
+      "bytes": 312,
+      "path": "data/history/longshot-20260930/compress-result.json",
+      "sha256": "d40896a5d83f407526e7f3399c308370cec9ae97e415ccebeb025cbc007e6298"
+    },
+    {
+      "bytes": 1214,
+      "path": "data/history/longshot-20260930/storage-policy-verification.json",
+      "sha256": "bf24fecc145dcf8c5929f297e81012762e71f01832fd95c04a4fa5aa723ca9bd"
+    },
+    {
+      "bytes": 16353826,
+      "path": "data/history/longshot-20260930/load-result.json",
+      "sha256": "d79865b76f52a078a2948a935c4d4bdb9f03fa3609b4184bc698b56aac9a6c4a"
+    },
+    {
+      "bytes": 6139193,
+      "path": "data/history/longshot-20260930/kalshi-incremental-load-20261001T0821.json",
+      "sha256": "b48053536209e82674edbdafef25c422b093dd1a6026da1addae0f773b58d6ea"
+    },
+    {
+      "bytes": 161931,
+      "path": "data/history/longshot-20260930/kalshi-final-tail-load-result.json",
+      "sha256": "a2630f80f21e5db4a93d3e2022cecc535cd126fd562adf9259fd355b3b0c429d"
+    },
+    {
+      "bytes": 516,
+      "path": "data/history/longshot-20260930/kalshi-capture-complete-20261001T1038.json",
+      "sha256": "cfb77e627ca66d516b754e1503cdba2b677d0fcdb77af2d7538da3d912fc13ea"
+    },
+    {
+      "bytes": 5021,
+      "path": "data/history/longshot-20260930/empty-positive-volume-tapes.json",
+      "sha256": "29f3aedf8adc91cfd570ccf9ee9a6d2530396d801f1719a9c481a1953017b42f"
+    }
+  ],
+  "reconciliation": {
+    "cross_feed_duplicate_outcome_observations": 174872,
+    "eligible_rows": 10149700,
+    "ineligible_or_unspecified_rows": 0,
+    "inserted_rows": 10149700,
+    "load_passes": [
+      {
+        "documents_added": 0,
+        "finished_at": "2026-10-01T06:55:46.839825+00:00",
+        "identities_updated": 0,
+        "missing_jobs_at_snapshot": 28248,
+        "normalized_source_rows": {
+          "kalshi": 990216,
+          "polymarket_intl": 2657334
+        },
+        "pages": 9903,
+        "points_skipped": 0,
+        "quotes_inserted": 0,
+        "receipt": "load-result.json",
+        "references_changed": 5368,
+        "trades_inserted": 3647550
+      },
+      {
+        "documents_added": 0,
+        "finished_at": "2026-10-01T10:47:48.499243+00:00",
+        "identities_updated": 0,
+        "missing_jobs_at_snapshot": 10604,
+        "normalized_source_rows": {
+          "kalshi": 4700018
+        },
+        "pages": 25535,
+        "points_skipped": 990216,
+        "quotes_inserted": 0,
+        "receipt": "kalshi-incremental-load-20261001T0821.json",
+        "references_changed": 0,
+        "trades_inserted": 3709802
+      },
+      {
+        "documents_added": 0,
+        "finished_at": "2026-10-01T11:24:53.517894+00:00",
+        "identities_updated": 0,
+        "missing_jobs_at_snapshot": 0,
+        "normalized_source_rows": {
+          "kalshi": 2967220
+        },
+        "pages": 11609,
+        "points_skipped": 174872,
+        "quotes_inserted": 0,
+        "receipt": "kalshi-final-tail-load-result.json",
+        "references_changed": 0,
+        "trades_inserted": 2792348
+      }
+    ],
+    "normalized_raw_observations": 10324572,
+    "physical_selected_rows": 10149700
+  },
+  "replays": {
+    "kalshi": {
+      "captured_jobs_complete": true,
+      "cohort_sha256": "35c64518ea06b437e6c4a614d43f1650333ac5e9c66da7800825e7b7700be0d9",
+      "data_bytes": 1022909504,
+      "documents_added": 0,
+      "finished_at": "2026-10-01T12:50:16.470649+00:00",
+      "free_bytes": 105263087616,
+      "identities_updated": 0,
+      "missing_jobs": [],
+      "normalized_source_rows": {
+        "kalshi": 7667238
+      },
+      "pages": 36993,
+      "points_skipped": 7667238,
+      "quotes_inserted": 0,
+      "recorded_at": "2026-10-01T12:50:20.448628+00:00",
+      "references_changed": 0,
+      "trades_inserted": 0,
+      "validation": "complete venue replay after all capture, union load and final recompression; actual DB identity comparisons",
+      "venue": "kalshi"
+    },
+    "polymarket_intl": {
+      "captured_jobs_complete": true,
+      "cohort_sha256": "35c64518ea06b437e6c4a614d43f1650333ac5e9c66da7800825e7b7700be0d9",
+      "data_bytes": 801117664,
+      "documents_added": 0,
+      "finished_at": "2026-10-01T08:17:20.929468+00:00",
+      "free_bytes": 123536379904,
+      "identities_updated": 0,
+      "missing_jobs": [],
+      "normalized_source_rows": {
+        "polymarket_intl": 2657334
+      },
+      "pages": 2963,
+      "points_skipped": 2657334,
+      "quotes_inserted": 0,
+      "references_changed": 0,
+      "trades_inserted": 0,
+      "validation": "complete venue rerun after first full PM load and compression; actual DB identity comparisons",
+      "venue": "polymarket_intl"
+    }
+  },
+  "row_audit": {
+    "audit_script_sha256": "31ec86cad4256a02d165ab52aebc230989a60d455d7cf907a8eeff5b001975ce",
+    "basis": "all database trades for selected instruments, separated by eligibility and first-stored source dataset; execution identities may overlap across source groups",
+    "category_count_query": "\n        SELECT c.venue,c.category,count(*) AS stored_trade_rows,\n               count(DISTINCT t.external_trade_id) AS distinct_execution_identities,\n               count(*) FILTER (WHERE t.external_trade_id IS NULL) AS rows_without_execution_identity\n        FROM trades t JOIN history_row_audit c ON c.instrument_id=t.instrument_id\n        GROUP BY c.venue,c.category ORDER BY c.venue,c.category\n    ",
+    "category_totals": [
+      {
+        "category": "KXBTC",
+        "distinct_execution_identities": 685331,
+        "rows_without_execution_identity": 0,
+        "stored_trade_rows": 1370662,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "distinct_execution_identities": 2849748,
+        "rows_without_execution_identity": 0,
+        "stored_trade_rows": 5699496,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "distinct_execution_identities": 211104,
+        "rows_without_execution_identity": 0,
+        "stored_trade_rows": 422208,
+        "venue": "kalshi"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "distinct_execution_identities": 1185784,
+        "rows_without_execution_identity": 0,
+        "stored_trade_rows": 1185784,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "distinct_execution_identities": 1471550,
+        "rows_without_execution_identity": 0,
+        "stored_trade_rows": 1471550,
+        "venue": "polymarket_intl"
+      }
+    ],
+    "cohort_sha256": "35c64518ea06b437e6c4a614d43f1650333ac5e9c66da7800825e7b7700be0d9",
+    "data_bytes": 1022942400,
+    "free_bytes": 106074300416,
+    "groups": [
+      {
+        "category": "KXBTC",
+        "distinct_execution_identities": 523387,
+        "duplicate_instrument_identities": 0,
+        "maker_fill_eligible": "true",
+        "rows_without_execution_identity": 0,
+        "source_dataset": "trades_historical",
+        "stored_trade_rows": 1046774,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXBTC",
+        "distinct_execution_identities": 161944,
+        "duplicate_instrument_identities": 0,
+        "maker_fill_eligible": "true",
+        "rows_without_execution_identity": 0,
+        "source_dataset": "trades_recent",
+        "stored_trade_rows": 323888,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "distinct_execution_identities": 2327243,
+        "duplicate_instrument_identities": 0,
+        "maker_fill_eligible": "true",
+        "rows_without_execution_identity": 0,
+        "source_dataset": "trades_historical",
+        "stored_trade_rows": 4654486,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXHIGHNY",
+        "distinct_execution_identities": 522505,
+        "duplicate_instrument_identities": 0,
+        "maker_fill_eligible": "true",
+        "rows_without_execution_identity": 0,
+        "source_dataset": "trades_recent",
+        "stored_trade_rows": 1045010,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "distinct_execution_identities": 182809,
+        "duplicate_instrument_identities": 0,
+        "maker_fill_eligible": "true",
+        "rows_without_execution_identity": 0,
+        "source_dataset": "trades_historical",
+        "stored_trade_rows": 365618,
+        "venue": "kalshi"
+      },
+      {
+        "category": "KXINX",
+        "distinct_execution_identities": 28295,
+        "duplicate_instrument_identities": 0,
+        "maker_fill_eligible": "true",
+        "rows_without_execution_identity": 0,
+        "source_dataset": "trades_recent",
+        "stored_trade_rows": 56590,
+        "venue": "kalshi"
+      },
+      {
+        "category": "pm-series:btc-up-or-down-daily",
+        "distinct_execution_identities": 1185784,
+        "duplicate_instrument_identities": 0,
+        "maker_fill_eligible": "true",
+        "rows_without_execution_identity": 0,
+        "source_dataset": "trades_taker_history",
+        "stored_trade_rows": 1185784,
+        "venue": "polymarket_intl"
+      },
+      {
+        "category": "pm-series:nyc-daily-weather",
+        "distinct_execution_identities": 1471550,
+        "duplicate_instrument_identities": 0,
+        "maker_fill_eligible": "true",
+        "rows_without_execution_identity": 0,
+        "source_dataset": "trades_taker_history",
+        "stored_trade_rows": 1471550,
+        "venue": "polymarket_intl"
+      }
+    ],
+    "instrument_count": 74768,
+    "missing_payouts": [
+      {
+        "contract": "0xc43ed576db00fc6e4954b09376fd15bd77a100b9421df23cb26cf1d4bef660dd",
+        "event_id": "739240",
+        "instrument_external_id": "95470046483590136634504882053251715051439820850955687374818767230721129829979",
+        "instrument_id": 73248,
+        "venue": "polymarket_intl"
+      },
+      {
+        "contract": "0xc43ed576db00fc6e4954b09376fd15bd77a100b9421df23cb26cf1d4bef660dd",
+        "event_id": "739240",
+        "instrument_external_id": "77658752162364937781835105492481611115301963103650403203036372775971873607139",
+        "instrument_id": 73249,
+        "venue": "polymarket_intl"
+      }
+    ],
+    "query": "\n    SELECT c.venue,c.category,\n           coalesce(t.metadata->'historical'->>'maker_fill_eligible','unspecified') AS maker_fill_eligible,\n           t.metadata->'historical'->'source'->>'dataset' AS source_dataset,\n           count(*) AS stored_trade_rows,\n           count(DISTINCT t.external_trade_id) AS distinct_execution_identities,\n           count(*) FILTER (WHERE t.external_trade_id IS NULL) AS rows_without_execution_identity,\n           count(*) FILTER (WHERE t.external_trade_id IS NOT NULL)\n             - count(DISTINCT (t.instrument_id,t.external_trade_id)) FILTER (WHERE t.external_trade_id IS NOT NULL)\n             AS duplicate_instrument_identities\n    FROM trades t JOIN history_row_audit c ON c.instrument_id=t.instrument_id\n    GROUP BY c.venue,c.category,maker_fill_eligible,source_dataset\n    ORDER BY c.venue,c.category,maker_fill_eligible,source_dataset\n",
+    "recorded_at": "2026-10-01T13:27:53.983266+00:00",
+    "storage_basis": "whole hypertables, including other research; current physical chunk bytes from chunks_detailed_size, last compression statistics from hypertable_compression_stats",
+    "storage_tables": [
+      {
+        "after_compression_index_bytes": 720896,
+        "after_compression_table_bytes": 720896,
+        "after_compression_toast_bytes": 1490944,
+        "after_compression_total_bytes": 2932736,
+        "before_compression_index_bytes": 1458176,
+        "before_compression_table_bytes": 4956160,
+        "before_compression_toast_bytes": 360448,
+        "before_compression_total_bytes": 6774784,
+        "current_chunk_physical_bytes": 23994368,
+        "hypertable": "quotes",
+        "node_name": null,
+        "number_compressed_chunks": 44,
+        "total_chunks": 45
+      },
+      {
+        "after_compression_index_bytes": 2195456,
+        "after_compression_table_bytes": 17432576,
+        "after_compression_toast_bytes": 1216765952,
+        "after_compression_total_bytes": 1236393984,
+        "before_compression_index_bytes": 318971904,
+        "before_compression_table_bytes": 2008416256,
+        "before_compression_toast_bytes": 10468761600,
+        "before_compression_total_bytes": 12796149760,
+        "current_chunk_physical_bytes": 3280052224,
+        "hypertable": "trades",
+        "node_name": null,
+        "number_compressed_chunks": 56,
+        "total_chunks": 57
+      }
+    ]
+  },
+  "selection_window": {
+    "basis": "catalog scheduled close",
+    "end_exclusive": "2026-10-01T00:00:00Z",
+    "start": "2025-09-01T00:00:00Z"
+  },
+  "status": "capture_complete_with_documented_data_limitations",
+  "verified_at": "2026-10-01T13:28:33.184227+00:00"
+}

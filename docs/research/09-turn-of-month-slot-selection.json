@@ -1,0 +1,67 @@
+{
+  "decision": "Run the preregistered 2 bp primary and the fixed nonexecution diagnostic once on the final holdout; no parameter selection from returns.",
+  "existing_final_attempts_at_selection": [],
+  "fixed_control": {
+    "draws": 10000,
+    "durations": [
+      5,
+      6
+    ],
+    "seed": 20261001,
+    "strategy_version": "9f143edaf9851d1e5fe2e544872b7893fd7230b079c760046226368178b32118",
+    "training_trial_id": 3278
+  },
+  "new_holdout_is_unseen": false,
+  "prior_full_sample_inspection": true,
+  "recorded_at": "2026-10-01T05:29:01.457062+00:00",
+  "selected_primary": {
+    "holdout": {
+      "data_end": "2026-09-30T20:00:00.000001+00:00",
+      "data_start": "2016-01-04T05:00:00+00:00",
+      "dataset_key": "equity:83501d8e59ae95b128481d26228722f00514f26b4cdb388462edb70908e4f5a9",
+      "final_holdout": false,
+      "holdout_start": "2023-07-12T01:06:00+00:00",
+      "split": "70/30 by elapsed UTC time; end exclusive",
+      "strategy_version": "b9cc835353e8dd7c004a8d172b301c63203cd2f574a08021756412b9e8bd64da"
+    },
+    "strategy_version": "b9cc835353e8dd7c004a8d172b301c63203cd2f574a08021756412b9e8bd64da",
+    "training_net_usd": "63.483911",
+    "training_trial_id": 3277,
+    "variant": "tom_minute_2bp"
+  },
+  "strategy_code_commit": "df6f2e5d650227cf4176ea6b95dc1929cc2c8a4f",
+  "training_variants": [
+    {
+      "artifact": "data/equities/results/tom-slot-20260930-train/tom_minute_2bp.json",
+      "artifact_sha256": "0b647bfcefddb710ef6ab798924ad1437313ded8d75c245d65f65e56496aa687",
+      "net_usd": "63.483911",
+      "strategy_version": "b9cc835353e8dd7c004a8d172b301c63203cd2f574a08021756412b9e8bd64da",
+      "trial_id": 3277,
+      "variant": "tom_minute_2bp"
+    },
+    {
+      "artifact": "data/equities/results/tom-slot-20260930-train/tom_minute_5bp.json",
+      "artifact_sha256": "889592c4c8e5ae4e96c028aa95d17d9ab84c6d9b84f4a4aee1d1a42f1cc04134",
+      "net_usd": "55.885888",
+      "strategy_version": "4e6dd0b91810bb7709ce807de55f2a7fcec7e8f394214959f3f2a41c5866a55b",
+      "trial_id": 3279,
+      "variant": "tom_minute_5bp"
+    },
+    {
+      "artifact": "data/equities/results/tom-slot-20260930-train/tom_minute_10bp.json",
+      "artifact_sha256": "db4733d4480618f99060e32871b487b31b5787a82d4993db2e758960a5dda43f",
+      "net_usd": "43.158389",
+      "strategy_version": "ab774b01a499396d4c08dfee5170cd617da228e25807e769d37e38af60545092",
+      "trial_id": 3280,
+      "variant": "tom_minute_10bp"
+    },
+    {
+      "artifact": "data/equities/results/tom-slot-20260930-control-train/tom_random_window_control.json",
+      "artifact_sha256": "2706f11511b481143ccd2d089e613c38b12d47b6829ddda28393c72da72d9960",
+      "net_usd": null,
+      "strategy_version": "9f143edaf9851d1e5fe2e544872b7893fd7230b079c760046226368178b32118",
+      "trial_id": 3278,
+      "variant": "tom_random_window_control"
+    }
+  ]
+}

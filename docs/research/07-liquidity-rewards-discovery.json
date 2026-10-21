@@ -1,0 +1,385 @@
+{
+  "observed_at": "2026-10-01T02:15:44.940638+00:00",
+  "source": "https://polymarket.us/rewards",
+  "html_sha256": "ab32e3aa2bced226f8f18b8b84659d4afa736617f6da7c9aefcd7dea013b06b1",
+  "program_groups": 139,
+  "non_sports_groups": 21,
+  "symbol_occurrences": 76220,
+  "promoted": false,
+  "account_eligibility_verified": false,
+  "non_sports": [
+    {
+      "programId": "midterms_t1_control_bop_tossup_senate_20260924",
+      "name": "Midterms T1 Control BOP Tossup Senate",
+      "category": "POL",
+      "subcategories": [
+        "USCONGRESS",
+        "USSTATE"
+      ],
+      "period": "daily_event",
+      "rewardPool": 1125,
+      "discountFactor": "0.3",
+      "targetSize": 25000,
+      "symbol_count": 22
+    },
+    {
+      "programId": "presidential_election_20260924",
+      "name": "Presidential Election",
+      "category": "POL",
+      "subcategories": [
+        "USPRES"
+      ],
+      "period": "daily_event",
+      "rewardPool": 500,
+      "discountFactor": "0.2",
+      "targetSize": 20000,
+      "symbol_count": 113
+    },
+    {
+      "programId": "midterms_t2_competitive_senate_gov_seatcounts_20260924",
+      "name": "Midterms T2 Competitive Senate GOV Seatcounts",
+      "category": "POL",
+      "subcategories": [
+        "USCONGRESS",
+        "USSTATE"
+      ],
+      "period": "daily_event",
+      "rewardPool": 450,
+      "discountFactor": "0.25",
+      "targetSize": 15000,
+      "symbol_count": 57
+    },
+    {
+      "programId": "crypto_20260924",
+      "name": "Crypto",
+      "category": "CRY",
+      "subcategories": [
+        "COIN"
+      ],
+      "period": "daily",
+      "rewardPool": 400,
+      "discountFactor": "0.3",
+      "targetSize": 15000,
+      "symbol_count": 54
+    },
+    {
+      "programId": "dancing_with_the_stars_20260924",
+      "name": "Dancing With THE Stars",
+      "category": "CUL",
+      "subcategories": [
+        "TV"
+      ],
+      "period": "live",
+      "rewardPool": 250,
+      "discountFactor": "0.3",
+      "targetSize": 500,
+      "symbol_count": 38
+    },
+    {
+      "programId": "elections_boosted_medium_20260924",
+      "name": "Elections Boosted Medium",
+      "category": "POL",
+      "subcategories": [
+        "USCONGRESS"
+      ],
+      "period": "daily_event",
+      "rewardPool": 225,
+      "discountFactor": "0.2",
+      "targetSize": 10000,
+      "symbol_count": 12
+    },
+    {
+      "programId": "politics_high_20260924",
+      "name": "Politics High",
+      "category": "POL",
+      "subcategories": [
+        "GOODS",
+        "USSTATE"
+      ],
+      "period": "daily_event",
+      "rewardPool": 225,
+      "discountFactor": "0.2",
+      "targetSize": 10000,
+      "symbol_count": 4
+    },
+    {
+      "programId": "midterms_t3_coverage_gov_senate_house_districts_20260924",
+      "name": "Midterms T3 Coverage GOV Senate House Districts",
+      "category": "POL",
+      "subcategories": [
+        "USCONGRESS",
+        "USSTATE"
+      ],
+      "period": "daily_event",
+      "rewardPool": 190,
+      "discountFactor": "0.2",
+      "targetSize": 10000,
+      "symbol_count": 54
+    },
+    {
+      "programId": "climate_20260924",
+      "name": "Climate",
+      "category": "CLI",
+      "subcategories": [
+        "WEATHER"
+      ],
+      "period": "live",
+      "rewardPool": 185,
+      "discountFactor": "0.3",
+      "targetSize": 7500,
+      "symbol_count": 60
+    },
+    {
+      "programId": "culture_high_20260924",
+      "name": "Culture High",
+      "category": "CUL",
+      "subcategories": [
+        "AWD",
+        "GAME",
+        "MUSIC",
+        "TV",
+        "USFEDGOV"
+      ],
+      "period": "daily_event",
+      "rewardPool": 75,
+      "discountFactor": "0.3",
+      "targetSize": 500,
+      "symbol_count": 173
+    },
+    {
+      "programId": "politics_mid_20260924",
+      "name": "Politics MID",
+      "category": "POL",
+      "subcategories": [
+        "ISRPOL",
+        "ORG",
+        "USFEDGOV",
+        "USLEGIS",
+        "USLEGISLAT",
+        "USSTATE"
+      ],
+      "period": "daily_event",
+      "rewardPool": 75,
+      "discountFactor": "0.2",
+      "targetSize": 5000,
+      "symbol_count": 108
+    },
+    {
+      "programId": "macro_high_20260924",
+      "name": "Macro High",
+      "category": "MAC",
+      "subcategories": [
+        "GROWTH",
+        "INFLATION",
+        "LABOR",
+        "MONETARY"
+      ],
+      "period": "daily_event",
+      "rewardPool": 75,
+      "discountFactor": "0.15",
+      "targetSize": 5000,
+      "symbol_count": 54
+    },
+    {
+      "programId": "finance_20260924",
+      "name": "Finance",
+      "category": "TECH",
+      "subcategories": [
+        "AI",
+        "EARNINGS",
+        "EXECUTIVE",
+        "IPO"
+      ],
+      "period": "daily_event",
+      "rewardPool": 50,
+      "discountFactor": "0.2",
+      "targetSize": 500,
+      "symbol_count": 78
+    },
+    {
+      "programId": "technology_20260924",
+      "name": "Technology",
+      "category": "TECH",
+      "subcategories": [
+        "AI"
+      ],
+      "period": "daily_event",
+      "rewardPool": 50,
+      "discountFactor": "0.2",
+      "targetSize": 1000,
+      "symbol_count": 66
+    },
+    {
+      "programId": "culture_low_20260924_v2",
+      "name": "Culture LOW 20260924 V2",
+      "category": "CUL",
+      "subcategories": [
+        "AWD",
+        "FILM",
+        "MOVIES",
+        "MUSIC",
+        "TV"
+      ],
+      "period": "daily_event",
+      "rewardPool": 40,
+      "discountFactor": "0.25",
+      "targetSize": 500,
+      "symbol_count": 301
+    },
+    {
+      "programId": "politics_low_20260924",
+      "name": "Politics LOW",
+      "category": "POL",
+      "subcategories": [
+        "ARGPOL",
+        "BRAPOL",
+        "FRAPOL",
+        "ISRPOL",
+        "NETPOL",
+        "RUSPOL",
+        "UKPOL",
+        "USCONGRESS",
+        "USFEDGOV",
+        "USPRES",
+        "USSTATE",
+        "VENPOL"
+      ],
+      "period": "daily_event",
+      "rewardPool": 20,
+      "discountFactor": "0.1",
+      "targetSize": 2000,
+      "symbol_count": 326
+    },
+    {
+      "programId": "macro_low_20260924",
+      "name": "Macro LOW",
+      "category": "MAC",
+      "subcategories": [
+        "COMMODITY",
+        "INFLATION",
+        "MONETARY"
+      ],
+      "period": "daily_event",
+      "rewardPool": 15,
+      "discountFactor": "0.15",
+      "targetSize": 5000,
+      "symbol_count": 60
+    },
+    {
+      "programId": "geopolitics_20260924",
+      "name": "Geopolitics",
+      "category": "GEO",
+      "subcategories": [
+        "GOODS",
+        "TREATY"
+      ],
+      "period": "daily_event",
+      "rewardPool": 15,
+      "discountFactor": "0.25",
+      "targetSize": 2000,
+      "symbol_count": 7
+    },
+    {
+      "programId": "science_20260924",
+      "name": "Science",
+      "category": "SCI",
+      "subcategories": [
+        "DISEASE"
+      ],
+      "period": "daily_event",
+      "rewardPool": 10,
+      "discountFactor": "0.25",
+      "targetSize": 10000,
+      "symbol_count": 6
+    },
+    {
+      "programId": "midterms_t4_house_winners_20260924",
+      "name": "Midterms T4 House Winners",
+      "category": "POL",
+      "subcategories": [
+        "USCONGRESS"
+      ],
+      "period": "daily_event",
+      "rewardPool": 5,
+      "discountFactor": "0.4",
+      "targetSize": 2000,
+      "symbol_count": 829
+    },
+    {
+      "programId": "politics_t4_coverage_20260924",
+      "name": "Politics T4 Coverage",
+      "category": "POL",
+      "subcategories": [
+        "USCONGRESS",
+        "USFEDGOV",
+        "USSCOTUS",
+        "USSTATE"
+      ],
+      "period": "daily_event",
+      "rewardPool": 2,
+      "discountFactor": "0.4",
+      "targetSize": 2000,
+      "symbol_count": 5035
+    }
+  ],
+  "public_book_example": {
+    "state": "open",
+    "market_slug": "cpc-btc-100k-10-31-2026",
+    "observed_at": "2026-10-01T02:17:58.866391+00:00",
+    "bids": [
+      [
+        "0.1400",
+        "50.5500"
+      ],
+      [
+        "0.1300",
+        "2695.1100"
+      ],
+      [
+        "0.1200",
+        "17501.0000"
+      ],
+      [
+        "0.1100",
+        "230.0000"
+      ],
+      [
+        "0.0900",
+        "15700.0000"
+      ],
+      [
+        "0.0700",
+        "3308.1600"
+      ],
+      [
+        "0.0500",
+        "3000.0000"
+      ],
+      [
+        "0.0100",
+        "2500.0000"
+      ]
+    ],
+    "asks": [
+      [
+        "0.1500",
+        "22438.2100"
+      ],
+      [
+        "0.2100",
+        "16.6300"
+      ],
+      [
+        "0.4900",
+        "40.0000"
+      ],
+      [
+        "0.9900",
+        "2750.0000"
+      ]
+    ],
+    "venue_time": "2026-10-01T02:17:00.522455273Z",
+    "source": "https://gateway.polymarket.us/v1/markets/cpc-btc-100k-10-31-2026/book",
+    "usable_for_historical_returns": false
+  }
+}

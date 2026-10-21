@@ -1,0 +1,1755 @@
+{
+  "bead": "tradingbot-900",
+  "status": "PARTIAL_REPAIR_SPY_OPEN_CLOSE_SOURCE_VALIDATED_XLF_UNRESOLVED",
+  "data_start": "2006-01-01T00:00:00+00:00",
+  "data_end": "2026-10-01T00:00:00+00:00",
+  "holdout_start": "2020-07-10T14:24:00+00:00",
+  "strategy_outcomes_inspected": false,
+  "sources": [
+    {
+      "name": "alpaca-bar-semantics",
+      "path": "data/equities/source-repair/alpaca-bar-semantics/raw.html",
+      "requested_url": "https://docs.alpaca.markets/us/docs/market-data-faq",
+      "final_url": "https://docs.alpaca.markets/us/docs/market-data-faq",
+      "retrieved_at": "2026-10-01T06:44:34.294876+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 635276,
+      "sha256": "6ec70469583a09066ec7bb1cfd625d85608f339915a8d38ec458a0e4623c26b8",
+      "admissible_response": true
+    },
+    {
+      "name": "alpaca-current-corporate-actions-api",
+      "path": "data/equities/source-repair/alpaca-current-corporate-actions-api/raw.html",
+      "requested_url": "https://docs.alpaca.markets/us/v1.1/reference/corporateactions-1",
+      "final_url": "https://docs.alpaca.markets/us/v1.1/reference/corporateactions-1",
+      "retrieved_at": "2026-10-01T07:03:43.016568+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 864871,
+      "sha256": "6e5783fe5da0fb4679c31826885b40ca27c3d3cab4bd480e08330f09da40d769",
+      "admissible_response": true
+    },
+    {
+      "name": "alpaca-fractional-corporate-actions",
+      "path": "data/equities/source-repair/alpaca-fractional-corporate-actions/raw.html",
+      "requested_url": "https://alpaca.markets/blog/updated-terms-for-payments-in-fractional-shares/",
+      "final_url": "https://alpaca.markets/blog/updated-terms-for-payments-in-fractional-shares/",
+      "retrieved_at": "2026-10-01T07:02:57.002810+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 105739,
+      "sha256": "75a5ec6331ddf8a97fc63030f1ffbd0964dd33c822933cb4dd3c2ec2bb41d976",
+      "admissible_response": true
+    },
+    {
+      "name": "alpaca-mandatory-corporate-actions",
+      "path": "data/equities/source-repair/alpaca-mandatory-corporate-actions/raw.html",
+      "requested_url": "https://docs.alpaca.markets/us/docs/mandatory-corporate-actions",
+      "final_url": "https://docs.alpaca.markets/us/docs/mandatory-corporate-actions",
+      "retrieved_at": "2026-10-01T07:03:25.453764+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 517109,
+      "sha256": "36d240111bed299ef170230914b975e9199b9a7b79a8419fe362b2c4cf7223a1",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-annual-16162-21",
+      "path": "data/equities/source-repair/dtcc-annual-16162-21/raw.pdf",
+      "requested_url": "https://files.dtcc.com/download/assets/16162-21/50bc2682369511f096cf526112f6cc5f",
+      "final_url": "https://files.dtcc.com/download/assets/16162-21/50bc2682369511f096cf526112f6cc5f",
+      "retrieved_at": "2026-10-01T06:59:04.659776+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 125683,
+      "sha256": "dea47b1f2dc0d2a7c6a2990ad36d84c20b90aa1b81ee9676bd68c61c7464cafb",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-annual-17669-22",
+      "path": "data/equities/source-repair/dtcc-annual-17669-22/raw.pdf",
+      "requested_url": "https://files.dtcc.com/download/assets/17669-22/c98fcd62369911f0a787c204a2f8334f",
+      "final_url": "https://files.dtcc.com/download/assets/17669-22/c98fcd62369911f0a787c204a2f8334f",
+      "retrieved_at": "2026-10-01T06:59:10.447575+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 126668,
+      "sha256": "07caaab246f8dee3aa8f99bc6cbcf6491f6808d73835fc7fcc78f3ccc41200b2",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-annual-19404-23",
+      "path": "data/equities/source-repair/dtcc-annual-19404-23/raw.pdf",
+      "requested_url": "https://files.dtcc.com/download/assets/19404-23/b9eb0056369011f08aca526112f6cc5f",
+      "final_url": "https://files.dtcc.com/download/assets/19404-23/b9eb0056369011f08aca526112f6cc5f",
+      "retrieved_at": "2026-10-01T06:59:14.885192+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 223930,
+      "sha256": "51d2a6b14d8a3333fc2ef11eaf3dd9aaafbc25ba79bf4406b4fec7b962494f0e",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-annual-20972-24",
+      "path": "data/equities/source-repair/dtcc-annual-20972-24/raw.pdf",
+      "requested_url": "https://files.dtcc.com/download/assets/20972-24/9a732316369511f0ad831282bb7fa251",
+      "final_url": "https://files.dtcc.com/download/assets/20972-24/9a732316369511f0ad831282bb7fa251",
+      "retrieved_at": "2026-10-01T06:58:54.590010+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 197320,
+      "sha256": "f2e3ad8e5cbd78119ff11e3d88d1a7a5c78dbda6d87484d0bb240ce4c4af10e3",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-annual-23036-25",
+      "path": "data/equities/source-repair/dtcc-annual-23036-25/raw.pdf",
+      "requested_url": "https://files.dtcc.com/download/assets/23036-25/9fd437c6cea411f0b57c0aec4933d5f6",
+      "final_url": "https://files.dtcc.com/download/assets/23036-25/9fd437c6cea411f0b57c0aec4933d5f6",
+      "retrieved_at": "2026-10-01T06:58:45.806655+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 237059,
+      "sha256": "943e9bbb70de5ea0e074fa9942a6f08a5661a8a3f105c46326a5e8a29c39cddf",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-annual-a9512",
+      "path": "data/equities/source-repair/dtcc-annual-a9512/raw.pdf",
+      "requested_url": "https://files.dtcc.com/download/assets/a9512/f62c60a6369911f09a845e09fb65ecc7",
+      "final_url": "https://files.dtcc.com/download/assets/a9512/f62c60a6369911f09a845e09fb65ecc7",
+      "retrieved_at": "2026-10-01T06:58:58.712314+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 187252,
+      "sha256": "fb744d560d92a217c20c9311c80000a2bf8b45acb20edd5a40a2ac67916be106",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-annual-a9660",
+      "path": "data/equities/source-repair/dtcc-annual-a9660/raw.pdf",
+      "requested_url": "https://files.dtcc.com/download/assets/a9660/6dd2cd72ceb411f092a80aec4933d5f6",
+      "final_url": "https://files.dtcc.com/download/assets/a9660/6dd2cd72ceb411f092a80aec4933d5f6",
+      "retrieved_at": "2026-10-01T06:58:50.256905+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 222626,
+      "sha256": "8082a8b5f71a691bb9daddc92f1604f4e46cbf6b2a74464813b60003493ebaf2",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-annual-holidays-search",
+      "path": "data/equities/source-repair/dtcc-annual-holidays-search/raw.json",
+      "requested_url": "https://depositorytrustclearingcorporationproductionbw3fbrqw.org.coveo.com/rest/search/v2",
+      "request_json": {
+        "q": "Anticipated Holiday Schedule",
+        "searchHub": "DTCC Opti PROD Global",
+        "pipeline": "DTCC Opti PROD Global",
+        "numberOfResults": 100,
+        "aq": "@ldoc_legal_category==\"Important Notices\""
+      },
+      "retrieved_at": "2026-10-01T06:58:15.688825+00:00",
+      "status_code": 200,
+      "bytes": 484496,
+      "sha256": "9903e4522193c06403da78523d4e9159194ddd8229371c93f66938503e0b076f",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-ford-settlement",
+      "path": "data/equities/source-repair/dtcc-ford-settlement/raw.html",
+      "requested_url": "https://www.dtcc.com/globals/pdfs/2006/december/29/z0020",
+      "final_url": "https://www.dtcc.com/globals/pdfs/2006/december/29/z0020",
+      "retrieved_at": "2026-10-01T06:40:28.991418+00:00",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 108230,
+      "sha256": "024c0a1d76742f8cf674a207d155a704848f7419252d612835a3e1a443a1844a",
+      "admissible_response": false
+    },
+    {
+      "name": "dtcc-good-friday-2024",
+      "path": "data/equities/source-repair/dtcc-good-friday-2024/raw.pdf",
+      "requested_url": "https://files.dtcc.com/download/assets/a9411/aeb55c4e369111f0b606526112f6cc5f",
+      "final_url": "https://files.dtcc.com/download/assets/a9411/aeb55c4e369111f0b606526112f6cc5f",
+      "retrieved_at": "2026-10-01T07:25:54.207561+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 221053,
+      "sha256": "d0cc27fc0b27deafe8d89192bfb0fd0021a892db475b1a56392ee11d49b17f5f",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-good-friday-2026",
+      "path": "data/equities/source-repair/dtcc-good-friday-2026/raw.html",
+      "requested_url": "https://www.dtcc.com/-/media/Files/pdf/2026/3/6/a9732.pdf",
+      "final_url": "https://www.dtcc.com/-/media/Files/pdf/2026/3/6/a9732.pdf",
+      "retrieved_at": "2026-10-01T06:40:46.258944+00:00",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 108285,
+      "sha256": "63ab7ea5fc7856a255ca172a4e5e00ad396ea3f0375fc24645dceb2d9cc26ca2",
+      "admissible_response": false
+    },
+    {
+      "name": "dtcc-good-friday-2026-migrated",
+      "path": "data/equities/source-repair/dtcc-good-friday-2026-migrated/raw.pdf",
+      "requested_url": "https://files.dtcc.com/download/assets/a9732/84f27534957911f1b6bb4ec37e043074",
+      "final_url": "https://files.dtcc.com/download/assets/a9732/84f27534957911f1b6bb4ec37e043074",
+      "retrieved_at": "2026-10-01T07:01:19.993142+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 356715,
+      "sha256": "713a118c08332d026b70f094a0511104c7589686aaaa30f11248feb24458b64a",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-good-friday-2026-search",
+      "path": "data/equities/source-repair/dtcc-good-friday-2026-search/raw.json",
+      "requested_url": "https://depositorytrustclearingcorporationproductionbw3fbrqw.org.coveo.com/rest/search/v2",
+      "request_json": {
+        "q": "a9732",
+        "searchHub": "DTCC Opti PROD Global",
+        "pipeline": "DTCC Opti PROD Global",
+        "numberOfResults": 100,
+        "aq": "@ldoc_legal_category==\"Important Notices\" AND @ldoc_subsidiary==\"NSCC\""
+      },
+      "retrieved_at": "2026-10-01T07:00:31.008577+00:00",
+      "status_code": 200,
+      "bytes": 5643,
+      "sha256": "c40194952e9a1f75351da9a9bfb6cfca6afa7d747288e19897155a6071edbd5b",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-june29-2026-migrated",
+      "path": "data/equities/source-repair/dtcc-june29-2026-migrated/raw.pdf",
+      "requested_url": "https://files.dtcc.com/download/assets/A9794/b76d60e6957911f1bb036a7a18072738",
+      "final_url": "https://files.dtcc.com/download/assets/A9794/b76d60e6957911f1bb036a7a18072738",
+      "retrieved_at": "2026-10-01T07:01:48.660036+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 183095,
+      "sha256": "ca830f607f61d2d5384ae8eb88b979f56cea6d813abdcc4faa26079cca67644a",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-june29-2026-search",
+      "path": "data/equities/source-repair/dtcc-june29-2026-search/raw.json",
+      "requested_url": "https://depositorytrustclearingcorporationproductionbw3fbrqw.org.coveo.com/rest/search/v2",
+      "request_json": {
+        "q": "a9794",
+        "searchHub": "DTCC Opti PROD Global",
+        "pipeline": "DTCC Opti PROD Global",
+        "numberOfResults": 100,
+        "aq": "@ldoc_legal_category==\"Important Notices\" AND @ldoc_subsidiary==\"NSCC\""
+      },
+      "retrieved_at": "2026-10-01T07:00:31.588046+00:00",
+      "status_code": 200,
+      "bytes": 5682,
+      "sha256": "18bca6393c243948977be1635d2b013ed0cde1294b0255fadb5c01395514b7b2",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-june30-2026",
+      "path": "data/equities/source-repair/dtcc-june30-2026/raw.pdf",
+      "requested_url": "https://files.dtcc.com/download/assets/24518-26/2cfb5f4e957911f19784c258faf12821",
+      "final_url": "https://files.dtcc.com/download/assets/24518-26/2cfb5f4e957911f19784c258faf12821",
+      "retrieved_at": "2026-10-01T07:26:49.436686+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 142270,
+      "sha256": "be3b39600b54fc756d418db00f7671832559dd8ad55ac9350abe67cd48356998",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-juneteenth-2021",
+      "path": "data/equities/source-repair/dtcc-juneteenth-2021/raw.html",
+      "requested_url": "https://www.dtcc.com/Globals/PDFs/2021/June/17/15471-21",
+      "final_url": "https://www.dtcc.com/Globals/PDFs/2021/June/17/15471-21",
+      "retrieved_at": "2026-10-01T06:40:38.636377+00:00",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 108269,
+      "sha256": "8592eefb925dcca02a2013e9633e30c2d5206bf413fa010cc04e6280ae848171",
+      "admissible_response": false
+    },
+    {
+      "name": "dtcc-juneteenth-2021-migrated",
+      "path": "data/equities/source-repair/dtcc-juneteenth-2021-migrated/raw.pdf",
+      "requested_url": "https://files.dtcc.com/download/assets/15471-21/421e95dc369611f09a6b820bd5ac0897",
+      "final_url": "https://files.dtcc.com/download/assets/15471-21/421e95dc369611f09a6b820bd5ac0897",
+      "retrieved_at": "2026-10-01T06:58:30.708886+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 62379,
+      "sha256": "d74b96a8dbf3d6c49aff39b8815a47d2b2c47bd01b439ea40ea9d8ba5aa4cb2d",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-juneteenth-2021-search",
+      "path": "data/equities/source-repair/dtcc-juneteenth-2021-search/raw.json",
+      "requested_url": "https://depositorytrustclearingcorporationproductionbw3fbrqw.org.coveo.com/rest/search/v2",
+      "request_json": {
+        "q": "15471-21",
+        "searchHub": "DTCC Opti PROD Global",
+        "pipeline": "DTCC Opti PROD Global",
+        "numberOfResults": 100,
+        "aq": "@ldoc_legal_category==\"Important Notices\""
+      },
+      "retrieved_at": "2026-10-01T06:57:39.574054+00:00",
+      "status_code": 200,
+      "bytes": 480878,
+      "sha256": "98db146d840c23b4fb596e824691db78124b4bb6888039f75b65d7ed3ec87583",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-notices-index",
+      "path": "data/equities/source-repair/dtcc-notices-index/raw.html",
+      "requested_url": "https://www.dtcc.com/legal/important-notices",
+      "final_url": "https://www.dtcc.com/legal/important-notices",
+      "retrieved_at": "2026-10-01T06:46:43.510423+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 238969,
+      "sha256": "e748ff11387d8ec4e8f348227b131bc13394fd7546ef5a5c4a6ed1bf7a6a635d",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-nscc-annual-search",
+      "path": "data/equities/source-repair/dtcc-nscc-annual-search/raw.json",
+      "requested_url": "https://depositorytrustclearingcorporationproductionbw3fbrqw.org.coveo.com/rest/search/v2",
+      "request_json": {
+        "q": "Anticipated Holiday Schedule",
+        "searchHub": "DTCC Opti PROD Global",
+        "pipeline": "DTCC Opti PROD Global",
+        "numberOfResults": 100,
+        "aq": "@ldoc_legal_category==\"Important Notices\" AND @ldoc_subsidiary==\"NSCC\""
+      },
+      "retrieved_at": "2026-10-01T06:59:09.509956+00:00",
+      "status_code": 200,
+      "bytes": 15069,
+      "sha256": "cb591da8f939f674d6a80de4e362ac94e70d48a7e23f133a5863d6358273ff83",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-nscc-rules-2026",
+      "path": "data/equities/source-repair/dtcc-nscc-rules-2026/raw.pdf",
+      "requested_url": "https://files.dtcc.com/download/assets/nscc_rules.pdf/85bda02a369211f0a3ae820bd5ac0897",
+      "final_url": "https://files.dtcc.com/download/assets/nscc_rules.pdf/85bda02a369211f0a3ae820bd5ac0897",
+      "retrieved_at": "2026-10-01T06:46:48.127009+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 1489193,
+      "sha256": "8db8b5201cc665e7b74054058e9fb20cc2a36f49b33ad84a936e33f0cd57da06",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-rollover-search",
+      "path": "data/equities/source-repair/dtcc-rollover-search/raw.json",
+      "requested_url": "https://depositorytrustclearingcorporationproductionbw3fbrqw.org.coveo.com/rest/search/v2",
+      "request_json": {
+        "q": "Settlement Rollover",
+        "searchHub": "DTCC Opti PROD Global",
+        "pipeline": "DTCC Opti PROD Global",
+        "numberOfResults": 100,
+        "aq": "@ldoc_legal_category==\"Important Notices\""
+      },
+      "retrieved_at": "2026-10-01T07:03:24.315995+00:00",
+      "status_code": 200,
+      "bytes": 29721,
+      "sha256": "9420ac21ee01bf5ca1c2136767354bc4330a54e3ce29c06a74a357e7d4357083",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-sandy-resilience",
+      "path": "data/equities/source-repair/dtcc-sandy-resilience/raw.html",
+      "requested_url": "https://www.dtcc.com/-/media/Files/PDFs/Providing-a-Public-Service-WhitePaper.pdf",
+      "final_url": "https://www.dtcc.com/-/media/Files/PDFs/Providing-a-Public-Service-WhitePaper.pdf",
+      "retrieved_at": "2026-10-01T06:40:32.670737+00:00",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 108369,
+      "sha256": "11c3866d5f4cd9f4a955d8df5d2470869febbece4e1b3e9fa21af95623c5770b",
+      "admissible_response": false
+    },
+    {
+      "name": "dtcc-search-annual2024-nscc",
+      "path": "data/equities/source-repair/dtcc-search-annual2024-nscc/raw.json",
+      "requested_url": "https://depositorytrustclearingcorporationproductionbw3fbrqw.org.coveo.com/rest/search/v2",
+      "request_json": {
+        "q": "2024 Anticipated Holiday Schedule",
+        "searchHub": "DTCC Opti PROD Global",
+        "pipeline": "DTCC Opti PROD Global",
+        "numberOfResults": 100,
+        "aq": "@ldoc_legal_category==\"Important Notices\" AND @ldoc_subsidiary==\"NSCC\""
+      },
+      "retrieved_at": "2026-10-01T07:24:17.050428+00:00",
+      "status_code": 200,
+      "bytes": 1177,
+      "sha256": "d859034f1283327aaa31b4296ea9cda14f8fb956f39d14ad3bb1d74eefe8e0eb",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-search-goodfriday2024",
+      "path": "data/equities/source-repair/dtcc-search-goodfriday2024/raw.json",
+      "requested_url": "https://depositorytrustclearingcorporationproductionbw3fbrqw.org.coveo.com/rest/search/v2",
+      "request_json": {
+        "q": "a9411",
+        "searchHub": "DTCC Opti PROD Global",
+        "pipeline": "DTCC Opti PROD Global",
+        "numberOfResults": 100,
+        "aq": "@ldoc_legal_category==\"Important Notices\""
+      },
+      "retrieved_at": "2026-10-01T07:25:11.806865+00:00",
+      "status_code": 200,
+      "bytes": 5642,
+      "sha256": "804d881424b0523314b2332d33bd272c6a6cf098f3f9e6f74b37bb49ce3e10ce",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-search-june30-2026",
+      "path": "data/equities/source-repair/dtcc-search-june30-2026/raw.json",
+      "requested_url": "https://depositorytrustclearingcorporationproductionbw3fbrqw.org.coveo.com/rest/search/v2",
+      "request_json": {
+        "q": "24518-26",
+        "searchHub": "DTCC Opti PROD Global",
+        "pipeline": "DTCC Opti PROD Global",
+        "numberOfResults": 100,
+        "aq": "@ldoc_legal_category==\"Important Notices\""
+      },
+      "retrieved_at": "2026-10-01T07:25:52.859591+00:00",
+      "status_code": 200,
+      "bytes": 493435,
+      "sha256": "a5d9642766c24a099ea198e2d75b66e3297c36b9eaf89da216faeb81035e16e8",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-search-veterans2023",
+      "path": "data/equities/source-repair/dtcc-search-veterans2023/raw.json",
+      "requested_url": "https://depositorytrustclearingcorporationproductionbw3fbrqw.org.coveo.com/rest/search/v2",
+      "request_json": {
+        "q": "Veterans Day 2023",
+        "searchHub": "DTCC Opti PROD Global",
+        "pipeline": "DTCC Opti PROD Global",
+        "numberOfResults": 100,
+        "aq": "@ldoc_legal_category==\"Important Notices\" AND @ldoc_subsidiary==\"NSCC\""
+      },
+      "retrieved_at": "2026-10-01T07:23:11.755921+00:00",
+      "status_code": 200,
+      "bytes": 1020,
+      "sha256": "b77f96ff2548e38427fee50dc73dc5a02809035bb1c6f455744415edcae94c43",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-search-veterans2023-all",
+      "path": "data/equities/source-repair/dtcc-search-veterans2023-all/raw.json",
+      "requested_url": "https://depositorytrustclearingcorporationproductionbw3fbrqw.org.coveo.com/rest/search/v2",
+      "request_json": {
+        "q": "Veterans 2023",
+        "searchHub": "DTCC Opti PROD Global",
+        "pipeline": "DTCC Opti PROD Global",
+        "numberOfResults": 100,
+        "aq": "@ldoc_legal_category==\"Important Notices\""
+      },
+      "retrieved_at": "2026-10-01T07:24:05.162078+00:00",
+      "status_code": 200,
+      "bytes": 10337,
+      "sha256": "66cd2a765458dc139d3ce548b22da6447365c3a6e72425d5e4b60afa26756dfa",
+      "admissible_response": true
+    },
+    {
+      "name": "dtcc-settlement-2026",
+      "path": "data/equities/source-repair/dtcc-settlement-2026/raw.html",
+      "requested_url": "https://www.dtcc.com/-/media/Files/pdf/2025/10/15/23036-25.pdf",
+      "final_url": "https://www.dtcc.com/-/media/Files/pdf/2025/10/15/23036-25.pdf",
+      "retrieved_at": "2026-10-01T06:40:43.104315+00:00",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 108262,
+      "sha256": "3d05884c1e4a5acfd5a4810cc2ad0aa0f37722d02e4eebe9cbc6e47d862c3532",
+      "admissible_response": false
+    },
+    {
+      "name": "dtcc-settlement-event-2026",
+      "path": "data/equities/source-repair/dtcc-settlement-event-2026/raw.html",
+      "requested_url": "https://www.dtcc.com/-/media/Files/pdf/2026/7/9/A9794.pdf",
+      "final_url": "https://www.dtcc.com/-/media/Files/pdf/2026/7/9/A9794.pdf",
+      "retrieved_at": "2026-10-01T06:40:49.405138+00:00",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 108285,
+      "sha256": "b1f47b6d852ef12d159b401a8f44ac8ccb67ef14611a6a72ed894dfe190f036c",
+      "admissible_response": false
+    },
+    {
+      "name": "dtcc-veterans-2023",
+      "path": "data/equities/source-repair/dtcc-veterans-2023/raw.pdf",
+      "requested_url": "https://files.dtcc.com/download/assets/19155-23/a4c71ae8369511f09a845e09fb65ecc7",
+      "final_url": "https://files.dtcc.com/download/assets/19155-23/a4c71ae8369511f09a845e09fb65ecc7",
+      "retrieved_at": "2026-10-01T07:24:51.353026+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 55953,
+      "sha256": "6fa82e798cce79fab1f8866ac261352c18ad35ae0ec8dd14f2dcbf22db66f623",
+      "admissible_response": true
+    },
+    {
+      "name": "fed-holiday-rules",
+      "path": "data/equities/source-repair/fed-holiday-rules/raw.html",
+      "requested_url": "https://www.federalreserve.gov/aboutthefed/k8.htm",
+      "final_url": "https://www.federalreserve.gov/aboutthefed/k8.htm",
+      "retrieved_at": "2026-10-01T06:40:18.806290+00:00",
+      "status_code": 200,
+      "content_type": "text/html",
+      "bytes": 82205,
+      "sha256": "99f1f450a73f28348de96663dfbb85f06029949bbd909b8a8fd42699f7f6c60c",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2006",
+      "path": "data/equities/source-repair/finra-calendar-2006/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/NoticeDocument/p015761.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/NoticeDocument/p015761.pdf",
+      "retrieved_at": "2026-10-01T07:04:15.487641+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 33169,
+      "sha256": "80bc00e6c6b42d3d850b8aa188f098c820f5c7d61fa33dfdb363e989fae9be23",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2007",
+      "path": "data/equities/source-repair/finra-calendar-2007/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/NoticeDocument/p018163.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/NoticeDocument/p018163.pdf",
+      "retrieved_at": "2026-10-01T07:04:24.242232+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 49089,
+      "sha256": "9019f35a1fe432a246a75d09f04c26b667696cbb06841a35f1c215e23d8a4f31",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2008",
+      "path": "data/equities/source-repair/finra-calendar-2008/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/NoticeDocument/p037658.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/NoticeDocument/p037658.pdf",
+      "retrieved_at": "2026-10-01T07:04:32.504404+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 63485,
+      "sha256": "b2e5291350d86625a8bfd00f283dd8ef2f1508806d6d3e2750746ba9a913b5dd",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2009",
+      "path": "data/equities/source-repair/finra-calendar-2009/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/NoticeDocument/p117623.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/NoticeDocument/p117623.pdf",
+      "retrieved_at": "2026-10-01T07:12:00.308018+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 63992,
+      "sha256": "29a7d42a4d4d17a11dd89bb12eb62643499e4a6a0a792ae63a87eecec27153cc",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2009-page",
+      "path": "data/equities/source-repair/finra-calendar-2009-page/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices/information-notice-122308",
+      "final_url": "https://www.finra.org/rules-guidance/notices/information-notice-122308",
+      "retrieved_at": "2026-10-01T07:10:31.869674+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 87193,
+      "sha256": "09220689cbc207299fcc540511bd362efad155064dd510a840f2aebc2bbf0649",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2010",
+      "path": "data/equities/source-repair/finra-calendar-2010/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/NoticeDocument/p120549.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/NoticeDocument/p120549.pdf",
+      "retrieved_at": "2026-10-01T07:09:03.789316+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 57528,
+      "sha256": "957a6bcda8cc203cbb833e21c81bb9291aa481e92c6f9d8f038a1425b2848f7c",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2010-page",
+      "path": "data/equities/source-repair/finra-calendar-2010-page/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices/information-notice-121409",
+      "final_url": "https://www.finra.org/rules-guidance/notices/information-notice-121409",
+      "retrieved_at": "2026-10-01T07:07:33.971730+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 90197,
+      "sha256": "9338a48e1aa5fe7801325b19a68a61c8d8c5ec3fb652fb8609211435a3367931",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2011",
+      "path": "data/equities/source-repair/finra-calendar-2011/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/NoticeDocument/p122519.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/NoticeDocument/p122519.pdf",
+      "retrieved_at": "2026-10-01T07:09:13.168114+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 70795,
+      "sha256": "ab3d323809581fce007d8c1ea96cc8b2ea44ba90c1a7085df23254e46fca693a",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2011-page",
+      "path": "data/equities/source-repair/finra-calendar-2011-page/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices/information-notice-120210",
+      "final_url": "https://www.finra.org/rules-guidance/notices/information-notice-120210",
+      "retrieved_at": "2026-10-01T07:07:44.375087+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 89062,
+      "sha256": "b4e3bc79a9305e55f397383d111fe6ab7180dce757a91389b423ed69abc2f1cc",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2012",
+      "path": "data/equities/source-repair/finra-calendar-2012/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/NoticeDocument/p125272.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/NoticeDocument/p125272.pdf",
+      "retrieved_at": "2026-10-01T07:08:51.512516+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 96616,
+      "sha256": "05c8345cac1c879b40107e37d9dd88a79bb5e695c72cda4b52d5b90c05382601",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2012-page",
+      "path": "data/equities/source-repair/finra-calendar-2012-page/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices/information-notice-121511",
+      "final_url": "https://www.finra.org/rules-guidance/notices/information-notice-121511",
+      "retrieved_at": "2026-10-01T07:08:12.820947+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 89069,
+      "sha256": "6d4415f7ff4d590825ad49a8b5edbc18ef54e1a4b183fa68d819ce8cf6564d69",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2013",
+      "path": "data/equities/source-repair/finra-calendar-2013/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/NoticeDocument/p197438.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/NoticeDocument/p197438.pdf",
+      "retrieved_at": "2026-10-01T07:09:31.027949+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 119886,
+      "sha256": "2491a7ea12354e85d4e74634a2212c2904cf6108f26e41e4d7d4720aef7d1cc2",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2014",
+      "path": "data/equities/source-repair/finra-calendar-2014/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/NoticeDocument/p413654.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/NoticeDocument/p413654.pdf",
+      "retrieved_at": "2026-10-01T07:09:48.237080+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 70753,
+      "sha256": "231b15b5d42962b4d17815a56456251b839ecdf1bb276ef92a86471ed09e1d65",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2015",
+      "path": "data/equities/source-repair/finra-calendar-2015/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/notice_other_file_ref/Notice_Information_122314-Holidays%202014.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/notice_other_file_ref/Notice_Information_122314-Holidays%202014.pdf",
+      "retrieved_at": "2026-10-01T07:10:07.278221+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 87261,
+      "sha256": "837ce80480061d734883255466b0f10fa39f4cd22c4dc835db103d24595c0671",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2016",
+      "path": "data/equities/source-repair/finra-calendar-2016/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/notice_doc_file_ref/Information-Notice_122215.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/notice_doc_file_ref/Information-Notice_122215.pdf",
+      "retrieved_at": "2026-10-01T07:12:51.022150+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 102820,
+      "sha256": "a5df095c05cc3557b2735db4bbecce26158813a1c2087cc16ac9a356f701f69f",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2016-page",
+      "path": "data/equities/source-repair/finra-calendar-2016-page/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices/information-notice-122215",
+      "final_url": "https://www.finra.org/rules-guidance/notices/information-notice-122215",
+      "retrieved_at": "2026-10-01T07:11:31.656218+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 88916,
+      "sha256": "851c1707c9b1bfd94a2e1c8fe67153008ea058df0967de0e19fc382ecb9ec9db",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2017",
+      "path": "data/equities/source-repair/finra-calendar-2017/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/notice_doc_file_ref/Information-Notice-121416.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/notice_doc_file_ref/Information-Notice-121416.pdf",
+      "retrieved_at": "2026-10-01T07:04:41.160647+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 99560,
+      "sha256": "9cea38b735baf56e4d67d787d09f97eee869d62ce258fd2b359ddb2c1a81647e",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2018",
+      "path": "data/equities/source-repair/finra-calendar-2018/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/notice_doc_file_ref/Information-Notice-122117.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/notice_doc_file_ref/Information-Notice-122117.pdf",
+      "retrieved_at": "2026-10-01T07:12:30.360887+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 124298,
+      "sha256": "ebdda7b236cce50f2794d9810d8a3b534d6aaf8481b09fd4bace52ad50a877a5",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2018-page",
+      "path": "data/equities/source-repair/finra-calendar-2018-page/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices/information-notice-122117",
+      "final_url": "https://www.finra.org/rules-guidance/notices/information-notice-122117",
+      "retrieved_at": "2026-10-01T07:11:18.265655+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 89308,
+      "sha256": "0f82368dffec36ca53d53183bcb1343130ef2b020dc9cea9a18b9faeed922c47",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2019",
+      "path": "data/equities/source-repair/finra-calendar-2019/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/notice_doc_file_ref/Information-Notice-122118.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/notice_doc_file_ref/Information-Notice-122118.pdf",
+      "retrieved_at": "2026-10-01T07:15:28.630514+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 85152,
+      "sha256": "bd8359c5215e9b4819b60f550119f51399cc0f51cbe825ce76284dc0e88af1e3",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2019-page",
+      "path": "data/equities/source-repair/finra-calendar-2019-page/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices/information-notice-122118",
+      "final_url": "https://www.finra.org/rules-guidance/notices/information-notice-122118",
+      "retrieved_at": "2026-10-01T07:12:19.693252+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 89148,
+      "sha256": "1a1855cd7130bdb92348c92e6e94853d23d52c98df794d9c72104bd87b604c3f",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2020",
+      "path": "data/equities/source-repair/finra-calendar-2020/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/2019-12/Information-Notice-120919.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/2019-12/Information-Notice-120919.pdf",
+      "retrieved_at": "2026-10-01T07:15:44.420806+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 94646,
+      "sha256": "15979e65e0d94292872658d3c01362b15cac17f1509ef3e5e27a205440487ec1",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2020-page",
+      "path": "data/equities/source-repair/finra-calendar-2020-page/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices/information-notice-120919",
+      "final_url": "https://www.finra.org/rules-guidance/notices/information-notice-120919",
+      "retrieved_at": "2026-10-01T07:13:20.780573+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 106117,
+      "sha256": "29e8617ea3217101704d93d86559050b3044a8d043374148d242dec014324f4c",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2021",
+      "path": "data/equities/source-repair/finra-calendar-2021/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/2020-12/Information-Notice-120120.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/2020-12/Information-Notice-120120.pdf",
+      "retrieved_at": "2026-10-01T07:15:52.288377+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 87563,
+      "sha256": "59879ff8940301431a0ed5fcaacb74d0456bd5de5e7dd9eb8d743a7a6ebff8d5",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2021-page",
+      "path": "data/equities/source-repair/finra-calendar-2021-page/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices/information-notice-120120",
+      "final_url": "https://www.finra.org/rules-guidance/notices/information-notice-120120",
+      "retrieved_at": "2026-10-01T07:13:11.236486+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 105470,
+      "sha256": "431588199680b4dbbbdf85620897588e09c3fb211c47038ad2ab0e9b0ea6735d",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2022",
+      "path": "data/equities/source-repair/finra-calendar-2022/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/2021-10/information-notice-101521.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/2021-10/information-notice-101521.pdf",
+      "retrieved_at": "2026-10-01T07:15:20.224555+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 88674,
+      "sha256": "595cd5817c845ff40370438bdbc018f8d6f9273092b1eda6964995b89562fa66",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2022-page",
+      "path": "data/equities/source-repair/finra-calendar-2022-page/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices/information-notice-101521",
+      "final_url": "https://www.finra.org/rules-guidance/notices/information-notice-101521",
+      "retrieved_at": "2026-10-01T07:11:50.532855+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 115206,
+      "sha256": "237996131bde0dbc2928f4bc0784494c9d5c73a7566ed010adf41b933e28ca2b",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2023",
+      "path": "data/equities/source-repair/finra-calendar-2023/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/2022-11/Information-Notice-111822.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/2022-11/Information-Notice-111822.pdf",
+      "retrieved_at": "2026-10-01T07:15:36.343459+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 120564,
+      "sha256": "7cb1d915244c39fc5fb29af5c948140f05ffebdcf7af8303eec4f961749d64d3",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2023-page",
+      "path": "data/equities/source-repair/finra-calendar-2023-page/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices/information-notice-111822",
+      "final_url": "https://www.finra.org/rules-guidance/notices/information-notice-111822",
+      "retrieved_at": "2026-10-01T07:12:41.781844+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 117813,
+      "sha256": "2d68400f00125c53bce354cbd44199b6700121c2320ac902b6bb666fb257dba0",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2025",
+      "path": "data/equities/source-repair/finra-calendar-2025/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/2024-12/Information-Notice-20241202.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/2024-12/Information-Notice-20241202.pdf",
+      "retrieved_at": "2026-10-01T07:15:06.821615+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 117380,
+      "sha256": "7723b2335e85136a241bb5fa042c324a38dea358fbede3d888e1541132f631c8",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2025-page",
+      "path": "data/equities/source-repair/finra-calendar-2025-page/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices/information-notice-20241202",
+      "final_url": "https://www.finra.org/rules-guidance/notices/information-notice-20241202",
+      "retrieved_at": "2026-10-01T07:14:45.062927+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 93387,
+      "sha256": "705a2e230671f04d5a5ca1c54a05efea0a826f85f5734de72f39e04d8247fe23",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2026",
+      "path": "data/equities/source-repair/finra-calendar-2026/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/2025-11/Information-Notice-20251107.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/2025-11/Information-Notice-20251107.pdf",
+      "retrieved_at": "2026-10-01T07:16:05.609305+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 312261,
+      "sha256": "b7faf514eab0c4505061e42411bf0ea2f8f1ef7354142f6880c36aca3f7e9051",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-calendar-2026-page",
+      "path": "data/equities/source-repair/finra-calendar-2026-page/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices/information-notice-20251107",
+      "final_url": "https://www.finra.org/rules-guidance/notices/information-notice-20251107",
+      "retrieved_at": "2026-10-01T07:14:37.180928+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 93227,
+      "sha256": "0f7a18c00e952c6090623f8ecbd0c2aa7a58fe6893961b05b4dedf6560ff51ca",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-full-filing-schedule-index",
+      "path": "data/equities/source-repair/finra-full-filing-schedule-index/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/key-topics/margin-accounts/margin-extension-holiday-schedule",
+      "final_url": "https://www.finra.org/rules-guidance/key-topics/margin-accounts/margin-extension-holiday-schedule",
+      "retrieved_at": "2026-10-01T07:16:28.619851+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 107216,
+      "sha256": "ad82e53d96758fd639cdd865d3cf5af7011fc4814293619575e09cc0209b7c94",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-full-filing-workbook",
+      "path": "data/equities/source-repair/finra-full-filing-workbook/raw.html",
+      "requested_url": "https://www.finra.org/sites/default/files/2025-10/ExtensionFilingSchedule.xlsx",
+      "final_url": "https://www.finra.org/sites/default/files/2025-10/ExtensionFilingSchedule.xlsx",
+      "retrieved_at": "2026-10-01T07:17:22.369810+00:00",
+      "status_code": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 39428,
+      "sha256": "70d5318ef85b58ec3831da142874d6a0f84fde2db22fd6c4f767f10ce17e7a8e",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-holiday-notices-index",
+      "path": "data/equities/source-repair/finra-holiday-notices-index/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices?combine=Holiday%20Trade%20Date&items_per_page=100",
+      "final_url": "https://www.finra.org/rules-guidance/notices?combine=Holiday%20Trade%20Date&items_per_page=100",
+      "retrieved_at": "2026-10-01T07:04:07.357342+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 176317,
+      "sha256": "98c52cac68fa0ff111c3ced5ecc9c36a40f6307fc0440363646ca51bf4a91ecc",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-margin-notices-index",
+      "path": "data/equities/source-repair/finra-margin-notices-index/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/key-topics/margin-accounts",
+      "final_url": "https://www.finra.org/rules-guidance/key-topics/margin-accounts",
+      "retrieved_at": "2026-10-01T07:06:19.192880+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 162281,
+      "sha256": "00db028cc760b130f04e6e916c9200918c3ba21d8769282a48d8a4503f3e73de",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-notices-2008-index",
+      "path": "data/equities/source-repair/finra-notices-2008-index/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices?combine_1=19",
+      "final_url": "https://www.finra.org/rules-guidance/notices?combine_1=19",
+      "retrieved_at": "2026-10-01T07:08:03.773662+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 175135,
+      "sha256": "ba8d9c4e4a6f3bcadd10a09aa054c455500932e6755ace18222c0e653bc43e4f",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-notices-2015-index",
+      "path": "data/equities/source-repair/finra-notices-2015-index/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices?combine_1=12",
+      "final_url": "https://www.finra.org/rules-guidance/notices?combine_1=12",
+      "retrieved_at": "2026-10-01T07:09:22.946018+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 175070,
+      "sha256": "85c84c6063f391c3ddb6a8f17fb3a903dc9511acd485c557ae4271354ea351c9",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-notices-2017-index",
+      "path": "data/equities/source-repair/finra-notices-2017-index/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices?combine_1=10",
+      "final_url": "https://www.finra.org/rules-guidance/notices?combine_1=10",
+      "retrieved_at": "2026-10-01T07:09:40.820377+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 176019,
+      "sha256": "7bce909abdb909963ee26e8a149a89465759d21ed49245c2857d42847521f67a",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-notices-2018-index",
+      "path": "data/equities/source-repair/finra-notices-2018-index/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices?combine_1=9",
+      "final_url": "https://www.finra.org/rules-guidance/notices?combine_1=9",
+      "retrieved_at": "2026-10-01T07:09:59.044027+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 175498,
+      "sha256": "1b84d3b3c873d51448a90f13466ecdd58ad7a637bc51ed4cd4a007ce46397957",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-notices-2019-index",
+      "path": "data/equities/source-repair/finra-notices-2019-index/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices?combine_1=8",
+      "final_url": "https://www.finra.org/rules-guidance/notices?combine_1=8",
+      "retrieved_at": "2026-10-01T07:10:25.209119+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 174340,
+      "sha256": "612d4646e897981b41cc2f5063254b8bcc7257e93cd343e3fff7e732b6cbe34b",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-notices-2020-index",
+      "path": "data/equities/source-repair/finra-notices-2020-index/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices?combine_1=7",
+      "final_url": "https://www.finra.org/rules-guidance/notices?combine_1=7",
+      "retrieved_at": "2026-10-01T07:10:40.911719+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 175155,
+      "sha256": "713b90f8e0030068560957535828a056c98c36807b90189f5f7dd229329566a7",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-notices-2021-index",
+      "path": "data/equities/source-repair/finra-notices-2021-index/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices?combine_1=6",
+      "final_url": "https://www.finra.org/rules-guidance/notices?combine_1=6",
+      "retrieved_at": "2026-10-01T07:10:50.026758+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 175010,
+      "sha256": "d9a95614f5cb0ed3e16e167314fcb9469378c6757e45a89be5747ec32fdb6115",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-notices-2022-index",
+      "path": "data/equities/source-repair/finra-notices-2022-index/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices?combine_1=5",
+      "final_url": "https://www.finra.org/rules-guidance/notices?combine_1=5",
+      "retrieved_at": "2026-10-01T07:11:00.131572+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 174978,
+      "sha256": "3864957509fe80fc2ad9cd492fb0e4b20c4eceb621e7a8a0d4a0405dee78e789",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-notices-2023-index",
+      "path": "data/equities/source-repair/finra-notices-2023-index/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices?combine_1=4",
+      "final_url": "https://www.finra.org/rules-guidance/notices?combine_1=4",
+      "retrieved_at": "2026-10-01T07:11:12.910666+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 172665,
+      "sha256": "8add00047960ede420b6b1077ebe5c8b57d968f0e94fa306c2ca90eec9269b45",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-notices-2024-index",
+      "path": "data/equities/source-repair/finra-notices-2024-index/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices?combine_1=3",
+      "final_url": "https://www.finra.org/rules-guidance/notices?combine_1=3",
+      "retrieved_at": "2026-10-01T07:11:26.414080+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 173757,
+      "sha256": "051d28c62b559b03539c189c9cc1f96f819ce2be6b2493acc23bd0f7cf5389bc",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-notices-2024-information-index",
+      "path": "data/equities/source-repair/finra-notices-2024-information-index/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices?combine_1=3&field_core_content_type_tax_target_id=4",
+      "final_url": "https://www.finra.org/rules-guidance/notices?combine_1=3&field_core_content_type_tax_target_id=4",
+      "retrieved_at": "2026-10-01T07:14:52.413748+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 142985,
+      "sha256": "72927f126729c8586392148617535258bb3527756c508be4d892456be47b23bb",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-notices-2025-index",
+      "path": "data/equities/source-repair/finra-notices-2025-index/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices?combine_1=2",
+      "final_url": "https://www.finra.org/rules-guidance/notices?combine_1=2",
+      "retrieved_at": "2026-10-01T07:11:41.390854+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 171068,
+      "sha256": "86691162632db59032f3ecd580dbcc25b16fa25c2ec27af865a1d0262217cb8d",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-settlement-holiday-rules",
+      "path": "data/equities/source-repair/finra-settlement-holiday-rules/raw.pdf",
+      "requested_url": "https://www.finra.org/sites/default/files/RCA/p002410.pdf",
+      "final_url": "https://www.finra.org/sites/default/files/RCA/p002410.pdf",
+      "retrieved_at": "2026-10-01T07:01:35.010444+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 522445,
+      "sha256": "f8c5c2ee913ce29c5f1697a0b11b28d645746923390d9fd11f3a2615f89de5e3",
+      "admissible_response": true
+    },
+    {
+      "name": "finra-unexpected-close-policy",
+      "path": "data/equities/source-repair/finra-unexpected-close-policy/raw.html",
+      "requested_url": "https://www.finra.org/rules-guidance/notices/05-47",
+      "final_url": "https://www.finra.org/rules-guidance/notices/05-47",
+      "retrieved_at": "2026-10-01T07:16:39.757253+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 98810,
+      "sha256": "063b079fc8df141cf18be5727699aa808f0cd218ba2f25a4e48657b9eaf21e36",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-bush-settlement",
+      "path": "data/equities/source-repair/nasdaq-bush-settlement/raw.html",
+      "requested_url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ETA2018-99",
+      "final_url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ETA2018-99",
+      "retrieved_at": "2026-10-01T06:40:24.350660+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 58467,
+      "sha256": "d9f5dd2c8bc2cf40d7a01aed28e0f8de2872f69d00e6e116d28950704226810d",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-carter-settlement",
+      "path": "data/equities/source-repair/nasdaq-carter-settlement/raw.html",
+      "requested_url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ETA2025-1",
+      "final_url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ETA2025-1",
+      "retrieved_at": "2026-10-01T06:44:17.001342+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 65166,
+      "sha256": "1375a32b230a1e52ff04dc268d4d32fc221b261bdac89ba5ba2f4f1041b47411",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-ford-settlement",
+      "path": "data/equities/source-repair/nasdaq-ford-settlement/raw.pdf",
+      "requested_url": "https://www.nasdaqtrader.com/content/newsalerts/2006/upcnotices/068-06.pdf",
+      "final_url": "https://www.nasdaqtrader.com/content/newsalerts/2006/upcnotices/068-06.pdf",
+      "retrieved_at": "2026-10-01T06:44:12.157599+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 18993,
+      "sha256": "439a693b75a3ef0f787f53e93235b671308b5e5c0bdc231c34984d3ed0a7cbc8",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-good-friday-2006",
+      "path": "data/equities/source-repair/nasdaq-good-friday-2006/raw.pdf",
+      "requested_url": "https://www.nasdaqtrader.com/content/newsalerts/2006/upcnotices/020-06.pdf",
+      "final_url": "https://www.nasdaqtrader.com/content/newsalerts/2006/upcnotices/020-06.pdf",
+      "retrieved_at": "2026-10-01T06:46:39.555710+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 63408,
+      "sha256": "68a453963dde7c94d0af773a99f9fc6b941edd6a27188ae323ac6163b3acee6d",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-newyear-2006",
+      "path": "data/equities/source-repair/nasdaq-newyear-2006/raw.pdf",
+      "requested_url": "https://www.nasdaqtrader.com/content/newsalerts/2005/upcnotices/092-05.pdf",
+      "final_url": "https://www.nasdaqtrader.com/content/newsalerts/2005/upcnotices/092-05.pdf",
+      "retrieved_at": "2026-10-01T07:12:10.168863+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 64060,
+      "sha256": "c97ee3e800966ae32bd0516cdec55796e7db017e709013449444eeabef21d997",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-upc-2005-index",
+      "path": "data/equities/source-repair/nasdaq-upc-2005-index/raw.html",
+      "requested_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2005",
+      "final_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2005",
+      "retrieved_at": "2026-10-01T07:03:33.005687+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 87513,
+      "sha256": "eda225e1c4e61f74226139a5d51f3d23a887912d2b5132c741bdc65fcae1855f",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-upc-2006-index",
+      "path": "data/equities/source-repair/nasdaq-upc-2006-index/raw.html",
+      "requested_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2006",
+      "final_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2006",
+      "retrieved_at": "2026-10-01T07:00:03.959295+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 84730,
+      "sha256": "ffe7017f994d1330d4ab2ee8b466973e0fc5e9b561ad86b4627ab9e4e9874284",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-upc-2007-index",
+      "path": "data/equities/source-repair/nasdaq-upc-2007-index/raw.html",
+      "requested_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2007",
+      "final_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2007",
+      "retrieved_at": "2026-10-01T07:03:05.753547+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 65821,
+      "sha256": "1a4749c9e3809cd2406f8e26f0f39cdbb672c3afa4ae97c4718bef418eca9b68",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-upc-2008-index",
+      "path": "data/equities/source-repair/nasdaq-upc-2008-index/raw.html",
+      "requested_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2008",
+      "final_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2008",
+      "retrieved_at": "2026-10-01T07:02:34.181622+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 74565,
+      "sha256": "c0e9f93394c50d3e7b7b19d93de31ce2339ac0d9cd50f8ea1754a0de3b487a19",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-upc-2009-index",
+      "path": "data/equities/source-repair/nasdaq-upc-2009-index/raw.html",
+      "requested_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2009",
+      "final_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2009",
+      "retrieved_at": "2026-10-01T07:02:22.324964+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 58170,
+      "sha256": "75aa81b2c2644b10d23558de6665ffa7cd225a16786030e2dc3a53c6bb645fdd",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-upc-2010-index",
+      "path": "data/equities/source-repair/nasdaq-upc-2010-index/raw.html",
+      "requested_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2010",
+      "final_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2010",
+      "retrieved_at": "2026-10-01T07:02:12.034462+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 49325,
+      "sha256": "2fbdd0186c3b8bd6ceac7bc6c2b431c48f9a68aa818326857a793332f78de9b3",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-upc-2011-index",
+      "path": "data/equities/source-repair/nasdaq-upc-2011-index/raw.html",
+      "requested_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2011",
+      "final_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2011",
+      "retrieved_at": "2026-10-01T07:02:03.686076+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 52424,
+      "sha256": "9bd4213876643afb2093f3880de49bb7cc964c5333f5b14bd2703080620b8421",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-upc-2012-index",
+      "path": "data/equities/source-repair/nasdaq-upc-2012-index/raw.html",
+      "requested_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2012",
+      "final_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2012",
+      "retrieved_at": "2026-10-01T07:01:54.496675+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 52586,
+      "sha256": "4c74a29a6cacb0cf6abedb42dadf579b8c46b94ed482d39e7be53aae4b35c267",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-upc-2013-index",
+      "path": "data/equities/source-repair/nasdaq-upc-2013-index/raw.html",
+      "requested_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2013",
+      "final_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2013",
+      "retrieved_at": "2026-10-01T07:01:27.015038+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 52677,
+      "sha256": "de5bfa32ca693b03410bd21b01ecc938513c39b9f8e31aedcb6ea0788dcb4a2c",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-upc-2014-index",
+      "path": "data/equities/source-repair/nasdaq-upc-2014-index/raw.html",
+      "requested_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2014",
+      "final_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2014",
+      "retrieved_at": "2026-10-01T07:01:12.892926+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 56043,
+      "sha256": "1607d438470ac39ec11ffe311ad90b4915257a943590844cc3568e554d9d14e1",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-upc-2015-index",
+      "path": "data/equities/source-repair/nasdaq-upc-2015-index/raw.html",
+      "requested_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2015",
+      "final_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2015",
+      "retrieved_at": "2026-10-01T07:01:04.110038+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 53315,
+      "sha256": "505ed6f441e0fdbe2460c3bdb44c78a2babaaf548ea8459005bb4ab261e1a0b3",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-upc-2016-index",
+      "path": "data/equities/source-repair/nasdaq-upc-2016-index/raw.html",
+      "requested_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2016",
+      "final_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2016",
+      "retrieved_at": "2026-10-01T07:00:55.617082+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 50764,
+      "sha256": "671c692da6367e6a466dc7460136a2b2066a75a56264b91d1039f178b86e960d",
+      "admissible_response": true
+    },
+    {
+      "name": "nasdaq-upc-2017-index",
+      "path": "data/equities/source-repair/nasdaq-upc-2017-index/raw.html",
+      "requested_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2017",
+      "final_url": "https://www.nasdaqtrader.com/Trader.aspx?id=UPCNotices2017",
+      "retrieved_at": "2026-10-01T07:00:47.972992+00:00",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 49177,
+      "sha256": "0513e9625ce06f5c735fef2e0a7783c0049bdad148466dd1ba9a278483f9bcdc",
+      "admissible_response": true
+    },
+    {
+      "name": "occ-sandy-settlement",
+      "path": "data/equities/source-repair/occ-sandy-settlement/raw.html",
+      "requested_url": "https://infomemo.theocc.com/infomemos?date=201210&number=31464",
+      "final_url": "https://infomemo.theocc.com/infomemos?date=201210&number=31464",
+      "retrieved_at": "2026-10-01T06:44:24.488406+00:00",
+      "status_code": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 5712,
+      "sha256": "d94040d91627ea10fc47f5934b18f1b68478e8b53a852c2160de8c85060a2eab",
+      "admissible_response": false
+    },
+    {
+      "name": "occ-search-form",
+      "path": "data/equities/source-repair/occ-search-form/raw.html",
+      "requested_url": "https://infomemo.theocc.com/infomemo",
+      "final_url": "https://infomemo.theocc.com/infomemo",
+      "retrieved_at": "2026-10-01T06:44:37.624452+00:00",
+      "status_code": 200,
+      "content_type": "text/html;charset=ISO-8859-1",
+      "bytes": 181411,
+      "sha256": "67e43049731049b1d2f8d6547cbdbee92ed983540b67b402a67ede04752eb3fa",
+      "admissible_response": true
+    },
+    {
+      "name": "occ-xlf-distribution",
+      "path": "data/equities/source-repair/occ-xlf-distribution/raw.pdf",
+      "requested_url": "https://infomemo.theocc.com/infomemos?number=39575",
+      "final_url": "https://infomemo.theocc.com/infomemos?number=39575",
+      "retrieved_at": "2026-10-01T06:44:27.977378+00:00",
+      "status_code": 200,
+      "content_type": "application/pdf",
+      "bytes": 131314,
+      "sha256": "3a5069cec93883ab030aba57c7dc9d2cf2b343b4361683708ba56aba6e150273",
+      "admissible_response": true
+    },
+    {
+      "name": "occ-xlf-search",
+      "path": "data/equities/source-repair/occ-xlf-search/raw.html",
+      "url": "https://infomemo.theocc.com/infomemo/search-memo",
+      "method": "POST",
+      "search": "XLF, posted09/01/2016..12/31/2016",
+      "sha256": "8d09daada38b3bd4a93ccd3f8407afd8089f28c5ca74776dd86ee3ea0ddbecc5",
+      "status_code": 403,
+      "retrieved_at": "2026-10-01T06:48:35.366051+00:00"
+    },
+    {
+      "name": "sec-sandy-settlement",
+      "path": "data/equities/source-repair/sec-sandy-settlement/raw.html",
+      "requested_url": "https://www.sec.gov/files/divisions/marketreg/regulation-sho-faq-regarding-hurricane-sandy.htm",
+      "final_url": "https://www.sec.gov/files/divisions/marketreg/regulation-sho-faq-regarding-hurricane-sandy.htm",
+      "retrieved_at": "2026-10-01T06:44:21.086333+00:00",
+      "status_code": 200,
+      "content_type": "text/html",
+      "bytes": 8441,
+      "sha256": "6498c453eb9289e907f3b449ddda845313d74622571a2964613872c37647c9a6",
+      "admissible_response": true
+    },
+    {
+      "name": "spy-2006-prospectus",
+      "path": "data/equities/source-repair/spy-2006-prospectus/raw.html",
+      "requested_url": "https://www.sec.gov/Archives/edgar/data/884394/000095013606000650/file001.htm",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/884394/000095013606000650/file001.htm",
+      "retrieved_at": "2026-10-01T06:40:05.063828+00:00",
+      "status_code": 200,
+      "content_type": "text/html",
+      "bytes": 2482756,
+      "sha256": "a6b22c0fee8bfa931e9300b002dac03bbbdbb200acba1f06eb4e5b75f7574f35",
+      "admissible_response": true
+    },
+    {
+      "name": "xlf-2016-annual-report",
+      "path": "data/equities/source-repair/xlf-2016-annual-report/raw.html",
+      "requested_url": "https://www.sec.gov/Archives/edgar/data/1064641/000119312516786454/d235287dncsr.htm",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1064641/000119312516786454/d235287dncsr.htm",
+      "retrieved_at": "2026-10-01T06:44:05.086779+00:00",
+      "status_code": 200,
+      "content_type": "text/html",
+      "bytes": 2484966,
+      "sha256": "0d022f3c4e28dc4b1407bc51c5987a52a96b6cfd1828e47f3e7c5f9822de25f0",
+      "admissible_response": true
+    },
+    {
+      "name": "xlf-2016-notice",
+      "path": "data/equities/source-repair/xlf-2016-notice/raw.html",
+      "requested_url": "https://www.sec.gov/Archives/edgar/data/1064641/000119312516699787/d246445d497.htm",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1064641/000119312516699787/d246445d497.htm",
+      "retrieved_at": "2026-10-01T06:40:11.761033+00:00",
+      "status_code": 200,
+      "content_type": "text/html",
+      "bytes": 6838,
+      "sha256": "bafc28f7b4879d356d436c54f101c85557dd000b0362761c5b998eb6f170f67b",
+      "admissible_response": true
+    }
+  ],
+  "primary_closing_prices": [
+    {
+      "date": "2025-04-09",
+      "primary_exchange": "P",
+      "price": "548.62",
+      "path": "data/equities/source-repair/raw/alpaca/closing_trades_sip/session-diagnostic-20261001/36a01d60dc8e25bde5d57c81/page-00000000.parquet",
+      "response_sha256": "c71e71cd14aa4139cfa9304e4a58418271e4ffa02603ba705579df6c63f82617",
+      "request": {
+        "params": {
+          "asof": "-",
+          "end": "2025-04-09T20:00:10Z",
+          "feed": "sip",
+          "limit": 10000,
+          "sort": "asc",
+          "start": "2025-04-09T20:00:00Z"
+        },
+        "url": "https://data.alpaca.markets/v2/stocks/SPY/trades"
+      }
+    },
+    {
+      "date": "2020-03-18",
+      "primary_exchange": "P",
+      "price": "240",
+      "path": "data/equities/source-repair/raw/alpaca/closing_trades_sip/session-diagnostic-20261001/ac58b3270a407fd4b08f646b/page-00000000.parquet",
+      "response_sha256": "a29852ae5db6a25322dfa4b4edc7f5c21ad400da5349a2305ed38a792dd2b68d",
+      "request": {
+        "params": {
+          "asof": "-",
+          "end": "2020-03-18T20:00:10Z",
+          "feed": "sip",
+          "limit": 10000,
+          "sort": "asc",
+          "start": "2020-03-18T20:00:00Z"
+        },
+        "url": "https://data.alpaca.markets/v2/stocks/SPY/trades"
+      }
+    },
+    {
+      "date": "2020-03-12",
+      "primary_exchange": "P",
+      "price": "248.11",
+      "path": "data/equities/source-repair/raw/alpaca/closing_trades_sip/session-diagnostic-20261001/eb4e2bb1554e44052312858f/page-00000000.parquet",
+      "response_sha256": "01a8459413a8852e5dcc86ef681c614bb4da1b1f81f6bd48b949e430f8006f63",
+      "request": {
+        "params": {
+          "asof": "-",
+          "end": "2020-03-12T20:00:10Z",
+          "feed": "sip",
+          "limit": 10000,
+          "sort": "asc",
+          "start": "2020-03-12T20:00:00Z"
+        },
+        "url": "https://data.alpaca.markets/v2/stocks/SPY/trades"
+      }
+    }
+  ],
+  "proposed_spy_payment_amendment": {
+    "original_issuer_sha256": "51a16a450298a663b3fa088883a17c75f4464e87c911b0e83902a0ad46877c54",
+    "ex_date": "2006-06-16",
+    "record_date": "2006-06-20",
+    "original_pay_date": "2006-06-16",
+    "corrected_scheduled_pay_date": "2006-07-31",
+    "amount": "0.555470",
+    "basis": "2006 prospectus p61: final NYSE business day of following month; archive retained unmodified",
+    "applied_to_replay": false,
+    "applied_to_source_bundle": true
+  },
+  "xlf_action": {
+    "ex_date": "2016-09-19",
+    "record_date": "2016-09-21",
+    "pay_date": "2016-09-22",
+    "distribution_asset": "XLRE",
+    "units_per_xlf_share": "0.139146",
+    "type": "in_kind_not_xlf_share_split",
+    "fractional_cash": "unresolved; no immediate cash assumption",
+    "provider_conflict": "Archived Alpaca corporate_actions reports 0.139146 as a cash-dividend rate, not spin_off shares, and reports a September19 record date. The issuer annual report gives XLRE units and September21 record date. Provider response is retained and rejected for those fields.",
+    "incidental_asset_policy_status": "Not preregistered for execution: broker treatment of fractional in-kind distributions remains insufficiently specific. No silent cash conversion, fabricated extra XLF shares, or added ranking asset."
+  },
+  "remaining_gates": [
+    "XLF fractional proceeds and incidental holding execution policy: nine-sector source data remain unadmitted",
+    "Other candidate-specific issuer/actions/price audits remain required; SPY validation does not admit an entire multi-asset universe",
+    "Any strategy execution still requires a separate preregistration, risk/ledger/holdout admission and preserved consumed finals"
+  ],
+  "previous_receipt": {
+    "git_commit": "c78bc1c",
+    "file_sha256": "66363872c1afa13318d2b7fd5c596ce2036882abf7b235ccd6d71ab2342d0173",
+    "amendment_sha256": "df5e49a916729b9faf73101c0514a6dbfdc50d980835d7a6cfe643b85408ebe6"
+  },
+  "source_response_policy": "An HTTP-200 archive is retrievable evidence, not automatic semantic admission. Search/index responses locate documents only. Specific source interpretations and conflicts are stated separately; failed HTTP responses never supply financial facts.",
+  "diagnostic_archives": [
+    {
+      "path": "data/equities/source-repair/raw/alpaca/bars_1Min_raw_iex/session-diagnostic-20261001/9029255bbe0dd28f4e670ac1/page-00000000.parquet",
+      "response_sha256": "79d307162e5b9018edc721ef958c0fab13b4ce027d18bbb8bc554b1d6947f5ef",
+      "request": {
+        "params": {
+          "adjustment": "raw",
+          "asof": "-",
+          "end": "2025-04-09T20:03:00Z",
+          "feed": "iex",
+          "limit": 10000,
+          "sort": "asc",
+          "start": "2025-04-09T19:58:00Z",
+          "symbols": "SPY",
+          "timeframe": "1Min"
+        },
+        "url": "https://data.alpaca.markets/v2/stocks/bars"
+      },
+      "records": 6,
+      "next_request": null
+    },
+    {
+      "path": "data/equities/source-repair/raw/alpaca/bars_1Min_raw_sip/session-diagnostic-20261001/d8b4804a2582fd874ae967a1/page-00000000.parquet",
+      "response_sha256": "1da948533f6bf68446631ebad2ba6a1bf886d016897b67fa73130f30c1a54b26",
+      "request": {
+        "params": {
+          "adjustment": "raw",
+          "asof": "-",
+          "end": "2025-04-09T20:03:00Z",
+          "feed": "sip",
+          "limit": 10000,
+          "sort": "asc",
+          "start": "2025-04-09T19:58:00Z",
+          "symbols": "SPY",
+          "timeframe": "1Min"
+        },
+        "url": "https://data.alpaca.markets/v2/stocks/bars"
+      },
+      "records": 6,
+      "next_request": null
+    },
+    {
+      "path": "data/equities/source-repair/raw/alpaca/bars_1Min_raw_sip/session-diagnostic-20261001/e1d272b95e980828e2a8a06a/page-00000000.parquet",
+      "response_sha256": "755456c401247a4f195034ff12f27fe6d4736c2af7dc1312ecf0d70e0a419b30",
+      "request": {
+        "params": {
+          "adjustment": "raw",
+          "asof": "-",
+          "end": "2020-03-12T20:03:00Z",
+          "feed": "sip",
+          "limit": 10000,
+          "sort": "asc",
+          "start": "2020-03-12T19:58:00Z",
+          "symbols": "SPY",
+          "timeframe": "1Min"
+        },
+        "url": "https://data.alpaca.markets/v2/stocks/bars"
+      },
+      "records": 6,
+      "next_request": null
+    },
+    {
+      "path": "data/equities/source-repair/raw/alpaca/bars_1Min_raw_sip/session-diagnostic-20261001/eb572bde18e741803802b5b1/page-00000000.parquet",
+      "response_sha256": "1ea969742cafd009cb092b6a8a6f4cedde4a3696c9a1e4a235453776240f4c5b",
+      "request": {
+        "params": {
+          "adjustment": "raw",
+          "asof": "-",
+          "end": "2020-03-18T20:03:00Z",
+          "feed": "sip",
+          "limit": 10000,
+          "sort": "asc",
+          "start": "2020-03-18T19:58:00Z",
+          "symbols": "SPY",
+          "timeframe": "1Min"
+        },
+        "url": "https://data.alpaca.markets/v2/stocks/bars"
+      },
+      "records": 6,
+      "next_request": null
+    },
+    {
+      "path": "data/equities/source-repair/raw/alpaca/closing_trades_sip/session-diagnostic-20261001/36a01d60dc8e25bde5d57c81/page-00000000.parquet",
+      "response_sha256": "c71e71cd14aa4139cfa9304e4a58418271e4ffa02603ba705579df6c63f82617",
+      "request": {
+        "params": {
+          "asof": "-",
+          "end": "2025-04-09T20:00:10Z",
+          "feed": "sip",
+          "limit": 10000,
+          "sort": "asc",
+          "start": "2025-04-09T20:00:00Z"
+        },
+        "url": "https://data.alpaca.markets/v2/stocks/SPY/trades"
+      },
+      "records": 1197,
+      "next_request": null
+    },
+    {
+      "path": "data/equities/source-repair/raw/alpaca/closing_trades_sip/session-diagnostic-20261001/ac58b3270a407fd4b08f646b/page-00000000.parquet",
+      "response_sha256": "a29852ae5db6a25322dfa4b4edc7f5c21ad400da5349a2305ed38a792dd2b68d",
+      "request": {
+        "params": {
+          "asof": "-",
+          "end": "2020-03-18T20:00:10Z",
+          "feed": "sip",
+          "limit": 10000,
+          "sort": "asc",
+          "start": "2020-03-18T20:00:00Z"
+        },
+        "url": "https://data.alpaca.markets/v2/stocks/SPY/trades"
+      },
+      "records": 802,
+      "next_request": null
+    },
+    {
+      "path": "data/equities/source-repair/raw/alpaca/closing_trades_sip/session-diagnostic-20261001/eb4e2bb1554e44052312858f/page-00000000.parquet",
+      "response_sha256": "01a8459413a8852e5dcc86ef681c614bb4da1b1f81f6bd48b949e430f8006f63",
+      "request": {
+        "params": {
+          "asof": "-",
+          "end": "2020-03-12T20:00:10Z",
+          "feed": "sip",
+          "limit": 10000,
+          "sort": "asc",
+          "start": "2020-03-12T20:00:00Z"
+        },
+        "url": "https://data.alpaca.markets/v2/stocks/SPY/trades"
+      },
+      "records": 1269,
+      "next_request": null
+    },
+    {
+      "path": "data/equities/source-repair/raw/alpaca/corporate_actions/source-diagnostic-20261001/8b702abaa16220d0b83bff0f/page-00000000.parquet",
+      "response_sha256": "41fa4bc16b940b297dce564ec1c969827dade3223f96b2fe26206ef58220545f",
+      "request": {
+        "params": {
+          "end": "2016-10-15",
+          "limit": 1000,
+          "sort": "asc",
+          "start": "2016-09-01",
+          "symbols": "XLF,XLRE"
+        },
+        "url": "https://data.alpaca.markets/v1/corporate-actions"
+      },
+      "records": 4,
+      "next_request": null
+    },
+    {
+      "path": "data/equities/source-repair/raw/alpaca/corporate_actions/source-diagnostic-20261001/b251a3ca9f42be4a6255fd53/page-00000000.parquet",
+      "response_sha256": "338f569419d462b747a610d8ce4f6bc6485c91be07ecfbc591d98222bfa2b865",
+      "request": {
+        "params": {
+          "end": "2022-02-10",
+          "limit": 1000,
+          "sort": "asc",
+          "start": "2021-12-01",
+          "symbols": "SPY"
+        },
+        "url": "https://data.alpaca.markets/v1/corporate-actions"
+      },
+      "records": 1,
+      "next_request": null
+    },
+    {
+      "path": "data/equities/source-repair/raw/alpaca/corporate_actions/source-diagnostic-20261001/ca1674e6447e881974665241/page-00000000.parquet",
+      "response_sha256": "10708b08601b30c1d2e8b742c255112b7b353aad8742d985b7a8e6a32bfdeb69",
+      "request": {
+        "params": {
+          "end": "2025-12-10",
+          "limit": 1000,
+          "sort": "asc",
+          "start": "2025-12-01",
+          "symbols": "XLB,XLE,XLK,XLU,XLY"
+        },
+        "url": "https://data.alpaca.markets/v1/corporate-actions"
+      },
+      "records": 5,
+      "next_request": null
+    },
+    {
+      "path": "data/equities/source-repair/raw/alpaca/opening_trades_sip/session-diagnostic-20261001/7c8c16e4bf4b63a60d3702c9/page-00000000.parquet",
+      "response_sha256": "92cc850fbac99e459cb1b0d7c67265db73a264c0f5f822bb52f7064f572f3d35",
+      "request": {
+        "params": {
+          "asof": "-",
+          "end": "2016-11-07T14:30:10Z",
+          "feed": "sip",
+          "limit": 10000,
+          "sort": "asc",
+          "start": "2016-11-07T14:30:00Z"
+        },
+        "url": "https://data.alpaca.markets/v2/stocks/SPY/trades"
+      },
+      "records": 1215,
+      "next_request": null
+    }
+  ],
+  "settlement_calendar": {
+    "path": "docs/research/13-equity-data-repair-calendar.json",
+    "file_sha256": "11b791a4edf1af2ba3d1d78d37c9d1de4cdaa00116c755ce198674c1bdd693c7",
+    "evidence_sha256": "b7d934c0dc7740a39e7689819505482625c98c3bfd7ee84f2bbe627ef499dac4",
+    "status": "SCHEDULE_RECONCILED_NOT_STRATEGY_ADMISSION",
+    "eligible_day_count": 5248,
+    "workbook_pairs_verified": 291,
+    "exceptional_settlement_only_days": 5,
+    "bank_only_closures_in_sample": 37,
+    "cash_release": "Frozen for SPY source-only amendment; no strategy replay or observed broker credit claimed."
+  },
+  "true_split_inventory": {
+    "date": "2025-12-05",
+    "symbols": [
+      "XLB",
+      "XLE",
+      "XLK",
+      "XLU",
+      "XLY"
+    ],
+    "ratio": "2:1",
+    "status": "Yahoo event inventory independently agrees with archived Alpaca corporate-action responses; executable-price/share-unit conversion has not been admitted."
+  },
+  "validation": {
+    "tests_passed": 44,
+    "strategy_outcomes_inspected": false,
+    "strategy_source_admission": false,
+    "spy_open_close_source_validation": true
+  },
+  "spy_amendment": {
+    "path": "docs/research/13-equity-data-repair-spy-amendment.json",
+    "file_sha256": "e4d756ca2af0de147b8694014211ced25767612b086d8cb0ccabbfd3efa18c83",
+    "identity_sha256": "c34d474b2a371a8f562805bb50e311502ace6808949b7b2147469e1ee4957c38",
+    "receipt_sha256": "3726951207c75d417a45d4264e414178eb5d4234e7f6328e4cf363474dbe9040",
+    "status": "SOURCE_VALIDATED_OPEN_CLOSE_ONLY_NOT_STRATEGY_ADMISSION"
+  },
+  "amendment_sha256": "193c6a0180bec5cceab2c15883a29dfa9623dca62cd33950caca7c2636815848"
+}

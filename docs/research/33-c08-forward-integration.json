@@ -1,0 +1,680 @@
+{
+  "actual_paper_fills": 0,
+  "actual_paper_orders": 0,
+  "all_final_ids": [
+    3281,
+    3282,
+    3319,
+    3910,
+    3964,
+    3969,
+    4066
+  ],
+  "bead": "tradingbot-5l3",
+  "book_sha256": "6952401cf57bd8190fb8642174483b07a1a32debe50aef6b70f3b1a4d1bd4be0",
+  "decision": "hold_before_activating_paper",
+  "earlier_methodology_receipts_identical": {
+    "errata": true,
+    "methodology": true
+  },
+  "follow_up_bead": "tradingbot-ndl",
+  "follow_up_blocker": "blocked:source-evidence",
+  "guard_required": null,
+  "historical_evidence": {
+    "final_attempt_ids": [
+      3910
+    ],
+    "reactor_sha256": "599442d4d877d32c5a1a82edd0abcc1036cc2ff8b10f62ae00201dddd69f87cc",
+    "replayed": false,
+    "rows": [
+      {
+        "dataset_key": "c08-amendment21-8babfd45b7f419e4394210b4964c975e73f07b0b",
+        "fees_usd": "0.120000",
+        "final_holdout": false,
+        "full_row_sha256": "ac83c29c0e21aaddb2ad1b7da59fa8019c91998b54d51d81b64e1e1e4a58b204",
+        "holdout_start": "2024-02-15T12:00:00+00:00",
+        "luck_p_value": null,
+        "max_drawdown_usd": "54.801399",
+        "net_usd": "102.285220",
+        "round_trips": 3,
+        "strategy_id": 6446,
+        "trial_id": 3907
+      },
+      {
+        "dataset_key": "c08-amendment21-8babfd45b7f419e4394210b4964c975e73f07b0b",
+        "fees_usd": "0.160000",
+        "final_holdout": true,
+        "full_row_sha256": "7154a87033b13c2be2c1a86042787c6845cde809c6290ba27951f80ce50e7bbf",
+        "holdout_start": "2024-02-15T12:00:00+00:00",
+        "luck_p_value": null,
+        "max_drawdown_usd": "28.678680",
+        "net_usd": "7.668053",
+        "round_trips": 4,
+        "strategy_id": 6447,
+        "trial_id": 3910
+      }
+    ],
+    "slot_usd": "140",
+    "source_receipt": "63c4d561929099ae039a8a67a0deace1991b08d6e3dacef55c6c2de481b99ca5",
+    "strategy_version": "739e205972e6208c07c0fc0618946a1813a877e7c775d4d737237f54c9183376",
+    "target_weight": ".95",
+    "threshold": "-0.05"
+  },
+  "implementation_complete": true,
+  "initial_virtual_cash": "140",
+  "limits_unchanged": true,
+  "no_new_keys_accounts_venues_capital_or_public_posts": true,
+  "preparation": {
+    "code_version": "c08_forward_v1",
+    "dependencies": {
+      "connectors/alpaca_api.py": "29a3b4f0fd596a5fb8ec5bb0adfd3b2fab258c4a27f01f42452dd4dd55bab959",
+      "connectors/alpaca_paper.py": "f6507971af7218f996905054f527f1deeb7c5164b28bc63d9f43f04247f96560",
+      "connectors/cash.py": "05a6c4762662b11752784015549a992e4dcc01845a9068d5104a708fab664110",
+      "forward/c05_readiness.py": "d782db323d9a10dc9113e2da54df112dbf84f4791cf5bf7e2cf0181a285444fd",
+      "forward/c08_readiness.py": "1abfda979671b9eef7ac8b470d42c42491c8deac290abf51b24ebab1121e0e8d",
+      "forward/c08_runner.py": "8ed31de56c378f1d1d6829e0537dd80773dc187cbbaa6f81e6e9b93c1e23c0a0",
+      "forward/c08_sources.py": "6a95128d8ef15d026cb1efd82ff916722dc406729a9c979c178f572f0b4bbbc1",
+      "forward/c08_state.py": "02bbc445e007901580eb45d7171ea6fac3cb3d0a79a403f635f2574ce269485c",
+      "forward/paper_evidence.py": "c534db35888021973ed20d42fd4a273f1aafb5ed577e0392861d8e8ebc03ecbb",
+      "research/equity_fees.py": "09dba3aca3596d754bd6501171e1a1c5ce3a93ae87a65b57fad85bddfe62ed11",
+      "risk/engine.py": "403d8e87e9550adf9183f117bb44b3ca8b174f5e97cb0fb77888e9fe53cf6654",
+      "risk/limits.py": "876019289d37066e7f8a150527d29feb6277e6b8acb68b909e894d1b7aeff25f",
+      "strategy/c08_inventory.py": "599442d4d877d32c5a1a82edd0abcc1036cc2ff8b10f62ae00201dddd69f87cc"
+    },
+    "final_holdout": false,
+    "full_row_sha256": "55bd1c0ac38660e641e9121c19151aa9c92746b3ffaba8d0c8ffb76070b62a81",
+    "git_commit": "88e4caeb221a688520736ee6fc7eec717b08d4e6",
+    "metrics": {
+      "c08_forward_v1": {
+        "core": null,
+        "decision": "hold_before_paper",
+        "enabled": false,
+        "failure_stage": "source_admission",
+        "failure_type": "ValueError",
+        "incidents": [],
+        "phases": {}
+      }
+    },
+    "mode": "paper",
+    "result_metrics": {
+      "fees_total": null,
+      "luck_p_value": null,
+      "max_drawdown": null,
+      "pnl": null,
+      "pnl_after_fees": null,
+      "sharpe": null,
+      "trade_count": null,
+      "win_rate": null
+    },
+    "source_review": {
+      "path": "data/forward/c08-integration/watch-20261001-2042/review-hold.json",
+      "sha256": "7e3f73971b5201dae34fd0c993955e05d4625cd785103b58b349c49571afc819"
+    },
+    "status": "failed",
+    "strategy_id": 6446,
+    "strategy_version": "739e205972e6208c07c0fc0618946a1813a877e7c775d4d737237f54c9183376",
+    "trial_id": 5195
+  },
+  "protected_rows_unchanged": true,
+  "protected_trial_row_sha256": {
+    "3281": "e19dc440ffd8ec694baec744942f28c8b92c001f66504c7ee000a7d42977904d",
+    "3282": "e971081f3e94296a8ae8f57cb1e89d6f882af4c8a569370913b0112daa29d089",
+    "3298": "3fdb057e4493e4e7b9715a1cf56542c9efe1b6c265b855e2f49f7f90518569bb",
+    "3319": "42f14d40080fa395f972e9c27c6ea2643f5097c8126afd8151f99cfa004170b1",
+    "3907": "ac83c29c0e21aaddb2ad1b7da59fa8019c91998b54d51d81b64e1e1e4a58b204",
+    "3910": "7154a87033b13c2be2c1a86042787c6845cde809c6290ba27951f80ce50e7bbf",
+    "3964": "6d706b862f22c103ffd09649262b6322ad0590ad09271ecdd1056bf59b893df2",
+    "3969": "ac7c05051233105d45513605d35c4cc53fbc02a31058ef3d11e154ebfe7c7588",
+    "4066": "b6243330257cc73f23b13eb5d6fcb6c65980fa3e022140556322b34ad8741cb9",
+    "4176": "c96900328b567daa480cc2170e7a506ad62957af1ae3215796747ec43a8f49b4"
+  },
+  "ready_for_live": false,
+  "recorded_at": "2026-10-01T21:06:31.183847+00:00",
+  "replayed": false,
+  "schema": "c08_forward_integration_receipt_v1",
+  "shared_book_unchanged": true,
+  "source_review": {
+    "content": {
+      "actions": [],
+      "admitted": false,
+      "broker_actions": {
+        "clear": true,
+        "reason": "Bounded all-type USO corporate-action query exhausted with zero rows. This proves only this observed vendor response, not advance issuer coverage or treatment of future fractional shares."
+      },
+      "eia_methodology": {
+        "clear": true,
+        "reason": "Dated September 30 page and Table 1 CSV/PDF agree on September 25 commercial crude excluding SPR and the comparable 2025 September 26 denominator, million-barrel units and definition. Captured Appendix E addresses 2023 propane/propylene corrections, not these commercial crude fields; current Appendix B and dated page expose no newly linked applicable notice. This is causal current-observation evidence only; first-release vintage remains unverified and the original 14-day expiry is retained."
+      },
+      "first_release_vintage_verified": false,
+      "issuer_coverage": {
+        "clear": false,
+        "reason": "Product HTML contains the historical 2020 split disclosure, while current news and qualified-notice tables are empty dynamic shells. Exact observed linked scripts settings__insights, settings__qualifiedNotice and documents each returned HTTP 500. No future announcement or distribution clearance is inferred."
+      },
+      "nontrade_activity": {
+        "clear": true,
+        "reason": "Existing-account bounded nontrade query exhausted with zero rows. No dividend, split, cash-in-lieu or settlement-completion credit is inferred from that absence."
+      },
+      "ready_for_live": false,
+      "reason": "Hold C08 activation: the current issuer product/news/qualified-notice HTML is a dynamic template; the exact linked data-loader scripts returned HTTP 500. Broker exhaustion does not establish issuer announcement or distribution coverage. Runtime/account integration tests are separate from actual source admission.",
+      "reviewed_at": "2026-10-01T20:57:00.522451+00:00",
+      "reviewed_broker_rows": [],
+      "reviewed_files": [
+        "actions-0.json",
+        "calendar.json",
+        "eia-csv/manifest.json",
+        "eia-csv/raw",
+        "eia-errata.json",
+        "eia-errata.raw",
+        "eia-index/manifest.json",
+        "eia-index/raw",
+        "eia-method.json",
+        "eia-method.raw",
+        "eia-page/manifest.json",
+        "eia-page/raw",
+        "eia-pdf/manifest.json",
+        "eia-pdf/raw",
+        "issuer-news.json",
+        "issuer-news.raw",
+        "issuer-product.json",
+        "issuer-product.raw",
+        "issuer-qualified-notices.json",
+        "issuer-qualified-notices.raw",
+        "nontrade-0.json"
+      ],
+      "reviewed_notice_links": [
+        "https://www.uscfinvestments.com/etf-capital-gains-distributions",
+        "https://www.uscfinvestments.com/etf-distribution-calendar",
+        "https://www.uscfinvestments.com/qualified-notices"
+      ],
+      "reviewer": "NavyLantern",
+      "schema": "c08_source_watch_v1:review",
+      "shared_account_migration_activated": false,
+      "signal_computed": false,
+      "supplemental_receipts": [
+        {
+          "path": "data/forward/c08-integration/issuer-diagnostics-20261001-2049/documents-js.json",
+          "sha256": "b6545d007507a230930f21e18f64a3c741359b16f32eeece8e9a7654ec0569f9"
+        },
+        {
+          "path": "data/forward/c08-integration/issuer-diagnostics-20261001-2049/documents-js.raw",
+          "sha256": "b38cd4da8e1af3e8e258c72cbe4f762f19c0453f4faca4fa24805432650c2d8f"
+        },
+        {
+          "path": "data/forward/c08-integration/issuer-diagnostics-20261001-2049/news-js.json",
+          "sha256": "68d9d3b46848abf89ea0db81ca226bf6dbfa8e6d12b26f1da9f5fa3b03745294"
+        },
+        {
+          "path": "data/forward/c08-integration/issuer-diagnostics-20261001-2049/news-js.raw",
+          "sha256": "adc753335a537d3a4b851dc64e041612564246949a1a6a435d349877ab8e0577"
+        },
+        {
+          "path": "data/forward/c08-integration/issuer-diagnostics-20261001-2049/qualified-js.json",
+          "sha256": "520c785703e7e1ce368b6dc455cdd12be79b624b6898038531d65f59b9b0484f"
+        },
+        {
+          "path": "data/forward/c08-integration/issuer-diagnostics-20261001-2049/qualified-js.raw",
+          "sha256": "1ecc33425fa8745de0238d4668ca8bc8cb4a1d543a1477cb33d8640c8938c821"
+        }
+      ],
+      "unmatched_activities": [],
+      "unresolved_notices": [
+        "Current USCF dynamic news/qualified-notice/distribution coverage is unavailable; exact linked script requests returned HTTP 500."
+      ],
+      "valid_until": "2026-10-02T20:42:20.160114+00:00",
+      "watch": {
+        "path": "data/forward/c08-integration/watch-20261001-2042/watch.json",
+        "sha256": "6cac900fc0ca093bd529cd50266d653adce226f64ece8f8553eda043ed67f7e9"
+      }
+    },
+    "path": "data/forward/c08-integration/watch-20261001-2042/review-hold.json",
+    "sha256": "7e3f73971b5201dae34fd0c993955e05d4625cd785103b58b349c49571afc819"
+  },
+  "source_watch": {
+    "content": {
+      "account_matches_book": true,
+      "actions": {
+        "advance_notice_guaranteed": false,
+        "exhausted": true,
+        "known_empty_is_no_future_guarantee": true,
+        "pages": [
+          {
+            "path": "data/forward/c08-integration/watch-20261001-2042/actions-0.json",
+            "sha256": "fd34082bd571a5fbb03a9d939b58fe2d2a632cd7cb7048c0d373f6bb9ec2237b"
+          }
+        ],
+        "records": 0
+      },
+      "calendar": [
+        {
+          "close": "16:00",
+          "date": "2026-09-21",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-09-22"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-09-22",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-09-23"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-09-23",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-09-24"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-09-24",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-09-25"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-09-25",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-09-28"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-09-28",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-09-29"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-09-29",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-09-30"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-09-30",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-01"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-01",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-02"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-02",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-05"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-05",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-06"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-06",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-07"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-07",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-08"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-08",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-09"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-09",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-13"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-12",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-13"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-13",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-14"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-14",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-15"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-15",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-16"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-16",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-19"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-19",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-20"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-20",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-21"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-21",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-22"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-22",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-23"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-23",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-26"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-26",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-27"
+        }
+      ],
+      "completed_at": "2026-10-01T20:43:04.119358+00:00",
+      "eia": {
+        "available_at": "2026-10-01T20:43:00.434926+00:00",
+        "earlier_session_backfill_permitted": false,
+        "earliest_eligible_open": "2026-10-02T09:30:00-04:00",
+        "fields": {
+          "commercial_current": "427.320",
+          "commercial_year_ago": "416.546",
+          "comparable_year_ago_date": "2025-09-26",
+          "first_release_vintage_verified": false,
+          "observation_date": "2026-09-25",
+          "previous_date": "2026-09-18",
+          "units_verified": true
+        },
+        "first_release_vintage_verified": false,
+        "layout": {
+          "earliest_calendar_date_for_execution": "2026-10-01",
+          "first_release_vintage_verified": false,
+          "notice": null,
+          "observation_date": "2026-09-25",
+          "release_date": "2026-09-30",
+          "release_weekday": "Wednesday",
+          "table1_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/csv/table1.csv",
+          "timestamp_precision": "date_only"
+        },
+        "new_publication_notice_review_required": true,
+        "pdf_check": {
+          "pdf_csv_rounding_tolerance": "0.05",
+          "pdf_current": "427.3",
+          "pdf_year_ago": "416.5",
+          "units": "million barrels"
+        },
+        "receipts": {
+          "eia-csv": {
+            "bytes": 6576,
+            "content_type": "application/octet-stream",
+            "key": "eia-csv",
+            "params": null,
+            "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/csv/table1.csv",
+            "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/csv/table1.csv",
+            "retrieved_at": "2026-10-01T20:43:00.014774+00:00",
+            "sha256": "9d2628089c0cec9f0fd9f19fc4a7c26ee3a7c6d30ebfb3e1f28f23a30e310a2d",
+            "status_code": 200
+          },
+          "eia-index": {
+            "bytes": 174422,
+            "content_type": "text/html; charset=UTF-8",
+            "key": "eia-index",
+            "params": null,
+            "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/",
+            "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/",
+            "retrieved_at": "2026-10-01T20:42:43.452453+00:00",
+            "sha256": "9abd3c3a12db396d4812e90a0bafdd7c1d7f9500c223bd5df4cbc3e1ac82fdcd",
+            "status_code": 200
+          },
+          "eia-page": {
+            "bytes": 66294,
+            "content_type": "text/html; charset=UTF-8",
+            "key": "eia-page",
+            "params": null,
+            "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/wpsr_2026_09_30.php",
+            "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/wpsr_2026_09_30.php",
+            "retrieved_at": "2026-10-01T20:42:51.842047+00:00",
+            "sha256": "fd537ba1c50258a395b80e2c4e25f678593a4526edcf96bb7ec2cc80106f6efe",
+            "status_code": 200
+          },
+          "eia-pdf": {
+            "bytes": 74231,
+            "content_type": "application/pdf",
+            "key": "eia-pdf",
+            "params": null,
+            "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/pdf/table1.pdf",
+            "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/pdf/table1.pdf",
+            "retrieved_at": "2026-10-01T20:43:00.169535+00:00",
+            "sha256": "1b2496a0acb9a2e72d5cf73de8f5e37ea7e2c3b2d00553e64036354d54fa6382",
+            "status_code": 200
+          }
+        },
+        "signal_admitted": false,
+        "signal_computed": false,
+        "source_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/wpsr_2026_09_30.php",
+        "validated_at": "2026-10-01T20:43:00.434926+00:00"
+      },
+      "empty_broker_is_clearance": false,
+      "errors": {},
+      "files": {
+        "actions-0.json": "fd34082bd571a5fbb03a9d939b58fe2d2a632cd7cb7048c0d373f6bb9ec2237b",
+        "calendar.json": "1e36fb01ee81e731401efe25de9a352470f7ebd955e7635fd879f2d740ffdc05",
+        "eia-csv/manifest.json": "fffab4f126a1cc8095e347e0d83ed67df1a1b2e750c41763f972e9b369a8e979",
+        "eia-csv/raw": "9d2628089c0cec9f0fd9f19fc4a7c26ee3a7c6d30ebfb3e1f28f23a30e310a2d",
+        "eia-errata.json": "db889314027cc5204c40fce5877adf6666645a429a4717c4be637ececbbe751f",
+        "eia-errata.raw": "752d1eb10d466f704183cdde6f8813b51f0a8ed38d234f374b5485c9639518c3",
+        "eia-index/manifest.json": "a256df7f1ca584ac63559b19a3cf58e00dc912662afcb59e98f067bd672ca6e2",
+        "eia-index/raw": "9abd3c3a12db396d4812e90a0bafdd7c1d7f9500c223bd5df4cbc3e1ac82fdcd",
+        "eia-method.json": "b09413675421e2ba9cad323594bfac2b5878c6ad224ebcd5ae41040700161692",
+        "eia-method.raw": "ced931e5f63b8572aad6d2f6d64502ccf6e0acd0860cccc6bb2af50a7411f432",
+        "eia-page/manifest.json": "b492218de66e6db977c01f578f4cd27701dd8efe36ba1275d333765215974534",
+        "eia-page/raw": "fd537ba1c50258a395b80e2c4e25f678593a4526edcf96bb7ec2cc80106f6efe",
+        "eia-pdf/manifest.json": "919fd330184875fb55c403b8c1e7383161aee72795be8be26d930d64b4434c57",
+        "eia-pdf/raw": "1b2496a0acb9a2e72d5cf73de8f5e37ea7e2c3b2d00553e64036354d54fa6382",
+        "issuer-news.json": "aa6cbc202004ad01ff334817d4d3121c076bfa52c17bd62725d4056788d1ee93",
+        "issuer-news.raw": "0e50de4d8afc663a3eabcf67c1fbc0b390f57d45dee76a83e34159d96b7dd638",
+        "issuer-product.json": "0f106812ab8313bbaec180b92f47d8abcb4d396f10da0d7cddeaa2e212b00ec2",
+        "issuer-product.raw": "816d9abd82aeb76d6c346573f6945bb30620689600c4e89301ff20b6f50daa88",
+        "issuer-qualified-notices.json": "27ce7383e1ed3f250db24eae67e73e6086239dc65b53a3f081ddde4e21373e8b",
+        "issuer-qualified-notices.raw": "493166edf8c46a8cf5f165ed6465408a505dc004dcfb7cba1e5c990bacdb9296",
+        "nontrade-0.json": "e054082f8c3593edba96f1ddebf34c345517b979787325559596d233d73deaeb"
+      },
+      "issuer_dynamic_content_review_required": true,
+      "nontrade": {
+        "broker_dividend_fidelity": false,
+        "c05_records": [],
+        "empty_is_not_no_entitlement": true,
+        "exhausted": true,
+        "pages": [
+          {
+            "path": "data/forward/c08-integration/watch-20261001-2042/nontrade-0.json",
+            "sha256": "e054082f8c3593edba96f1ddebf34c345517b979787325559596d233d73deaeb"
+          }
+        ],
+        "query_time_basis": "creation time, not proven settlement completion",
+        "records": 0
+      },
+      "notice_links": {
+        "eia-page": [],
+        "issuer-news": [
+          "https://www.uscfinvestments.com/etf-capital-gains-distributions",
+          "https://www.uscfinvestments.com/etf-distribution-calendar",
+          "https://www.uscfinvestments.com/qualified-notices"
+        ],
+        "issuer-product": [
+          "https://www.uscfinvestments.com/etf-capital-gains-distributions",
+          "https://www.uscfinvestments.com/etf-distribution-calendar",
+          "https://www.uscfinvestments.com/qualified-notices"
+        ],
+        "issuer-qualified-notices": [
+          "https://www.uscfinvestments.com/etf-capital-gains-distributions",
+          "https://www.uscfinvestments.com/etf-distribution-calendar",
+          "https://www.uscfinvestments.com/qualified-notices"
+        ]
+      },
+      "public": {
+        "eia-errata": {
+          "content_type": "application/pdf",
+          "observed_at": "2026-10-01T20:42:33.183859+00:00",
+          "raw_receipt": {
+            "path": "data/forward/c08-integration/watch-20261001-2042/eia-errata.raw",
+            "sha256": "752d1eb10d466f704183cdde6f8813b51f0a8ed38d234f374b5485c9639518c3"
+          },
+          "status_code": 200,
+          "url": "https://www.eia.gov/petroleum/supply/weekly/pdf/appendix_e.pdf"
+        },
+        "eia-method": {
+          "content_type": "application/pdf",
+          "observed_at": "2026-10-01T20:42:32.884911+00:00",
+          "raw_receipt": {
+            "path": "data/forward/c08-integration/watch-20261001-2042/eia-method.raw",
+            "sha256": "ced931e5f63b8572aad6d2f6d64502ccf6e0acd0860cccc6bb2af50a7411f432"
+          },
+          "status_code": 200,
+          "url": "https://www.eia.gov/petroleum/supply/weekly/pdf/appendixb.pdf"
+        },
+        "issuer-news": {
+          "content_type": "text/html; charset=UTF-8",
+          "observed_at": "2026-10-01T20:42:32.177717+00:00",
+          "raw_receipt": {
+            "path": "data/forward/c08-integration/watch-20261001-2042/issuer-news.raw",
+            "sha256": "0e50de4d8afc663a3eabcf67c1fbc0b390f57d45dee76a83e34159d96b7dd638"
+          },
+          "status_code": 200,
+          "url": "https://www.uscfinvestments.com/news"
+        },
+        "issuer-product": {
+          "content_type": "text/html; charset=UTF-8",
+          "observed_at": "2026-10-01T20:42:31.732248+00:00",
+          "raw_receipt": {
+            "path": "data/forward/c08-integration/watch-20261001-2042/issuer-product.raw",
+            "sha256": "816d9abd82aeb76d6c346573f6945bb30620689600c4e89301ff20b6f50daa88"
+          },
+          "status_code": 200,
+          "url": "https://www.uscfinvestments.com/uso"
+        },
+        "issuer-qualified-notices": {
+          "content_type": "text/html; charset=UTF-8",
+          "observed_at": "2026-10-01T20:42:32.550372+00:00",
+          "raw_receipt": {
+            "path": "data/forward/c08-integration/watch-20261001-2042/issuer-qualified-notices.raw",
+            "sha256": "493166edf8c46a8cf5f165ed6465408a505dc004dcfb7cba1e5c990bacdb9296"
+          },
+          "status_code": 200,
+          "url": "https://www.uscfinvestments.com/qualified-notices"
+        }
+      },
+      "schema": "c08_source_watch_v1",
+      "scope": {
+        "action_lookback_days": 30,
+        "action_through": "2026-11-30",
+        "nontrade_lookback_days": 30,
+        "symbol": "USO"
+      },
+      "source_admitted": false,
+      "started_at": "2026-10-01T20:42:20.160114+00:00"
+    },
+    "path": "data/forward/c08-integration/watch-20261001-2042/watch.json",
+    "sha256": "6cac900fc0ca093bd529cd50266d653adce226f64ece8f8553eda043ed67f7e9"
+  },
+  "strategy_unchanged": {
+    "allocation_usd": "140.000000",
+    "id": 6446,
+    "status": "backtest"
+  },
+  "validation": {
+    "affected_tests_passed": 235,
+    "c08_state_source_runner_tests_passed": 52,
+    "committed_dependency_bytes_verified": true,
+    "database_port": 5433,
+    "runner_integration_tests_passed": 23,
+    "synthetic_fixtures_rolled_back": true
+  },
+  "verification_receipt": {
+    "path": "data/forward/c08-integration/verification-20261001-2059/after.json",
+    "sha256": "70f5dd507757099e006b203df6e2b9f825e1d9c36a25270407979f29977257e8"
+  }
+}

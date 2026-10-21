@@ -1,0 +1,650 @@
+{
+  "bead": "tradingbot-e76",
+  "candidate": "C11",
+  "diagnostics_attempted": 0,
+  "failed_prerequisites": [
+    {
+      "kind": "calendar_provenance_incomplete",
+      "reason": "Current calendar snapshots and the dated transition do not supply full 2006\u20132026 archived calendars, advance availability and revisions. Legacy 2006/2009 paths return 404. Do not replace missing evidence with hindsight realized sessions or third-Friday arithmetic.",
+      "repair_required": "Original dated calendars/notices and revision chronology for the full frozen interval, including holidays and unexpected closures, all known before the original decisions.",
+      "variants": [
+        {
+          "exit": "standard_expiration_session_close"
+        },
+        {
+          "exit": "next_session_open"
+        }
+      ]
+    },
+    {
+      "kind": "share_action_inventory_incomplete",
+      "reason": "The query is all-type/data_quality=all and exhausted, but bounds are process dates. It misses known cash history, notably before 2016. This cannot prove the absence of earlier splits/in-kind actions. Later cash absences do not alone prove an error in an ex-date table. Issuer cash schedules and Yahoo zero splits are not a complete noncash-action inventory.",
+      "repair_required": "Independently supported full SPY noncash-action inventory, with primary advance notice and Amendment21 handling for any identified action.",
+      "variants": [
+        {
+          "exit": "standard_expiration_session_close"
+        },
+        {
+          "exit": "next_session_open"
+        }
+      ]
+    },
+    {
+      "kind": "fractional_close_execution_unproven",
+      "reason": "Fractional CLS is unsupported; a timed DAY order needs contemporaneous execution evidence absent from daily bars. No whole-share or endpoint substitution.",
+      "repair_required": "Supported fractional close-order route and adequate causal execution evidence; a new endpoint/time/sizing rule would require a separately documented preregistration.",
+      "variants": [
+        {
+          "exit": "standard_expiration_session_close"
+        }
+      ]
+    }
+  ],
+  "final_holdout_attempts": 0,
+  "identity": {
+    "candidate": "C11",
+    "preregistration": {
+      "candidate": "C11",
+      "id": "tradingbot-e76",
+      "max_final_attempts": 1,
+      "ordered_variants": [
+        {
+          "exit": "standard_expiration_session_close"
+        },
+        {
+          "exit": "next_session_open"
+        }
+      ],
+      "real_allocation_usd": "0",
+      "selection_cost_case_index": 1,
+      "split": {
+        "data_end": "2026-10-01T00:00:00+00:00",
+        "data_start": "2006-01-01T00:00:00+00:00",
+        "dataset_key": "batch2-c11-v1",
+        "holdout_start": "2020-07-10T14:24:00+00:00",
+        "split": "70/30 by elapsed UTC time; end exclusive"
+      },
+      "status": "source_admission_pending",
+      "title": "SPY standard monthly option-expiration week",
+      "training_cost_cases": [
+        {
+          "adverse_bps_per_side": 5
+        },
+        {
+          "adverse_bps_per_side": 10
+        }
+      ],
+      "universe": [
+        "SPY"
+      ],
+      "virtual_cash_usd": "140"
+    },
+    "source_code_sha256": {
+      "docs/research/21-corporate-action-blackout.md": "e1e48e48b9740846418b1b2e1e2369c03c191817c3a197b96dd5e9fca3c20e22",
+      "docs/research/25-candidate-shortlist.md": "02650e13ee01afb2ce487943153c01ec12d3fdac14de2fce8c7c2bb1d87f2aa6",
+      "docs/research/31-c11-evidence.json": "c3bad7f3385d4f53a9fc35bf352340cc6ad9b34e1d1f1a3ea9aa7da97b6a5742",
+      "docs/research/31-c11-source-plan.md": "a48fa77a4daf0e2ae6d49baf9cffb274104fd9cce4759b07ba917bff7531c923",
+      "docs/research/batch2-sources/2026-10-01-candidate-index.json": "d1265a01f57c801445f5ac074b3fd180c271ef66a81e61315a308a8fe6482193",
+      "docs/research/batch2-sources/2026-10-01-sources.md": "9321900da24624fb517bcd79ff464225b592bbb5f0cedfa3646118b503d3bde2",
+      "src/tradingbot/research/c06_sources.py": "a303f18d1c8c96352bc40725d01f82a63d5416645fed9d4733701fa3940c052e",
+      "src/tradingbot/research/c11_audit.py": "bd762ba94a4a9608536aaca5a7f4d519c6626630817d0fcab292ef9264b06e14",
+      "src/tradingbot/research/c11_capture.py": "72a4343ca7effd80d086a6d77d50b176734f5cd40b793ff58b37966096b409a5",
+      "src/tradingbot/research/c11_sources.py": "ea3740e8f0ea79c01a27614f4f576029811a3ec4bbe969e8f3b4df634eabef47"
+    },
+    "source_evidence_sha256": "49ea48e3ae916573b0f741b848a159c9c15f8300bfe28ac338da4711370696c7"
+  },
+  "ledger": {
+    "audit_git_commit": "ebf79b9f0a8d3d8e19a928e39b86d1b338c96fbe",
+    "preledger_receipt_sha256": "184de6f07f36c04560a20d74decc8ee2edf514ed7affb226d74b06a66d7fa730",
+    "source_failure_trial_id": 4589
+  },
+  "not_completed_after_failed_gate": [
+    "Full source admission and causal calendar extraction",
+    "Strategy reactor and shared risk/ledger replay",
+    "Training, seven-day controls, benchmarks, winner selection, final and dependence-aware inference"
+  ],
+  "planned_configurations": [
+    {
+      "adverse_bps_per_side": 5,
+      "exit": "standard_expiration_session_close",
+      "state": "unattempted_source_gate_failed"
+    },
+    {
+      "adverse_bps_per_side": 10,
+      "exit": "standard_expiration_session_close",
+      "state": "unattempted_source_gate_failed"
+    },
+    {
+      "adverse_bps_per_side": 5,
+      "exit": "next_session_open",
+      "state": "unattempted_source_gate_failed"
+    },
+    {
+      "adverse_bps_per_side": 10,
+      "exit": "next_session_open",
+      "state": "unattempted_source_gate_failed"
+    }
+  ],
+  "planned_variants": [
+    {
+      "exit": "standard_expiration_session_close"
+    },
+    {
+      "exit": "next_session_open"
+    }
+  ],
+  "prior_exposure": "Existing SPY #5/#6/C01\u2013C08 outcomes and published calendar hypotheses are known. Search previews exposed broad SPX weekday-return discussion. No C11 event-conditioned return or control calculated. The mechanical partition does not create pristine confirmation.",
+  "promotion": "hold_at_source_gate",
+  "real_allocation_usd": "0",
+  "receipt_sha256": "fe4f2205ddfc4d3ce846265f1f2bab7938a1c89d5b8777fc5fe0d2708f35d9f4",
+  "schema_version": 1,
+  "scope": "Source failure, not a measured rejection of profitability. All four training cases and final remain unattempted. No order, allocation, promotion, risk or accepted-risk change.",
+  "selection": null,
+  "sources": {
+    "calendar": {
+      "as_of_announcement_and_revision_history_admitted": false,
+      "cboe_annual_calendar_years": [
+        2024,
+        2025,
+        2026
+      ],
+      "cboe_visually_reviewed_dates": [
+        "2024-01-19",
+        "2024-02-16",
+        "2024-03-15",
+        "2024-04-19",
+        "2024-05-17",
+        "2024-06-21",
+        "2024-07-19",
+        "2024-08-16",
+        "2024-09-20",
+        "2024-10-18",
+        "2024-11-15",
+        "2024-12-20",
+        "2025-01-17",
+        "2025-02-21",
+        "2025-03-21",
+        "2025-04-17",
+        "2025-05-16",
+        "2025-06-20",
+        "2025-07-18",
+        "2025-08-15",
+        "2025-09-19",
+        "2025-10-17",
+        "2025-11-21",
+        "2025-12-19",
+        "2026-01-16",
+        "2026-02-20",
+        "2026-03-20",
+        "2026-04-17",
+        "2026-05-15",
+        "2026-06-18",
+        "2026-07-17",
+        "2026-08-21",
+        "2026-09-18",
+        "2026-10-16",
+        "2026-11-20",
+        "2026-12-18"
+      ],
+      "failure": "Current calendar snapshots and the dated transition do not supply full 2006\u20132026 archived calendars, advance availability and revisions. Legacy 2006/2009 paths return 404. Do not replace missing evidence with hindsight realized sessions or third-Friday arithmetic.",
+      "frozen_interval_months": 249,
+      "grandfathered_legal_expiration": "Saturday following third Friday; never an equity Saturday close",
+      "grandfathered_spy_contract_month": "2015-12",
+      "missing_annual_calendar_years": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "months_with_reviewed_calendar_date": 33,
+      "occ_api_years": [
+        2025,
+        2026,
+        2027
+      ],
+      "occ_current_monthly_dates": [
+        "2025-01-17",
+        "2025-02-21",
+        "2025-03-21",
+        "2025-04-17",
+        "2025-05-16",
+        "2025-06-20",
+        "2025-07-18",
+        "2025-08-15",
+        "2025-09-19",
+        "2025-10-17",
+        "2025-11-21",
+        "2025-12-19",
+        "2026-01-16",
+        "2026-02-20",
+        "2026-03-20",
+        "2026-04-17",
+        "2026-05-15",
+        "2026-06-18",
+        "2026-07-17",
+        "2026-08-21",
+        "2026-09-18",
+        "2026-10-16",
+        "2026-11-20",
+        "2026-12-18",
+        "2027-01-15",
+        "2027-02-19",
+        "2027-03-19",
+        "2027-04-16",
+        "2027-05-21",
+        "2027-06-17",
+        "2027-07-16",
+        "2027-08-20",
+        "2027-09-17",
+        "2027-10-15",
+        "2027-11-19",
+        "2027-12-17"
+      ],
+      "occ_footnote_as_of": "2026-01-02",
+      "occ_footnote_is_original_publication_timestamp": false,
+      "transition_notice_date": "2013-08-29"
+    },
+    "execution": {
+      "close_variant_admitted": false,
+      "fractional_order_tif": {
+        "CLS": [
+          "No",
+          "No",
+          "No",
+          "No"
+        ],
+        "DAY": [
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        "FOK": [
+          "No",
+          "No",
+          "No",
+          "No"
+        ],
+        "GTC": [
+          "No",
+          "No",
+          "No",
+          "No"
+        ],
+        "IOC": [
+          "No",
+          "No",
+          "No",
+          "No"
+        ],
+        "OPG": [
+          "No",
+          "No",
+          "No",
+          "No"
+        ]
+      },
+      "next_open_variant": "Common adverse-cost open-reference counterfactual, not an auction-fill claim; still fails calendar and share-action admission.",
+      "reason": "Fractional CLS is unsupported; a timed DAY order needs contemporaneous execution evidence absent from daily bars. No whole-share or endpoint substitution."
+    },
+    "price_and_calendar_returns_computed": false,
+    "public_sources": {
+      "alpaca-action-docs": {
+        "bytes": 47620,
+        "content_type": "text/markdown; charset=utf-8",
+        "location": null,
+        "manifest_sha256": "029045647876155c98b34a4f6ac97772f8d2982204d7472a7e50476ac6485f29",
+        "method": "GET",
+        "params": null,
+        "path": "data/history/c11-expiry-20261001/alpaca-action-docs",
+        "response_url": "https://docs.alpaca.markets/us/reference/corporateactions-1.md",
+        "retrieved_at": "2026-10-01T20:09:01.879932+00:00",
+        "sha256": "b3c31fadd5a7ae89f8c0e4bd7d575bc5180faceda69ea1f115b4c1710d835803",
+        "status": 200,
+        "url": "https://docs.alpaca.markets/us/reference/corporateactions-1.md"
+      },
+      "alpaca-fractional": {
+        "bytes": 4467,
+        "content_type": "text/markdown; charset=utf-8",
+        "location": null,
+        "manifest_sha256": "1496cda734190ad6d7467de5be0bf6dcc0d2fc694eecedf1f8cd81ab39942621",
+        "method": "GET",
+        "params": null,
+        "path": "data/history/c11-expiry-20261001/alpaca-fractional",
+        "response_url": "https://docs.alpaca.markets/us/docs/fractional-trading.md",
+        "retrieved_at": "2026-10-01T20:05:52.614822+00:00",
+        "sha256": "218dc0b259d2684fa053dbf1a5736c36cca1abbc1df343571bb6c407df4fc3be",
+        "status": 200,
+        "url": "https://docs.alpaca.markets/us/docs/fractional-trading.md"
+      },
+      "alpaca-orders": {
+        "bytes": 65454,
+        "content_type": "text/markdown; charset=utf-8",
+        "location": null,
+        "manifest_sha256": "271f97abc38e4771fb2b287bc7df5ff771de89dfd11cdfc4d1da586ce2002dfd",
+        "method": "GET",
+        "params": null,
+        "path": "data/history/c11-expiry-20261001/alpaca-orders",
+        "response_url": "https://docs.alpaca.markets/us/docs/orders-at-alpaca.md",
+        "retrieved_at": "2026-10-01T20:05:53.408300+00:00",
+        "sha256": "e35915bdf3da6ebfc5dd76cc6ed5cbed078f27e169022f9489a31d4e8e7c890b",
+        "status": 200,
+        "url": "https://docs.alpaca.markets/us/docs/orders-at-alpaca.md"
+      },
+      "cboe-2024": {
+        "bytes": 960613,
+        "content_type": "application/pdf",
+        "location": null,
+        "manifest_sha256": "8d5f80f75b78740bc75f01582f8da7703a000952cd1ed76f2b0aff0f8e560b3b",
+        "method": "GET",
+        "params": null,
+        "path": "data/history/c11-expiry-20261001/cboe-2024",
+        "response_url": "https://cdn.cboe.com/resources/options/Cboe2024OPTIONSCalendar.pdf",
+        "retrieved_at": "2026-10-01T20:06:50.085070+00:00",
+        "sha256": "d56420fbf7344221caf4db2f599f51abe4a42b77e9d5406d5bdd6c1bd226a70b",
+        "status": 200,
+        "url": "https://cdn.cboe.com/resources/options/Cboe2024OPTIONSCalendar.pdf"
+      },
+      "cboe-2025": {
+        "bytes": 1105574,
+        "content_type": "application/pdf",
+        "location": null,
+        "manifest_sha256": "55b8b52c30d0a54402da008b7401803391b476fc9b19da75c49c6ddccd7db94f",
+        "method": "GET",
+        "params": null,
+        "path": "data/history/c11-expiry-20261001/cboe-2025",
+        "response_url": "https://cdn.cboe.com/resources/options/Cboe2025OPTIONSCalendar.pdf",
+        "retrieved_at": "2026-10-01T20:05:50.518530+00:00",
+        "sha256": "6bdc3ed80c411b20926e347f7b09bf69aae15328ff2b98a6228cd896dd1e250e",
+        "status": 200,
+        "url": "https://cdn.cboe.com/resources/options/Cboe2025OPTIONSCalendar.pdf"
+      },
+      "cboe-2026": {
+        "bytes": 1009510,
+        "content_type": "application/pdf",
+        "location": null,
+        "manifest_sha256": "065a8c71c470b02bb4cee8be397053867f5f925634253f46c73d8ec0ff8faaf5",
+        "method": "GET",
+        "params": null,
+        "path": "data/history/c11-expiry-20261001/cboe-2026",
+        "response_url": "https://cdn.cboe.com/resources/options/Cboe2026OPTIONSCalendar.pdf",
+        "retrieved_at": "2026-10-01T20:05:51.034827+00:00",
+        "sha256": "421a0699055b99ebc2dea6da53666939bc0918882d1f615da5664582a52b3c9e",
+        "status": 200,
+        "url": "https://cdn.cboe.com/resources/options/Cboe2026OPTIONSCalendar.pdf"
+      },
+      "cboe-calendar-index": {
+        "bytes": 394117,
+        "content_type": "text/html; charset=utf-8",
+        "location": null,
+        "manifest_sha256": "25ee4c9171ec5ac0fe1a21b196c3e43d0a0f8a7d18bbb4ff70078f4336f233f8",
+        "method": "GET",
+        "params": null,
+        "path": "data/history/c11-expiry-20261001/cboe-calendar-index",
+        "response_url": "https://www.cboe.com/about/hours/us-options/",
+        "retrieved_at": "2026-10-01T20:05:49.585723+00:00",
+        "sha256": "2615e822d116371c87924a34108b3fa6a5739a8c5593463ecdb9f65dbe376176",
+        "status": 200,
+        "url": "https://www.cboe.com/about/hours/us-options/"
+      },
+      "cboe-transition-2013": {
+        "bytes": 201789,
+        "content_type": "application/pdf",
+        "location": null,
+        "manifest_sha256": "dfdd7799a7537d8dcb78d481f9d6e2e183bef27a6ceb455f0a48e4e41b243978",
+        "method": "GET",
+        "params": null,
+        "path": "data/history/c11-expiry-20261001/cboe-transition-2013",
+        "response_url": "https://cdn.cboe.com/resources/regulation/circulars/regulatory/RG-C2-2013-041.pdf",
+        "retrieved_at": "2026-10-01T20:05:52.063301+00:00",
+        "sha256": "72c7a69d64727ad36f82fb376e08e61bdf62ef74e90e2b6aaa27d777092577c9",
+        "status": 200,
+        "url": "https://cdn.cboe.com/resources/regulation/circulars/regulatory/RG-C2-2013-041.pdf"
+      },
+      "cboe-weekdays-2022": {
+        "bytes": 91333,
+        "content_type": "text/html; charset=utf-8",
+        "location": null,
+        "manifest_sha256": "975405b4b6d103b34d2ef69e07a5080489e7d6a19e2b1c4a500f6f03a5f5b716",
+        "method": "GET",
+        "params": null,
+        "path": "data/history/c11-expiry-20261001/cboe-weekdays-2022",
+        "response_url": "https://ir.cboe.com/news/news-details/2022/Cboe-to-Add-Tuesday-and-Thursday-Expirations-for-SPX-Weeklys-Options-04-13-2022/default.aspx",
+        "retrieved_at": "2026-10-01T20:05:52.319052+00:00",
+        "sha256": "5bb126165792dacaabb113a2f29f9402cfddcc42d2d2c15f154011f3491a302e",
+        "status": 200,
+        "url": "https://ir.cboe.com/news/news-details/2022/Cboe-to-Add-Tuesday-and-Thursday-Expirations-for-SPX-Weeklys-Options-04-13-2022/default.aspx"
+      },
+      "legacy-cboe-2006": {
+        "bytes": 608517,
+        "content_type": "text/html; charset=utf-8",
+        "location": null,
+        "manifest_sha256": "29a62ddd08285533f77f965cb8f95b062a56844c0f4829451583933022ef6f2c",
+        "method": "GET",
+        "params": null,
+        "path": "data/history/c11-expiry-20261001/legacy-cboe-2006",
+        "response_url": "https://www.cboe.com/AboutCBOE/xcal2006.pdf",
+        "retrieved_at": "2026-10-01T20:05:55.811099+00:00",
+        "sha256": "ad9451aa65052fd2c413c9172d6f3c7b3c7007177824e8ee30630dcd404355c3",
+        "status": 404,
+        "url": "https://www.cboe.com/AboutCBOE/xcal2006.pdf"
+      },
+      "legacy-cboe-2009": {
+        "bytes": 608517,
+        "content_type": "text/html; charset=utf-8",
+        "location": null,
+        "manifest_sha256": "1105dafb090985fc36aa4e1ca6298597f1d47e596dbc266852afca987e68842c",
+        "method": "GET",
+        "params": null,
+        "path": "data/history/c11-expiry-20261001/legacy-cboe-2009",
+        "response_url": "https://www.cboe.com/AboutCBOE/xcal2009.pdf",
+        "retrieved_at": "2026-10-01T20:05:55.271579+00:00",
+        "sha256": "ad9451aa65052fd2c413c9172d6f3c7b3c7007177824e8ee30630dcd404355c3",
+        "status": 404,
+        "url": "https://www.cboe.com/AboutCBOE/xcal2009.pdf"
+      },
+      "occ-calendar-api": {
+        "bytes": 22371,
+        "content_type": "application/json; charset=utf-8",
+        "location": null,
+        "manifest_sha256": "26d00482bfe912b32ff4e6376bccec44b079a14376413b4fe8763a375015fa9b",
+        "method": "GET",
+        "params": null,
+        "path": "data/history/c11-expiry-20261001/occ-calendar-api",
+        "response_url": "https://www.optionseducation.org/api/expirationcalendar",
+        "retrieved_at": "2026-10-01T20:06:49.563081+00:00",
+        "sha256": "18ac0172669777df6713b8900a3873b4981b6417cbbc3091876709e945c066b8",
+        "status": 200,
+        "url": "https://www.optionseducation.org/api/expirationcalendar"
+      },
+      "occ-calendar-index": {
+        "bytes": 89233,
+        "content_type": "text/html; charset=utf-8",
+        "location": null,
+        "manifest_sha256": "620af84879b6ba3afdb643b698010bc24799fdf8055ad09ec370a7fe34987f6c",
+        "method": "GET",
+        "params": null,
+        "path": "data/history/c11-expiry-20261001/occ-calendar-index",
+        "response_url": "https://www.optionseducation.org/referencelibrary/expiration-calendar",
+        "retrieved_at": "2026-10-01T20:05:50.015881+00:00",
+        "sha256": "8ecccd3cb7279709bd21f7cc3223a9323184e86b37aa8560d3aaf888827cb013",
+        "status": 200,
+        "url": "https://www.optionseducation.org/referencelibrary/expiration-calendar"
+      },
+      "occ-calendar-js": {
+        "bytes": 13780,
+        "content_type": "text/javascript",
+        "location": null,
+        "manifest_sha256": "dae9aa767da12921542c389d4a00b1aa0311512ccadd01b9a3d8f7fa71561432",
+        "method": "GET",
+        "params": null,
+        "path": "data/history/c11-expiry-20261001/occ-calendar-js",
+        "response_url": "https://www.optionseducation.org/js/calendar.js?v=WPzIDGRFCEuzILp8LXGDfDAvSCqdY2rPoIcnENPcBZs",
+        "retrieved_at": "2026-10-01T20:06:45.905502+00:00",
+        "sha256": "58fcc80c6445084bb320ba7c2d71837c302f482a9d636acfa0872710d3dc059b",
+        "status": 200,
+        "url": "https://www.optionseducation.org/js/calendar.js?v=WPzIDGRFCEuzILp8LXGDfDAvSCqdY2rPoIcnENPcBZs"
+      },
+      "occ-transition-2013": {
+        "bytes": 265988,
+        "content_type": "application/pdf",
+        "location": null,
+        "manifest_sha256": "fa5e120756d60810e53e3c2ec57af50e769e753cfd03ea82ec6cb816c7dabaa3",
+        "method": "GET",
+        "params": null,
+        "path": "data/history/c11-expiry-20261001/occ-transition-2013",
+        "response_url": "https://public-inspection.federalregister.gov/2013-14793.pdf",
+        "retrieved_at": "2026-10-01T20:05:51.666513+00:00",
+        "sha256": "65852bfeea295b56876f46db954f9a2e4a086de7b2eed2de3cda09a2bb7d2594",
+        "status": 200,
+        "url": "https://public-inspection.federalregister.gov/2013-14793.pdf"
+      }
+    },
+    "spy": {
+      "action_source": {
+        "exhausted": true,
+        "path": "data/history/c11-expiry-20261001/raw/alpaca/corporate_actions/c11-source-20261001/c28582bdc4ba74d27aa280c1/page-00000000.parquet",
+        "records": 40,
+        "request": {
+          "params": {
+            "data_quality": "all",
+            "end": "2026-09-30",
+            "limit": 1000,
+            "sort": "asc",
+            "start": "2006-01-01",
+            "symbols": "SPY"
+          },
+          "url": "https://data.alpaca.markets/v1/corporate-actions"
+        },
+        "response_sha256": "a2b71bf9c3ebd38db0fe9dce1ac1c559898f8fd5c6ba8aaa3a98a7625213328b",
+        "retrieved_at": "2026-10-01T20:08:55.995695+00:00"
+      },
+      "actions": {
+        "amount_or_date_disagreements": [],
+        "cash_records": 40,
+        "first_broker_ex_date": "2016-06-17",
+        "full_interval_share_action_completeness_proven": false,
+        "issuer_dates_absent_from_broker_query": [
+          "2006-03-17",
+          "2006-06-16",
+          "2006-09-15",
+          "2006-12-15",
+          "2007-03-16",
+          "2007-06-15",
+          "2007-09-21",
+          "2007-12-21",
+          "2008-03-20",
+          "2008-06-20",
+          "2008-09-19",
+          "2008-12-19",
+          "2009-03-20",
+          "2009-06-19",
+          "2009-09-18",
+          "2009-12-18",
+          "2010-03-19",
+          "2010-06-18",
+          "2010-09-17",
+          "2010-12-17",
+          "2011-03-18",
+          "2011-06-17",
+          "2011-09-16",
+          "2011-12-16",
+          "2012-03-16",
+          "2012-06-15",
+          "2012-09-21",
+          "2012-12-21",
+          "2013-03-15",
+          "2013-06-21",
+          "2013-09-20",
+          "2013-12-20",
+          "2014-03-21",
+          "2014-06-20",
+          "2014-09-19",
+          "2014-12-19",
+          "2015-03-20",
+          "2015-06-19",
+          "2015-09-18",
+          "2015-12-18",
+          "2016-03-18",
+          "2018-06-15",
+          "2026-09-18"
+        ],
+        "issuer_distributions": 83,
+        "last_broker_ex_date": "2026-06-18",
+        "limitation": "The query is all-type/data_quality=all and exhausted, but bounds are process dates. It misses known cash history, notably before 2016. This cannot prove the absence of earlier splits/in-kind actions. Later cash absences do not alone prove an error in an ex-date table. Issuer cash schedules and Yahoo zero splits are not a complete noncash-action inventory.",
+        "missing_before_first_broker_date": 41,
+        "missing_on_or_after_first_broker_date": [
+          "2018-06-15",
+          "2026-09-18"
+        ],
+        "noncash_records": 0
+      },
+      "data_sha256": "cab4b01dd76d2603b9e94d20890579fd63d1e1e6dc6030e77838f18a99ea86a5",
+      "distributions": 83,
+      "excluded_fields": [
+        "high",
+        "low",
+        "volume",
+        "adj_close"
+      ],
+      "first_session": "2006-01-03",
+      "last_session": "2026-09-30",
+      "policies": {
+        "cash": "Conservative replay convention: sale proceeds release at the first regular-session open strictly after documented settlement completion; dividend proceeds release at first regular-session open strictly after issuer pay date. June29 2026rollovertoJune30meansJuly1earliestmodeledrelease. Live/paper must useactualledgerbrokeravailability.",
+        "contamination": "Prior C01/#5/#6 SPY outcome inspection remains disclosed. Source repair does not recycle a consumed holdout. This artifact admits no strategy; each eligible version still requires pre-consumption ledger guard.",
+        "dividends": "Issuer amounts and dates; explicithash-boundJune2006paydate correction fromJune16toJuly31 basedon contemporaneousprospectus. Ex-date entitlements are receivables, not immediatelyspendablecash. Pay dates are scheduled issuer dates, not proof of broker credit.",
+        "price_validation": "All IEX1554 and SIP2701 overlap opens/closes checked at the existing1percent bound; every breach reconciled with the fixed ten-second primary-exchange auction window. No independent source coverage is claimed before2016.",
+        "prices": "Yahoo non-dividend-adjusted open/close; SPY has no source split. Explicit2016-11-07 opening correction to primary ArcaO211.47; rawYahoo208.5500030517578 unchanged. Three disputed closes confirmed by primary closing prints without price replacement or tolerance widening.",
+        "risk": "No allocation, sizing, fee/slippage case, variant, date boundary or PRDsection6 change.",
+        "scope": "SPY open/close-only source bundle. Original OHLC archives retained; high, low, volume and adjusted-close values are not admitted by this artifact.",
+        "signals": "No signals calculated here. Future eligible strategies may calculate causal cash-distribution-aware returns from closes and issuer ex-date amounts; never combine adjusted closes with additional dividends."
+      },
+      "receipt_sha256": "3726951207c75d417a45d4264e414178eb5d4234e7f6328e4cf363474dbe9040",
+      "sessions": 5218,
+      "source_split": {
+        "data_end": "2026-10-01T00:00:00+00:00",
+        "data_start": "2006-01-01T00:00:00+00:00",
+        "dataset_key": "spy-source-amendment-v1:c34d474b2a371a8f562805bb50e311502ace6808949b7b2147469e1ee4957c38",
+        "holdout_start": "2020-07-10T14:24:00+00:00",
+        "split": "70/30 by elapsed UTC time; end exclusive"
+      },
+      "source_status": "SOURCE_VALIDATED_OPEN_CLOSE_ONLY_NOT_STRATEGY_ADMISSION"
+    }
+  },
+  "split": {
+    "data_end": "2026-10-01T00:00:00+00:00",
+    "data_start": "2006-01-01T00:00:00+00:00",
+    "dataset_key": "batch2-c11-v1",
+    "holdout_start": "2020-07-10T14:24:00+00:00",
+    "split": "70/30 by elapsed UTC time; end exclusive"
+  },
+  "status": "DATA_FAIL",
+  "strategy_outcomes_inspected": false,
+  "training_cases_attempted": 0,
+  "unmeasured": {
+    "benchmark_results": null,
+    "drawdown": null,
+    "exposure": null,
+    "fees": null,
+    "luck_p_value": null,
+    "pnl": null,
+    "regime_results": null,
+    "round_trips": null,
+    "slippage": null,
+    "turnover": null
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "checked_at": "2026-10-01T04:36:53.203854+00:00",
+  "source": "existing Alpaca paper API GET /v2/assets/{symbol}",
+  "scope": "Read-only asset metadata; no prices, account identifiers, credentials or orders",
+  "assets": [
+    {
+      "symbol": "DBA",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "EFA",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "GLD",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "IEF",
+      "class": "us_equity",
+      "exchange": "NASDAQ",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "SLV",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "SPY",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "UNG",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "USO",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "VNQ",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "XLB",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "XLE",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "XLF",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "XLI",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "XLK",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "XLP",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "XLU",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "XLV",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    },
+    {
+      "symbol": "XLY",
+      "class": "us_equity",
+      "exchange": "ARCA",
+      "status": "active",
+      "tradable": true,
+      "fractionable": true
+    }
+  ]
+}

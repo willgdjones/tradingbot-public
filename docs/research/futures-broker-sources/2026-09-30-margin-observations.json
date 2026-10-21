@@ -1,0 +1,34 @@
+{
+  "research_date_pacific": "2026-09-30",
+  "research_date_utc": "2026-10-01",
+  "bead": "tradingbot-k1e",
+  "purpose": "Public documentation observations, not executable or synchronized margin quotes",
+  "currency": "USD",
+  "ibkr": {
+    "source": "https://portal.interactivebrokers.com/en/trading/margin-futures-fops.php?ex=us&hm=us&pm=0&rgt=0&rsk=1&rst=101004110808",
+    "configuration": "US resident; risk-based; long initial unless explicitly marked short",
+    "observations": [
+      {"contract": "MGC", "long_overnight_initial": "4153.55", "overnight_maintenance": "3502.22", "short_overnight_initial": "4027.55"},
+      {"contract": "MCL", "long_overnight_initial": "2079.00", "overnight_maintenance": "1500.00", "short_overnight_initial": "1875.00"},
+      {"contract": "MNG", "underlying": "MHNG", "long_overnight_initial": "678.632", "overnight_maintenance": "581.418"},
+      {"contract": "1OZ", "long_overnight_initial": "415.26", "overnight_maintenance": "350.226"}
+    ]
+  },
+  "amp": {
+    "source": "https://www.ampfutures.com/trading-info/margins",
+    "configuration": "Public maintenance and day-trading columns; no approved-account preview",
+    "observations": [
+      {"contract": "MGC", "maintenance": "2426.00", "day_trading": "606.50"},
+      {"contract": "MCL", "maintenance": "948.00", "day_trading": "237.00"},
+      {"contract": "MNG", "maintenance": "326.00", "day_trading": "326.00"},
+      {"contract": "1OZ", "maintenance": "243.00", "day_trading": "60.75"}
+    ]
+  },
+  "current_numeric_margin_not_verified": ["tastytrade", "NinjaTrader", "Schwab"],
+  "limitations": [
+    "Pages were not captured simultaneously; search snippets and later opened pages differed.",
+    "Broker initial, broker maintenance and discounted intraday margin are distinct quantities.",
+    "House requirements, account entity, direction, positions and market conditions can change the actual requirement.",
+    "No account, credential, subscription, funding or order was created."
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "candidate": "C13",
+  "dataset_admitted": false,
+  "date": "2026-10-01",
+  "fee_review": {
+    "commission_scope": "Published retail exception structure needs account/routing classification before a full fee model; no index-option rate is applied to C13.",
+    "example_scope": "Two standard contract purchases on an otherwise empty fee day: CAT .01 + ORF .03 + OCC .05. Excludes exit, extra commission, exercise and assignment; not a total roundtrip fee or shared-account allocation.",
+    "exercise_assignment_fee_status": "Not independently specified in the captured individual-account fee pages; not assumed zero.",
+    "isolated_standard_two_contract_buy_fee_example_usd": "0.09",
+    "model_admitted": false,
+    "rates": {
+      "cat_both_per_equivalent_share": "0.000003",
+      "equivalent_shares_per_standard_contract": "100",
+      "occ_both_per_contract": "0.025",
+      "orf_both_per_contract": "0.015",
+      "sec_sell_notional": "0.0000206",
+      "taf_sell_per_contract": "0.00329"
+    },
+    "revision": "2026-09-17",
+    "rounding": "Aggregate each fee type separately per account/day, then round each up to one cent.",
+    "use": "current-account historical counterfactual only if later admitted; not a historical rate timeline or executed fee model"
+  },
+  "remaining_gate_review": "No earnings inventory, candidate historical quote query, return, holdout, option order or forward job. Full cash settlement/exercise model remains uncompleted after execution source failure.",
+  "reviewer": "NavyLantern",
+  "sources": {
+    "automatic-exercise": {
+      "manifest_sha256": "a8406eb1ee5955254965871cac74750f67cb8e632670a6f90105e6e1e1bc9940",
+      "review": "Long calls may auto exercise into 100 shares and long puts require deliverable shares; discretionary broker liquidation/DNE is not guaranteed modeled execution.",
+      "sha256": "c5cc6bff8e9a41b517227a601769697286aee2e6e8f7471b37381898532da27e",
+      "status": 200,
+      "url": "https://alpaca.markets/support/what-is-automatic-exercise"
+    },
+    "broker-options": {
+      "manifest_sha256": "0f6adb69ae11fb1614dc7a4fe2848ee9525a8f7fb986cdba796f936c75277b19",
+      "review": "Partner Broker API documentation describes DNE endpoint. Its capabilities do not establish access through this individual Trading API account.",
+      "sha256": "77f438cc9fc8a29b986252c9e1a3e3e506feaf4e00fd2517afbd5d5409fb35f4",
+      "status": 200,
+      "url": "https://docs.alpaca.markets/us/docs/options-trading-overview"
+    },
+    "contracts": {
+      "manifest_sha256": "74f84a663b9d4c9b7a41bc15f7a16c75143867305823d569414e5d59cac0fe02",
+      "review": "Current active/inactive catalog with deliverables and ppind field. No decision-time listing or historical penny-program interval supplied.",
+      "sha256": "c0f96dab512e941e42b77045f60306fc2ba5299016e74c00f1a72b1f2ef829ec",
+      "status": 200,
+      "url": "https://docs.alpaca.markets/us/reference/get-options-contracts"
+    },
+    "dne-support": {
+      "manifest_sha256": "116bea8f23ea5ec0fe2deabac7c45ba8186b0dfc1980982105e631f0190085c8",
+      "review": "September2025 Trading API support guidance requires DNE email before 15:00 ET on expiration day. No email was sent.",
+      "sha256": "4bda77ebc5cfef55a0e832054d2708342d360c4f797138c5adf642b1c192c4ac",
+      "status": 200,
+      "url": "https://alpaca.markets/support/what-is-a-do-not-exercise-dne-and-how-can-i-place-a-dne-on-my-options-position"
+    },
+    "fee-schedule": {
+      "manifest_sha256": "e7595117e5ba11f3a09e3466eac7e90e882755c1fbc563190b183f1e50a40cd5",
+      "review": "September17 2026 fee table: option pass-through fees on page3; daily per-account per-type rounding on page4. Pages3/4 rendered and visually reviewed.",
+      "sha256": "7bc75e3cd86f5c1950f8ce1292049965280340a3cebe727ca7aee4a7d2d71b12",
+      "status": 200,
+      "url": "https://files.alpaca.markets/disclosures/library/BrokFeeSched.pdf"
+    },
+    "historical-data": {
+      "manifest_sha256": "a22faa8b062e329918d9b066cfcd5290506d79fd67925c2ece08d83b67b98e1d",
+      "review": "Free indicative feed modifies OPRA quotes and delays derived trades. History starts February 2024. Does not establish historical executable BBO.",
+      "sha256": "a75f6a614414990eae67ee0a3c6af7d6e2c134c4bb5acf653a396efce414d179",
+      "status": 200,
+      "url": "https://docs.alpaca.markets/us/docs/historical-option-data"
+    },
+    "latest-quotes": {
+      "manifest_sha256": "efcb1a418c3daa1a21c80d843a5169f7d9c22135ab704815305462d55435a170",
+      "review": "Explicit indicative latest observations are modified quotes. No historical two-leg synchronized BBO sequence.",
+      "sha256": "4ca1625b562783a403fcba70248d23ee0a530128ae1de8c5b2d0ee7b8ad46e8e",
+      "status": 200,
+      "url": "https://docs.alpaca.markets/us/reference/optionlatestquotes"
+    },
+    "option-fees": {
+      "manifest_sha256": "16b3ae64be981bde7d7c20b0ead6de37d7a59e2b4cd195b448552306b7ba56ed",
+      "review": "Support directs fee questions to brokerage fee schedule. Does not independently specify an exercise/assignment charge.",
+      "sha256": "3d43a922f8efa1602717fa589cddc1324c286f35968dedac58b54d13c6818dd8",
+      "status": 200,
+      "url": "https://alpaca.markets/support/what-are-the-fees-associated-with-options-trading"
+    },
+    "option-ticks": {
+      "manifest_sha256": "c6ed0fe9b75e55aca8754798d51d9dd429ebe59196f4bbafe5e1ead2d666e477",
+      "review": "Standard and penny-program increments differ; current ppind and special NOM routing cannot establish historical per-series tick eligibility.",
+      "sha256": "4e1a5ffcfc8e0e6d7c13b88a0debcc0f556cd130c5f312ff5a5d7593f4a00118",
+      "status": 200,
+      "url": "https://alpaca.markets/support/options-pricing-increments-and-options-order-handling"
+    },
+    "paper-capability": {
+      "manifest_sha256": "49f3d51b311ac8870c11fb23dc21ffa036b722d479ad1bc28813de1cc7ec4985",
+      "review": "Whitelisted current-paper capability projection from one existing SDK GET. Full body discarded, original response hash retained; no live entitlement, cash or margin inference.",
+      "sha256": "8764c40fcc8fe0c44c72519f19e0a514052cd2c4c5efdf0318d82c0ee3b46ebe",
+      "status": 200,
+      "url": "https://paper-api.alpaca.markets/v2/account"
+    },
+    "regulatory-fees": {
+      "manifest_sha256": "ebf33e59c9cc676e3979fdbb98f2153bfef89c57d73c180b0a8ad5be703154c6",
+      "review": "Daily fee-account aggregation; refers to current brokerage schedule for rates. Generic list is not an alternative dated fee schedule.",
+      "sha256": "f201df68f825ec67150b7a8eeca83a9fcb35d8d5dff507a02ddc7408d751738a",
+      "status": 200,
+      "url": "https://docs.alpaca.markets/us/docs/regulatory-fees"
+    },
+    "trading-options": {
+      "manifest_sha256": "4d4a2d5f111bf19bb93f979f942f86986a6e1e2e173eed4f5078cbbf3920f136",
+      "review": "Trading API requires whole contracts and level2 for long calls/puts; describes auto exercise and support-mediated DNE. No closing/exercise model is thereby implemented.",
+      "sha256": "c9ebf018a55611424ec1ed23b5c0c1eab5d77e30e0927c5dbdddd2a4ea0ccde3",
+      "status": 200,
+      "url": "https://docs.alpaca.markets/us/docs/options-trading"
+    }
+  }
+}

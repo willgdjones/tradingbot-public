@@ -1,0 +1,326 @@
+{
+  "action_gate": {
+    "cash_credit_date": null,
+    "conclusion": "USO reverse-split fractional retention versus cash-in-lieu and usable-cash timing are unresolved for the current-account counterfactual",
+    "current_account_fractional_treatment": null,
+    "effective_date": "2020-04-29",
+    "issuer_fractional_treatment": "Cash in lieu of fractional post-split shares",
+    "split_ratio": "0.125"
+  },
+  "action_sources": {
+    "alpaca-2021-fractionals": {
+      "bytes": 105739,
+      "content_type": "text/html; charset=utf-8",
+      "key": "alpaca-2021-fractionals",
+      "request_url": "https://alpaca.markets/blog/updated-terms-for-payments-in-fractional-shares/",
+      "response_url": "https://alpaca.markets/blog/updated-terms-for-payments-in-fractional-shares/",
+      "retrieved_at": "2026-10-01T08:00:22.066009+00:00",
+      "sha256": "27c16e7956f2aaf1382058835bce0131a6e20f0a4924616b1beb57fb8ac4d6a0",
+      "status_code": 200
+    },
+    "alpaca-corporate-actions": {
+      "bytes": 4322,
+      "content_type": "text/markdown; charset=utf-8",
+      "key": "alpaca-corporate-actions",
+      "request_url": "https://docs.alpaca.markets/us/docs/daily-processes-and-reconcilations.md",
+      "response_url": "https://docs.alpaca.markets/us/docs/daily-processes-and-reconcilations.md",
+      "retrieved_at": "2026-10-01T08:00:17.874410+00:00",
+      "sha256": "6a5284db71abfed60c9d1210c14b1be4dda81b182644a94e202824f2fcfa263e",
+      "status_code": 200
+    },
+    "uso-2020-issuer-release": {
+      "bytes": 227931,
+      "content_type": "text/html; charset=UTF-8",
+      "key": "uso-2020-issuer-release",
+      "request_url": "https://www.prnewswire.com/news-releases/uscf-announces-one-for-eight-reverse-share-split-for-the-united-states-oil-fund-nyse-arca-uso-301045001.html",
+      "response_url": "https://www.prnewswire.com/news-releases/uscf-announces-one-for-eight-reverse-share-split-for-the-united-states-oil-fund-nyse-arca-uso-301045001.html",
+      "retrieved_at": "2026-10-01T08:01:27.707190+00:00",
+      "sha256": "f6c45b79216bc0139f6819482a127bc68eb310915b4932ce2cee79cd0ec34364",
+      "status_code": 200
+    }
+  },
+  "audit_git_commit": "e6e464df723ce5fa2fad3f2fe46635e8d98c5292",
+  "bead": "tradingbot-m2d",
+  "candidate": "C08",
+  "code_sha256": {
+    "src/tradingbot/backtest/holdout.py": "c76c34787df11643b27aaa48531119d39127b7b6d3dfa40730077f6ed08e71c0",
+    "src/tradingbot/data/alpaca_history.py": "cca690cbf30bd90e8dd66c2aa059b0428848d68fd1d6bff440059c22248c0be5",
+    "src/tradingbot/data/free_history.py": "fa941be2606c10e1c9c84ae9c237f20f2fb5455753b41464ad5f9ec594c02cdd",
+    "src/tradingbot/research/c05_commodity_trend.py": "d5d05b6ff9b9ececc78db30333d72954adc3ae47a6c4c3db9affe0e5e7d845a8",
+    "src/tradingbot/research/c08_source_audit.py": "31984788fd7cec9da8230db19474e51dc4e4c96ddf4559a1818ab20887782dd5",
+    "src/tradingbot/research/equity_data.py": "183bae1daca98b9805d2a7293be10296c9131517c380bd03325bbdf600e20833"
+  },
+  "data_failure_trial_id": 3550,
+  "drawdown": null,
+  "eia_layout_probes": {
+    "eia-2020-09-10": {
+      "earliest_calendar_date_for_execution": "2020-09-11",
+      "first_release_vintage_verified": false,
+      "notice": "Production re-benchmarking is not an inventory correction",
+      "observation_date": "2020-09-04",
+      "release_date": "2020-09-10",
+      "release_weekday": "Thursday",
+      "table1_http_status": 200,
+      "table1_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2020/2020_09_10/csv/table1.csv",
+      "timestamp_precision": "date_only"
+    },
+    "eia-2022-06-17-data": {
+      "earliest_calendar_date_for_execution": "2022-06-30",
+      "first_release_vintage_verified": false,
+      "notice": null,
+      "observation_date": "2022-06-17",
+      "release_date": "2022-06-29",
+      "release_weekday": "Wednesday",
+      "table1_http_status": 200,
+      "table1_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2022/2022_06_17_data/csv/table1.csv",
+      "timestamp_precision": "date_only"
+    },
+    "eia-2023-11-03-data": {
+      "earliest_calendar_date_for_execution": "2023-11-16",
+      "first_release_vintage_verified": false,
+      "notice": null,
+      "observation_date": "2023-11-03",
+      "release_date": "2023-11-15",
+      "release_weekday": "Wednesday",
+      "table1_http_status": 200,
+      "table1_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_11_03_data/csv/table1.csv",
+      "timestamp_precision": "date_only"
+    },
+    "eia-2026-09-30": {
+      "earliest_calendar_date_for_execution": "2026-10-01",
+      "first_release_vintage_verified": false,
+      "notice": null,
+      "observation_date": "2026-09-25",
+      "release_date": "2026-09-30",
+      "release_weekday": "Wednesday",
+      "table1_http_status": 200,
+      "table1_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/csv/table1.csv",
+      "timestamp_precision": "date_only"
+    }
+  },
+  "eia_sources": {
+    "eia-2020-09-10": {
+      "bytes": 65273,
+      "content_type": "text/html; charset=UTF-8",
+      "key": "eia-2020-09-10",
+      "params": null,
+      "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2020/2020_09_10/wpsr_2020_09_10.php",
+      "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2020/2020_09_10/wpsr_2020_09_10.php",
+      "retrieved_at": "2026-10-01T08:46:00.641651+00:00",
+      "sha256": "d511799b446a91148999d401ac5f6df3eb26cfb5eee6ae10e9ec72650d24791f",
+      "status_code": 200
+    },
+    "eia-2020-09-10-table1": {
+      "bytes": 6116,
+      "content_type": "application/octet-stream",
+      "key": "eia-2020-09-10-table1",
+      "params": null,
+      "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2020/2020_09_10/csv/table1.csv",
+      "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2020/2020_09_10/csv/table1.csv",
+      "retrieved_at": "2026-10-01T08:46:13.383670+00:00",
+      "sha256": "0938c623fa2152a93da6f7287345da60bd2b87f1033c0c70711773221fad02a9",
+      "status_code": 200
+    },
+    "eia-2022-06-17-data": {
+      "bytes": 65659,
+      "content_type": "text/html; charset=UTF-8",
+      "key": "eia-2022-06-17-data",
+      "params": null,
+      "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2022/2022_06_17_data/wpsr_2022_06_17_data.php",
+      "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2022/2022_06_17_data/wpsr_2022_06_17_data.php",
+      "retrieved_at": "2026-10-01T08:46:27.924514+00:00",
+      "sha256": "b4b5c0e075b032b0d8ece8b67be5f73e983dd63cbd6a8243331f9ebdabe00f26",
+      "status_code": 200
+    },
+    "eia-2022-06-17-data-table1": {
+      "bytes": 6086,
+      "content_type": "application/octet-stream",
+      "key": "eia-2022-06-17-data-table1",
+      "params": null,
+      "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2022/2022_06_17_data/csv/table1.csv",
+      "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2022/2022_06_17_data/csv/table1.csv",
+      "retrieved_at": "2026-10-01T08:46:43.786845+00:00",
+      "sha256": "10cd211dc5c93fae11c1f85ae80cf3bbd10bd583775e74e7928713be15339113",
+      "status_code": 200
+    },
+    "eia-2023-11-03-data": {
+      "bytes": 65550,
+      "content_type": "text/html; charset=UTF-8",
+      "key": "eia-2023-11-03-data",
+      "params": null,
+      "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_11_03_data/wpsr_2023_11_03_data.php",
+      "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_11_03_data/wpsr_2023_11_03_data.php",
+      "retrieved_at": "2026-10-01T08:46:57.030822+00:00",
+      "sha256": "03f166404325c2b571ddc959be9f4125f95a386f71756eb3746c908785fd3cc8",
+      "status_code": 200
+    },
+    "eia-2023-11-03-data-table1": {
+      "bytes": 6074,
+      "content_type": "application/octet-stream",
+      "key": "eia-2023-11-03-data-table1",
+      "params": null,
+      "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_11_03_data/csv/table1.csv",
+      "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_11_03_data/csv/table1.csv",
+      "retrieved_at": "2026-10-01T08:47:08.164616+00:00",
+      "sha256": "c396de4d9b0b5a2f2b634cff03d6df56a276b80576f92af290ae0d1b31790036",
+      "status_code": 200
+    },
+    "eia-2026-09-30": {
+      "bytes": 66267,
+      "content_type": "text/html; charset=UTF-8",
+      "key": "eia-2026-09-30",
+      "params": null,
+      "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/wpsr_2026_09_30.php",
+      "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/wpsr_2026_09_30.php",
+      "retrieved_at": "2026-10-01T08:47:20.656156+00:00",
+      "sha256": "8e2aed19f2c3a7e9ddbcbc6b62ec6bd6d8e88949b6ba3f2d4c1179b88a5b73df",
+      "status_code": 200
+    },
+    "eia-2026-09-30-table1": {
+      "bytes": 6576,
+      "content_type": "application/octet-stream",
+      "key": "eia-2026-09-30-table1",
+      "params": null,
+      "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/csv/table1.csv",
+      "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/csv/table1.csv",
+      "retrieved_at": "2026-10-01T08:47:31.696918+00:00",
+      "sha256": "9d2628089c0cec9f0fd9f19fc4a7c26ee3a7c6d30ebfb3e1f28f23a30e310a2d",
+      "status_code": 200
+    },
+    "eia-index": {
+      "bytes": 174395,
+      "content_type": "text/html; charset=UTF-8",
+      "key": "eia-index",
+      "params": null,
+      "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/",
+      "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/",
+      "retrieved_at": "2026-10-01T08:45:47.820368+00:00",
+      "sha256": "5b3f0f0fbad2a7aeffeaf52a3cd6adc2a7690c083aeb12555e1c6b0f4e716bcd",
+      "status_code": 200
+    }
+  },
+  "failed_prerequisites": [
+    "USO reverse-split fractional retention versus cash-in-lieu and usable-cash timing are unresolved for the current-account counterfactual"
+  ],
+  "fees": null,
+  "final_holdout_attempts": 0,
+  "generated_at": "2026-10-01T08:49:56.049748+00:00",
+  "identity": {
+    "action_document_sha256": {
+      "alpaca-2021-fractionals": "27c16e7956f2aaf1382058835bce0131a6e20f0a4924616b1beb57fb8ac4d6a0",
+      "alpaca-corporate-actions": "6a5284db71abfed60c9d1210c14b1be4dda81b182644a94e202824f2fcfa263e",
+      "uso-2020-issuer-release": "f6c45b79216bc0139f6819482a127bc68eb310915b4932ce2cee79cd0ec34364"
+    },
+    "calendar_archive_sha256": "79505a70a68763c76fc977806592ab30579314e26c593c18d940fae4db16b2de",
+    "calendar_evidence_sha256": "11b791a4edf1af2ba3d1d78d37c9d1de4cdaa00116c755ce198674c1bdd693c7",
+    "eia_probe_sha256": {
+      "eia-2020-09-10": "d511799b446a91148999d401ac5f6df3eb26cfb5eee6ae10e9ec72650d24791f",
+      "eia-2020-09-10-table1": "0938c623fa2152a93da6f7287345da60bd2b87f1033c0c70711773221fad02a9",
+      "eia-2022-06-17-data": "b4b5c0e075b032b0d8ece8b67be5f73e983dd63cbd6a8243331f9ebdabe00f26",
+      "eia-2022-06-17-data-table1": "10cd211dc5c93fae11c1f85ae80cf3bbd10bd583775e74e7928713be15339113",
+      "eia-2023-11-03-data": "03f166404325c2b571ddc959be9f4125f95a386f71756eb3746c908785fd3cc8",
+      "eia-2023-11-03-data-table1": "c396de4d9b0b5a2f2b634cff03d6df56a276b80576f92af290ae0d1b31790036",
+      "eia-2026-09-30": "8e2aed19f2c3a7e9ddbcbc6b62ec6bd6d8e88949b6ba3f2d4c1179b88a5b73df",
+      "eia-2026-09-30-table1": "9d2628089c0cec9f0fd9f19fc4a7c26ee3a7c6d30ebfb3e1f28f23a30e310a2d",
+      "eia-index": "5b3f0f0fbad2a7aeffeaf52a3cd6adc2a7690c083aeb12555e1c6b0f4e716bcd"
+    },
+    "end_exclusive": "2026-10-01T00:00:00+00:00",
+    "policy": {
+      "cash": "T+1 current-account counterfactual; proven fractional treatment and cash-credit dates required",
+      "costs_bp": [
+        5,
+        10
+      ],
+      "execution": "Next regular session after actual publication; date-only waits until next calendar day",
+      "prices": "Yahoo split-adjusted OHLC requires reconciled actual-share conversion; no adjusted-close fills",
+      "risk": "Existing PRD section 6 vetoes, $140 simulated capital; no live orders or keys",
+      "selection": "Best positive training net at 10 bp; threshold order breaks ties; one final at 10 bp",
+      "signal": "Commercial crude stocks excluding SPR / comparable year-ago value - 1; positive denominator; strict below threshold",
+      "sizing": "Cash-to-long 95% decision-time equity, $140 slot; long-to-cash all; unchanged state retains shares",
+      "staleness": "After 14 calendar days without usable publication, target cash next session",
+      "thresholds": [
+        "0",
+        "-0.05"
+      ],
+      "universe": [
+        "USO"
+      ],
+      "vintage": "Original dated release current/year-ago fields; audit corrections; no revised bulk substitution"
+    },
+    "start": "2018-01-01T00:00:00+00:00",
+    "uso_sha256": "961f0d9a8f2dd922d856bb574aa37a279cecc7b30ef51d64e0e2a22ba46b1d8b"
+  },
+  "luck_p_value": null,
+  "macro_scope": "Four dated HTML/table-layout probes only; no complete EIA series or scarcity values computed",
+  "planned_training_costs_bp": [
+    5,
+    10
+  ],
+  "planned_variants": [
+    "scarcity_below_0",
+    "scarcity_below_minus_5pct"
+  ],
+  "pnl": null,
+  "prior_inspection": "USO source overlaps C05 source audit, which stopped before outcomes; published commodity hypothesis and incidental source-page facts are known",
+  "promotion": "none",
+  "regimes": null,
+  "remaining_checks": [
+    "Full original-release EIA current/comparable-year-ago inventory fields, units and exclusion of SPR",
+    "Archive correction/errata chronology and first-publication vintage proof for every report",
+    "USO actual-share conversion, independent same-basis executable price checks and complete action reconciliation",
+    "USO prospectus exposure regimes: pre-2020, changed-2020, September-2023\u2013January-2024 transition, later",
+    "Frozen executable source and corporate-action cash/quantity policy before any signal or return"
+  ],
+  "split": {
+    "data_end": "2026-10-01T00:00:00+00:00",
+    "data_start": "2018-01-01T00:00:00+00:00",
+    "dataset_key": "sweep-c08-v1:cd2f66176c0e65ac417b8bb8ebb08bc55dacd7184c747aaa68735250393625e4",
+    "holdout_start": "2024-02-15T12:00:00+00:00",
+    "split": "70/30 by elapsed UTC time; end exclusive"
+  },
+  "status": "DATA_FAIL",
+  "strategy_id": 6082,
+  "strategy_outcomes_inspected": false,
+  "trades": null,
+  "training_cases_attempted": 0,
+  "uso_coverage": {
+    "coverage_ok": true,
+    "dividend_events": [],
+    "duplicate_dates": 0,
+    "expected_sessions": 2198,
+    "extra_sessions": [],
+    "first_session": "2018-01-02",
+    "invalid_sessions": [],
+    "last_session": "2026-09-30",
+    "missing_sessions": [],
+    "null_rows": 0,
+    "null_volume": [],
+    "orphan_event_dates": [],
+    "sessions": 2198,
+    "split_events": [
+      {
+        "date": "2020-04-29",
+        "ratio": "0.125"
+      }
+    ],
+    "unsupported_event_groups": [],
+    "vendor_dividend_field_names": []
+  },
+  "uso_source": {
+    "bytes": 236880,
+    "content_type": "application/json;charset=utf-8",
+    "key": "USO",
+    "params": {
+      "events": "div,split",
+      "includeAdjustedClose": "true",
+      "interval": "1d",
+      "period1": 1514764800,
+      "period2": 1790812800
+    },
+    "request_url": "https://query1.finance.yahoo.com/v8/finance/chart/USO",
+    "response_url": "https://query1.finance.yahoo.com/v8/finance/chart/USO?period1=1514764800&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true",
+    "retrieved_at": "2026-10-01T08:45:33.608194+00:00",
+    "sha256": "961f0d9a8f2dd922d856bb574aa37a279cecc7b30ef51d64e0e2a22ba46b1d8b",
+    "status_code": 200
+  }
+}

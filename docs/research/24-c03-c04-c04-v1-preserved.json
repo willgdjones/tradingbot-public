@@ -1,0 +1,33 @@
+{
+  "4016": {
+    "row_sha256": "e2c0aa9c739b26fde209dd35bd16cdc2d3f53021c4235a43d2ec8de2dd921fda",
+    "strategy_id": 6530,
+    "status": "complete"
+  },
+  "4017": {
+    "row_sha256": "dabd7251700e5618aa07ade443ec013e531bd602d1853badc700bbf79474bed2",
+    "strategy_id": 6531,
+    "status": "complete"
+  },
+  "4018": {
+    "row_sha256": "36b7c178ee6a1f588eabc2643b76a9838a8a86756ed0135b174c2ddb111d9040",
+    "strategy_id": 6532,
+    "status": "complete"
+  },
+  "4019": {
+    "row_sha256": "76191f2806354c18b4aa1e252e588032a0b195700a357adf46e17dd60242a671",
+    "strategy_id": 6533,
+    "status": "complete"
+  },
+  "4020": {
+    "row_sha256": "030b2dc8ed1d5cb4f686cabfa1b595402f3632cc0389d908d1ed9e5a349ffd25",
+    "strategy_id": 6534,
+    "status": "complete"
+  },
+  "4021": {
+    "row_sha256": "b4de8e48a40e1dcc5a9806aae65c512f295d226cf8957dc4ec7fd6eb1ef0d7a9",
+    "strategy_id": 6535,
+    "status": "complete"
+  },
+  "incident_id": 974
+}

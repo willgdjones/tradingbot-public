@@ -1,0 +1,978 @@
+{
+  "audit_git_commit": "f3d1aa2522873741d380a66c94bc2bd680878912",
+  "bead": "tradingbot-2wh",
+  "candidate": "C03",
+  "code_sha256": {
+    "src/tradingbot/research/c03_c04_c03_audit.py": "b6f8d867c657c1defd2605a0187802275b148899938373052345022febf032ac",
+    "src/tradingbot/research/c03_repair_audit.py": "d3cac4b16410be6d299905ae18c35eb4f82198c533b3060d7e7246be437b4ac7",
+    "src/tradingbot/research/c03_repair_capture.py": "abc25e029f96d4ab1d4be1c6e66134327ff253bbc3a6d3bbe109221404f083b3",
+    "src/tradingbot/research/c03_source_audit.py": "29f4b885cddd02e911ddd6468c884a4235ebe73c5c3dedb10c616a52d3d5750e",
+    "src/tradingbot/research/c06_sources.py": "a303f18d1c8c96352bc40725d01f82a63d5416645fed9d4733701fa3940c052e"
+  },
+  "data_failure_trial_id": 5314,
+  "dataset_admitted": false,
+  "drawdown": null,
+  "failed_prerequisites": [
+    "VNQ June 2009 entitlement date remains disputed: June 24 versus June 25. No original issuer/exchange event notice resolves it."
+  ],
+  "fees": null,
+  "final_holdout_attempts": 0,
+  "full_period_secondary_amount_conflicts": [],
+  "identity": {
+    "candidate": "C03-source-repair-v1",
+    "cash_rule": "Pre-ex ownership; first regular open strictly after latest documented payment date of every component; no imputation.",
+    "costs_bp_per_side": [
+      5,
+      10
+    ],
+    "full_period_secondary_extra": [
+      "2009-06-25"
+    ],
+    "full_period_secondary_missing": [
+      "2009-06-24"
+    ],
+    "policy_sha256": {
+      "docs/research/07-candidate-shortlist.md": "286c5b17b2d12f71483ac580286093a21b0b267231d735ab36d15b2c9fc0639a",
+      "docs/research/21-corporate-action-blackout.md": "e1e48e48b9740846418b1b2e1e2369c03c191817c3a197b96dd5e9fca3c20e22",
+      "docs/research/24-c03-c04-c03-source.json": "9fe51553460c3160640e8b1460589039f66220a0dbedf9becc9606981258d9cf",
+      "docs/research/24-c03-c04-readmission-plan.md": "51221c8d47f8cad43c689fee7d15289e0b058902bc26ec28f25261d9b6e6f938",
+      "docs/research/35-c03-source-repair-plan.md": "80d0c03f222c5a550c68a5457e2ffa8327681522df3a0218f08fe6e42f87edf3"
+    },
+    "prior_identity": {
+      "audit_code_sha256": "b6f8d867c657c1defd2605a0187802275b148899938373052345022febf032ac",
+      "broker_action_source": {
+        "path": "data/history/c03-c04-readmission-20261001/raw/raw/alpaca/corporate_actions/c03-readmission-20261001/4ef0f5f1953470afa5da36e7/page-00000000.parquet",
+        "records": 232,
+        "request": {
+          "params": {
+            "end": "2026-09-30",
+            "limit": 1000,
+            "sort": "asc",
+            "start": "2006-01-01",
+            "symbols": "EFA,GLD,IEF,SPY,VNQ"
+          },
+          "url": "https://data.alpaca.markets/v1/corporate-actions"
+        },
+        "response_sha256": "1407577064323cab5e697b1e24676b6d823a0e46d97cab75d8525e957d6ce3e0"
+      },
+      "candidate": "C03-readmission-v1",
+      "issuer_evidence": {
+        "EFA": {
+          "bytes": 1711988,
+          "final_url": "https://www.ishares.com/us/products/239623/ishares-msci-eafe-etf",
+          "retrieved_at": "2026-10-01T17:35:17.008296+00:00",
+          "sha256": "4116417553799a613656ac71bcfd885670a5e6918b39e313904c320ac783c661",
+          "status": 200,
+          "url": "https://www.ishares.com/us/products/239623/ishares-msci-eafe-etf"
+        },
+        "IEF": {
+          "bytes": 1890520,
+          "retrieved_at": "2026-10-01T08:04:22.011531+00:00",
+          "sha256": "f9b7dc01c9f82766c2606d36bd0ceb1e9603bff09ee52c51b32320f1b22f35bf",
+          "status": 200,
+          "url": "https://www.ishares.com/us/products/239456/ishares-7-10-year-treasury-bond-etf"
+        },
+        "VNQ": {
+          "bytes": 14107,
+          "retrieved_at": "2026-10-01T17:45:23.040359+00:00",
+          "sha256": "7d1cbf7799cde6ec01c788d3ab7a0149314db8390ae7b5e5be8170be93129d22",
+          "status": 200,
+          "url": "https://advisors.vanguard.com/investments/products/api/funds/0986/pricing/distributions"
+        }
+      },
+      "original_sources": {
+        "EFA": {
+          "adjustments": "Yahoo quote OHLC split-adjusted, not dividend-adjusted; actual-share execution basis not yet admitted",
+          "bytes": 566782,
+          "cash_dates": "not established by vendor ex-date events",
+          "end_exclusive": "2026-10-01T00:00:00+00:00",
+          "retrieved_at": "2026-10-01T07:39:49.716820+00:00",
+          "sha256": "650d4d48ada462e379a8180fde0fba1e13b9e092ffe50328c60d8988fb5d3400",
+          "start": "2006-01-01T00:00:00+00:00",
+          "status_code": 200,
+          "symbol": "EFA",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/EFA?period1=1136073600&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true"
+        },
+        "GLD": {
+          "adjustments": "Yahoo quote OHLC split-adjusted, not dividend-adjusted; actual-share execution basis not yet admitted",
+          "bytes": 570601,
+          "cash_dates": "not established by vendor ex-date events",
+          "end_exclusive": "2026-10-01T00:00:00+00:00",
+          "retrieved_at": "2026-10-01T07:39:38.519647+00:00",
+          "sha256": "721e683cbb2d382407a6edd12666cbf165088e6397a6fd60cd9e6b200c07b6f9",
+          "start": "2006-01-01T00:00:00+00:00",
+          "status_code": 200,
+          "symbol": "GLD",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/GLD?period1=1136073600&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true"
+        },
+        "IEF": {
+          "adjustments": "Yahoo quote OHLC split-adjusted, not dividend-adjusted; actual-share execution basis not yet admitted",
+          "bytes": 575745,
+          "cash_dates": "not established by vendor ex-date events",
+          "end_exclusive": "2026-10-01T00:00:00+00:00",
+          "retrieved_at": "2026-10-01T07:39:31.325151+00:00",
+          "sha256": "829072b697602be0c7d9f0be9e09a5f52b0d9eaffe90c9e1a87cbe25ca54d864",
+          "start": "2006-01-01T00:00:00+00:00",
+          "status_code": 200,
+          "symbol": "IEF",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/IEF?period1=1136073600&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true"
+        },
+        "SPY": {
+          "adjustments": "Yahoo quote OHLC split-adjusted, not dividend-adjusted; actual-share execution basis not yet admitted",
+          "bytes": 578740,
+          "cash_dates": "not established by vendor ex-date events",
+          "end_exclusive": "2026-10-01T00:00:00+00:00",
+          "retrieved_at": "2026-10-01T07:39:24.505890+00:00",
+          "sha256": "d8e446bdff4205acd2fa0b82e1656dd6ca79c76d38df2e7b1e677c21a738fb7b",
+          "start": "2006-01-01T00:00:00+00:00",
+          "status_code": 200,
+          "symbol": "SPY",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1136073600&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true"
+        },
+        "VNQ": {
+          "adjustments": "Yahoo quote OHLC split-adjusted, not dividend-adjusted; actual-share execution basis not yet admitted",
+          "bytes": 560210,
+          "cash_dates": "not established by vendor ex-date events",
+          "end_exclusive": "2026-10-01T00:00:00+00:00",
+          "retrieved_at": "2026-10-01T07:40:00.949209+00:00",
+          "sha256": "40b0c8e11cfddab30f5dc8c370575b3e02e2f03e2b5c4eee48857e1387761c45",
+          "start": "2006-01-01T00:00:00+00:00",
+          "status_code": 200,
+          "symbol": "VNQ",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/VNQ?period1=1136073600&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true"
+        }
+      },
+      "overlaps": {
+        "EFA": {
+          "iex": {
+            "breaches": [],
+            "first": "2020-07-27",
+            "last": "2026-09-30",
+            "missing_overlap_sessions": [],
+            "sessions": 1553,
+            "source": {
+              "path": "data/history/c03-c04-readmission-20261001/raw/raw/alpaca/bars_EFA_iex/c03-readmission-20261001/cad180f04295c5b32c104917/page-00000000.parquet",
+              "records": 1553,
+              "request": {
+                "params": {
+                  "adjustment": "raw",
+                  "asof": "-",
+                  "end": "2026-10-01T00:00:00Z",
+                  "feed": "iex",
+                  "limit": 10000,
+                  "sort": "asc",
+                  "start": "2016-01-01T00:00:00Z",
+                  "symbols": "EFA",
+                  "timeframe": "1Day"
+                },
+                "url": "https://data.alpaca.markets/v2/stocks/bars"
+              },
+              "response_sha256": "34e702344b582e6a6724202c16eb2d5e730ef7223d09bafb3be561907e8a124d"
+            },
+            "threshold": "0.01 unchanged"
+          },
+          "sip": {
+            "breaches": [
+              {
+                "date": "2020-03-16",
+                "field": "close",
+                "independent": "46.49",
+                "primary_arca": "47.45",
+                "proof": {
+                  "path": "data/history/c03-c04-readmission-20261001/raw/raw/alpaca/auction_EFA_2020-03-16_close/c03-readmission-20261001/07f9809d2b07c8bfbe369e14/page-00000000.parquet",
+                  "records": 6,
+                  "request": {
+                    "params": {
+                      "asof": "-",
+                      "end": "2020-03-16T16:00:10-04:00",
+                      "feed": "sip",
+                      "limit": 10000,
+                      "sort": "asc",
+                      "start": "2020-03-16T16:00:00-04:00"
+                    },
+                    "url": "https://data.alpaca.markets/v2/stocks/EFA/trades"
+                  },
+                  "response_sha256": "997cdba3030be47fad9a213c2754905a7b043b676e0a00e0107ced2c25fbd440"
+                },
+                "resolved": true,
+                "vendor": "47.45000076293945"
+              }
+            ],
+            "first": "2016-01-04",
+            "last": "2026-09-30",
+            "missing_overlap_sessions": [],
+            "sessions": 2701,
+            "source": {
+              "path": "data/history/c03-c04-readmission-20261001/raw/raw/alpaca/bars_EFA_sip/c03-readmission-20261001/4add11cc92f9dd39b2fc876d/page-00000000.parquet",
+              "records": 2701,
+              "request": {
+                "params": {
+                  "adjustment": "raw",
+                  "asof": "-",
+                  "end": "2026-10-01T00:00:00Z",
+                  "feed": "sip",
+                  "limit": 10000,
+                  "sort": "asc",
+                  "start": "2016-01-01T00:00:00Z",
+                  "symbols": "EFA",
+                  "timeframe": "1Day"
+                },
+                "url": "https://data.alpaca.markets/v2/stocks/bars"
+              },
+              "response_sha256": "a843f408158bc00ea2446a690d4bad82269ab8d328d0f1383d6074612bf1d335"
+            },
+            "threshold": "0.01 unchanged"
+          }
+        },
+        "IEF": {
+          "iex": {
+            "breaches": [],
+            "first": "2020-07-27",
+            "last": "2026-09-30",
+            "missing_overlap_sessions": [],
+            "sessions": 1553,
+            "source": {
+              "path": "data/history/c03-c04-readmission-20261001/raw/raw/alpaca/bars_IEF_iex/c03-readmission-20261001/576c0529f8adbf12eb5e520e/page-00000000.parquet",
+              "records": 1553,
+              "request": {
+                "params": {
+                  "adjustment": "raw",
+                  "asof": "-",
+                  "end": "2026-10-01T00:00:00Z",
+                  "feed": "iex",
+                  "limit": 10000,
+                  "sort": "asc",
+                  "start": "2016-01-01T00:00:00Z",
+                  "symbols": "IEF",
+                  "timeframe": "1Day"
+                },
+                "url": "https://data.alpaca.markets/v2/stocks/bars"
+              },
+              "response_sha256": "13bf47771fc48101bcf2c9b883d01943281e12a62c5c395125a3e30c8672c98e"
+            },
+            "threshold": "0.01 unchanged"
+          },
+          "sip": {
+            "breaches": [],
+            "first": "2016-01-04",
+            "last": "2026-09-30",
+            "missing_overlap_sessions": [],
+            "sessions": 2701,
+            "source": {
+              "path": "data/history/c03-c04-readmission-20261001/raw/raw/alpaca/bars_IEF_sip/c03-readmission-20261001/d1f452bf5340be87c2ba4c1e/page-00000000.parquet",
+              "records": 2701,
+              "request": {
+                "params": {
+                  "adjustment": "raw",
+                  "asof": "-",
+                  "end": "2026-10-01T00:00:00Z",
+                  "feed": "sip",
+                  "limit": 10000,
+                  "sort": "asc",
+                  "start": "2016-01-01T00:00:00Z",
+                  "symbols": "IEF",
+                  "timeframe": "1Day"
+                },
+                "url": "https://data.alpaca.markets/v2/stocks/bars"
+              },
+              "response_sha256": "e16caab387e2650136779d88ec91e8a67221ec39f93141390a0dc5a10122f164"
+            },
+            "threshold": "0.01 unchanged"
+          }
+        },
+        "VNQ": {
+          "iex": {
+            "breaches": [
+              {
+                "date": "2020-09-10",
+                "field": "open",
+                "independent": "80.93",
+                "primary_arca": "81.79",
+                "proof": {
+                  "path": "data/history/c03-c04-readmission-20261001/raw/raw/alpaca/auction_VNQ_2020-09-10_open/c03-readmission-20261001/bef0c35747ee89c7d0152d01/page-00000000.parquet",
+                  "records": 86,
+                  "request": {
+                    "params": {
+                      "asof": "-",
+                      "end": "2020-09-10T09:30:10-04:00",
+                      "feed": "sip",
+                      "limit": 10000,
+                      "sort": "asc",
+                      "start": "2020-09-10T09:30:00-04:00"
+                    },
+                    "url": "https://data.alpaca.markets/v2/stocks/VNQ/trades"
+                  },
+                  "response_sha256": "e75824d874fccfd0476e62ceda9716396c0ca7dadc3f14a1f849305297179f51"
+                },
+                "resolved": true,
+                "vendor": "81.79000091552734"
+              },
+              {
+                "date": "2020-11-19",
+                "field": "open",
+                "independent": "83.75",
+                "primary_arca": "84.62",
+                "proof": {
+                  "path": "data/history/c03-c04-readmission-20261001/raw/raw/alpaca/auction_VNQ_2020-11-19_open/c03-readmission-20261001/e112a17a63f56815d7a8b262/page-00000000.parquet",
+                  "records": 161,
+                  "request": {
+                    "params": {
+                      "asof": "-",
+                      "end": "2020-11-19T09:30:10-05:00",
+                      "feed": "sip",
+                      "limit": 10000,
+                      "sort": "asc",
+                      "start": "2020-11-19T09:30:00-05:00"
+                    },
+                    "url": "https://data.alpaca.markets/v2/stocks/VNQ/trades"
+                  },
+                  "response_sha256": "c915183a35f89c3dc199f5a8e16b463bec44c3183070251a32461016926aaeeb"
+                },
+                "resolved": true,
+                "vendor": "84.62000274658203"
+              },
+              {
+                "date": "2024-12-23",
+                "field": "close",
+                "independent": "87.91",
+                "primary_arca": "88.82",
+                "proof": {
+                  "path": "data/history/c03-c04-readmission-20261001/raw/raw/alpaca/auction_VNQ_2024-12-23_close/c03-readmission-20261001/6f265b7d805003fa3586d463/page-00000000.parquet",
+                  "records": 3,
+                  "request": {
+                    "params": {
+                      "asof": "-",
+                      "end": "2024-12-23T16:00:10-05:00",
+                      "feed": "sip",
+                      "limit": 10000,
+                      "sort": "asc",
+                      "start": "2024-12-23T16:00:00-05:00"
+                    },
+                    "url": "https://data.alpaca.markets/v2/stocks/VNQ/trades"
+                  },
+                  "response_sha256": "8152b02297fa313ef2dca3616ad2a79d7cb66f04e2248d719e3803fea208b092"
+                },
+                "resolved": true,
+                "vendor": "88.81999969482422"
+              }
+            ],
+            "first": "2020-07-27",
+            "last": "2026-09-30",
+            "missing_overlap_sessions": [],
+            "sessions": 1553,
+            "source": {
+              "path": "data/history/c03-c04-readmission-20261001/raw/raw/alpaca/bars_VNQ_iex/c03-readmission-20261001/22095feb7e5f183a5f400f86/page-00000000.parquet",
+              "records": 1553,
+              "request": {
+                "params": {
+                  "adjustment": "raw",
+                  "asof": "-",
+                  "end": "2026-10-01T00:00:00Z",
+                  "feed": "iex",
+                  "limit": 10000,
+                  "sort": "asc",
+                  "start": "2016-01-01T00:00:00Z",
+                  "symbols": "VNQ",
+                  "timeframe": "1Day"
+                },
+                "url": "https://data.alpaca.markets/v2/stocks/bars"
+              },
+              "response_sha256": "f67f1750eeb29043b3754199cef4522bb46c6a6388d23b1ec10edd1a5a24bceb"
+            },
+            "threshold": "0.01 unchanged"
+          },
+          "sip": {
+            "breaches": [
+              {
+                "date": "2020-03-09",
+                "field": "close",
+                "independent": "86",
+                "primary_arca": "83.68",
+                "proof": {
+                  "path": "data/history/c03-c04-readmission-20261001/raw/raw/alpaca/auction_VNQ_2020-03-09_close/c03-readmission-20261001/6c676b514b030168e3026890/page-00000000.parquet",
+                  "records": 9,
+                  "request": {
+                    "params": {
+                      "asof": "-",
+                      "end": "2020-03-09T16:00:10-04:00",
+                      "feed": "sip",
+                      "limit": 10000,
+                      "sort": "asc",
+                      "start": "2020-03-09T16:00:00-04:00"
+                    },
+                    "url": "https://data.alpaca.markets/v2/stocks/VNQ/trades"
+                  },
+                  "response_sha256": "34620142dfe4480bc19e4b2f8d6e76e93980db634a12dc73557c72a8599796fd"
+                },
+                "resolved": true,
+                "vendor": "83.68000030517578"
+              },
+              {
+                "date": "2020-03-16",
+                "field": "close",
+                "independent": "71.897",
+                "primary_arca": "65.39",
+                "proof": {
+                  "path": "data/history/c03-c04-readmission-20261001/raw/raw/alpaca/auction_VNQ_2020-03-16_close/c03-readmission-20261001/ba40309bdaee63a12b3b1d0f/page-00000000.parquet",
+                  "records": 4,
+                  "request": {
+                    "params": {
+                      "asof": "-",
+                      "end": "2020-03-16T16:00:10-04:00",
+                      "feed": "sip",
+                      "limit": 10000,
+                      "sort": "asc",
+                      "start": "2020-03-16T16:00:00-04:00"
+                    },
+                    "url": "https://data.alpaca.markets/v2/stocks/VNQ/trades"
+                  },
+                  "response_sha256": "f035a8ce44422a9d761d333abd44d2731e94ef643ebc90852dc0fece1a4e9b8a"
+                },
+                "resolved": true,
+                "vendor": "65.38999938964844"
+              },
+              {
+                "date": "2020-03-18",
+                "field": "close",
+                "independent": "63.52",
+                "primary_arca": "62.59",
+                "proof": {
+                  "path": "data/history/c03-c04-readmission-20261001/raw/raw/alpaca/auction_VNQ_2020-03-18_close/c03-readmission-20261001/7a774574663f5b2369f8ffbe/page-00000000.parquet",
+                  "records": 7,
+                  "request": {
+                    "params": {
+                      "asof": "-",
+                      "end": "2020-03-18T16:00:10-04:00",
+                      "feed": "sip",
+                      "limit": 10000,
+                      "sort": "asc",
+                      "start": "2020-03-18T16:00:00-04:00"
+                    },
+                    "url": "https://data.alpaca.markets/v2/stocks/VNQ/trades"
+                  },
+                  "response_sha256": "1f3d8cbea02c4a08d5dc49bc5d9febb03254b8aebe8d8b2051b357312ba70c77"
+                },
+                "resolved": true,
+                "vendor": "62.59000015258789"
+              }
+            ],
+            "first": "2016-01-04",
+            "last": "2026-09-30",
+            "missing_overlap_sessions": [],
+            "sessions": 2701,
+            "source": {
+              "path": "data/history/c03-c04-readmission-20261001/raw/raw/alpaca/bars_VNQ_sip/c03-readmission-20261001/c3e197aab98094a73f5e0675/page-00000000.parquet",
+              "records": 2701,
+              "request": {
+                "params": {
+                  "adjustment": "raw",
+                  "asof": "-",
+                  "end": "2026-10-01T00:00:00Z",
+                  "feed": "sip",
+                  "limit": 10000,
+                  "sort": "asc",
+                  "start": "2016-01-01T00:00:00Z",
+                  "symbols": "VNQ",
+                  "timeframe": "1Day"
+                },
+                "url": "https://data.alpaca.markets/v2/stocks/bars"
+              },
+              "response_sha256": "14a4ec79643a229181a2ec546237da7bddf6089553f854e6a0ed35df7f761460"
+            },
+            "threshold": "0.01 unchanged"
+          }
+        }
+      },
+      "policy_sha256": "51221c8d47f8cad43c689fee7d15289e0b058902bc26ec28f25261d9b6e6f938",
+      "secondary_sources": {
+        "dividendhistory": {
+          "bytes": 62608,
+          "retrieved_at": "2026-10-01T17:47:23.365937+00:00",
+          "sha256": "5c899c4533d359b54ee638e00816a688a26a40fd383b5795352729d2893cbaeb",
+          "status": 200,
+          "url": "https://dividendhistory.org/payout/VNQ/"
+        },
+        "stockscan": {
+          "bytes": 179851,
+          "retrieved_at": "2026-10-01T17:47:23.834124+00:00",
+          "sha256": "d07c1d2e24e680bc8b196a9a824f11e8a66cad56661630af2a2452a2e86654b0",
+          "status": 200,
+          "url": "https://stockscan.io/stocks/VNQ/dividend-history"
+        }
+      },
+      "spy_source_receipt": "3726951207c75d417a45d4264e414178eb5d4234e7f6328e4cf363474dbe9040"
+    },
+    "secondary_corroboration_is_not_primary_or_proven_upstream_independence": true,
+    "sources": {
+      "dividend-com": {
+        "bytes": 378521,
+        "capture_code_path": "data/history/c03-source-repair-20261001/capture-code/6a0e1acdb8c0d863dd0ff6844273c5ab013539f3ffdf7b88995e368b2b192b76.py",
+        "capture_code_sha256": "6a0e1acdb8c0d863dd0ff6844273c5ab013539f3ffdf7b88995e368b2b192b76",
+        "content_type": "text/html; charset=utf-8",
+        "location": null,
+        "manifest_sha256": "3efdc44d152b51a24ce360dd04fb425ec1a268c5451d9910a41823f5a214b862",
+        "raw_path": "data/history/c03-source-repair-20261001/dividend-com/raw",
+        "response_url": "https://www.dividend.com/etfs/vnq-vanguard-real-estate-etf/",
+        "retrieved_at": "2026-10-01T21:23:39.229902+00:00",
+        "sha256": "acc23f9bc37d55501eabd37dec04ef41ad916510eb53d80810b1221d4f035ce5",
+        "status": 200,
+        "url": "https://www.dividend.com/etfs/vnq-vanguard-real-estate-etf/"
+      },
+      "divvydiary-june-2009": {
+        "bytes": 638986,
+        "capture_code_path": "data/history/c03-source-repair-20261001/capture-code/7febc4d8877e72fd13b602eb51a1db319073e29f756a47ae71e26995b8453ce7.py",
+        "capture_code_sha256": "7febc4d8877e72fd13b602eb51a1db319073e29f756a47ae71e26995b8453ce7",
+        "content_type": "text/html; charset=utf-8",
+        "location": null,
+        "manifest_sha256": "62749d571a01c51b4a3a87749e7fc23f825b5af43a660ab59198a8b40bb0a19c",
+        "raw_path": "data/history/c03-source-repair-20261001/divvydiary-june-2009/raw",
+        "response_url": "https://divvydiary.com/en/calendar/2009-june-30",
+        "retrieved_at": "2026-10-01T21:25:59.044731+00:00",
+        "sha256": "54d72163b38588c095031022a9f723d0c537bf8190cead11881b5c43355c9c74",
+        "status": 200,
+        "url": "https://divvydiary.com/en/calendar/2009-june-30"
+      },
+      "investidor10": {
+        "bytes": 1932136,
+        "capture_code_path": "data/history/c03-source-repair-20261001/capture-code/6a0e1acdb8c0d863dd0ff6844273c5ab013539f3ffdf7b88995e368b2b192b76.py",
+        "capture_code_sha256": "6a0e1acdb8c0d863dd0ff6844273c5ab013539f3ffdf7b88995e368b2b192b76",
+        "content_type": "text/html; charset=utf-8",
+        "location": null,
+        "manifest_sha256": "aecef76a61d62d4a23a6c22d20925fa30f1a806c6a9c9a9f925de8c30b88a52f",
+        "raw_path": "data/history/c03-source-repair-20261001/investidor10/raw",
+        "response_url": "https://investidor10.com.br/etfs-global/vnq/",
+        "retrieved_at": "2026-10-01T21:23:48.822817+00:00",
+        "sha256": "f97c7f2cafb856439b4f9869f6d10e46e370af6b8e9e9dc90a0f9bedac0d28e1",
+        "status": 200,
+        "url": "https://investidor10.com.br/etfs-global/vnq/"
+      },
+      "marketlog": {
+        "bytes": 267842,
+        "capture_code_path": "data/history/c03-source-repair-20261001/capture-code/6a0e1acdb8c0d863dd0ff6844273c5ab013539f3ffdf7b88995e368b2b192b76.py",
+        "capture_code_sha256": "6a0e1acdb8c0d863dd0ff6844273c5ab013539f3ffdf7b88995e368b2b192b76",
+        "content_type": "text/html;charset=UTF-8",
+        "location": null,
+        "manifest_sha256": "ec7de03a8d7f29dbcf32ebbd06f4c02819ecc6754013e1313da6f5c75de38ab3",
+        "raw_path": "data/history/c03-source-repair-20261001/marketlog/raw",
+        "response_url": "https://www.marketlog.com/symbol/vnq-arcx/dividends",
+        "retrieved_at": "2026-10-01T21:23:47.963352+00:00",
+        "sha256": "ff2df440d07a30f6b247caf652558a856777a0c69091550b4ef3616e01d33961",
+        "status": 200,
+        "url": "https://www.marketlog.com/symbol/vnq-arcx/dividends"
+      },
+      "stock-screener": {
+        "bytes": 37295,
+        "capture_code_path": "data/history/c03-source-repair-20261001/capture-code/6a0e1acdb8c0d863dd0ff6844273c5ab013539f3ffdf7b88995e368b2b192b76.py",
+        "capture_code_sha256": "6a0e1acdb8c0d863dd0ff6844273c5ab013539f3ffdf7b88995e368b2b192b76",
+        "content_type": "text/html; charset=UTF-8",
+        "location": null,
+        "manifest_sha256": "f90f2013b6af81a5d5951b1cfbc0e9fa938158eb14517effc939f960d50b14d7",
+        "raw_path": "data/history/c03-source-repair-20261001/stock-screener/raw",
+        "response_url": "https://stock-screener.org/vnq-dividend-history",
+        "retrieved_at": "2026-10-01T21:23:47.572098+00:00",
+        "sha256": "f1d174f28599dfe27eb8e224c2ff830bbec20d29d754e5affefd6baf2fa80d17",
+        "status": 200,
+        "url": "https://stock-screener.org/vnq-dividend-history"
+      },
+      "vanguard-2007-report": {
+        "bytes": 4819,
+        "capture_code_path": "data/history/c03-source-repair-20261001/capture-code/7febc4d8877e72fd13b602eb51a1db319073e29f756a47ae71e26995b8453ce7.py",
+        "capture_code_sha256": "7febc4d8877e72fd13b602eb51a1db319073e29f756a47ae71e26995b8453ce7",
+        "content_type": "text/html",
+        "location": null,
+        "manifest_sha256": "7a3ad7520c792480841a8fec5f9363e221b056f1c908df4606562bb2bba7a174",
+        "raw_path": "data/history/c03-source-repair-20261001/vanguard-2007-report/raw",
+        "response_url": "https://www.sec.gov/Archives/edgar/data/734383/000093247107001480/specializedfundsfinal.htm",
+        "retrieved_at": "2026-10-01T21:25:57.420774+00:00",
+        "sha256": "a7b979e1efbae051b070122d59ed7c458fe19314bee47c767717410827fabbea",
+        "status": 403,
+        "url": "https://www.sec.gov/Archives/edgar/data/734383/000093247107001480/specializedfundsfinal.htm"
+      },
+      "vanguard-2010-report-mirror": {
+        "bytes": 146,
+        "capture_code_path": "data/history/c03-source-repair-20261001/capture-code/7c2b6ae24df8bea67d4dca377914504595c2c640a026c140603bafa1d27e87f4.py",
+        "capture_code_sha256": "7c2b6ae24df8bea67d4dca377914504595c2c640a026c140603bafa1d27e87f4",
+        "content_type": "text/html",
+        "location": null,
+        "manifest_sha256": "8cea24b4f5ff6cfbc8860353489f20a327595cb15105cf09061832d67f2f3321",
+        "raw_path": "data/history/c03-source-repair-20261001/vanguard-2010-report-mirror/raw",
+        "response_url": "https://www.collegecounts529.com/pdf/vgsix-ann.pdf",
+        "retrieved_at": "2026-10-01T21:26:45.897726+00:00",
+        "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+        "status": 404,
+        "url": "https://www.collegecounts529.com/pdf/vgsix-ann.pdf"
+      },
+      "vanguard-distribution-store": {
+        "bytes": 3911,
+        "capture_code_path": "data/history/c03-source-repair-20261001/capture-code/abc25e029f96d4ab1d4be1c6e66134327ff253bbc3a6d3bbe109221404f083b3.py",
+        "capture_code_sha256": "abc25e029f96d4ab1d4be1c6e66134327ff253bbc3a6d3bbe109221404f083b3",
+        "content_type": "application/javascript; charset=UTF-8",
+        "location": null,
+        "manifest_sha256": "02126b7d2004ca5de13269f432d1914399e267be425cb507f2318760b71b5f6f",
+        "raw_path": "data/history/c03-source-repair-20261001/vanguard-distribution-store/raw",
+        "response_url": "https://advisors.vanguard.com/investments/products/assets/priceDistributionsStore-eyCappkh.js",
+        "retrieved_at": "2026-10-01T21:27:13.061087+00:00",
+        "sha256": "17921afb5e080aeaca9940b97c60cf2fd064c589a49c1a1afd43de94c55025c4",
+        "status": 200,
+        "url": "https://advisors.vanguard.com/investments/products/assets/priceDistributionsStore-eyCappkh.js"
+      },
+      "vanguard-price-script": {
+        "bytes": 3122,
+        "capture_code_path": "data/history/c03-source-repair-20261001/capture-code/abc25e029f96d4ab1d4be1c6e66134327ff253bbc3a6d3bbe109221404f083b3.py",
+        "capture_code_sha256": "abc25e029f96d4ab1d4be1c6e66134327ff253bbc3a6d3bbe109221404f083b3",
+        "content_type": "application/javascript; charset=UTF-8",
+        "location": null,
+        "manifest_sha256": "2e350ae6b7836835db9d086992ff85924e358f1ea4b329b03ce974d67939fe69",
+        "raw_path": "data/history/c03-source-repair-20261001/vanguard-price-script/raw",
+        "response_url": "https://advisors.vanguard.com/investments/products/assets/Price-BM5WxWUc.js",
+        "retrieved_at": "2026-10-01T21:27:12.766171+00:00",
+        "sha256": "20c6918250e9e2665a0cc32bd64d349c9f17c80badfaa2379890b1ae890c7e95",
+        "status": 200,
+        "url": "https://advisors.vanguard.com/investments/products/assets/Price-BM5WxWUc.js"
+      },
+      "vanguard-product": {
+        "bytes": 161730,
+        "capture_code_path": "data/history/c03-source-repair-20261001/capture-code/6a0e1acdb8c0d863dd0ff6844273c5ab013539f3ffdf7b88995e368b2b192b76.py",
+        "capture_code_sha256": "6a0e1acdb8c0d863dd0ff6844273c5ab013539f3ffdf7b88995e368b2b192b76",
+        "content_type": "text/html; charset=utf-8",
+        "location": null,
+        "manifest_sha256": "7dd7543305956ac40149f80c057ecbeef5be176f2e95694e4cf9ff9545f90137",
+        "raw_path": "data/history/c03-source-repair-20261001/vanguard-product/raw",
+        "response_url": "https://advisors.vanguard.com/investments/products/vnq/vanguard-real-estate-etf",
+        "retrieved_at": "2026-10-01T21:23:49.594978+00:00",
+        "sha256": "a5f7faf5aeee2d4e42c52da93fa64d7e450ab9f230907eea49f07229e2f1a281",
+        "status": 200,
+        "url": "https://advisors.vanguard.com/investments/products/vnq/vanguard-real-estate-etf"
+      },
+      "vanguard-product-page-script": {
+        "bytes": 50513,
+        "capture_code_path": "data/history/c03-source-repair-20261001/capture-code/7c2b6ae24df8bea67d4dca377914504595c2c640a026c140603bafa1d27e87f4.py",
+        "capture_code_sha256": "7c2b6ae24df8bea67d4dca377914504595c2c640a026c140603bafa1d27e87f4",
+        "content_type": "application/javascript; charset=UTF-8",
+        "location": null,
+        "manifest_sha256": "32adff326341f30780cc384d09a349403e926b081b31455d3dc13e83a2f518bb",
+        "raw_path": "data/history/c03-source-repair-20261001/vanguard-product-page-script/raw",
+        "response_url": "https://advisors.vanguard.com/investments/products/assets/ProductPage-__rguhch.js",
+        "retrieved_at": "2026-10-01T21:26:37.533250+00:00",
+        "sha256": "8675d156c07123e623e9003d2897a0c22225df6e438024435e1496fcd13a843a",
+        "status": 200,
+        "url": "https://advisors.vanguard.com/investments/products/assets/ProductPage-__rguhch.js"
+      },
+      "vanguard-product-script": {
+        "bytes": 4580392,
+        "capture_code_path": "data/history/c03-source-repair-20261001/capture-code/7febc4d8877e72fd13b602eb51a1db319073e29f756a47ae71e26995b8453ce7.py",
+        "capture_code_sha256": "7febc4d8877e72fd13b602eb51a1db319073e29f756a47ae71e26995b8453ce7",
+        "content_type": "application/javascript; charset=UTF-8",
+        "location": null,
+        "manifest_sha256": "3ebac1b5dcf275aaf23da6416b669ad0a740844845a65b6d55924d7ee3f12e55",
+        "raw_path": "data/history/c03-source-repair-20261001/vanguard-product-script/raw",
+        "response_url": "https://advisors.vanguard.com/investments/products/assets/index-BE_OnPBx.js",
+        "retrieved_at": "2026-10-01T21:25:53.383825+00:00",
+        "sha256": "82602342e9e12eee563d13788949fec4573b6d0f0066961e44aaae472242b7e9",
+        "status": 200,
+        "url": "https://advisors.vanguard.com/investments/products/assets/index-BE_OnPBx.js"
+      },
+      "vnq-arca-listing-2008": {
+        "bytes": 128202,
+        "capture_code_path": "data/history/c03-source-repair-20261001/capture-code/7febc4d8877e72fd13b602eb51a1db319073e29f756a47ae71e26995b8453ce7.py",
+        "capture_code_sha256": "7febc4d8877e72fd13b602eb51a1db319073e29f756a47ae71e26995b8453ce7",
+        "content_type": "application/pdf",
+        "location": null,
+        "manifest_sha256": "29a66d63d0b7ac667d61d43b243f4f161f17af684a7497f08e8241f2b21f14e5",
+        "raw_path": "data/history/c03-source-repair-20261001/vnq-arca-listing-2008/raw",
+        "response_url": "https://www.nyse.com/publicdocs/nyse/markets/nyse-arca/rule-interpretations/2008/NYSEArca-RB-08-95.pdf",
+        "retrieved_at": "2026-10-01T21:25:58.007030+00:00",
+        "sha256": "08804a36ebabcb381efc453698aab2ef8b7ea11c0f4b53ad212fc5135d07ece4",
+        "status": 200,
+        "url": "https://www.nyse.com/publicdocs/nyse/markets/nyse-arca/rule-interpretations/2008/NYSEArca-RB-08-95.pdf"
+      }
+    },
+    "universe": [
+      "SPY",
+      "IEF",
+      "GLD",
+      "EFA",
+      "VNQ"
+    ],
+    "variants": [
+      "top_one_95pct",
+      "top_two_equal_47.5pct",
+      "top_two_each_filtered_10_month_sma"
+    ]
+  },
+  "issuer_api_scope": "Existing issuer endpoint covers 40 ex-dates from 2016-12-22. Current product page says up to ten years; linked distribution store fetches this endpoint with a yield flag, not a historical-date range.",
+  "june_2009_conflict": {
+    "dividend_com": {
+      "components": [
+        {
+          "amount": "0.485",
+          "kind": "OrdinaryDividend"
+        }
+      ],
+      "date_as_reported": "2009-06-25",
+      "table_header": "Date"
+    },
+    "divvydiary": {
+      "ex_date": "2009-06-24",
+      "pay_date": "2009-06-30",
+      "rounded_amount": "0.49"
+    },
+    "entitlement_date_resolved": false,
+    "investidor10": [
+      {
+        "amount": "0.48500000",
+        "data_com_as_labeled": "2009-06-26",
+        "pay_date": "2009-06-30"
+      }
+    ],
+    "marketlog": {
+      "ex_date": "2009-06-25",
+      "frequency_as_reported": "Quarterly",
+      "pay_date": "2009-06-30",
+      "record_date": "2009-06-26",
+      "rounded_amount": "0.48"
+    },
+    "original_dividendhistory": {
+      "amount": "0.485",
+      "ex_date": "2009-06-24",
+      "pay_date": "2009-06-30"
+    },
+    "original_yahoo": {
+      "amount": "0.485",
+      "ex_date": "2009-06-24"
+    },
+    "payment_agreement_does_not_resolve_ex_date": true,
+    "primary_event_notice_recovered": false,
+    "stock_screener": {
+      "amount": "0.48500",
+      "declared_as_reported": null,
+      "ex_date": "2009-06-25",
+      "pay_date": "2009-06-30",
+      "record_date": "2009-06-26"
+    }
+  },
+  "luck_p_value": null,
+  "not_completed_after_failed_gate": [
+    "Full five-fund share-action inventory and timely Amendment21 notices",
+    "GLD 2006-2007 independent price/action scope and full actual-share admission",
+    "Committed admitted source, pure strategy, six training cases, selection and final"
+  ],
+  "older_cash_reconciliation": [
+    {
+      "checks": {
+        "components_equal_full_total": true,
+        "independent_page_full_total_and_payment_match": true,
+        "old_cash_row_matches_ordinary_component": true,
+        "ordinary_and_full_total_pay_dates_agree": true,
+        "original_yahoo_total_agrees": true,
+        "rounded_reference_amount_consistent": true,
+        "rounded_reference_dates_agree": true
+      },
+      "components": [
+        {
+          "amount": "0.404",
+          "kind": "OrdinaryDividend"
+        }
+      ],
+      "ex_date": "2006-03-20",
+      "full_total": {
+        "amount": "0.40400",
+        "declared_as_reported": null,
+        "pay_date": "2006-03-29",
+        "record_date": "2006-03-22"
+      },
+      "independent_upstream_providers_proven": false,
+      "issuer_event_notice_recovered": false,
+      "payment_matches": [
+        {
+          "amount": "0.40400000",
+          "data_com_as_labeled": "2006-03-22",
+          "pay_date": "2006-03-29"
+        }
+      ],
+      "rounded_reference": {
+        "frequency_as_reported": "Quarterly",
+        "pay_date": "2006-03-29",
+        "record_date": "2006-03-22",
+        "rounded_amount": "0.4"
+      },
+      "secondary_corroboration": true
+    },
+    {
+      "checks": {
+        "components_equal_full_total": true,
+        "independent_page_full_total_and_payment_match": true,
+        "old_cash_row_matches_ordinary_component": true,
+        "ordinary_and_full_total_pay_dates_agree": true,
+        "original_yahoo_total_agrees": true,
+        "rounded_reference_amount_consistent": true,
+        "rounded_reference_dates_agree": true
+      },
+      "components": [
+        {
+          "amount": "0.678",
+          "kind": "OrdinaryDividend"
+        }
+      ],
+      "ex_date": "2006-06-26",
+      "full_total": {
+        "amount": "0.67800",
+        "declared_as_reported": null,
+        "pay_date": "2006-06-30",
+        "record_date": "2006-06-28"
+      },
+      "independent_upstream_providers_proven": false,
+      "issuer_event_notice_recovered": false,
+      "payment_matches": [
+        {
+          "amount": "0.67800000",
+          "data_com_as_labeled": "2006-06-28",
+          "pay_date": "2006-06-30"
+        }
+      ],
+      "rounded_reference": {
+        "frequency_as_reported": "Quarterly",
+        "pay_date": "2006-06-30",
+        "record_date": "2006-06-28",
+        "rounded_amount": "0.68"
+      },
+      "secondary_corroboration": true
+    },
+    {
+      "checks": {
+        "components_equal_full_total": true,
+        "independent_page_full_total_and_payment_match": true,
+        "old_cash_row_matches_ordinary_component": true,
+        "ordinary_and_full_total_pay_dates_agree": true,
+        "original_yahoo_total_agrees": true,
+        "rounded_reference_amount_consistent": true,
+        "rounded_reference_dates_agree": true
+      },
+      "components": [
+        {
+          "amount": "0.678",
+          "kind": "OrdinaryDividend"
+        }
+      ],
+      "ex_date": "2006-09-25",
+      "full_total": {
+        "amount": "0.67800",
+        "declared_as_reported": null,
+        "pay_date": "2006-09-29",
+        "record_date": "2006-09-27"
+      },
+      "independent_upstream_providers_proven": false,
+      "issuer_event_notice_recovered": false,
+      "payment_matches": [
+        {
+          "amount": "0.67800000",
+          "data_com_as_labeled": "2006-09-27",
+          "pay_date": "2006-09-29"
+        }
+      ],
+      "rounded_reference": {
+        "frequency_as_reported": "Quarterly",
+        "pay_date": "2006-09-29",
+        "record_date": "2006-09-27",
+        "rounded_amount": "0.68"
+      },
+      "secondary_corroboration": true
+    },
+    {
+      "checks": {
+        "components_equal_full_total": true,
+        "independent_page_full_total_and_payment_match": true,
+        "old_cash_row_matches_ordinary_component": true,
+        "ordinary_and_full_total_pay_dates_agree": true,
+        "original_yahoo_total_agrees": true,
+        "rounded_reference_amount_consistent": true,
+        "rounded_reference_dates_agree": true
+      },
+      "components": [
+        {
+          "amount": "1.133",
+          "kind": "OrdinaryDividend"
+        },
+        {
+          "amount": "0.361",
+          "kind": "CapitalGainLongTerm"
+        }
+      ],
+      "ex_date": "2006-12-22",
+      "full_total": {
+        "amount": "1.49400",
+        "declared_as_reported": null,
+        "pay_date": "2006-12-29",
+        "record_date": "2006-12-27"
+      },
+      "independent_upstream_providers_proven": false,
+      "issuer_event_notice_recovered": false,
+      "payment_matches": [
+        {
+          "amount": "1.49400000",
+          "data_com_as_labeled": "2006-12-27",
+          "pay_date": "2006-12-29"
+        }
+      ],
+      "rounded_reference": {
+        "frequency_as_reported": "Quarterly",
+        "pay_date": "2006-12-29",
+        "record_date": "2006-12-27",
+        "rounded_amount": "1.49"
+      },
+      "secondary_corroboration": true
+    }
+  ],
+  "planned_configurations": [
+    {
+      "costs_bp_per_side": 5,
+      "state": "unattempted_source_gate_failed",
+      "variant": "top_one_95pct"
+    },
+    {
+      "costs_bp_per_side": 10,
+      "state": "unattempted_source_gate_failed",
+      "variant": "top_one_95pct"
+    },
+    {
+      "costs_bp_per_side": 5,
+      "state": "unattempted_source_gate_failed",
+      "variant": "top_two_equal_47.5pct"
+    },
+    {
+      "costs_bp_per_side": 10,
+      "state": "unattempted_source_gate_failed",
+      "variant": "top_two_equal_47.5pct"
+    },
+    {
+      "costs_bp_per_side": 5,
+      "state": "unattempted_source_gate_failed",
+      "variant": "top_two_each_filtered_10_month_sma"
+    },
+    {
+      "costs_bp_per_side": 10,
+      "state": "unattempted_source_gate_failed",
+      "variant": "top_two_each_filtered_10_month_sma"
+    }
+  ],
+  "pnl": null,
+  "primary_search_limits": "SEC direct report HTTP403; historical 2010 report mirror HTTP404. Web SEC extraction corroborates 2006 annual total 3.254 only, not event/payment dates; not admitted as original archived bytes. Arca listing notice dated 2008-09-19 establishes listing transfer only.",
+  "prior_failed_trials": [
+    3516,
+    4067
+  ],
+  "promotion": "none",
+  "regimes": null,
+  "split": {
+    "data_end": "2026-10-01T00:00:00+00:00",
+    "data_start": "2006-01-01T00:00:00+00:00",
+    "dataset_key": "c03-source-repair-v1:1566ba228d12d6dd356690edf493268a2333337d42797accbaba5595ba90b496",
+    "holdout_start": "2020-07-10T14:24:00+00:00",
+    "split": "70/30 by elapsed UTC time; end exclusive"
+  },
+  "status": "DATA_FAIL",
+  "strategy_id": 6030,
+  "strategy_outcomes_inspected": false,
+  "trade_count": null,
+  "training_cases_attempted": 0
+}

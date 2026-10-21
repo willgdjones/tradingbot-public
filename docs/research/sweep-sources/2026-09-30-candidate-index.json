@@ -1,0 +1,98 @@
+[
+  {
+    "candidate": "C01",
+    "id": "tradingbot-8yz",
+    "title": "SPY monthly trend",
+    "split": {
+      "dataset_key": "sweep-c01-v1",
+      "data_start": "2006-01-01T00:00:00+00:00",
+      "data_end": "2026-10-01T00:00:00+00:00",
+      "holdout_start": "2020-07-10T14:24:00+00:00",
+      "split": "70/30 by elapsed UTC time; end exclusive"
+    }
+  },
+  {
+    "candidate": "C02",
+    "id": "tradingbot-7l3",
+    "title": "Sector relative momentum",
+    "split": {
+      "dataset_key": "sweep-c02-v1",
+      "data_start": "2006-01-01T00:00:00+00:00",
+      "data_end": "2026-10-01T00:00:00+00:00",
+      "holdout_start": "2020-07-10T14:24:00+00:00",
+      "split": "70/30 by elapsed UTC time; end exclusive"
+    }
+  },
+  {
+    "candidate": "C03",
+    "id": "tradingbot-wn9",
+    "title": "Cross-asset relative momentum",
+    "split": {
+      "dataset_key": "sweep-c03-v1",
+      "data_start": "2006-01-01T00:00:00+00:00",
+      "data_end": "2026-10-01T00:00:00+00:00",
+      "holdout_start": "2020-07-10T14:24:00+00:00",
+      "split": "70/30 by elapsed UTC time; end exclusive"
+    }
+  },
+  {
+    "candidate": "C04",
+    "id": "tradingbot-wri",
+    "title": "Cash-capped inverse-variance SPY",
+    "split": {
+      "dataset_key": "sweep-c04-v1",
+      "data_start": "2006-01-01T00:00:00+00:00",
+      "data_end": "2026-10-01T00:00:00+00:00",
+      "holdout_start": "2020-07-10T14:24:00+00:00",
+      "split": "70/30 by elapsed UTC time; end exclusive"
+    }
+  },
+  {
+    "candidate": "C05",
+    "id": "tradingbot-9ri",
+    "title": "Long/cash commodity ETF trend",
+    "split": {
+      "dataset_key": "sweep-c05-v1",
+      "data_start": "2008-01-01T00:00:00+00:00",
+      "data_end": "2026-10-01T00:00:00+00:00",
+      "holdout_start": "2021-02-14T14:24:00+00:00",
+      "split": "70/30 by elapsed UTC time; end exclusive"
+    }
+  },
+  {
+    "candidate": "C06",
+    "id": "tradingbot-kc4",
+    "title": "Month-end stock/bond underweight flow",
+    "split": {
+      "dataset_key": "sweep-c06-v1",
+      "data_start": "2006-01-01T00:00:00+00:00",
+      "data_end": "2026-10-01T00:00:00+00:00",
+      "holdout_start": "2020-07-10T14:24:00+00:00",
+      "split": "70/30 by elapsed UTC time; end exclusive"
+    }
+  },
+  {
+    "candidate": "C07",
+    "id": "tradingbot-a9d",
+    "title": "Weekly sector loser reversal",
+    "split": {
+      "dataset_key": "sweep-c07-v1",
+      "data_start": "2006-01-01T00:00:00+00:00",
+      "data_end": "2026-10-01T00:00:00+00:00",
+      "holdout_start": "2020-07-10T14:24:00+00:00",
+      "split": "70/30 by elapsed UTC time; end exclusive"
+    }
+  },
+  {
+    "candidate": "C08",
+    "id": "tradingbot-m2d",
+    "title": "USO inventory scarcity",
+    "split": {
+      "dataset_key": "sweep-c08-v1",
+      "data_start": "2018-01-01T00:00:00+00:00",
+      "data_end": "2026-10-01T00:00:00+00:00",
+      "holdout_start": "2024-02-15T12:00:00+00:00",
+      "split": "70/30 by elapsed UTC time; end exclusive"
+    }
+  }
+]

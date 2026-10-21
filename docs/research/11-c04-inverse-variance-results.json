@@ -1,0 +1,123 @@
+{
+  "candidate": "C04",
+  "bead": "tradingbot-wri",
+  "status": "DATA_FAIL",
+  "generated_at": "2026-10-01T06:17:40.789728+00:00",
+  "identity": {
+    "yahoo_sha256": "782593bb64e78f69ef8f4a0f625e23c0201bf68fa26299b7dedcfec3dd32d8b2",
+    "issuer_sha256": "51a16a450298a663b3fa088883a17c75f4464e87c911b0e83902a0ad46877c54",
+    "calendar_iex_sha256": "79505a70a68763c76fc977806592ab30579314e26c593c18d940fae4db16b2de",
+    "diagnostic_existing_sip_sha256": "83501d8e59ae95b128481d26228722f00514f26b4cdb388462edb70908e4f5a9",
+    "requirements": {
+      "execution": "Yahoo unadjusted-for-dividend OHLC; SPY has no source splits",
+      "signal": "daily total return = (raw close + issuer ex-date distribution) / previous raw close - 1",
+      "dividend": "SSGA actual amount and payable date; entitlement before ex-date open; unpaid is a receivable",
+      "yahoo_amounts": "rounding to 0.001 except 2021-12-17: 1.633 vs issuer 1.636431; issuer authoritative",
+      "settlement_required": "T+1 current-account counterfactual; native historical T+3/T+2 dates are inadmissible",
+      "crosscheck": "IEX raw daily overlap; independent venue close within 1 percent; no price substitution",
+      "prior_inspection": "SPY overlaps previously inspected #5/#6/C01; diagnostic, not fresh unseen proof"
+    }
+  },
+  "split": {
+    "dataset_key": "sweep-c04-v1:e38860202d77430aa9ef2a47f86a086a4ebf902eb3f9af039781fb67022c639a",
+    "data_start": "2006-01-01T00:00:00+00:00",
+    "data_end": "2026-10-01T00:00:00+00:00",
+    "holdout_start": "2020-07-10T14:24:00+00:00",
+    "split": "70/30 by elapsed UTC time; end exclusive"
+  },
+  "source_metadata": {
+    "yahoo": {
+      "source": "yahoo_chart_v8",
+      "symbol": "SPY",
+      "request_url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1136073600&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true",
+      "retrieved_utc": "2026-10-01T05:45:37.379778+00:00",
+      "sha256": "782593bb64e78f69ef8f4a0f625e23c0201bf68fa26299b7dedcfec3dd32d8b2",
+      "requested_start": "2006-01-01",
+      "requested_end_exclusive": "2026-10-01",
+      "adjustment_rules": {
+        "quote_ohlc": "split-adjusted, not dividend-adjusted",
+        "adj_close": "split- and dividend-adjusted",
+        "execution_price_basis": "raw quote open/close",
+        "signal_price_basis": "adj_close",
+        "dividends": "per-share cash on ex-date; credited on a payment-date proxy"
+      },
+      "notes": "Stooq cross-check unavailable (JS/bot challenge); use Alpaca IEX 2016+ overlap."
+    },
+    "issuer": {
+      "bytes": 577780,
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "retrieved_at": "2026-10-01T06:03:50.429278+00:00",
+      "sha256": "51a16a450298a663b3fa088883a17c75f4464e87c911b0e83902a0ad46877c54",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/spdr-etf-historical-distributions.xlsx"
+    }
+  },
+  "source_session_count": 5218,
+  "missing_sessions": [],
+  "extra_sessions": [],
+  "source_splits": 0,
+  "source_dividend_ex_dates": 83,
+  "strict_audit_error": "invalid or duplicated issuer distribution: SPY ex=2006-06-16, record=2006-06-20, pay=2006-06-16, amount=0.555470",
+  "native_settlement_example": {
+    "trade_date": "2006-01-03",
+    "settlement_date": "2006-01-06",
+    "required_counterfactual": "T+1; 2006-01-04 in this ordinary business week"
+  },
+  "independent_close_checks": [
+    {
+      "source": "IEX",
+      "overlap_sessions": 1554,
+      "first": "2018-11-01",
+      "last": "2026-09-30",
+      "disagreements_over_1pct": [
+        {
+          "date": "2025-04-09",
+          "relative_difference": "0.01043363652086729102780156735",
+          "yahoo_close": "548.6199951171875",
+          "other_close": "542.955"
+        }
+      ]
+    },
+    {
+      "source": "existing_SIP",
+      "overlap_sessions": 2701,
+      "first": "2016-01-04",
+      "last": "2026-09-30",
+      "disagreements_over_1pct": [
+        {
+          "date": "2020-03-12",
+          "relative_difference": "0.02793449063488653816016298386",
+          "yahoo_close": "248.11000061035156",
+          "other_close": "255.24"
+        },
+        {
+          "date": "2020-03-18",
+          "relative_difference": "0.01828673257244685816114387543",
+          "yahoo_close": "240.0",
+          "other_close": "235.69"
+        }
+      ]
+    }
+  ],
+  "strategy_outcomes_inspected": false,
+  "training_cases_attempted": 0,
+  "final_holdout_attempts": 0,
+  "planned_variants_c": [
+    "0.0225",
+    "0.01",
+    "0.04"
+  ],
+  "planned_training_costs_bp": [
+    5,
+    10
+  ],
+  "pnl": null,
+  "fees": null,
+  "drawdown": null,
+  "luck_p_value": null,
+  "promotion": "none",
+  "recovery": "Resolve primary payment-date evidence, full counterfactual settlement calendar and regular-session close basis before a written pre-outcome source revision.",
+  "data_failure_trial_id": 3377,
+  "strategy_id": 5290,
+  "source_audit_git_commit": "c98e849e0eb589e506108358c60fcfca6a298305",
+  "audit_version": "fd9cd65e5102653f469e73e4c62db8d699924795223b1b3edfa96527b6558299"
+}

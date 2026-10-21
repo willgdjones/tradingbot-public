@@ -1,0 +1,628 @@
+{
+  "distributions": 83,
+  "identity": {
+    "candidate": "C04",
+    "cash": "Conservative replay convention: sale proceeds release at the first regular-session open strictly after documented settlement completion; dividend proceeds release at first regular-session open strictly after issuer pay date. June29 2026rollovertoJune30meansJuly1earliestmodeledrelease. Live/paper must useactualledgerbrokeravailability.",
+    "data_sha256": "0fc70abd061b30481605a071e682a840660a58e1f9aa9437fe992104125d6062",
+    "policy_sha256": "51221c8d47f8cad43c689fee7d15289e0b058902bc26ec28f25261d9b6e6f938",
+    "prior_failure": 3377,
+    "prior_inspection": "SPY #5/#6/C01; diagnostic, no fresh unseen claim",
+    "scope": "SPY open/close only; no adjusted close, high, low or volume",
+    "signal": "causal daily (close + issuer ex-date amount)/previous close - 1; full preceding calendar month",
+    "spy_source_receipt": "3726951207c75d417a45d4264e414178eb5d4234e7f6328e4cf363474dbe9040"
+  },
+  "receipt_sha256": "fdc29137e821327c18e7cc41de565bbe432156aaddafa70945cefd1292dcd55a",
+  "sessions": 5218,
+  "source_code_sha256": {
+    "src/tradingbot/research/c03_c04_sources.py": "905b9ca724b99ba6f37de0c51f7b93dfc5ce1f2ff3e675cdcc68d704e89d6099",
+    "src/tradingbot/research/c06_sources.py": "a303f18d1c8c96352bc40725d01f82a63d5416645fed9d4733701fa3940c052e"
+  },
+  "source_receipt": {
+    "all_consumed_finals_remain_consumed": true,
+    "audit_code_sha256": {
+      "src/tradingbot/data/c04_sources.py": "3496f79390a50c55e48bac95d729ff744d128f101756f327be1655fa1a3013ec",
+      "src/tradingbot/data/equity_source_repair.py": "543f44e40a792f58012dd1e352e390c6f6ad693183e49527553987ffcaab8c82",
+      "src/tradingbot/data/settlement_calendar.py": "2227baed293e8f7fd64c6e5a8424a11ec3f4bc026cf9e466618cb758dd901a46"
+    },
+    "builder_sha256": "629360465b946abe1fdd9f06fad3040cee576090f2bc4b20900438ac24a69c25",
+    "cash_is_counterfactual": true,
+    "data_path": "data/equities/source-repair/frozen-spy-source-v1/data.json",
+    "distribution_count": 83,
+    "distribution_reconciliations": [
+      {
+        "ex_date": "2006-03-17",
+        "issuer": "0.519470",
+        "yahoo": "0.519"
+      },
+      {
+        "ex_date": "2006-06-16",
+        "issuer": "0.555470",
+        "yahoo": "0.555"
+      },
+      {
+        "ex_date": "2006-09-15",
+        "issuer": "0.579340",
+        "yahoo": "0.579"
+      },
+      {
+        "ex_date": "2006-12-15",
+        "issuer": "0.792650",
+        "yahoo": "0.793"
+      },
+      {
+        "ex_date": "2007-03-16",
+        "issuer": "0.551270",
+        "yahoo": "0.551"
+      },
+      {
+        "ex_date": "2007-06-15",
+        "issuer": "0.655600",
+        "yahoo": "0.656"
+      },
+      {
+        "ex_date": "2007-09-21",
+        "issuer": "0.718720",
+        "yahoo": "0.719"
+      },
+      {
+        "ex_date": "2007-12-21",
+        "issuer": "0.775410",
+        "yahoo": "0.775"
+      },
+      {
+        "ex_date": "2008-03-20",
+        "issuer": "0.641950",
+        "yahoo": "0.642"
+      },
+      {
+        "ex_date": "2008-06-20",
+        "issuer": "0.669220",
+        "yahoo": "0.669"
+      },
+      {
+        "ex_date": "2008-09-19",
+        "issuer": "0.690920",
+        "yahoo": "0.691"
+      },
+      {
+        "ex_date": "2008-12-19",
+        "issuer": "0.719340",
+        "yahoo": "0.719"
+      },
+      {
+        "ex_date": "2009-03-20",
+        "issuer": "0.561430",
+        "yahoo": "0.561"
+      },
+      {
+        "ex_date": "2009-06-19",
+        "issuer": "0.518190",
+        "yahoo": "0.518"
+      },
+      {
+        "ex_date": "2009-09-18",
+        "issuer": "0.508330",
+        "yahoo": "0.508"
+      },
+      {
+        "ex_date": "2009-12-18",
+        "issuer": "0.590190",
+        "yahoo": "0.59"
+      },
+      {
+        "ex_date": "2010-03-19",
+        "issuer": "0.480380",
+        "yahoo": "0.48"
+      },
+      {
+        "ex_date": "2010-06-18",
+        "issuer": "0.531280",
+        "yahoo": "0.531"
+      },
+      {
+        "ex_date": "2010-09-17",
+        "issuer": "0.602130",
+        "yahoo": "0.602"
+      },
+      {
+        "ex_date": "2010-12-17",
+        "issuer": "0.652760",
+        "yahoo": "0.653"
+      },
+      {
+        "ex_date": "2011-03-18",
+        "issuer": "0.553320",
+        "yahoo": "0.553"
+      },
+      {
+        "ex_date": "2011-06-17",
+        "issuer": "0.627620",
+        "yahoo": "0.628"
+      },
+      {
+        "ex_date": "2011-09-16",
+        "issuer": "0.624954",
+        "yahoo": "0.625"
+      },
+      {
+        "ex_date": "2011-12-16",
+        "issuer": "0.770130",
+        "yahoo": "0.77"
+      },
+      {
+        "ex_date": "2012-03-16",
+        "issuer": "0.613890",
+        "yahoo": "0.614"
+      },
+      {
+        "ex_date": "2012-06-15",
+        "issuer": "0.688260",
+        "yahoo": "0.688"
+      },
+      {
+        "ex_date": "2012-09-21",
+        "issuer": "0.779450",
+        "yahoo": "0.779"
+      },
+      {
+        "ex_date": "2012-12-21",
+        "issuer": "1.021830",
+        "yahoo": "1.022"
+      },
+      {
+        "ex_date": "2013-03-15",
+        "issuer": "0.693720",
+        "yahoo": "0.694"
+      },
+      {
+        "ex_date": "2013-06-21",
+        "issuer": "0.839120",
+        "yahoo": "0.839"
+      },
+      {
+        "ex_date": "2013-09-20",
+        "issuer": "0.837950",
+        "yahoo": "0.838"
+      },
+      {
+        "ex_date": "2013-12-20",
+        "issuer": "0.980250",
+        "yahoo": "0.98"
+      },
+      {
+        "ex_date": "2014-03-21",
+        "issuer": "0.824610",
+        "yahoo": "0.825"
+      },
+      {
+        "ex_date": "2014-06-20",
+        "issuer": "0.936690",
+        "yahoo": "0.937"
+      },
+      {
+        "ex_date": "2014-09-19",
+        "issuer": "0.939190",
+        "yahoo": "0.939"
+      },
+      {
+        "ex_date": "2014-12-19",
+        "issuer": "1.134920",
+        "yahoo": "1.135"
+      },
+      {
+        "ex_date": "2015-03-20",
+        "issuer": "0.930810",
+        "yahoo": "0.931"
+      },
+      {
+        "ex_date": "2015-06-19",
+        "issuer": "1.030070",
+        "yahoo": "1.03"
+      },
+      {
+        "ex_date": "2015-09-18",
+        "issuer": "1.033430",
+        "yahoo": "1.033"
+      },
+      {
+        "ex_date": "2015-12-18",
+        "issuer": "1.211550",
+        "yahoo": "1.212"
+      },
+      {
+        "ex_date": "2016-03-18",
+        "issuer": "1.049604",
+        "yahoo": "1.05"
+      },
+      {
+        "ex_date": "2016-06-17",
+        "issuer": "1.078442",
+        "yahoo": "1.078"
+      },
+      {
+        "ex_date": "2016-09-16",
+        "issuer": "1.082068",
+        "yahoo": "1.082"
+      },
+      {
+        "ex_date": "2016-12-16",
+        "issuer": "1.328930",
+        "yahoo": "1.329"
+      },
+      {
+        "ex_date": "2017-03-17",
+        "issuer": "1.033118",
+        "yahoo": "1.033"
+      },
+      {
+        "ex_date": "2017-06-16",
+        "issuer": "1.183108",
+        "yahoo": "1.183"
+      },
+      {
+        "ex_date": "2017-09-15",
+        "issuer": "1.234574",
+        "yahoo": "1.235"
+      },
+      {
+        "ex_date": "2017-12-15",
+        "issuer": "1.351333",
+        "yahoo": "1.351"
+      },
+      {
+        "ex_date": "2018-03-16",
+        "issuer": "1.096775",
+        "yahoo": "1.097"
+      },
+      {
+        "ex_date": "2018-06-15",
+        "issuer": "1.245568",
+        "yahoo": "1.246"
+      },
+      {
+        "ex_date": "2018-09-21",
+        "issuer": "1.322611",
+        "yahoo": "1.323"
+      },
+      {
+        "ex_date": "2018-12-21",
+        "issuer": "1.435429",
+        "yahoo": "1.435"
+      },
+      {
+        "ex_date": "2019-03-15",
+        "issuer": "1.233119",
+        "yahoo": "1.233"
+      },
+      {
+        "ex_date": "2019-06-21",
+        "issuer": "1.431640",
+        "yahoo": "1.432"
+      },
+      {
+        "ex_date": "2019-09-20",
+        "issuer": "1.383619",
+        "yahoo": "1.384"
+      },
+      {
+        "ex_date": "2019-12-20",
+        "issuer": "1.569992",
+        "yahoo": "1.57"
+      },
+      {
+        "ex_date": "2020-03-20",
+        "issuer": "1.405559",
+        "yahoo": "1.406"
+      },
+      {
+        "ex_date": "2020-06-19",
+        "issuer": "1.366242",
+        "yahoo": "1.366"
+      },
+      {
+        "ex_date": "2020-09-18",
+        "issuer": "1.339224",
+        "yahoo": "1.339"
+      },
+      {
+        "ex_date": "2021-03-19",
+        "issuer": "1.277788",
+        "yahoo": "1.278"
+      },
+      {
+        "ex_date": "2021-06-18",
+        "issuer": "1.375875",
+        "yahoo": "1.376"
+      },
+      {
+        "ex_date": "2021-09-17",
+        "issuer": "1.428117",
+        "yahoo": "1.428"
+      },
+      {
+        "ex_date": "2021-12-17",
+        "issuer": "1.636431",
+        "yahoo": "1.633"
+      },
+      {
+        "ex_date": "2022-03-18",
+        "issuer": "1.366009",
+        "yahoo": "1.366"
+      },
+      {
+        "ex_date": "2022-06-17",
+        "issuer": "1.576871",
+        "yahoo": "1.577"
+      },
+      {
+        "ex_date": "2022-09-16",
+        "issuer": "1.596398",
+        "yahoo": "1.596"
+      },
+      {
+        "ex_date": "2022-12-16",
+        "issuer": "1.781400",
+        "yahoo": "1.781"
+      },
+      {
+        "ex_date": "2023-03-17",
+        "issuer": "1.506204",
+        "yahoo": "1.506"
+      },
+      {
+        "ex_date": "2023-06-16",
+        "issuer": "1.638367",
+        "yahoo": "1.638"
+      },
+      {
+        "ex_date": "2023-09-15",
+        "issuer": "1.583169",
+        "yahoo": "1.583"
+      },
+      {
+        "ex_date": "2023-12-15",
+        "issuer": "1.906073",
+        "yahoo": "1.906"
+      },
+      {
+        "ex_date": "2024-03-15",
+        "issuer": "1.594937",
+        "yahoo": "1.595"
+      },
+      {
+        "ex_date": "2024-06-21",
+        "issuer": "1.759024",
+        "yahoo": "1.759"
+      },
+      {
+        "ex_date": "2024-09-20",
+        "issuer": "1.745531",
+        "yahoo": "1.746"
+      },
+      {
+        "ex_date": "2024-12-20",
+        "issuer": "1.965548",
+        "yahoo": "1.966"
+      },
+      {
+        "ex_date": "2025-03-21",
+        "issuer": "1.695528",
+        "yahoo": "1.696"
+      },
+      {
+        "ex_date": "2025-06-20",
+        "issuer": "1.761117",
+        "yahoo": "1.761"
+      },
+      {
+        "ex_date": "2025-09-19",
+        "issuer": "1.831114",
+        "yahoo": "1.831"
+      },
+      {
+        "ex_date": "2025-12-19",
+        "issuer": "1.993368",
+        "yahoo": "1.993"
+      },
+      {
+        "ex_date": "2026-03-20",
+        "issuer": "1.796999",
+        "yahoo": "1.797"
+      },
+      {
+        "ex_date": "2026-06-18",
+        "issuer": "1.903516",
+        "yahoo": "1.904"
+      },
+      {
+        "ex_date": "2026-09-18",
+        "issuer": "1.888834",
+        "yahoo": "1.889"
+      }
+    ],
+    "excluded_fields": [
+      "high",
+      "low",
+      "volume",
+      "adj_close"
+    ],
+    "identity": {
+      "calendar_file_sha256": "11b791a4edf1af2ba3d1d78d37c9d1de4cdaa00116c755ce198674c1bdd693c7",
+      "data_end": "2026-10-01T00:00:00+00:00",
+      "data_sha256": "cab4b01dd76d2603b9e94d20890579fd63d1e1e6dc6030e77838f18a99ea86a5",
+      "data_start": "2006-01-01T00:00:00+00:00",
+      "diagnostics": [
+        {
+          "date": "2016-11-07",
+          "field": "open",
+          "path": "data/equities/source-repair/raw/alpaca/opening_trades_sip/session-diagnostic-20261001/7c8c16e4bf4b63a60d3702c9/page-00000000.parquet",
+          "primary_exchange": "P",
+          "primary_price": "211.47",
+          "request": {
+            "params": {
+              "asof": "-",
+              "end": "2016-11-07T14:30:10Z",
+              "feed": "sip",
+              "limit": 10000,
+              "sort": "asc",
+              "start": "2016-11-07T14:30:00Z"
+            },
+            "url": "https://data.alpaca.markets/v2/stocks/SPY/trades"
+          },
+          "response_sha256": "92cc850fbac99e459cb1b0d7c67265db73a264c0f5f822bb52f7064f572f3d35"
+        },
+        {
+          "date": "2020-03-12",
+          "field": "close",
+          "path": "data/equities/source-repair/raw/alpaca/closing_trades_sip/session-diagnostic-20261001/eb4e2bb1554e44052312858f/page-00000000.parquet",
+          "primary_exchange": "P",
+          "primary_price": "248.11",
+          "request": {
+            "params": {
+              "asof": "-",
+              "end": "2020-03-12T20:00:10Z",
+              "feed": "sip",
+              "limit": 10000,
+              "sort": "asc",
+              "start": "2020-03-12T20:00:00Z"
+            },
+            "url": "https://data.alpaca.markets/v2/stocks/SPY/trades"
+          },
+          "response_sha256": "01a8459413a8852e5dcc86ef681c614bb4da1b1f81f6bd48b949e430f8006f63"
+        },
+        {
+          "date": "2020-03-18",
+          "field": "close",
+          "path": "data/equities/source-repair/raw/alpaca/closing_trades_sip/session-diagnostic-20261001/ac58b3270a407fd4b08f646b/page-00000000.parquet",
+          "primary_exchange": "P",
+          "primary_price": "240",
+          "request": {
+            "params": {
+              "asof": "-",
+              "end": "2020-03-18T20:00:10Z",
+              "feed": "sip",
+              "limit": 10000,
+              "sort": "asc",
+              "start": "2020-03-18T20:00:00Z"
+            },
+            "url": "https://data.alpaca.markets/v2/stocks/SPY/trades"
+          },
+          "response_sha256": "a29852ae5db6a25322dfa4b4edc7f5c21ad400da5349a2305ed38a792dd2b68d"
+        },
+        {
+          "date": "2025-04-09",
+          "field": "close",
+          "path": "data/equities/source-repair/raw/alpaca/closing_trades_sip/session-diagnostic-20261001/36a01d60dc8e25bde5d57c81/page-00000000.parquet",
+          "primary_exchange": "P",
+          "primary_price": "548.62",
+          "request": {
+            "params": {
+              "asof": "-",
+              "end": "2025-04-09T20:00:10Z",
+              "feed": "sip",
+              "limit": 10000,
+              "sort": "asc",
+              "start": "2025-04-09T20:00:00Z"
+            },
+            "url": "https://data.alpaca.markets/v2/stocks/SPY/trades"
+          },
+          "response_sha256": "c71e71cd14aa4139cfa9304e4a58418271e4ffa02603ba705579df6c63f82617"
+        }
+      ],
+      "iex_source_sha256": "79505a70a68763c76fc977806592ab30579314e26c593c18d940fae4db16b2de",
+      "issuer_sha256": "51a16a450298a663b3fa088883a17c75f4464e87c911b0e83902a0ad46877c54",
+      "payment_evidence_sha256": "a6b22c0fee8bfa931e9300b002dac03bbbdbb200acba1f06eb4e5b75f7574f35",
+      "policies": {
+        "cash": "Conservative replay convention: sale proceeds release at the first regular-session open strictly after documented settlement completion; dividend proceeds release at first regular-session open strictly after issuer pay date. June29 2026rollovertoJune30meansJuly1earliestmodeledrelease. Live/paper must useactualledgerbrokeravailability.",
+        "contamination": "Prior C01/#5/#6 SPY outcome inspection remains disclosed. Source repair does not recycle a consumed holdout. This artifact admits no strategy; each eligible version still requires pre-consumption ledger guard.",
+        "dividends": "Issuer amounts and dates; explicithash-boundJune2006paydate correction fromJune16toJuly31 basedon contemporaneousprospectus. Ex-date entitlements are receivables, not immediatelyspendablecash. Pay dates are scheduled issuer dates, not proof of broker credit.",
+        "price_validation": "All IEX1554 and SIP2701 overlap opens/closes checked at the existing1percent bound; every breach reconciled with the fixed ten-second primary-exchange auction window. No independent source coverage is claimed before2016.",
+        "prices": "Yahoo non-dividend-adjusted open/close; SPY has no source split. Explicit2016-11-07 opening correction to primary ArcaO211.47; rawYahoo208.5500030517578 unchanged. Three disputed closes confirmed by primary closing prints without price replacement or tolerance widening.",
+        "risk": "No allocation, sizing, fee/slippage case, variant, date boundary or PRDsection6 change.",
+        "scope": "SPY open/close-only source bundle. Original OHLC archives retained; high, low, volume and adjusted-close values are not admitted by this artifact.",
+        "signals": "No signals calculated here. Future eligible strategies may calculate causal cash-distribution-aware returns from closes and issuer ex-date amounts; never combine adjusted closes with additional dividends."
+      },
+      "sip_source_sha256": "83501d8e59ae95b128481d26228722f00514f26b4cdb388462edb70908e4f5a9",
+      "yahoo_sha256": "782593bb64e78f69ef8f4a0f625e23c0201bf68fa26299b7dedcfec3dd32d8b2"
+    },
+    "identity_sha256": "c34d474b2a371a8f562805bb50e311502ace6808949b7b2147469e1ee4957c38",
+    "overlap_checks": [
+      {
+        "disagreements": [],
+        "field": "open",
+        "overlap_sessions": 1554,
+        "source": "iex",
+        "threshold": "0.01 unchanged"
+      },
+      {
+        "disagreements": [
+          {
+            "comparison": "542.955",
+            "date": "2025-04-09",
+            "relative_difference": "0.010433636520867291027801567",
+            "yahoo": "548.6199951171875"
+          }
+        ],
+        "field": "close",
+        "overlap_sessions": 1554,
+        "source": "iex",
+        "threshold": "0.01 unchanged"
+      },
+      {
+        "disagreements": [
+          {
+            "comparison": "211.45",
+            "date": "2016-11-07",
+            "relative_difference": "0.0137148117675204540080397257",
+            "yahoo": "208.5500030517578"
+          }
+        ],
+        "field": "open",
+        "overlap_sessions": 2701,
+        "source": "sip",
+        "threshold": "0.01 unchanged"
+      },
+      {
+        "disagreements": [
+          {
+            "comparison": "255.24",
+            "date": "2020-03-12",
+            "relative_difference": "0.0279344906348865381601629839",
+            "yahoo": "248.11000061035156"
+          },
+          {
+            "comparison": "235.69",
+            "date": "2020-03-18",
+            "relative_difference": "0.018286732572446858161143875",
+            "yahoo": "240.0"
+          }
+        ],
+        "field": "close",
+        "overlap_sessions": 2701,
+        "source": "sip",
+        "threshold": "0.01 unchanged"
+      }
+    ],
+    "prior_failed_trial": 3377,
+    "receipt_sha256": "3726951207c75d417a45d4264e414178eb5d4234e7f6328e4cf363474dbe9040",
+    "session_count": 5218,
+    "split": {
+      "data_end": "2026-10-01T00:00:00+00:00",
+      "data_start": "2006-01-01T00:00:00+00:00",
+      "dataset_key": "spy-source-amendment-v1:c34d474b2a371a8f562805bb50e311502ace6808949b7b2147469e1ee4957c38",
+      "holdout_start": "2020-07-10T14:24:00+00:00",
+      "split": "70/30 by elapsed UTC time; end exclusive"
+    },
+    "status": "SOURCE_VALIDATED_OPEN_CLOSE_ONLY_NOT_STRATEGY_ADMISSION",
+    "strategy_outcomes_inspected": false
+  },
+  "split": {
+    "data_end": "2026-10-01T00:00:00+00:00",
+    "data_start": "2006-01-01T00:00:00+00:00",
+    "dataset_key": "c04-readmission-v1:5bcfc84ee7b9a3d9798cc985ced59bf1255fc52861199e7be2befd43a8f243bb",
+    "holdout_start": "2020-07-10T14:24:00+00:00",
+    "split": "70/30 by elapsed UTC time; end exclusive"
+  },
+  "status": "SOURCE_ADMITTED_NO_STRATEGY_OUTCOMES",
+  "strategy_outcomes_inspected": false
+}

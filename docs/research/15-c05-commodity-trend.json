@@ -1,0 +1,517 @@
+{
+  "audit_git_commit": "5c6f2538ed440d931c463a48caf7a73193918a68",
+  "bead": "tradingbot-9ri",
+  "calendar_evidence": {
+    "cash_policy_proposal": "Treat proceeds as unavailable throughout scheduled settlement and any documented rollover; a future replay may release only at the next regular-session open after settlement completion. This conservative convention is not evidence of actual Alpaca account credit and must be frozen with the dataset before outcomes.",
+    "git_commit": "5c6f2538ed440d931c463a48caf7a73193918a68",
+    "path": "docs/research/13-equity-data-repair-calendar.json",
+    "sha256": "11b791a4edf1af2ba3d1d78d37c9d1de4cdaa00116c755ce198674c1bdd693c7",
+    "status": "SCHEDULE_RECONCILED_NOT_STRATEGY_ADMISSION"
+  },
+  "candidate": "C05",
+  "code_sha256": {
+    "src/tradingbot/backtest/holdout.py": "c76c34787df11643b27aaa48531119d39127b7b6d3dfa40730077f6ed08e71c0",
+    "src/tradingbot/data/alpaca_history.py": "cca690cbf30bd90e8dd66c2aa059b0428848d68fd1d6bff440059c22248c0be5",
+    "src/tradingbot/data/free_history.py": "fa941be2606c10e1c9c84ae9c237f20f2fb5455753b41464ad5f9ec594c02cdd",
+    "src/tradingbot/research/c05_commodity_trend.py": "d5d05b6ff9b9ececc78db30333d72954adc3ae47a6c4c3db9affe0e5e7d845a8",
+    "src/tradingbot/research/equity_data.py": "183bae1daca98b9805d2a7293be10296c9131517c380bd03325bbdf600e20833"
+  },
+  "coverage": {
+    "DBA": {
+      "coverage_ok": true,
+      "dividend_events": [
+        {
+          "amount": "0.45",
+          "ex_date": "2008-12-15"
+        },
+        {
+          "amount": "0.18",
+          "ex_date": "2018-12-24"
+        },
+        {
+          "amount": "0.257",
+          "ex_date": "2019-12-23"
+        },
+        {
+          "amount": "0.096",
+          "ex_date": "2022-12-19"
+        },
+        {
+          "amount": "0.96",
+          "ex_date": "2023-12-18"
+        },
+        {
+          "amount": "1.084",
+          "ex_date": "2024-12-23"
+        },
+        {
+          "amount": "0.912",
+          "ex_date": "2025-12-22"
+        }
+      ],
+      "duplicate_dates": 0,
+      "expected_sessions": 4716,
+      "extra_sessions": [],
+      "first_session": "2008-01-02",
+      "invalid_sessions": [],
+      "last_session": "2026-09-30",
+      "missing_sessions": [],
+      "null_rows": 0,
+      "null_volume": [],
+      "orphan_event_dates": [],
+      "sessions": 4716,
+      "split_events": [],
+      "unsupported_event_groups": [],
+      "vendor_dividend_field_names": [
+        "amount",
+        "date"
+      ]
+    },
+    "GLD": {
+      "coverage_ok": true,
+      "dividend_events": [],
+      "duplicate_dates": 0,
+      "expected_sessions": 4716,
+      "extra_sessions": [],
+      "first_session": "2008-01-02",
+      "invalid_sessions": [],
+      "last_session": "2026-09-30",
+      "missing_sessions": [],
+      "null_rows": 0,
+      "null_volume": [],
+      "orphan_event_dates": [],
+      "sessions": 4716,
+      "split_events": [],
+      "unsupported_event_groups": [],
+      "vendor_dividend_field_names": []
+    },
+    "SLV": {
+      "coverage_ok": true,
+      "dividend_events": [],
+      "duplicate_dates": 0,
+      "expected_sessions": 4716,
+      "extra_sessions": [],
+      "first_session": "2008-01-02",
+      "invalid_sessions": [],
+      "last_session": "2026-09-30",
+      "missing_sessions": [],
+      "null_rows": 0,
+      "null_volume": [],
+      "orphan_event_dates": [],
+      "sessions": 4716,
+      "split_events": [
+        {
+          "date": "2008-07-24",
+          "ratio": "10"
+        }
+      ],
+      "unsupported_event_groups": [],
+      "vendor_dividend_field_names": []
+    },
+    "UNG": {
+      "coverage_ok": true,
+      "dividend_events": [],
+      "duplicate_dates": 0,
+      "expected_sessions": 4716,
+      "extra_sessions": [],
+      "first_session": "2008-01-02",
+      "invalid_sessions": [],
+      "last_session": "2026-09-30",
+      "missing_sessions": [],
+      "null_rows": 0,
+      "null_volume": [],
+      "orphan_event_dates": [],
+      "sessions": 4716,
+      "split_events": [
+        {
+          "date": "2011-03-09",
+          "ratio": "0.5"
+        },
+        {
+          "date": "2012-02-22",
+          "ratio": "0.25"
+        },
+        {
+          "date": "2018-01-05",
+          "ratio": "0.25"
+        },
+        {
+          "date": "2024-01-24",
+          "ratio": "0.25"
+        }
+      ],
+      "unsupported_event_groups": [],
+      "vendor_dividend_field_names": []
+    },
+    "USO": {
+      "coverage_ok": true,
+      "dividend_events": [],
+      "duplicate_dates": 0,
+      "expected_sessions": 4716,
+      "extra_sessions": [],
+      "first_session": "2008-01-02",
+      "invalid_sessions": [],
+      "last_session": "2026-09-30",
+      "missing_sessions": [],
+      "null_rows": 0,
+      "null_volume": [],
+      "orphan_event_dates": [],
+      "sessions": 4716,
+      "split_events": [
+        {
+          "date": "2020-04-29",
+          "ratio": "0.125"
+        }
+      ],
+      "unsupported_event_groups": [],
+      "vendor_dividend_field_names": []
+    }
+  },
+  "data_failure_trial_id": 3518,
+  "documents": {
+    "alpaca-2021-fractionals": {
+      "bytes": 105739,
+      "content_type": "text/html; charset=utf-8",
+      "key": "alpaca-2021-fractionals",
+      "request_url": "https://alpaca.markets/blog/updated-terms-for-payments-in-fractional-shares/",
+      "response_url": "https://alpaca.markets/blog/updated-terms-for-payments-in-fractional-shares/",
+      "retrieved_at": "2026-10-01T08:00:22.066009+00:00",
+      "sha256": "27c16e7956f2aaf1382058835bce0131a6e20f0a4924616b1beb57fb8ac4d6a0",
+      "status_code": 200
+    },
+    "alpaca-corporate-actions": {
+      "bytes": 4322,
+      "content_type": "text/markdown; charset=utf-8",
+      "key": "alpaca-corporate-actions",
+      "request_url": "https://docs.alpaca.markets/us/docs/daily-processes-and-reconcilations.md",
+      "response_url": "https://docs.alpaca.markets/us/docs/daily-processes-and-reconcilations.md",
+      "retrieved_at": "2026-10-01T08:00:17.874410+00:00",
+      "sha256": "6a5284db71abfed60c9d1210c14b1be4dda81b182644a94e202824f2fcfa263e",
+      "status_code": 200
+    },
+    "dba-2008-annual": {
+      "bytes": 4819,
+      "content_type": "text/html",
+      "key": "dba-2008-annual",
+      "request_url": "https://www.sec.gov/Archives/edgar/data/1383082/000119312509035862/d10k.htm",
+      "response_url": "https://www.sec.gov/Archives/edgar/data/1383082/000119312509035862/d10k.htm",
+      "retrieved_at": "2026-10-01T08:00:35.600421+00:00",
+      "sha256": "5546165915c80683f9e0f9e48ca92c25bf726c32e270a62744dff41b72d7f727",
+      "status_code": 403
+    },
+    "dba-2024-qualified-notice": {
+      "bytes": 0,
+      "content_type": null,
+      "key": "dba-2024-qualified-notice",
+      "request_url": "https://www.invesco.com/us-rest/contentdetail?contentId=083ba7fa-a1de-4f70-9b8e-e77ff1228dac&dnsName=us",
+      "response_url": "https://www.invesco.com/us-rest/contentdetail?contentId=083ba7fa-a1de-4f70-9b8e-e77ff1228dac&dnsName=us",
+      "retrieved_at": "2026-10-01T08:01:43.385563+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status_code": 406
+    },
+    "dba-product": {
+      "bytes": 0,
+      "content_type": null,
+      "key": "dba-product",
+      "request_url": "https://www.invesco.com/us/en/financial-products/etfs/invesco-db-agriculture-fund.html",
+      "response_url": "https://www.invesco.com/us/en/financial-products/etfs/invesco-db-agriculture-fund.html",
+      "retrieved_at": "2026-10-01T08:00:27.407953+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status_code": 406
+    },
+    "slv-2008-split": {
+      "bytes": 4819,
+      "content_type": "text/html",
+      "key": "slv-2008-split",
+      "request_url": "https://www.sec.gov/Archives/edgar/data/1330568/000119312508149627/dex991.htm",
+      "response_url": "https://www.sec.gov/Archives/edgar/data/1330568/000119312508149627/dex991.htm",
+      "retrieved_at": "2026-10-01T07:59:39.773215+00:00",
+      "sha256": "4fc75dcce11595c871b67eb89a73b06ed741a807479cfd635325fd519b9e5d52",
+      "status_code": 403
+    },
+    "ung-2011-issuer-release": {
+      "bytes": 223797,
+      "content_type": "text/html; charset=UTF-8",
+      "key": "ung-2011-issuer-release",
+      "request_url": "https://www.prnewswire.com/news-releases/notice-of-reverse-unit-split-116350854.html",
+      "response_url": "https://www.prnewswire.com/news-releases/notice-of-reverse-unit-split-116350854.html",
+      "retrieved_at": "2026-10-01T08:01:31.211722+00:00",
+      "sha256": "064da32cd64db348570cc9f57789373df4629d5342bb78a50bf38ac59770e0d0",
+      "status_code": 200
+    },
+    "ung-2011-split": {
+      "bytes": 4819,
+      "content_type": "text/html",
+      "key": "ung-2011-split",
+      "request_url": "https://www.sec.gov/Archives/edgar/data/1376227/000114420411009344/v211742_ex99-1.htm",
+      "response_url": "https://www.sec.gov/Archives/edgar/data/1376227/000114420411009344/v211742_ex99-1.htm",
+      "retrieved_at": "2026-10-01T07:59:46.942178+00:00",
+      "sha256": "752fae9593331d68069aee7cbfd6d4c5cd05c156e97fcab4ed983614de97b2f9",
+      "status_code": 403
+    },
+    "ung-2012-split": {
+      "bytes": 224696,
+      "content_type": "text/html; charset=UTF-8",
+      "key": "ung-2012-split",
+      "request_url": "https://www.prnewswire.com/news-releases/notice-of-reverse-unit-split-138526579.html",
+      "response_url": "https://www.prnewswire.com/news-releases/notice-of-reverse-unit-split-138526579.html",
+      "retrieved_at": "2026-10-01T07:59:52.128799+00:00",
+      "sha256": "15f1a0b2140820bdfb3df689e2e0b11226811f8019c523c3259fbe4981dc8ed5",
+      "status_code": 200
+    },
+    "ung-2018-issuer-release": {
+      "bytes": 226820,
+      "content_type": "text/html; charset=UTF-8",
+      "key": "ung-2018-issuer-release",
+      "request_url": "https://www.prnewswire.com/news-releases/notice-of-reverse-share-split-300574185.html",
+      "response_url": "https://www.prnewswire.com/news-releases/notice-of-reverse-share-split-300574185.html",
+      "retrieved_at": "2026-10-01T08:01:37.317582+00:00",
+      "sha256": "f87ab9b9823b263a7ba87a2296be5222699f03c6afbd108baf018ec2064f1385",
+      "status_code": 200
+    },
+    "ung-2018-split": {
+      "bytes": 4819,
+      "content_type": "text/html",
+      "key": "ung-2018-split",
+      "request_url": "https://www.sec.gov/Archives/edgar/data/1376227/000117120017000526/i17565_ex99-1.htm",
+      "response_url": "https://www.sec.gov/Archives/edgar/data/1376227/000117120017000526/i17565_ex99-1.htm",
+      "retrieved_at": "2026-10-01T08:00:08.477189+00:00",
+      "sha256": "01c782c466b2b1814f36c2e30c24085af09f2301bc6d4c8dd205c2604b42c2ee",
+      "status_code": 403
+    },
+    "ung-2024-issuer-release": {
+      "bytes": 221399,
+      "content_type": "text/html; charset=UTF-8",
+      "key": "ung-2024-issuer-release",
+      "request_url": "https://www.prnewswire.com/news-releases/notice-of-reverse-share-split-302026652.html",
+      "response_url": "https://www.prnewswire.com/news-releases/notice-of-reverse-share-split-302026652.html",
+      "retrieved_at": "2026-10-01T08:01:40.625213+00:00",
+      "sha256": "0de166188d2f4dbb62c72812094c21bb3ae89337c04f26641f9a67ba417b9238",
+      "status_code": 200
+    },
+    "ung-2024-split": {
+      "bytes": 4819,
+      "content_type": "text/html",
+      "key": "ung-2024-split",
+      "request_url": "https://www.sec.gov/Archives/edgar/data/1376227/000117120024000010/i24014_ung-8k.htm",
+      "response_url": "https://www.sec.gov/Archives/edgar/data/1376227/000117120024000010/i24014_ung-8k.htm",
+      "retrieved_at": "2026-10-01T08:00:13.762361+00:00",
+      "sha256": "7c6ac3eec54f21de8211548717fca05d1a24c4d45af4e408ef4bb3133b659c3a",
+      "status_code": 403
+    },
+    "uscf-disclosures": {
+      "bytes": 364720,
+      "content_type": "text/html; charset=UTF-8",
+      "key": "uscf-disclosures",
+      "request_url": "https://www.uscfinvestments.com/disclosures",
+      "response_url": "https://www.uscfinvestments.com/disclosures",
+      "retrieved_at": "2026-10-01T08:01:46.539337+00:00",
+      "sha256": "8270342dc62f74adb1be8f006acd0cd9e68e8aaf2ea47ef686b457b2869d7684",
+      "status_code": 200
+    },
+    "uso-2020-issuer-release": {
+      "bytes": 227931,
+      "content_type": "text/html; charset=UTF-8",
+      "key": "uso-2020-issuer-release",
+      "request_url": "https://www.prnewswire.com/news-releases/uscf-announces-one-for-eight-reverse-share-split-for-the-united-states-oil-fund-nyse-arca-uso-301045001.html",
+      "response_url": "https://www.prnewswire.com/news-releases/uscf-announces-one-for-eight-reverse-share-split-for-the-united-states-oil-fund-nyse-arca-uso-301045001.html",
+      "retrieved_at": "2026-10-01T08:01:27.707190+00:00",
+      "sha256": "f6c45b79216bc0139f6819482a127bc68eb310915b4932ce2cee79cd0ec34364",
+      "status_code": 200
+    },
+    "uso-2020-split": {
+      "bytes": 4819,
+      "content_type": "text/html",
+      "key": "uso-2020-split",
+      "request_url": "https://www.sec.gov/Archives/edgar/data/1327068/000117120020000271/i20263_ex99-1.htm",
+      "response_url": "https://www.sec.gov/Archives/edgar/data/1327068/000117120020000271/i20263_ex99-1.htm",
+      "retrieved_at": "2026-10-01T07:59:43.582105+00:00",
+      "sha256": "e312f9bf16675c9eb7e6d1febed2974b8be9e5f943c4aad102466112ef6eb9bd",
+      "status_code": 403
+    },
+    "uso-occ-cash-settlement": {
+      "bytes": 5618,
+      "content_type": "text/html; charset=UTF-8",
+      "key": "uso-occ-cash-settlement",
+      "request_url": "https://infomemo.theocc.com/infomemos?number=46961",
+      "response_url": "https://infomemo.theocc.com/infomemos?number=46961",
+      "retrieved_at": "2026-10-01T08:03:27.380535+00:00",
+      "sha256": "b800c8d3382399bf079f52eae5e401efbe5cad249d10c17263195d485f945bc2",
+      "status_code": 403
+    },
+    "uso-occ-split": {
+      "bytes": 5618,
+      "content_type": "text/html; charset=UTF-8",
+      "key": "uso-occ-split",
+      "request_url": "https://infomemo.theocc.com/infomemos?number=46881",
+      "response_url": "https://infomemo.theocc.com/infomemos?number=46881",
+      "retrieved_at": "2026-10-01T08:03:44.425649+00:00",
+      "sha256": "e240c31c40679f203c5093c60a6ebb106986dcdf90040698ed8b56e66ec4057f",
+      "status_code": 403
+    }
+  },
+  "drawdown": null,
+  "failed_prerequisites": [
+    "Unresolved current-account treatment: retain fractional entitlement or issuer cash-in-lieu; no frozen action/cash amendment"
+  ],
+  "fees": null,
+  "final_holdout_attempts": 0,
+  "fractional_action_gate": {
+    "account_specific_fractional_treatment": null,
+    "broker_sources": [
+      "alpaca-corporate-actions",
+      "alpaca-2021-fractionals"
+    ],
+    "cash_credit_dates": null,
+    "conclusion": "Unresolved current-account treatment: retain fractional entitlement or issuer cash-in-lieu; no frozen action/cash amendment",
+    "issuer_cash_in_lieu": "USO 2020 and UNG 2011/2012/2018/2024"
+  },
+  "generated_at": "2026-10-01T08:09:44.059731+00:00",
+  "identity": {
+    "calendar_archive_sha256": "79505a70a68763c76fc977806592ab30579314e26c593c18d940fae4db16b2de",
+    "calendar_evidence_sha256": "11b791a4edf1af2ba3d1d78d37c9d1de4cdaa00116c755ce198674c1bdd693c7",
+    "document_sha256": {
+      "alpaca-2021-fractionals": "27c16e7956f2aaf1382058835bce0131a6e20f0a4924616b1beb57fb8ac4d6a0",
+      "alpaca-corporate-actions": "6a5284db71abfed60c9d1210c14b1be4dda81b182644a94e202824f2fcfa263e",
+      "dba-2008-annual": "5546165915c80683f9e0f9e48ca92c25bf726c32e270a62744dff41b72d7f727",
+      "dba-2024-qualified-notice": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "dba-product": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "slv-2008-split": "4fc75dcce11595c871b67eb89a73b06ed741a807479cfd635325fd519b9e5d52",
+      "ung-2011-issuer-release": "064da32cd64db348570cc9f57789373df4629d5342bb78a50bf38ac59770e0d0",
+      "ung-2011-split": "752fae9593331d68069aee7cbfd6d4c5cd05c156e97fcab4ed983614de97b2f9",
+      "ung-2012-split": "15f1a0b2140820bdfb3df689e2e0b11226811f8019c523c3259fbe4981dc8ed5",
+      "ung-2018-issuer-release": "f87ab9b9823b263a7ba87a2296be5222699f03c6afbd108baf018ec2064f1385",
+      "ung-2018-split": "01c782c466b2b1814f36c2e30c24085af09f2301bc6d4c8dd205c2604b42c2ee",
+      "ung-2024-issuer-release": "0de166188d2f4dbb62c72812094c21bb3ae89337c04f26641f9a67ba417b9238",
+      "ung-2024-split": "7c6ac3eec54f21de8211548717fca05d1a24c4d45af4e408ef4bb3133b659c3a",
+      "uscf-disclosures": "8270342dc62f74adb1be8f006acd0cd9e68e8aaf2ea47ef686b457b2869d7684",
+      "uso-2020-issuer-release": "f6c45b79216bc0139f6819482a127bc68eb310915b4932ce2cee79cd0ec34364",
+      "uso-2020-split": "e312f9bf16675c9eb7e6d1febed2974b8be9e5f943c4aad102466112ef6eb9bd",
+      "uso-occ-cash-settlement": "b800c8d3382399bf079f52eae5e401efbe5cad249d10c17263195d485f945bc2",
+      "uso-occ-split": "e240c31c40679f203c5093c60a6ebb106986dcdf90040698ed8b56e66ec4057f"
+    },
+    "end_exclusive": "2026-10-01T00:00:00+00:00",
+    "policy": {
+      "actions": "Issuer-reconciled splits, fractional cash-in-lieu and actual distribution pay dates required",
+      "costs_bp": [
+        5,
+        10
+      ],
+      "execution": "Next eligible regular-session open; frozen targets; settled cash; actual-share price basis",
+      "price_basis": "Yahoo OHLC split-adjusted, not dividend-adjusted; requires validated actual-share conversion",
+      "selection": "Best net training P&L at 10 bp; fixed variant order for ties; one final at 10 bp",
+      "settlement": "T+1 current-account counterfactual; no ex-date dividend cash or invented cash-in-lieu",
+      "signal": "Month-end completed total-return observations; equality is cash; warm-up inside partition",
+      "sizing": "Five 19% sleeves, inactive sleeves cash; 95% aggregate maximum; $140 initial cash",
+      "universe": [
+        "GLD",
+        "SLV",
+        "USO",
+        "UNG",
+        "DBA"
+      ],
+      "variants": [
+        "total_return_252_positive",
+        "total_return_126_positive",
+        "above_sma_200"
+      ]
+    },
+    "source_sha256": {
+      "DBA": "05cb6bbc6c8d33488ab89ecd1949bbd44d46c6e3ea02e576fdc1d109bbde7fa6",
+      "GLD": "228920f6a0d2aa0dc967bf0bac035ba2ddbb1f511c42d6464c08544f9762e390",
+      "SLV": "0c235e8c221881c8741138dc4ff6446ec0080865be7c1e9c99c58c27ddee824d",
+      "UNG": "5f08ea911a58652e0627d8fcf251c187d68c657729c7de05679850250e0b1846",
+      "USO": "7002e2bec824f516fc06e44a8813d3fbf51c15d75a6c9f8bc3908e44ef71927b"
+    },
+    "start": "2008-01-01T00:00:00+00:00"
+  },
+  "luck_p_value": null,
+  "planned_training_costs_bp": [
+    5,
+    10
+  ],
+  "planned_variants": [
+    "total_return_252_positive",
+    "total_return_126_positive",
+    "above_sma_200"
+  ],
+  "pnl": null,
+  "prior_inspection": "GLD source overlap with C03; incidental published fund performance in issuer/search pages; no candidate signals or outcomes computed",
+  "promotion": "none",
+  "regimes": null,
+  "remaining_checks": [
+    "Full issuer distribution amount/pay-date reconciliation for DBA",
+    "Complete five-fund action inventory and actual-share price conversions",
+    "Independent same-basis execution price checks for all five ETFs",
+    "Frozen settlement/corporate-action cash availability policy"
+  ],
+  "sources": {
+    "DBA": {
+      "bytes": 514847,
+      "end_exclusive": "2026-10-01T00:00:00+00:00",
+      "price_basis": "Yahoo OHLC split-adjusted, not dividend-adjusted; requires validated actual-share conversion",
+      "retrieved_at": "2026-10-01T07:57:30.646733+00:00",
+      "sha256": "05cb6bbc6c8d33488ab89ecd1949bbd44d46c6e3ea02e576fdc1d109bbde7fa6",
+      "start": "2008-01-01T00:00:00+00:00",
+      "status_code": 200,
+      "symbol": "DBA",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/DBA?period1=1199145600&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true"
+    },
+    "GLD": {
+      "bytes": 517875,
+      "end_exclusive": "2026-10-01T00:00:00+00:00",
+      "price_basis": "Yahoo OHLC split-adjusted, not dividend-adjusted; requires validated actual-share conversion",
+      "retrieved_at": "2026-10-01T07:57:17.269172+00:00",
+      "sha256": "228920f6a0d2aa0dc967bf0bac035ba2ddbb1f511c42d6464c08544f9762e390",
+      "start": "2008-01-01T00:00:00+00:00",
+      "status_code": 200,
+      "symbol": "GLD",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/GLD?period1=1199145600&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true"
+    },
+    "SLV": {
+      "bytes": 519323,
+      "end_exclusive": "2026-10-01T00:00:00+00:00",
+      "price_basis": "Yahoo OHLC split-adjusted, not dividend-adjusted; requires validated actual-share conversion",
+      "retrieved_at": "2026-10-01T07:57:22.432976+00:00",
+      "sha256": "0c235e8c221881c8741138dc4ff6446ec0080865be7c1e9c99c58c27ddee824d",
+      "start": "2008-01-01T00:00:00+00:00",
+      "status_code": 200,
+      "symbol": "SLV",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SLV?period1=1199145600&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true"
+    },
+    "UNG": {
+      "bytes": 505263,
+      "end_exclusive": "2026-10-01T00:00:00+00:00",
+      "price_basis": "Yahoo OHLC split-adjusted, not dividend-adjusted; requires validated actual-share conversion",
+      "retrieved_at": "2026-10-01T07:57:28.180259+00:00",
+      "sha256": "5f08ea911a58652e0627d8fcf251c187d68c657729c7de05679850250e0b1846",
+      "start": "2008-01-01T00:00:00+00:00",
+      "status_code": 200,
+      "symbol": "UNG",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/UNG?period1=1199145600&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true"
+    },
+    "USO": {
+      "bytes": 505555,
+      "end_exclusive": "2026-10-01T00:00:00+00:00",
+      "price_basis": "Yahoo OHLC split-adjusted, not dividend-adjusted; requires validated actual-share conversion",
+      "retrieved_at": "2026-10-01T07:57:25.522239+00:00",
+      "sha256": "7002e2bec824f516fc06e44a8813d3fbf51c15d75a6c9f8bc3908e44ef71927b",
+      "start": "2008-01-01T00:00:00+00:00",
+      "status_code": 200,
+      "symbol": "USO",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/USO?period1=1199145600&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true"
+    }
+  },
+  "split": {
+    "data_end": "2026-10-01T00:00:00+00:00",
+    "data_start": "2008-01-01T00:00:00+00:00",
+    "dataset_key": "sweep-c05-v1:b1b05eec3a9b1e84ce716a41ddf0b3f4857a072f4ed777dc5bc654ea079f4e3f",
+    "holdout_start": "2021-02-14T14:24:00+00:00",
+    "split": "70/30 by elapsed UTC time; end exclusive"
+  },
+  "status": "DATA_FAIL",
+  "strategy_id": 6032,
+  "strategy_outcomes_inspected": false,
+  "trades": null,
+  "training_cases_attempted": 0
+}

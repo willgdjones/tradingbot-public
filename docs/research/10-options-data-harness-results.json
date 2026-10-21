@@ -1,0 +1,313 @@
+{
+  "bead": "tradingbot-lwv",
+  "strategy_evaluation": false,
+  "reports": [
+    {
+      "directory": "data/options/raw/alpaca/options_bars/options-probe-20261001/cb0c85fc82f90e3cb80ed6d1",
+      "dataset": "bars",
+      "request": {
+        "params": {
+          "end": "2024-02-16T23:59:59.999999+00:00",
+          "limit": 10000,
+          "sort": "asc",
+          "start": "2024-02-01T00:00:00+00:00",
+          "symbols": "SPY240216C00490000,SPY240216P00490000",
+          "timeframe": "1Day"
+        },
+        "url": "https://data.alpaca.markets/v1beta1/options/bars"
+      },
+      "complete": true,
+      "pages": 1,
+      "records": 22,
+      "requested_symbols_with_no_records": [],
+      "retrieved_first": "2026-10-01T05:54:32.609484+00:00",
+      "retrieved_last": "2026-10-01T05:54:32.609484+00:00",
+      "response_set_sha256": "2dd2b806f8cbe1bf625eed52cda6d5ac643d41f96d06442dcf0ecc9366669aea",
+      "semantics": "provider historical options bars; feed unspecified by endpoint; not historical BBO and not eligible for executable-fill proof",
+      "executable_fill_evidence": false,
+      "historical_chain_membership": false,
+      "historical_bbo": false,
+      "symbols_returned": 2,
+      "observations_by_symbol": {
+        "SPY240216C00490000": {
+          "records": 11,
+          "first_observation": "2024-02-01T05:00:00Z",
+          "last_observation": "2024-02-16T05:00:00Z"
+        },
+        "SPY240216P00490000": {
+          "records": 11,
+          "first_observation": "2024-02-01T05:00:00Z",
+          "last_observation": "2024-02-16T05:00:00Z"
+        }
+      }
+    },
+    {
+      "directory": "data/options/raw/alpaca/options_chain/options-probe-20261001/5ff91e9fd87dc5f99254fa35",
+      "dataset": "chain",
+      "request": {
+        "params": {
+          "expiration_date_gte": "2026-10-01",
+          "expiration_date_lte": "2026-10-16",
+          "feed": "indicative",
+          "limit": 1000
+        },
+        "url": "https://data.alpaca.markets/v1beta1/options/snapshots/F"
+      },
+      "complete": true,
+      "pages": 1,
+      "records": 206,
+      "requested_symbols_with_no_records": [],
+      "retrieved_first": "2026-10-01T05:53:48.819605+00:00",
+      "retrieved_last": "2026-10-01T05:53:48.819605+00:00",
+      "response_set_sha256": "0e12aa54efd15e6f33d1fc91ef7f89dd6ae493772961557a2ca78d4379f1ca4a",
+      "semantics": "current indicative snapshot; modified quotes/delayed derived trades; available no earlier than retrieval; not executable or historical BBO",
+      "executable_fill_evidence": false,
+      "historical_chain_membership": false,
+      "historical_bbo": false,
+      "symbols_returned": 206,
+      "quote_time_first": "2026-09-29T13:31:14.813117154Z",
+      "quote_time_last": "2026-09-30T19:59:59.972003663Z"
+    },
+    {
+      "directory": "data/options/raw/alpaca/options_chain/options-probe-20261001/6c70f3b2f3a9f774bc4ce149",
+      "dataset": "chain",
+      "request": {
+        "params": {
+          "expiration_date_gte": "2026-10-16",
+          "expiration_date_lte": "2026-10-16",
+          "feed": "indicative",
+          "limit": 1000
+        },
+        "url": "https://data.alpaca.markets/v1beta1/options/snapshots/SPY"
+      },
+      "complete": true,
+      "pages": 1,
+      "records": 458,
+      "requested_symbols_with_no_records": [],
+      "retrieved_first": "2026-10-01T05:54:15.695062+00:00",
+      "retrieved_last": "2026-10-01T05:54:15.695062+00:00",
+      "response_set_sha256": "9375f3aa847e9c9b1bfa8d71237a1dc8b7efd078a3bdbb5c3bb512a50339cc60",
+      "semantics": "current indicative snapshot; modified quotes/delayed derived trades; available no earlier than retrieval; not executable or historical BBO",
+      "executable_fill_evidence": false,
+      "historical_chain_membership": false,
+      "historical_bbo": false,
+      "symbols_returned": 458,
+      "quote_time_first": "2026-09-30T19:59:52.608110185Z",
+      "quote_time_last": "2026-09-30T19:59:59.994750463Z"
+    },
+    {
+      "directory": "data/options/raw/alpaca/options_contracts/options-probe-20261001/279aa8f937df951ad3cde130",
+      "dataset": "contracts",
+      "request": {
+        "params": {
+          "expiration_date_gte": "2026-10-16",
+          "expiration_date_lte": "2026-10-16",
+          "limit": 1000,
+          "show_deliverables": true,
+          "status": "active",
+          "underlying_symbols": "SPY"
+        },
+        "url": "https://paper-api.alpaca.markets/v2/options/contracts"
+      },
+      "complete": true,
+      "pages": 1,
+      "records": 458,
+      "requested_symbols_with_no_records": [],
+      "retrieved_first": "2026-10-01T05:54:09.638585+00:00",
+      "retrieved_last": "2026-10-01T05:54:09.638585+00:00",
+      "response_set_sha256": "aad3f5a68453031c01a389a927b6cb7ce7c8bbd809534623535cbc664d4c1bf9",
+      "semantics": "current contract metadata snapshot, not historical chain membership",
+      "executable_fill_evidence": false,
+      "historical_chain_membership": false,
+      "historical_bbo": false,
+      "symbols_returned": 458,
+      "quote_time_first": null,
+      "quote_time_last": null
+    },
+    {
+      "directory": "data/options/raw/alpaca/options_contracts/options-probe-20261001/aae0b0a8b71906c11edfd0c6",
+      "dataset": "contracts",
+      "request": {
+        "params": {
+          "expiration_date_gte": "2024-02-16",
+          "expiration_date_lte": "2024-02-16",
+          "limit": 1000,
+          "show_deliverables": true,
+          "status": "inactive",
+          "underlying_symbols": "SPY"
+        },
+        "url": "https://paper-api.alpaca.markets/v2/options/contracts"
+      },
+      "complete": true,
+      "pages": 1,
+      "records": 362,
+      "requested_symbols_with_no_records": [],
+      "retrieved_first": "2026-10-01T05:54:24.451890+00:00",
+      "retrieved_last": "2026-10-01T05:54:24.451890+00:00",
+      "response_set_sha256": "02de0678d700f3a91b7aa5edb3671883111aa6f825a22b151da4677e468fae99",
+      "semantics": "current contract metadata snapshot, not historical chain membership",
+      "executable_fill_evidence": false,
+      "historical_chain_membership": false,
+      "historical_bbo": false,
+      "symbols_returned": 362,
+      "quote_time_first": null,
+      "quote_time_last": null
+    },
+    {
+      "directory": "data/options/raw/alpaca/options_contracts/options-probe-20261001/d8ad29a346997ffc81951e06",
+      "dataset": "contracts",
+      "request": {
+        "params": {
+          "expiration_date_gte": "2026-10-01",
+          "expiration_date_lte": "2026-10-16",
+          "limit": 1000,
+          "show_deliverables": true,
+          "status": "active",
+          "underlying_symbols": "F"
+        },
+        "url": "https://paper-api.alpaca.markets/v2/options/contracts"
+      },
+      "complete": true,
+      "pages": 1,
+      "records": 206,
+      "requested_symbols_with_no_records": [],
+      "retrieved_first": "2026-10-01T05:52:17.092641+00:00",
+      "retrieved_last": "2026-10-01T05:52:17.092641+00:00",
+      "response_set_sha256": "cc02e7c0a8137989ed59f2942aceb1b8917c1e798166c919f2f9aa8605a380ab",
+      "semantics": "current contract metadata snapshot, not historical chain membership",
+      "executable_fill_evidence": false,
+      "historical_chain_membership": false,
+      "historical_bbo": false,
+      "symbols_returned": 206,
+      "quote_time_first": null,
+      "quote_time_last": null
+    },
+    {
+      "directory": "data/options/raw/alpaca/options_quotes/options-probe-20261001/e77b58c75cc527f18f518cbb",
+      "dataset": "quotes",
+      "request": {
+        "params": {
+          "feed": "indicative",
+          "symbols": "F261009C00016000,F261009P00016000,SPY261016C00734000,SPY261016P00734000"
+        },
+        "url": "https://data.alpaca.markets/v1beta1/options/quotes/latest"
+      },
+      "complete": true,
+      "pages": 1,
+      "records": 4,
+      "requested_symbols_with_no_records": [],
+      "retrieved_first": "2026-10-01T05:57:24.162458+00:00",
+      "retrieved_last": "2026-10-01T05:57:24.162458+00:00",
+      "response_set_sha256": "51bf437818b43403ba564c41343b7db64d780b7bbe95d28719efe9d7d10c09d6",
+      "semantics": "current indicative snapshot; modified quotes/delayed derived trades; available no earlier than retrieval; not executable or historical BBO",
+      "executable_fill_evidence": false,
+      "historical_chain_membership": false,
+      "historical_bbo": false,
+      "symbols_returned": 4,
+      "observations_by_symbol": {
+        "SPY261016C00734000": {
+          "records": 1,
+          "first_observation": "2026-09-30T19:59:59.928574712Z",
+          "last_observation": "2026-09-30T19:59:59.928574712Z",
+          "quote": {
+            "t": "2026-09-30T19:59:59.928574712Z",
+            "bp": "30.58",
+            "ap": "33.97",
+            "bs": 1,
+            "as": 1,
+            "bx": "N",
+            "ax": "Q"
+          },
+          "quote_available_no_earlier_than": "2026-10-01T05:57:24.162458+00:00",
+          "quote_age_seconds_at_retrieval": 35844.233884
+        },
+        "SPY261016P00734000": {
+          "records": 1,
+          "first_observation": "2026-09-30T19:59:56.084317104Z",
+          "last_observation": "2026-09-30T19:59:56.084317104Z",
+          "quote": {
+            "t": "2026-09-30T19:59:56.084317104Z",
+            "bp": "1.85",
+            "ap": "1.86",
+            "bs": 98,
+            "as": 46,
+            "bx": "P",
+            "ax": "A"
+          },
+          "quote_available_no_earlier_than": "2026-10-01T05:57:24.162458+00:00",
+          "quote_age_seconds_at_retrieval": 35848.078141
+        },
+        "F261009C00016000": {
+          "records": 1,
+          "first_observation": "2026-09-30T13:48:57.570953207Z",
+          "last_observation": "2026-09-30T13:48:57.570953207Z",
+          "quote": {
+            "t": "2026-09-30T13:48:57.570953207Z",
+            "bp": 0,
+            "ap": "0.01",
+            "bs": 0,
+            "as": 50,
+            "bx": "?",
+            "ax": "B"
+          },
+          "quote_available_no_earlier_than": "2026-10-01T05:57:24.162458+00:00",
+          "quote_age_seconds_at_retrieval": 58106.591505
+        },
+        "F261009P00016000": {
+          "records": 1,
+          "first_observation": "2026-09-30T19:59:54.828758783Z",
+          "last_observation": "2026-09-30T19:59:54.828758783Z",
+          "quote": {
+            "t": "2026-09-30T19:59:54.828758783Z",
+            "bp": "3.7",
+            "ap": "4.18",
+            "bs": 14,
+            "as": 25,
+            "bx": "C",
+            "ax": "S"
+          },
+          "quote_available_no_earlier_than": "2026-10-01T05:57:24.162458+00:00",
+          "quote_age_seconds_at_retrieval": 35849.3337
+        }
+      }
+    },
+    {
+      "directory": "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc",
+      "dataset": "trades",
+      "request": {
+        "params": {
+          "end": "2024-02-16T23:59:59.999999+00:00",
+          "limit": 10000,
+          "sort": "asc",
+          "start": "2024-02-01T00:00:00+00:00",
+          "symbols": "SPY240216C00490000,SPY240216P00490000"
+        },
+        "url": "https://data.alpaca.markets/v1beta1/options/trades"
+      },
+      "complete": true,
+      "pages": 4,
+      "records": 37107,
+      "requested_symbols_with_no_records": [],
+      "retrieved_first": "2026-10-01T05:54:40.287652+00:00",
+      "retrieved_last": "2026-10-01T05:54:47.924293+00:00",
+      "response_set_sha256": "2ea27b4db43120d5d01e1c71dc372a85c87955902389cf61e3805f56a86b85c3",
+      "semantics": "provider historical options trades; feed unspecified by endpoint; not historical BBO and not eligible for executable-fill proof",
+      "executable_fill_evidence": false,
+      "historical_chain_membership": false,
+      "historical_bbo": false,
+      "symbols_returned": 2,
+      "observations_by_symbol": {
+        "SPY240216P00490000": {
+          "records": 30019,
+          "first_observation": "2024-02-01T14:30:20.153210112Z",
+          "last_observation": "2024-02-16T21:11:33.506765056Z"
+        },
+        "SPY240216C00490000": {
+          "records": 7088,
+          "first_observation": "2024-02-01T14:30:00.941197312Z",
+          "last_observation": "2024-02-16T21:13:30.624135168Z"
+        }
+      }
+    }
+  ]
+}

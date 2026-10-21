@@ -1,0 +1,24 @@
+{
+  "audit_git_commit": "d2e50182a052dee30174e7135a5a6908dc2b0804",
+  "c12_final_count": 0,
+  "candidate": "C12",
+  "idempotent": true,
+  "original_final_row_sha256": {
+    "3281": "a09aaa188834ca52331039bc009a3743903492ca21b0114ddfb124d648446a03",
+    "3282": "e67cc2bdc28d46992dee74291e9b51bbf6dc3b7f0d5309ffa6cfaed44021ed26",
+    "3319": "aaee7b43f69720005710201b206006e114dc1ddf0cf05af485b0c31a41473785",
+    "3910": "4341172f381076f1644eb40c4a6a21e7b389ebadb93cda1484ec4aa9a9b08743",
+    "3964": "c659876386d8089d5186f2f503ed03c0a8bfbed5412c7fdb45011710b59f13fa",
+    "3969": "eb74cb04946da3562ec10be2b9e458ff8773e2a7c2ff17ebcbee55dabe4eca52",
+    "4066": "a994873d691e51b1d441df2516fe243ff33153c8a6ba1eb82560f0a251b36f6d"
+  },
+  "original_final_rows_unchanged": true,
+  "performance_metrics_null": true,
+  "source_audit_sha256": "e8abfec2574b7f2a1e2b6f3b72bf14684ee8f48c0546401850986421ac17f45b",
+  "source_trial_count": 1,
+  "source_trial_id": 4591,
+  "source_trial_row_sha256": "be9b07a71c0d992f0ca24de9a4a8a863b446f91a07b11b9fe76a9d04fc0a09a9",
+  "source_trial_status": "failed",
+  "strategy_id": 7170,
+  "strategy_status": "idea"
+}

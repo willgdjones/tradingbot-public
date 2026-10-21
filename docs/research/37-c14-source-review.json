@@ -1,0 +1,33 @@
+{
+  "amendment21": "Full-period underlying and OCC deliverable-action inventory with timely notices and executable pre-action exits remains unadmitted; current metadata cannot substitute.",
+  "assignment": {
+    "constraint": "A DNE instruction for a long holder does not prevent assignment of our short put. No assumed no-early-assignment model, invented notification timestamp or guaranteed next-open liquidation.",
+    "missing": "Historical assignment/timing model and observations, full obligation/share booking, notification latency, executable liquidation, actions/entitlements and completed cash release.",
+    "model_admitted": false,
+    "observation": "Trading API documentation requires REST polling for assignment NTAs; paper NTAs become visible the following day even though positions/balances update immediately.",
+    "source_key": "trading-options",
+    "source_sha256": "c9ebf018a55611424ec1ed23b5c0c1eab5d77e30e0927c5dbdddd2a4ea0ccde3"
+  },
+  "candidate": "C14",
+  "capital": "Full strike * 100 plus all reserves must fit min(.95 * equity,140,settled cash) before premium. Necessary pre-reserve bound only; historical affordable/eligible counts remain null.",
+  "dataset_admitted": false,
+  "date": "2026-10-01",
+  "decision": "Hold at idea with real allocation 0; no outcomes, final use, forward activation, order or funding.",
+  "fees": {
+    "missing": "Exact single-short opening/closing, regulatory and assignment/stock-liquidation charges and reserves. Unspecified assignment fee is unknown, not zero.",
+    "model_admitted": false,
+    "revision": "2026-09-17",
+    "scope": "Reuse dated schedule and account/day per-type rounding review as current-fee historical counterfactual evidence only. C13 two-long-contract illustration is not a C14 fee model.",
+    "source_key": "fee-schedule",
+    "source_sha256": "7bc75e3cd86f5c1950f8ce1292049965280340a3cebe727ca7aee4a7d2d71b12"
+  },
+  "historical_execution": "Indicative current quotes and provider-unspecified bars/trades do not establish historical BBO, sizes, liquidation marks or full F/NOK/OPEN/PLUG/SNDL decision-time chains.",
+  "paper_capability": "Archived paper level 3 includes level-1 cash-secured puts; no live access, current cash adequacy, historical entitlement or permission change is established.",
+  "reconsideration": "Only materially new free historical execution/chain evidence permits reopening source admission; then complete all original assignment, fee, action, cash and execution prerequisites.",
+  "reused_audit": "docs/research/36-c13-source-audit.json",
+  "reused_audit_sha256": "caf6d5072974a8d6aefd75225b335b36ec9bf95ce348b4a14990e1304412de58",
+  "reused_source_review": "docs/research/36-c13-source-review.json",
+  "reused_source_review_sha256": "4f9e7e1aafc2a4d04c4b7cdb5198eaa72f6f33c98e0b85954161b595af42b374",
+  "reviewer": "OrangeCove",
+  "source_reuse": "All twelve original C13 captures retain their URL, retrieval time, raw/manifest/capture-code hashes; the eight-query options harness is re-audited locally. No new quote or account request."
+}

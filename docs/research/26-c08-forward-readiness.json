@@ -1,0 +1,554 @@
+{
+  "status": "FORWARD_READINESS_COMPLETE_HOLD",
+  "bead": "tradingbot-gx2",
+  "followup_bead": "tradingbot-5l3",
+  "decision": "hold_before_ordering_paper",
+  "ready_for_live": false,
+  "capture_receipt": {
+    "path": "data/forward/c08-readiness/20261001-bound-account/readiness.json",
+    "sha256": "893e5498666cf261c2ed300c4387bf2265e6e804000c74ab9799bb4f7997e54d",
+    "git_commit": "4e0ad4e87d831aedaa8c32dbffe5e7198b8ea789",
+    "code_sha256": "1abfda979671b9eef7ac8b470d42c42491c8deac290abf51b24ebab1121e0e8d"
+  },
+  "historical_evidence": {
+    "final_attempt_ids": [
+      3910
+    ],
+    "reactor_sha256": "599442d4d877d32c5a1a82edd0abcc1036cc2ff8b10f62ae00201dddd69f87cc",
+    "replayed": false,
+    "rows": [
+      {
+        "dataset_key": "c08-amendment21-8babfd45b7f419e4394210b4964c975e73f07b0b",
+        "fees_usd": "0.120000",
+        "final_holdout": false,
+        "full_row_sha256": "ac83c29c0e21aaddb2ad1b7da59fa8019c91998b54d51d81b64e1e1e4a58b204",
+        "holdout_start": "2024-02-15T12:00:00+00:00",
+        "luck_p_value": null,
+        "max_drawdown_usd": "54.801399",
+        "net_usd": "102.285220",
+        "round_trips": 3,
+        "strategy_id": 6446,
+        "trial_id": 3907
+      },
+      {
+        "dataset_key": "c08-amendment21-8babfd45b7f419e4394210b4964c975e73f07b0b",
+        "fees_usd": "0.160000",
+        "final_holdout": true,
+        "full_row_sha256": "7154a87033b13c2be2c1a86042787c6845cde809c6290ba27951f80ce50e7bbf",
+        "holdout_start": "2024-02-15T12:00:00+00:00",
+        "luck_p_value": null,
+        "max_drawdown_usd": "28.678680",
+        "net_usd": "7.668053",
+        "round_trips": 4,
+        "strategy_id": 6447,
+        "trial_id": 3910
+      }
+    ],
+    "slot_usd": "140",
+    "source_receipt": "63c4d561929099ae039a8a67a0deace1991b08d6e3dacef55c6c2de481b99ca5",
+    "strategy_version": "739e205972e6208c07c0fc0618946a1813a877e7c775d4d737237f54c9183376",
+    "target_weight": ".95",
+    "threshold": "-0.05"
+  },
+  "failed_preparation": {
+    "trial_id": 4176,
+    "status": "failed",
+    "mode": "paper",
+    "strategy_id": 6447,
+    "readiness_only": true,
+    "trade_count": 0,
+    "pnl_after_fees": null,
+    "drawdown": null,
+    "luck_p_value": null,
+    "strategy_status_unchanged": "backtest"
+  },
+  "broker_probes": {
+    "account": {
+      "audit": {
+        "connector_account_checks_pass": true,
+        "matches_existing_cash_book": true
+      },
+      "observed_at": "2026-10-01 18:42:40.932214+00:00",
+      "response": {
+        "account_blocked": false,
+        "currency": "USD",
+        "status": "ACTIVE",
+        "trade_suspended_by_user": false,
+        "trading_blocked": false
+      },
+      "started_at": "2026-10-01 18:42:40.645489+00:00"
+    },
+    "asset": {
+      "observed_at": "2026-10-01 18:42:41.009129+00:00",
+      "response": {
+        "exchange": "ARCA",
+        "fractionable": true,
+        "status": "active",
+        "symbol": "USO",
+        "tradable": true
+      },
+      "started_at": "2026-10-01 18:42:40.934213+00:00"
+    },
+    "calendar": {
+      "observed_at": "2026-10-01 18:42:41.088558+00:00",
+      "response": [
+        {
+          "close": "16:00",
+          "date": "2026-10-01",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-02"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-02",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-05"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-05",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-06"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-06",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-07"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-07",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-08"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-08",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-09"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-09",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-13"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-12",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-13"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-13",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-14"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-14",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-15"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-15",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-16"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-16",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-19"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-19",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-20"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-20",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-21"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-21",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-22"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-22",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-23"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-23",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-26"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-26",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-27"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-27",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-28"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-28",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-29"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-29",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-10-30"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-10-30",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-11-02"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-11-02",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-11-03"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-11-03",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-11-04"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-11-04",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-11-05"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-11-05",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-11-06"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-11-06",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-11-09"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-11-09",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-11-10"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-11-10",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-11-12"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-11-11",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-11-12"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-11-12",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-11-13"
+        },
+        {
+          "close": "16:00",
+          "date": "2026-11-13",
+          "open": "09:30",
+          "session_close": "2000",
+          "session_open": "0400",
+          "settlement_date": "2026-11-16"
+        }
+      ],
+      "started_at": "2026-10-01 18:42:41.010864+00:00"
+    },
+    "quote": {
+      "audit": {
+        "age_seconds": 1.915438,
+        "ask": "153.32",
+        "at_session_open": false,
+        "bid": "149.75",
+        "feed": "iex",
+        "fill_evidence": false,
+        "fresh": true,
+        "observed_at": "2026-10-01T18:42:41.378276+00:00",
+        "quote_at": "2026-10-01T18:42:39.462838+00:00"
+      },
+      "observed_at": "2026-10-01 18:42:41.378276+00:00",
+      "response": {
+        "ap": 153.32,
+        "as": 100,
+        "ax": "V",
+        "bp": 149.75,
+        "bs": 200,
+        "bx": "V",
+        "c": [
+          "R"
+        ],
+        "t": "2026-10-01T18:42:39.462838315Z",
+        "z": "B"
+      },
+      "started_at": "2026-10-01 18:42:41.090801+00:00"
+    }
+  },
+  "local_paper": {
+    "as_of": "2026-10-01T18:42:40.347521+00:00",
+    "available_under_existing_connector": "140",
+    "c08_settlement_fidelity": false,
+    "cash_scope": "one venue-wide book, not an independent $140 for each strategy",
+    "difference": "connector releases at NY settlement-date midnight; C08 first open after completion date",
+    "fills": 0,
+    "initial_virtual_cash": "140",
+    "open_positions": 0,
+    "orders": 0,
+    "reserved": "0",
+    "running_paper_trials": [
+      3298
+    ],
+    "unsettled": "0"
+  },
+  "corporate_actions": {
+    "advance_notice_guaranteed": false,
+    "exhausted": true,
+    "known_empty_is_no_future_guarantee": true,
+    "pages": [
+      {
+        "path": "data/forward/c08-readiness/20261001-bound-account/actions-0.json",
+        "sha256": "27ddcf842ebf0cce0b3c8559271bb727badeb4c991552734431d6807ff957c2e"
+      }
+    ],
+    "records": 0
+  },
+  "eia": {
+    "available_at": "2026-10-01T18:43:09.791729+00:00",
+    "earlier_session_backfill_permitted": false,
+    "earliest_eligible_open": "2026-10-02T09:30:00-04:00",
+    "fields": {
+      "commercial_current": "427.320",
+      "commercial_year_ago": "416.546",
+      "comparable_year_ago_date": "2025-09-26",
+      "first_release_vintage_verified": false,
+      "observation_date": "2026-09-25",
+      "previous_date": "2026-09-18",
+      "units_verified": true
+    },
+    "first_release_vintage_verified": false,
+    "layout": {
+      "earliest_calendar_date_for_execution": "2026-10-01",
+      "first_release_vintage_verified": false,
+      "notice": null,
+      "observation_date": "2026-09-25",
+      "release_date": "2026-09-30",
+      "release_weekday": "Wednesday",
+      "table1_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/csv/table1.csv",
+      "timestamp_precision": "date_only"
+    },
+    "new_publication_notice_review_required": true,
+    "pdf_check": {
+      "pdf_csv_rounding_tolerance": "0.05",
+      "pdf_current": "427.3",
+      "pdf_year_ago": "416.5",
+      "units": "million barrels"
+    },
+    "receipts": {
+      "eia-csv": {
+        "bytes": 6576,
+        "content_type": "application/octet-stream",
+        "key": "eia-csv",
+        "params": null,
+        "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/csv/table1.csv",
+        "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/csv/table1.csv",
+        "retrieved_at": "2026-10-01T18:43:09.559428+00:00",
+        "sha256": "9d2628089c0cec9f0fd9f19fc4a7c26ee3a7c6d30ebfb3e1f28f23a30e310a2d",
+        "status_code": 200
+      },
+      "eia-index": {
+        "bytes": 174451,
+        "content_type": "text/html; charset=UTF-8",
+        "key": "eia-index",
+        "params": null,
+        "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/",
+        "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/",
+        "retrieved_at": "2026-10-01T18:42:51.116999+00:00",
+        "sha256": "adfe6c17cfb85eaae4670157911df8063be59cae7640ab553eee0ec2e833a51e",
+        "status_code": 200
+      },
+      "eia-page": {
+        "bytes": 66323,
+        "content_type": "text/html; charset=UTF-8",
+        "key": "eia-page",
+        "params": null,
+        "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/wpsr_2026_09_30.php",
+        "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/wpsr_2026_09_30.php",
+        "retrieved_at": "2026-10-01T18:42:59.365658+00:00",
+        "sha256": "f6c801f52cd372c8a1409f7e9a1ddf6ad433317ea13d312b8706746b67f55bcd",
+        "status_code": 200
+      },
+      "eia-pdf": {
+        "bytes": 74231,
+        "content_type": "application/pdf",
+        "key": "eia-pdf",
+        "params": null,
+        "request_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/pdf/table1.pdf",
+        "response_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/pdf/table1.pdf",
+        "retrieved_at": "2026-10-01T18:43:09.731672+00:00",
+        "sha256": "1b2496a0acb9a2e72d5cf73de8f5e37ea7e2c3b2d00553e64036354d54fa6382",
+        "status_code": 200
+      }
+    },
+    "signal_admitted": false,
+    "signal_computed": false,
+    "source_url": "https://www.eia.gov/petroleum/supply/weekly/archive/2026/2026_09_30/wpsr_2026_09_30.php",
+    "validated_at": "2026-10-01T18:43:09.791729+00:00"
+  },
+  "source_document_receipts": {
+    "alpaca-action-data": {
+      "bytes": 47620,
+      "content_type": "text/markdown; charset=utf-8",
+      "key": "alpaca-action-data",
+      "params": null,
+      "request_url": "https://docs.alpaca.markets/us/reference/corporateactions-1.md",
+      "response_url": "https://docs.alpaca.markets/us/reference/corporateactions-1.md",
+      "retrieved_at": "2026-10-01T18:38:35.430296+00:00",
+      "sha256": "b3c31fadd5a7ae89f8c0e4bd7d575bc5180faceda69ea1f115b4c1710d835803",
+      "status_code": 200
+    },
+    "alpaca-action-processing": {
+      "bytes": 10346,
+      "content_type": "text/markdown; charset=utf-8",
+      "key": "alpaca-action-processing",
+      "params": null,
+      "request_url": "https://docs.alpaca.markets/us/docs/mandatory-corporate-actions.md",
+      "response_url": "https://docs.alpaca.markets/us/docs/mandatory-corporate-actions.md",
+      "retrieved_at": "2026-10-01T18:38:35.624339+00:00",
+      "sha256": "40c49ebabceb65192317107c902a9c30c7588d15aee6c1161121ddbf5c4b4e74",
+      "status_code": 200
+    },
+    "alpaca-paper-spec": {
+      "bytes": 6260,
+      "content_type": "text/markdown; charset=utf-8",
+      "key": "alpaca-paper-spec",
+      "params": null,
+      "request_url": "https://docs.alpaca.markets/us/docs/paper-trading.md",
+      "response_url": "https://docs.alpaca.markets/us/docs/paper-trading.md",
+      "retrieved_at": "2026-10-01T18:38:29.324228+00:00",
+      "sha256": "d43c9e2bdc1c4c9be8296a2a0b7b012441e6d293a44ea0d5c767d56d9709ade7",
+      "status_code": 200
+    }
+  },
+  "first_source_capture": {
+    "path": "data/forward/c08-readiness/20261001-initial/readiness.json",
+    "sha256": "6aac896e66bde67d9ec9f33fd2029417b31328c85f5fa1fd9b4a6791f8665d79",
+    "validated_at": "2026-10-01T18:29:21.685191+00:00",
+    "earliest_eligible_open": "2026-10-02T09:30:00-04:00"
+  },
+  "quote_spread_bps_at_capture": "235.5891378229451941795624773",
+  "quote_spread_is_single_venue_diagnostic": true,
+  "blockers": [
+    "C08 open/close runner and durable reactor state are not integrated",
+    "Conservative post-completion cash bridge is not integrated with actual broker activities",
+    "Issuer announcement review and dated action blackout watch are not operational",
+    "No C08 forward fills, fees, opening-slippage or forced-exit evidence yet"
+  ],
+  "probe_failures": [],
+  "validation": {
+    "affected_checks_passed": 91,
+    "readiness_checks_after_last_source_or_account_change": 27,
+    "original_training_final_rows_unchanged": true,
+    "one_original_final_only": true,
+    "preparation_has_no_orders_fills_or_return_metrics": true
+  },
+  "risk_limits_unchanged": true,
+  "orders_submitted": 0,
+  "paper_runner_activated": false,
+  "capital_accounts_keys_added": false
+}

@@ -1,0 +1,356 @@
+{
+  "all_dependencies_match_worktree_and_recorded_commit": true,
+  "all_eight_result_metrics_null": true,
+  "candidate": "C13",
+  "counts": {
+    "fills": 0,
+    "finals": 0,
+    "orders": 0,
+    "trials": 1
+  },
+  "implementation_commit": "8bafa91cb1fb9352d1128a0f69947a3f06a0a565",
+  "protected_prior_trial_count": 11,
+  "protected_trial_row_sha256": {
+    "3281": "e19dc440ffd8ec694baec744942f28c8b92c001f66504c7ee000a7d42977904d",
+    "3282": "e971081f3e94296a8ae8f57cb1e89d6f882af4c8a569370913b0112daa29d089",
+    "3298": "3fdb057e4493e4e7b9715a1cf56542c9efe1b6c265b855e2f49f7f90518569bb",
+    "3319": "42f14d40080fa395f972e9c27c6ea2643f5097c8126afd8151f99cfa004170b1",
+    "3910": "7154a87033b13c2be2c1a86042787c6845cde809c6290ba27951f80ce50e7bbf",
+    "3964": "6d706b862f22c103ffd09649262b6322ad0590ad09271ecdd1056bf59b893df2",
+    "3969": "ac7c05051233105d45513605d35c4cc53fbc02a31058ef3d11e154ebfe7c7588",
+    "4066": "b6243330257cc73f23b13eb5d6fcb6c65980fa3e022140556322b34ad8741cb9",
+    "5195": "55bd1c0ac38660e641e9121c19151aa9c92746b3ffaba8d0c8ffb76070b62a81",
+    "5311": "bb2454f6508eccc1f54e12b0d90f4480e6c7b57e24467bd5c3990ff3b022eb45",
+    "5314": "2e858bf9a9a8a03d0116bd8a4cd25d65eb2b0afbff067b453db047eb9859143c"
+  },
+  "risk_limits_unchanged": true,
+  "strategy_id": 10083,
+  "strategy_row": {
+    "allocation_usd": 0.0,
+    "config": {
+      "policy": {
+        "actions": "Amendment21 causal OCC/underlying notices, pre-action exit, no late restart",
+        "adverse_per_share_usd": [
+          "0.01",
+          "0.02"
+        ],
+        "contract": "One long call and one long put, same strike/expiry; standard American USD 100-share only",
+        "entry_cap": "min(35% of decision equity,49) including entry/exit fee reserves and settled cash",
+        "execution": "Original regular-open BBO <=30s age, adequate size, legs <=1s apart; adverse verified tick rounding; partial second leg fails winner eligibility",
+        "exit": "First regular open strictly after frozen announced release time, >=2 sessions before expiry; no later extension",
+        "final": "One eligible positive higher-cost training winner, fixed ordered ties; sole higher-cost final, failed/interrupted consumed",
+        "ordered_variants": [
+          {
+            "entry_sessions_before_earnings": 3
+          },
+          {
+            "entry_sessions_before_earnings": 5
+          }
+        ],
+        "risk": "Unchanged PRD6 and accepted PRD9; no activation, order, account, capital or key change",
+        "selection": "Original prior-close ATM rule and expiry selection; no cheaper strike/ticker fallback",
+        "source_gate": "Full historical chain/BBO, earnings chronology, underlying/actions, ticks, fees and settlement required before outcomes",
+        "universe": [
+          "F",
+          "NOK",
+          "SNAP"
+        ],
+        "virtual_slot_usd": "140"
+      },
+      "research_only": true,
+      "source_audit_only": true
+    },
+    "created_ts": "2026-10-01T22:05:20.430109+00:00",
+    "description": null,
+    "id": 10083,
+    "key": "batch2_c13_earnings_straddle",
+    "name": "C13 earnings-uncertainty long straddle",
+    "status": "idea",
+    "updated_ts": "2026-10-01T22:05:20.430109+00:00",
+    "venue_id": null
+  },
+  "trial_id": 5322,
+  "trial_row": {
+    "code_version": "c13-source-audit-v1",
+    "completed_ts": "2026-10-01T22:05:20.479637+00:00",
+    "created_ts": "2026-10-01T22:05:20.430109+00:00",
+    "data_end": "2026-10-01T00:00:00+00:00",
+    "data_start": "2024-02-01T00:00:00+00:00",
+    "dataset_key": "batch2-c13-v1:af2b599ab13a941c1ab76c12933cee376a7e9c1f25bc32a6fd04d9bcb9567f8a",
+    "fees_total": null,
+    "final_holdout": false,
+    "git_commit": "8bafa91cb1fb9352d1128a0f69947a3f06a0a565",
+    "holdout_start": "2025-12-13T02:24:00+00:00",
+    "id": 5322,
+    "luck_p_value": null,
+    "max_drawdown": null,
+    "metrics": {
+      "audit_result": "DATA_FAIL",
+      "failures": [
+        "The approved source bundle has no historical executable BBO, sizes or synchronized two-leg entry/exit/liquidation observations for F/NOK/SNAP.",
+        "Current active/inactive catalogs do not establish decision-time historical listings, delisted series, deliverable changes or penny-program membership."
+      ],
+      "final_holdout_attempts": 0,
+      "training_cases_attempted": 0
+    },
+    "mode": "backtest",
+    "notes": "Historical options BBO/chain admission failed. Four training cases unattempted; performance null, no final or promotion. Affordability is unknown, not zero. Decision/account-risk review: docs/research/36-c13-source-audit.md.",
+    "params": {
+      "_holdout": {
+        "data_end": "2026-10-01T00:00:00+00:00",
+        "data_start": "2024-02-01T00:00:00+00:00",
+        "dataset_key": "batch2-c13-v1:af2b599ab13a941c1ab76c12933cee376a7e9c1f25bc32a6fd04d9bcb9567f8a",
+        "holdout_start": "2025-12-13T02:24:00+00:00",
+        "split": "70/30 by elapsed UTC time; end exclusive"
+      },
+      "code_sha256": {
+        "src/tradingbot/backtest/holdout.py": "7ec9990e75cd0b88dfdfb81d90f89c6dd25de06ad47b57056eaad6e5ac5e577d",
+        "src/tradingbot/data/alpaca_history.py": "cca690cbf30bd90e8dd66c2aa059b0428848d68fd1d6bff440059c22248c0be5",
+        "src/tradingbot/data/alpaca_options.py": "2dddf6f96d3386214d56252a063404bfe814790bf2aa851dcd2f607d9c82a94f",
+        "src/tradingbot/data/archive.py": "c8d690f2933de81374b08c70d941650d24b1f33060e52757f0be5d2fe731b159",
+        "src/tradingbot/data/bulk_history.py": "9ce99aec867ae07e19d3104b9009f06307ae28c26f645de04415094a3cd7cc39",
+        "src/tradingbot/data/disk_budget.py": "1d075e6e13f81c36cfad782f480c72ce4969a5d449c7da0520fdec2dc0839507",
+        "src/tradingbot/data/free_history.py": "fa941be2606c10e1c9c84ae9c237f20f2fb5455753b41464ad5f9ec594c02cdd",
+        "src/tradingbot/data/transport.py": "fd25cb5d9a6fba763809cee0940c7ee88a6343b9a7b04bbff95062f653c8c2c0",
+        "src/tradingbot/db/models.py": "104e1203730b959b28b53e37ee054da69a02ede8a47654a107473b0487afa445",
+        "src/tradingbot/db/session.py": "cfc9e55018d5ed6cede897d4dddb4e70b4fecae405fa7def29d778f1efcf5df0",
+        "src/tradingbot/forward/c05_readiness.py": "d782db323d9a10dc9113e2da54df112dbf84f4791cf5bf7e2cf0181a285444fd",
+        "src/tradingbot/research/c13_capture.py": "d3a396bb4e98744552a84b4c4297c6f44ff27ce133817fd4df49d38f678d19a5",
+        "src/tradingbot/research/c13_source_audit.py": "12590cf257e80e7e99a69cf7a665e238f50e755085d683d4b66adceaf9b250f2",
+        "src/tradingbot/risk/limits.py": "876019289d37066e7f8a150527d29feb6277e6b8acb68b909e894d1b7aeff25f"
+      },
+      "identity": {
+        "candidate": {
+          "candidate": "C13",
+          "id": "tradingbot-0cm",
+          "max_final_attempts": 1,
+          "ordered_variants": [
+            {
+              "entry_sessions_before_earnings": 3
+            },
+            {
+              "entry_sessions_before_earnings": 5
+            }
+          ],
+          "real_allocation_usd": "0",
+          "selection_cost_case_index": 1,
+          "split": {
+            "data_end": "2026-10-01T00:00:00+00:00",
+            "data_start": "2024-02-01T00:00:00+00:00",
+            "dataset_key": "batch2-c13-v1",
+            "holdout_start": "2025-12-13T02:24:00+00:00",
+            "split": "70/30 by elapsed UTC time; end exclusive"
+          },
+          "status": "parked_alpha_source_feasibility_only",
+          "title": "Earnings-uncertainty long straddle: source and capital feasibility",
+          "training_cost_cases": [
+            {
+              "adverse_per_share_usd": "0.01"
+            },
+            {
+              "adverse_per_share_usd": "0.02"
+            }
+          ],
+          "universe": [
+            "F",
+            "NOK",
+            "SNAP"
+          ],
+          "virtual_cash_usd": "140"
+        },
+        "harness_files_sha256": {
+          "data/options/raw/alpaca/options_bars/options-probe-20261001/cb0c85fc82f90e3cb80ed6d1/manifest.json": "cb0c85fc82f90e3cb80ed6d16f27786615bafa62ce26d66d74bc7bcf07c425d2",
+          "data/options/raw/alpaca/options_bars/options-probe-20261001/cb0c85fc82f90e3cb80ed6d1/page-00000000.parquet": "32fcd75fefc7a9b3a320098f22b49b84c9ca87f615e7ffbf765abc78f2d2abb3",
+          "data/options/raw/alpaca/options_chain/options-probe-20261001/5ff91e9fd87dc5f99254fa35/manifest.json": "5ff91e9fd87dc5f99254fa35138a96897f08e4164344a12e635883724ecd6840",
+          "data/options/raw/alpaca/options_chain/options-probe-20261001/5ff91e9fd87dc5f99254fa35/page-00000000.parquet": "468bfdee51349e233a89b57541f4635095ce6f7850c75beb9b7c55fb73e8ba1a",
+          "data/options/raw/alpaca/options_chain/options-probe-20261001/6c70f3b2f3a9f774bc4ce149/manifest.json": "6c70f3b2f3a9f774bc4ce149395b0e1a0f3b038f3c982465549d78960e6a6c6d",
+          "data/options/raw/alpaca/options_chain/options-probe-20261001/6c70f3b2f3a9f774bc4ce149/page-00000000.parquet": "87ca687730064ff23e7d65ad887bd2243944551c48cefa3f03015fb5616b88d6",
+          "data/options/raw/alpaca/options_contracts/options-probe-20261001/279aa8f937df951ad3cde130/manifest.json": "279aa8f937df951ad3cde1300fa3d089f68732738dc17304595839c17d3ebaf3",
+          "data/options/raw/alpaca/options_contracts/options-probe-20261001/279aa8f937df951ad3cde130/page-00000000.parquet": "faea59c099f2174e7010c833a5d3887b3e23718d5e0345b56631d42e4a856d1f",
+          "data/options/raw/alpaca/options_contracts/options-probe-20261001/aae0b0a8b71906c11edfd0c6/manifest.json": "aae0b0a8b71906c11edfd0c6ca831d88deffe4457630b561ec623c0ecc4336ba",
+          "data/options/raw/alpaca/options_contracts/options-probe-20261001/aae0b0a8b71906c11edfd0c6/page-00000000.parquet": "f9d587e54d21d70db4b34f6e78a212d922e9bef560d07a10d2ec8944aaede27f",
+          "data/options/raw/alpaca/options_contracts/options-probe-20261001/d8ad29a346997ffc81951e06/manifest.json": "d8ad29a346997ffc81951e066b76d80b35d74bdbd27f8ed314b856f7804eaeeb",
+          "data/options/raw/alpaca/options_contracts/options-probe-20261001/d8ad29a346997ffc81951e06/page-00000000.parquet": "4f9505cd6a0b3dc4f877c1fdb1266ce692d6ffe78d077732e5720454277de035",
+          "data/options/raw/alpaca/options_quotes/options-probe-20261001/e77b58c75cc527f18f518cbb/manifest.json": "e77b58c75cc527f18f518cbb3bcdd8c613f328af6c352b6c44afec5820e05600",
+          "data/options/raw/alpaca/options_quotes/options-probe-20261001/e77b58c75cc527f18f518cbb/page-00000000.parquet": "b64bb45a2d9f26c1413ff452fe46476efd65d10acbbf019470c4957c2bc1ea22",
+          "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc/manifest.json": "3cd3009cef43d55c88e67cbc1422a0ec51104cd721a0575c3063aeaf28bd66b0",
+          "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc/page-00000000.parquet": "707a921fd826c6f16f93c9866e16ffdf2fad8fef275a4ddd157e7d090d10e648",
+          "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc/page-00000001.parquet": "ecf9433719cb6b085983fc77ecdeb19f17f7ee2ab2ab262edbbfe1547dff7c3f",
+          "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc/page-00000002.parquet": "cc5fc963dc3b6a3e8af9973e257f5e8bd43bb45e2fb603e450edcc8107fad300",
+          "data/options/raw/alpaca/options_trades/options-probe-20261001/3cd3009cef43d55c88e67cbc/page-00000003.parquet": "38319fbf3bf3eadd90787741e78646452876d15c64a519112ac8abd551e03965"
+        },
+        "policy": {
+          "actions": "Amendment21 causal OCC/underlying notices, pre-action exit, no late restart",
+          "adverse_per_share_usd": [
+            "0.01",
+            "0.02"
+          ],
+          "contract": "One long call and one long put, same strike/expiry; standard American USD 100-share only",
+          "entry_cap": "min(35% of decision equity,49) including entry/exit fee reserves and settled cash",
+          "execution": "Original regular-open BBO <=30s age, adequate size, legs <=1s apart; adverse verified tick rounding; partial second leg fails winner eligibility",
+          "exit": "First regular open strictly after frozen announced release time, >=2 sessions before expiry; no later extension",
+          "final": "One eligible positive higher-cost training winner, fixed ordered ties; sole higher-cost final, failed/interrupted consumed",
+          "ordered_variants": [
+            {
+              "entry_sessions_before_earnings": 3
+            },
+            {
+              "entry_sessions_before_earnings": 5
+            }
+          ],
+          "risk": "Unchanged PRD6 and accepted PRD9; no activation, order, account, capital or key change",
+          "selection": "Original prior-close ATM rule and expiry selection; no cheaper strike/ticker fallback",
+          "source_gate": "Full historical chain/BBO, earnings chronology, underlying/actions, ticks, fees and settlement required before outcomes",
+          "universe": [
+            "F",
+            "NOK",
+            "SNAP"
+          ],
+          "virtual_slot_usd": "140"
+        },
+        "proofs_sha256": {
+          "PRD.md": "f5a7892cce40ce18845ab020fe4282be7e7a9e0166a859f334f90fb94bb883f0",
+          "docs/research/10-options-data-harness-results.json": "1f52195da662ca762a1587eaa413f7986307804da7a5e102e42df50e2ae89473",
+          "docs/research/21-corporate-action-blackout.md": "e1e48e48b9740846418b1b2e1e2369c03c191817c3a197b96dd5e9fca3c20e22",
+          "docs/research/25-candidate-shortlist.md": "02650e13ee01afb2ce487943153c01ec12d3fdac14de2fce8c7c2bb1d87f2aa6",
+          "docs/research/36-c13-source-plan.md": "dd45656e0a0a30e209ca5ac15b2fac37c390177dbb20754293a30dfa1aad9e40",
+          "docs/research/36-c13-source-review.json": "4f9e7e1aafc2a4d04c4b7cdb5198eaa72f6f33c98e0b85954161b595af42b374",
+          "docs/research/batch2-sources/2026-10-01-candidate-index.json": "d1265a01f57c801445f5ac074b3fd180c271ef66a81e61315a308a8fe6482193",
+          "docs/research/batch2-sources/2026-10-01-sources.md": "9321900da24624fb517bcd79ff464225b592bbb5f0cedfa3646118b503d3bde2"
+        },
+        "sources": {
+          "automatic-exercise": {
+            "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+            "manifest_sha256": "a8406eb1ee5955254965871cac74750f67cb8e632670a6f90105e6e1e1bc9940",
+            "sha256": "c5cc6bff8e9a41b517227a601769697286aee2e6e8f7471b37381898532da27e"
+          },
+          "broker-options": {
+            "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+            "manifest_sha256": "0f6adb69ae11fb1614dc7a4fe2848ee9525a8f7fb986cdba796f936c75277b19",
+            "sha256": "77f438cc9fc8a29b986252c9e1a3e3e506feaf4e00fd2517afbd5d5409fb35f4"
+          },
+          "contracts": {
+            "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+            "manifest_sha256": "74f84a663b9d4c9b7a41bc15f7a16c75143867305823d569414e5d59cac0fe02",
+            "sha256": "c0f96dab512e941e42b77045f60306fc2ba5299016e74c00f1a72b1f2ef829ec"
+          },
+          "dne-support": {
+            "capture_code_sha256": "d3a396bb4e98744552a84b4c4297c6f44ff27ce133817fd4df49d38f678d19a5",
+            "manifest_sha256": "116bea8f23ea5ec0fe2deabac7c45ba8186b0dfc1980982105e631f0190085c8",
+            "sha256": "4bda77ebc5cfef55a0e832054d2708342d360c4f797138c5adf642b1c192c4ac"
+          },
+          "fee-schedule": {
+            "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+            "manifest_sha256": "e7595117e5ba11f3a09e3466eac7e90e882755c1fbc563190b183f1e50a40cd5",
+            "sha256": "7bc75e3cd86f5c1950f8ce1292049965280340a3cebe727ca7aee4a7d2d71b12"
+          },
+          "historical-data": {
+            "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+            "manifest_sha256": "a22faa8b062e329918d9b066cfcd5290506d79fd67925c2ece08d83b67b98e1d",
+            "sha256": "a75f6a614414990eae67ee0a3c6af7d6e2c134c4bb5acf653a396efce414d179"
+          },
+          "latest-quotes": {
+            "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+            "manifest_sha256": "efcb1a418c3daa1a21c80d843a5169f7d9c22135ab704815305462d55435a170",
+            "sha256": "4ca1625b562783a403fcba70248d23ee0a530128ae1de8c5b2d0ee7b8ad46e8e"
+          },
+          "option-fees": {
+            "capture_code_sha256": "d3a396bb4e98744552a84b4c4297c6f44ff27ce133817fd4df49d38f678d19a5",
+            "manifest_sha256": "16b3ae64be981bde7d7c20b0ead6de37d7a59e2b4cd195b448552306b7ba56ed",
+            "sha256": "3d43a922f8efa1602717fa589cddc1324c286f35968dedac58b54d13c6818dd8"
+          },
+          "option-ticks": {
+            "capture_code_sha256": "d3a396bb4e98744552a84b4c4297c6f44ff27ce133817fd4df49d38f678d19a5",
+            "manifest_sha256": "c6ed0fe9b75e55aca8754798d51d9dd429ebe59196f4bbafe5e1ead2d666e477",
+            "sha256": "4e1a5ffcfc8e0e6d7c13b88a0debcc0f556cd130c5f312ff5a5d7593f4a00118"
+          },
+          "paper-capability": {
+            "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+            "manifest_sha256": "49f3d51b311ac8870c11fb23dc21ffa036b722d479ad1bc28813de1cc7ec4985",
+            "sha256": "8764c40fcc8fe0c44c72519f19e0a514052cd2c4c5efdf0318d82c0ee3b46ebe"
+          },
+          "regulatory-fees": {
+            "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+            "manifest_sha256": "ebf33e59c9cc676e3979fdbb98f2153bfef89c57d73c180b0a8ad5be703154c6",
+            "sha256": "f201df68f825ec67150b7a8eeca83a9fcb35d8d5dff507a02ddc7408d751738a"
+          },
+          "trading-options": {
+            "capture_code_sha256": "08a76280b196a8822f2ae2d79676e275025b0abf260c2b3cad25d2b1fe59df17",
+            "manifest_sha256": "4d4a2d5f111bf19bb93f979f942f86986a6e1e2e173eed4f5078cbbf3920f136",
+            "sha256": "c9ebf018a55611424ec1ed23b5c0c1eab5d77e30e0927c5dbdddd2a4ea0ccde3"
+          }
+        }
+      },
+      "planned_configurations": [
+        {
+          "adverse_per_share_usd": "0.01",
+          "entry_sessions_before_earnings": 3,
+          "state": "unattempted_source_gate_failed"
+        },
+        {
+          "adverse_per_share_usd": "0.02",
+          "entry_sessions_before_earnings": 3,
+          "state": "unattempted_source_gate_failed"
+        },
+        {
+          "adverse_per_share_usd": "0.01",
+          "entry_sessions_before_earnings": 5,
+          "state": "unattempted_source_gate_failed"
+        },
+        {
+          "adverse_per_share_usd": "0.02",
+          "entry_sessions_before_earnings": 5,
+          "state": "unattempted_source_gate_failed"
+        }
+      ],
+      "policy": {
+        "actions": "Amendment21 causal OCC/underlying notices, pre-action exit, no late restart",
+        "adverse_per_share_usd": [
+          "0.01",
+          "0.02"
+        ],
+        "contract": "One long call and one long put, same strike/expiry; standard American USD 100-share only",
+        "entry_cap": "min(35% of decision equity,49) including entry/exit fee reserves and settled cash",
+        "execution": "Original regular-open BBO <=30s age, adequate size, legs <=1s apart; adverse verified tick rounding; partial second leg fails winner eligibility",
+        "exit": "First regular open strictly after frozen announced release time, >=2 sessions before expiry; no later extension",
+        "final": "One eligible positive higher-cost training winner, fixed ordered ties; sole higher-cost final, failed/interrupted consumed",
+        "ordered_variants": [
+          {
+            "entry_sessions_before_earnings": 3
+          },
+          {
+            "entry_sessions_before_earnings": 5
+          }
+        ],
+        "risk": "Unchanged PRD6 and accepted PRD9; no activation, order, account, capital or key change",
+        "selection": "Original prior-close ATM rule and expiry selection; no cheaper strike/ticker fallback",
+        "source_gate": "Full historical chain/BBO, earnings chronology, underlying/actions, ticks, fees and settlement required before outcomes",
+        "universe": [
+          "F",
+          "NOK",
+          "SNAP"
+        ],
+        "virtual_slot_usd": "140"
+      },
+      "source_audit_version": "56fc3204c3f383ac56ea8421976b8987cf949f65ce2e34f3e9397daaf460fdb7",
+      "stage": "data_quality_only_no_strategy_replay"
+    },
+    "pnl": null,
+    "pnl_after_fees": null,
+    "sharpe": null,
+    "status": "failed",
+    "strategy_id": 10083,
+    "strategy_version": null,
+    "trade_count": null,
+    "win_rate": null
+  },
+  "trial_row_sha256": "b96106243c7d84d80852a588135ee04b731e35006eadf2b96a7e1ad078ee56cd",
+  "venue_row_sha256": {
+    "1": "cd8dfd71cb2f2d415efbca06968f25c7df999d5779fbe3a49d812675db844fd8",
+    "2": "feec2a1d764c36b382a63cc4161bf5ec6e4c680e657c43ef1716eb1200558c7b",
+    "3": "24174e81f462d778b98c26e51c29637796a4b0aec23a89be62faa01b42c5d641",
+    "4": "63fc0989c05818975e0100812a2c336c7ef82a8ab2be80fd1ca0e97c2cc4c1cd"
+  },
+  "venues_unchanged": true,
+  "verified_by": "Stored-only SQL and git object checks; no replay or recorder rerun"
+}

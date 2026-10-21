@@ -1,0 +1,212 @@
+{
+  "capture_audit_path": "docs/research/08-history-capture.json",
+  "cohort_sha256": "35c64518ea06b437e6c4a614d43f1650333ac5e9c66da7800825e7b7700be0d9",
+  "driver_sha256": "9aa2bc0c8ed896f1f1574579cbe4bd02a5ff6da60d2e33a9de8144540f83b299",
+  "excluded_contracts": {
+    "kalshi:KXINX-26JAN19H1600-B6587": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B6612": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B6637": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B6662": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B6687": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B6712": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B6737": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B6762": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B6787": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B6812": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B6837": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B6862": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B6887": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B6912": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B6937": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B6962": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B6987": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B7012": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B7037": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B7062": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B7087": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B7112": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B7137": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B7162": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B7187": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B7212": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B7237": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-B7262": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-T6575": [
+      "documented_off_session_event"
+    ],
+    "kalshi:KXINX-26JAN19H1600-T7274.9999": [
+      "documented_off_session_event"
+    ],
+    "polymarket_intl:0x0b7dec03678e8b39c63146b6b9361fbc256e491f0943d168d65f8e20579bd5d8": [
+      "partition_boundary_crossing_or_outside"
+    ],
+    "polymarket_intl:0x0c04bf08e122f7724222f713dfbf4a363abd82380be030c9e214fdbc9dbb91bb": [
+      "partition_boundary_crossing_or_outside"
+    ],
+    "polymarket_intl:0x0edbc4a321c2c090c757f818f4fb42bb24d8f6634631507410d4e4d9ddb0e58c": [
+      "invalid_catalog_window"
+    ],
+    "polymarket_intl:0x10272d3b2ebb53cb6937d7e1ed585066eda8251c4794c841cfbd2a52f4e95d3a": [
+      "invalid_catalog_window"
+    ],
+    "polymarket_intl:0x18dffde10c6496789ba0b3d486e854ab23c7d78ec8d76de7eb6bb57e5031d1f9": [
+      "invalid_catalog_window"
+    ],
+    "polymarket_intl:0x1da3fb9d2d120324a7e8043c1206d5a126d8b150805c93dbd4961af7472ca317": [
+      "partition_boundary_crossing_or_outside"
+    ],
+    "polymarket_intl:0x234a63be3aab596099b098a239f7bf797bb6f8093db3f8914fb20232096e259b": [
+      "partition_boundary_crossing_or_outside"
+    ],
+    "polymarket_intl:0x24c708d5f1f5475507b2f3c463712540d5ba81755598b3b60b84c71a81aeb6be": [
+      "invalid_catalog_window"
+    ],
+    "polymarket_intl:0x25904897960de3601ac480e574fca271c96008a3eb8ef473f5cc8754ba74c6e4": [
+      "partition_boundary_crossing_or_outside"
+    ],
+    "polymarket_intl:0x2621e12bfdbe96fa3278bf273878706e8e17f3a5514052f3df52347cb9def97e": [
+      "invalid_catalog_window"
+    ],
+    "polymarket_intl:0x2c0a5ea9423649e842e015aacecb3557c77315125dfca3e2d276de66724ed55f": [
+      "invalid_catalog_window"
+    ],
+    "polymarket_intl:0x517866093f63a5ddd5322572c63963a41ca59fd0ba0f239f5d0ccce1a8a4e2a6": [
+      "partition_boundary_crossing_or_outside"
+    ],
+    "polymarket_intl:0x67e20c3831a808f61a08c873b3288c5da78c28defe068651cd9e1de74522088b": [
+      "invalid_catalog_window"
+    ],
+    "polymarket_intl:0xa268eb01f5ef6987f7aef678efc9a1518f73216a40332e0c8333f73a22235211": [
+      "invalid_catalog_window"
+    ],
+    "polymarket_intl:0xaf6f80c7f80dadadfe519ece43a16b48bcf9aa8af34a4578c95c4ca4f3cef748": [
+      "invalid_catalog_window"
+    ],
+    "polymarket_intl:0xb30a6799eb44672a4f9455270d2af3368b9f150c106c19d5952bc85fc56fef4f": [
+      "invalid_catalog_window"
+    ],
+    "polymarket_intl:0xb8d0dc4188a6b373f9cca50ab9b1bc06502b2e2e9ef7947b936b28ec76fd4ef9": [
+      "partition_boundary_crossing_or_outside"
+    ],
+    "polymarket_intl:0xbb472ad187518e923abcd6b71a63da2a92cb77d6106e00a7a79ee6495004e8ac": [
+      "invalid_catalog_window"
+    ],
+    "polymarket_intl:0xc43ed576db00fc6e4954b09376fd15bd77a100b9421df23cb26cf1d4bef660dd": [
+      "not_certified_settled",
+      "uncertified_payout_pair"
+    ],
+    "polymarket_intl:0xe4c8b7df5dd58cd76d5e5a3fdba3dcba4e8a47fe23c9aced62b8013f9c5701bc": [
+      "partition_boundary_crossing_or_outside"
+    ],
+    "polymarket_intl:0xe4facfadbabc98d3b73ce7732e90650a6b3db9a368c6b3db5df37a6dc6c4ec43": [
+      "partition_boundary_crossing_or_outside"
+    ],
+    "polymarket_intl:0xe8437c34bfc7c438401822366210b12df94bfc9575b1afd37251ac73f43f474c": [
+      "partition_boundary_crossing_or_outside"
+    ],
+    "polymarket_intl:0xeef7e171e81a19c98c4369b53ef7c642427218a1cbca7b2e9869e60a148570c6": [
+      "partition_boundary_crossing_or_outside"
+    ]
+  },
+  "exclusion_reason_contract_counts": {
+    "documented_off_session_event": 30,
+    "invalid_catalog_window": 11,
+    "not_certified_settled": 1,
+    "partition_boundary_crossing_or_outside": 11,
+    "uncertified_payout_pair": 1
+  },
+  "final_holdouts_consumed": 0,
+  "instrument_counts": {
+    "kalshi:KXBTC/final": 18180,
+    "kalshi:KXBTC/training": 27460,
+    "kalshi:KXHIGHNY/final": 1428,
+    "kalshi:KXHIGHNY/training": 3312,
+    "kalshi:KXINX/excluded": 60,
+    "kalshi:KXINX/final": 4980,
+    "kalshi:KXINX/training": 11340,
+    "polymarket_intl:pm-series:btc-up-or-down-daily/excluded": 2,
+    "polymarket_intl:pm-series:btc-up-or-down-daily/final": 236,
+    "polymarket_intl:pm-series:btc-up-or-down-daily/training": 550,
+    "polymarket_intl:pm-series:nyc-daily-weather/excluded": 44,
+    "polymarket_intl:pm-series:nyc-daily-weather/final": 2574,
+    "polymarket_intl:pm-series:nyc-daily-weather/training": 4602
+  },
+  "legacy": {
+    "full_rows_sha256": "02eb9673002552b9a11e6d3f9d15bbc97b5611c1b420b4bbe80fb4f9e9c9c704",
+    "trial_ids": [
+      1756,
+      1758,
+      1761,
+      1763,
+      1765,
+      1767
+    ]
+  },
+  "manifest_path": "data/history/longshot-replay-20261001/manifest.json",
+  "manifest_sha256": "bab264a33770ffc79c4b85dba020381eb9fd22f16ca1ceb83636d75c77f3c654",
+  "preflight_outcomes_inspected": false,
+  "preregistration_path": "docs/research/20-longshot-plan.md",
+  "split": {
+    "data_end": "2026-09-30T23:01:46.460587+00:00",
+    "data_start": "2025-08-29T15:15:47+00:00",
+    "dataset_key": "longshot:35c64518ea06b437e6c4a614d43f1650333ac5e9c66da7800825e7b7700be0d9",
+    "holdout_start": "2026-06-03T18:17:58.622410+00:00",
+    "split": "70/30 by elapsed UTC time; end exclusive"
+  }
+}

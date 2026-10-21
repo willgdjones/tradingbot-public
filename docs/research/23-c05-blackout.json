@@ -1,0 +1,2609 @@
+{
+  "bead": "tradingbot-qdd",
+  "candidate": "C05-amendment21",
+  "completed_at": "2026-10-01T17:01:58.282766+00:00",
+  "final": {
+    "artifact": "data/research/c05-blackout/runs/final.json",
+    "artifact_sha256": "0dea73b43ebea403aadc6dbb3e72f8bd996d6dadd44aeac8e0473931533543ad",
+    "cash_delay_skip_count": 2,
+    "cost_bp": 10,
+    "final_holdout": true,
+    "git_commit": "0ae082f589667073ee8409afb3b6e0f5115ae4e4",
+    "metrics": {
+      "average_exposure": "0.5101175291073111310140658232",
+      "benchmarks": {
+        "SPY": {
+          "basis": "same partition completed closes, reinvested distributions, no costs, full hypothetical exposure",
+          "max_drawdown": {
+            "dollars": "43.4500524196715897668394051",
+            "fraction": "0.2449719156533809416152290587"
+          },
+          "not_executable": true,
+          "total_return": "1.099315369530003123385476735"
+        },
+        "cash": {
+          "not_executable": true,
+          "total_return": "0"
+        },
+        "equal_weight_universe": {
+          "basis": "same partition completed closes, reinvested distributions, no costs, full hypothetical exposure",
+          "max_drawdown": {
+            "dollars": "84.6073702695448141055566218",
+            "fraction": "0.3672646728915455903240217537"
+          },
+          "not_executable": true,
+          "total_return": "1.02728393170968846279437708"
+        }
+      },
+      "blackout": {
+        "count": 2,
+        "forced_exit_cost": {
+          "adverse_reference_cost_usd": "0",
+          "fees_usd": "0",
+          "fills": 0
+        },
+        "reentry_cost": {
+          "adverse_reference_cost_usd": "0",
+          "fees_usd": "0",
+          "fills": 0
+        },
+        "symbol_sessions": [
+          {
+            "date": "2024-01-23",
+            "symbol": "UNG"
+          },
+          {
+            "date": "2024-01-24",
+            "symbol": "UNG"
+          }
+        ]
+      },
+      "calendar_regimes": {
+        "2008-2009": {
+          "covered": false,
+          "execution_net_usd_by_exit": "0",
+          "execution_round_trips_by_exit": 0,
+          "fees_usd_by_fill_date": "0",
+          "fills": 0,
+          "marked_drawdown": null,
+          "marked_net_usd": null,
+          "turnover_usd": "0"
+        },
+        "2010-2019": {
+          "covered": false,
+          "execution_net_usd_by_exit": "0",
+          "execution_round_trips_by_exit": 0,
+          "fees_usd_by_fill_date": "0",
+          "fills": 0,
+          "marked_drawdown": null,
+          "marked_net_usd": null,
+          "turnover_usd": "0"
+        },
+        "2020-2021": {
+          "covered": true,
+          "execution_net_usd_by_exit": "-0.4539673852092851999999999985",
+          "execution_round_trips_by_exit": 1,
+          "fees_usd_by_fill_date": "0.100000",
+          "fills": 14,
+          "marked_drawdown": {
+            "dollars": "17.0736191662452476009766450",
+            "fraction": "0.1110087143038886440207310895"
+          },
+          "marked_net_usd": "0.1306847724535340588401000",
+          "turnover_usd": "159.782671763688258940"
+        },
+        "2022": {
+          "covered": true,
+          "execution_net_usd_by_exit": "8.176203452642483239999999976",
+          "execution_round_trips_by_exit": 8,
+          "fees_usd_by_fill_date": "0.360000",
+          "fills": 33,
+          "marked_drawdown": {
+            "dollars": "23.1910043988388379782826500",
+            "fraction": "0.1396630288185848010424150212"
+          },
+          "marked_net_usd": "9.4382693636724630244353240",
+          "turnover_usd": "443.403357960932725300"
+        },
+        "2023-2026": {
+          "covered": true,
+          "execution_net_usd_by_exit": "36.99247671467798029000000001",
+          "execution_round_trips_by_exit": 25,
+          "fees_usd_by_fill_date": "1.280000",
+          "fills": 114,
+          "marked_drawdown": {
+            "dollars": "28.8780524197435573930686080",
+            "fraction": "0.1419538235350214995418776199"
+          },
+          "marked_net_usd": "37.5062906638055529867245760",
+          "turnover_usd": "1485.268554056339779450"
+        }
+      },
+      "complete_execution": true,
+      "dividend_entitlements": [
+        {
+          "amount": "0.96045",
+          "cash_amount": "1.178052881880150",
+          "cash_available_session": "2023-12-26",
+          "ex_date": "2023-12-18",
+          "execution_fill": false,
+          "payable_date": "2023-12-22",
+          "quantity_before_ex_open": "1.2265634670",
+          "recognized_at": "2023-12-18T09:30:00-05:00",
+          "record_date": "2023-12-19",
+          "source_receipt": "05774a5a2f1ccbfef2898471f32311874e67298fc2bbbb6efb39b1cda893cb7c",
+          "symbol": "DBA"
+        },
+        {
+          "amount": "1.08408",
+          "cash_amount": "1.182479155514400",
+          "cash_available_session": "2024-12-30",
+          "ex_date": "2024-12-23",
+          "execution_fill": false,
+          "payable_date": "2024-12-27",
+          "quantity_before_ex_open": "1.0907674300",
+          "recognized_at": "2024-12-23T09:30:00-05:00",
+          "record_date": "2024-12-23",
+          "source_receipt": "05774a5a2f1ccbfef2898471f32311874e67298fc2bbbb6efb39b1cda893cb7c",
+          "symbol": "DBA"
+        }
+      ],
+      "dividend_income_usd": "2.36053203739455",
+      "execution_gross_usd": "46.45471278211117832999999999",
+      "execution_ledger_net_usd": "44.714708",
+      "fees_usd": "1.74",
+      "fills": 161,
+      "halt_events": [],
+      "luck": {
+        "exit_month_clusters": 26,
+        "p_value": null,
+        "reason": "fewer than 30 completed trips/months or zero variation"
+      },
+      "marked_calendar_years": {
+        "2021": {
+          "covered": true,
+          "execution_net_usd_by_exit": "-0.4539673852092851999999999985",
+          "execution_round_trips_by_exit": 1,
+          "fees_usd_by_fill_date": "0.100000",
+          "fills": 14,
+          "marked_drawdown": {
+            "dollars": "17.0736191662452476009766450",
+            "fraction": "0.1110087143038886440207310895"
+          },
+          "marked_net_usd": "0.1306847724535340588401000",
+          "turnover_usd": "159.782671763688258940"
+        },
+        "2022": {
+          "covered": true,
+          "execution_net_usd_by_exit": "8.176203452642483239999999976",
+          "execution_round_trips_by_exit": 8,
+          "fees_usd_by_fill_date": "0.360000",
+          "fills": 33,
+          "marked_drawdown": {
+            "dollars": "23.1910043988388379782826500",
+            "fraction": "0.1396630288185848010424150212"
+          },
+          "marked_net_usd": "9.4382693636724630244353240",
+          "turnover_usd": "443.403357960932725300"
+        },
+        "2023": {
+          "covered": true,
+          "execution_net_usd_by_exit": "-7.107801749375376069999999992",
+          "execution_round_trips_by_exit": 5,
+          "fees_usd_by_fill_date": "0.340000",
+          "fills": 28,
+          "marked_drawdown": {
+            "dollars": "20.0193898978681094537529870",
+            "fraction": "0.1285253434977710684230011937"
+          },
+          "marked_net_usd": "-10.8027421004564412151830080",
+          "turnover_usd": "378.667402107436890030"
+        },
+        "2024": {
+          "covered": true,
+          "execution_net_usd_by_exit": "-9.365769582998350150000000001",
+          "execution_round_trips_by_exit": 5,
+          "fees_usd_by_fill_date": "0.320000",
+          "fills": 27,
+          "marked_drawdown": {
+            "dollars": "9.9824732444614537495187920",
+            "fraction": "0.06214451713092776670578403306"
+          },
+          "marked_net_usd": "13.2379181961597967924629840",
+          "turnover_usd": "268.420012631147064010"
+        },
+        "2025": {
+          "covered": true,
+          "execution_net_usd_by_exit": "0.420514381814009770000000011",
+          "execution_round_trips_by_exit": 8,
+          "fees_usd_by_fill_date": "0.340000",
+          "fills": 33,
+          "marked_drawdown": {
+            "dollars": "17.1766405384741691034432170",
+            "fraction": "0.1030071744217340705596498595"
+          },
+          "marked_net_usd": "24.0847052631079013353858800",
+          "turnover_usd": "478.582772503538633270"
+        },
+        "2026": {
+          "covered": true,
+          "execution_net_usd_by_exit": "53.04553366523769674000000000",
+          "execution_round_trips_by_exit": 7,
+          "fees_usd_by_fill_date": "0.280000",
+          "fills": 26,
+          "marked_drawdown": {
+            "dollars": "28.8780524197435573930686080",
+            "fraction": "0.1419538235350214995418776199"
+          },
+          "marked_net_usd": "10.9864093049942960740587200",
+          "turnover_usd": "359.598366814217192140"
+        }
+      },
+      "max_daily_close_drawdown": {
+        "dollars": "29.6297212011610631394864850",
+        "fraction": "0.1790705834767287435667372682"
+      },
+      "max_marked_drawdown": {
+        "dollars": "30.3068953024046611674498260",
+        "fraction": "0.1825170104419240393975705047"
+      },
+      "net_usd": "47.07524003739455",
+      "rejected_orders": 0,
+      "terminal_liquidation_fills": 2,
+      "trades": 34,
+      "turnover_usd": "2088.454583780960763690"
+    },
+    "skip_count": 71,
+    "status": "complete",
+    "strategy_id": 6473,
+    "strategy_version": "de0dad8696f3603a0ebcde01bbe2f9333e037db5a22d03b4e7c01f8336924320",
+    "trial_id": 3964,
+    "variant": "total_return_126_positive"
+  },
+  "final_trials": [
+    3964
+  ],
+  "followup_bead": "tradingbot-ggg",
+  "fresh_unseen_holdout_claim": false,
+  "ledger_audit_sha256": "fe03f5fca165d4206004451b4d81ec341b95b95eadc085ad899c03af91d28e76",
+  "limitations": [
+    "Prior C08 USO outcome overlap",
+    "Counterfactual historical 2026 fees/adverse opens/current T+1 cash",
+    "No actual forced split fills in either selected partition",
+    "Nullable real payable retained separately from model blackout endpoint",
+    "Primary extracted SEC/Invesco text where direct HTTP blocked",
+    "SIP independent overlap starts in 2016",
+    "Final luck p is null with 26 exit-month clusters"
+  ],
+  "new_keys_accounts_capital_or_venues": false,
+  "prior_failed_rows_sha256": "8b9696d0de5dc85d159e7eec01a75512f216486b2e753e54aa207a2f07630f5e",
+  "promotion": "hold in backtest; no paper/live or ready-for-live status",
+  "risk_limits_changed": false,
+  "selected": "total_return_126_positive",
+  "selection_sha256": "b1057c8458956574c15d7c696a587c47fa81c22d613476c08650031ec7145f0f",
+  "source_receipt": "05774a5a2f1ccbfef2898471f32311874e67298fc2bbbb6efb39b1cda893cb7c",
+  "split": {
+    "data_end": "2026-10-01T00:00:00+00:00",
+    "data_start": "2008-01-01T00:00:00+00:00",
+    "dataset_key": "c05-amendment21-dbef40b627a1322588095635a115805cba46e631",
+    "holdout_start": "2021-02-14T14:24:00+00:00",
+    "split": "70/30 by elapsed UTC time; end exclusive"
+  },
+  "status": "PROFITABLE_DIAGNOSTIC_HOLD_FOR_FORWARD_EVIDENCE",
+  "training": [
+    {
+      "artifact": "data/research/c05-blackout/runs/train-total_return_252_positive-5.json",
+      "artifact_sha256": "84474eb315e28252a6078e5235f1d4f21b6ee065a6f8bdcfbbfe2ddf0a03f306",
+      "cash_delay_skip_count": 3,
+      "cost_bp": 5,
+      "final_holdout": false,
+      "git_commit": "12e8e94b36a1f5fa706fff28a71b81fb31a7de41",
+      "metrics": {
+        "average_exposure": "0.2975195871306638657183380717",
+        "benchmarks": {
+          "SPY": {
+            "basis": "same partition completed closes, reinvested distributions, no costs, full hypothetical exposure",
+            "max_drawdown": {
+              "dollars": "140.9705646850353516655549555",
+              "fraction": "0.5188279351105156468279487037"
+            },
+            "not_executable": true,
+            "total_return": "2.533463971260030508749607939"
+          },
+          "cash": {
+            "not_executable": true,
+            "total_return": "0"
+          },
+          "equal_weight_universe": {
+            "basis": "same partition completed closes, reinvested distributions, no costs, full hypothetical exposure",
+            "max_drawdown": {
+              "dollars": "108.4553075392283558641460205",
+              "fraction": "0.5786616155053311676691405264"
+            },
+            "not_executable": true,
+            "total_return": "-0.1453180207769768865912729429"
+          }
+        },
+        "blackout": {
+          "count": 12,
+          "forced_exit_cost": {
+            "adverse_reference_cost_usd": "0",
+            "fees_usd": "0",
+            "fills": 0
+          },
+          "reentry_cost": {
+            "adverse_reference_cost_usd": "0",
+            "fees_usd": "0",
+            "fills": 0
+          },
+          "symbol_sessions": [
+            {
+              "date": "2008-07-23",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-24",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-25",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-28",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2011-03-08",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2011-03-09",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2012-02-21",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2012-02-22",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2018-01-04",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2018-01-05",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2020-04-28",
+              "symbol": "USO"
+            },
+            {
+              "date": "2020-04-29",
+              "symbol": "USO"
+            }
+          ]
+        },
+        "calendar_regimes": {
+          "2008-2009": {
+            "covered": true,
+            "execution_net_usd_by_exit": "1.509807907818983280000000000",
+            "execution_round_trips_by_exit": 2,
+            "fees_usd_by_fill_date": "0.230000",
+            "fills": 13,
+            "marked_drawdown": {
+              "dollars": "7.0056586052761828667619540",
+              "fraction": "0.04475686694487769739712294352"
+            },
+            "marked_net_usd": "10.0091827046195964758518610",
+            "turnover_usd": "203.343102321790859290"
+          },
+          "2010-2019": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-20.60484879518187144000000000",
+            "execution_round_trips_by_exit": 41,
+            "fees_usd_by_fill_date": "2.250000",
+            "fills": 185,
+            "marked_drawdown": {
+              "dollars": "76.0310175896695536038523357",
+              "fraction": "0.3878353259936135667885353824"
+            },
+            "marked_net_usd": "-22.3494609254141770039397610",
+            "turnover_usd": "2329.213070187002672950"
+          },
+          "2020-2021": {
+            "covered": true,
+            "execution_net_usd_by_exit": "18.48948097945132717000000000",
+            "execution_round_trips_by_exit": 5,
+            "fees_usd_by_fill_date": "0.340000",
+            "fills": 17,
+            "marked_drawdown": {
+              "dollars": "15.1319503871615335944977015",
+              "fraction": "0.1162242934148060924946868277"
+            },
+            "marked_net_usd": "11.7347182931389716680879000",
+            "turnover_usd": "194.023528191178544750"
+          },
+          "2022": {
+            "covered": false,
+            "execution_net_usd_by_exit": "0",
+            "execution_round_trips_by_exit": 0,
+            "fees_usd_by_fill_date": "0",
+            "fills": 0,
+            "marked_drawdown": null,
+            "marked_net_usd": null,
+            "turnover_usd": "0"
+          },
+          "2023-2026": {
+            "covered": false,
+            "execution_net_usd_by_exit": "0",
+            "execution_round_trips_by_exit": 0,
+            "fees_usd_by_fill_date": "0",
+            "fills": 0,
+            "marked_drawdown": null,
+            "marked_net_usd": null,
+            "turnover_usd": "0"
+          }
+        },
+        "complete_execution": true,
+        "dividend_entitlements": [],
+        "dividend_income_usd": "0",
+        "execution_gross_usd": "2.21444009208843900999999999",
+        "execution_ledger_net_usd": "-0.605561",
+        "fees_usd": "2.82",
+        "fills": 215,
+        "halt_events": [],
+        "luck": {
+          "block_months": 3,
+          "descriptive_only": true,
+          "draws": 10000,
+          "exit_month_clusters": 37,
+          "method": "one-sided centered circular block bootstrap",
+          "months": 158,
+          "p_value": 0.49205079492050796,
+          "seed": 6062026,
+          "selection_adjusted": false
+        },
+        "marked_calendar_years": {
+          "2008": {
+            "covered": true,
+            "execution_net_usd_by_exit": "0",
+            "execution_round_trips_by_exit": 0,
+            "fees_usd_by_fill_date": "0",
+            "fills": 0,
+            "marked_drawdown": {
+              "dollars": "0",
+              "fraction": "0"
+            },
+            "marked_net_usd": "0",
+            "turnover_usd": "0"
+          },
+          "2009": {
+            "covered": true,
+            "execution_net_usd_by_exit": "1.509807907818983280000000000",
+            "execution_round_trips_by_exit": 2,
+            "fees_usd_by_fill_date": "0.230000",
+            "fills": 13,
+            "marked_drawdown": {
+              "dollars": "7.0056586052761828667619540",
+              "fraction": "0.04475686694487769739712294352"
+            },
+            "marked_net_usd": "10.0091827046195964758518610",
+            "turnover_usd": "203.343102321790859290"
+          },
+          "2010": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-5.962690727788659780000000001",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.300000",
+            "fills": 24,
+            "marked_drawdown": {
+              "dollars": "14.6793757230824331674431015",
+              "fraction": "0.09423444750358850222187854577"
+            },
+            "marked_net_usd": "23.2250611661729068330649510",
+            "turnover_usd": "197.311124085383376990"
+          },
+          "2011": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-4.033574428769057640000000003",
+            "execution_round_trips_by_exit": 2,
+            "fees_usd_by_fill_date": "0.320000",
+            "fills": 35,
+            "marked_drawdown": {
+              "dollars": "29.7319603412985250170935092",
+              "fraction": "0.1516631619167418811294347950"
+            },
+            "marked_net_usd": "-5.6356192050420821322071600",
+            "turnover_usd": "191.737485068470245490"
+          },
+          "2012": {
+            "covered": true,
+            "execution_net_usd_by_exit": "31.17835803352053918999999999",
+            "execution_round_trips_by_exit": 8,
+            "fees_usd_by_fill_date": "0.220000",
+            "fills": 20,
+            "marked_drawdown": {
+              "dollars": "16.9052995166056610416848320",
+              "fraction": "0.09630935151719602353193088930"
+            },
+            "marked_net_usd": "-8.7337664617479058704515550",
+            "turnover_usd": "419.931887626101454150"
+          },
+          "2013": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-6.739359684114870199999999991",
+            "execution_round_trips_by_exit": 5,
+            "fees_usd_by_fill_date": "0.220000",
+            "fills": 15,
+            "marked_drawdown": {
+              "dollars": "8.5011838885378755261205874",
+              "fraction": "0.05201415155357980283629952396"
+            },
+            "marked_net_usd": "-2.1869353879538050957698158",
+            "turnover_usd": "260.434232562657810380"
+          },
+          "2014": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-4.083272829108751849999999995",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.270000",
+            "fills": 24,
+            "marked_drawdown": {
+              "dollars": "23.0809940015362542699041746",
+              "fraction": "0.1398775595539741607751075952"
+            },
+            "marked_net_usd": "-14.7503616559540812625443558",
+            "turnover_usd": "275.639844319099126910"
+          },
+          "2015": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-12.83465269580228598000000001",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.090000",
+            "fills": 4,
+            "marked_drawdown": {
+              "dollars": "3.8784373908726505979920460",
+              "fraction": "0.02719275068907947677508809973"
+            },
+            "marked_net_usd": "-2.8929455874019824779439254",
+            "turnover_usd": "97.537727444645105490"
+          },
+          "2016": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-2.813818959800081050",
+            "execution_round_trips_by_exit": 1,
+            "fees_usd_by_fill_date": "0.130000",
+            "fills": 9,
+            "marked_drawdown": {
+              "dollars": "11.6316187561847223503154240",
+              "fraction": "0.08276109684361732690783968624"
+            },
+            "marked_net_usd": "-9.2564253344440407313344080",
+            "turnover_usd": "112.581990347651557580"
+          },
+          "2017": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-13.22392242046591097000000000",
+            "execution_round_trips_by_exit": 10,
+            "fees_usd_by_fill_date": "0.300000",
+            "fills": 28,
+            "marked_drawdown": {
+              "dollars": "12.4725410160897729739190394",
+              "fraction": "0.09227133076663619060630499439"
+            },
+            "marked_net_usd": "-4.2776215664322626269984220",
+            "turnover_usd": "486.114407298947400350"
+          },
+          "2018": {
+            "covered": true,
+            "execution_net_usd_by_exit": "0.035073139207075570000000003",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.240000",
+            "fills": 15,
+            "marked_drawdown": {
+              "dollars": "12.5155912915037727573239600",
+              "fraction": "0.09217164101120894657415508721"
+            },
+            "marked_net_usd": "-2.2304545750244030901268500",
+            "turnover_usd": "135.605348939229341500"
+          },
+          "2019": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-2.126988222059868730000000004",
+            "execution_round_trips_by_exit": 2,
+            "fees_usd_by_fill_date": "0.160000",
+            "fills": 11,
+            "marked_drawdown": {
+              "dollars": "8.6608843310196730524319025",
+              "fraction": "0.06731119479476941811313002504"
+            },
+            "marked_net_usd": "4.3896076824134794503717800",
+            "turnover_usd": "152.319022494817254110"
+          },
+          "2020": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-4.631587404782340249999999995",
+            "execution_round_trips_by_exit": 2,
+            "fees_usd_by_fill_date": "0.250000",
+            "fills": 10,
+            "marked_drawdown": {
+              "dollars": "15.1319503871615335944977015",
+              "fraction": "0.1162242934148060924946868277"
+            },
+            "marked_net_usd": "11.8056325363440242631490000",
+            "turnover_usd": "84.336871623281961710"
+          },
+          "2021": {
+            "covered": true,
+            "execution_net_usd_by_exit": "23.12106838423366741999999999",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.090000",
+            "fills": 7,
+            "marked_drawdown": {
+              "dollars": "4.5265474083195569954052640",
+              "fraction": "0.03202111346190492844785589575"
+            },
+            "marked_net_usd": "-0.0709142432050525950611000",
+            "turnover_usd": "109.686656567896583040"
+          }
+        },
+        "max_daily_close_drawdown": {
+          "dollars": "80.9752781902723743522317072",
+          "fraction": "0.4130560711923824985318379037"
+        },
+        "max_marked_drawdown": {
+          "dollars": "80.9752781902723743522317072",
+          "fraction": "0.4130560711923824985318379037"
+        },
+        "net_usd": "-0.605561",
+        "rejected_orders": 0,
+        "terminal_liquidation_fills": 3,
+        "trades": 48,
+        "turnover_usd": "2726.579700699972076990"
+      },
+      "skip_count": 104,
+      "status": "complete",
+      "strategy_id": 6467,
+      "strategy_version": "c13b47a56a44dfbd16a2073ff6d9273a1ac5922094508cdc80c78bc9378a4a22",
+      "trial_id": 3954,
+      "variant": "total_return_252_positive"
+    },
+    {
+      "artifact": "data/research/c05-blackout/runs/train-total_return_252_positive-10.json",
+      "artifact_sha256": "4892b0bca15a8711b9417d5b8c540ace4e994c02f8f9ee874763af880c9ebaf5",
+      "cash_delay_skip_count": 3,
+      "cost_bp": 10,
+      "final_holdout": false,
+      "git_commit": "12e8e94b36a1f5fa706fff28a71b81fb31a7de41",
+      "metrics": {
+        "average_exposure": "0.2978569489362936911608450526",
+        "benchmarks": {
+          "SPY": {
+            "basis": "same partition completed closes, reinvested distributions, no costs, full hypothetical exposure",
+            "max_drawdown": {
+              "dollars": "140.9705646850353516655549555",
+              "fraction": "0.5188279351105156468279487037"
+            },
+            "not_executable": true,
+            "total_return": "2.533463971260030508749607939"
+          },
+          "cash": {
+            "not_executable": true,
+            "total_return": "0"
+          },
+          "equal_weight_universe": {
+            "basis": "same partition completed closes, reinvested distributions, no costs, full hypothetical exposure",
+            "max_drawdown": {
+              "dollars": "108.4553075392283558641460205",
+              "fraction": "0.5786616155053311676691405264"
+            },
+            "not_executable": true,
+            "total_return": "-0.1453180207769768865912729429"
+          }
+        },
+        "blackout": {
+          "count": 12,
+          "forced_exit_cost": {
+            "adverse_reference_cost_usd": "0",
+            "fees_usd": "0",
+            "fills": 0
+          },
+          "reentry_cost": {
+            "adverse_reference_cost_usd": "0",
+            "fees_usd": "0",
+            "fills": 0
+          },
+          "symbol_sessions": [
+            {
+              "date": "2008-07-23",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-24",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-25",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-28",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2011-03-08",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2011-03-09",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2012-02-21",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2012-02-22",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2018-01-04",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2018-01-05",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2020-04-28",
+              "symbol": "USO"
+            },
+            {
+              "date": "2020-04-29",
+              "symbol": "USO"
+            }
+          ]
+        },
+        "calendar_regimes": {
+          "2008-2009": {
+            "covered": true,
+            "execution_net_usd_by_exit": "1.454235342512539900000000000",
+            "execution_round_trips_by_exit": 2,
+            "fees_usd_by_fill_date": "0.230000",
+            "fills": 13,
+            "marked_drawdown": {
+              "dollars": "7.0051104740471179256536020",
+              "fraction": "0.04478561003499758609301399579"
+            },
+            "marked_net_usd": "9.8966287542553823418955970",
+            "turnover_usd": "203.190659180312936450"
+          },
+          "2010-2019": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-21.65915343743499552999999999",
+            "execution_round_trips_by_exit": 41,
+            "fees_usd_by_fill_date": "2.250000",
+            "fills": 185,
+            "marked_drawdown": {
+              "dollars": "76.8792157736791670922507732",
+              "fraction": "0.3926473131297634842865400101"
+            },
+            "marked_net_usd": "-23.4515374871141104992254570",
+            "turnover_usd": "2321.033620901786489700"
+          },
+          "2020-2021": {
+            "covered": true,
+            "execution_net_usd_by_exit": "18.16569595101860696999999999",
+            "execution_round_trips_by_exit": 5,
+            "fees_usd_by_fill_date": "0.340000",
+            "fills": 17,
+            "marked_drawdown": {
+              "dollars": "14.9997777263977371728577020",
+              "fraction": "0.1163164627989607493540823627"
+            },
+            "marked_net_usd": "11.5156865961947102773298600",
+            "turnover_usd": "192.024418827016313610"
+          },
+          "2022": {
+            "covered": false,
+            "execution_net_usd_by_exit": "0",
+            "execution_round_trips_by_exit": 0,
+            "fees_usd_by_fill_date": "0",
+            "fills": 0,
+            "marked_drawdown": null,
+            "marked_net_usd": null,
+            "turnover_usd": "0"
+          },
+          "2023-2026": {
+            "covered": false,
+            "execution_net_usd_by_exit": "0",
+            "execution_round_trips_by_exit": 0,
+            "fees_usd_by_fill_date": "0",
+            "fills": 0,
+            "marked_drawdown": null,
+            "marked_net_usd": null,
+            "turnover_usd": "0"
+          }
+        },
+        "complete_execution": true,
+        "dividend_entitlements": [],
+        "dividend_income_usd": "0",
+        "execution_gross_usd": "0.78077785609615134000000000",
+        "execution_ledger_net_usd": "-2.039224",
+        "fees_usd": "2.82",
+        "fills": 215,
+        "halt_events": [],
+        "luck": {
+          "block_months": 3,
+          "descriptive_only": true,
+          "draws": 10000,
+          "exit_month_clusters": 37,
+          "method": "one-sided centered circular block bootstrap",
+          "months": 158,
+          "p_value": 0.5049495050494951,
+          "seed": 6062026,
+          "selection_adjusted": false
+        },
+        "marked_calendar_years": {
+          "2008": {
+            "covered": true,
+            "execution_net_usd_by_exit": "0",
+            "execution_round_trips_by_exit": 0,
+            "fees_usd_by_fill_date": "0",
+            "fills": 0,
+            "marked_drawdown": {
+              "dollars": "0",
+              "fraction": "0"
+            },
+            "marked_net_usd": "0",
+            "turnover_usd": "0"
+          },
+          "2009": {
+            "covered": true,
+            "execution_net_usd_by_exit": "1.454235342512539900000000000",
+            "execution_round_trips_by_exit": 2,
+            "fees_usd_by_fill_date": "0.230000",
+            "fills": 13,
+            "marked_drawdown": {
+              "dollars": "7.0051104740471179256536020",
+              "fraction": "0.04478561003499758609301399579"
+            },
+            "marked_net_usd": "9.8966287542553823418955970",
+            "turnover_usd": "203.190659180312936450"
+          },
+          "2010": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-6.044399342555650010000000002",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.300000",
+            "fills": 24,
+            "marked_drawdown": {
+              "dollars": "14.6741969101602628297582925",
+              "fraction": "0.09427962287104049653442349388"
+            },
+            "marked_net_usd": "23.1234500653922621470212150",
+            "turnover_usd": "196.988461310782817210"
+          },
+          "2011": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-4.103130028413324630000000004",
+            "execution_round_trips_by_exit": 2,
+            "fees_usd_by_fill_date": "0.320000",
+            "fills": 35,
+            "marked_drawdown": {
+              "dollars": "29.8013547897785709859606967",
+              "fraction": "0.1522052711916389358814459866"
+            },
+            "marked_net_usd": "-5.7330539900144783033399725",
+            "turnover_usd": "191.660340606765894950"
+          },
+          "2012": {
+            "covered": true,
+            "execution_net_usd_by_exit": "30.89370165356069194000000001",
+            "execution_round_trips_by_exit": 8,
+            "fees_usd_by_fill_date": "0.220000",
+            "fills": 20,
+            "marked_drawdown": {
+              "dollars": "17.0662089501597419074103120",
+              "fraction": "0.09742393359365955650633106458"
+            },
+            "marked_net_usd": "-8.9397252053580470788707175",
+            "turnover_usd": "419.766229557326665110"
+          },
+          "2013": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-6.879984288727976009999999996",
+            "execution_round_trips_by_exit": 5,
+            "fees_usd_by_fill_date": "0.220000",
+            "fills": 15,
+            "marked_drawdown": {
+              "dollars": "8.5610847100708523497441062",
+              "fraction": "0.05257052389912175847279762016"
+            },
+            "marked_net_usd": "-2.3196326724755322737959658",
+            "turnover_usd": "260.303463215307263250"
+          },
+          "2014": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-4.196259954822001470000000000",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.270000",
+            "fills": 24,
+            "marked_drawdown": {
+              "dollars": "23.1564929618794330045267146",
+              "fraction": "0.1409440894393061104186771383"
+            },
+            "marked_net_usd": "-14.8885654407290088746448396",
+            "turnover_usd": "275.532637833998941690"
+          },
+          "2015": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-12.91921030532203388999999999",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.090000",
+            "fills": 4,
+            "marked_drawdown": {
+              "dollars": "3.8949604349739074564322060",
+              "fraction": "0.02746235041380172851326483561"
+            },
+            "marked_net_usd": "-2.9341484322902325182653166",
+            "turnover_usd": "97.192024522119483510"
+          },
+          "2016": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-2.820684589317072850",
+            "execution_round_trips_by_exit": 1,
+            "fees_usd_by_fill_date": "0.130000",
+            "fills": 9,
+            "marked_drawdown": {
+              "dollars": "11.5610756967200414687053470",
+              "fraction": "0.08278521595887924681360519090"
+            },
+            "marked_net_usd": "-9.2548318322022638654654840",
+            "turnover_usd": "111.849631348680117880"
+          },
+          "2017": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-13.38347378632642775999999999",
+            "execution_round_trips_by_exit": 10,
+            "fees_usd_by_fill_date": "0.300000",
+            "fills": 28,
+            "marked_drawdown": {
+              "dollars": "12.5355213558741874696358450",
+              "fraction": "0.09338821361096747293779944628"
+            },
+            "marked_net_usd": "-4.4910447774831542849301022",
+            "turnover_usd": "482.455571628301841690"
+          },
+          "2018": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-0.041692437158858750000000015",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.240000",
+            "fills": 15,
+            "marked_drawdown": {
+              "dollars": "12.4179713221790298443887525",
+              "fraction": "0.09226173255350468969309317919"
+            },
+            "marked_net_usd": "-2.2820106237509632805004238",
+            "turnover_usd": "134.396996794933905250"
+          },
+          "2019": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-2.164020358352342100000000000",
+            "execution_round_trips_by_exit": 2,
+            "fees_usd_by_fill_date": "0.160000",
+            "fills": 11,
+            "marked_drawdown": {
+              "dollars": "8.6065840255483954216248200",
+              "fraction": "0.06748965380418188561431661398"
+            },
+            "marked_net_usd": "4.2680254217973078335661500",
+            "turnover_usd": "150.888264083569559160"
+          },
+          "2020": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-4.636628868764904100000000006",
+            "execution_round_trips_by_exit": 2,
+            "fees_usd_by_fill_date": "0.250000",
+            "fills": 10,
+            "marked_drawdown": {
+              "dollars": "14.9997777263977371728577020",
+              "fraction": "0.1163164627989607493540823627"
+            },
+            "marked_net_usd": "11.6413293093680355206273600",
+            "turnover_usd": "83.484752869819609790"
+          },
+          "2021": {
+            "covered": true,
+            "execution_net_usd_by_exit": "22.80232481978351107000000000",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.090000",
+            "fills": 7,
+            "marked_drawdown": {
+              "dollars": "4.4821107778768022518453000",
+              "fraction": "0.03202383651916325180715112387"
+            },
+            "marked_net_usd": "-0.1256427131733252432975000",
+            "turnover_usd": "108.539665957196703820"
+          }
+        },
+        "max_daily_close_drawdown": {
+          "dollars": "81.8402860015713289268836602",
+          "fraction": "0.4179851222583632715519764179"
+        },
+        "max_marked_drawdown": {
+          "dollars": "81.8402860015713289268836602",
+          "fraction": "0.4179851222583632715519764179"
+        },
+        "net_usd": "-2.039224",
+        "rejected_orders": 0,
+        "terminal_liquidation_fills": 3,
+        "trades": 48,
+        "turnover_usd": "2716.248698909115739760"
+      },
+      "skip_count": 104,
+      "status": "complete",
+      "strategy_id": 6468,
+      "strategy_version": "713ba24267a19776fc5edf7a4c184e29c0459c94122922d4fdb6d92a0307239a",
+      "trial_id": 3955,
+      "variant": "total_return_252_positive"
+    },
+    {
+      "artifact": "data/research/c05-blackout/runs/train-total_return_126_positive-5.json",
+      "artifact_sha256": "3667bb3617e8d3ec893e22d21ffa1af34f104746f399c1646bf50ebbc864c8e4",
+      "cash_delay_skip_count": 0,
+      "cost_bp": 5,
+      "final_holdout": false,
+      "git_commit": "12e8e94b36a1f5fa706fff28a71b81fb31a7de41",
+      "metrics": {
+        "average_exposure": "0.3729849692255063904443327799",
+        "benchmarks": {
+          "SPY": {
+            "basis": "same partition completed closes, reinvested distributions, no costs, full hypothetical exposure",
+            "max_drawdown": {
+              "dollars": "140.9705646850353516655549555",
+              "fraction": "0.5188279351105156468279487037"
+            },
+            "not_executable": true,
+            "total_return": "2.533463971260030508749607939"
+          },
+          "cash": {
+            "not_executable": true,
+            "total_return": "0"
+          },
+          "equal_weight_universe": {
+            "basis": "same partition completed closes, reinvested distributions, no costs, full hypothetical exposure",
+            "max_drawdown": {
+              "dollars": "108.4553075392283558641460205",
+              "fraction": "0.5786616155053311676691405264"
+            },
+            "not_executable": true,
+            "total_return": "-0.1453180207769768865912729429"
+          }
+        },
+        "blackout": {
+          "count": 12,
+          "forced_exit_cost": {
+            "adverse_reference_cost_usd": "0",
+            "fees_usd": "0",
+            "fills": 0
+          },
+          "reentry_cost": {
+            "adverse_reference_cost_usd": "0",
+            "fees_usd": "0",
+            "fills": 0
+          },
+          "symbol_sessions": [
+            {
+              "date": "2008-07-23",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-24",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-25",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-28",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2011-03-08",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2011-03-09",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2012-02-21",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2012-02-22",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2018-01-04",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2018-01-05",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2020-04-28",
+              "symbol": "USO"
+            },
+            {
+              "date": "2020-04-29",
+              "symbol": "USO"
+            }
+          ]
+        },
+        "calendar_regimes": {
+          "2008-2009": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-17.72399626374885212000000000",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.260000",
+            "fills": 21,
+            "marked_drawdown": {
+              "dollars": "23.9035465153039304159449361",
+              "fraction": "0.1691346289043334366812564077"
+            },
+            "marked_net_usd": "-4.3695877016019154164779390",
+            "turnover_usd": "281.145485375055413930"
+          },
+          "2010-2019": {
+            "covered": true,
+            "execution_net_usd_by_exit": "19.29751602910720300000000001",
+            "execution_round_trips_by_exit": 45,
+            "fees_usd_by_fill_date": "2.390000",
+            "fills": 195,
+            "marked_drawdown": {
+              "dollars": "48.6311035130556000438037902",
+              "fraction": "0.2633341696033653953582650171"
+            },
+            "marked_net_usd": "16.6884506983505391870627190",
+            "turnover_usd": "2632.111333049028562220"
+          },
+          "2020-2021": {
+            "covered": true,
+            "execution_net_usd_by_exit": "30.72785779981474861999999996",
+            "execution_round_trips_by_exit": 8,
+            "fees_usd_by_fill_date": "0.410000",
+            "fills": 34,
+            "marked_drawdown": {
+              "dollars": "14.9174487097375388038244500",
+              "fraction": "0.09634072773632030499725324762"
+            },
+            "marked_net_usd": "19.9825145606081601794152200",
+            "turnover_usd": "406.761212892370685230"
+          },
+          "2022": {
+            "covered": false,
+            "execution_net_usd_by_exit": "0",
+            "execution_round_trips_by_exit": 0,
+            "fees_usd_by_fill_date": "0",
+            "fills": 0,
+            "marked_drawdown": null,
+            "marked_net_usd": null,
+            "turnover_usd": "0"
+          },
+          "2023-2026": {
+            "covered": false,
+            "execution_net_usd_by_exit": "0",
+            "execution_round_trips_by_exit": 0,
+            "fees_usd_by_fill_date": "0",
+            "fills": 0,
+            "marked_drawdown": null,
+            "marked_net_usd": null,
+            "turnover_usd": "0"
+          }
+        },
+        "complete_execution": true,
+        "dividend_entitlements": [],
+        "dividend_income_usd": "0",
+        "execution_gross_usd": "35.36137756517309949999999995",
+        "execution_ledger_net_usd": "32.30138",
+        "fees_usd": "3.06",
+        "fills": 250,
+        "halt_events": [],
+        "luck": {
+          "block_months": 3,
+          "descriptive_only": true,
+          "draws": 10000,
+          "exit_month_clusters": 38,
+          "method": "one-sided centered circular block bootstrap",
+          "months": 158,
+          "p_value": 0.2512748725127487,
+          "seed": 6062026,
+          "selection_adjusted": false
+        },
+        "marked_calendar_years": {
+          "2008": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-18.01237309351816418000000000",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.070000",
+            "fills": 7,
+            "marked_drawdown": {
+              "dollars": "20.9348038400121093861096756",
+              "fraction": "0.1481286584983743754147398514"
+            },
+            "marked_net_usd": "-18.0123730947643186300000000",
+            "turnover_usd": "144.186931491557949160"
+          },
+          "2009": {
+            "covered": true,
+            "execution_net_usd_by_exit": "0.2883768297693120599999999982",
+            "execution_round_trips_by_exit": 1,
+            "fees_usd_by_fill_date": "0.190000",
+            "fills": 14,
+            "marked_drawdown": {
+              "dollars": "15.7428511487141860476435055",
+              "fraction": "0.1182181309916151956800145381"
+            },
+            "marked_net_usd": "13.6427853931624032135220610",
+            "turnover_usd": "136.958553883497464770"
+          },
+          "2010": {
+            "covered": true,
+            "execution_net_usd_by_exit": "6.200779731543750010000000000",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.270000",
+            "fills": 16,
+            "marked_drawdown": {
+              "dollars": "13.3611180923650915996605620",
+              "fraction": "0.09470341020745439096889077885"
+            },
+            "marked_net_usd": "26.5197049741142151235626550",
+            "turnover_usd": "193.606155232836468840"
+          },
+          "2011": {
+            "covered": true,
+            "execution_net_usd_by_exit": "17.41201879149645764000000000",
+            "execution_round_trips_by_exit": 5,
+            "fees_usd_by_fill_date": "0.310000",
+            "fills": 31,
+            "marked_drawdown": {
+              "dollars": "24.6617953010167617288511932",
+              "fraction": "0.1335419704136048881185496585"
+            },
+            "marked_net_usd": "-1.6593520362505531552286760",
+            "turnover_usd": "243.692084238405011050"
+          },
+          "2012": {
+            "covered": true,
+            "execution_net_usd_by_exit": "10.58911559577345556999999999",
+            "execution_round_trips_by_exit": 5,
+            "fees_usd_by_fill_date": "0.240000",
+            "fills": 22,
+            "marked_drawdown": {
+              "dollars": "20.5712626823792908575887330",
+              "fraction": "0.1239326785049587553876079836"
+            },
+            "marked_net_usd": "-14.6930857315627584194063240",
+            "turnover_usd": "377.388548081299491850"
+          },
+          "2013": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-11.71393427238381871000000002",
+            "execution_round_trips_by_exit": 6,
+            "fees_usd_by_fill_date": "0.240000",
+            "fills": 19,
+            "marked_drawdown": {
+              "dollars": "8.4246938273325075457866363",
+              "fraction": "0.05621638645612173505491725199"
+            },
+            "marked_net_usd": "-0.2148454524586178213169035",
+            "turnover_usd": "258.371421647467335000"
+          },
+          "2014": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-0.550413963362254490000000005",
+            "execution_round_trips_by_exit": 7,
+            "fees_usd_by_fill_date": "0.230000",
+            "fills": 25,
+            "marked_drawdown": {
+              "dollars": "13.5526065334534098426431569",
+              "fraction": "0.08623028452672063395089620858"
+            },
+            "marked_net_usd": "-1.3692644303395529711328125",
+            "turnover_usd": "375.656507120601014810"
+          },
+          "2015": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-3.556316905147076380",
+            "execution_round_trips_by_exit": 2,
+            "fees_usd_by_fill_date": "0.080000",
+            "fills": 4,
+            "marked_drawdown": {
+              "dollars": "3.6629947996704758117672900",
+              "fraction": "0.02538101799786348391816784491"
+            },
+            "marked_net_usd": "-3.5563169051470763800000000",
+            "turnover_usd": "105.644498926312452580"
+          },
+          "2016": {
+            "covered": true,
+            "execution_net_usd_by_exit": "0.211994210199237429999999999",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.260000",
+            "fills": 24,
+            "marked_drawdown": {
+              "dollars": "16.0554177294012171564431017",
+              "fraction": "0.1025458966194222514522515618"
+            },
+            "marked_net_usd": "5.7767320786044845727546268",
+            "turnover_usd": "256.725486519160704110"
+          },
+          "2017": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-2.151544668132050229999999986",
+            "execution_round_trips_by_exit": 6,
+            "fees_usd_by_fill_date": "0.210000",
+            "fills": 14,
+            "marked_drawdown": {
+              "dollars": "10.3905981489943570146201438",
+              "fraction": "0.07095755922721926775907215175"
+            },
+            "marked_net_usd": "-5.4178636331159533174900718",
+            "turnover_usd": "292.345351784207532080"
+          },
+          "2018": {
+            "covered": true,
+            "execution_net_usd_by_exit": "0.427372499234272550000000009",
+            "execution_round_trips_by_exit": 6,
+            "fees_usd_by_fill_date": "0.310000",
+            "fills": 22,
+            "marked_drawdown": {
+              "dollars": "12.6570153177214928618715400",
+              "fraction": "0.08129372593121990822705202881"
+            },
+            "marked_net_usd": "2.0217240118557346844471850",
+            "turnover_usd": "337.203630058140174380"
+          },
+          "2019": {
+            "covered": true,
+            "execution_net_usd_by_exit": "2.428445009885229610000000001",
+            "execution_round_trips_by_exit": 2,
+            "fees_usd_by_fill_date": "0.240000",
+            "fills": 18,
+            "marked_drawdown": {
+              "dollars": "10.5907404724896000226262220",
+              "fraction": "0.07086013882385499130468673906"
+            },
+            "marked_net_usd": "9.2810178226506168708730400",
+            "turnover_usd": "191.477649440598377520"
+          },
+          "2020": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-9.999190688261230070000000027",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.320000",
+            "fills": 24,
+            "marked_drawdown": {
+              "dollars": "14.9174487097375388038244500",
+              "fraction": "0.09634072773632030499725324762"
+            },
+            "marked_net_usd": "13.7934565939592902546657780",
+            "turnover_usd": "280.948522248887957570"
+          },
+          "2021": {
+            "covered": true,
+            "execution_net_usd_by_exit": "40.72704848807597868999999999",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.090000",
+            "fills": 10,
+            "marked_drawdown": {
+              "dollars": "4.0413348655621572437432760",
+              "fraction": "0.02390000186405832793216313094"
+            },
+            "marked_net_usd": "6.1890579666488699247494420",
+            "turnover_usd": "125.812690643482727660"
+          }
+        },
+        "max_daily_close_drawdown": {
+          "dollars": "48.1101510401006222758225052",
+          "fraction": "0.2605132468408048069395852026"
+        },
+        "max_marked_drawdown": {
+          "dollars": "48.6311035130556000438037902",
+          "fraction": "0.2633341696033653953582650171"
+        },
+        "net_usd": "32.30138",
+        "rejected_orders": 0,
+        "terminal_liquidation_fills": 3,
+        "trades": 57,
+        "turnover_usd": "3320.018031316454661380"
+      },
+      "skip_count": 133,
+      "status": "complete",
+      "strategy_id": 6469,
+      "strategy_version": "b4041efeaa538c612c46eadaa2c91e856a94cb1f7a30473a2e1812b436b9c0c5",
+      "trial_id": 3956,
+      "variant": "total_return_126_positive"
+    },
+    {
+      "artifact": "data/research/c05-blackout/runs/train-total_return_126_positive-10.json",
+      "artifact_sha256": "16b562d2ee9ec001e21960c5bebe9c8aefc3edf370fc87aa3ef1f4e3fafbe771",
+      "cash_delay_skip_count": 4,
+      "cost_bp": 10,
+      "final_holdout": false,
+      "git_commit": "12e8e94b36a1f5fa706fff28a71b81fb31a7de41",
+      "metrics": {
+        "average_exposure": "0.3739282242758391333593789682",
+        "benchmarks": {
+          "SPY": {
+            "basis": "same partition completed closes, reinvested distributions, no costs, full hypothetical exposure",
+            "max_drawdown": {
+              "dollars": "140.9705646850353516655549555",
+              "fraction": "0.5188279351105156468279487037"
+            },
+            "not_executable": true,
+            "total_return": "2.533463971260030508749607939"
+          },
+          "cash": {
+            "not_executable": true,
+            "total_return": "0"
+          },
+          "equal_weight_universe": {
+            "basis": "same partition completed closes, reinvested distributions, no costs, full hypothetical exposure",
+            "max_drawdown": {
+              "dollars": "108.4553075392283558641460205",
+              "fraction": "0.5786616155053311676691405264"
+            },
+            "not_executable": true,
+            "total_return": "-0.1453180207769768865912729429"
+          }
+        },
+        "blackout": {
+          "count": 12,
+          "forced_exit_cost": {
+            "adverse_reference_cost_usd": "0",
+            "fees_usd": "0",
+            "fills": 0
+          },
+          "reentry_cost": {
+            "adverse_reference_cost_usd": "0",
+            "fees_usd": "0",
+            "fills": 0
+          },
+          "symbol_sessions": [
+            {
+              "date": "2008-07-23",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-24",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-25",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-28",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2011-03-08",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2011-03-09",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2012-02-21",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2012-02-22",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2018-01-04",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2018-01-05",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2020-04-28",
+              "symbol": "USO"
+            },
+            {
+              "date": "2020-04-29",
+              "symbol": "USO"
+            }
+          ]
+        },
+        "calendar_regimes": {
+          "2008-2009": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-17.81277544469195090000000000",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.260000",
+            "fills": 21,
+            "marked_drawdown": {
+              "dollars": "23.9717055327770065303015720",
+              "fraction": "0.1696655574663234409498700555"
+            },
+            "marked_net_usd": "-4.5151947400394131889480550",
+            "turnover_usd": "280.980585836022586710"
+          },
+          "2010-2019": {
+            "covered": true,
+            "execution_net_usd_by_exit": "18.00138355029678507999999999",
+            "execution_round_trips_by_exit": 45,
+            "fees_usd_by_fill_date": "2.420000",
+            "fills": 197,
+            "marked_drawdown": {
+              "dollars": "49.3317300262353236721993322",
+              "fraction": "0.2675419306565829430046875522"
+            },
+            "marked_net_usd": "15.2432590727230182484853750",
+            "turnover_usd": "2621.030826145039261770"
+          },
+          "2020-2021": {
+            "covered": true,
+            "execution_net_usd_by_exit": "30.23286972456321073000000002",
+            "execution_round_trips_by_exit": 8,
+            "fees_usd_by_fill_date": "0.410000",
+            "fills": 33,
+            "marked_drawdown": {
+              "dollars": "14.9742809972667092859269800",
+              "fraction": "0.09770464742669680701896630315"
+            },
+            "marked_net_usd": "19.6934135032295974904626800",
+            "turnover_usd": "404.636175070461870430"
+          },
+          "2022": {
+            "covered": false,
+            "execution_net_usd_by_exit": "0",
+            "execution_round_trips_by_exit": 0,
+            "fees_usd_by_fill_date": "0",
+            "fills": 0,
+            "marked_drawdown": null,
+            "marked_net_usd": null,
+            "turnover_usd": "0"
+          },
+          "2023-2026": {
+            "covered": false,
+            "execution_net_usd_by_exit": "0",
+            "execution_round_trips_by_exit": 0,
+            "fees_usd_by_fill_date": "0",
+            "fills": 0,
+            "marked_drawdown": null,
+            "marked_net_usd": null,
+            "turnover_usd": "0"
+          }
+        },
+        "complete_execution": true,
+        "dividend_entitlements": [],
+        "dividend_income_usd": "0",
+        "execution_gross_usd": "33.51147783016804491000000002",
+        "execution_ledger_net_usd": "30.421481",
+        "fees_usd": "3.09",
+        "fills": 251,
+        "halt_events": [],
+        "luck": {
+          "block_months": 3,
+          "descriptive_only": true,
+          "draws": 10000,
+          "exit_month_clusters": 38,
+          "method": "one-sided centered circular block bootstrap",
+          "months": 158,
+          "p_value": 0.2638736126387361,
+          "seed": 6062026,
+          "selection_adjusted": false
+        },
+        "marked_calendar_years": {
+          "2008": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-18.07590064092282908000000000",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.070000",
+            "fills": 7,
+            "marked_drawdown": {
+              "dollars": "20.9461351788220059016076185",
+              "fraction": "0.1482513497848773674579806301"
+            },
+            "marked_net_usd": "-18.0759006406446789400000000",
+            "turnover_usd": "144.133565225737775120"
+          },
+          "2009": {
+            "covered": true,
+            "execution_net_usd_by_exit": "0.2631251962308781799999999997",
+            "execution_round_trips_by_exit": 1,
+            "fees_usd_by_fill_date": "0.190000",
+            "fills": 14,
+            "marked_drawdown": {
+              "dollars": "15.7389292658328867375875485",
+              "fraction": "0.1182887078364804439713402428"
+            },
+            "marked_net_usd": "13.5607059006052657510519450",
+            "turnover_usd": "136.847020610284811590"
+          },
+          "2010": {
+            "covered": true,
+            "execution_net_usd_by_exit": "6.115402219820613159999999978",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.270000",
+            "fills": 16,
+            "marked_drawdown": {
+              "dollars": "13.3461188776598599363358200",
+              "fraction": "0.09470781293206617063881979699"
+            },
+            "marked_net_usd": "26.3931619734051503348548770",
+            "turnover_usd": "193.270378120046516500"
+          },
+          "2011": {
+            "covered": true,
+            "execution_net_usd_by_exit": "17.22940409784649569000000000",
+            "execution_round_trips_by_exit": 5,
+            "fees_usd_by_fill_date": "0.310000",
+            "fills": 31,
+            "marked_drawdown": {
+              "dollars": "24.7676806235209352388511932",
+              "fraction": "0.1343231443206719058196101931"
+            },
+            "marked_net_usd": "-1.7787981008987679640507820",
+            "turnover_usd": "243.497808970480352390"
+          },
+          "2012": {
+            "covered": true,
+            "execution_net_usd_by_exit": "10.42760208314769792000000000",
+            "execution_round_trips_by_exit": 5,
+            "fees_usd_by_fill_date": "0.240000",
+            "fills": 22,
+            "marked_drawdown": {
+              "dollars": "20.7384459457752939510330675",
+              "fraction": "0.1252487110974932998783674784"
+            },
+            "marked_net_usd": "-14.8778903837469123511254700",
+            "turnover_usd": "377.296932050955330350"
+          },
+          "2013": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-11.89583311983634864000000000",
+            "execution_round_trips_by_exit": 6,
+            "fees_usd_by_fill_date": "0.240000",
+            "fills": 19,
+            "marked_drawdown": {
+              "dollars": "8.4884433181513118025470187",
+              "fraction": "0.05687144358893403687923984118"
+            },
+            "marked_net_usd": "-0.3606074248027963823516638",
+            "turnover_usd": "257.204822144522617560"
+          },
+          "2014": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-0.772426088678050419999999998",
+            "execution_round_trips_by_exit": 7,
+            "fees_usd_by_fill_date": "0.230000",
+            "fills": 25,
+            "marked_drawdown": {
+              "dollars": "13.5740714849639643213121675",
+              "fraction": "0.08683417600023734261159047930"
+            },
+            "marked_net_usd": "-1.5692975750620172983789062",
+            "turnover_usd": "374.461529134032180060"
+          },
+          "2015": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-3.584401552333985740",
+            "execution_round_trips_by_exit": 2,
+            "fees_usd_by_fill_date": "0.080000",
+            "fills": 4,
+            "marked_drawdown": {
+              "dollars": "3.6766763443111966859130600",
+              "fraction": "0.02564222895516681980082490455"
+            },
+            "marked_net_usd": "-3.5844015523339857400000000",
+            "turnover_usd": "104.908649729342011340"
+          },
+          "2016": {
+            "covered": true,
+            "execution_net_usd_by_exit": "0.253570284515475900000000027",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.290000",
+            "fills": 26,
+            "marked_drawdown": {
+              "dollars": "15.8369601385070498525223943",
+              "fraction": "0.1019032986980093781006836300"
+            },
+            "marked_net_usd": "5.7463683684843743400545412",
+            "turnover_usd": "258.182343745395468650"
+          },
+          "2017": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-2.302086969011524489999999991",
+            "execution_round_trips_by_exit": 6,
+            "fees_usd_by_fill_date": "0.210000",
+            "fills": 14,
+            "marked_drawdown": {
+              "dollars": "10.3962912131120907203156002",
+              "fraction": "0.07147509416234965789525765678"
+            },
+            "marked_net_usd": "-5.5281093866797563568653337",
+            "turnover_usd": "290.165740739810266430"
+          },
+          "2018": {
+            "covered": true,
+            "execution_net_usd_by_exit": "0.264205600208623249999999988",
+            "execution_round_trips_by_exit": 6,
+            "fees_usd_by_fill_date": "0.310000",
+            "fills": 22,
+            "marked_drawdown": {
+              "dollars": "12.6219790887705038431043600",
+              "fraction": "0.08179582226423731118582003681"
+            },
+            "marked_net_usd": "1.7635936269684292965225325",
+            "turnover_usd": "334.072425048940333520"
+          },
+          "2019": {
+            "covered": true,
+            "execution_net_usd_by_exit": "2.265946994617788449999999990",
+            "execution_round_trips_by_exit": 2,
+            "fees_usd_by_fill_date": "0.240000",
+            "fills": 18,
+            "marked_drawdown": {
+              "dollars": "10.5160433102691555915122100",
+              "fraction": "0.07104076437022946834125534476"
+            },
+            "marked_net_usd": "9.0392395273893003698255800",
+            "turnover_usd": "187.970196461514184970"
+          },
+          "2020": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-10.21668921479227013999999999",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.320000",
+            "fills": 23,
+            "marked_drawdown": {
+              "dollars": "14.9742809972667092859269800",
+              "fraction": "0.09770464742669680701896630315"
+            },
+            "marked_net_usd": "13.5674115220373662333163580",
+            "turnover_usd": "278.889933218183736760"
+          },
+          "2021": {
+            "covered": true,
+            "execution_net_usd_by_exit": "40.44955893935548087000000001",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.090000",
+            "fills": 10,
+            "marked_drawdown": {
+              "dollars": "4.0413348655621572437432760",
+              "fraction": "0.02416030312057054779556972814"
+            },
+            "marked_net_usd": "6.1260019811922312571463220",
+            "turnover_usd": "125.746241852278133670"
+          }
+        },
+        "max_daily_close_drawdown": {
+          "dollars": "48.8145811032881069187821372",
+          "fraction": "0.2647372647507108095460591836"
+        },
+        "max_marked_drawdown": {
+          "dollars": "49.3317300262353236721993322",
+          "fraction": "0.2675419306565829430046875522"
+        },
+        "net_usd": "30.421481",
+        "rejected_orders": 0,
+        "terminal_liquidation_fills": 3,
+        "trades": 57,
+        "turnover_usd": "3306.647587051523718910"
+      },
+      "skip_count": 135,
+      "status": "complete",
+      "strategy_id": 6470,
+      "strategy_version": "de0dad8696f3603a0ebcde01bbe2f9333e037db5a22d03b4e7c01f8336924320",
+      "trial_id": 3959,
+      "variant": "total_return_126_positive"
+    },
+    {
+      "artifact": "data/research/c05-blackout/runs/train-above_sma_200-5.json",
+      "artifact_sha256": "7975ab14eff3a8aed003f017b7ea5287c2f2adad0f5e6a8368f896bf35d59700",
+      "cash_delay_skip_count": 1,
+      "cost_bp": 5,
+      "final_holdout": false,
+      "git_commit": "12e8e94b36a1f5fa706fff28a71b81fb31a7de41",
+      "metrics": {
+        "average_exposure": "0.3323537076458485966168225017",
+        "benchmarks": {
+          "SPY": {
+            "basis": "same partition completed closes, reinvested distributions, no costs, full hypothetical exposure",
+            "max_drawdown": {
+              "dollars": "140.9705646850353516655549555",
+              "fraction": "0.5188279351105156468279487037"
+            },
+            "not_executable": true,
+            "total_return": "2.533463971260030508749607939"
+          },
+          "cash": {
+            "not_executable": true,
+            "total_return": "0"
+          },
+          "equal_weight_universe": {
+            "basis": "same partition completed closes, reinvested distributions, no costs, full hypothetical exposure",
+            "max_drawdown": {
+              "dollars": "108.4553075392283558641460205",
+              "fraction": "0.5786616155053311676691405264"
+            },
+            "not_executable": true,
+            "total_return": "-0.1453180207769768865912729429"
+          }
+        },
+        "blackout": {
+          "count": 12,
+          "forced_exit_cost": {
+            "adverse_reference_cost_usd": "0",
+            "fees_usd": "0",
+            "fills": 0
+          },
+          "reentry_cost": {
+            "adverse_reference_cost_usd": "0",
+            "fees_usd": "0",
+            "fills": 0
+          },
+          "symbol_sessions": [
+            {
+              "date": "2008-07-23",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-24",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-25",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-28",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2011-03-08",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2011-03-09",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2012-02-21",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2012-02-22",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2018-01-04",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2018-01-05",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2020-04-28",
+              "symbol": "USO"
+            },
+            {
+              "date": "2020-04-29",
+              "symbol": "USO"
+            }
+          ]
+        },
+        "calendar_regimes": {
+          "2008-2009": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-2.873895106400736690",
+            "execution_round_trips_by_exit": 1,
+            "fees_usd_by_fill_date": "0.250000",
+            "fills": 21,
+            "marked_drawdown": {
+              "dollars": "11.3424427815567410429247430",
+              "fraction": "0.07586477477795738331132804229"
+            },
+            "marked_net_usd": "13.4449126936108596686477810",
+            "turnover_usd": "193.435636262592984510"
+          },
+          "2010-2019": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-3.672304232780139369999999958",
+            "execution_round_trips_by_exit": 45,
+            "fees_usd_by_fill_date": "2.350000",
+            "fills": 187,
+            "marked_drawdown": {
+              "dollars": "68.9886565136177806617140482",
+              "fraction": "0.3455721436362989951738740499"
+            },
+            "marked_net_usd": "-9.9165693715592542187922830",
+            "turnover_usd": "2536.539850767811677200"
+          },
+          "2020-2021": {
+            "covered": true,
+            "execution_net_usd_by_exit": "17.72865125514186234000000000",
+            "execution_round_trips_by_exit": 10,
+            "fees_usd_by_fill_date": "0.380000",
+            "fills": 29,
+            "marked_drawdown": {
+              "dollars": "18.2018496696713516704425835",
+              "fraction": "0.1150019505481990157530513837"
+            },
+            "marked_net_usd": "8.0787437767575764901445020",
+            "turnover_usd": "485.509480381911143210"
+          },
+          "2022": {
+            "covered": false,
+            "execution_net_usd_by_exit": "0",
+            "execution_round_trips_by_exit": 0,
+            "fees_usd_by_fill_date": "0",
+            "fills": 0,
+            "marked_drawdown": null,
+            "marked_net_usd": null,
+            "turnover_usd": "0"
+          },
+          "2023-2026": {
+            "covered": false,
+            "execution_net_usd_by_exit": "0",
+            "execution_round_trips_by_exit": 0,
+            "fees_usd_by_fill_date": "0",
+            "fills": 0,
+            "marked_drawdown": null,
+            "marked_net_usd": null,
+            "turnover_usd": "0"
+          }
+        },
+        "complete_execution": true,
+        "dividend_entitlements": [
+          {
+            "amount": "0.25717",
+            "cash_amount": "0.424635139981620",
+            "cash_available_session": "2020-01-02",
+            "ex_date": "2019-12-23",
+            "execution_fill": false,
+            "payable_date": "2019-12-31",
+            "quantity_before_ex_open": "1.6511845860",
+            "recognized_at": "2019-12-23T09:30:00-05:00",
+            "record_date": "2019-12-24",
+            "source_receipt": "05774a5a2f1ccbfef2898471f32311874e67298fc2bbbb6efb39b1cda893cb7c",
+            "symbol": "DBA"
+          }
+        ],
+        "dividend_income_usd": "0.42463513998162",
+        "execution_gross_usd": "14.16245191596098628000000004",
+        "execution_ledger_net_usd": "11.182449",
+        "fees_usd": "2.98",
+        "fills": 237,
+        "halt_events": [],
+        "luck": {
+          "block_months": 3,
+          "descriptive_only": true,
+          "draws": 10000,
+          "exit_month_clusters": 38,
+          "method": "one-sided centered circular block bootstrap",
+          "months": 158,
+          "p_value": 0.3842615738426157,
+          "seed": 6062026,
+          "selection_adjusted": false
+        },
+        "marked_calendar_years": {
+          "2008": {
+            "covered": true,
+            "execution_net_usd_by_exit": "0",
+            "execution_round_trips_by_exit": 0,
+            "fees_usd_by_fill_date": "0",
+            "fills": 0,
+            "marked_drawdown": {
+              "dollars": "0",
+              "fraction": "0"
+            },
+            "marked_net_usd": "0",
+            "turnover_usd": "0"
+          },
+          "2009": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-2.873895106400736690",
+            "execution_round_trips_by_exit": 1,
+            "fees_usd_by_fill_date": "0.250000",
+            "fills": 21,
+            "marked_drawdown": {
+              "dollars": "11.3424427815567410429247430",
+              "fraction": "0.07586477477795738331132804229"
+            },
+            "marked_net_usd": "13.4449126936108596686477810",
+            "turnover_usd": "193.435636262592984510"
+          },
+          "2010": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-5.598812065866253969999999996",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.300000",
+            "fills": 22,
+            "marked_drawdown": {
+              "dollars": "13.8585060509311485918551085",
+              "fraction": "0.08674273626050837930901911046"
+            },
+            "marked_net_usd": "23.9122310450854366602690310",
+            "turnover_usd": "166.079367440205724170"
+          },
+          "2011": {
+            "covered": true,
+            "execution_net_usd_by_exit": "27.42556470984174580999999999",
+            "execution_round_trips_by_exit": 5,
+            "fees_usd_by_fill_date": "0.310000",
+            "fills": 33,
+            "marked_drawdown": {
+              "dollars": "25.4700832605470503170751732",
+              "fraction": "0.1275825869895707887890738599"
+            },
+            "marked_net_usd": "-1.8139060505978403223732720",
+            "turnover_usd": "298.951691642931907340"
+          },
+          "2012": {
+            "covered": true,
+            "execution_net_usd_by_exit": "11.06889362394626497000000000",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.200000",
+            "fills": 15,
+            "marked_drawdown": {
+              "dollars": "17.4342674745228682947874165",
+              "fraction": "0.09730833401901047732730991544"
+            },
+            "marked_net_usd": "-13.4307560219096841745089340",
+            "turnover_usd": "226.986925528838509760"
+          },
+          "2013": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-17.68470595991308188000000000",
+            "execution_round_trips_by_exit": 9,
+            "fees_usd_by_fill_date": "0.240000",
+            "fills": 18,
+            "marked_drawdown": {
+              "dollars": "10.2391264791792377471528000",
+              "fraction": "0.06298048707079109520550615490"
+            },
+            "marked_net_usd": "-9.7754364547570351220346060",
+            "turnover_usd": "383.733661660260849280"
+          },
+          "2014": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-10.00007325379501737999999998",
+            "execution_round_trips_by_exit": 8,
+            "fees_usd_by_fill_date": "0.280000",
+            "fills": 27,
+            "marked_drawdown": {
+              "dollars": "18.4724969743117477021229750",
+              "fraction": "0.1149053687061636853798650606"
+            },
+            "marked_net_usd": "-10.0000732549827065800000000",
+            "turnover_usd": "452.659657956599586320"
+          },
+          "2015": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-1.251129771414012420",
+            "execution_round_trips_by_exit": 1,
+            "fees_usd_by_fill_date": "0.040000",
+            "fills": 2,
+            "marked_drawdown": {
+              "dollars": "1.6461452402359155830640300",
+              "fraction": "0.01155658948763165120621270631"
+            },
+            "marked_net_usd": "-1.2511297714140124200000000",
+            "turnover_usd": "52.876919482649512420"
+          },
+          "2016": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-3.819106813708096859999999984",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.200000",
+            "fills": 22,
+            "marked_drawdown": {
+              "dollars": "21.8058301448567675911107130",
+              "fraction": "0.1417039257838263812706281545"
+            },
+            "marked_net_usd": "0.2390036554274259760399781",
+            "turnover_usd": "286.027214462285879630"
+          },
+          "2017": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-6.228056263583055179999999999",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.230000",
+            "fills": 13,
+            "marked_drawdown": {
+              "dollars": "10.6774559190828150958157531",
+              "fraction": "0.07555257432324595051442867959"
+            },
+            "marked_net_usd": "-5.3202100256615421056845743",
+            "turnover_usd": "204.884824643483570110"
+          },
+          "2018": {
+            "covered": true,
+            "execution_net_usd_by_exit": "5.391882984094684820000000007",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.310000",
+            "fills": 17,
+            "marked_drawdown": {
+              "dollars": "12.5712231754111187271307600",
+              "fraction": "0.08234950657426656931594386253"
+            },
+            "marked_net_usd": "4.0810748321395680393563362",
+            "turnover_usd": "199.701935542721071660"
+          },
+          "2019": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-2.976761422383317280",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.240000",
+            "fills": 18,
+            "marked_drawdown": {
+              "dollars": "6.7356602045085894411159160",
+              "fraction": "0.04743805942776582468416764411"
+            },
+            "marked_net_usd": "3.4426326751111358301437580",
+            "turnover_usd": "264.637652407835066510"
+          },
+          "2020": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-2.580595123120220380000000004",
+            "execution_round_trips_by_exit": 6,
+            "fees_usd_by_fill_date": "0.290000",
+            "fills": 20,
+            "marked_drawdown": {
+              "dollars": "18.2018496696713516704425835",
+              "fraction": "0.1150019505481990157530513837"
+            },
+            "marked_net_usd": "2.5676949179678159249669940",
+            "turnover_usd": "310.450425612034787510"
+          },
+          "2021": {
+            "covered": true,
+            "execution_net_usd_by_exit": "20.30924637826208272000000000",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.090000",
+            "fills": 9,
+            "marked_drawdown": {
+              "dollars": "4.0072875406247640624095000",
+              "fraction": "0.02699897302925756537426888798"
+            },
+            "marked_net_usd": "5.5110488587897605651775080",
+            "turnover_usd": "175.059054769876355700"
+          }
+        },
+        "max_daily_close_drawdown": {
+          "dollars": "68.9194185719828145010985282",
+          "fraction": "0.3452253227947156070063275475"
+        },
+        "max_marked_drawdown": {
+          "dollars": "68.9886565136177806617140482",
+          "fraction": "0.3455721436362989951738740499"
+        },
+        "net_usd": "11.60708413998162",
+        "rejected_orders": 0,
+        "terminal_liquidation_fills": 3,
+        "trades": 56,
+        "turnover_usd": "3215.484967412315804920"
+      },
+      "skip_count": 114,
+      "status": "complete",
+      "strategy_id": 6471,
+      "strategy_version": "839426cb2c86fb8643a764157c63988daa54d6eed4df2a31004c0c07c9e80be7",
+      "trial_id": 3960,
+      "variant": "above_sma_200"
+    },
+    {
+      "artifact": "data/research/c05-blackout/runs/train-above_sma_200-10.json",
+      "artifact_sha256": "87380abdc6a92c6c7b0d75988c5c36a94364abfda07d5ae86bbc3c04501a2648",
+      "cash_delay_skip_count": 1,
+      "cost_bp": 10,
+      "final_holdout": false,
+      "git_commit": "12e8e94b36a1f5fa706fff28a71b81fb31a7de41",
+      "metrics": {
+        "average_exposure": "0.3330449369436150464591654944",
+        "benchmarks": {
+          "SPY": {
+            "basis": "same partition completed closes, reinvested distributions, no costs, full hypothetical exposure",
+            "max_drawdown": {
+              "dollars": "140.9705646850353516655549555",
+              "fraction": "0.5188279351105156468279487037"
+            },
+            "not_executable": true,
+            "total_return": "2.533463971260030508749607939"
+          },
+          "cash": {
+            "not_executable": true,
+            "total_return": "0"
+          },
+          "equal_weight_universe": {
+            "basis": "same partition completed closes, reinvested distributions, no costs, full hypothetical exposure",
+            "max_drawdown": {
+              "dollars": "108.4553075392283558641460205",
+              "fraction": "0.5786616155053311676691405264"
+            },
+            "not_executable": true,
+            "total_return": "-0.1453180207769768865912729429"
+          }
+        },
+        "blackout": {
+          "count": 12,
+          "forced_exit_cost": {
+            "adverse_reference_cost_usd": "0",
+            "fees_usd": "0",
+            "fills": 0
+          },
+          "reentry_cost": {
+            "adverse_reference_cost_usd": "0",
+            "fees_usd": "0",
+            "fills": 0
+          },
+          "symbol_sessions": [
+            {
+              "date": "2008-07-23",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-24",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-25",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2008-07-28",
+              "symbol": "SLV"
+            },
+            {
+              "date": "2011-03-08",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2011-03-09",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2012-02-21",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2012-02-22",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2018-01-04",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2018-01-05",
+              "symbol": "UNG"
+            },
+            {
+              "date": "2020-04-28",
+              "symbol": "USO"
+            },
+            {
+              "date": "2020-04-29",
+              "symbol": "USO"
+            }
+          ]
+        },
+        "calendar_regimes": {
+          "2008-2009": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-2.899038652302848630",
+            "execution_round_trips_by_exit": 1,
+            "fees_usd_by_fill_date": "0.250000",
+            "fills": 21,
+            "marked_drawdown": {
+              "dollars": "11.3537672127303741275147720",
+              "fraction": "0.07596535773629548411294481584"
+            },
+            "marked_net_usd": "13.3417132512074399586477810",
+            "turnover_usd": "193.306091604675736050"
+          },
+          "2010-2019": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-5.027393632120354430000000012",
+            "execution_round_trips_by_exit": 45,
+            "fees_usd_by_fill_date": "2.360000",
+            "fills": 185,
+            "marked_drawdown": {
+              "dollars": "69.8785629574605776302050732",
+              "fraction": "0.3504074874431614414422860051"
+            },
+            "marked_net_usd": "-11.3462536271570326413043370",
+            "turnover_usd": "2524.969958951745171250"
+          },
+          "2020-2021": {
+            "covered": true,
+            "execution_net_usd_by_exit": "17.17964267060840927000000000",
+            "execution_round_trips_by_exit": 10,
+            "fees_usd_by_fill_date": "0.380000",
+            "fills": 29,
+            "marked_drawdown": {
+              "dollars": "18.1906605894766356048394570",
+              "fraction": "0.1161773340252368956293109825"
+            },
+            "marked_net_usd": "7.6776834422675276326565560",
+            "turnover_usd": "480.390411050074886090"
+          },
+          "2022": {
+            "covered": false,
+            "execution_net_usd_by_exit": "0",
+            "execution_round_trips_by_exit": 0,
+            "fees_usd_by_fill_date": "0",
+            "fills": 0,
+            "marked_drawdown": null,
+            "marked_net_usd": null,
+            "turnover_usd": "0"
+          },
+          "2023-2026": {
+            "covered": false,
+            "execution_net_usd_by_exit": "0",
+            "execution_round_trips_by_exit": 0,
+            "fees_usd_by_fill_date": "0",
+            "fills": 0,
+            "marked_drawdown": null,
+            "marked_net_usd": null,
+            "turnover_usd": "0"
+          }
+        },
+        "complete_execution": true,
+        "dividend_entitlements": [
+          {
+            "amount": "0.25717",
+            "cash_amount": "0.419932653317560",
+            "cash_available_session": "2020-01-02",
+            "ex_date": "2019-12-23",
+            "execution_fill": false,
+            "payable_date": "2019-12-31",
+            "quantity_before_ex_open": "1.6328990680",
+            "recognized_at": "2019-12-23T09:30:00-05:00",
+            "record_date": "2019-12-24",
+            "source_receipt": "05774a5a2f1ccbfef2898471f32311874e67298fc2bbbb6efb39b1cda893cb7c",
+            "symbol": "DBA"
+          }
+        ],
+        "dividend_income_usd": "0.41993265331756",
+        "execution_gross_usd": "12.24321038618520620999999999",
+        "execution_ledger_net_usd": "9.25321",
+        "fees_usd": "2.99",
+        "fills": 235,
+        "halt_events": [],
+        "luck": {
+          "block_months": 3,
+          "descriptive_only": true,
+          "draws": 10000,
+          "exit_month_clusters": 38,
+          "method": "one-sided centered circular block bootstrap",
+          "months": 158,
+          "p_value": 0.39836016398360163,
+          "seed": 6062026,
+          "selection_adjusted": false
+        },
+        "marked_calendar_years": {
+          "2008": {
+            "covered": true,
+            "execution_net_usd_by_exit": "0",
+            "execution_round_trips_by_exit": 0,
+            "fees_usd_by_fill_date": "0",
+            "fills": 0,
+            "marked_drawdown": {
+              "dollars": "0",
+              "fraction": "0"
+            },
+            "marked_net_usd": "0",
+            "turnover_usd": "0"
+          },
+          "2009": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-2.899038652302848630",
+            "execution_round_trips_by_exit": 1,
+            "fees_usd_by_fill_date": "0.250000",
+            "fills": 21,
+            "marked_drawdown": {
+              "dollars": "11.3537672127303741275147720",
+              "fraction": "0.07596535773629548411294481584"
+            },
+            "marked_net_usd": "13.3417132512074399586477810",
+            "turnover_usd": "193.306091604675736050"
+          },
+          "2010": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-5.682109277362421169999999999",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.300000",
+            "fills": 22,
+            "marked_drawdown": {
+              "dollars": "13.8851871350378143030199585",
+              "fraction": "0.08696706335120561441965886697"
+            },
+            "marked_net_usd": "23.8278609248131834202690310",
+            "turnover_usd": "165.997069213254284990"
+          },
+          "2011": {
+            "covered": true,
+            "execution_net_usd_by_exit": "27.24678240379144827000000001",
+            "execution_round_trips_by_exit": 5,
+            "fees_usd_by_fill_date": "0.310000",
+            "fills": 33,
+            "marked_drawdown": {
+              "dollars": "25.5895355967697870176875607",
+              "fraction": "0.1283192511952495172527637931"
+            },
+            "marked_net_usd": "-1.9616898892827812335060845",
+            "turnover_usd": "298.821676280458197070"
+          },
+          "2012": {
+            "covered": true,
+            "execution_net_usd_by_exit": "10.96735020324470790999999999",
+            "execution_round_trips_by_exit": 3,
+            "fees_usd_by_fill_date": "0.200000",
+            "fills": 15,
+            "marked_drawdown": {
+              "dollars": "17.5194254234931411375951815",
+              "fraction": "0.09798254137367304900165451103"
+            },
+            "marked_net_usd": "-13.5442024695674056112624775",
+            "turnover_usd": "226.901013707193360640"
+          },
+          "2013": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-17.93588570922201076000000000",
+            "execution_round_trips_by_exit": 9,
+            "fees_usd_by_fill_date": "0.240000",
+            "fills": 18,
+            "marked_drawdown": {
+              "dollars": "10.4217439925185913338923975",
+              "fraction": "0.06428459396720575058717776830"
+            },
+            "marked_net_usd": "-9.9665828745503676841482500",
+            "turnover_usd": "383.527174087003793750"
+          },
+          "2014": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-10.21377790615202863000000000",
+            "execution_round_trips_by_exit": 8,
+            "fees_usd_by_fill_date": "0.280000",
+            "fills": 27,
+            "marked_drawdown": {
+              "dollars": "18.6547721263810237585227350",
+              "fraction": "0.1165160046040037561667821494"
+            },
+            "marked_net_usd": "-10.2137779100982732500000000",
+            "turnover_usd": "451.876379294072249610"
+          },
+          "2015": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-1.269531290959102250",
+            "execution_round_trips_by_exit": 1,
+            "fees_usd_by_fill_date": "0.040000",
+            "fills": 2,
+            "marked_drawdown": {
+              "dollars": "1.6354553379138941022907500",
+              "fraction": "0.01155192203996357869613970479"
+            },
+            "marked_net_usd": "-1.2695312909591022500000000",
+            "turnover_usd": "52.534130560734102250"
+          },
+          "2016": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-3.965979236506757410000000021",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.230000",
+            "fills": 22,
+            "marked_drawdown": {
+              "dollars": "21.7661542532535645989887780",
+              "fraction": "0.1423983501871985398841176251"
+            },
+            "marked_net_usd": "0.0493065958924265729673112",
+            "turnover_usd": "284.700454125639210110"
+          },
+          "2017": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-6.277179375524872759999999994",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.210000",
+            "fills": 11,
+            "marked_drawdown": {
+              "dollars": "10.7207979790016877712341112",
+              "fraction": "0.07643349005506633917855891587"
+            },
+            "marked_net_usd": "-5.4087948538155990872487874",
+            "turnover_usd": "201.079902163629782840"
+          },
+          "2018": {
+            "covered": true,
+            "execution_net_usd_by_exit": "5.226393062838809919999999998",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.310000",
+            "fills": 17,
+            "marked_drawdown": {
+              "dollars": "12.5354875913108686829692800",
+              "fraction": "0.08287337022127376549974598831"
+            },
+            "marked_net_usd": "3.8709543682188023339932162",
+            "turnover_usd": "197.467440244822283380"
+          },
+          "2019": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-3.123456506268127550",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.240000",
+            "fills": 18,
+            "marked_drawdown": {
+              "dollars": "6.6916971177646583544985592",
+              "fraction": "0.04760461805482218740232727558"
+            },
+            "marked_net_usd": "3.2702037721920841476317040",
+            "turnover_usd": "262.064719274937906610"
+          },
+          "2020": {
+            "covered": true,
+            "execution_net_usd_by_exit": "-2.784315446550480009999999997",
+            "execution_round_trips_by_exit": 6,
+            "fees_usd_by_fill_date": "0.290000",
+            "fills": 20,
+            "marked_drawdown": {
+              "dollars": "18.1906605894766356048394570",
+              "fraction": "0.1161773340252368956293109825"
+            },
+            "marked_net_usd": "2.3215745485912799953576200",
+            "turnover_usd": "307.539145640451836910"
+          },
+          "2021": {
+            "covered": true,
+            "execution_net_usd_by_exit": "19.96395811715888928000000000",
+            "execution_round_trips_by_exit": 4,
+            "fees_usd_by_fill_date": "0.090000",
+            "fills": 9,
+            "marked_drawdown": {
+              "dollars": "3.9581014575569502054459740",
+              "fraction": "0.02700184610381857862267662896"
+            },
+            "marked_net_usd": "5.3561088936762476372989360",
+            "turnover_usd": "172.851265409623049180"
+          }
+        },
+        "max_daily_close_drawdown": {
+          "dollars": "69.8032439059067920781436632",
+          "fraction": "0.3500297985140455034260814328"
+        },
+        "max_marked_drawdown": {
+          "dollars": "69.8785629574605776302050732",
+          "fraction": "0.3504074874431614414422860051"
+        },
+        "net_usd": "9.67314265331756",
+        "rejected_orders": 0,
+        "terminal_liquidation_fills": 3,
+        "trades": 56,
+        "turnover_usd": "3198.666461606495793390"
+      },
+      "skip_count": 116,
+      "status": "complete",
+      "strategy_id": 6472,
+      "strategy_version": "0c077091ae3873881a34cf9b9d39d0ffb69fb3b83e7784ec3ea914d4f7f6d774",
+      "trial_id": 3961,
+      "variant": "above_sma_200"
+    }
+  ]
+}

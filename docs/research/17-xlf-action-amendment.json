@@ -1,0 +1,177 @@
+{
+  "bead": "tradingbot-vx0",
+  "status": "UNRESOLVED_DATA_FAILURE",
+  "dataset_admitted": false,
+  "bounds": {
+    "start": "2006-01-01",
+    "end_exclusive": "2026-10-01",
+    "holdout_start": "2020-07-10T14:24:00+00:00"
+  },
+  "strategy_outcomes_computed": false,
+  "holdouts_consumed": 0,
+  "scope": "Source-only repair; original failed trials, source captures and candidate parameters unchanged.",
+  "action": {
+    "type": "in_kind_distribution",
+    "source_asset": "XLF",
+    "distribution_asset": "XLRE",
+    "ex_date": "2016-09-19",
+    "ex_date_source": "occ_39575_background_and_issuer_8937_page3",
+    "record_date": "2016-09-21",
+    "units_per_xlf_share": "0.139146",
+    "issuer_reported_pay_date": "2016-09-22",
+    "xlf_share_count_multiplier": "1",
+    "broker_available_at": null,
+    "fractional_allocation": null,
+    "cash_in_lieu_amount": null,
+    "cash_available_at": null
+  },
+  "issuer_tax_form": {
+    "extraction": "Manually verified all three rendered PDF pages; scanned PDF has no text layer.",
+    "signed_date": "2016-11-15",
+    "page": 3,
+    "total_distribution_per_xlf": "4.5292",
+    "return_of_capital_per_xlf": "2.9588",
+    "taxable_per_xlf": "1.5704",
+    "scope": "Tax characterization only; no cash-in-lieu rate or broker availability.",
+    "source_typo_preserved": "Page 3 says September 31, 2016; page 1 says September 30."
+  },
+  "provider_conflicts": {
+    "original_record": {
+      "cusip": "81369Y605",
+      "ex_date": "2016-09-19",
+      "foreign": false,
+      "id": "ad8bb923-e813-4437-8307-04b0e2068219",
+      "payable_date": "2016-09-22",
+      "process_date": "2016-09-22",
+      "rate": 0.139146,
+      "record_date": "2016-09-19",
+      "special": false,
+      "symbol": "XLF"
+    },
+    "rejected_fields": {
+      "cash_dividends.rate": "0.139146 denotes XLRE units, not USD per XLF share.",
+      "record_date": "Issuer date is 2016-09-21, not 2016-09-19.",
+      "process_date": "Provider processing date does not establish account credit or tradability."
+    },
+    "accepted_corroboration": [
+      "ex_date",
+      "payable_date"
+    ]
+  },
+  "yahoo_rejected_split": {
+    "original": {
+      "1474291800": {
+        "date": 1474291800,
+        "numerator": 1231.0,
+        "denominator": 1000.0,
+        "splitRatio": "1231:1000"
+      }
+    },
+    "reason": "Economic adjustment is not an XLF share-count change."
+  },
+  "nominal_unit_examples": {
+    "1": "0.139146",
+    "100": "13.914600"
+  },
+  "incidental_asset_policy": {
+    "version": "xlf-incidental-disposal-v1",
+    "status": "declared_before_outcomes_but_not_executable_until_source_admission",
+    "entitlement": "Nominal XLRE receivable = eligible actual XLF shares times 0.139146; no rounding assumption.",
+    "ranking": "XLRE is incidental inventory only, never an additional ranked candidate.",
+    "retention": "Retain the entitlement pending supported delivery; no discretionary long-term holding.",
+    "disposal": "Sell delivered tradable XLRE at the first regular-session open strictly after documented availability, using the candidate cost case and normal ledger/risk checks.",
+    "fractional_cash": "Keep any unresolved fraction pending; no zero write-off, synthetic sale, tax-value cash credit or estimated cash-in-lieu.",
+    "sale_cash": "Release sale proceeds only at the first regular-session open strictly after completed settlement under the frozen source calendar.",
+    "cash_in_lieu": "Release independently supported cash-in-lieu at the first regular-session open strictly after its documented availability date.",
+    "income": "Preserve any XLRE distribution receivable earned before disposal; validate its amount and payment terms before replay.",
+    "failure": "Missing delivery, fractional or execution evidence blocks the unchanged full sample; no deletion of the event, XLF, or adjacent dates."
+  },
+  "missing_evidence": [
+    "Account-level whole/fractional allocation and rounding or retention rule for this action.",
+    "If fractions are cashed out: actual calculation basis, amount, and availability evidence.",
+    "Documented availability of delivered XLRE for sale; issuer pay date is not a broker credit.",
+    "Independently validated actual-share XLRE execution prices for the declared disposal policy."
+  ],
+  "sources": {
+    "issuer_notice": {
+      "path": "data/equities/source-repair/xlf-2016-notice/raw.html",
+      "sha256": "bafc28f7b4879d356d436c54f101c85557dd000b0362761c5b998eb6f170f67b"
+    },
+    "issuer_annual": {
+      "path": "data/equities/source-repair/xlf-2016-annual-report/raw.html",
+      "sha256": "0d022f3c4e28dc4b1407bc51c5987a52a96b6cfd1828e47f3e7c5f9822de25f0"
+    },
+    "occ_39575": {
+      "path": "data/equities/source-repair/occ-xlf-distribution/raw.pdf",
+      "sha256": "3a5069cec93883ab030aba57c7dc9d2cf2b343b4361683708ba56aba6e150273"
+    },
+    "issuer_8937": {
+      "path": "data/equities/xlf-action-repair/issuer-8937/raw.pdf",
+      "sha256": "7533175812afe7d5924513b3cd6144bc6d5216aae76c01fe6070bd7db22ad551"
+    },
+    "yahoo_xlf": {
+      "path": "data/equities/c02/sources/XLF/raw.json",
+      "sha256": "5021ca0002a2e7262257c4325174dff997ca5f2956ffdab89303e993f3374271"
+    }
+  },
+  "provider_archive": {
+    "path": "data/equities/source-repair/raw/alpaca/corporate_actions/source-diagnostic-20261001/8b702abaa16220d0b83bff0f/page-00000000.parquet",
+    "response_sha256": "41fa4bc16b940b297dce564ec1c969827dade3223f96b2fe26206ef58220545f",
+    "request": {
+      "params": {
+        "end": "2016-10-15",
+        "limit": 1000,
+        "sort": "asc",
+        "start": "2016-09-01",
+        "symbols": "XLF,XLRE"
+      },
+      "url": "https://data.alpaca.markets/v1/corporate-actions"
+    },
+    "records": 4,
+    "next_request": null
+  },
+  "capture_attempts": [
+    {
+      "key": "issuer-20160919-businesswire",
+      "request_url": "https://www.businesswire.com/news/home/20160919005845/en/State-Street-Global-Advisors-Announces-Dividend-Distributions-Resulting-From-Modifications-to-The-Financial-Select-Sector-SPDR%C2%AE-Fund",
+      "status_code": null,
+      "error": "ReadTimeout after 30 seconds; no HTTP response body received",
+      "recorded_at": "2026-10-01T08:19:45.399388+00:00",
+      "manifest_path": "data/equities/xlf-action-repair/issuer-20160919-businesswire/manifest.json",
+      "manifest_sha256": "3fca13e11178f34e3662967986f772c54ccd541cd2cf64583687b5797d45c263"
+    },
+    {
+      "key": "issuer-20160919-reprint",
+      "request_url": "https://www.marketscreener.com/quote/stock/STATE-STREET-CORPORATION-14499/news/State-Street-Global-Advisors-Announces-Dividend-Distributions-Resulting-From-Modifications-to-The-23076667/",
+      "response_url": "https://www.marketscreener.com/quote/stock/STATE-STREET-CORPORATION-14499/news/State-Street-Global-Advisors-Announces-Dividend-Distributions-Resulting-From-Modifications-to-The-23076667/",
+      "status_code": 403,
+      "retrieved_at": "2026-10-01T08:19:45.635657+00:00",
+      "sha256": "a5281752585fb323945aa8d5013090f917f386f490a1a16ba3b0c738c4e77e65",
+      "bytes": 611,
+      "content_type": "text/html",
+      "manifest_path": "data/equities/xlf-action-repair/issuer-20160919-reprint/manifest.json",
+      "manifest_sha256": "a377e87410a8bda21f97de7fdd9837bd19f3538d2126acb65d702e63ca9021cb"
+    },
+    {
+      "key": "issuer-8937",
+      "request_url": "https://www.ssga.com/library-content/products/fund-docs/etfs/us/tax-documents/US-Form-8937-XLF-Signed-New.pdf",
+      "response_url": "https://www.ssga.com/library-content/products/fund-docs/etfs/us/tax-documents/US-Form-8937-XLF-Signed-New.pdf",
+      "status_code": 200,
+      "retrieved_at": "2026-10-01T08:18:02.847833+00:00",
+      "sha256": "7533175812afe7d5924513b3cd6144bc6d5216aae76c01fe6070bd7db22ad551",
+      "bytes": 275869,
+      "content_type": "application/pdf",
+      "manifest_path": "data/equities/xlf-action-repair/issuer-8937/manifest.json",
+      "manifest_sha256": "a6336e2ccfb9110e9eb35702ae7c876e5ee0b8469739ef47409dabe9dfa2052e"
+    }
+  ],
+  "prior_receipt": {
+    "path": "docs/research/13-equity-data-repair.json",
+    "sha256": "5ae3a29de7ec69486287ed18df765e91bfadecf2b26437d3405c8fa7421c01ce"
+  },
+  "build_code": {
+    "path": "src/tradingbot/data/xlf_action_amendment.py",
+    "sha256": "e6f34f7bbda8bf1b4becd839b868671a4a7273618ab4bffc1bc87b20082f3c9e"
+  },
+  "receipt_sha256": "d46c011cff88c39a9c50b830502ea9f1784a75d9b83d1676011beb2e4229367b"
+}

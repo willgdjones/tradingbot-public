@@ -1,0 +1,895 @@
+{
+  "bead": "tradingbot-gat",
+  "decision": "continue-paper-execution-measurement; not ready-for-live",
+  "historical_profit_pass": true,
+  "holdout_calendar_premium_positive": false,
+  "items": {
+    "control-holdout:tom_random_window_control": {
+      "artifact": "data/equities/results/tom-slot-20260930-control-holdout/tom_random_window_control.json",
+      "artifact_sha256": "4f2138d9ee380c132ca0c679924654903ef9f7b75d145db922b697cc5286416e",
+      "git_commit": "bfe724eee654b13a8af1d4842f266dc7fb485c4e",
+      "metrics": {
+        "actual_ledger_trades": 0,
+        "adjusted_close_observations": 809,
+        "durations": {
+          "5": {
+            "by_entry_year": {
+              "2023": {
+                "cycles": 6,
+                "random_mean_net_scenario_return": 0.0020946324420530534,
+                "tom_mean_net_scenario_return": 0.004481927315796847
+              },
+              "2024": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": 0.004989358990656702,
+                "tom_mean_net_scenario_return": -0.0028440480361083048
+              },
+              "2025": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": 0.005801486899077079,
+                "tom_mean_net_scenario_return": -0.00017295359458203153
+              },
+              "2026": {
+                "cycles": 8,
+                "random_mean_net_scenario_return": -0.0008956940305498229,
+                "tom_mean_net_scenario_return": 0.010952852697507169
+              }
+            },
+            "calendar_excess_mean_return": -0.0014890007152150186,
+            "draws": 10000,
+            "duration_session_intervals": 5,
+            "matched_cycles": 38,
+            "random_at_least_tom_fraction": 0.7337266273372662,
+            "random_expected_mean_net_scenario_return": 0.003549799818019082,
+            "random_mean_gross_return": "0.004237149050067147254069815489",
+            "random_mean_percentiles": {
+              "5": -0.0003645593707276569,
+              "50": 0.0035546023862689127,
+              "95": 0.007492940068710028
+            },
+            "tom_mean_gross_return": "0.002747552615422156638827158282",
+            "tom_mean_net_scenario_return": 0.0020607991028040633
+          },
+          "6": {
+            "by_entry_year": {
+              "2023": {
+                "cycles": 6,
+                "random_mean_net_scenario_return": 0.002371750045892936,
+                "tom_mean_net_scenario_return": 0.004481927315796847
+              },
+              "2024": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": 0.005747451494595088,
+                "tom_mean_net_scenario_return": -0.0028440480361083048
+              },
+              "2025": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": 0.006671951301293897,
+                "tom_mean_net_scenario_return": -0.00017295359458203153
+              },
+              "2026": {
+                "cycles": 8,
+                "random_mean_net_scenario_return": -0.0008003437056200858,
+                "tom_mean_net_scenario_return": 0.010952852697507169
+              }
+            },
+            "calendar_excess_mean_return": -0.0020671110072239558,
+            "draws": 10000,
+            "duration_session_intervals": 6,
+            "matched_cycles": 38,
+            "random_at_least_tom_fraction": 0.8153184681531847,
+            "random_expected_mean_net_scenario_return": 0.004127910110028019,
+            "random_mean_gross_return": "0.004815490632450963514780686608",
+            "random_mean_percentiles": {
+              "5": 0.0003170929996630868,
+              "50": 0.0041286455335810155,
+              "95": 0.008006458194125862
+            },
+            "tom_mean_gross_return": "0.002747552615422156638827158282",
+            "tom_mean_net_scenario_return": 0.0020607991028040633
+          }
+        },
+        "first_observation": "2023-07-12",
+        "holdout": {
+          "data_end": "2026-09-30T20:00:00.000001+00:00",
+          "data_start": "2016-01-04T05:00:00+00:00",
+          "dataset_key": "equity:83501d8e59ae95b128481d26228722f00514f26b4cdb388462edb70908e4f5a9",
+          "final_holdout": true,
+          "holdout_start": "2023-07-12T01:06:00+00:00",
+          "split": "70/30 by elapsed UTC time; end exclusive",
+          "strategy_version": "9f143edaf9851d1e5fe2e544872b7893fd7230b079c760046226368178b32118"
+        },
+        "last_observation": "2026-09-30",
+        "limitations": "Adjusted total-return proxy; independent comparison notionals, not portfolio P&L. Random-date exchangeability is an assumption; prior full-sample study was inspected.",
+        "nonexecution_diagnostic": true
+      },
+      "trial_id": 3281
+    },
+    "control-train:tom_random_window_control": {
+      "artifact": "data/equities/results/tom-slot-20260930-control-train/tom_random_window_control.json",
+      "artifact_sha256": "2706f11511b481143ccd2d089e613c38b12d47b6829ddda28393c72da72d9960",
+      "git_commit": "df6f2e5d650227cf4176ea6b95dc1929cc2c8a4f",
+      "metrics": {
+        "actual_ledger_trades": 0,
+        "adjusted_close_observations": 1892,
+        "durations": {
+          "5": {
+            "by_entry_year": {
+              "2016": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": 0.003446885045754986,
+                "tom_mean_net_scenario_return": 0.0044498508804531045
+              },
+              "2017": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": 0.0026082819801772844,
+                "tom_mean_net_scenario_return": 0.005637075769397669
+              },
+              "2018": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": -0.0045597246900442165,
+                "tom_mean_net_scenario_return": -0.002229435785975115
+              },
+              "2019": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": 0.00691249601372845,
+                "tom_mean_net_scenario_return": 0.004308694935820972
+              },
+              "2020": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": -0.004960299742620733,
+                "tom_mean_net_scenario_return": 0.010219794093084591
+              },
+              "2021": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": 0.002903601004172938,
+                "tom_mean_net_scenario_return": -0.0025407852361910006
+              },
+              "2022": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": -0.007254642061471217,
+                "tom_mean_net_scenario_return": 0.00963671308956278
+              },
+              "2023": {
+                "cycles": 6,
+                "random_mean_net_scenario_return": 0.00309500899706948,
+                "tom_mean_net_scenario_return": 0.016088688143483798
+              }
+            },
+            "calendar_excess_mean_return": 0.004917619969288355,
+            "draws": 10000,
+            "duration_session_intervals": 5,
+            "matched_cycles": 90,
+            "random_at_least_tom_fraction": 0.0036996300369963003,
+            "random_expected_mean_net_scenario_return": 8.588027309763101e-05,
+            "random_mean_gross_return": "0.0007718436601587303027589560419",
+            "random_mean_percentiles": {
+              "5": -0.002854022802003141,
+              "50": 0.00010302947607583925,
+              "95": 0.003038797027772655
+            },
+            "tom_mean_gross_return": "0.00569143107092309682897518789",
+            "tom_mean_net_scenario_return": 0.005003500242385986
+          },
+          "6": {
+            "by_entry_year": {
+              "2016": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": 0.0042477618923163684,
+                "tom_mean_net_scenario_return": 0.0044498508804531045
+              },
+              "2017": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": 0.003313690183373883,
+                "tom_mean_net_scenario_return": 0.005637075769397669
+              },
+              "2018": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": -0.004809175991510631,
+                "tom_mean_net_scenario_return": -0.002229435785975115
+              },
+              "2019": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": 0.008619232009980868,
+                "tom_mean_net_scenario_return": 0.004308694935820972
+              },
+              "2020": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": -0.00482732384636928,
+                "tom_mean_net_scenario_return": 0.010219794093084591
+              },
+              "2021": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": 0.0033413195443910988,
+                "tom_mean_net_scenario_return": -0.0025407852361910006
+              },
+              "2022": {
+                "cycles": 12,
+                "random_mean_net_scenario_return": -0.008145074595435382,
+                "tom_mean_net_scenario_return": 0.00963671308956278
+              },
+              "2023": {
+                "cycles": 6,
+                "random_mean_net_scenario_return": 0.003952398969422349,
+                "tom_mean_net_scenario_return": 0.016088688143483798
+              }
+            },
+            "calendar_excess_mean_return": 0.004507949751524906,
+            "draws": 10000,
+            "duration_session_intervals": 6,
+            "matched_cycles": 90,
+            "random_at_least_tom_fraction": 0.0045995400459954,
+            "random_expected_mean_net_scenario_return": 0.0004955504908610801,
+            "random_mean_gross_return": "0.001181677778789458347666853382",
+            "random_mean_percentiles": {
+              "5": -0.002296380440909487,
+              "50": 0.0004637852762794479,
+              "95": 0.0033994443822875278
+            },
+            "tom_mean_gross_return": "0.00569143107092309682897518789",
+            "tom_mean_net_scenario_return": 0.005003500242385986
+          }
+        },
+        "first_observation": "2016-01-04",
+        "holdout": {
+          "data_end": "2026-09-30T20:00:00.000001+00:00",
+          "data_start": "2016-01-04T05:00:00+00:00",
+          "dataset_key": "equity:83501d8e59ae95b128481d26228722f00514f26b4cdb388462edb70908e4f5a9",
+          "final_holdout": false,
+          "holdout_start": "2023-07-12T01:06:00+00:00",
+          "split": "70/30 by elapsed UTC time; end exclusive",
+          "strategy_version": "9f143edaf9851d1e5fe2e544872b7893fd7230b079c760046226368178b32118"
+        },
+        "last_observation": "2023-07-11",
+        "limitations": "Adjusted total-return proxy; independent comparison notionals, not portfolio P&L. Random-date exchangeability is an assumption; prior full-sample study was inspected.",
+        "nonexecution_diagnostic": true
+      },
+      "trial_id": 3278
+    },
+    "holdout:tom_minute_2bp": {
+      "artifact": "data/equities/results/tom-slot-20260930-holdout/tom_minute_2bp.json",
+      "artifact_sha256": "16ed9d49415e31aa34763888f713f31eee816377fd0e6635cb83b10e09072edf",
+      "git_commit": "bfe724eee654b13a8af1d4842f266dc7fb485c4e",
+      "metrics": {
+        "2016_2022": {
+          "fees_usd": "0",
+          "mean_net_usd": null,
+          "net_usd": "0",
+          "one_sided_t_pvalue": null,
+          "trades": 0,
+          "win_rate": null
+        },
+        "2023_2024": {
+          "fees_usd": "0.680000",
+          "mean_net_usd": "0.03567971191872988235294117647",
+          "net_usd": "0.606555102618408000",
+          "one_sided_t_pvalue": 0.48057364972474254,
+          "trades": 17,
+          "win_rate": "0.5294117647058823529411764706"
+        },
+        "2023_2026": {
+          "fees_usd": "1.520000",
+          "mean_net_usd": "0.3002483269683983157894736842",
+          "net_usd": "11.409436424799136000",
+          "one_sided_t_pvalue": 0.26415407692256176,
+          "trades": 38,
+          "win_rate": "0.5789473684210526315789473684"
+        },
+        "2025_2026": {
+          "fees_usd": "0.840000",
+          "mean_net_usd": "0.5144229201038441904761904762",
+          "net_usd": "10.802881322180728000",
+          "one_sided_t_pvalue": 0.21359663504861226,
+          "trades": 21,
+          "win_rate": "0.6190476190476190476190476190"
+        },
+        "cash_reconciliation_tolerance_usd": "0.000038",
+        "ending_cash_including_unsettled": "151.409436424799136000",
+        "ending_marked_equity_usd": "151.409436424799136000",
+        "entry_trend_regimes": {
+          "above_prior_200_session_mean": {
+            "fees_usd": "1.400000",
+            "mean_net_usd": "-0.04204499137319811428571428571",
+            "net_usd": "-1.471574698061934000",
+            "one_sided_t_pvalue": 0.5364552108463718,
+            "trades": 35,
+            "win_rate": "0.5428571428571428571428571429"
+          },
+          "below_prior_200_session_mean": {
+            "fees_usd": "0.120000",
+            "mean_net_usd": "4.293670374287023333333333333",
+            "net_usd": "12.881011122861070000",
+            "one_sided_t_pvalue": 0.051058886390768346,
+            "trades": 3,
+            "win_rate": "1"
+          }
+        },
+        "exposure_session_intervals": 228,
+        "fees_usd": "1.520000",
+        "fills": 76,
+        "first_entry": "2023-07-26",
+        "halt_events": [],
+        "holdout": {
+          "data_end": "2026-09-30T20:00:00.000001+00:00",
+          "data_start": "2016-01-04T05:00:00+00:00",
+          "dataset_key": "equity:83501d8e59ae95b128481d26228722f00514f26b4cdb388462edb70908e4f5a9",
+          "final_holdout": true,
+          "holdout_start": "2023-07-12T01:06:00+00:00",
+          "split": "70/30 by elapsed UTC time; end exclusive",
+          "strategy_version": "b9cc835353e8dd7c004a8d172b301c63203cd2f574a08021756412b9e8bd64da"
+        },
+        "last_exit": "2026-09-03",
+        "ledger_net_usd": "11.409438",
+        "max_marked_drawdown_usd": "23.7346287433979830000000000",
+        "mean_net_usd": "0.3002483269683983157894736842",
+        "net_return_on_virtual_cash": "0.08149598571428571428571428571",
+        "net_usd": "11.409436424799136000",
+        "one_sided_t_pvalue": 0.26415407692256176,
+        "open_positions": {},
+        "position_hours": 7890.0,
+        "quality": {
+          "action_reference_coverage": "partial; also checked factor rounding bands",
+          "action_reference_rows": 40,
+          "complete_cycles": 38,
+          "corporate_action_windows_detected": 0,
+          "daily_sessions": 781,
+          "missing_daily_sessions": 0
+        },
+        "rejected_orders": 0,
+        "trades": 38,
+        "unfinished_tom_cycle_excluded": "2026-09-25 to 2026-10-05",
+        "unrealized_pnl_usd": "0E-12",
+        "win_rate": "0.5789473684210526315789473684",
+        "year_by_exit": {
+          "2023": {
+            "fees_usd": "0.200000",
+            "mean_net_usd": "1.291644053016107200",
+            "net_usd": "6.458220265080536000",
+            "one_sided_t_pvalue": 0.22810859115048054,
+            "trades": 5,
+            "win_rate": "0.6"
+          },
+          "2024": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "-0.4876387635385106666666666667",
+            "net_usd": "-5.851665162462128000",
+            "one_sided_t_pvalue": 0.7267203973307077,
+            "trades": 12,
+            "win_rate": "0.5"
+          },
+          "2025": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "-0.1932952678993711666666666667",
+            "net_usd": "-2.319543214792454000",
+            "one_sided_t_pvalue": 0.5802498513469643,
+            "trades": 12,
+            "win_rate": "0.5"
+          },
+          "2026": {
+            "fees_usd": "0.360000",
+            "mean_net_usd": "1.458047170774798000",
+            "net_usd": "13.122424536973182000",
+            "one_sided_t_pvalue": 0.04388747882220953,
+            "trades": 9,
+            "win_rate": "0.7777777777777777777777777778"
+          }
+        }
+      },
+      "trial_id": 3282
+    },
+    "train:tom_minute_10bp": {
+      "artifact": "data/equities/results/tom-slot-20260930-train/tom_minute_10bp.json",
+      "artifact_sha256": "db4733d4480618f99060e32871b487b31b5787a82d4993db2e758960a5dda43f",
+      "git_commit": "df6f2e5d650227cf4176ea6b95dc1929cc2c8a4f",
+      "metrics": {
+        "2016_2022": {
+          "fees_usd": "3.320000",
+          "mean_net_usd": "0.3839487643582944963855421687",
+          "net_usd": "31.867747441738443200",
+          "one_sided_t_pvalue": 0.1382816845838632,
+          "trades": 83,
+          "win_rate": "0.5421686746987951807228915663"
+        },
+        "2023_2024": {
+          "fees_usd": "0.280000",
+          "mean_net_usd": "1.612948673609657857142857143",
+          "net_usd": "11.290640715267605000",
+          "one_sided_t_pvalue": 0.031076982770623776,
+          "trades": 7,
+          "win_rate": "0.8571428571428571428571428571"
+        },
+        "2023_2026": {
+          "fees_usd": "0.280000",
+          "mean_net_usd": "1.612948673609657857142857143",
+          "net_usd": "11.290640715267605000",
+          "one_sided_t_pvalue": 0.031076982770623776,
+          "trades": 7,
+          "win_rate": "0.8571428571428571428571428571"
+        },
+        "2025_2026": {
+          "fees_usd": "0",
+          "mean_net_usd": null,
+          "net_usd": "0",
+          "one_sided_t_pvalue": null,
+          "trades": 0,
+          "win_rate": null
+        },
+        "cash_reconciliation_tolerance_usd": "0.000090",
+        "ending_cash_including_unsettled": "183.158388157006048200",
+        "ending_marked_equity_usd": "183.158388157006048200",
+        "entry_trend_regimes": {
+          "above_prior_200_session_mean": {
+            "fees_usd": "2.520000",
+            "mean_net_usd": "0.139778334052126400",
+            "net_usd": "8.806035045283963200",
+            "one_sided_t_pvalue": 0.34249753545772144,
+            "trades": 63,
+            "win_rate": "0.5396825396825396825396825397"
+          },
+          "below_prior_200_session_mean": {
+            "fees_usd": "0.720000",
+            "mean_net_usd": "1.422134735416893333333333333",
+            "net_usd": "25.598425237504080000",
+            "one_sided_t_pvalue": 0.08976239830718574,
+            "trades": 18,
+            "win_rate": "0.6111111111111111111111111111"
+          },
+          "fewer_than_200_prior_sessions": {
+            "fees_usd": "0.360000",
+            "mean_net_usd": "0.9726586526908894444444444444",
+            "net_usd": "8.753927874218005000",
+            "one_sided_t_pvalue": 0.1700184019216603,
+            "trades": 9,
+            "win_rate": "0.6666666666666666666666666667"
+          }
+        },
+        "exposure_session_intervals": 540,
+        "fees_usd": "3.600000",
+        "fills": 180,
+        "first_entry": "2016-01-26",
+        "halt_events": [],
+        "holdout": {
+          "data_end": "2026-09-30T20:00:00.000001+00:00",
+          "data_start": "2016-01-04T05:00:00+00:00",
+          "dataset_key": "equity:83501d8e59ae95b128481d26228722f00514f26b4cdb388462edb70908e4f5a9",
+          "final_holdout": false,
+          "holdout_start": "2023-07-12T01:06:00+00:00",
+          "split": "70/30 by elapsed UTC time; end exclusive",
+          "strategy_version": "ab774b01a499396d4c08dfee5170cd617da228e25807e769d37e38af60545092"
+        },
+        "last_exit": "2023-07-06",
+        "ledger_net_usd": "43.158389",
+        "max_marked_drawdown_usd": "16.3110910384294500000000000",
+        "mean_net_usd": "0.4795376461889560911111111111",
+        "net_return_on_virtual_cash": "0.3082742071428571428571428571",
+        "net_usd": "43.158388157006048200",
+        "one_sided_t_pvalue": 0.07422217305812834,
+        "open_positions": {},
+        "position_hours": 18771.0,
+        "quality": {
+          "action_reference_coverage": "partial; also checked factor rounding bands",
+          "action_reference_rows": 40,
+          "complete_cycles": 90,
+          "corporate_action_windows_detected": 0,
+          "daily_sessions": 1874,
+          "missing_daily_sessions": 0
+        },
+        "rejected_orders": 0,
+        "trades": 90,
+        "unfinished_tom_cycle_excluded": "2026-09-25 to 2026-10-05",
+        "unrealized_pnl_usd": "0E-12",
+        "win_rate": "0.5666666666666666666666666667",
+        "year_by_exit": {
+          "2016": {
+            "fees_usd": "0.440000",
+            "mean_net_usd": "0.4138966027222163636363636364",
+            "net_usd": "4.552862629944380000",
+            "one_sided_t_pvalue": 0.32467220364878774,
+            "trades": 11,
+            "win_rate": "0.5454545454545454545454545455"
+          },
+          "2017": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "0.3485792351743329166666666667",
+            "net_usd": "4.182950822091995000",
+            "one_sided_t_pvalue": 0.11160938694253142,
+            "trades": 12,
+            "win_rate": "0.5"
+          },
+          "2018": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "-0.5410836622785029166666666667",
+            "net_usd": "-6.493003947342035000",
+            "one_sided_t_pvalue": 0.6977918385548219,
+            "trades": 12,
+            "win_rate": "0.5"
+          },
+          "2019": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "0.647088515524677500",
+            "net_usd": "7.765062186296130000",
+            "one_sided_t_pvalue": 0.2868884670847302,
+            "trades": 12,
+            "win_rate": "0.6666666666666666666666666667"
+          },
+          "2020": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "1.156867226172061666666666667",
+            "net_usd": "13.882406714064740000",
+            "one_sided_t_pvalue": 0.1413981448965712,
+            "trades": 12,
+            "win_rate": "0.6666666666666666666666666667"
+          },
+          "2021": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "-0.3053107660090847333333333333",
+            "net_usd": "-3.663729192109016800",
+            "one_sided_t_pvalue": 0.6634193045341208,
+            "trades": 12,
+            "win_rate": "0.4166666666666666666666666667"
+          },
+          "2022": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "0.9700998523993541666666666667",
+            "net_usd": "11.641198228792250000",
+            "one_sided_t_pvalue": 0.22812660460798329,
+            "trades": 12,
+            "win_rate": "0.5"
+          },
+          "2023": {
+            "fees_usd": "0.280000",
+            "mean_net_usd": "1.612948673609657857142857143",
+            "net_usd": "11.290640715267605000",
+            "one_sided_t_pvalue": 0.031076982770623776,
+            "trades": 7,
+            "win_rate": "0.8571428571428571428571428571"
+          }
+        }
+      },
+      "trial_id": 3280
+    },
+    "train:tom_minute_2bp": {
+      "artifact": "data/equities/results/tom-slot-20260930-train/tom_minute_2bp.json",
+      "artifact_sha256": "0b647bfcefddb710ef6ab798924ad1437313ded8d75c245d65f65e56496aa687",
+      "git_commit": "df6f2e5d650227cf4176ea6b95dc1929cc2c8a4f",
+      "metrics": {
+        "2016_2022": {
+          "fees_usd": "3.320000",
+          "mean_net_usd": "0.6097064358734067513253012048",
+          "net_usd": "50.605634177492760360",
+          "one_sided_t_pvalue": 0.04316382021211547,
+          "trades": 83,
+          "win_rate": "0.5903614457831325301204819277"
+        },
+        "2023_2024": {
+          "fees_usd": "0.280000",
+          "mean_net_usd": "1.839753754919187857142857143",
+          "net_usd": "12.878276284434315000",
+          "one_sided_t_pvalue": 0.020194808922111,
+          "trades": 7,
+          "win_rate": "0.8571428571428571428571428571"
+        },
+        "2023_2026": {
+          "fees_usd": "0.280000",
+          "mean_net_usd": "1.839753754919187857142857143",
+          "net_usd": "12.878276284434315000",
+          "one_sided_t_pvalue": 0.020194808922111,
+          "trades": 7,
+          "win_rate": "0.8571428571428571428571428571"
+        },
+        "2025_2026": {
+          "fees_usd": "0",
+          "mean_net_usd": null,
+          "net_usd": "0",
+          "one_sided_t_pvalue": null,
+          "trades": 0,
+          "win_rate": null
+        },
+        "cash_reconciliation_tolerance_usd": "0.000090",
+        "ending_cash_including_unsettled": "203.483910461927075360",
+        "ending_marked_equity_usd": "203.483910461927075360",
+        "entry_trend_regimes": {
+          "above_prior_200_session_mean": {
+            "fees_usd": "2.520000",
+            "mean_net_usd": "0.3642921435153423073015873016",
+            "net_usd": "22.950405041466565360",
+            "one_sided_t_pvalue": 0.14654318567285612,
+            "trades": 63,
+            "win_rate": "0.5873015873015873015873015873"
+          },
+          "below_prior_200_session_mean": {
+            "fees_usd": "0.720000",
+            "mean_net_usd": "1.652631107567517944444444444",
+            "net_usd": "29.747359936215323000",
+            "one_sided_t_pvalue": 0.061474939264725526,
+            "trades": 18,
+            "win_rate": "0.6111111111111111111111111111"
+          },
+          "fewer_than_200_prior_sessions": {
+            "fees_usd": "0.360000",
+            "mean_net_usd": "1.198460609360576333333333333",
+            "net_usd": "10.786145484245187000",
+            "one_sided_t_pvalue": 0.1236556556329445,
+            "trades": 9,
+            "win_rate": "0.7777777777777777777777777778"
+          }
+        },
+        "exposure_session_intervals": 540,
+        "fees_usd": "3.600000",
+        "fills": 180,
+        "first_entry": "2016-01-26",
+        "halt_events": [],
+        "holdout": {
+          "data_end": "2026-09-30T20:00:00.000001+00:00",
+          "data_start": "2016-01-04T05:00:00+00:00",
+          "dataset_key": "equity:83501d8e59ae95b128481d26228722f00514f26b4cdb388462edb70908e4f5a9",
+          "final_holdout": false,
+          "holdout_start": "2023-07-12T01:06:00+00:00",
+          "split": "70/30 by elapsed UTC time; end exclusive",
+          "strategy_version": "b9cc835353e8dd7c004a8d172b301c63203cd2f574a08021756412b9e8bd64da"
+        },
+        "last_exit": "2023-07-06",
+        "ledger_net_usd": "63.483911",
+        "max_marked_drawdown_usd": "15.7138687210662290000000000",
+        "mean_net_usd": "0.7053767829103008373333333333",
+        "net_return_on_virtual_cash": "0.4534565071428571428571428571",
+        "net_usd": "63.483910461927075360",
+        "one_sided_t_pvalue": 0.017546748660517336,
+        "open_positions": {},
+        "position_hours": 18771.0,
+        "quality": {
+          "action_reference_coverage": "partial; also checked factor rounding bands",
+          "action_reference_rows": 40,
+          "complete_cycles": 90,
+          "corporate_action_windows_detected": 0,
+          "daily_sessions": 1874,
+          "missing_daily_sessions": 0
+        },
+        "rejected_orders": 0,
+        "trades": 90,
+        "unfinished_tom_cycle_excluded": "2026-09-25 to 2026-10-05",
+        "unrealized_pnl_usd": "0E-12",
+        "win_rate": "0.6111111111111111111111111111",
+        "year_by_exit": {
+          "2016": {
+            "fees_usd": "0.440000",
+            "mean_net_usd": "0.6388002556196174545454545455",
+            "net_usd": "7.026802811815792000",
+            "one_sided_t_pvalue": 0.2433576205123723,
+            "trades": 11,
+            "win_rate": "0.6363636363636363636363636364"
+          },
+          "2017": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "0.5733649268871994166666666667",
+            "net_usd": "6.880379122646393000",
+            "one_sided_t_pvalue": 0.02878964032480015,
+            "trades": 12,
+            "win_rate": "0.5833333333333333333333333333"
+          },
+          "2018": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "-0.3114114817554810833333333333",
+            "net_usd": "-3.736937781065773000",
+            "one_sided_t_pvalue": 0.6171756994840571,
+            "trades": 12,
+            "win_rate": "0.5"
+          },
+          "2019": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "0.8723553896383661666666666667",
+            "net_usd": "10.468264675660394000",
+            "one_sided_t_pvalue": 0.22583860131571787,
+            "trades": 12,
+            "win_rate": "0.6666666666666666666666666667"
+          },
+          "2020": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "1.382934973346878500",
+            "net_usd": "16.595219680162542000",
+            "one_sided_t_pvalue": 0.10240895088939239,
+            "trades": 12,
+            "win_rate": "0.6666666666666666666666666667"
+          },
+          "2021": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "-0.081571962204752970",
+            "net_usd": "-0.978863546457035640",
+            "one_sided_t_pvalue": 0.5449683496062484,
+            "trades": 12,
+            "win_rate": "0.5833333333333333333333333333"
+          },
+          "2022": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "1.195897434560870666666666667",
+            "net_usd": "14.350769214730448000",
+            "one_sided_t_pvalue": 0.1811529711987419,
+            "trades": 12,
+            "win_rate": "0.5"
+          },
+          "2023": {
+            "fees_usd": "0.280000",
+            "mean_net_usd": "1.839753754919187857142857143",
+            "net_usd": "12.878276284434315000",
+            "one_sided_t_pvalue": 0.020194808922111,
+            "trades": 7,
+            "win_rate": "0.8571428571428571428571428571"
+          }
+        }
+      },
+      "trial_id": 3277
+    },
+    "train:tom_minute_5bp": {
+      "artifact": "data/equities/results/tom-slot-20260930-train/tom_minute_5bp.json",
+      "artifact_sha256": "889592c4c8e5ae4e96c028aa95d17d9ab84c6d9b84f4a4aee1d1a42f1cc04134",
+      "git_commit": "df6f2e5d650227cf4176ea6b95dc1929cc2c8a4f",
+      "metrics": {
+        "2016_2022": {
+          "fees_usd": "3.320000",
+          "mean_net_usd": "0.5253412282857663036144578313",
+          "net_usd": "43.603321947718603200",
+          "one_sided_t_pvalue": 0.06916197369152982,
+          "trades": 83,
+          "win_rate": "0.5542168674698795180722891566"
+        },
+        "2023_2024": {
+          "fees_usd": "0.280000",
+          "mean_net_usd": "1.754652257602257142857142857",
+          "net_usd": "12.282565803215800000",
+          "one_sided_t_pvalue": 0.02370830222734921,
+          "trades": 7,
+          "win_rate": "0.8571428571428571428571428571"
+        },
+        "2023_2026": {
+          "fees_usd": "0.280000",
+          "mean_net_usd": "1.754652257602257142857142857",
+          "net_usd": "12.282565803215800000",
+          "one_sided_t_pvalue": 0.02370830222734921,
+          "trades": 7,
+          "win_rate": "0.8571428571428571428571428571"
+        },
+        "2025_2026": {
+          "fees_usd": "0",
+          "mean_net_usd": null,
+          "net_usd": "0",
+          "one_sided_t_pvalue": null,
+          "trades": 0,
+          "win_rate": null
+        },
+        "cash_reconciliation_tolerance_usd": "0.000090",
+        "ending_cash_including_unsettled": "195.885887750934403200",
+        "ending_marked_equity_usd": "195.885887750934403200",
+        "entry_trend_regimes": {
+          "above_prior_200_session_mean": {
+            "fees_usd": "2.520000",
+            "mean_net_usd": "0.2800729554111575507936507937",
+            "net_usd": "17.644596190902925700",
+            "one_sided_t_pvalue": 0.20889171710314708,
+            "trades": 63,
+            "win_rate": "0.5555555555555555555555555556"
+          },
+          "below_prior_200_session_mean": {
+            "fees_usd": "0.720000",
+            "mean_net_usd": "1.567643693244090694444444444",
+            "net_usd": "28.217586478393632500",
+            "one_sided_t_pvalue": 0.07090734566555318,
+            "trades": 18,
+            "win_rate": "0.6111111111111111111111111111"
+          },
+          "fewer_than_200_prior_sessions": {
+            "fees_usd": "0.360000",
+            "mean_net_usd": "1.113745009070871666666666667",
+            "net_usd": "10.023705081637845000",
+            "one_sided_t_pvalue": 0.1396508030803032,
+            "trades": 9,
+            "win_rate": "0.6666666666666666666666666667"
+          }
+        },
+        "exposure_session_intervals": 540,
+        "fees_usd": "3.600000",
+        "fills": 180,
+        "first_entry": "2016-01-26",
+        "halt_events": [],
+        "holdout": {
+          "data_end": "2026-09-30T20:00:00.000001+00:00",
+          "data_start": "2016-01-04T05:00:00+00:00",
+          "dataset_key": "equity:83501d8e59ae95b128481d26228722f00514f26b4cdb388462edb70908e4f5a9",
+          "final_holdout": false,
+          "holdout_start": "2023-07-12T01:06:00+00:00",
+          "split": "70/30 by elapsed UTC time; end exclusive",
+          "strategy_version": "4e6dd0b91810bb7709ce807de55f2a7fcec7e8f394214959f3f2a41c5866a55b"
+        },
+        "last_exit": "2023-07-06",
+        "ledger_net_usd": "55.885888",
+        "max_marked_drawdown_usd": "15.9401107471694300000000000",
+        "mean_net_usd": "0.6209543083437155911111111111",
+        "net_return_on_virtual_cash": "0.3991849142857142857142857143",
+        "net_usd": "55.885887750934403200",
+        "one_sided_t_pvalue": 0.03134802776832553,
+        "open_positions": {},
+        "position_hours": 18771.0,
+        "quality": {
+          "action_reference_coverage": "partial; also checked factor rounding bands",
+          "action_reference_rows": 40,
+          "complete_cycles": 90,
+          "corporate_action_windows_detected": 0,
+          "daily_sessions": 1874,
+          "missing_daily_sessions": 0
+        },
+        "rejected_orders": 0,
+        "trades": 90,
+        "unfinished_tom_cycle_excluded": "2026-09-25 to 2026-10-05",
+        "unrealized_pnl_usd": "0E-12",
+        "win_rate": "0.5777777777777777777777777778",
+        "year_by_exit": {
+          "2016": {
+            "fees_usd": "0.440000",
+            "mean_net_usd": "0.5544163325618097727272727273",
+            "net_usd": "6.098579658179907500",
+            "one_sided_t_pvalue": 0.27229828037038084,
+            "trades": 11,
+            "win_rate": "0.5454545454545454545454545455"
+          },
+          "2017": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "0.4890299569543604166666666667",
+            "net_usd": "5.868359483452325000",
+            "one_sided_t_pvalue": 0.04890329036044598,
+            "trades": 12,
+            "win_rate": "0.5"
+          },
+          "2018": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "-0.3952321538102833333333333333",
+            "net_usd": "-4.742785845723400000",
+            "one_sided_t_pvalue": 0.6472993242263618,
+            "trades": 12,
+            "win_rate": "0.5"
+          },
+          "2019": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "0.7878144740956847916666666667",
+            "net_usd": "9.453773689148217500",
+            "one_sided_t_pvalue": 0.24770121866667305,
+            "trades": 12,
+            "win_rate": "0.6666666666666666666666666667"
+          },
+          "2020": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "1.298114641798736458333333333",
+            "net_usd": "15.577375701584837500",
+            "one_sided_t_pvalue": 0.11584764104492529,
+            "trades": 12,
+            "win_rate": "0.6666666666666666666666666667"
+          },
+          "2021": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "-0.165515403282382025",
+            "net_usd": "-1.986184839388584300",
+            "one_sided_t_pvalue": 0.5906137356034993,
+            "trades": 12,
+            "win_rate": "0.5"
+          },
+          "2022": {
+            "fees_usd": "0.480000",
+            "mean_net_usd": "1.111183675038775000",
+            "net_usd": "13.334204100465300000",
+            "one_sided_t_pvalue": 0.19789550856192767,
+            "trades": 12,
+            "win_rate": "0.5"
+          },
+          "2023": {
+            "fees_usd": "0.280000",
+            "mean_net_usd": "1.754652257602257142857142857",
+            "net_usd": "12.282565803215800000",
+            "one_sided_t_pvalue": 0.02370830222734921,
+            "trades": 7,
+            "win_rate": "0.8571428571428571428571428571"
+          }
+        }
+      },
+      "trial_id": 3279
+    }
+  },
+  "prior_full_sample_inspection": true
+}

@@ -1,0 +1,79 @@
+{
+  "all_dependencies_match_worktree_and_recorded_commit": true,
+  "all_eight_result_metrics_null": true,
+  "candidate": "C14",
+  "capital": {
+    "absolute_slot_strike_bound_before_reserves_usd": "1.40",
+    "affordable_event_count": null,
+    "collateral_budget_before_reserves_usd": "133.00",
+    "eligible_contract_count": null,
+    "illustrative_1_50_strike_fits_before_reserves": false,
+    "illustrative_1_50_strike_obligation_usd": "150",
+    "necessary_condition_only": true,
+    "premium_credit_used_for_collateral": false,
+    "required_reserve_usd": null,
+    "reserves_reduce_bound": true,
+    "strike_upper_bound_before_reserves_usd": "1.33"
+  },
+  "counts": {
+    "fills": 0,
+    "finals": 0,
+    "orders": 0,
+    "trials": 1
+  },
+  "dependency_count": 26,
+  "implementation_commit": "3c07551e580425c0a64403c37241bf8d73aa6fd1",
+  "planned_configurations": [
+    {
+      "adverse_per_share_usd": "0.01",
+      "hold_sessions": 5,
+      "state": "unattempted_source_gate_failed"
+    },
+    {
+      "adverse_per_share_usd": "0.02",
+      "hold_sessions": 5,
+      "state": "unattempted_source_gate_failed"
+    },
+    {
+      "adverse_per_share_usd": "0.01",
+      "hold_sessions": 10,
+      "state": "unattempted_source_gate_failed"
+    },
+    {
+      "adverse_per_share_usd": "0.02",
+      "hold_sessions": 10,
+      "state": "unattempted_source_gate_failed"
+    }
+  ],
+  "protected_prior_trial_count": 12,
+  "protected_rows_unchanged": true,
+  "protected_trial_row_sha256": {
+    "3281": "a09aaa188834ca52331039bc009a3743903492ca21b0114ddfb124d648446a03",
+    "3282": "e67cc2bdc28d46992dee74291e9b51bbf6dc3b7f0d5309ffa6cfaed44021ed26",
+    "3298": "83feca699205e7d572c1bc96a55d8be4ed2fda66f56c293d07a4a81c25d51cc7",
+    "3319": "aaee7b43f69720005710201b206006e114dc1ddf0cf05af485b0c31a41473785",
+    "3910": "4341172f381076f1644eb40c4a6a21e7b389ebadb93cda1484ec4aa9a9b08743",
+    "3964": "c659876386d8089d5186f2f503ed03c0a8bfbed5412c7fdb45011710b59f13fa",
+    "3969": "eb74cb04946da3562ec10be2b9e458ff8773e2a7c2ff17ebcbee55dabe4eca52",
+    "4066": "a994873d691e51b1d441df2516fe243ff33153c8a6ba1eb82560f0a251b36f6d",
+    "5195": "6fe0a1ca5858c91e2f9cd6216e95f9eafe398e07f9545ab78808692b42398682",
+    "5311": "cacef25130e450d3aadd20aad44c96511a11ab2ac707c0dde5975067feabed28",
+    "5314": "0f571f5784a9103d5e63e0b50954552cbc60129b83a24b4c053573a3cb67e0b4",
+    "5322": "240e77b9e703a1434bd001379244680b66d47157ec91d2eea4513a626d4f29d1"
+  },
+  "raw_documentation_and_harness_hashes_verified": true,
+  "real_allocation_usd": "0",
+  "risk_limits_unchanged": true,
+  "strategy_id": 10085,
+  "strategy_status": "idea",
+  "trial_id": 5325,
+  "trial_row_sha256": "cafb89d1ae9f1d6b1231d2652a6a203af036cf13ab553f192812b8e33ef009f2",
+  "venue_row_sha256": {
+    "1": "850ee30b5e95903f90aa0d53365688414e91e0edbf003d7df40bc14144cf25b5",
+    "2": "b72e84548ad67e445348526b5fd886735818af65e86df4426442083ddb9ecb0c",
+    "3": "c1f7c69f6e6298d352b9e03283bea9ddcd28c757eca22f19965c4ecef633f12f",
+    "4": "ad6125bc4f25d6ce1d4174d944c842370ab9caad7850469c10a0132fdb74ed11"
+  },
+  "venues_unchanged": true,
+  "verified_by": "Stored-only read-only SQL and git object checks; no replay or recorder rerun"
+}

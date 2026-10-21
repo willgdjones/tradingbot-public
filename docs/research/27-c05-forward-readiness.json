@@ -1,0 +1,724 @@
+{
+  "api_budget": {
+    "attempts": 24,
+    "halted": false,
+    "max_errors": 5,
+    "window_seconds": 60
+  },
+  "assets": {
+    "DBA": {
+      "audit": {
+        "eligible_fractional_us_equity": true
+      },
+      "observed_at": "2026-10-01T19:17:06.078267+00:00",
+      "response": {
+        "class": "us_equity",
+        "exchange": "ARCA",
+        "fractionable": true,
+        "id": "7314c9c4-e3ea-47aa-b77c-d755c2091170",
+        "status": "active",
+        "symbol": "DBA",
+        "tradable": true
+      },
+      "started_at": "2026-10-01T19:17:02.942183+00:00"
+    },
+    "GLD": {
+      "audit": {
+        "eligible_fractional_us_equity": true
+      },
+      "observed_at": "2026-10-01T19:16:52.703252+00:00",
+      "response": {
+        "class": "us_equity",
+        "exchange": "ARCA",
+        "fractionable": true,
+        "id": "675f7911-9aca-418a-acd5-07cfacb9d32b",
+        "status": "active",
+        "symbol": "GLD",
+        "tradable": true
+      },
+      "started_at": "2026-10-01T19:16:49.478201+00:00"
+    },
+    "SLV": {
+      "audit": {
+        "eligible_fractional_us_equity": true
+      },
+      "observed_at": "2026-10-01T19:16:56.634060+00:00",
+      "response": {
+        "class": "us_equity",
+        "exchange": "ARCA",
+        "fractionable": true,
+        "id": "d6fb9d31-fd8e-4edb-a4f4-cbef8fc2d3d5",
+        "status": "active",
+        "symbol": "SLV",
+        "tradable": true
+      },
+      "started_at": "2026-10-01T19:16:52.704711+00:00"
+    },
+    "UNG": {
+      "audit": {
+        "eligible_fractional_us_equity": true
+      },
+      "observed_at": "2026-10-01T19:17:02.939910+00:00",
+      "response": {
+        "class": "us_equity",
+        "exchange": "ARCA",
+        "fractionable": true,
+        "id": "cd6ac394-bfce-4759-b6f5-36bbb2967b9f",
+        "status": "active",
+        "symbol": "UNG",
+        "tradable": true
+      },
+      "started_at": "2026-10-01T19:16:59.837458+00:00"
+    },
+    "USO": {
+      "audit": {
+        "eligible_fractional_us_equity": true
+      },
+      "observed_at": "2026-10-01T19:16:59.836066+00:00",
+      "response": {
+        "class": "us_equity",
+        "exchange": "ARCA",
+        "fractionable": true,
+        "id": "adf623fb-f91a-4e45-aa66-6fb8f3677b23",
+        "status": "active",
+        "symbol": "USO",
+        "tradable": true
+      },
+      "started_at": "2026-10-01T19:16:56.635537+00:00"
+    }
+  },
+  "bead": "tradingbot-ggg",
+  "blockers": [
+    "No C05 durable monthly close/open runner or order/fill reconciliation is activated",
+    "Consistent adjusted-close vintage and issuer action/ordinary-distribution review need admission",
+    "Shared connector releases sales earlier; conservative completion cash is not integrated",
+    "Paper omits dividends and regulatory fees; separate income/fee book is not integrated",
+    "Connector marks one instrument; C05 requires complete simultaneous portfolio risk/equity marks",
+    "No C05 fractional opening fills, partial/forced exits or actual dividend/share-credit evidence"
+  ],
+  "canonical_family_final_spend_ids": [
+    3964
+  ],
+  "capital_accounts_keys_added": false,
+  "capture_receipt": {
+    "code_sha256": "d782db323d9a10dc9113e2da54df112dbf84f4791cf5bf7e2cf0181a285444fd",
+    "git_commit": "adc52f488b21862074d8a36d3ac43baa57e62354",
+    "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/readiness.json",
+    "sha256": "418deabb3dfb76e645fc3958568e35c0f81c94fd202cd89707581c35538c0f35"
+  },
+  "close_sources": {
+    "DBA": {
+      "action_counts": {
+        "dividends": 1
+      },
+      "available_at": "2026-10-01T19:17:44.582517+00:00",
+      "completed_closes": 127,
+      "first_session": "2026-03-31",
+      "incomplete_rows_ignored": 0,
+      "last_session": "2026-09-30",
+      "latest_session_close_at": "2026-09-30T16:00:00-04:00",
+      "limitation": "coverage only; adjusted history/action continuity and independent prices still require admission",
+      "raw_sha256": "842115235cdeb219fd709a1a0cc7a2c1269622e510f4ca32590d456a0adc9e04",
+      "signal_admitted": false,
+      "signal_computed": false,
+      "single_adjustment_vintage": true,
+      "source_observed_at": "2026-10-01T19:17:44.582517+00:00",
+      "symbol": "DBA"
+    },
+    "GLD": {
+      "action_counts": {},
+      "available_at": "2026-10-01T19:17:31.486131+00:00",
+      "completed_closes": 127,
+      "first_session": "2026-03-31",
+      "incomplete_rows_ignored": 0,
+      "last_session": "2026-09-30",
+      "latest_session_close_at": "2026-09-30T16:00:00-04:00",
+      "limitation": "coverage only; adjusted history/action continuity and independent prices still require admission",
+      "raw_sha256": "af1840de410e66205695bf6e483934341e6924b13ac70f2b973db15dc78f7c57",
+      "signal_admitted": false,
+      "signal_computed": false,
+      "single_adjustment_vintage": true,
+      "source_observed_at": "2026-10-01T19:17:31.486131+00:00",
+      "symbol": "GLD"
+    },
+    "SLV": {
+      "action_counts": {},
+      "available_at": "2026-10-01T19:17:34.581671+00:00",
+      "completed_closes": 127,
+      "first_session": "2026-03-31",
+      "incomplete_rows_ignored": 0,
+      "last_session": "2026-09-30",
+      "latest_session_close_at": "2026-09-30T16:00:00-04:00",
+      "limitation": "coverage only; adjusted history/action continuity and independent prices still require admission",
+      "raw_sha256": "93da7c71ba1b53c585c2a962ee58718a40a09b14aa6e50c7bdf8647065db0de6",
+      "signal_admitted": false,
+      "signal_computed": false,
+      "single_adjustment_vintage": true,
+      "source_observed_at": "2026-10-01T19:17:34.581671+00:00",
+      "symbol": "SLV"
+    },
+    "UNG": {
+      "action_counts": {},
+      "available_at": "2026-10-01T19:17:41.346457+00:00",
+      "completed_closes": 127,
+      "first_session": "2026-03-31",
+      "incomplete_rows_ignored": 0,
+      "last_session": "2026-09-30",
+      "latest_session_close_at": "2026-09-30T16:00:00-04:00",
+      "limitation": "coverage only; adjusted history/action continuity and independent prices still require admission",
+      "raw_sha256": "e975f3e6af19b885263e494f6486dd5f7efc70de391d103b5204e37371f14f36",
+      "signal_admitted": false,
+      "signal_computed": false,
+      "single_adjustment_vintage": true,
+      "source_observed_at": "2026-10-01T19:17:41.346457+00:00",
+      "symbol": "UNG"
+    },
+    "USO": {
+      "action_counts": {},
+      "available_at": "2026-10-01T19:17:37.739420+00:00",
+      "completed_closes": 127,
+      "first_session": "2026-03-31",
+      "incomplete_rows_ignored": 0,
+      "last_session": "2026-09-30",
+      "latest_session_close_at": "2026-09-30T16:00:00-04:00",
+      "limitation": "coverage only; adjusted history/action continuity and independent prices still require admission",
+      "raw_sha256": "25328c8a132f716441f312f1c79fc69032c89a104620eb0f3d492762980545cc",
+      "signal_admitted": false,
+      "signal_computed": false,
+      "single_adjustment_vintage": true,
+      "source_observed_at": "2026-10-01T19:17:37.739420+00:00",
+      "symbol": "USO"
+    }
+  },
+  "completed_at": "2026-10-01T19:18:01.303632+00:00",
+  "corporate_actions": {
+    "advance_notice_guaranteed": false,
+    "empty_is_not_action_clearance": true,
+    "exhausted": true,
+    "issuer_review_complete": false,
+    "pages": [
+      {
+        "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/actions-0.json",
+        "sha256": "e1c2f4e966a7ab3fe894fff2536c98324d38b73dfd866a050a30ca4fc4a81043"
+      }
+    ],
+    "records": 1,
+    "symbols": [
+      "GLD",
+      "SLV",
+      "USO",
+      "UNG",
+      "DBA"
+    ]
+  },
+  "decision": "hold_before_ordering_paper",
+  "failed_preparation": {
+    "existing_backtest_virtual_allocation_usd": "140.000000",
+    "fees_total": null,
+    "fills": 0,
+    "luck_p_value": null,
+    "max_drawdown": null,
+    "mode": "paper",
+    "new_real_allocation_usd": "0",
+    "orders": 0,
+    "pnl_after_fees": null,
+    "readiness_only": true,
+    "row_sha256": "3b4703681872e214b2dfdb1aedbcff060f96313ded9455001df0f6c29a99bf40",
+    "status": "failed",
+    "strategy_id": 6473,
+    "strategy_status_unchanged": "backtest",
+    "trade_count": 0,
+    "trial_id": 4579
+  },
+  "first_capture_preserved": {
+    "ledger_row_appended": false,
+    "path": "data/forward/c05-readiness/20261001T1913Z-a3fb798/readiness.json",
+    "probe_failures": [
+      "common_time_five_quote_batch"
+    ],
+    "quote_batch": {
+      "all_fresh_regular": false,
+      "as_of": "2026-10-01T19:14:27.026764+00:00",
+      "fill_evidence": false,
+      "opening_reference": false,
+      "quotes": {
+        "DBA": {
+          "age_seconds": 116.473838,
+          "ask": "28.11",
+          "at_session_open": false,
+          "bid": "28.1",
+          "feed": "iex",
+          "fill_evidence": false,
+          "fresh": false,
+          "full_spread_bp": "3.558085749866571784380003558",
+          "observed_at": "2026-10-01T19:14:27.026764+00:00",
+          "quote_at": "2026-10-01T19:12:30.552926+00:00",
+          "regular_session": true
+        },
+        "GLD": {
+          "age_seconds": 14.91043,
+          "ask": "383.24",
+          "at_session_open": false,
+          "bid": "377.75",
+          "feed": "iex",
+          "fill_evidence": false,
+          "fresh": true,
+          "full_spread_bp": "144.2857330582530650862692020",
+          "observed_at": "2026-10-01T19:14:27.026764+00:00",
+          "quote_at": "2026-10-01T19:14:12.116334+00:00",
+          "regular_session": true
+        },
+        "SLV": {
+          "age_seconds": 11.181653,
+          "ask": "54.99",
+          "at_session_open": false,
+          "bid": "54.98",
+          "feed": "iex",
+          "fill_evidence": false,
+          "fresh": true,
+          "full_spread_bp": "1.818677821223970173683731927",
+          "observed_at": "2026-10-01T19:14:27.026764+00:00",
+          "quote_at": "2026-10-01T19:14:15.845111+00:00",
+          "regular_session": true
+        },
+        "UNG": {
+          "age_seconds": 52.855154,
+          "ask": "10.16",
+          "at_session_open": false,
+          "bid": "10.15",
+          "feed": "iex",
+          "fill_evidence": false,
+          "fresh": false,
+          "full_spread_bp": "9.847365829640571147218119153",
+          "observed_at": "2026-10-01T19:14:27.026764+00:00",
+          "quote_at": "2026-10-01T19:13:34.171610+00:00",
+          "regular_session": true
+        },
+        "USO": {
+          "age_seconds": 17.149228,
+          "ask": "149.66",
+          "at_session_open": false,
+          "bid": "144.31",
+          "feed": "iex",
+          "fill_evidence": false,
+          "fresh": true,
+          "full_spread_bp": "363.9827193251012008028030071",
+          "observed_at": "2026-10-01T19:14:27.026764+00:00",
+          "quote_at": "2026-10-01T19:14:09.877536+00:00",
+          "regular_session": true
+        }
+      },
+      "risk_marks_complete_for_other_strategies": false
+    },
+    "reason": "Decimal JSON metadata comparison fixed before recording",
+    "sha256": "af18c8765ca47826c47559353d6fc1318ba97abc8076489fb822ab848aa76e3e"
+  },
+  "followup_bead": "tradingbot-dk3",
+  "historical_evidence": {
+    "family_final_attempt_ids": [
+      3964
+    ],
+    "fee_code_sha256": "09dba3aca3596d754bd6501171e1a1c5ce3a93ae87a65b57fad85bddfe62ed11",
+    "params": {
+      "buy_fee_reserve_usd": ".01",
+      "cash_reserve_weight": ".05",
+      "quantity_step": ".000000001",
+      "sleeve_weight": ".19",
+      "slot_usd": "140",
+      "source_receipt": "05774a5a2f1ccbfef2898471f32311874e67298fc2bbbb6efb39b1cda893cb7c",
+      "symbols": [
+        "GLD",
+        "SLV",
+        "USO",
+        "UNG",
+        "DBA"
+      ],
+      "variant": "total_return_126_positive"
+    },
+    "reactor_sha256": "66da5a97b2d40138a578198c331f5fcad774cc912944b5d7633624db53321778",
+    "replayed": false,
+    "rows": [
+      {
+        "dataset_key": "c05-amendment21-dbef40b627a1322588095635a115805cba46e631",
+        "fees_usd": "3.090000",
+        "final_holdout": false,
+        "full_row_sha256": "a21515cc1448ce8b14732995921740404ac32b47c7dc511f53ffaabf59bbfd29",
+        "holdout_start": "2021-02-14T14:24:00+00:00",
+        "luck_p_value": "0.263874",
+        "max_drawdown_usd": "49.331730",
+        "net_usd": "30.421481",
+        "round_trips": 57,
+        "strategy_id": 6470,
+        "trial_id": 3959
+      },
+      {
+        "dataset_key": "c05-amendment21-dbef40b627a1322588095635a115805cba46e631",
+        "fees_usd": "1.740000",
+        "final_holdout": true,
+        "full_row_sha256": "6d706b862f22c103ffd09649262b6322ad0590ad09271ecdd1056bf59b893df2",
+        "holdout_start": "2021-02-14T14:24:00+00:00",
+        "luck_p_value": null,
+        "max_drawdown_usd": "30.306895",
+        "net_usd": "47.075240",
+        "round_trips": 34,
+        "strategy_id": 6473,
+        "trial_id": 3964
+      }
+    ],
+    "source_receipt": "05774a5a2f1ccbfef2898471f32311874e67298fc2bbbb6efb39b1cda893cb7c",
+    "strategy_version": "de0dad8696f3603a0ebcde01bbe2f9333e037db5a22d03b4e7c01f8336924320"
+  },
+  "local_paper": {
+    "as_of": "2026-10-01T19:16:42.643256+00:00",
+    "available_under_existing_connector": "140",
+    "c05_settlement_fidelity": false,
+    "cash_scope": "one venue-wide book, not an independent $140 for each strategy",
+    "difference": "connector releases sale cash at settlement-date midnight; C05 waits past documented completion",
+    "fills": 0,
+    "initial_virtual_cash": "140",
+    "open_positions": 0,
+    "orders": 0,
+    "reserved": "0",
+    "running_paper_trials": [
+      3298
+    ],
+    "unsettled": "0"
+  },
+  "next_monthly_calendar": [
+    {
+      "close": "16:00",
+      "date": "2026-10-30",
+      "open": "09:30",
+      "session_close": "2000",
+      "session_open": "0400",
+      "settlement_date": "2026-11-02"
+    },
+    {
+      "close": "16:00",
+      "date": "2026-11-02",
+      "open": "09:30",
+      "session_close": "2000",
+      "session_open": "0400",
+      "settlement_date": "2026-11-03"
+    }
+  ],
+  "nontrade_activities": {
+    "broker_dividend_fidelity": false,
+    "c05_records": [],
+    "empty_is_not_no_entitlement": true,
+    "exhausted": true,
+    "pages": [
+      {
+        "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/nontrade-0.json",
+        "sha256": "46e58e3395953a5623bc2af6a84853f6b23fc3c232580eb625f3f5459e0ba617"
+      }
+    ],
+    "query_time_basis": "creation time, not proven settlement completion",
+    "records": 1
+  },
+  "orders_submitted": 0,
+  "paper_account": {
+    "audit": {
+      "broker_cash_account_type_proven": false,
+      "cash_only_local_policy": true,
+      "connector_account_checks_pass": true,
+      "matches_existing_cash_book": true
+    },
+    "observed_at": "2026-10-01T19:16:46.389596+00:00",
+    "response": {
+      "account_blocked": false,
+      "currency": "USD",
+      "status": "ACTIVE",
+      "trade_suspended_by_user": false,
+      "trading_blocked": false
+    },
+    "started_at": "2026-10-01T19:16:42.943012+00:00"
+  },
+  "paper_runner_activated": false,
+  "probe_failures": [],
+  "public_documentation": {
+    "account-activities": {
+      "bytes": 511259,
+      "content_type": "text/html; charset=utf-8",
+      "observed_at": "2026-10-01T19:17:51.233225+00:00",
+      "params": null,
+      "raw_sha256": "30a087619a42defc5cebce0025423339a5598675880c48cfaceaeaafbb3b21cf",
+      "request_url": "https://docs.alpaca.markets/us/docs/account-activities",
+      "response_url": "https://docs.alpaca.markets/us/docs/account-activities",
+      "status_code": 200
+    },
+    "action-api": {
+      "bytes": 990481,
+      "content_type": "text/html; charset=utf-8",
+      "observed_at": "2026-10-01T19:17:57.938244+00:00",
+      "params": null,
+      "raw_sha256": "432f12a0202c481bcf3dd3bfca91775db70ecbf9c641415ee982f03bcd19f5f1",
+      "request_url": "https://docs.alpaca.markets/us/reference/corporateactions-1",
+      "response_url": "https://docs.alpaca.markets/us/reference/corporateactions-1",
+      "status_code": 200
+    },
+    "activity-api": {
+      "bytes": 1020411,
+      "content_type": "text/html; charset=utf-8",
+      "observed_at": "2026-10-01T19:17:54.586091+00:00",
+      "params": null,
+      "raw_sha256": "0aa29d09fdaae1cfbb6149b8e9557b35533e9ad92769a78be9dafb0fe3308675",
+      "request_url": "https://docs.alpaca.markets/us/reference/getaccountactivities-2",
+      "response_url": "https://docs.alpaca.markets/us/reference/getaccountactivities-2",
+      "status_code": 200
+    },
+    "fee-schedule": {
+      "bytes": 147035,
+      "content_type": "application/pdf",
+      "observed_at": "2026-10-01T19:18:01.298071+00:00",
+      "params": null,
+      "raw_sha256": "7bc75e3cd86f5c1950f8ce1292049965280340a3cebe727ca7aee4a7d2d71b12",
+      "request_url": "https://files.alpaca.markets/disclosures/library/BrokFeeSched.pdf",
+      "response_url": "https://files.alpaca.markets/disclosures/library/BrokFeeSched.pdf",
+      "status_code": 200
+    },
+    "paper-specification": {
+      "bytes": 486908,
+      "content_type": "text/html; charset=utf-8",
+      "observed_at": "2026-10-01T19:17:47.986065+00:00",
+      "params": null,
+      "raw_sha256": "2e181dba94274aa0f2142aac7a4eb97d6750635b95c1f5c24d64db4818682555",
+      "request_url": "https://docs.alpaca.markets/us/docs/paper-trading",
+      "response_url": "https://docs.alpaca.markets/us/docs/paper-trading",
+      "status_code": 200
+    }
+  },
+  "quote_batch": {
+    "all_fresh_regular": true,
+    "as_of": "2026-10-01T19:17:21.926514+00:00",
+    "fill_evidence": false,
+    "opening_reference": false,
+    "quotes": {
+      "DBA": {
+        "age_seconds": 12.976988,
+        "ask": "28.12",
+        "at_session_open": false,
+        "bid": "28.11",
+        "feed": "iex",
+        "fill_evidence": false,
+        "fresh": true,
+        "full_spread_bp": "3.556820202738751556108838698",
+        "observed_at": "2026-10-01T19:17:21.926514+00:00",
+        "quote_at": "2026-10-01T19:17:08.949526+00:00",
+        "regular_session": true
+      },
+      "GLD": {
+        "age_seconds": 12.61518,
+        "ask": "382.8",
+        "at_session_open": false,
+        "bid": "382.77",
+        "feed": "iex",
+        "fill_evidence": false,
+        "fresh": true,
+        "full_spread_bp": "0.7837297699753125122457776559",
+        "observed_at": "2026-10-01T19:17:21.926514+00:00",
+        "quote_at": "2026-10-01T19:17:09.311334+00:00",
+        "regular_session": true
+      },
+      "SLV": {
+        "age_seconds": 9.540106,
+        "ask": "54.98",
+        "at_session_open": false,
+        "bid": "54.97",
+        "feed": "iex",
+        "fill_evidence": false,
+        "fresh": true,
+        "full_spread_bp": "1.819008640291041382446566621",
+        "observed_at": "2026-10-01T19:17:21.926514+00:00",
+        "quote_at": "2026-10-01T19:17:12.386408+00:00",
+        "regular_session": true
+      },
+      "UNG": {
+        "age_seconds": 11.315339,
+        "ask": "10.17",
+        "at_session_open": false,
+        "bid": "10.16",
+        "feed": "iex",
+        "fill_evidence": false,
+        "fresh": true,
+        "full_spread_bp": "9.837678307919331037875061485",
+        "observed_at": "2026-10-01T19:17:21.926514+00:00",
+        "quote_at": "2026-10-01T19:17:10.611175+00:00",
+        "regular_session": true
+      },
+      "USO": {
+        "age_seconds": 6.454815,
+        "ask": "153.32",
+        "at_session_open": false,
+        "bid": "149.65",
+        "feed": "iex",
+        "fill_evidence": false,
+        "fresh": true,
+        "full_spread_bp": "242.2682113740634386242862330",
+        "observed_at": "2026-10-01T19:17:21.926514+00:00",
+        "quote_at": "2026-10-01T19:17:15.471699+00:00",
+        "regular_session": true
+      }
+    },
+    "risk_marks_complete_for_other_strategies": false
+  },
+  "ready_for_live": false,
+  "receipts": [
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/account-activities.json",
+      "sha256": "d088240b950b845a57aed1142b4054d2aaa98abeebb710385884cd341ecd0969"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/account-activities.raw",
+      "sha256": "30a087619a42defc5cebce0025423339a5598675880c48cfaceaeaafbb3b21cf"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/account.json",
+      "sha256": "c03492188748ca0c43414da472af4ea5dbfa1b1814499b79d45e00e4cae865b2"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/action-api.json",
+      "sha256": "eef0dbd8cc97c63a2b7553280faa3a9ff8e8e4a20549e4c4aa37321dbc785fee"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/action-api.raw",
+      "sha256": "432f12a0202c481bcf3dd3bfca91775db70ecbf9c641415ee982f03bcd19f5f1"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/actions-0.json",
+      "sha256": "e1c2f4e966a7ab3fe894fff2536c98324d38b73dfd866a050a30ca4fc4a81043"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/activity-api.json",
+      "sha256": "dda0b779742e4fea3aa3a3f6faa5b1267d0a81cf396b264c61d8fda59e593145"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/activity-api.raw",
+      "sha256": "0aa29d09fdaae1cfbb6149b8e9557b35533e9ad92769a78be9dafb0fe3308675"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/asset-DBA.json",
+      "sha256": "307bdac075ed0176d8521b282f8bde477617ebbe23b7135ce55fca15f09b3849"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/asset-GLD.json",
+      "sha256": "2f89c8fcb96aba09aa77edc532575221528d43c62fdd371a8e1b0d45b3ed5979"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/asset-SLV.json",
+      "sha256": "27303d363f31c8930243bd25e552e5637263c57319d4594c2522aae8de6806b4"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/asset-UNG.json",
+      "sha256": "f4bfeb1ef14529639422835930a48a85648957c8dfc73498541e4f2c0697bf15"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/asset-USO.json",
+      "sha256": "50b9e82a6cdff76586f462c85139aa26e05ab7def3008f8cc75307445d51a682"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/calendar.json",
+      "sha256": "1ccdb4fdf4bc1962ed8e2b67affb352fd76196921b27de2f4030dbe4f22755a9"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/closes-DBA.json",
+      "sha256": "e1e14efffee70f7a87a07148afe0a327062d2210a3344cb6663bbbf8adfab34d"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/closes-DBA.raw",
+      "sha256": "842115235cdeb219fd709a1a0cc7a2c1269622e510f4ca32590d456a0adc9e04"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/closes-GLD.json",
+      "sha256": "c050b351141c7af09654bca6a623c53b15d345591373d01b228553e2cf9a8a0f"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/closes-GLD.raw",
+      "sha256": "af1840de410e66205695bf6e483934341e6924b13ac70f2b973db15dc78f7c57"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/closes-SLV.json",
+      "sha256": "6169d058c2216da272108bbc6926fbe503ed7542935bde6713955eb158c66fa5"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/closes-SLV.raw",
+      "sha256": "93da7c71ba1b53c585c2a962ee58718a40a09b14aa6e50c7bdf8647065db0de6"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/closes-UNG.json",
+      "sha256": "01306a97acf286ef9d441d48bcf8349c422f4ec58fbf6600e0daa5247183ec88"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/closes-UNG.raw",
+      "sha256": "e975f3e6af19b885263e494f6486dd5f7efc70de391d103b5204e37371f14f36"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/closes-USO.json",
+      "sha256": "e4fe889f567799e1cd195a7127781665eff1e7835473f30a496bc8563b75b619"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/closes-USO.raw",
+      "sha256": "25328c8a132f716441f312f1c79fc69032c89a104620eb0f3d492762980545cc"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/fee-schedule.json",
+      "sha256": "67b59e057263d3be881858e14dd62695713d93e2cfcbdcd1a946e186da00a5eb"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/fee-schedule.raw",
+      "sha256": "7bc75e3cd86f5c1950f8ce1292049965280340a3cebe727ca7aee4a7d2d71b12"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/nontrade-0.json",
+      "sha256": "46e58e3395953a5623bc2af6a84853f6b23fc3c232580eb625f3f5459e0ba617"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/paper-specification.json",
+      "sha256": "fac8b5d7460950c944ad7618f3c5898cdf3d5f8f14898b473111bd9d9a350d65"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/paper-specification.raw",
+      "sha256": "2e181dba94274aa0f2142aac7a4eb97d6750635b95c1f5c24d64db4818682555"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/quote-DBA.json",
+      "sha256": "7fd87761d9e12885d4a1eed0b5cefcea3b39d327f17eca496430e9b54a1ab072"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/quote-GLD.json",
+      "sha256": "873b07a60ac232cda9b6f80152234deaa6affb9b712871543e4e381216e0f633"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/quote-SLV.json",
+      "sha256": "588d10e93673a93ccd4443714fe7b2d8a0793483e5eaab18f88983d0a8a13d7e"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/quote-UNG.json",
+      "sha256": "0c53bf14b803067a7305d6aa62f0e3f9ec3e15628cb904632cb1ee90f4be1355"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/quote-USO.json",
+      "sha256": "feafbfc95c3aaefd8e81048373448ac6725d35e9d13ab680dcbe8c7a9598af2f"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/quote-batch.json",
+      "sha256": "5a9459d9ef75fd7d235185c7433803c745cf51241426f2b227f67be298b55d04"
+    },
+    {
+      "path": "data/forward/c05-readiness/20261001T1918Z-decimal-fix/source-summary.json",
+      "sha256": "88abea6b14ee3b05b070c035388fe1d51b1d97643e05146fb8b3831dc109552a"
+    }
+  ],
+  "risk_limits_unchanged": true,
+  "started_at": "2026-10-01T19:16:42.643256+00:00",
+  "status": "FORWARD_READINESS_COMPLETE_HOLD",
+  "validation": {
+    "affected_checks_passed": 132,
+    "all_children_and_derived_source_summaries_verified": true,
+    "original_final_consumption_unchanged": true,
+    "original_training_final_rows_unchanged": true,
+    "preparation_has_no_orders_fills_or_result_metrics": true,
+    "readiness_checks_after_final_fix": 45,
+    "shared_paper_book_unchanged": true
+  }
+}

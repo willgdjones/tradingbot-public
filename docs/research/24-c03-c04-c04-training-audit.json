@@ -1,0 +1,57 @@
+{
+  "status": "PASS_STORED_TRAINING_AUDIT",
+  "price_replays": 0,
+  "trials": [
+    {
+      "trial_id": 4058,
+      "row_sha256": "6a9d648bdc16e17fb5d6f6bb5cfb41d10dc95f8511c08b1b22d646d5c69f8914",
+      "fills": 152,
+      "zero_rejects": true,
+      "rounded_limit_cap_every_buy": true,
+      "terminal_flat": true
+    },
+    {
+      "trial_id": 4059,
+      "row_sha256": "aed03835cc840c0382959329fbabe2c2f01c7cc1fc99775f37559698bcbdd67a",
+      "fills": 151,
+      "zero_rejects": true,
+      "rounded_limit_cap_every_buy": true,
+      "terminal_flat": true
+    },
+    {
+      "trial_id": 4060,
+      "row_sha256": "42971e113101b4d70eff0d5bc959bbf0eb46297d4e0a7b9752e1e3e43baa3456",
+      "fills": 166,
+      "zero_rejects": true,
+      "rounded_limit_cap_every_buy": true,
+      "terminal_flat": true
+    },
+    {
+      "trial_id": 4061,
+      "row_sha256": "6a441f8c43feec9b51ee5ca0b309e40a51786a71c50db23339c45b02973f02b3",
+      "fills": 166,
+      "zero_rejects": true,
+      "rounded_limit_cap_every_buy": true,
+      "terminal_flat": true
+    },
+    {
+      "trial_id": 4062,
+      "row_sha256": "c09d48075737b6cf21d0045adff489d2aa0f23a3a9cc7770dd02e78c52ec79a2",
+      "fills": 150,
+      "zero_rejects": true,
+      "rounded_limit_cap_every_buy": true,
+      "terminal_flat": true
+    },
+    {
+      "trial_id": 4063,
+      "row_sha256": "800666695dc38bd4f4f721ac2c5a3b70f8be0a08af8d48dccff2fcdc03696975",
+      "fills": 148,
+      "zero_rejects": true,
+      "rounded_limit_cap_every_buy": true,
+      "terminal_flat": true
+    }
+  ],
+  "original_source_failures_and_v1_trials_unchanged": true,
+  "selected": "0.04",
+  "selection_sha256": "48dc41d9ec859291a59457b10c47346e4810e863e402312770ba78d8686ca026"
+}

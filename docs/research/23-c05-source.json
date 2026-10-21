@@ -1,0 +1,2360 @@
+{
+  "action_audit": {
+    "plans": [
+      {
+        "actual_payable": "2008-07-23",
+        "announced": "2008-07-11",
+        "blackout_sessions": [
+          "2008-07-23",
+          "2008-07-24",
+          "2008-07-25",
+          "2008-07-28"
+        ],
+        "decision": "2008-07-22",
+        "effective": "2008-07-23",
+        "endpoint_is_broker_credit": false,
+        "ex_date": "2008-07-24",
+        "exit": "2008-07-23",
+        "expected_delivery": "2008-07-28",
+        "issuer_evidence": "slv-2008-dba-2025",
+        "ratio": "10",
+        "reentry": "2008-07-29",
+        "research_end": "2008-07-28",
+        "symbol": "SLV"
+      },
+      {
+        "actual_payable": null,
+        "announced": "2011-02-16",
+        "blackout_sessions": [
+          "2011-03-08",
+          "2011-03-09"
+        ],
+        "decision": "2011-03-07",
+        "effective": "2011-03-08",
+        "endpoint_is_broker_credit": false,
+        "ex_date": "2011-03-09",
+        "exit": "2011-03-08",
+        "expected_delivery": null,
+        "issuer_evidence": "ung-2011-issuer-release",
+        "ratio": ".5",
+        "reentry": "2011-03-10",
+        "research_end": "2011-03-09",
+        "symbol": "UNG"
+      },
+      {
+        "actual_payable": null,
+        "announced": "2012-02-01",
+        "blackout_sessions": [
+          "2012-02-21",
+          "2012-02-22"
+        ],
+        "decision": "2012-02-17",
+        "effective": "2012-02-21",
+        "endpoint_is_broker_credit": false,
+        "ex_date": "2012-02-22",
+        "exit": "2012-02-21",
+        "expected_delivery": null,
+        "issuer_evidence": "ung-2012-split",
+        "ratio": ".25",
+        "reentry": "2012-02-23",
+        "research_end": "2012-02-22",
+        "symbol": "UNG"
+      },
+      {
+        "actual_payable": null,
+        "announced": "2017-12-22",
+        "blackout_sessions": [
+          "2018-01-04",
+          "2018-01-05"
+        ],
+        "decision": "2018-01-03",
+        "effective": "2018-01-04",
+        "endpoint_is_broker_credit": false,
+        "ex_date": "2018-01-05",
+        "exit": "2018-01-04",
+        "expected_delivery": null,
+        "issuer_evidence": "ung-2018-issuer-release",
+        "ratio": ".25",
+        "reentry": "2018-01-08",
+        "research_end": "2018-01-05",
+        "symbol": "UNG"
+      },
+      {
+        "actual_payable": "2020-04-29",
+        "announced": "2020-04-22",
+        "blackout_sessions": [
+          "2020-04-28",
+          "2020-04-29"
+        ],
+        "decision": "2020-04-27",
+        "effective": "2020-04-28",
+        "endpoint_is_broker_credit": false,
+        "ex_date": "2020-04-29",
+        "exit": "2020-04-28",
+        "expected_delivery": null,
+        "issuer_evidence": "uso-2020-issuer-release",
+        "ratio": ".125",
+        "reentry": "2020-04-30",
+        "research_end": "2020-04-29",
+        "symbol": "USO"
+      },
+      {
+        "actual_payable": "2024-01-24",
+        "announced": "2024-01-05",
+        "blackout_sessions": [
+          "2024-01-23",
+          "2024-01-24"
+        ],
+        "decision": "2024-01-22",
+        "effective": "2024-01-23",
+        "endpoint_is_broker_credit": false,
+        "ex_date": "2024-01-24",
+        "exit": "2024-01-23",
+        "expected_delivery": null,
+        "issuer_evidence": "ung-2024-issuer-release",
+        "ratio": ".25",
+        "reentry": "2024-01-25",
+        "research_end": "2024-01-24",
+        "symbol": "UNG"
+      }
+    ],
+    "sources": {
+      "ung-2011-issuer-release": {
+        "bytes": 223797,
+        "content_type": "text/html; charset=UTF-8",
+        "key": "ung-2011-issuer-release",
+        "request_url": "https://www.prnewswire.com/news-releases/notice-of-reverse-unit-split-116350854.html",
+        "response_url": "https://www.prnewswire.com/news-releases/notice-of-reverse-unit-split-116350854.html",
+        "retrieved_at": "2026-10-01T08:01:31.211722+00:00",
+        "sha256": "064da32cd64db348570cc9f57789373df4629d5342bb78a50bf38ac59770e0d0",
+        "status_code": 200
+      },
+      "ung-2012-split": {
+        "bytes": 224696,
+        "content_type": "text/html; charset=UTF-8",
+        "key": "ung-2012-split",
+        "request_url": "https://www.prnewswire.com/news-releases/notice-of-reverse-unit-split-138526579.html",
+        "response_url": "https://www.prnewswire.com/news-releases/notice-of-reverse-unit-split-138526579.html",
+        "retrieved_at": "2026-10-01T07:59:52.128799+00:00",
+        "sha256": "15f1a0b2140820bdfb3df689e2e0b11226811f8019c523c3259fbe4981dc8ed5",
+        "status_code": 200
+      },
+      "ung-2018-issuer-release": {
+        "bytes": 226820,
+        "content_type": "text/html; charset=UTF-8",
+        "key": "ung-2018-issuer-release",
+        "request_url": "https://www.prnewswire.com/news-releases/notice-of-reverse-share-split-300574185.html",
+        "response_url": "https://www.prnewswire.com/news-releases/notice-of-reverse-share-split-300574185.html",
+        "retrieved_at": "2026-10-01T08:01:37.317582+00:00",
+        "sha256": "f87ab9b9823b263a7ba87a2296be5222699f03c6afbd108baf018ec2064f1385",
+        "status_code": 200
+      },
+      "ung-2024-issuer-release": {
+        "bytes": 221399,
+        "content_type": "text/html; charset=UTF-8",
+        "key": "ung-2024-issuer-release",
+        "request_url": "https://www.prnewswire.com/news-releases/notice-of-reverse-share-split-302026652.html",
+        "response_url": "https://www.prnewswire.com/news-releases/notice-of-reverse-share-split-302026652.html",
+        "retrieved_at": "2026-10-01T08:01:40.625213+00:00",
+        "sha256": "0de166188d2f4dbb62c72812094c21bb3ae89337c04f26641f9a67ba417b9238",
+        "status_code": 200
+      },
+      "uso-2020-issuer-release": {
+        "bytes": 227931,
+        "content_type": "text/html; charset=UTF-8",
+        "key": "uso-2020-issuer-release",
+        "request_url": "https://www.prnewswire.com/news-releases/uscf-announces-one-for-eight-reverse-share-split-for-the-united-states-oil-fund-nyse-arca-uso-301045001.html",
+        "response_url": "https://www.prnewswire.com/news-releases/uscf-announces-one-for-eight-reverse-share-split-for-the-united-states-oil-fund-nyse-arca-uso-301045001.html",
+        "retrieved_at": "2026-10-01T08:01:27.707190+00:00",
+        "sha256": "f6c45b79216bc0139f6819482a127bc68eb310915b4932ce2cee79cd0ec34364",
+        "status_code": 200
+      }
+    }
+  },
+  "broker_actions": {
+    "actions": {
+      "cash_dividends": [
+        {
+          "cusip": "",
+          "ex_date": "2018-12-24",
+          "foreign": false,
+          "id": "b3db88c6-55a3-44e4-b0e1-fd5ed403a5dd",
+          "process_date": "2018-12-24",
+          "rate": "0.17994",
+          "special": false,
+          "symbol": "DBA"
+        },
+        {
+          "cusip": "",
+          "ex_date": "2018-12-26",
+          "foreign": false,
+          "id": "8e4b54c3-f147-45e0-90fa-e96ce52fe198",
+          "process_date": "2018-12-26",
+          "rate": "0.17994",
+          "special": false,
+          "symbol": "DBA"
+        },
+        {
+          "cusip": "",
+          "ex_date": "2019-12-23",
+          "foreign": false,
+          "id": "e27ce6c6-5604-4d0a-98ed-11573bcdb922",
+          "process_date": "2019-12-23",
+          "rate": "0.25717",
+          "special": false,
+          "symbol": "DBA"
+        },
+        {
+          "cusip": "46140H106",
+          "ex_date": "2022-12-19",
+          "foreign": false,
+          "id": "3b0737ee-1d19-47bd-a973-dc54d5aecd92",
+          "payable_date": "2022-12-23",
+          "process_date": "2022-12-23",
+          "rate": "0.09643",
+          "record_date": "2022-12-20",
+          "special": false,
+          "symbol": "DBA"
+        },
+        {
+          "cusip": "46140H106",
+          "ex_date": "2023-12-18",
+          "foreign": false,
+          "id": "5dda9150-da54-4fb5-9387-02c9400d5019",
+          "payable_date": "2023-12-22",
+          "process_date": "2023-12-22",
+          "rate": "0.96045",
+          "record_date": "2023-12-19",
+          "special": true,
+          "symbol": "DBA"
+        },
+        {
+          "cusip": "46140H106",
+          "ex_date": "2024-12-23",
+          "foreign": false,
+          "id": "280d1659-65bb-4093-8dbb-aeac3dd74f3c",
+          "payable_date": "2024-12-27",
+          "process_date": "2024-12-27",
+          "rate": "1.08408",
+          "record_date": "2024-12-23",
+          "special": false,
+          "symbol": "DBA"
+        },
+        {
+          "cusip": "46140H106",
+          "ex_date": "2025-12-22",
+          "foreign": false,
+          "id": "70faf4c9-d5bb-4e12-9616-564ee717d110",
+          "payable_date": "2025-12-26",
+          "process_date": "2025-12-26",
+          "rate": "0.91237",
+          "record_date": "2025-12-22",
+          "special": false,
+          "symbol": "DBA"
+        }
+      ],
+      "reverse_splits": [
+        {
+          "ex_date": "2018-01-05",
+          "id": "ba21c98b-aa3e-4bcc-a461-d49d19a96a79",
+          "new_cusip": "",
+          "new_rate": 1,
+          "old_cusip": "",
+          "old_rate": 4,
+          "process_date": "2018-01-05",
+          "symbol": "UNG"
+        },
+        {
+          "ex_date": "2024-01-24",
+          "id": "4ab7add4-5d10-4bc6-8c8c-6c640086df39",
+          "new_cusip": "912318409",
+          "new_rate": 1,
+          "old_cusip": "912318300",
+          "old_rate": 4,
+          "payable_date": "2024-01-24",
+          "process_date": "2024-01-24",
+          "record_date": "2024-01-24",
+          "symbol": "UNG"
+        },
+        {
+          "ex_date": "2020-04-29",
+          "id": "d4a7f79e-e77b-4731-a3b6-184615fe35ab",
+          "new_cusip": "91232N207",
+          "new_rate": 1,
+          "old_cusip": "91232N108",
+          "old_rate": 8,
+          "payable_date": "2020-04-29",
+          "process_date": "2020-04-29",
+          "record_date": "2020-04-29",
+          "symbol": "USO"
+        }
+      ]
+    },
+    "limitations": "Missing action/payable fields are not inferred from process or ex dates; the 2018 DBA duplicate ex-date requires issuer reconciliation.",
+    "source": {
+      "manifest": {
+        "dataset": "corporate_actions",
+        "format_version": 1,
+        "request": {
+          "params": {
+            "end": "2026-09-30",
+            "limit": 1000,
+            "sort": "asc",
+            "start": "2008-01-01",
+            "symbols": "DBA,GLD,SLV,UNG,USO"
+          },
+          "url": "https://data.alpaca.markets/v1/corporate-actions"
+        },
+        "semantics": "Corporate action reference; reconcile historical identity, ex, payable and announcement dates",
+        "venue": "alpaca"
+      },
+      "pages": [
+        {
+          "path": "raw/alpaca/corporate_actions/c05-amendment21-20261001/81921af4118d1a703bdd6e4d/page-00000000.parquet",
+          "record_count": 10,
+          "response_sha256": "04aefc1a93fbdd1547e91bada093944614985724df3f2d98a564807f92ec82d3",
+          "retrieved_at": "2026-10-01T16:09:56.873136+00:00"
+        }
+      ]
+    }
+  },
+  "candidate": "C05-amendment21",
+  "cash_audit": {
+    "cash_policy": "prior-owned ex-open entitlement; spendable first regular open strictly after issuer pay date",
+    "distributions": [
+      {
+        "amount": "0.45",
+        "cash_available_session": "2008-12-31",
+        "ex_date": "2008-12-15",
+        "payable_date": "2008-12-30",
+        "record_date": "2008-12-17",
+        "symbol": "DBA"
+      },
+      {
+        "amount": "0.17994",
+        "cash_available_session": "2019-01-02",
+        "ex_date": "2018-12-24",
+        "payable_date": "2018-12-31",
+        "record_date": "2018-12-26",
+        "symbol": "DBA"
+      },
+      {
+        "amount": "0.25717",
+        "cash_available_session": "2020-01-02",
+        "ex_date": "2019-12-23",
+        "payable_date": "2019-12-31",
+        "record_date": "2019-12-24",
+        "symbol": "DBA"
+      },
+      {
+        "amount": "0.09643",
+        "cash_available_session": "2022-12-27",
+        "ex_date": "2022-12-19",
+        "payable_date": "2022-12-23",
+        "record_date": "2022-12-20",
+        "symbol": "DBA"
+      },
+      {
+        "amount": "0.96045",
+        "cash_available_session": "2023-12-26",
+        "ex_date": "2023-12-18",
+        "payable_date": "2023-12-22",
+        "record_date": "2023-12-19",
+        "symbol": "DBA"
+      },
+      {
+        "amount": "1.08408",
+        "cash_available_session": "2024-12-30",
+        "ex_date": "2024-12-23",
+        "payable_date": "2024-12-27",
+        "record_date": "2024-12-23",
+        "symbol": "DBA"
+      },
+      {
+        "amount": "0.91237",
+        "cash_available_session": "2025-12-29",
+        "ex_date": "2025-12-22",
+        "payable_date": "2025-12-26",
+        "record_date": "2025-12-22",
+        "symbol": "DBA"
+      }
+    ],
+    "excluded_record_date_duplicate": {
+      "cusip": "",
+      "ex_date": "2018-12-26",
+      "foreign": false,
+      "id": "8e4b54c3-f147-45e0-90fa-e96ce52fe198",
+      "process_date": "2018-12-26",
+      "rate": "0.17994",
+      "special": false,
+      "symbol": "DBA"
+    }
+  },
+  "extracted_evidence": {
+    "annual-2008-2018-2019": {
+      "bytes": 28569,
+      "retrieval_method": "web.run primary-source extraction, not original HTTP bytes; source URLs and extraction context preserved in text",
+      "retrieved_at": "2026-10-01T16:25:40.546486+00:00",
+      "sha256": "2353f47f3690ecefde68f4ad451f24d5f4aec32cebaa2a0525e2ebd46a4c1eec"
+    },
+    "nyse-ex-date-rule": {
+      "bytes": 3139,
+      "retrieval_method": "web.run primary-source PDF text extraction; not original HTTP bytes",
+      "retrieved_at": "2026-10-01T16:26:56.415865+00:00",
+      "sha256": "9556f41ea8690621657b0a33842742bf6a3fb3dc686d955e5f33455edcf70130"
+    },
+    "qualified-2022-2024": {
+      "bytes": 14179,
+      "retrieval_method": "web.run primary-source extraction, not original HTTP bytes; source URLs and extraction context preserved in text",
+      "retrieved_at": "2026-10-01T16:25:40.310485+00:00",
+      "sha256": "e9a795af41129f306f58c890495b31ad6297c52ec92ec9d03620968fc98eebc3"
+    },
+    "qualified-2023": {
+      "bytes": 4892,
+      "retrieval_method": "web.run primary-source extraction, not original HTTP bytes; source URLs and extraction context preserved in text",
+      "retrieved_at": "2026-10-01T16:25:40.750919+00:00",
+      "sha256": "4053a57e108bd2103e18127ef3a276502e9fae5c1830ea6b8592b56440c0aec3"
+    },
+    "slv-2008-dba-2025": {
+      "bytes": 13227,
+      "direct_http_attempts": "See documents/; SEC403 and Invesco406 retained separately",
+      "retrieval_method": "web.run extracted primary-source text; not original HTTP bytes",
+      "retrieved_at": "2026-10-01T16:20:52.410913+00:00",
+      "sha256": "f2b4328a2fb07c444e634eeae036eb987101f8c107bd864e75c32499ba212641",
+      "urls": [
+        "https://www.sec.gov/Archives/edgar/data/1330568/000119312508149627/dex991.htm",
+        "https://www.invesco.com/content/dam/invesco/us/en/documents/tax-centre/Distribution-Qualified-Notices-25.12.09.pdf"
+      ]
+    }
+  },
+  "final_holdout_attempts": 0,
+  "identity": {
+    "amendment_sha256": "4b0f9939376975ee96cf9e2ad7212ee9565df72849ea6b9239ffdde0357121cf",
+    "data_sha256": "c6631f98fd484d5d1f9a7a768341d0c96f4eefeada87c5dd1753ad9922eb9003",
+    "policy": "C05 report23 pre-outcome corrections and local split timing; Amendment21; unchanged signals and risk",
+    "source_end_exclusive": "2026-10-01T00:00:00+00:00",
+    "source_start": "2008-01-01T00:00:00+00:00",
+    "spy_calendar_benchmark_receipt": "3726951207c75d417a45d4264e414178eb5d4234e7f6328e4cf363474dbe9040"
+  },
+  "limitations": [
+    "SIP independently checks 2016 onward only; IEX coverage later and sparse.",
+    "Provider-extracted SEC/Invesco primary text where direct HTTP blocked; no PDF visual verification.",
+    "Missing split payable stays null; model boundary is not broker credit.",
+    "C08 previously inspected overlapping USO outcomes; earlier GLD sources and fund annual performance visible.",
+    "Action inventory reconciles full Yahoo and available broker snapshots, not proof of no unknown omissions."
+  ],
+  "original_failed_rows_sha256": "8b9696d0de5dc85d159e7eec01a75512f216486b2e753e54aa207a2f07630f5e",
+  "price_corrections": [
+    {
+      "corrected": "129.10",
+      "date": "2016-08-12",
+      "evidence": {
+        "date": "2016-08-12",
+        "diagnostic_only": false,
+        "feed": "sip",
+        "field": "open",
+        "primary": "129.1",
+        "primary_confirms_yahoo": false,
+        "reference": "129.12",
+        "relative_difference": "0.0112298778737197180916976456",
+        "symbol": "GLD",
+        "yahoo_actual_share": "127.66999816894531"
+      },
+      "field": "open",
+      "original_actual_share": "127.66999816894531",
+      "symbol": "GLD"
+    },
+    {
+      "corrected": "10.68",
+      "date": "2016-11-30",
+      "evidence": {
+        "date": "2016-11-30",
+        "diagnostic_only": false,
+        "feed": "sip",
+        "field": "open",
+        "primary": "10.68",
+        "primary_confirms_yahoo": false,
+        "reference": "10.67",
+        "relative_difference": "0.0571695951624461105904404873",
+        "symbol": "USO",
+        "yahoo_actual_share": "10.0600004196167000"
+      },
+      "field": "open",
+      "original_actual_share": "10.0600004196167000",
+      "symbol": "USO"
+    },
+    {
+      "corrected": "11.61",
+      "date": "2017-01-12",
+      "evidence": {
+        "date": "2017-01-12",
+        "diagnostic_only": false,
+        "feed": "sip",
+        "field": "open",
+        "primary": "11.61",
+        "primary_confirms_yahoo": false,
+        "reference": "11.6",
+        "relative_difference": "0.0198275960724928879310344828",
+        "symbol": "USO",
+        "yahoo_actual_share": "11.36999988555908250"
+      },
+      "field": "open",
+      "original_actual_share": "11.36999988555908250",
+      "symbol": "USO"
+    },
+    {
+      "corrected": "11.38",
+      "date": "2017-02-09",
+      "evidence": {
+        "date": "2017-02-09",
+        "diagnostic_only": false,
+        "feed": "sip",
+        "field": "open",
+        "primary": "11.38",
+        "primary_confirms_yahoo": false,
+        "reference": "11.385",
+        "relative_difference": "0.0136144451263656126482213439",
+        "symbol": "USO",
+        "yahoo_actual_share": "11.22999954223632750"
+      },
+      "field": "open",
+      "original_actual_share": "11.22999954223632750",
+      "symbol": "USO"
+    },
+    {
+      "corrected": "7.96",
+      "date": "2017-02-09",
+      "evidence": {
+        "date": "2017-02-09",
+        "diagnostic_only": false,
+        "feed": "sip",
+        "field": "open",
+        "primary": "7.96",
+        "primary_confirms_yahoo": false,
+        "reference": "7.95",
+        "relative_difference": "0.0125786283481045597484276730",
+        "symbol": "UNG",
+        "yahoo_actual_share": "7.84999990463256875"
+      },
+      "field": "open",
+      "original_actual_share": "7.84999990463256875",
+      "symbol": "UNG"
+    },
+    {
+      "corrected": "10.90",
+      "date": "2017-10-30",
+      "evidence": {
+        "date": "2017-10-30",
+        "diagnostic_only": false,
+        "feed": "sip",
+        "field": "open",
+        "primary": "10.9",
+        "primary_confirms_yahoo": false,
+        "reference": "10.9",
+        "relative_difference": "0.0311926220535137614678899083",
+        "symbol": "USO",
+        "yahoo_actual_share": "10.5600004196167000"
+      },
+      "field": "open",
+      "original_actual_share": "10.5600004196167000",
+      "symbol": "USO"
+    }
+  ],
+  "prices": {
+    "calendar_receipt": "3726951207c75d417a45d4264e414178eb5d4234e7f6328e4cf363474dbe9040",
+    "failures": [
+      {
+        "date": "2016-08-12",
+        "diagnostic_only": false,
+        "feed": "sip",
+        "field": "open",
+        "primary": "129.1",
+        "primary_confirms_yahoo": false,
+        "reference": "129.12",
+        "relative_difference": "0.0112298778737197180916976456",
+        "symbol": "GLD",
+        "yahoo_actual_share": "127.66999816894531"
+      },
+      {
+        "date": "2016-11-30",
+        "diagnostic_only": false,
+        "feed": "sip",
+        "field": "open",
+        "primary": "10.68",
+        "primary_confirms_yahoo": false,
+        "reference": "10.67",
+        "relative_difference": "0.0571695951624461105904404873",
+        "symbol": "USO",
+        "yahoo_actual_share": "10.0600004196167000"
+      },
+      {
+        "date": "2017-01-12",
+        "diagnostic_only": false,
+        "feed": "sip",
+        "field": "open",
+        "primary": "11.61",
+        "primary_confirms_yahoo": false,
+        "reference": "11.6",
+        "relative_difference": "0.0198275960724928879310344828",
+        "symbol": "USO",
+        "yahoo_actual_share": "11.36999988555908250"
+      },
+      {
+        "date": "2017-02-09",
+        "diagnostic_only": false,
+        "feed": "sip",
+        "field": "open",
+        "primary": "11.38",
+        "primary_confirms_yahoo": false,
+        "reference": "11.385",
+        "relative_difference": "0.0136144451263656126482213439",
+        "symbol": "USO",
+        "yahoo_actual_share": "11.22999954223632750"
+      },
+      {
+        "date": "2017-10-30",
+        "diagnostic_only": false,
+        "feed": "sip",
+        "field": "open",
+        "primary": "10.9",
+        "primary_confirms_yahoo": false,
+        "reference": "10.9",
+        "relative_difference": "0.0311926220535137614678899083",
+        "symbol": "USO",
+        "yahoo_actual_share": "10.5600004196167000"
+      },
+      {
+        "date": "2017-02-09",
+        "diagnostic_only": false,
+        "feed": "sip",
+        "field": "open",
+        "primary": "7.96",
+        "primary_confirms_yahoo": false,
+        "reference": "7.95",
+        "relative_difference": "0.0125786283481045597484276730",
+        "symbol": "UNG",
+        "yahoo_actual_share": "7.84999990463256875"
+      }
+    ],
+    "policy": "Undo later splits for actual-share prices. SIP open/close and IEX close bound 1%; IEX opens diagnostic only. Primary Arca O/Q and 6/M prints in fixed ten seconds may confirm Yahoo. Conflicts require a written source amendment before outcomes.",
+    "price_corrections": [],
+    "sources": {
+      "DBA": {
+        "coverage": {
+          "coverage_ok": true,
+          "dividend_events": [
+            {
+              "amount": "0.45",
+              "ex_date": "2008-12-15"
+            },
+            {
+              "amount": "0.18",
+              "ex_date": "2018-12-24"
+            },
+            {
+              "amount": "0.257",
+              "ex_date": "2019-12-23"
+            },
+            {
+              "amount": "0.096",
+              "ex_date": "2022-12-19"
+            },
+            {
+              "amount": "0.96",
+              "ex_date": "2023-12-18"
+            },
+            {
+              "amount": "1.084",
+              "ex_date": "2024-12-23"
+            },
+            {
+              "amount": "0.912",
+              "ex_date": "2025-12-22"
+            }
+          ],
+          "duplicate_dates": 0,
+          "expected_sessions": 4716,
+          "extra_sessions": [],
+          "first_session": "2008-01-02",
+          "invalid_sessions": [],
+          "last_session": "2026-09-30",
+          "missing_sessions": [],
+          "null_rows": 0,
+          "null_volume": [],
+          "orphan_event_dates": [],
+          "sessions": 4716,
+          "split_events": [],
+          "unsupported_event_groups": [],
+          "vendor_dividend_field_names": [
+            "amount",
+            "date"
+          ]
+        },
+        "primary_auctions": [],
+        "references": {
+          "iex": {
+            "differences_over_1pct": [
+              {
+                "date": "2021-05-25",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "18.12",
+                "relative_difference": "0.012693177785305022075055188",
+                "yahoo_actual_share": "18.350000381469727"
+              },
+              {
+                "date": "2021-07-06",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "17.875",
+                "relative_difference": "0.025454541186352727272727273",
+                "yahoo_actual_share": "18.329999923706055"
+              },
+              {
+                "date": "2022-07-05",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "19.625",
+                "relative_difference": "0.012484119196606369426751592",
+                "yahoo_actual_share": "19.8700008392334"
+              },
+              {
+                "date": "2023-06-08",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "21.24",
+                "relative_difference": "0.0136534480725304613935969868",
+                "yahoo_actual_share": "20.950000762939453"
+              },
+              {
+                "date": "2024-01-18",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "20.835",
+                "relative_difference": "0.0103191341860619150467962563",
+                "yahoo_actual_share": "20.6200008392334"
+              },
+              {
+                "date": "2024-06-26",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "23.62",
+                "relative_difference": "0.010160906450108467400508044",
+                "yahoo_actual_share": "23.860000610351562"
+              },
+              {
+                "date": "2024-08-14",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "23.79",
+                "relative_difference": "0.0109289328858550651534258092",
+                "yahoo_actual_share": "23.530000686645508"
+              }
+            ],
+            "failures": [],
+            "first": "2020-07-27",
+            "last": "2026-09-30",
+            "missing_overlap_sessions": [
+              "2020-07-28",
+              "2021-04-19",
+              "2021-09-03"
+            ],
+            "sessions": 1550,
+            "source": {
+              "manifest": {
+                "dataset": "bars_DBA_iex",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "adjustment": "raw",
+                    "asof": "-",
+                    "end": "2026-10-01T00:00:00Z",
+                    "feed": "iex",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2008-01-01T00:00:00Z",
+                    "symbols": "DBA",
+                    "timeframe": "1Day"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/bars"
+                },
+                "semantics": "Raw source diagnostic; not executable prices or fills",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/bars_DBA_iex/c05-amendment21-20261001/22b00edb8e0d5cb8361f22bd/page-00000000.parquet",
+                  "record_count": 1550,
+                  "response_sha256": "e6e836c3fee40b9325e4916fb8dbbf76a5d13ede324716556dc3912344075b0a",
+                  "retrieved_at": "2026-10-01T16:10:01.695441+00:00"
+                }
+              ]
+            },
+            "uncovered_source_sessions": 3166,
+            "worst_relative_difference": {
+              "close": "0.0097927683389585971304941927",
+              "open": "0.025454541186352727272727273"
+            }
+          },
+          "sip": {
+            "differences_over_1pct": [],
+            "failures": [],
+            "first": "2016-01-04",
+            "last": "2026-09-30",
+            "missing_overlap_sessions": [],
+            "sessions": 2701,
+            "source": {
+              "manifest": {
+                "dataset": "bars_DBA_sip",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "adjustment": "raw",
+                    "asof": "-",
+                    "end": "2026-10-01T00:00:00Z",
+                    "feed": "sip",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2008-01-01T00:00:00Z",
+                    "symbols": "DBA",
+                    "timeframe": "1Day"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/bars"
+                },
+                "semantics": "Raw source diagnostic; not executable prices or fills",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/bars_DBA_sip/c05-amendment21-20261001/27e9125fe1d17b8d78c0f943/page-00000000.parquet",
+                  "record_count": 2701,
+                  "response_sha256": "f76b5d05ecbc4afbf93a71e2d960f1765db3cda2c5fd73456725b7dd2ae8b590",
+                  "retrieved_at": "2026-10-01T16:10:01.285072+00:00"
+                }
+              ]
+            },
+            "uncovered_source_sessions": 2015,
+            "worst_relative_difference": {
+              "close": "0.0065502461040558224163027656",
+              "open": "0.0075231702239425347222222222"
+            }
+          }
+        },
+        "source": {
+          "bytes": 514847,
+          "end_exclusive": "2026-10-01T00:00:00+00:00",
+          "price_basis": "Yahoo OHLC split-adjusted, not dividend-adjusted; requires validated actual-share conversion",
+          "retrieved_at": "2026-10-01T07:57:30.646733+00:00",
+          "sha256": "05cb6bbc6c8d33488ab89ecd1949bbd44d46c6e3ea02e576fdc1d109bbde7fa6",
+          "start": "2008-01-01T00:00:00+00:00",
+          "status_code": 200,
+          "symbol": "DBA",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/DBA?period1=1199145600&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true"
+        }
+      },
+      "GLD": {
+        "coverage": {
+          "coverage_ok": true,
+          "dividend_events": [],
+          "duplicate_dates": 0,
+          "expected_sessions": 4716,
+          "extra_sessions": [],
+          "first_session": "2008-01-02",
+          "invalid_sessions": [],
+          "last_session": "2026-09-30",
+          "missing_sessions": [],
+          "null_rows": 0,
+          "null_volume": [],
+          "orphan_event_dates": [],
+          "sessions": 4716,
+          "split_events": [],
+          "unsupported_event_groups": [],
+          "vendor_dividend_field_names": []
+        },
+        "primary_auctions": [
+          {
+            "date": "2016-08-12",
+            "field": "open",
+            "price": "129.1",
+            "primary_exchange": "P / NYSE Arca",
+            "source": {
+              "manifest": {
+                "dataset": "auction_GLD_2016-08-12_open",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "end": "2016-08-12T09:30:10-04:00",
+                    "feed": "sip",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2016-08-12T09:30:00-04:00"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/GLD/trades"
+                },
+                "semantics": "Raw primary exchange auction evidence in fixed first ten seconds of session boundary",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/auction_GLD_2016-08-12_open/c05-amendment21-20261001/900590d1e609878b6227f1cb/page-00000000.parquet",
+                  "record_count": 139,
+                  "response_sha256": "50f19d2f9ca94bdac3398d907a4fa78c1cbcd3560049edc4662b6487a2162f83",
+                  "retrieved_at": "2026-10-01T16:12:52.286062+00:00"
+                }
+              ]
+            }
+          },
+          {
+            "date": "2020-03-12",
+            "field": "close",
+            "price": "147.79",
+            "primary_exchange": "P / NYSE Arca",
+            "source": {
+              "manifest": {
+                "dataset": "auction_GLD_2020-03-12_close",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "end": "2020-03-12T16:00:10-04:00",
+                    "feed": "sip",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2020-03-12T16:00:00-04:00"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/GLD/trades"
+                },
+                "semantics": "Raw primary exchange auction evidence in fixed first ten seconds of session boundary",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/auction_GLD_2020-03-12_close/c05-amendment21-20261001/daa29c02cc31fd436f3f45fc/page-00000000.parquet",
+                  "record_count": 7,
+                  "response_sha256": "91f9d7b61d810ed75565304c9df13f4362807b9fbd7480bab22e0f37bcc1f453",
+                  "retrieved_at": "2026-10-01T16:12:52.663944+00:00"
+                }
+              ]
+            }
+          },
+          {
+            "date": "2020-03-16",
+            "field": "close",
+            "price": "141.64",
+            "primary_exchange": "P / NYSE Arca",
+            "source": {
+              "manifest": {
+                "dataset": "auction_GLD_2020-03-16_close",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "end": "2020-03-16T16:00:10-04:00",
+                    "feed": "sip",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2020-03-16T16:00:00-04:00"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/GLD/trades"
+                },
+                "semantics": "Raw primary exchange auction evidence in fixed first ten seconds of session boundary",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/auction_GLD_2020-03-16_close/c05-amendment21-20261001/c0c26bf06966c143e69ada68/page-00000000.parquet",
+                  "record_count": 14,
+                  "response_sha256": "edf7a397d8f7367d0c439efbdd7fbc597b80105492ceb918f22d3e8c6f5849d2",
+                  "retrieved_at": "2026-10-01T16:12:53.030103+00:00"
+                }
+              ]
+            }
+          }
+        ],
+        "references": {
+          "iex": {
+            "differences_over_1pct": [],
+            "failures": [],
+            "first": "2020-07-27",
+            "last": "2026-09-30",
+            "missing_overlap_sessions": [],
+            "sessions": 1553,
+            "source": {
+              "manifest": {
+                "dataset": "bars_GLD_iex",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "adjustment": "raw",
+                    "asof": "-",
+                    "end": "2026-10-01T00:00:00Z",
+                    "feed": "iex",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2008-01-01T00:00:00Z",
+                    "symbols": "GLD",
+                    "timeframe": "1Day"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/bars"
+                },
+                "semantics": "Raw source diagnostic; not executable prices or fills",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/bars_GLD_iex/c05-amendment21-20261001/469dd01b59ea5fe1eb334c96/page-00000000.parquet",
+                  "record_count": 1553,
+                  "response_sha256": "a8cbdf595b83ce3a813e549caeb0ac171c33eb134a98f1ebc4661865814179ac",
+                  "retrieved_at": "2026-10-01T16:09:58.218336+00:00"
+                }
+              ]
+            },
+            "uncovered_source_sessions": 3163,
+            "worst_relative_difference": {
+              "close": "0.0030526026791111312600114849",
+              "open": "0.004827559860293923780346284"
+            }
+          },
+          "sip": {
+            "differences_over_1pct": [
+              {
+                "date": "2016-08-12",
+                "diagnostic_only": false,
+                "field": "open",
+                "primary": "129.1",
+                "primary_confirms_yahoo": false,
+                "reference": "129.12",
+                "relative_difference": "0.0112298778737197180916976456",
+                "yahoo_actual_share": "127.66999816894531"
+              },
+              {
+                "date": "2020-03-12",
+                "diagnostic_only": false,
+                "field": "close",
+                "primary": "147.79",
+                "primary_confirms_yahoo": true,
+                "reference": "150.44",
+                "relative_difference": "0.0176150406399042807763892582",
+                "yahoo_actual_share": "147.7899932861328"
+              },
+              {
+                "date": "2020-03-16",
+                "diagnostic_only": false,
+                "field": "close",
+                "primary": "141.64",
+                "primary_confirms_yahoo": true,
+                "reference": "137.56",
+                "relative_difference": "0.029659780384184646699621983",
+                "yahoo_actual_share": "141.63999938964844"
+              }
+            ],
+            "failures": [
+              {
+                "date": "2016-08-12",
+                "diagnostic_only": false,
+                "field": "open",
+                "primary": "129.1",
+                "primary_confirms_yahoo": false,
+                "reference": "129.12",
+                "relative_difference": "0.0112298778737197180916976456",
+                "yahoo_actual_share": "127.66999816894531"
+              }
+            ],
+            "first": "2016-01-04",
+            "last": "2026-09-30",
+            "missing_overlap_sessions": [],
+            "sessions": 2701,
+            "source": {
+              "manifest": {
+                "dataset": "bars_GLD_sip",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "adjustment": "raw",
+                    "asof": "-",
+                    "end": "2026-10-01T00:00:00Z",
+                    "feed": "sip",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2008-01-01T00:00:00Z",
+                    "symbols": "GLD",
+                    "timeframe": "1Day"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/bars"
+                },
+                "semantics": "Raw source diagnostic; not executable prices or fills",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/bars_GLD_sip/c05-amendment21-20261001/422bcd23ae5bb8f1f0163a2b/page-00000000.parquet",
+                  "record_count": 2701,
+                  "response_sha256": "e3dd0a51760af4f8d0119c6579241939bc44ae4699c8ecfb135ed4f4fc7c10b9",
+                  "retrieved_at": "2026-10-01T16:09:57.762157+00:00"
+                }
+              ]
+            },
+            "uncovered_source_sessions": 2015,
+            "worst_relative_difference": {
+              "close": "0.029659780384184646699621983",
+              "open": "0.0112298778737197180916976456"
+            }
+          }
+        },
+        "source": {
+          "bytes": 517875,
+          "end_exclusive": "2026-10-01T00:00:00+00:00",
+          "price_basis": "Yahoo OHLC split-adjusted, not dividend-adjusted; requires validated actual-share conversion",
+          "retrieved_at": "2026-10-01T07:57:17.269172+00:00",
+          "sha256": "228920f6a0d2aa0dc967bf0bac035ba2ddbb1f511c42d6464c08544f9762e390",
+          "start": "2008-01-01T00:00:00+00:00",
+          "status_code": 200,
+          "symbol": "GLD",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/GLD?period1=1199145600&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true"
+        }
+      },
+      "SLV": {
+        "coverage": {
+          "coverage_ok": true,
+          "dividend_events": [],
+          "duplicate_dates": 0,
+          "expected_sessions": 4716,
+          "extra_sessions": [],
+          "first_session": "2008-01-02",
+          "invalid_sessions": [],
+          "last_session": "2026-09-30",
+          "missing_sessions": [],
+          "null_rows": 0,
+          "null_volume": [],
+          "orphan_event_dates": [],
+          "sessions": 4716,
+          "split_events": [
+            {
+              "date": "2008-07-24",
+              "ratio": "10"
+            }
+          ],
+          "unsupported_event_groups": [],
+          "vendor_dividend_field_names": []
+        },
+        "primary_auctions": [
+          {
+            "date": "2020-03-16",
+            "field": "close",
+            "price": "12",
+            "primary_exchange": "P / NYSE Arca",
+            "source": {
+              "manifest": {
+                "dataset": "auction_SLV_2020-03-16_close",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "end": "2020-03-16T16:00:10-04:00",
+                    "feed": "sip",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2020-03-16T16:00:00-04:00"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/SLV/trades"
+                },
+                "semantics": "Raw primary exchange auction evidence in fixed first ten seconds of session boundary",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/auction_SLV_2020-03-16_close/c05-amendment21-20261001/b11c0ea44fc59866a2136650/page-00000000.parquet",
+                  "record_count": 6,
+                  "response_sha256": "a513c872294d6ceea527cb3ffa9e4e9a911c804fd7bb8ea7106862ae573b0b8f",
+                  "retrieved_at": "2026-10-01T16:12:53.388559+00:00"
+                }
+              ]
+            }
+          }
+        ],
+        "references": {
+          "iex": {
+            "differences_over_1pct": [],
+            "failures": [],
+            "first": "2020-07-27",
+            "last": "2026-09-30",
+            "missing_overlap_sessions": [],
+            "sessions": 1553,
+            "source": {
+              "manifest": {
+                "dataset": "bars_SLV_iex",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "adjustment": "raw",
+                    "asof": "-",
+                    "end": "2026-10-01T00:00:00Z",
+                    "feed": "iex",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2008-01-01T00:00:00Z",
+                    "symbols": "SLV",
+                    "timeframe": "1Day"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/bars"
+                },
+                "semantics": "Raw source diagnostic; not executable prices or fills",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/bars_SLV_iex/c05-amendment21-20261001/10296c673f5f2d7f2f7c62b6/page-00000000.parquet",
+                  "record_count": 1553,
+                  "response_sha256": "799769079f934e8ffaecae801f7fd684c7769865058a8e2517c76825ff2a150a",
+                  "retrieved_at": "2026-10-01T16:09:59.072219+00:00"
+                }
+              ]
+            },
+            "uncovered_source_sessions": 3163,
+            "worst_relative_difference": {
+              "close": "0.003718846081002751952398661",
+              "open": "0.008562875053336912751677852"
+            }
+          },
+          "sip": {
+            "differences_over_1pct": [
+              {
+                "date": "2020-03-16",
+                "diagnostic_only": false,
+                "field": "close",
+                "primary": "12",
+                "primary_confirms_yahoo": true,
+                "reference": "11.8401",
+                "relative_difference": "0.013504953505460257937010667",
+                "yahoo_actual_share": "12.0"
+              }
+            ],
+            "failures": [],
+            "first": "2016-01-04",
+            "last": "2026-09-30",
+            "missing_overlap_sessions": [],
+            "sessions": 2701,
+            "source": {
+              "manifest": {
+                "dataset": "bars_SLV_sip",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "adjustment": "raw",
+                    "asof": "-",
+                    "end": "2026-10-01T00:00:00Z",
+                    "feed": "sip",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2008-01-01T00:00:00Z",
+                    "symbols": "SLV",
+                    "timeframe": "1Day"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/bars"
+                },
+                "semantics": "Raw source diagnostic; not executable prices or fills",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/bars_SLV_sip/c05-amendment21-20261001/c432032a8d506f0387daed6d/page-00000000.parquet",
+                  "record_count": 2701,
+                  "response_sha256": "8434b65a97d188e1e87475f76b9d91b0804bdfa072ddd43e86fa4d9cf7422dc6",
+                  "retrieved_at": "2026-10-01T16:09:58.675651+00:00"
+                }
+              ]
+            },
+            "uncovered_source_sessions": 2015,
+            "worst_relative_difference": {
+              "close": "0.013504953505460257937010667",
+              "open": "0.0089552011062849552238805970"
+            }
+          }
+        },
+        "source": {
+          "bytes": 519323,
+          "end_exclusive": "2026-10-01T00:00:00+00:00",
+          "price_basis": "Yahoo OHLC split-adjusted, not dividend-adjusted; requires validated actual-share conversion",
+          "retrieved_at": "2026-10-01T07:57:22.432976+00:00",
+          "sha256": "0c235e8c221881c8741138dc4ff6446ec0080865be7c1e9c99c58c27ddee824d",
+          "start": "2008-01-01T00:00:00+00:00",
+          "status_code": 200,
+          "symbol": "SLV",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SLV?period1=1199145600&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true"
+        }
+      },
+      "UNG": {
+        "coverage": {
+          "coverage_ok": true,
+          "dividend_events": [],
+          "duplicate_dates": 0,
+          "expected_sessions": 4716,
+          "extra_sessions": [],
+          "first_session": "2008-01-02",
+          "invalid_sessions": [],
+          "last_session": "2026-09-30",
+          "missing_sessions": [],
+          "null_rows": 0,
+          "null_volume": [],
+          "orphan_event_dates": [],
+          "sessions": 4716,
+          "split_events": [
+            {
+              "date": "2011-03-09",
+              "ratio": "0.5"
+            },
+            {
+              "date": "2012-02-22",
+              "ratio": "0.25"
+            },
+            {
+              "date": "2018-01-05",
+              "ratio": "0.25"
+            },
+            {
+              "date": "2024-01-24",
+              "ratio": "0.25"
+            }
+          ],
+          "unsupported_event_groups": [],
+          "vendor_dividend_field_names": []
+        },
+        "primary_auctions": [
+          {
+            "date": "2017-02-09",
+            "field": "open",
+            "price": "7.96",
+            "primary_exchange": "P / NYSE Arca",
+            "source": {
+              "manifest": {
+                "dataset": "auction_UNG_2017-02-09_open",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "end": "2017-02-09T09:30:10-05:00",
+                    "feed": "sip",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2017-02-09T09:30:00-05:00"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/UNG/trades"
+                },
+                "semantics": "Raw primary exchange auction evidence in fixed first ten seconds of session boundary",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/auction_UNG_2017-02-09_open/c05-amendment21-20261001/ec2257ba0f2d9b30deb41541/page-00000000.parquet",
+                  "record_count": 8,
+                  "response_sha256": "5e1c3b4b2aa57623780c2ab8eadc8a787921b59991086a2cce65ba2df3e6ec7c",
+                  "retrieved_at": "2026-10-01T16:12:53.766800+00:00"
+                }
+              ]
+            }
+          },
+          {
+            "date": "2024-12-23",
+            "field": "close",
+            "price": "15.63",
+            "primary_exchange": "P / NYSE Arca",
+            "source": {
+              "manifest": {
+                "dataset": "auction_UNG_2024-12-23_close",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "end": "2024-12-23T16:00:10-05:00",
+                    "feed": "sip",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2024-12-23T16:00:00-05:00"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/UNG/trades"
+                },
+                "semantics": "Raw primary exchange auction evidence in fixed first ten seconds of session boundary",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/auction_UNG_2024-12-23_close/c05-amendment21-20261001/176a1bfe9e95848ca12e8ae5/page-00000000.parquet",
+                  "record_count": 3,
+                  "response_sha256": "fa6896f21c9b2099ae878b0c742d6993033392e15f6959e0de63ffca53e926b7",
+                  "retrieved_at": "2026-10-01T16:12:54.128309+00:00"
+                }
+              ]
+            }
+          }
+        ],
+        "references": {
+          "iex": {
+            "differences_over_1pct": [
+              {
+                "date": "2020-08-05",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "12.725",
+                "relative_difference": "0.0106090253369045186640471513",
+                "yahoo_actual_share": "12.5900001525878900"
+              },
+              {
+                "date": "2020-08-26",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "13.82",
+                "relative_difference": "0.010853854343618560057887120",
+                "yahoo_actual_share": "13.97000026702880850"
+              },
+              {
+                "date": "2020-10-01",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "11.23",
+                "relative_difference": "0.013357089442646260017809439",
+                "yahoo_actual_share": "11.3800001144409175"
+              },
+              {
+                "date": "2020-10-27",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "12.25",
+                "relative_difference": "0.0130612120336416326530612245",
+                "yahoo_actual_share": "12.0900001525878900"
+              },
+              {
+                "date": "2020-11-10",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "11.075",
+                "relative_difference": "0.0112866989376851015801354402",
+                "yahoo_actual_share": "10.9499998092651375"
+              },
+              {
+                "date": "2020-12-16",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "9.665",
+                "relative_difference": "0.0118985834728543714433523021",
+                "yahoo_actual_share": "9.5500001907348625"
+              },
+              {
+                "date": "2021-01-06",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "9.78",
+                "relative_difference": "0.0143148933207817995910020450",
+                "yahoo_actual_share": "9.64000034332275400"
+              },
+              {
+                "date": "2021-02-03",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "10.24",
+                "relative_difference": "0.012695301324129150390625",
+                "yahoo_actual_share": "10.3699998855590825"
+              },
+              {
+                "date": "2021-02-25",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "10.5",
+                "relative_difference": "0.0104761577787853333333333333",
+                "yahoo_actual_share": "10.39000034332275400"
+              },
+              {
+                "date": "2021-03-29",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "9.55",
+                "relative_difference": "0.011518308629540314136125654",
+                "yahoo_actual_share": "9.6599998474121100"
+              },
+              {
+                "date": "2021-04-05",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "9.37",
+                "relative_difference": "0.014941326454838420490928495",
+                "yahoo_actual_share": "9.51000022888183600"
+              },
+              {
+                "date": "2021-06-07",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "10.84",
+                "relative_difference": "0.0101476437051358394833948339",
+                "yahoo_actual_share": "10.7299995422363275"
+              },
+              {
+                "date": "2021-08-18",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "13.295",
+                "relative_difference": "0.016171510258129823241820233",
+                "yahoo_actual_share": "13.51000022888183600"
+              },
+              {
+                "date": "2021-08-26",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "14.355",
+                "relative_difference": "0.0247300592128178335074886799",
+                "yahoo_actual_share": "14.000"
+              },
+              {
+                "date": "2021-10-07",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "19.23",
+                "relative_difference": "0.014560594325628445137805512",
+                "yahoo_actual_share": "19.5100002288818350"
+              },
+              {
+                "date": "2021-10-18",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "18",
+                "relative_difference": "0.012777752346462638888888889",
+                "yahoo_actual_share": "18.2299995422363275"
+              },
+              {
+                "date": "2021-11-17",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "16.37",
+                "relative_difference": "0.011606564810163866829566280",
+                "yahoo_actual_share": "16.5599994659423825"
+              },
+              {
+                "date": "2021-12-17",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "12.215",
+                "relative_difference": "0.0110519915099422840769545641",
+                "yahoo_actual_share": "12.0799999237060550"
+              },
+              {
+                "date": "2022-01-03",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "12.275",
+                "relative_difference": "0.014256603606121181262729124",
+                "yahoo_actual_share": "12.4499998092651375"
+              },
+              {
+                "date": "2022-02-01",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "16.475",
+                "relative_difference": "0.010622131625509863429438543",
+                "yahoo_actual_share": "16.649999618530275"
+              },
+              {
+                "date": "2022-04-07",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "21",
+                "relative_difference": "0.011904761904761904761904762",
+                "yahoo_actual_share": "21.250"
+              },
+              {
+                "date": "2022-06-27",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "21.08",
+                "relative_difference": "0.0128083744809116461100569260",
+                "yahoo_actual_share": "20.8099994659423825"
+              },
+              {
+                "date": "2022-08-19",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "31.68",
+                "relative_difference": "0.0101009908348622948232323232",
+                "yahoo_actual_share": "31.3600006103515625"
+              },
+              {
+                "date": "2022-10-07",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "23.68",
+                "relative_difference": "0.0101351125820262880067567568",
+                "yahoo_actual_share": "23.4400005340576175"
+              },
+              {
+                "date": "2023-06-28",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "7.35",
+                "relative_difference": "0.014965991584622108843537415",
+                "yahoo_actual_share": "7.4600000381469725"
+              },
+              {
+                "date": "2024-11-08",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "12.88",
+                "relative_difference": "0.0100931677018633540372670807",
+                "yahoo_actual_share": "12.75"
+              },
+              {
+                "date": "2024-12-23",
+                "diagnostic_only": false,
+                "field": "close",
+                "primary": "15.63",
+                "primary_confirms_yahoo": true,
+                "reference": "15.45",
+                "relative_difference": "0.011650492844072362459546926",
+                "yahoo_actual_share": "15.630000114440918"
+              }
+            ],
+            "failures": [],
+            "first": "2020-07-27",
+            "last": "2026-09-30",
+            "missing_overlap_sessions": [],
+            "sessions": 1553,
+            "source": {
+              "manifest": {
+                "dataset": "bars_UNG_iex",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "adjustment": "raw",
+                    "asof": "-",
+                    "end": "2026-10-01T00:00:00Z",
+                    "feed": "iex",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2008-01-01T00:00:00Z",
+                    "symbols": "UNG",
+                    "timeframe": "1Day"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/bars"
+                },
+                "semantics": "Raw source diagnostic; not executable prices or fills",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/bars_UNG_iex/c05-amendment21-20261001/e8a0136e7289edc98ce39e83/page-00000000.parquet",
+                  "record_count": 1553,
+                  "response_sha256": "85227bd60be44660d4e01c0e08de90c7ee738817aec69c54e2b622ff87da197f",
+                  "retrieved_at": "2026-10-01T16:10:00.829117+00:00"
+                }
+              ]
+            },
+            "uncovered_source_sessions": 3163,
+            "worst_relative_difference": {
+              "close": "0.011650492844072362459546926",
+              "open": "0.0247300592128178335074886799"
+            }
+          },
+          "sip": {
+            "differences_over_1pct": [
+              {
+                "date": "2017-02-09",
+                "diagnostic_only": false,
+                "field": "open",
+                "primary": "7.96",
+                "primary_confirms_yahoo": false,
+                "reference": "7.95",
+                "relative_difference": "0.0125786283481045597484276730",
+                "yahoo_actual_share": "7.84999990463256875"
+              }
+            ],
+            "failures": [
+              {
+                "date": "2017-02-09",
+                "diagnostic_only": false,
+                "field": "open",
+                "primary": "7.96",
+                "primary_confirms_yahoo": false,
+                "reference": "7.95",
+                "relative_difference": "0.0125786283481045597484276730",
+                "yahoo_actual_share": "7.84999990463256875"
+              }
+            ],
+            "first": "2016-01-04",
+            "last": "2026-09-30",
+            "missing_overlap_sessions": [],
+            "sessions": 2701,
+            "source": {
+              "manifest": {
+                "dataset": "bars_UNG_sip",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "adjustment": "raw",
+                    "asof": "-",
+                    "end": "2026-10-01T00:00:00Z",
+                    "feed": "sip",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2008-01-01T00:00:00Z",
+                    "symbols": "UNG",
+                    "timeframe": "1Day"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/bars"
+                },
+                "semantics": "Raw source diagnostic; not executable prices or fills",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/bars_UNG_sip/c05-amendment21-20261001/166a9ad0739d7690cf34af7f/page-00000000.parquet",
+                  "record_count": 2701,
+                  "response_sha256": "054e05d2c356d2b072df36f76586b6c149bdd58f7e1a0b5955f9c82c6da6e8f6",
+                  "retrieved_at": "2026-10-01T16:10:00.459248+00:00"
+                }
+              ]
+            },
+            "uncovered_source_sessions": 2015,
+            "worst_relative_difference": {
+              "close": "0.0092526636089718861209964413",
+              "open": "0.0125786283481045597484276730"
+            }
+          }
+        },
+        "source": {
+          "bytes": 505263,
+          "end_exclusive": "2026-10-01T00:00:00+00:00",
+          "price_basis": "Yahoo OHLC split-adjusted, not dividend-adjusted; requires validated actual-share conversion",
+          "retrieved_at": "2026-10-01T07:57:28.180259+00:00",
+          "sha256": "5f08ea911a58652e0627d8fcf251c187d68c657729c7de05679850250e0b1846",
+          "start": "2008-01-01T00:00:00+00:00",
+          "status_code": 200,
+          "symbol": "UNG",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/UNG?period1=1199145600&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true"
+        }
+      },
+      "USO": {
+        "coverage": {
+          "coverage_ok": true,
+          "dividend_events": [],
+          "duplicate_dates": 0,
+          "expected_sessions": 4716,
+          "extra_sessions": [],
+          "first_session": "2008-01-02",
+          "invalid_sessions": [],
+          "last_session": "2026-09-30",
+          "missing_sessions": [],
+          "null_rows": 0,
+          "null_volume": [],
+          "orphan_event_dates": [],
+          "sessions": 4716,
+          "split_events": [
+            {
+              "date": "2020-04-29",
+              "ratio": "0.125"
+            }
+          ],
+          "unsupported_event_groups": [],
+          "vendor_dividend_field_names": []
+        },
+        "primary_auctions": [
+          {
+            "date": "2016-11-30",
+            "field": "open",
+            "price": "10.68",
+            "primary_exchange": "P / NYSE Arca",
+            "source": {
+              "manifest": {
+                "dataset": "auction_USO_2016-11-30_open",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "end": "2016-11-30T09:30:10-05:00",
+                    "feed": "sip",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2016-11-30T09:30:00-05:00"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/USO/trades"
+                },
+                "semantics": "Raw primary exchange auction evidence in fixed first ten seconds of session boundary",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/auction_USO_2016-11-30_open/c05-amendment21-20261001/93118ff97eca6ae48a27d690/page-00000000.parquet",
+                  "record_count": 508,
+                  "response_sha256": "eda940c30bca7b4579bb56643fe359d680b87ab55d1d79c290e26334394dce89",
+                  "retrieved_at": "2026-10-01T16:12:54.560178+00:00"
+                }
+              ]
+            }
+          },
+          {
+            "date": "2017-01-12",
+            "field": "open",
+            "price": "11.61",
+            "primary_exchange": "P / NYSE Arca",
+            "source": {
+              "manifest": {
+                "dataset": "auction_USO_2017-01-12_open",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "end": "2017-01-12T09:30:10-05:00",
+                    "feed": "sip",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2017-01-12T09:30:00-05:00"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/USO/trades"
+                },
+                "semantics": "Raw primary exchange auction evidence in fixed first ten seconds of session boundary",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/auction_USO_2017-01-12_open/c05-amendment21-20261001/6a661a35bb4a9a59d4123f6f/page-00000000.parquet",
+                  "record_count": 39,
+                  "response_sha256": "ba0ceadb7233de8ff14f2f94b2b82dc1a6280a097aa25c1999eff44b839748af",
+                  "retrieved_at": "2026-10-01T16:12:54.953891+00:00"
+                }
+              ]
+            }
+          },
+          {
+            "date": "2017-02-09",
+            "field": "open",
+            "price": "11.38",
+            "primary_exchange": "P / NYSE Arca",
+            "source": {
+              "manifest": {
+                "dataset": "auction_USO_2017-02-09_open",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "end": "2017-02-09T09:30:10-05:00",
+                    "feed": "sip",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2017-02-09T09:30:00-05:00"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/USO/trades"
+                },
+                "semantics": "Raw primary exchange auction evidence in fixed first ten seconds of session boundary",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/auction_USO_2017-02-09_open/c05-amendment21-20261001/30c7f6dd7990159464fa0a06/page-00000000.parquet",
+                  "record_count": 69,
+                  "response_sha256": "13ae5714411d1082634c86894e553aee01d35b5e7ab826b9fe8e00a7ad263029",
+                  "retrieved_at": "2026-10-01T16:12:55.322104+00:00"
+                }
+              ]
+            }
+          },
+          {
+            "date": "2017-10-30",
+            "field": "open",
+            "price": "10.9",
+            "primary_exchange": "P / NYSE Arca",
+            "source": {
+              "manifest": {
+                "dataset": "auction_USO_2017-10-30_open",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "end": "2017-10-30T09:30:10-04:00",
+                    "feed": "sip",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2017-10-30T09:30:00-04:00"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/USO/trades"
+                },
+                "semantics": "Raw primary exchange auction evidence in fixed first ten seconds of session boundary",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/auction_USO_2017-10-30_open/c05-amendment21-20261001/7d2949f7eee6766923da31b8/page-00000000.parquet",
+                  "record_count": 59,
+                  "response_sha256": "85f66aec9447b098eedf34d87fd528812539d41c9527487274d71d89565f491d",
+                  "retrieved_at": "2026-10-01T16:12:55.682963+00:00"
+                }
+              ]
+            }
+          },
+          {
+            "date": "2020-04-21",
+            "field": "close",
+            "price": "2.81",
+            "primary_exchange": "P / NYSE Arca",
+            "source": {
+              "manifest": {
+                "dataset": "auction_USO_2020-04-21_close",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "end": "2020-04-21T16:00:10-04:00",
+                    "feed": "sip",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2020-04-21T16:00:00-04:00"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/USO/trades"
+                },
+                "semantics": "Raw primary exchange auction evidence in fixed first ten seconds of session boundary",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/auction_USO_2020-04-21_close/c05-amendment21-20261001/e919d05f916e996f7bfbf331/page-00000000.parquet",
+                  "record_count": 33,
+                  "response_sha256": "9f8c1ca220ca4be85dbd2146f316d2016021c34cd3eb62baba5e8307a50716aa",
+                  "retrieved_at": "2026-10-01T16:12:56.059977+00:00"
+                }
+              ]
+            }
+          }
+        ],
+        "references": {
+          "iex": {
+            "differences_over_1pct": [
+              {
+                "date": "2020-04-21",
+                "diagnostic_only": false,
+                "field": "close",
+                "primary": "2.81",
+                "primary_confirms_yahoo": true,
+                "reference": "3.18",
+                "relative_difference": "0.1163522192517166666666666667",
+                "yahoo_actual_share": "2.809999942779541000"
+              },
+              {
+                "date": "2021-08-06",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "47.93",
+                "relative_difference": "0.010223204025564573336115168",
+                "yahoo_actual_share": "48.41999816894531"
+              },
+              {
+                "date": "2021-11-19",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "54.25",
+                "relative_difference": "0.010875578849546359447004608",
+                "yahoo_actual_share": "54.84000015258789"
+              },
+              {
+                "date": "2021-12-20",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "48.51",
+                "relative_difference": "0.010719414126919707276850134",
+                "yahoo_actual_share": "49.029998779296875"
+              },
+              {
+                "date": "2022-05-06",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "80.755",
+                "relative_difference": "0.010835208388557612531731781",
+                "yahoo_actual_share": "81.62999725341797"
+              },
+              {
+                "date": "2022-07-12",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "73.81",
+                "relative_difference": "0.013683778550660073160818317",
+                "yahoo_actual_share": "74.81999969482422"
+              },
+              {
+                "date": "2022-09-21",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "69.73",
+                "relative_difference": "0.010899151925563315646063387",
+                "yahoo_actual_share": "70.48999786376953"
+              },
+              {
+                "date": "2022-10-31",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "72.43",
+                "relative_difference": "0.0143586995768543421234295182",
+                "yahoo_actual_share": "71.38999938964844"
+              },
+              {
+                "date": "2023-02-03",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "67.64",
+                "relative_difference": "0.0134535281352217622708456535",
+                "yahoo_actual_share": "66.7300033569336"
+              },
+              {
+                "date": "2023-03-17",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "59.33",
+                "relative_difference": "0.010281453340788538681948424",
+                "yahoo_actual_share": "59.939998626708984"
+              },
+              {
+                "date": "2023-04-25",
+                "diagnostic_only": true,
+                "field": "open",
+                "primary": null,
+                "primary_confirms_yahoo": false,
+                "reference": "67.82",
+                "relative_difference": "0.010616350862980536714833382",
+                "yahoo_actual_share": "68.54000091552734"
+              }
+            ],
+            "failures": [],
+            "first": "2020-04-21",
+            "last": "2026-09-30",
+            "missing_overlap_sessions": [
+              "2020-04-22",
+              "2020-04-23",
+              "2020-04-24",
+              "2020-04-27",
+              "2020-04-28",
+              "2020-04-29",
+              "2020-04-30",
+              "2020-05-01",
+              "2020-05-04",
+              "2020-05-05",
+              "2020-05-06",
+              "2020-05-07",
+              "2020-05-08",
+              "2020-05-11",
+              "2020-05-12",
+              "2020-05-13",
+              "2020-05-14",
+              "2020-05-15",
+              "2020-05-18",
+              "2020-05-19",
+              "2020-05-20",
+              "2020-05-21",
+              "2020-05-22",
+              "2020-05-26",
+              "2020-05-27",
+              "2020-05-28",
+              "2020-05-29",
+              "2020-06-01",
+              "2020-06-02",
+              "2020-06-03",
+              "2020-06-04",
+              "2020-06-05",
+              "2020-06-08",
+              "2020-06-09",
+              "2020-06-10",
+              "2020-06-11",
+              "2020-06-12",
+              "2020-06-15",
+              "2020-06-16",
+              "2020-06-17",
+              "2020-06-18",
+              "2020-06-19",
+              "2020-06-22",
+              "2020-06-23",
+              "2020-06-24",
+              "2020-06-25",
+              "2020-06-26",
+              "2020-06-29",
+              "2020-06-30",
+              "2020-07-01",
+              "2020-07-02",
+              "2020-07-06",
+              "2020-07-07",
+              "2020-07-08",
+              "2020-07-09",
+              "2020-07-10",
+              "2020-07-13",
+              "2020-07-14",
+              "2020-07-15",
+              "2020-07-16",
+              "2020-07-17",
+              "2020-07-20",
+              "2020-07-21",
+              "2020-07-22",
+              "2020-07-23",
+              "2020-07-24"
+            ],
+            "sessions": 1554,
+            "source": {
+              "manifest": {
+                "dataset": "bars_USO_iex",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "adjustment": "raw",
+                    "asof": "-",
+                    "end": "2026-10-01T00:00:00Z",
+                    "feed": "iex",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2008-01-01T00:00:00Z",
+                    "symbols": "USO",
+                    "timeframe": "1Day"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/bars"
+                },
+                "semantics": "Raw source diagnostic; not executable prices or fills",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/bars_USO_iex/c05-amendment21-20261001/dae066ac4bccb3c09f8bfe0e/page-00000000.parquet",
+                  "record_count": 1554,
+                  "response_sha256": "9d2538d939f676ea1f9b285cc92766c5846bb047367087adaf55dc277e591c3e",
+                  "retrieved_at": "2026-10-01T16:09:59.957626+00:00"
+                }
+              ]
+            },
+            "uncovered_source_sessions": 3162,
+            "worst_relative_difference": {
+              "close": "0.1163522192517166666666666667",
+              "open": "0.0143586995768543421234295182"
+            }
+          },
+          "sip": {
+            "differences_over_1pct": [
+              {
+                "date": "2016-11-30",
+                "diagnostic_only": false,
+                "field": "open",
+                "primary": "10.68",
+                "primary_confirms_yahoo": false,
+                "reference": "10.67",
+                "relative_difference": "0.0571695951624461105904404873",
+                "yahoo_actual_share": "10.0600004196167000"
+              },
+              {
+                "date": "2017-01-12",
+                "diagnostic_only": false,
+                "field": "open",
+                "primary": "11.61",
+                "primary_confirms_yahoo": false,
+                "reference": "11.6",
+                "relative_difference": "0.0198275960724928879310344828",
+                "yahoo_actual_share": "11.36999988555908250"
+              },
+              {
+                "date": "2017-02-09",
+                "diagnostic_only": false,
+                "field": "open",
+                "primary": "11.38",
+                "primary_confirms_yahoo": false,
+                "reference": "11.385",
+                "relative_difference": "0.0136144451263656126482213439",
+                "yahoo_actual_share": "11.22999954223632750"
+              },
+              {
+                "date": "2017-10-30",
+                "diagnostic_only": false,
+                "field": "open",
+                "primary": "10.9",
+                "primary_confirms_yahoo": false,
+                "reference": "10.9",
+                "relative_difference": "0.0311926220535137614678899083",
+                "yahoo_actual_share": "10.5600004196167000"
+              }
+            ],
+            "failures": [
+              {
+                "date": "2016-11-30",
+                "diagnostic_only": false,
+                "field": "open",
+                "primary": "10.68",
+                "primary_confirms_yahoo": false,
+                "reference": "10.67",
+                "relative_difference": "0.0571695951624461105904404873",
+                "yahoo_actual_share": "10.0600004196167000"
+              },
+              {
+                "date": "2017-01-12",
+                "diagnostic_only": false,
+                "field": "open",
+                "primary": "11.61",
+                "primary_confirms_yahoo": false,
+                "reference": "11.6",
+                "relative_difference": "0.0198275960724928879310344828",
+                "yahoo_actual_share": "11.36999988555908250"
+              },
+              {
+                "date": "2017-02-09",
+                "diagnostic_only": false,
+                "field": "open",
+                "primary": "11.38",
+                "primary_confirms_yahoo": false,
+                "reference": "11.385",
+                "relative_difference": "0.0136144451263656126482213439",
+                "yahoo_actual_share": "11.22999954223632750"
+              },
+              {
+                "date": "2017-10-30",
+                "diagnostic_only": false,
+                "field": "open",
+                "primary": "10.9",
+                "primary_confirms_yahoo": false,
+                "reference": "10.9",
+                "relative_difference": "0.0311926220535137614678899083",
+                "yahoo_actual_share": "10.5600004196167000"
+              }
+            ],
+            "first": "2016-01-04",
+            "last": "2026-09-30",
+            "missing_overlap_sessions": [],
+            "sessions": 2701,
+            "source": {
+              "manifest": {
+                "dataset": "bars_USO_sip",
+                "format_version": 1,
+                "request": {
+                  "params": {
+                    "adjustment": "raw",
+                    "asof": "-",
+                    "end": "2026-10-01T00:00:00Z",
+                    "feed": "sip",
+                    "limit": 10000,
+                    "sort": "asc",
+                    "start": "2008-01-01T00:00:00Z",
+                    "symbols": "USO",
+                    "timeframe": "1Day"
+                  },
+                  "url": "https://data.alpaca.markets/v2/stocks/bars"
+                },
+                "semantics": "Raw source diagnostic; not executable prices or fills",
+                "venue": "alpaca"
+              },
+              "pages": [
+                {
+                  "path": "raw/alpaca/bars_USO_sip/c05-amendment21-20261001/b13dc41d0952c54d2486b789/page-00000000.parquet",
+                  "record_count": 2701,
+                  "response_sha256": "45cde104b6aa9ed873e57050628b99fbf7c60e4d45b942fbf2a4d82ff89bfebb",
+                  "retrieved_at": "2026-10-01T16:09:59.569972+00:00"
+                }
+              ]
+            },
+            "uncovered_source_sessions": 2015,
+            "worst_relative_difference": {
+              "close": "0.0084210446006373684210526316",
+              "open": "0.0571695951624461105904404873"
+            }
+          }
+        },
+        "source": {
+          "bytes": 505555,
+          "end_exclusive": "2026-10-01T00:00:00+00:00",
+          "price_basis": "Yahoo OHLC split-adjusted, not dividend-adjusted; requires validated actual-share conversion",
+          "retrieved_at": "2026-10-01T07:57:25.522239+00:00",
+          "sha256": "7002e2bec824f516fc06e44a8813d3fbf51c15d75a6c9f8bc3908e44ef71927b",
+          "start": "2008-01-01T00:00:00+00:00",
+          "status_code": 200,
+          "symbol": "USO",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/USO?period1=1199145600&period2=1790812800&interval=1d&events=div%2Csplit&includeAdjustedClose=true"
+        }
+      }
+    }
+  },
+  "receipt_sha256": "05774a5a2f1ccbfef2898471f32311874e67298fc2bbbb6efb39b1cda893cb7c",
+  "sessions": 4716,
+  "source_code_sha256": {
+    "src/tradingbot/data/equity_source_repair.py": "543f44e40a792f58012dd1e352e390c6f6ad693183e49527553987ffcaab8c82",
+    "src/tradingbot/data/free_history.py": "fa941be2606c10e1c9c84ae9c237f20f2fb5455753b41464ad5f9ec594c02cdd",
+    "src/tradingbot/research/c05_blackout.py": "5cfb71a7ae0e23687ffccc67f1f32438a39121c980392a15e532de20fed2fbd4",
+    "src/tradingbot/research/c05_commodity_trend.py": "d5d05b6ff9b9ececc78db30333d72954adc3ae47a6c4c3db9affe0e5e7d845a8",
+    "src/tradingbot/research/c06_sources.py": "a303f18d1c8c96352bc40725d01f82a63d5416645fed9d4733701fa3940c052e",
+    "src/tradingbot/research/equity_data.py": "183bae1daca98b9805d2a7293be10296c9131517c380bd03325bbdf600e20833"
+  },
+  "split": {
+    "data_end": "2026-10-01T00:00:00+00:00",
+    "data_start": "2008-01-01T00:00:00+00:00",
+    "dataset_key": "c05-amendment21-dbef40b627a1322588095635a115805cba46e631",
+    "holdout_start": "2021-02-14T14:24:00+00:00",
+    "split": "70/30 by elapsed UTC time; end exclusive"
+  },
+  "status": "SOURCE_ADMITTED_NO_STRATEGY_OUTCOMES",
+  "strategy_outcomes_inspected": false,
+  "training_cases_attempted": 0
+}

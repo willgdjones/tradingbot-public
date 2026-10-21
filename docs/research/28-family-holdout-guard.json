@@ -1,0 +1,105 @@
+{
+  "bead": "tradingbot-u1h",
+  "audit_kind": "stored_evidence_only_no_historical_replay",
+  "checked_at": "2026-10-01T19:09:39.453553+00:00",
+  "migration": "bcf10a202601",
+  "original_final_count": 7,
+  "all_originals_unchanged": true,
+  "originals": [
+    {
+      "trial_id": 3281,
+      "family_key": "turn_of_month",
+      "dataset_key": "equity:83501d8e59ae95b128481d26228722f00514f26b4cdb388462edb70908e4f5a9",
+      "source_start": "2016-01-04T05:00:00+00:00",
+      "holdout_start": "2023-07-12T01:06:00+00:00",
+      "source_end_exclusive": "2026-09-30T20:00:00.000001+00:00",
+      "before_row_sha256": "9413df496cb4104545a75dc9466e40c3b61ce4ff2535dc5b488d60f42a515c5c",
+      "after_row_sha256": "9413df496cb4104545a75dc9466e40c3b61ce4ff2535dc5b488d60f42a515c5c",
+      "unchanged": true
+    },
+    {
+      "trial_id": 3282,
+      "family_key": "turn_of_month",
+      "dataset_key": "equity:83501d8e59ae95b128481d26228722f00514f26b4cdb388462edb70908e4f5a9",
+      "source_start": "2016-01-04T05:00:00+00:00",
+      "holdout_start": "2023-07-12T01:06:00+00:00",
+      "source_end_exclusive": "2026-09-30T20:00:00.000001+00:00",
+      "before_row_sha256": "7c10b95d7bc04e7ca9c27495a2197e8fb6c643519234880d9afb547bccdc0644",
+      "after_row_sha256": "7c10b95d7bc04e7ca9c27495a2197e8fb6c643519234880d9afb547bccdc0644",
+      "unchanged": true
+    },
+    {
+      "trial_id": 3319,
+      "family_key": "c01",
+      "dataset_key": "sweep-c01-v1",
+      "source_start": "2006-01-01T00:00:00+00:00",
+      "holdout_start": "2020-07-10T14:24:00+00:00",
+      "source_end_exclusive": "2026-10-01T00:00:00+00:00",
+      "before_row_sha256": "6a0d2f1be52e0edf81059875d0b45627123c0da22c9c23edd55a40f1b2dfb70d",
+      "after_row_sha256": "6a0d2f1be52e0edf81059875d0b45627123c0da22c9c23edd55a40f1b2dfb70d",
+      "unchanged": true
+    },
+    {
+      "trial_id": 3910,
+      "family_key": "c08",
+      "dataset_key": "c08-amendment21-8babfd45b7f419e4394210b4964c975e73f07b0b",
+      "source_start": "2018-01-01T00:00:00+00:00",
+      "holdout_start": "2024-02-15T12:00:00+00:00",
+      "source_end_exclusive": "2026-10-01T00:00:00+00:00",
+      "before_row_sha256": "9b4dd58fac3edaef03bbc3835e61d431974c8960e1ef234790bc0c948b671f38",
+      "after_row_sha256": "9b4dd58fac3edaef03bbc3835e61d431974c8960e1ef234790bc0c948b671f38",
+      "unchanged": true
+    },
+    {
+      "trial_id": 3964,
+      "family_key": "c05",
+      "dataset_key": "c05-amendment21-dbef40b627a1322588095635a115805cba46e631",
+      "source_start": "2008-01-01T00:00:00+00:00",
+      "holdout_start": "2021-02-14T14:24:00+00:00",
+      "source_end_exclusive": "2026-10-01T00:00:00+00:00",
+      "before_row_sha256": "ca71267bc2f91069e72506d8fa604cfea2ae8fcb7f23bea66822a931737be6c6",
+      "after_row_sha256": "ca71267bc2f91069e72506d8fa604cfea2ae8fcb7f23bea66822a931737be6c6",
+      "unchanged": true
+    },
+    {
+      "trial_id": 3969,
+      "family_key": "longshot",
+      "dataset_key": "longshot:35c64518ea06b437e6c4a614d43f1650333ac5e9c66da7800825e7b7700be0d9",
+      "source_start": "2025-08-29T15:15:47+00:00",
+      "holdout_start": "2026-06-03T18:17:58.622410+00:00",
+      "source_end_exclusive": "2026-09-30T23:01:46.460587+00:00",
+      "before_row_sha256": "90278e3b905cd592bd55352ebeb0c273371956a1c125d5032a6322b8371404af",
+      "after_row_sha256": "90278e3b905cd592bd55352ebeb0c273371956a1c125d5032a6322b8371404af",
+      "unchanged": true
+    },
+    {
+      "trial_id": 4066,
+      "family_key": "c04",
+      "dataset_key": "c04-readmission-v1:5bcfc84ee7b9a3d9798cc985ced59bf1255fc52861199e7be2befd43a8f243bb",
+      "source_start": "2006-01-01T00:00:00+00:00",
+      "holdout_start": "2020-07-10T14:24:00+00:00",
+      "source_end_exclusive": "2026-10-01T00:00:00+00:00",
+      "before_row_sha256": "7c94bc2896124e75989fe2e5e0411028f18b7503c5af6d1d1c7588799e3b47d9",
+      "after_row_sha256": "7c94bc2896124e75989fe2e5e0411028f18b7503c5af6d1d1c7588799e3b47d9",
+      "unchanged": true
+    }
+  ],
+  "risk_limits_changed": false,
+  "promotion": false,
+  "new_real_final_runs": 0,
+  "final_count_after_test_cleanup": 7,
+  "family_receipt_count_after_test_cleanup": 7,
+  "validation": {
+    "passed": 152,
+    "synthetic_only": true,
+    "command": "uv run pytest tests/backtest tests/research/test_equity_runtime.py tests/research/test_c01_spy_monthly_trend.py tests/research/test_c03_c04_replay_v2.py tests/research/test_c05_replay.py tests/research/test_c07_replay.py tests/research/test_c08_inventory.py -q",
+    "warnings": [
+      "Existing websockets.legacy deprecation warning"
+    ]
+  },
+  "implementation_sha256": {
+    "src/tradingbot/backtest/holdout.py": "7ec9990e75cd0b88dfdfb81d90f89c6dd25de06ad47b57056eaad6e5ac5e577d",
+    "src/tradingbot/db/models.py": "104e1203730b959b28b53e37ee054da69a02ede8a47654a107473b0487afa445",
+    "src/tradingbot/db/migrations/versions/2026_10_01_1900-bcf10a202601_family_holdout.py": "dba93f8e4b73e091c35619087ab9a3691788c8d2e9659b27c2a72417ae924f53"
+  }
+}

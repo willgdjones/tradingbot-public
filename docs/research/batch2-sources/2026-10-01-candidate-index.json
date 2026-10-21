@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "parent": "tradingbot-5n1",
+  "frozen_date": "2026-10-01",
+  "specification": "docs/research/25-candidate-shortlist.md",
+  "source_register": "docs/research/batch2-sources/2026-10-01-sources.md",
+  "signal_variants": 12,
+  "planned_training_configurations_if_all_admitted": 24,
+  "executed_trials": [],
+  "outcomes_fetched_for_this_batch": false,
+  "candidates": [
+    {
+      "candidate": "C09",
+      "id": "tradingbot-b8y",
+      "title": "IEF recovery after nominal 10-year Treasury auctions",
+      "universe": [
+        "IEF"
+      ],
+      "ordered_variants": [
+        {
+          "hold_sessions": 5
+        },
+        {
+          "hold_sessions": 10
+        }
+      ],
+      "split": {
+        "dataset_key": "batch2-c09-v1",
+        "data_start": "2006-01-01T00:00:00+00:00",
+        "data_end": "2026-10-01T00:00:00+00:00",
+        "holdout_start": "2020-07-10T14:24:00+00:00",
+        "split": "70/30 by elapsed UTC time; end exclusive"
+      },
+      "training_cost_cases": [
+        {
+          "adverse_bps_per_side": 5
+        },
+        {
+          "adverse_bps_per_side": 10
+        }
+      ],
+      "selection_cost_case_index": 1,
+      "max_final_attempts": 1,
+      "status": "source_admission_pending",
+      "virtual_cash_usd": "140",
+      "real_allocation_usd": "0"
+    },
+    {
+      "candidate": "C10",
+      "id": "tradingbot-eu4",
+      "title": "TLT month-end institutional demand",
+      "universe": [
+        "TLT"
+      ],
+      "ordered_variants": [
+        {
+          "entry_sessions_from_month_end": 3
+        },
+        {
+          "entry_sessions_from_month_end": 5
+        }
+      ],
+      "split": {
+        "dataset_key": "batch2-c10-v1",
+        "data_start": "2006-01-01T00:00:00+00:00",
+        "data_end": "2026-10-01T00:00:00+00:00",
+        "holdout_start": "2020-07-10T14:24:00+00:00",
+        "split": "70/30 by elapsed UTC time; end exclusive"
+      },
+      "training_cost_cases": [
+        {
+          "adverse_bps_per_side": 5
+        },
+        {
+          "adverse_bps_per_side": 10
+        }
+      ],
+      "selection_cost_case_index": 1,
+      "max_final_attempts": 1,
+      "status": "source_admission_pending",
+      "virtual_cash_usd": "140",
+      "real_allocation_usd": "0"
+    },
+    {
+      "candidate": "C11",
+      "id": "tradingbot-e76",
+      "title": "SPY standard monthly option-expiration week",
+      "universe": [
+        "SPY"
+      ],
+      "ordered_variants": [
+        {
+          "exit": "standard_expiration_session_close"
+        },
+        {
+          "exit": "next_session_open"
+        }
+      ],
+      "split": {
+        "dataset_key": "batch2-c11-v1",
+        "data_start": "2006-01-01T00:00:00+00:00",
+        "data_end": "2026-10-01T00:00:00+00:00",
+        "holdout_start": "2020-07-10T14:24:00+00:00",
+        "split": "70/30 by elapsed UTC time; end exclusive"
+      },
+      "training_cost_cases": [
+        {
+          "adverse_bps_per_side": 5
+        },
+        {
+          "adverse_bps_per_side": 10
+        }
+      ],
+      "selection_cost_case_index": 1,
+      "max_final_attempts": 1,
+      "status": "source_admission_pending",
+      "virtual_cash_usd": "140",
+      "real_allocation_usd": "0"
+    },
+    {
+      "candidate": "C12",
+      "id": "tradingbot-lna",
+      "title": "SPY scheduled non-FOMC macro-announcement risk",
+      "universe": [
+        "SPY"
+      ],
+      "ordered_variants": [
+        {
+          "release": "BLS_Employment_Situation"
+        },
+        {
+          "release": "BLS_CPI"
+        }
+      ],
+      "split": {
+        "dataset_key": "batch2-c12-v1",
+        "data_start": "2006-01-01T00:00:00+00:00",
+        "data_end": "2026-10-01T00:00:00+00:00",
+        "holdout_start": "2020-07-10T14:24:00+00:00",
+        "split": "70/30 by elapsed UTC time; end exclusive"
+      },
+      "training_cost_cases": [
+        {
+          "adverse_bps_per_side": 5
+        },
+        {
+          "adverse_bps_per_side": 10
+        }
+      ],
+      "selection_cost_case_index": 1,
+      "max_final_attempts": 1,
+      "status": "source_admission_pending",
+      "virtual_cash_usd": "140",
+      "real_allocation_usd": "0"
+    },
+    {
+      "candidate": "C13",
+      "id": "tradingbot-0cm",
+      "title": "Earnings-uncertainty long straddle: source and capital feasibility",
+      "universe": [
+        "F",
+        "NOK",
+        "SNAP"
+      ],
+      "ordered_variants": [
+        {
+          "entry_sessions_before_earnings": 3
+        },
+        {
+          "entry_sessions_before_earnings": 5
+        }
+      ],
+      "split": {
+        "dataset_key": "batch2-c13-v1",
+        "data_start": "2024-02-01T00:00:00+00:00",
+        "data_end": "2026-10-01T00:00:00+00:00",
+        "holdout_start": "2025-12-13T02:24:00+00:00",
+        "split": "70/30 by elapsed UTC time; end exclusive"
+      },
+      "training_cost_cases": [
+        {
+          "adverse_per_share_usd": "0.01"
+        },
+        {
+          "adverse_per_share_usd": "0.02"
+        }
+      ],
+      "selection_cost_case_index": 1,
+      "max_final_attempts": 1,
+      "status": "parked_alpha_source_feasibility_only",
+      "virtual_cash_usd": "140",
+      "real_allocation_usd": "0"
+    },
+    {
+      "candidate": "C14",
+      "id": "tradingbot-ddw",
+      "title": "Conditional cash-secured cheap-stock put: source and capital feasibility",
+      "universe": [
+        "F",
+        "NOK",
+        "OPEN",
+        "PLUG",
+        "SNDL"
+      ],
+      "ordered_variants": [
+        {
+          "hold_sessions": 5
+        },
+        {
+          "hold_sessions": 10
+        }
+      ],
+      "split": {
+        "dataset_key": "batch2-c14-v1",
+        "data_start": "2024-02-01T00:00:00+00:00",
+        "data_end": "2026-10-01T00:00:00+00:00",
+        "holdout_start": "2025-12-13T02:24:00+00:00",
+        "split": "70/30 by elapsed UTC time; end exclusive"
+      },
+      "training_cost_cases": [
+        {
+          "adverse_per_share_usd": "0.01"
+        },
+        {
+          "adverse_per_share_usd": "0.02"
+        }
+      ],
+      "selection_cost_case_index": 1,
+      "max_final_attempts": 1,
+      "status": "parked_alpha_source_feasibility_only",
+      "virtual_cash_usd": "140",
+      "real_allocation_usd": "0"
+    }
+  ],
+  "specification_sha256": "02650e13ee01afb2ce487943153c01ec12d3fdac14de2fce8c7c2bb1d87f2aa6",
+  "source_register_sha256": "9321900da24624fb517bcd79ff464225b592bbb5f0cedfa3646118b503d3bde2",
+  "review": "Independent read-only calendar/options/cash review; corrected nonoverlapping control windows, historical expiry-session mapping, holiday/partition control skips, rounded-limit capacity and fixed delayed-entry exit anchors before any outcome fetch."
+}

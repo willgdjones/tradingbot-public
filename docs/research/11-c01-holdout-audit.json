@@ -1,0 +1,62 @@
+{
+  "bead": "tradingbot-bbw",
+  "recorded_at": "2026-10-01T06:48:39.673502+00:00",
+  "repair_commit": "0f08a9b",
+  "strategy_id": 5080,
+  "incident_id": 920,
+  "status": "FAILED_AUDIT",
+  "promotion_eligible": false,
+  "source_trial_ids": [
+    3313,
+    3314,
+    3315,
+    3316,
+    3317,
+    3318,
+    3319
+  ],
+  "consumed_final_trial_id": 3319,
+  "original_trial_rows_unchanged": true,
+  "before_sha256": "6379a6d18f5bf2437ff1bab44229a86cc9d9e96db8665a15d6b36278327646db",
+  "after_sha256": "6379a6d18f5bf2437ff1bab44229a86cc9d9e96db8665a15d6b36278327646db",
+  "original_results_file_sha256": "e9fff236b7ea9a3194af18143bb1d9d0b52c39860db08f51913aa4daaf3f9241",
+  "configuration_before": {
+    "candidate": "C01",
+    "dataset_key": "sweep-c01-v1",
+    "research_only": true
+  },
+  "annotation": {
+    "bead": "tradingbot-bbw",
+    "status": "FAILED_AUDIT",
+    "promotion_eligible": false,
+    "replay_allowed": false,
+    "findings": [
+      "final_replay_preceded_durable_admission",
+      "shared_risk_and_execution_ledger_bypassed",
+      "dividend_entitlement_and_payment_proxy",
+      "calendar_day_settlement_without_validated_calendar",
+      "slot_cap_not_enforced_on_compounded_equity",
+      "terminal_marks_and_benchmark_dividends_not_causal",
+      "source_crosscheck_and_dependency_identity_incomplete",
+      "previously_inspected_sample_and_deleted_prior_attempts"
+    ],
+    "report": "docs/research/11-c01-holdout-audit.md",
+    "source_trial_ids": [
+      3313,
+      3314,
+      3315,
+      3316,
+      3317,
+      3318,
+      3319
+    ],
+    "consumed_final_trial_id": 3319,
+    "original_rows_sha256": "6379a6d18f5bf2437ff1bab44229a86cc9d9e96db8665a15d6b36278327646db",
+    "repair_commit": "0f08a9b"
+  },
+  "real_strategy_replays": 0,
+  "allocation_before_usd": "140",
+  "allocation_after_usd": "140",
+  "strategy_status_before": "backtest",
+  "strategy_status_after": "backtest"
+}

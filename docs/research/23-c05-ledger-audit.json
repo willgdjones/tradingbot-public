@@ -1,0 +1,341 @@
+{
+  "auditor_sha256": "7de0f1d4491e84c796977c72382286d4b56034faec321b454d9700adaeec8766",
+  "final_trials": [
+    3964
+  ],
+  "no_strategy_replay": true,
+  "original_failed_rows_sha256": "8b9696d0de5dc85d159e7eec01a75512f216486b2e753e54aa207a2f07630f5e",
+  "runs": [
+    {
+      "artifact": "data/research/c05-blackout/runs/train-above_sma_200-10.json",
+      "blackout_forced_exits": 0,
+      "blackout_reentry_fills": 0,
+      "cash_and_marks_max_difference_usd": "2.94750513900000000E-8",
+      "cash_entitlements_checked": 1,
+      "daily_marks_checked": 3303,
+      "daily_portfolio_drawdown": {
+        "dollars": "69.8032439420049324981436632",
+        "fraction": "0.3500297986591839598710408556"
+      },
+      "fills_checked": 235,
+      "final_holdout": false,
+      "independent_net_usd": "9.673143039502766210",
+      "no_strategy_replay": true,
+      "orders_checked": 235,
+      "sha256": "87380abdc6a92c6c7b0d75988c5c36a94364abfda07d5ae86bbc3c04501a2648",
+      "status": "PASS",
+      "strategy_id": 6472,
+      "symbol_contribution_usd": {
+        "DBA": "-4.325801809194701960",
+        "GLD": "17.224624932276558810",
+        "SLV": "34.312135885771291940",
+        "UNG": "-17.584840137446375450",
+        "USO": "-19.952975831904007130"
+      },
+      "tolerance_usd": "0.000235",
+      "trial_id": 3961,
+      "uso_marked_regimes": {
+        "2020_dislocation_before_transition": {
+          "covered": true,
+          "marked_contribution_usd": "-4.36614904636864227000000000"
+        },
+        "before_2020": {
+          "covered": true,
+          "marked_contribution_usd": "-20.33341430602300754000000000"
+        },
+        "post_2020": {
+          "covered": true,
+          "marked_contribution_usd": "4.7465875204876426800000000"
+        },
+        "transition_remainder_2020": {
+          "covered": true,
+          "marked_contribution_usd": "0E-26"
+        }
+      }
+    },
+    {
+      "artifact": "data/research/c05-blackout/runs/train-above_sma_200-5.json",
+      "blackout_forced_exits": 0,
+      "blackout_reentry_fills": 0,
+      "cash_and_marks_max_difference_usd": "4.28665756600000000E-8",
+      "cash_entitlements_checked": 1,
+      "daily_marks_checked": 3303,
+      "daily_portfolio_drawdown": {
+        "dollars": "68.9194185939436281510985282",
+        "fraction": "0.3452253229100055716124489581"
+      },
+      "fills_checked": 237,
+      "final_holdout": false,
+      "independent_net_usd": "11.607087055942606280",
+      "no_strategy_replay": true,
+      "orders_checked": 237,
+      "sha256": "7975ab14eff3a8aed003f017b7ea5287c2f2adad0f5e6a8368f896bf35d59700",
+      "status": "PASS",
+      "strategy_id": 6471,
+      "symbol_contribution_usd": {
+        "DBA": "-4.056176989193601760",
+        "GLD": "17.656593696970009160",
+        "SLV": "34.878897641293567990",
+        "UNG": "-17.337539363911145080",
+        "USO": "-19.534687929216224030"
+      },
+      "tolerance_usd": "0.000237",
+      "trial_id": 3960,
+      "uso_marked_regimes": {
+        "2020_dislocation_before_transition": {
+          "covered": true,
+          "marked_contribution_usd": "-4.39041438993465343000000000"
+        },
+        "before_2020": {
+          "covered": true,
+          "marked_contribution_usd": "-19.97914486852186438000000000"
+        },
+        "post_2020": {
+          "covered": true,
+          "marked_contribution_usd": "4.8348713292402937800000000"
+        },
+        "transition_remainder_2020": {
+          "covered": true,
+          "marked_contribution_usd": "0E-26"
+        }
+      }
+    },
+    {
+      "artifact": "data/research/c05-blackout/runs/train-total_return_126_positive-10.json",
+      "blackout_forced_exits": 0,
+      "blackout_reentry_fills": 0,
+      "cash_and_marks_max_difference_usd": "1.60471472100000000E-8",
+      "cash_entitlements_checked": 0,
+      "daily_marks_checked": 3303,
+      "daily_portfolio_drawdown": {
+        "dollars": "48.8145811202041369887821372",
+        "fraction": "0.2647372648412044092892298607"
+      },
+      "fills_checked": 251,
+      "final_holdout": false,
+      "independent_net_usd": "30.421477830168044910",
+      "no_strategy_replay": true,
+      "orders_checked": 251,
+      "sha256": "16b562d2ee9ec001e21960c5bebe9c8aefc3edf370fc87aa3ef1f4e3fafbe771",
+      "status": "PASS",
+      "strategy_id": 6470,
+      "symbol_contribution_usd": {
+        "DBA": "-1.438825982791623450",
+        "GLD": "25.261221239334132930",
+        "SLV": "23.728217521539968000",
+        "UNG": "-15.677236488025998210",
+        "USO": "-1.451898459888434360"
+      },
+      "tolerance_usd": "0.000251",
+      "trial_id": 3959,
+      "uso_marked_regimes": {
+        "2020_dislocation_before_transition": {
+          "covered": true,
+          "marked_contribution_usd": "-4.53352280506037431556850000"
+        },
+        "before_2020": {
+          "covered": true,
+          "marked_contribution_usd": "-9.99310481826233112443150000"
+        },
+        "post_2020": {
+          "covered": true,
+          "marked_contribution_usd": "4.8426810526583469254988000"
+        },
+        "transition_remainder_2020": {
+          "covered": true,
+          "marked_contribution_usd": "8.23204811077592415450120000"
+        }
+      }
+    },
+    {
+      "artifact": "data/research/c05-blackout/runs/train-total_return_126_positive-5.json",
+      "blackout_forced_exits": 0,
+      "blackout_reentry_fills": 0,
+      "cash_and_marks_max_difference_usd": "2.44954995500000000E-8",
+      "cash_entitlements_checked": 0,
+      "daily_marks_checked": 3303,
+      "daily_portfolio_drawdown": {
+        "dollars": "48.1101510122134616958225052",
+        "fraction": "0.2605132466945821860996604422"
+      },
+      "fills_checked": 250,
+      "final_holdout": false,
+      "independent_net_usd": "32.301377565173099500",
+      "no_strategy_replay": true,
+      "orders_checked": 250,
+      "sha256": "3667bb3617e8d3ec893e22d21ffa1af34f104746f399c1646bf50ebbc864c8e4",
+      "status": "PASS",
+      "strategy_id": 6469,
+      "symbol_contribution_usd": {
+        "DBA": "-1.220694173149089720",
+        "GLD": "25.610712661869079830",
+        "SLV": "24.478059761280013260",
+        "UNG": "-15.367885714666846120",
+        "USO": "-1.198814970160057750"
+      },
+      "tolerance_usd": "0.000250",
+      "trial_id": 3956,
+      "uso_marked_regimes": {
+        "2020_dislocation_before_transition": {
+          "covered": true,
+          "marked_contribution_usd": "-4.55109555230728789690700000"
+        },
+        "before_2020": {
+          "covered": true,
+          "marked_contribution_usd": "-9.76019223926719508309300000"
+        },
+        "post_2020": {
+          "covered": true,
+          "marked_contribution_usd": "4.8600660911458119254988000"
+        },
+        "transition_remainder_2020": {
+          "covered": true,
+          "marked_contribution_usd": "8.25240673026861330450120000"
+        }
+      }
+    },
+    {
+      "artifact": "data/research/c05-blackout/runs/train-total_return_252_positive-10.json",
+      "blackout_forced_exits": 0,
+      "blackout_reentry_fills": 0,
+      "cash_and_marks_max_difference_usd": "1.64531465500000000E-8",
+      "cash_entitlements_checked": 0,
+      "daily_marks_checked": 3303,
+      "daily_portfolio_drawdown": {
+        "dollars": "81.8402860103288920968836602",
+        "fraction": "0.4179851223043053367340153313"
+      },
+      "fills_checked": 215,
+      "final_holdout": false,
+      "independent_net_usd": "-2.039222143903848660",
+      "no_strategy_replay": true,
+      "orders_checked": 215,
+      "sha256": "4892b0bca15a8711b9417d5b8c540ace4e994c02f8f9ee874763af880c9ebaf5",
+      "status": "PASS",
+      "strategy_id": 6468,
+      "symbol_contribution_usd": {
+        "DBA": "-5.664152275898356200",
+        "GLD": "16.435883466216769760",
+        "SLV": "24.594714575349468250",
+        "UNG": "-15.381873762121627240",
+        "USO": "-22.023794147450103230"
+      },
+      "tolerance_usd": "0.000215",
+      "trial_id": 3955,
+      "uso_marked_regimes": {
+        "2020_dislocation_before_transition": {
+          "covered": true,
+          "marked_contribution_usd": "-3.94884428343280276469140000"
+        },
+        "before_2020": {
+          "covered": true,
+          "marked_contribution_usd": "-18.07494986401730046530860000"
+        },
+        "post_2020": {
+          "covered": true,
+          "marked_contribution_usd": "0E-25"
+        },
+        "transition_remainder_2020": {
+          "covered": true,
+          "marked_contribution_usd": "0E-26"
+        }
+      }
+    },
+    {
+      "artifact": "data/research/c05-blackout/runs/train-total_return_252_positive-5.json",
+      "blackout_forced_exits": 0,
+      "blackout_reentry_fills": 0,
+      "cash_and_marks_max_difference_usd": "2.72838511500000000E-8",
+      "cash_entitlements_checked": 0,
+      "daily_marks_checked": 3303,
+      "daily_portfolio_drawdown": {
+        "dollars": "80.9752781782217912522317072",
+        "fraction": "0.4130560711127462764590028643"
+      },
+      "fills_checked": 215,
+      "final_holdout": false,
+      "independent_net_usd": "-0.605559907911560990",
+      "no_strategy_replay": true,
+      "orders_checked": 215,
+      "sha256": "84474eb315e28252a6078e5235f1d4f21b6ee065a6f8bdcfbbfe2ddf0a03f306",
+      "status": "PASS",
+      "strategy_id": 6467,
+      "symbol_contribution_usd": {
+        "DBA": "-5.469362844036500990",
+        "GLD": "16.813397928702044660",
+        "SLV": "25.029345388341129320",
+        "UNG": "-15.213754161151374820",
+        "USO": "-21.765186219766859160"
+      },
+      "tolerance_usd": "0.000215",
+      "trial_id": 3954,
+      "uso_marked_regimes": {
+        "2020_dislocation_before_transition": {
+          "covered": true,
+          "marked_contribution_usd": "-3.97540106299022099554410000"
+        },
+        "before_2020": {
+          "covered": true,
+          "marked_contribution_usd": "-17.78978515677663816445590000"
+        },
+        "post_2020": {
+          "covered": true,
+          "marked_contribution_usd": "0E-25"
+        },
+        "transition_remainder_2020": {
+          "covered": true,
+          "marked_contribution_usd": "0E-26"
+        }
+      }
+    },
+    {
+      "artifact": "data/research/c05-blackout/runs/final.json",
+      "blackout_forced_exits": 0,
+      "blackout_reentry_fills": 0,
+      "cash_and_marks_max_difference_usd": "2.07852198000000000E-8",
+      "cash_entitlements_checked": 2,
+      "daily_marks_checked": 1413,
+      "daily_portfolio_drawdown": {
+        "dollars": "29.6297212020052435394864850",
+        "fraction": "0.1790705834774714170575598544"
+      },
+      "fills_checked": 161,
+      "final_holdout": true,
+      "independent_net_usd": "47.075244819505728330",
+      "no_strategy_replay": true,
+      "orders_checked": 161,
+      "sha256": "0dea73b43ebea403aadc6dbb3e72f8bd996d6dadd44aeac8e0473931533543ad",
+      "status": "PASS",
+      "strategy_id": 6473,
+      "symbol_contribution_usd": {
+        "DBA": "11.812779494983436810",
+        "GLD": "17.110443269530427090",
+        "SLV": "16.495519512157731300",
+        "UNG": "-19.284563242139336610",
+        "USO": "20.941065784973469740"
+      },
+      "tolerance_usd": "0.000161",
+      "trial_id": 3964,
+      "uso_marked_regimes": {
+        "2020_dislocation_before_transition": {
+          "covered": false,
+          "marked_contribution_usd": null
+        },
+        "before_2020": {
+          "covered": false,
+          "marked_contribution_usd": null
+        },
+        "post_2020": {
+          "covered": true,
+          "marked_contribution_usd": "20.941065784973469740000000"
+        },
+        "transition_remainder_2020": {
+          "covered": false,
+          "marked_contribution_usd": null
+        }
+      }
+    }
+  ],
+  "source_receipt": "05774a5a2f1ccbfef2898471f32311874e67298fc2bbbb6efb39b1cda893cb7c",
+  "status": "PASS"
+}

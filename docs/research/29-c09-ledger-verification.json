@@ -1,0 +1,54 @@
+{
+  "all_performance_columns_null": true,
+  "audit_git_commit": "5f0a1047b548b1aae1a90f74001af8b4ef73971a",
+  "c09_final_count": 0,
+  "c09_trial_count": 1,
+  "checked_at": "2026-10-01T19:56:58.186838+00:00",
+  "existing_family_spend_count": 7,
+  "existing_final_count": 7,
+  "idempotent": true,
+  "original_finals": [
+    {
+      "row_sha256": "9413df496cb4104545a75dc9466e40c3b61ce4ff2535dc5b488d60f42a515c5c",
+      "trial_id": 3281,
+      "unchanged": true
+    },
+    {
+      "row_sha256": "7c10b95d7bc04e7ca9c27495a2197e8fb6c643519234880d9afb547bccdc0644",
+      "trial_id": 3282,
+      "unchanged": true
+    },
+    {
+      "row_sha256": "6a0d2f1be52e0edf81059875d0b45627123c0da22c9c23edd55a40f1b2dfb70d",
+      "trial_id": 3319,
+      "unchanged": true
+    },
+    {
+      "row_sha256": "9b4dd58fac3edaef03bbc3835e61d431974c8960e1ef234790bc0c948b671f38",
+      "trial_id": 3910,
+      "unchanged": true
+    },
+    {
+      "row_sha256": "ca71267bc2f91069e72506d8fa604cfea2ae8fcb7f23bea66822a931737be6c6",
+      "trial_id": 3964,
+      "unchanged": true
+    },
+    {
+      "row_sha256": "90278e3b905cd592bd55352ebeb0c273371956a1c125d5032a6322b8371404af",
+      "trial_id": 3969,
+      "unchanged": true
+    },
+    {
+      "row_sha256": "7c94bc2896124e75989fe2e5e0411028f18b7503c5af6d1d1c7588799e3b47d9",
+      "trial_id": 4066,
+      "unchanged": true
+    }
+  ],
+  "original_row_hash_format": "PostgreSQL to_jsonb(t)::text with original server timezone America/Los_Angeles",
+  "source_failure_trial_id": 4585,
+  "source_receipt_sha256": "424afceba2fcb886b748b2de438644c61409f368b2686edc4d984aab079c6b36",
+  "status": "PASS",
+  "strategy_id": 7164,
+  "strategy_status": "idea",
+  "verification": "Stored-only; no strategy replay"
+}
